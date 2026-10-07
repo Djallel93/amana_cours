@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercices : Les prépositions en arabe</title>
+    <style>
+/* ===== AMANA – feuille de style commune (structure, impression, accessibilité) =====
+   Les thèmes (theme_adulte / theme_enfant) ne changent que l'apparence : couleurs, polices, formes.
+   Pas d'animation, pas de JavaScript : tout le contenu est visible partout. */
+:root {
+    --ink: #1d1d1b; --mut: #5b5b57; --line: #d9d6cf; --accent: #0f766e; --paper: #fff;
+    --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --ar: "Amiri", "Noto Naskh Arabic", serif;
+    --radius: 8px;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.6 var(--font); overflow-wrap: break-word; }
+.container { max-width: 880px; margin: 0 auto; padding: 20px 18px 48px; }
+h1, h2, h3, h4 { line-height: 1.25; margin: 1.2em 0 .45em; }
+h1 { margin-top: .3em; }
+p { margin: .55em 0; }
+ul, ol { margin: .5em 0; padding-left: 1.4em; }
+li { margin: .25em 0; }
+img { max-width: 100%; height: auto; }
+.arabic, .ar { font-family: var(--ar); direction: rtl; unicode-bidi: isolate; }
+.arabic-title { direction: rtl; font-family: var(--ar); }
+.table-wrapper { overflow-x: auto; margin: 12px 0; -webkit-overflow-scrolling: touch; }
+table { border-collapse: collapse; width: 100%; }
+th, td { padding: 6px 8px; text-align: left; vertical-align: top; }
+td .arabic, th .arabic { white-space: nowrap; }
+/* exercices */
+.answer-space { display: inline-block; width: 200px; max-width: 100%; min-height: 1.4em; vertical-align: bottom; margin: 0 .5em; border-bottom: 1.5px solid var(--ink); }
+.wide-space { width: 340px; }
+.question { margin: 14px 0; line-height: 2; }
+.section-divider { display: flex; align-items: center; gap: 14px; margin: 1.8em 0 1.2em; }
+/* repères de grammaire (communs aux deux niveaux) */
+.hamza { color: #c2410c; font-weight: 700; }
+.solaire { color: #c2410c; font-weight: 700; }
+.lunaire { color: #1d4ed8; font-weight: 700; }
+.letters { font: 700 1.8em/2 var(--ar); text-align: center; direction: rtl; color: var(--accent); letter-spacing: .15em; }
+/* logo de l'association (voir Styles/logo) */
+.brand { display: flex; align-items: center; gap: 10px; max-width: 880px; margin: 0 auto; padding: 14px 18px 0; }
+.brand img, .brand svg, .brand-logo { height: 46px; width: auto; }
+.brand-logo { min-width: 46px; display: inline-grid; place-items: center; padding: 0 8px; border: 1.5px dashed #888; border-radius: 8px; font: 600 .6rem/1 var(--font); letter-spacing: .12em; color: #666; }
+.brand-name { font-size: .8rem; color: var(--mut); }
+@media (max-width: 600px) {
+    .container { padding: 14px 12px 36px; }
+    .answer-space { width: 140px; }
+    .wide-space { width: min(340px, 100%); }
+}
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+/* impression : fond blanc, pas d'ombre, logo répété sur chaque page */
+@page { size: A4; margin: 18mm 14mm 16mm; }
+@media print {
+    * { background: transparent !important; box-shadow: none !important; animation: none !important; transition: none !important; }
+    html, body { background: #fff !important; color: #000; }
+    body { font-size: 11pt; line-height: 1.5; }
+    .container { max-width: none; padding: 0; }
+    .brand { position: fixed; top: -13mm; right: 0; left: 0; max-width: none; padding: 0; }
+    .brand img, .brand svg, .brand-logo { height: 9mm; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    tr, .rule-box, .example-box, .info-box, .warning-box, .note, .intro, .question, .exercise, .phrase-example { break-inside: avoid; }
+    .table-wrapper { overflow: visible; }
+    a { color: inherit; text-decoration: none; }
+}
+</style>
+    <link rel="stylesheet" href="../../fonts/fonts.css">
+<style>
+/* ===== Thème ENFANT : coloré et ludique (modèle K4 : mascotte et bulles) ===== */
+:root { --accent: #7c3aed; --font: "Baloo 2", "Comic Sans MS", system-ui, sans-serif; --ar: "Amiri", "Noto Naskh Arabic", serif; --radius: 18px; }
+body { font-size: 17px; }
+h1 { font-size: 1.8rem; color: var(--accent); }
+.arabic-title { font-size: 1.6rem; color: var(--mut); margin: 0 0 1.2em; }
+h2 { font-size: 1.35rem; color: #0d9488; margin-top: 1.7em; padding-bottom: .15em; border-bottom: 3px dotted var(--line); }
+h3 { font-size: 1.1rem; color: #d97706; }
+h4 { font-size: 1rem; margin: .2em 0 .3em; }
+.arabic, .ar { font-size: 1.35em; }
+.highlight { font-weight: 700; border-bottom: 3px solid #f59e0b; }
+/* encadrés = bulles de dialogue avec une mascotte */
+.intro, .rule-box, .example-box, .info-box, .warning-box, .note { --c: var(--accent); position: relative; margin: 18px 0 18px 60px; padding: 10px 16px; border: 3px solid var(--c); border-radius: var(--radius); }
+.intro::before, .rule-box::before, .example-box::before, .info-box::before, .warning-box::before, .note::before { position: absolute; left: -58px; top: 4px; font-size: 2.1rem; line-height: 1.2; }
+.intro::after, .rule-box::after, .example-box::after, .info-box::after, .warning-box::after, .note::after { content: ""; position: absolute; left: -11px; top: 18px; width: 16px; height: 16px; background: #fff; border-left: 3px solid var(--c); border-bottom: 3px solid var(--c); transform: rotate(45deg); }
+.intro::before { content: "🦉"; }
+.rule-box { --c: #0d9488; } .rule-box::before { content: "💡"; }
+.example-box { --c: #f59e0b; } .example-box::before { content: "🌟"; }
+.info-box { --c: #2563eb; } .info-box::before { content: "🔍"; }
+.warning-box { --c: #dc2626; } .warning-box::before { content: "⚠️"; }
+.note { --c: #db2777; } .note::before { content: "📌"; }
+.phrase-example, .example-item { border: 3px solid var(--line); border-radius: 14px; padding: 8px 14px; margin: 10px 0; }
+th { color: var(--accent); border-bottom: 3px solid var(--accent); font-weight: 700; }
+td { border-bottom: 2px dotted var(--line); }
+/* exercices */
+.exercise { border: 3px dashed #db2777; border-radius: 14px; padding: 10px 16px; margin: 14px 0 22px; }
+.exercise h3 { margin: 0 0 .5em; color: #db2777; font-size: 1.05rem; }
+.section-number { display: inline-flex; align-items: center; justify-content: center; width: 1.9em; height: 1.9em; margin-right: .5em; border: 3px solid var(--accent); border-radius: 50%; color: var(--accent); font-weight: 700; font-size: .85em; }
+.question { border-left: 4px solid #0d9488; padding: 4px 12px; }
+.answer-space { border-bottom-width: 2px; border-bottom-style: dashed; }
+.section-divider { color: var(--accent); }
+@media (max-width: 520px) {
+    .intro, .rule-box, .example-box, .info-box, .warning-box, .note { margin-left: 44px; }
+    .intro::before, .rule-box::before, .example-box::before, .info-box::before, .warning-box::before, .note::before { left: -44px; font-size: 1.7rem; }
+    .intro::after, .rule-box::after, .example-box::after, .info-box::after, .warning-box::after, .note::after { display: none; }
+}
+</style>
+    <style>
+        /* Composants propres à ce cours (couleurs de rôle grammatical, cartes, etc.) */
+        .prep-label { color: var(--ink); padding: 3px 10px; border-radius: 12px; font-size: 1.2em; font-weight: bold; border: 1.5px solid #667eea; }
+    </style>
+</head>
+
+<body class="exercices">
+    <!-- Logo de l'association : remplacer le contenu de .brand-logo par <img src="data:image/svg+xml;base64,..." alt="Logo de l'association">
+     (ou un <svg> en ligne). Ce fichier est inclus dans toutes les pages : une seule modification suffit. -->
+<header class="brand">
+    <span class="brand-logo" role="img" aria-label="Logo de l'association">LOGO</span>
+    <span class="brand-name">Nom de l'association</span>
+</header>
+    <div class="container">
+        <h1>📝 Exercices Pratiques</h1>
+        <div class="arabic-title">تَمَارِين حُرُوف الجَرّ</div>
+
+        <div class="intro">
+            <strong>👋 Instructions :</strong> Complétez les exercices suivants pour pratiquer les prépositions arabes.
+            Règle fondamentale : toute préposition en arabe est suivie d'un nom au <strong>cas génitif
+                (مَجْرُور)</strong>, marqué par la kasra (ـِ) ou le tanwīn kasra (ـٍ). Attention aux prépositions
+            monosyllabiques بِ، لِ، كَ qui s'attachent directement au mot.
+        </div>
+
+        <h2><span class="section-number">1</span>Les 8 prépositions essentielles</h2>
+        <div class="exercise">
+            <h3>Associez chaque préposition à son sens principal</h3>
+            <div class="table-wrapper"><table>
+                <thead>
+                    <tr>
+                        <th>Préposition</th>
+                        <th>Translittération</th>
+                        <th>Sens principal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="arabic">مِنْ</span></td>
+                        <td>min</td>
+                        <td><span class="answer-space"></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="arabic">إِلَى</span></td>
+                        <td>ilā</td>
+                        <td><span class="answer-space"></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="arabic">فِي</span></td>
+                        <td>fī</td>
+                        <td><span class="answer-space"></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="arabic">عَلَى</span></td>
+                        <td>ʿalā</td>
+                        <td><span class="answer-space"></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="arabic">عَنْ</span></td>
+                        <td>ʿan</td>
+                        <td><span class="answer-space"></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="arabic">بِ</span></td>
+                        <td>bi</td>
+                        <td><span class="answer-space"></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="arabic">لِ</span></td>
+                        <td>li</td>
+                        <td><span class="answer-space"></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="arabic">كَ</span></td>
+                        <td>ka</td>
+                        <td><span class="answer-space"></span></td>
+                    </tr>
+                </tbody>
+            </table></div>
+        </div>
+
+        <h2><span class="section-number">2</span>Le cas génitif après les prépositions</h2>
+        <div class="exercise">
+            <h3>Mettez le nom entre parenthèses au cas génitif</h3>
+            <p><em>Rappel : défini → kasra ـِ ; indéfini → tanwīn kasra ـٍ</em></p>
+            <ol>
+                <li>ذَهَبْتُ إِلَى (المَدْرَسَة) → <span class="answer-space wide-space"></span></li>
+                <li>جَلَسْتُ فِي (حَدِيقَة) → <span class="answer-space wide-space"></span></li>
+                <li>تَحَدَّثْتُ مَعَ (الطُّلاّب) → <span class="answer-space wide-space"></span></li>
+                <li>جِئْتُ مِنَ (البَيْت) → <span class="answer-space wide-space"></span></li>
+                <li>كَتَبْتُ بِ (القَلَم) → <span class="answer-space wide-space"></span></li>
+                <li>هَذَا لِ (الطَّالِب) → <span class="answer-space wide-space"></span></li>
+                <li>هُوَ كَ (الأَسَد) → <span class="answer-space wide-space"></span></li>
+                <li>نَسِيتُ عَنْ (المَوْعِد) → <span class="answer-space wide-space"></span></li>
+            </ol>
+        </div>
+
+        <h2><span class="section-number">3</span>Prépositions monosyllabiques attachées</h2>
+        <div class="exercise">
+            <h3>Combinez la préposition avec le mot suivant</h3>
+            <p><em>Rappel : بِ + ال = بِالـ / لِ + ال = لِلـ / كَ + ال = كَالـ</em></p>
+            <ol>
+                <li><span class="prep-label">بِ</span> + <span class="arabic">القَلَم</span> → <span
+                        class="answer-space"></span></li>
+                <li><span class="prep-label">لِ</span> + <span class="arabic">الطَّالِب</span> → <span
+                        class="answer-space"></span></li>
+                <li><span class="prep-label">كَ</span> + <span class="arabic">الشَّمْس</span> → <span
+                        class="answer-space"></span></li>
+                <li><span class="prep-label">بِ</span> + <span class="arabic">كِتَاب</span> → <span
+                        class="answer-space"></span></li>
+                <li><span class="prep-label">لِ</span> + <span class="arabic">الطَّالِبَة</span> → <span
+                        class="answer-space"></span></li>
+                <li><span class="prep-label">كَ</span> + <span class="arabic">الأَسَد</span> → <span
+                        class="answer-space"></span></li>
+            </ol>
+        </div>
+
+        <h2><span class="section-number">4</span>Prépositions avec pronoms suffixes</h2>
+        <div class="exercise">
+            <h3>Combinez les prépositions avec les pronoms suffixes</h3>
+            <div class="table-wrapper"><table>
+                <thead>
+                    <tr>
+                        <th>Pronom</th>
+                        <th><span class="arabic">مِنْ</span></th>
+                        <th><span class="arabic">إِلَى</span></th>
+                        <th><span class="arabic">عَلَى</span></th>
+                        <th><span class="arabic">لِ</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>moi (ـي)</td>
+                        <td><span class="answer-space"></span></td>
+                        <td><span class="answer-space"></span></td>
+                        <td><span class="answer-space"></span></td>
+                        <td><span class="answer-space"></span></td>
+                    </tr>
+                    <tr>
+                        <td>toi masc. (ـكَ)</td>
+                        <td><span class="answer-space"></span></td>
+                        <td><span class="answer-space"></span></td>
+                        <td><span class="answer-space"></span></td>
+                        <td><span class="answer-space"></span></td>
+                    </tr>
+                    <tr>
+                        <td>lui (ـهُ)</td>
+                        <td><span class="answer-space"></span></td>
+                        <td><span class="answer-space"></span></td>
+                        <td><span class="answer-space"></span></td>
+                        <td><span class="answer-space"></span></td>
+                    </tr>
+                    <tr>
+                        <td>elle (ـهَا)</td>
+                        <td><span class="answer-space"></span></td>
+                        <td><span class="answer-space"></span></td>
+                        <td><span class="answer-space"></span></td>
+                        <td><span class="answer-space"></span></td>
+                    </tr>
+                    <tr>
+                        <td>nous (ـنَا)</td>
+                        <td><span class="answer-space"></span></td>
+                        <td><span class="answer-space"></span></td>
+                        <td><span class="answer-space"></span></td>
+                        <td><span class="answer-space"></span></td>
+                    </tr>
+                </tbody>
+            </table></div>
+        </div>
+
+        <h2><span class="section-number">5</span>Choisissez la bonne préposition</h2>
+        <div class="exercise">
+            <h3>Choisissez parmi les prépositions proposées</h3>
+            <ol>
+                <li>سَافَرْتُ ______ (مِنْ / إِلَى) بَارِيسَ → J'ai voyagé vers Paris</li>
+                <li>أَسْكُنُ ______ (فِي / عَلَى) القَاهِرَةِ → J'habite au Caire</li>
+                <li>الكِتَابُ ______ (فِي / عَلَى) الطَّاوِلَةِ → Le livre est sur la table</li>
+                <li>تَحَدَّثَ ______ (عَنْ / مِنْ) السَّفَرِ → Il a parlé du voyage</li>
+                <li>هَذَا الكِتَابُ ______ (لِ / بِ) المُعَلِّمِ → Ce livre est pour/au professeur</li>
+                <li>كَتَبَ ______ (بِ / مِنْ) القَلَمِ → Il a écrit avec le stylo</li>
+                <li>هُوَ ______ (كَ / عَنْ) الأَسَدِ شَجَاعَةً → Il est courageux comme un lion</li>
+                <li>جِئْتُ ______ (مِنْ / إِلَى) المَدِينَةِ → Je suis venu de la ville</li>
+            </ol>
+        </div>
+
+        <h2><span class="section-number">6</span>Traduisez en arabe</h2>
+        <div class="exercise">
+            <h3>Traduisez les phrases en veillant à l'accord en génitif</h3>
+            <ol>
+                <li>Je suis allé(e) à l'école → <span class="answer-space wide-space"></span></li>
+                <li>Je suis venu(e) de France → <span class="answer-space wide-space"></span></li>
+                <li>J'ai écrit avec le stylo sur la feuille → <span class="answer-space wide-space"></span></li>
+                <li>Ce livre est à moi → <span class="answer-space wide-space"></span></li>
+                <li>Il est comme un lion → <span class="answer-space wide-space"></span></li>
+                <li>J'habite dans un appartement → <span class="answer-space wide-space"></span></li>
+                <li>Je t'ai appelé (appel vers toi) → <span class="answer-space wide-space"></span></li>
+                <li>Il a parlé d'elle → <span class="answer-space wide-space"></span></li>
+            </ol>
+        </div>
+
+        <h2><span class="section-number">7</span>Plusieurs sens d'une même préposition</h2>
+        <div class="exercise">
+            <h3>Identifiez le sens de مِنْ dans chaque phrase</h3>
+            <p><em>Sens possibles : origine / point de départ / cause / partie d'un tout</em></p>
+            <ol>
+                <li><span class="arabic">جِئْتُ مِنَ البَيْتِ</span> → sens : <span class="answer-space"></span></li>
+                <li><span class="arabic">وَاحِدٌ مِنَ الطُّلَّابِ</span> → sens : <span class="answer-space"></span>
+                </li>
+                <li><span class="arabic">أَرْتَعِشُ مِنَ البَرْدِ</span> → sens : <span class="answer-space"></span>
+                </li>
+                <li><span class="arabic">مِنَ الصَّبَاحِ حَتَّى المَسَاءِ</span> → sens : <span
+                        class="answer-space"></span></li>
+            </ol>
+            <div class="note">
+                <strong>💡 À retenir :</strong> La préposition <span class="arabic">عَلَى</span> peut aussi exprimer une
+                obligation : <span class="arabic">عَلَيْكَ أَنْ تَدْرُسَ</span> = Tu dois étudier.
+            </div>
+        </div>
+
+        <h2><span class="section-number">8</span>Prépositions de lieu détaillées</h2>
+        <div class="exercise">
+            <h3>Complétez avec la bonne préposition de lieu</h3>
+            <p><em>Utilisez : أَمَامَ / خَلْفَ / فَوْقَ / تَحْتَ / بَيْنَ / عِنْدَ</em></p>
+            <ol>
+                <li>وَقَفْتُ ______ البَابِ → Je me suis tenu(e) devant la porte</li>
+                <li>الحَدِيقَةُ ______ المَنْزِلِ → Le jardin est derrière la maison</li>
+                <li>الطَّائِرُ ______ الشَّجَرَةِ → L'oiseau est au-dessus de l'arbre</li>
+                <li>القِطُّ ______ الطَّاوِلَةِ → Le chat est sous la table</li>
+                <li>جَلَسْتُ ______ أَحْمَدَ وَفَاطِمَةَ → Je me suis assis(e) entre Ahmad et Fatima</li>
+                <li>أَنَا ______ صَدِيقِي → Je suis chez mon ami</li>
+            </ol>
+        </div>
+
+        <h2><span class="section-number">9</span>Dialogue : Directions</h2>
+        <div class="exercise">
+            <h3>Complétez le dialogue avec les prépositions correctes</h3>
+            <div class="question">
+                <p><strong>A :</strong> أَيْنَ المَسْجِدُ ______؟ (s'il vous plaît)</p>
+                <p><strong>B :</strong> المَسْجِدُ ______ المَدْرَسَةِ وَالسُّوقِ (entre l'école et le marché)</p>
+                <p><strong>A :</strong> كَيْفَ أَذْهَبُ ______ هِ؟ (vers lui)</p>
+                <p><strong>B :</strong> اِمْشِ ______ الأَمَامِ (vers l'avant)، ثُمَّ اِنْعَطِفْ ______ اليَمِينِ (à
+                    droite)</p>
+            </div>
+        </div>
+
+        <h2><span class="section-number">10</span>Vrai ou faux ?</h2>
+        <div class="exercise">
+            <h3>Indiquez si les affirmations sont vraies (V) ou fausses (F)</h3>
+            <ol>
+                <li>Toute préposition impose le cas génitif au nom qui suit <span class="answer-space"></span></li>
+                <li>Les prépositions بِ، لِ، كَ peuvent s'écrire séparément du mot qui suit <span
+                        class="answer-space"></span></li>
+                <li>La préposition عَلَى peut exprimer une obligation <span class="answer-space"></span></li>
+                <li>مِنْ + مِنْ = مِمَّنْ quand on la combine avec مَنْ <span class="answer-space"></span></li>
+                <li>La préposition فِي ne s'utilise que pour les lieux <span class="answer-space"></span></li>
+                <li>Quand لِ précède l'article ال, on dit لِلـ <span class="answer-space"></span></li>
+                <li>عَنْ s'utilise uniquement pour exprimer l'éloignement <span class="answer-space"></span></li>
+            </ol>
+        </div>
+
+        <h2><span class="section-number">11</span>Trouvez l'erreur</h2>
+        <div class="exercise">
+            <h3>Corrigez les erreurs dans les phrases suivantes</h3>
+            <ol>
+                <li><span class="arabic">ذَهَبْتُ إِلَى المَدْرَسَةُ</span> (nominatif après préposition) → <span
+                        class="answer-space"></span></li>
+                <li><span class="arabic">كَتَبْتُ ب القَلَمِ</span> (préposition séparée) → <span
+                        class="answer-space"></span></li>
+                <li><span class="arabic">هَذَا الكِتَابُ لِ أَحْمَدَ</span> (préposition séparée) → <span
+                        class="answer-space"></span></li>
+                <li><span class="arabic">جِئْتُ مِنِّي</span> (pronom de 1ère personne incorrect) → <span
+                        class="answer-space"></span></li>
+                <li><span class="arabic">تَحَدَّثَ فِي السَّفَرِ</span> (mauvaise préposition pour parler "de" quelque
+                    chose) → <span class="answer-space"></span></li>
+            </ol>
+        </div>
+
+        <h2><span class="section-number">12</span>Phrases récapitulatives</h2>
+        <div class="exercise">
+            <h3>Traduisez ces phrases complexes contenant plusieurs prépositions</h3>
+            <ol>
+                <li>J'ai voyagé de Paris au Caire → <span class="answer-space wide-space"></span></li>
+                <li>Il s'est assis entre Ahmad et Ali devant le professeur → <span
+                        class="answer-space wide-space"></span></li>
+                <li>Ce livre est à moi, et celui-là est à toi → <span class="answer-space wide-space"></span></li>
+                <li>Tu dois étudier → (avec عَلَى) <span class="answer-space wide-space"></span></li>
+            </ol>
+        </div>
+
+        <div class="note">
+            <strong>💡 Conseil :</strong> Pour bien maîtriser les prépositions, pratiquez-les dans des phrases complètes
+            et mémorisez les expressions courantes. Les prépositions sont souvent idiomatiques : leur usage précis
+            s'apprend par la pratique et la lecture régulières.
+        </div>
+
+        <div class="intro" style="background: #e3f2fd; border-left-color: #2196f3; margin-top: 30px;">
+            <strong>🎯 Objectifs atteints :</strong> Après avoir complété ces exercices, vous devriez être capable
+            d'identifier les prépositions arabes, de mettre le nom qui suit au génitif, d'attacher les prépositions
+            monosyllabiques et de combiner les prépositions avec les pronoms suffixes. Bravo ! 🎉
+        </div>
+    </div>
+</body>
+
+</html>

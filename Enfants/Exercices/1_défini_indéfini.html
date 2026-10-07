@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercices : Défini et Indéfini en arabe</title>
+    <style>
+/* ===== AMANA – feuille de style commune (structure, impression, accessibilité) =====
+   Les thèmes (theme_adulte / theme_enfant) ne changent que l'apparence : couleurs, polices, formes.
+   Pas d'animation, pas de JavaScript : tout le contenu est visible partout. */
+:root {
+    --ink: #1d1d1b; --mut: #5b5b57; --line: #d9d6cf; --accent: #0f766e; --paper: #fff;
+    --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --ar: "Amiri", "Noto Naskh Arabic", serif;
+    --radius: 8px;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.6 var(--font); overflow-wrap: break-word; }
+.container { max-width: 880px; margin: 0 auto; padding: 20px 18px 48px; }
+h1, h2, h3, h4 { line-height: 1.25; margin: 1.2em 0 .45em; }
+h1 { margin-top: .3em; }
+p { margin: .55em 0; }
+ul, ol { margin: .5em 0; padding-left: 1.4em; }
+li { margin: .25em 0; }
+img { max-width: 100%; height: auto; }
+.arabic, .ar { font-family: var(--ar); direction: rtl; unicode-bidi: isolate; }
+.arabic-title { direction: rtl; font-family: var(--ar); }
+.table-wrapper { overflow-x: auto; margin: 12px 0; -webkit-overflow-scrolling: touch; }
+table { border-collapse: collapse; width: 100%; }
+th, td { padding: 6px 8px; text-align: left; vertical-align: top; }
+td .arabic, th .arabic { white-space: nowrap; }
+/* exercices */
+.answer-space { display: inline-block; width: 200px; max-width: 100%; min-height: 1.4em; vertical-align: bottom; margin: 0 .5em; border-bottom: 1.5px solid var(--ink); }
+.wide-space { width: 340px; }
+.question { margin: 14px 0; line-height: 2; }
+.section-divider { display: flex; align-items: center; gap: 14px; margin: 1.8em 0 1.2em; }
+/* repères de grammaire (communs aux deux niveaux) */
+.hamza { color: #c2410c; font-weight: 700; }
+.solaire { color: #c2410c; font-weight: 700; }
+.lunaire { color: #1d4ed8; font-weight: 700; }
+.letters { font: 700 1.8em/2 var(--ar); text-align: center; direction: rtl; color: var(--accent); letter-spacing: .15em; }
+/* logo de l'association (voir Styles/logo) */
+.brand { display: flex; align-items: center; gap: 10px; max-width: 880px; margin: 0 auto; padding: 14px 18px 0; }
+.brand img, .brand svg, .brand-logo { height: 46px; width: auto; }
+.brand-logo { min-width: 46px; display: inline-grid; place-items: center; padding: 0 8px; border: 1.5px dashed #888; border-radius: 8px; font: 600 .6rem/1 var(--font); letter-spacing: .12em; color: #666; }
+.brand-name { font-size: .8rem; color: var(--mut); }
+@media (max-width: 600px) {
+    .container { padding: 14px 12px 36px; }
+    .answer-space { width: 140px; }
+    .wide-space { width: min(340px, 100%); }
+}
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+/* impression : fond blanc, pas d'ombre, logo répété sur chaque page */
+@page { size: A4; margin: 18mm 14mm 16mm; }
+@media print {
+    * { background: transparent !important; box-shadow: none !important; animation: none !important; transition: none !important; }
+    html, body { background: #fff !important; color: #000; }
+    body { font-size: 11pt; line-height: 1.5; }
+    .container { max-width: none; padding: 0; }
+    .brand { position: fixed; top: -13mm; right: 0; left: 0; max-width: none; padding: 0; }
+    .brand img, .brand svg, .brand-logo { height: 9mm; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    tr, .rule-box, .example-box, .info-box, .warning-box, .note, .intro, .question, .exercise, .phrase-example { break-inside: avoid; }
+    .table-wrapper { overflow: visible; }
+    a { color: inherit; text-decoration: none; }
+}
+</style>
+    <link rel="stylesheet" href="../../fonts/fonts.css">
+<style>
+/* ===== Thème ENFANT : coloré et ludique (modèle K4 : mascotte et bulles) ===== */
+:root { --accent: #7c3aed; --font: "Baloo 2", "Comic Sans MS", system-ui, sans-serif; --ar: "Amiri", "Noto Naskh Arabic", serif; --radius: 18px; }
+body { font-size: 17px; }
+h1 { font-size: 1.8rem; color: var(--accent); }
+.arabic-title { font-size: 1.6rem; color: var(--mut); margin: 0 0 1.2em; }
+h2 { font-size: 1.35rem; color: #0d9488; margin-top: 1.7em; padding-bottom: .15em; border-bottom: 3px dotted var(--line); }
+h3 { font-size: 1.1rem; color: #d97706; }
+h4 { font-size: 1rem; margin: .2em 0 .3em; }
+.arabic, .ar { font-size: 1.35em; }
+.highlight { font-weight: 700; border-bottom: 3px solid #f59e0b; }
+/* encadrés = bulles de dialogue avec une mascotte */
+.intro, .rule-box, .example-box, .info-box, .warning-box, .note { --c: var(--accent); position: relative; margin: 18px 0 18px 60px; padding: 10px 16px; border: 3px solid var(--c); border-radius: var(--radius); }
+.intro::before, .rule-box::before, .example-box::before, .info-box::before, .warning-box::before, .note::before { position: absolute; left: -58px; top: 4px; font-size: 2.1rem; line-height: 1.2; }
+.intro::after, .rule-box::after, .example-box::after, .info-box::after, .warning-box::after, .note::after { content: ""; position: absolute; left: -11px; top: 18px; width: 16px; height: 16px; background: #fff; border-left: 3px solid var(--c); border-bottom: 3px solid var(--c); transform: rotate(45deg); }
+.intro::before { content: "🦉"; }
+.rule-box { --c: #0d9488; } .rule-box::before { content: "💡"; }
+.example-box { --c: #f59e0b; } .example-box::before { content: "🌟"; }
+.info-box { --c: #2563eb; } .info-box::before { content: "🔍"; }
+.warning-box { --c: #dc2626; } .warning-box::before { content: "⚠️"; }
+.note { --c: #db2777; } .note::before { content: "📌"; }
+.phrase-example, .example-item { border: 3px solid var(--line); border-radius: 14px; padding: 8px 14px; margin: 10px 0; }
+th { color: var(--accent); border-bottom: 3px solid var(--accent); font-weight: 700; }
+td { border-bottom: 2px dotted var(--line); }
+/* exercices */
+.exercise { border: 3px dashed #db2777; border-radius: 14px; padding: 10px 16px; margin: 14px 0 22px; }
+.exercise h3 { margin: 0 0 .5em; color: #db2777; font-size: 1.05rem; }
+.section-number { display: inline-flex; align-items: center; justify-content: center; width: 1.9em; height: 1.9em; margin-right: .5em; border: 3px solid var(--accent); border-radius: 50%; color: var(--accent); font-weight: 700; font-size: .85em; }
+.question { border-left: 4px solid #0d9488; padding: 4px 12px; }
+.answer-space { border-bottom-width: 2px; border-bottom-style: dashed; }
+.section-divider { color: var(--accent); }
+@media (max-width: 520px) {
+    .intro, .rule-box, .example-box, .info-box, .warning-box, .note { margin-left: 44px; }
+    .intro::before, .rule-box::before, .example-box::before, .info-box::before, .warning-box::before, .note::before { left: -44px; font-size: 1.7rem; }
+    .intro::after, .rule-box::after, .example-box::after, .info-box::after, .warning-box::after, .note::after { display: none; }
+}
+</style>
+</head>
+
+<body class="exercices">
+    <!-- Logo de l'association : remplacer le contenu de .brand-logo par <img src="data:image/svg+xml;base64,..." alt="Logo de l'association">
+     (ou un <svg> en ligne). Ce fichier est inclus dans toutes les pages : une seule modification suffit. -->
+<header class="brand">
+    <span class="brand-logo" role="img" aria-label="Logo de l'association">LOGO</span>
+    <span class="brand-name">Nom de l'association</span>
+</header>
+    <div class="container">
+        <h1>📝 Exercices Pratiques</h1>
+        <div class="arabic-title">تَمَارِين</div>
+
+        <div class="intro">
+            <strong>👋 Instructions :</strong> Complétez les exercices suivants pour pratiquer le défini et l'indéfini
+            en arabe. N'oubliez pas : pas d'article indéfini en arabe, juste le tanwīn ! Pour le défini, ajoutez <span
+                class="arabic">ال</span> au début.
+        </div>
+
+        <h2><span class="section-number">1</span>Identifiez : défini ou indéfini ?</h2>
+        <div class="exercise">
+            <h3>Indiquez si les mots suivants sont définis (D) ou indéfinis (I)</h3>
+            <ol>
+                <li><span class="arabic">كِتَابٌ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">الكِتَابُ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">مَدْرَسَةٌ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">البَيْتُ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">رَجُلٍ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">الطَّالِبُ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">مُعَلِّمَةً</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">القَلَمُ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">سَيَّارَةٌ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">الشَّجَرَةُ</span> → <span class="answer-space"></span></li>
+            </ol>
+        </div>
+
+        <h2><span class="section-number">2</span>Ajoutez l'article défini</h2>
+        <div class="exercise">
+            <h3>Transformez les mots indéfinis en définis</h3>
+            <p><em>Rappel : Ajoutez ال et supprimez le tanwīn</em></p>
+            <ol>
+                <li><span class="arabic">كِتَابٌ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">مَدْرَسَةٌ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">رَجُلٌ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">طَالِبٌ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">مُعَلِّمَةٌ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">بَيْتٌ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">سَيَّارَةٌ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">قَلَمٌ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">بَابٌ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">شَجَرَةٌ</span> → <span class="answer-space"></span></li>
+            </ol>
+        </div>
+
+        <h2><span class="section-number">3</span>Retirez l'article défini</h2>
+        <div class="exercise">
+            <h3>Transformez les mots définis en indéfinis</h3>
+            <p><em>Rappel : Retirez ال et ajoutez le tanwīn ٌ</em></p>
+            <ol>
+                <li><span class="arabic">الكِتَابُ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">المَدْرَسَةُ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">الرَّجُلُ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">الطَّالِبُ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">البَيْتُ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">السَّيَّارَةُ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">القَلَمُ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">البَابُ</span> → <span class="answer-space"></span></li>
+            </ol>
+        </div>
+
+        <h2><span class="section-number">4</span>Les trois cas : nominatif, accusatif, génitif</h2>
+        <div class="exercise">
+            <h3>Complétez le tableau avec les bonnes formes</h3>
+            <div class="table-wrapper"><table>
+                <thead>
+                    <tr>
+                        <th>Sens</th>
+                        <th>Indéfini nominatif<br>(ـٌ)</th>
+                        <th>Indéfini accusatif<br>(ـًا)</th>
+                        <th>Indéfini génitif<br>(ـٍ)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>un livre</td>
+                        <td>كِتَابٌ</td>
+                        <td><span class="answer-space"></span></td>
+                        <td><span class="answer-space"></span></td>
+                    </tr>
+                    <tr>
+                        <td>un homme</td>
+                        <td><span class="answer-space"></span></td>
+                        <td>رَجُلاً</td>
+                        <td><span class="answer-space"></span></td>
+                    </tr>
+                    <tr>
+                        <td>un étudiant</td>
+                        <td><span class="answer-space"></span></td>
+                        <td><span class="answer-space"></span></td>
+                        <td>طَالِبٍ</td>
+                    </tr>
+                    <tr>
+                        <td>une maison</td>
+                        <td>بَيْتٌ</td>
+                        <td><span class="answer-space"></span></td>
+                        <td><span class="answer-space"></span></td>
+                    </tr>
+                </tbody>
+            </table></div>
+        </div>
+
+        <h2><span class="section-number">5</span>Le tanwīn avec ة (tā marbūṭa)</h2>
+        <div class="exercise">
+            <h3>Attention ! Les mots avec ة ne prennent PAS de alif au cas accusatif</h3>
+            <p>Écrivez la forme correcte au cas accusatif (complément) :</p>
+            <ol>
+                <li><span class="arabic">مَدْرَسَة</span> (école) → <span class="answer-space"></span></li>
+                <li><span class="arabic">سَيَّارَة</span> (voiture) → <span class="answer-space"></span></li>
+                <li><span class="arabic">شَجَرَة</span> (arbre) → <span class="answer-space"></span></li>
+                <li><span class="arabic">مُعَلِّمَة</span> (enseignante) → <span class="answer-space"></span></li>
+                <li><span class="arabic">طَالِبَة</span> (étudiante) → <span class="answer-space"></span></li>
+                <li><span class="arabic">حَدِيقَة</span> (jardin) → <span class="answer-space"></span></li>
+            </ol>
+        </div>
+
+        <h2><span class="section-number">6</span>Phrases complètes</h2>
+        <div class="exercise">
+            <h3>Traduisez les phrases suivantes en arabe</h3>
+            <ol>
+                <li>Un homme est venu → <span class="answer-space wide-space"></span></li>
+                <li>J'ai vu un livre → <span class="answer-space wide-space"></span></li>
+                <li>Le garçon est à l'école → <span class="answer-space wide-space"></span></li>
+                <li>L'éducation est importante → <span class="answer-space wide-space"></span></li>
+                <li>Il est parti avec un homme → <span class="answer-space wide-space"></span></li>
+                <li>Dans une maison → <span class="answer-space wide-space"></span></li>
+                <li>Le livre est sur la table → <span class="answer-space wide-space"></span></li>
+            </ol>
+        </div>
+
+        <h2><span class="section-number">7</span>Complétez avec défini ou indéfini</h2>
+        <div class="exercise">
+            <h3>Choisissez la forme correcte selon le contexte</h3>
+            <ol>
+                <li>هَذَا ______ (كِتَابٌ / الكِتَابُ) → Ceci est un livre</li>
+                <li>______ (كِتَابٌ / الكِتَابُ) عَلَى الطَّاوِلَةِ → Le livre est sur la table</li>
+                <li>رَأَيْتُ ______ (رَجُلاً / الرَّجُلَ) → J'ai vu un homme</li>
+                <li>______ (رَجُلُ / الرَّجُلُ) طَوِيلٌ → L'homme est grand</li>
+                <li>ذَهَبَ إِلَى ______ (مَدْرَسَةٍ / المَدْرَسَةِ) → Il est allé à l'école</li>
+                <li>هَذِهِ ______ (سَيَّارَةٌ / السَّيَّارَةُ) → Ceci est une voiture</li>
+                <li>______ (طَالِبُ / الطَّالِبُ) مُجْتَهِدٌ → L'étudiant est travailleur</li>
+                <li>فِي ______ (بَيْتٍ / البَيْتِ) → dans la maison</li>
+            </ol>
+        </div>
+
+        <h2><span class="section-number">8</span>Transformations multiples</h2>
+        <div class="exercise">
+            <h3>Écrivez le mot dans toutes ses formes</h3>
+
+            <div class="question">
+                <strong>Mot : كِتَاب (livre)</strong><br><br>
+                Indéfini nominatif : <span class="answer-space"></span><br>
+                Indéfini accusatif : <span class="answer-space"></span><br>
+                Indéfini génitif : <span class="answer-space"></span><br>
+                Défini nominatif : <span class="answer-space"></span><br>
+                Défini accusatif : <span class="answer-space"></span><br>
+                Défini génitif : <span class="answer-space"></span>
+            </div>
+
+            <div class="question">
+                <strong>Mot : مَدْرَسَة (école)</strong><br><br>
+                Indéfini nominatif : <span class="answer-space"></span><br>
+                Indéfini accusatif : <span class="answer-space"></span><br>
+                Indéfini génitif : <span class="answer-space"></span><br>
+                Défini nominatif : <span class="answer-space"></span><br>
+                Défini accusatif : <span class="answer-space"></span><br>
+                Défini génitif : <span class="answer-space"></span>
+            </div>
+        </div>
+
+        <h2><span class="section-number">9</span>Trouvez l'erreur</h2>
+        <div class="exercise">
+            <h3>Chaque mot contient une erreur. Corrigez-le :</h3>
+            <ol>
+                <li><span class="arabic">الكِتَابٌ</span> (le livre au nominatif) → <span class="answer-space"></span>
+                </li>
+                <li><span class="arabic">رَجُلُ</span> (un homme au nominatif indéfini) → <span
+                        class="answer-space"></span></li>
+                <li><span class="arabic">مَدْرَسَتًا</span> (une école à l'accusatif) → <span
+                        class="answer-space"></span></li>
+                <li><span class="arabic">البَيْتٌ</span> (la maison au nominatif) → <span class="answer-space"></span>
+                </li>
+                <li><span class="arabic">طَالِبن</span> (un étudiant au génitif) → <span class="answer-space"></span>
+                </li>
+                <li><span class="arabic">الالسَّيَّارَةُ</span> (la voiture) → <span class="answer-space"></span></li>
+            </ol>
+        </div>
+
+        <h2><span class="section-number">10</span>Exercice de compréhension</h2>
+        <div class="exercise">
+            <h3>Lisez et répondez</h3>
+
+            <div class="question">
+                <p><span class="arabic">رَأَيْتُ رَجُلاً فِي المَدْرَسَةِ. الرَّجُلُ مُعَلِّمٌ.</span></p>
+                <p><strong>Questions :</strong></p>
+                <ol>
+                    <li>Combien de mots indéfinis y a-t-il dans la première phrase ? <span class="answer-space"></span>
+                    </li>
+                    <li>Combien de mots définis y a-t-il dans la première phrase ? <span class="answer-space"></span>
+                    </li>
+                    <li>À quel cas est le mot رَجُلاً ? <span class="answer-space"></span></li>
+                    <li>Pourquoi le mot مُعَلِّمٌ a-t-il le tanwīn ? <span class="answer-space"></span></li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="note">
+            <strong>💡 Conseil :</strong> Pour réviser, relisez le cours et faites attention aux trois formes du tanwīn
+            : ٌ (nominatif), ً (accusatif), ٍ (génitif). N'oubliez pas que l'article défini ال supprime toujours le
+            tanwīn !
+        </div>
+
+        <div class="intro" style="background: #e3f2fd; border-left-color: #2196f3; margin-top: 30px;">
+            <strong>🎯 Objectifs atteints :</strong> Après avoir complété ces exercices, vous devriez être capable de
+            distinguer le défini de l'indéfini, d'ajouter et de retirer l'article ال, et d'utiliser correctement les
+            trois formes du tanwīn !
+        </div>
+    </div>
+</body>
+
+</html>

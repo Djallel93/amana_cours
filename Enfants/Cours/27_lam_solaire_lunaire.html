@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le lām solaire et lunaire</title>
+    <style>
+/* ===== AMANA – feuille de style commune (structure, impression, accessibilité) =====
+   Les thèmes (theme_adulte / theme_enfant) ne changent que l'apparence : couleurs, polices, formes.
+   Pas d'animation, pas de JavaScript : tout le contenu est visible partout. */
+:root {
+    --ink: #1d1d1b; --mut: #5b5b57; --line: #d9d6cf; --accent: #0f766e; --paper: #fff;
+    --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --ar: "Amiri", "Noto Naskh Arabic", serif;
+    --radius: 8px;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.6 var(--font); overflow-wrap: break-word; }
+.container { max-width: 880px; margin: 0 auto; padding: 20px 18px 48px; }
+h1, h2, h3, h4 { line-height: 1.25; margin: 1.2em 0 .45em; }
+h1 { margin-top: .3em; }
+p { margin: .55em 0; }
+ul, ol { margin: .5em 0; padding-left: 1.4em; }
+li { margin: .25em 0; }
+img { max-width: 100%; height: auto; }
+.arabic, .ar { font-family: var(--ar); direction: rtl; unicode-bidi: isolate; }
+.arabic-title { direction: rtl; font-family: var(--ar); }
+.table-wrapper { overflow-x: auto; margin: 12px 0; -webkit-overflow-scrolling: touch; }
+table { border-collapse: collapse; width: 100%; }
+th, td { padding: 6px 8px; text-align: left; vertical-align: top; }
+td .arabic, th .arabic { white-space: nowrap; }
+/* exercices */
+.answer-space { display: inline-block; width: 200px; max-width: 100%; min-height: 1.4em; vertical-align: bottom; margin: 0 .5em; border-bottom: 1.5px solid var(--ink); }
+.wide-space { width: 340px; }
+.question { margin: 14px 0; line-height: 2; }
+.section-divider { display: flex; align-items: center; gap: 14px; margin: 1.8em 0 1.2em; }
+/* repères de grammaire (communs aux deux niveaux) */
+.hamza { color: #c2410c; font-weight: 700; }
+.solaire { color: #c2410c; font-weight: 700; }
+.lunaire { color: #1d4ed8; font-weight: 700; }
+.letters { font: 700 1.8em/2 var(--ar); text-align: center; direction: rtl; color: var(--accent); letter-spacing: .15em; }
+/* logo de l'association (voir Styles/logo) */
+.brand { display: flex; align-items: center; gap: 10px; max-width: 880px; margin: 0 auto; padding: 14px 18px 0; }
+.brand img, .brand svg, .brand-logo { height: 46px; width: auto; }
+.brand-logo { min-width: 46px; display: inline-grid; place-items: center; padding: 0 8px; border: 1.5px dashed #888; border-radius: 8px; font: 600 .6rem/1 var(--font); letter-spacing: .12em; color: #666; }
+.brand-name { font-size: .8rem; color: var(--mut); }
+@media (max-width: 600px) {
+    .container { padding: 14px 12px 36px; }
+    .answer-space { width: 140px; }
+    .wide-space { width: min(340px, 100%); }
+}
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+/* impression : fond blanc, pas d'ombre, logo répété sur chaque page */
+@page { size: A4; margin: 18mm 14mm 16mm; }
+@media print {
+    * { background: transparent !important; box-shadow: none !important; animation: none !important; transition: none !important; }
+    html, body { background: #fff !important; color: #000; }
+    body { font-size: 11pt; line-height: 1.5; }
+    .container { max-width: none; padding: 0; }
+    .brand { position: fixed; top: -13mm; right: 0; left: 0; max-width: none; padding: 0; }
+    .brand img, .brand svg, .brand-logo { height: 9mm; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    tr, .rule-box, .example-box, .info-box, .warning-box, .note, .intro, .question, .exercise, .phrase-example { break-inside: avoid; }
+    .table-wrapper { overflow: visible; }
+    a { color: inherit; text-decoration: none; }
+}
+</style>
+    <link rel="stylesheet" href="../../fonts/fonts.css">
+<style>
+/* ===== Thème ENFANT : coloré et ludique (modèle K4 : mascotte et bulles) ===== */
+:root { --accent: #7c3aed; --font: "Baloo 2", "Comic Sans MS", system-ui, sans-serif; --ar: "Amiri", "Noto Naskh Arabic", serif; --radius: 18px; }
+body { font-size: 17px; }
+h1 { font-size: 1.8rem; color: var(--accent); }
+.arabic-title { font-size: 1.6rem; color: var(--mut); margin: 0 0 1.2em; }
+h2 { font-size: 1.35rem; color: #0d9488; margin-top: 1.7em; padding-bottom: .15em; border-bottom: 3px dotted var(--line); }
+h3 { font-size: 1.1rem; color: #d97706; }
+h4 { font-size: 1rem; margin: .2em 0 .3em; }
+.arabic, .ar { font-size: 1.35em; }
+.highlight { font-weight: 700; border-bottom: 3px solid #f59e0b; }
+/* encadrés = bulles de dialogue avec une mascotte */
+.intro, .rule-box, .example-box, .info-box, .warning-box, .note { --c: var(--accent); position: relative; margin: 18px 0 18px 60px; padding: 10px 16px; border: 3px solid var(--c); border-radius: var(--radius); }
+.intro::before, .rule-box::before, .example-box::before, .info-box::before, .warning-box::before, .note::before { position: absolute; left: -58px; top: 4px; font-size: 2.1rem; line-height: 1.2; }
+.intro::after, .rule-box::after, .example-box::after, .info-box::after, .warning-box::after, .note::after { content: ""; position: absolute; left: -11px; top: 18px; width: 16px; height: 16px; background: #fff; border-left: 3px solid var(--c); border-bottom: 3px solid var(--c); transform: rotate(45deg); }
+.intro::before { content: "🦉"; }
+.rule-box { --c: #0d9488; } .rule-box::before { content: "💡"; }
+.example-box { --c: #f59e0b; } .example-box::before { content: "🌟"; }
+.info-box { --c: #2563eb; } .info-box::before { content: "🔍"; }
+.warning-box { --c: #dc2626; } .warning-box::before { content: "⚠️"; }
+.note { --c: #db2777; } .note::before { content: "📌"; }
+.phrase-example, .example-item { border: 3px solid var(--line); border-radius: 14px; padding: 8px 14px; margin: 10px 0; }
+th { color: var(--accent); border-bottom: 3px solid var(--accent); font-weight: 700; }
+td { border-bottom: 2px dotted var(--line); }
+/* exercices */
+.exercise { border: 3px dashed #db2777; border-radius: 14px; padding: 10px 16px; margin: 14px 0 22px; }
+.exercise h3 { margin: 0 0 .5em; color: #db2777; font-size: 1.05rem; }
+.section-number { display: inline-flex; align-items: center; justify-content: center; width: 1.9em; height: 1.9em; margin-right: .5em; border: 3px solid var(--accent); border-radius: 50%; color: var(--accent); font-weight: 700; font-size: .85em; }
+.question { border-left: 4px solid #0d9488; padding: 4px 12px; }
+.answer-space { border-bottom-width: 2px; border-bottom-style: dashed; }
+.section-divider { color: var(--accent); }
+@media (max-width: 520px) {
+    .intro, .rule-box, .example-box, .info-box, .warning-box, .note { margin-left: 44px; }
+    .intro::before, .rule-box::before, .example-box::before, .info-box::before, .warning-box::before, .note::before { left: -44px; font-size: 1.7rem; }
+    .intro::after, .rule-box::after, .example-box::after, .info-box::after, .warning-box::after, .note::after { display: none; }
+}
+</style>
+</head>
+
+<body class="cours">
+    <!-- Logo de l'association : remplacer le contenu de .brand-logo par <img src="data:image/svg+xml;base64,..." alt="Logo de l'association">
+     (ou un <svg> en ligne). Ce fichier est inclus dans toutes les pages : une seule modification suffit. -->
+<header class="brand">
+    <span class="brand-logo" role="img" aria-label="Logo de l'association">LOGO</span>
+    <span class="brand-name">Nom de l'association</span>
+</header>
+    <div class="container">
+        <h1>Le lām solaire et lunaire</h1>
+        <div class="arabic-title">اللَّامُ الشَّمْسِيَّةُ وَالقَمَرِيَّةُ</div>
+        <div class="intro">Dans la leçon 1, tu as appris que l'article défini est <span class="arabic">ال</span>. Mais il ne se prononce pas toujours de la même façon ! Selon la <strong>première lettre du mot</strong>, le <span class="arabic">ل</span> (<em>lām</em>) de l'article est soit <strong>prononcé</strong> (lettre <strong>lunaire</strong>), soit <strong>absorbé</strong> par la lettre suivante (lettre <strong>solaire</strong>). À l'écrit, le lām est <strong>toujours écrit</strong> : seule la prononciation change.</div>
+        <h2>🌙☀️ Le principe</h2>
+        <div class="rule-box"><p>Les 28 lettres de l'alphabet se partagent en deux groupes de <strong>14</strong>, nommés d'après deux mots :</p>
+            <ul><li><span class="arabic">القَمَرُ</span> (<em>al-qamar</em>, « la lune ») : le lām se <strong>lit</strong> → lettres <strong>lunaires</strong> (<span class="arabic">الحُرُوفُ القَمَرِيَّةُ</span>)</li>
+            <li><span class="arabic">الشَّمْسُ</span> (<em>ash-shams</em>, « le soleil ») : le lām <strong>ne se lit pas</strong> → lettres <strong>solaires</strong> (<span class="arabic">الحُرُوفُ الشَّمْسِيَّةُ</span>)</li></ul></div>
+        <div class="table-wrapper"><table><thead><tr><th></th><th>Lettre lunaire 🌙</th><th>Lettre solaire ☀️</th></tr></thead><tbody><tr><td><strong>Le lām de ال</strong></td><td>Prononcé</td><td>Non prononcé (assimilé)</td></tr><tr><td><strong>Signe écrit</strong></td><td>Sukūn sur le lām : <span class="arabic">الْ</span></td><td>Pas de sukūn, mais une <strong>chadda</strong> sur la 1ʳᵉ lettre du mot : <span class="arabic">الشَّ</span></td></tr><tr><td><strong>Prononciation</strong></td><td><em>al-</em> + mot</td><td>La 1ʳᵉ lettre est <strong>doublée</strong> : <em>ash-</em> + <em>shams</em></td></tr><tr><td><strong>Exemple</strong></td><td><span class="arabic">الْقَمَرُ</span><br><em>al-qamaru</em></td><td><span class="arabic">الشَّمْسُ</span><br><em>ash-shamsu</em></td></tr></tbody></table></div>
+        <h2>🌙 Les 14 lettres lunaires</h2>
+        <div class="letters">أ ب ج ح خ ع غ ف ق ك م ه و ي</div>
+        <div class="note"><strong>🧠 Astuce :</strong> la phrase <span class="arabic">ابْغِ حَجَّكَ وَخَفْ عَقِيمَهُ</span> contient exactement les 14 lettres lunaires (<em>ا ب غ ح ج ك و خ ف ع ق ي م ه</em>).</div>
+        <div class="table-wrapper"><table><thead><tr><th>Lettre</th><th>Arabe</th><th>Prononciation</th><th>Français</th></tr></thead><tbody><tr><td><span class="lunaire">أ</span></td><td><span class="arabic">الْأَخُ</span></td><td>al-ʾakhu</td><td>le frère</td></tr><tr><td><span class="lunaire">ب</span></td><td><span class="arabic">الْبَيْتُ</span></td><td>al-baytu</td><td>la maison</td></tr><tr><td><span class="lunaire">ج</span></td><td><span class="arabic">الْجَمَلُ</span></td><td>al-jamalu</td><td>le chameau</td></tr><tr><td><span class="lunaire">ح</span></td><td><span class="arabic">الْحَدِيقَةُ</span></td><td>al-ḥadīqatu</td><td>le jardin</td></tr><tr><td><span class="lunaire">خ</span></td><td><span class="arabic">الْخُبْزُ</span></td><td>al-khubzu</td><td>le pain</td></tr><tr><td><span class="lunaire">ع</span></td><td><span class="arabic">الْعَيْنُ</span></td><td>al-ʿaynu</td><td>l'œil</td></tr><tr><td><span class="lunaire">غ</span></td><td><span class="arabic">الْغُرْفَةُ</span></td><td>al-ghurfatu</td><td>la chambre</td></tr><tr><td><span class="lunaire">ف</span></td><td><span class="arabic">الْفِيلُ</span></td><td>al-fīlu</td><td>l'éléphant</td></tr><tr><td><span class="lunaire">ق</span></td><td><span class="arabic">الْقَمَرُ</span></td><td>al-qamaru</td><td>la lune</td></tr><tr><td><span class="lunaire">ك</span></td><td><span class="arabic">الْكِتَابُ</span></td><td>al-kitābu</td><td>le livre</td></tr><tr><td><span class="lunaire">م</span></td><td><span class="arabic">الْمَدْرَسَةُ</span></td><td>al-madrasatu</td><td>l'école</td></tr><tr><td><span class="lunaire">ه</span></td><td><span class="arabic">الْهَاتِفُ</span></td><td>al-hātifu</td><td>le téléphone</td></tr><tr><td><span class="lunaire">و</span></td><td><span class="arabic">الْوَلَدُ</span></td><td>al-waladu</td><td>le garçon</td></tr><tr><td><span class="lunaire">ي</span></td><td><span class="arabic">الْيَدُ</span></td><td>al-yadu</td><td>la main</td></tr></tbody></table></div>
+        <h2>☀️ Les 14 lettres solaires</h2>
+        <div class="letters">ت ث د ذ ر ز س ش ص ض ط ظ ل ن</div>
+        <div class="note"><strong>🧠 Astuce :</strong> les lettres solaires sont des consonnes articulées avec la pointe ou l'avant de la langue, près des dents, c'est-à-dire au même endroit que le lām ou tout près. C'est pourquoi le lām se fond dans la lettre qui suit. Pour les retrouver : ce sont toutes les lettres qui ne sont pas lunaires.</div>
+        <div class="table-wrapper"><table><thead><tr><th>Lettre</th><th>Arabe</th><th>Prononciation</th><th>Français</th></tr></thead><tbody><tr><td><span class="solaire">ت</span></td><td><span class="arabic">التِّلْمِيذُ</span></td><td>at-tilmīdhu</td><td>l'élève</td></tr><tr><td><span class="solaire">ث</span></td><td><span class="arabic">الثَّلْجُ</span></td><td>ath-thalju</td><td>la neige</td></tr><tr><td><span class="solaire">د</span></td><td><span class="arabic">الدَّرْسُ</span></td><td>ad-darsu</td><td>la leçon</td></tr><tr><td><span class="solaire">ذ</span></td><td><span class="arabic">الذِّئْبُ</span></td><td>adh-dhiʾbu</td><td>le loup</td></tr><tr><td><span class="solaire">ر</span></td><td><span class="arabic">الرَّجُلُ</span></td><td>ar-rajulu</td><td>l'homme</td></tr><tr><td><span class="solaire">ز</span></td><td><span class="arabic">الزَّهْرَةُ</span></td><td>az-zahratu</td><td>la fleur</td></tr><tr><td><span class="solaire">س</span></td><td><span class="arabic">السَّيَّارَةُ</span></td><td>as-sayyāratu</td><td>la voiture</td></tr><tr><td><span class="solaire">ش</span></td><td><span class="arabic">الشَّمْسُ</span></td><td>ash-shamsu</td><td>le soleil</td></tr><tr><td><span class="solaire">ص</span></td><td><span class="arabic">الصَّبَاحُ</span></td><td>aṣ-ṣabāḥu</td><td>le matin</td></tr><tr><td><span class="solaire">ض</span></td><td><span class="arabic">الضَّيْفُ</span></td><td>aḍ-ḍayfu</td><td>l'invité</td></tr><tr><td><span class="solaire">ط</span></td><td><span class="arabic">الطَّالِبُ</span></td><td>aṭ-ṭālibu</td><td>l'étudiant</td></tr><tr><td><span class="solaire">ظ</span></td><td><span class="arabic">الظُّهْرُ</span></td><td>aẓ-ẓuhru</td><td>midi</td></tr><tr><td><span class="solaire">ل</span></td><td><span class="arabic">اللَّيْلُ</span></td><td>al-laylu</td><td>la nuit</td></tr><tr><td><span class="solaire">ن</span></td><td><span class="arabic">النَّجْمُ</span></td><td>an-najmu</td><td>l'étoile</td></tr></tbody></table></div>
+        <h2>🔄 Transformation : indéfini → défini</h2>
+        <div class="rule-box"><p>Les étapes de la leçon 1 restent valables (ajouter <span class="arabic">ال</span>, supprimer le tanwīn), avec <strong>une étape en plus</strong> :</p>
+            <ol><li>Ajouter <span class="arabic">ال</span></li><li>Supprimer le tanwīn</li><li><strong>Lettre lunaire →</strong> sukūn sur le lām <span class="arabic">الْ</span></li><li><strong>Lettre solaire →</strong> chadda sur la 1ʳᵉ lettre</li></ol></div>
+        <div class="table-wrapper"><table><thead><tr><th>Indéfini</th><th>Défini</th><th>Type</th><th>Prononciation</th></tr></thead><tbody><tr><td><span class="arabic">قَمَرٌ</span></td><td><span class="arabic">الْقَمَرُ</span></td><td><span class="lunaire">lunaire</span></td><td>al-qamaru</td></tr><tr><td><span class="arabic">شَمْسٌ</span></td><td><span class="arabic">الشَّمْسُ</span></td><td><span class="solaire">solaire</span></td><td>ash-shamsu</td></tr><tr><td><span class="arabic">كِتَابٌ</span></td><td><span class="arabic">الْكِتَابُ</span></td><td><span class="lunaire">lunaire</span></td><td>al-kitābu</td></tr><tr><td><span class="arabic">رَجُلٌ</span></td><td><span class="arabic">الرَّجُلُ</span></td><td><span class="solaire">solaire</span></td><td>ar-rajulu</td></tr><tr><td><span class="arabic">نَجْمٌ</span></td><td><span class="arabic">النَّجْمُ</span></td><td><span class="solaire">solaire</span></td><td>an-najmu</td></tr><tr><td><span class="arabic">بَيْتٌ</span></td><td><span class="arabic">الْبَيْتُ</span></td><td><span class="lunaire">lunaire</span></td><td>al-baytu</td></tr></tbody></table></div>
+        <h2>🔗 Liaison entre les mots</h2>
+        <div class="rule-box"><p>La hamza de <span class="arabic">ال</span> est une <strong>hamzat al-waṣl</strong> (voir la leçon 24) : elle disparaît quand le mot précédent est lié. Dans la phrase, on entend donc seulement le lām (lunaire) ou la lettre doublée (solaire).</p></div>
+        <div class="example-box"><h4>🗣️ En phrases :</h4>
+            <ul><li><span class="arabic">ذَهَبَ الوَلَدُ إِلَى المَدْرَسَةِ</span> → <em>dhahaba <strong>l</strong>-waladu ʾilā <strong>l</strong>-madrasati</em> (lunaires)</li>
+            <li><span class="arabic">قَرَأَ الطَّالِبُ الدَّرْسَ</span> → <em>qaraʾa <strong>ṭ-ṭ</strong>ālibu <strong>d-d</strong>arsa</em> (solaires)</li>
+            <li><span class="arabic">الشَّمْسُ فِي السَّمَاءِ</span> → <em>ash-shamsu fī <strong>s-s</strong>amāʾi</em></li></ul></div>
+        <h3>🔤 Avec les prépositions et la conjonction</h3>
+        <div class="table-wrapper"><table><thead><tr><th>Mot</th><th>Écriture</th><th>Prononciation</th></tr></thead><tbody><tr><td><span class="arabic">بِـ</span> + <span class="arabic">اللَّيْلُ</span></td><td><span class="arabic">بِاللَّيْلِ</span></td><td>bi-l-layli (« la nuit »)</td></tr><tr><td><span class="arabic">فِي</span> + <span class="arabic">الشَّمْسُ</span></td><td><span class="arabic">فِي الشَّمْسِ</span></td><td>fī sh-shamsi (« au soleil »)</td></tr><tr><td><span class="arabic">لِـ</span> + <span class="arabic">الْبَيْتُ</span></td><td><span class="arabic">لِلْبَيْتِ</span></td><td>lil-bayti (« pour la maison »)</td></tr><tr><td><span class="arabic">وَ</span> + <span class="arabic">الْقَمَرُ</span></td><td><span class="arabic">وَالْقَمَرُ</span></td><td>wa-l-qamaru (« et la lune »)</td></tr></tbody></table></div>
+        <div class="note"><strong>⚠️ Cas de <span class="arabic">لِـ</span> :</strong> avec la préposition <span class="arabic">لِـ</span>, l'alif de <span class="arabic">ال</span> n'est <strong>pas écrit</strong> : <span class="arabic">لِلْبَيْتِ</span> (et non <span class="arabic">لِالْبَيْتِ</span>).</div>
+        <div class="note"><strong>➡️ Et si le mot précédent se termine par un sukūn</strong> (<span class="arabic">مِنْ</span>, <span class="arabic">عَنْ</span>, <span class="arabic">هَلْ</span>, <span class="arabic">لَمْ يَكْتُبْ</span>…) ? Deux sukūn se rencontrent : on ajoute une voyelle (<span class="arabic">مِنَ الْبَيْتِ</span>, <span class="arabic">مِنَ الشَّمْسِ</span>). C'est l'objet de la leçon 28.</div>
+        <h2>🌟 Cas à connaître</h2>
+        <div class="note"><ul><li><strong>Le lām est solaire</strong> : <span class="arabic">اللَّيْلُ</span> se prononce <em>al-layl</em> avec un <em>l</em> long ; <span class="arabic">اللُّغَةُ</span> (<em>al-lugha</em>, « la langue »).</li>
+            <li><strong>Noms composés</strong> : <span class="arabic">عَبْدُ الرَّحْمَنِ</span> (<em>ʿabd ar-raḥmān</em>), <span class="arabic">نُورُ الدِّينِ</span> (<em>nūr ad-dīn</em>), <span class="arabic">صَلَاحُ الدِّينِ</span> (<em>ṣalāḥ ad-dīn</em>), <span class="arabic">عَبْدُ السَّلَامِ</span> (<em>ʿabd as-salām</em>) sont solaires ; <span class="arabic">عَبْدُ الكَرِيمِ</span> (<em>ʿabd al-karīm</em>) est lunaire.</li>
+            <li><strong>Sans voyelles</strong> : dans un texte non vocalisé, il n'y a ni chadda ni sukūn pour t'aider : il faut connaître les deux listes.</li></ul></div>
+        <div class="note"><strong>📚 Résumé de la leçon :</strong>
+            <ul><li>14 lettres lunaires 🌙 : <span class="arabic">ا ب ج ح خ ع غ ف ق ك م ه و ي</span> → le lām se prononce</li>
+            <li>14 lettres solaires ☀️ : <span class="arabic">ت ث د ذ ر ز س ش ص ض ط ظ ل ن</span> → le lām est assimilé, la 1ʳᵉ lettre est doublée (chadda)</li>
+            <li>Le lām s'écrit toujours ; seule la prononciation change</li>
+            <li>La hamza de <span class="arabic">ال</span> disparaît dans la liaison</li></ul></div>
+
+    </div>
+</body>
+
+</html>

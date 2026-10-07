@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercices : Le conditionnel en arabe — الجُمْلة الشَرْطِيّة</title>
+    <style>
+/* ===== AMANA – feuille de style commune (structure, impression, accessibilité) =====
+   Les thèmes (theme_adulte / theme_enfant) ne changent que l'apparence : couleurs, polices, formes.
+   Pas d'animation, pas de JavaScript : tout le contenu est visible partout. */
+:root {
+    --ink: #1d1d1b; --mut: #5b5b57; --line: #d9d6cf; --accent: #0f766e; --paper: #fff;
+    --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --ar: "Amiri", "Noto Naskh Arabic", serif;
+    --radius: 8px;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.6 var(--font); overflow-wrap: break-word; }
+.container { max-width: 880px; margin: 0 auto; padding: 20px 18px 48px; }
+h1, h2, h3, h4 { line-height: 1.25; margin: 1.2em 0 .45em; }
+h1 { margin-top: .3em; }
+p { margin: .55em 0; }
+ul, ol { margin: .5em 0; padding-left: 1.4em; }
+li { margin: .25em 0; }
+img { max-width: 100%; height: auto; }
+.arabic, .ar { font-family: var(--ar); direction: rtl; unicode-bidi: isolate; }
+.arabic-title { direction: rtl; font-family: var(--ar); }
+.table-wrapper { overflow-x: auto; margin: 12px 0; -webkit-overflow-scrolling: touch; }
+table { border-collapse: collapse; width: 100%; }
+th, td { padding: 6px 8px; text-align: left; vertical-align: top; }
+td .arabic, th .arabic { white-space: nowrap; }
+/* exercices */
+.answer-space { display: inline-block; width: 200px; max-width: 100%; min-height: 1.4em; vertical-align: bottom; margin: 0 .5em; border-bottom: 1.5px solid var(--ink); }
+.wide-space { width: 340px; }
+.question { margin: 14px 0; line-height: 2; }
+.section-divider { display: flex; align-items: center; gap: 14px; margin: 1.8em 0 1.2em; }
+/* repères de grammaire (communs aux deux niveaux) */
+.hamza { color: #c2410c; font-weight: 700; }
+.solaire { color: #c2410c; font-weight: 700; }
+.lunaire { color: #1d4ed8; font-weight: 700; }
+.letters { font: 700 1.8em/2 var(--ar); text-align: center; direction: rtl; color: var(--accent); letter-spacing: .15em; }
+/* logo de l'association (voir Styles/logo) */
+.brand { display: flex; align-items: center; gap: 10px; max-width: 880px; margin: 0 auto; padding: 14px 18px 0; }
+.brand img, .brand svg, .brand-logo { height: 46px; width: auto; }
+.brand-logo { min-width: 46px; display: inline-grid; place-items: center; padding: 0 8px; border: 1.5px dashed #888; border-radius: 8px; font: 600 .6rem/1 var(--font); letter-spacing: .12em; color: #666; }
+.brand-name { font-size: .8rem; color: var(--mut); }
+@media (max-width: 600px) {
+    .container { padding: 14px 12px 36px; }
+    .answer-space { width: 140px; }
+    .wide-space { width: min(340px, 100%); }
+}
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+/* impression : fond blanc, pas d'ombre, logo répété sur chaque page */
+@page { size: A4; margin: 18mm 14mm 16mm; }
+@media print {
+    * { background: transparent !important; box-shadow: none !important; animation: none !important; transition: none !important; }
+    html, body { background: #fff !important; color: #000; }
+    body { font-size: 11pt; line-height: 1.5; }
+    .container { max-width: none; padding: 0; }
+    .brand { position: fixed; top: -13mm; right: 0; left: 0; max-width: none; padding: 0; }
+    .brand img, .brand svg, .brand-logo { height: 9mm; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    tr, .rule-box, .example-box, .info-box, .warning-box, .note, .intro, .question, .exercise, .phrase-example { break-inside: avoid; }
+    .table-wrapper { overflow: visible; }
+    a { color: inherit; text-decoration: none; }
+}
+</style>
+    <link rel="stylesheet" href="../../fonts/fonts.css">
+<style>
+/* ===== Thème ADULTE : sobre et élégant (modèle A2) ===== */
+:root { --accent: #0f766e; --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; --ar: "Cairo", "Amiri", "Noto Naskh Arabic", sans-serif; }
+h1 { font-size: 1.7rem; letter-spacing: -.01em; }
+.arabic-title { font-size: 1.5rem; font-weight: 600; color: var(--accent); margin: 0 0 1.4em; padding-bottom: .5em; border-bottom: 1px solid var(--line); }
+h2 { font-size: 1.2rem; margin-top: 1.8em; padding-bottom: .25em; border-bottom: 1px solid var(--line); }
+h3 { font-size: 1.02rem; color: var(--accent); }
+h4 { font-size: .95rem; margin: .2em 0 .3em; }
+.arabic, .ar { font-size: 1.2em; font-weight: 500; }
+.hamza, .solaire, .lunaire { font-weight: 700; }
+strong { font-weight: 650; }
+.highlight { font-weight: 700; color: var(--accent); border-bottom: 2px solid var(--accent); }
+/* encadrés : un filet fin et une étiquette discrète */
+.rule-box, .example-box, .info-box, .warning-box { --c: var(--accent); position: relative; border: 1px solid var(--c); border-radius: var(--radius); padding: 10px 16px 12px; margin: 16px 0; }
+.rule-box::before, .example-box::before, .info-box::before, .warning-box::before { display: block; font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; color: var(--c); margin-bottom: 2px; }
+.rule-box::before { content: "Règle"; }
+.example-box { --c: #475569; } .example-box::before { content: "Exemple"; }
+.info-box { --c: #1d4ed8; } .info-box::before { content: "Information"; }
+.warning-box { --c: #b91c1c; } .warning-box::before { content: "Attention"; }
+.intro { border-left: 3px solid var(--accent); padding: 2px 0 2px 14px; margin: 0 0 1.4em; font-size: 1.04em; }
+.note { border-left: 3px solid #b45309; padding: 3px 0 3px 12px; margin: 14px 0; font-size: .95em; }
+.phrase-example, .example-item { border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 14px; margin: 10px 0; }
+th { color: var(--accent); font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; border-bottom: 2px solid var(--accent); }
+td { border-bottom: 1px solid var(--line); }
+/* exercices */
+.exercise { border-top: 1px solid var(--ink); padding: 10px 0 4px; margin: 14px 0 22px; }
+.exercise h3 { margin: 0 0 .6em; font-size: .95rem; color: var(--mut); font-weight: 600; }
+.section-number { display: inline-flex; align-items: center; justify-content: center; width: 1.9em; height: 1.9em; margin-right: .5em; border: 1.5px solid var(--accent); border-radius: 50%; color: var(--accent); font-size: .85em; font-weight: 700; }
+.question { border-left: 3px solid var(--line); padding: 4px 12px; }
+.section-divider { color: var(--accent); }
+</style>
+    <style>
+        /* Composants propres à ce cours (couleurs de rôle grammatical, cartes, etc.) */
+        .idha { color: #2e7d32; font-weight: bold; }
+        .in { color: #e65100; font-weight: bold; }
+        .law { color: #c62828; font-weight: bold; }
+    </style>
+</head>
+
+<body class="exercices">
+    <!-- Logo de l'association : remplacer le contenu de .brand-logo par <img src="data:image/svg+xml;base64,..." alt="Logo de l'association">
+     (ou un <svg> en ligne). Ce fichier est inclus dans toutes les pages : une seule modification suffit. -->
+<header class="brand">
+    <span class="brand-logo" role="img" aria-label="Logo de l'association">LOGO</span>
+    <span class="brand-name">Nom de l'association</span>
+</header>
+    <div class="container">
+
+        <h1>Exercices : Le conditionnel</h1>
+        <div class="arabic-title">الجُمْلة الشَرْطِيّة</div>
+
+        <div class="intro">
+            Trois nuances pour dire « si » : <span class="idha">إِذَا</span> pour l'éventualité probable,
+            <span class="in">إِنْ</span> pour l'hypothèse simplement possible, et <span class="law">لَوْ</span>
+            pour l'hypothèse irréelle ou contraire à la réalité. Chacune a sa propre construction.
+        </div>
+
+        <!-- ══════════════════════════════════════ -->
+        <h2><span class="section-number">1</span>Complétez avec إِذَا</h2>
+        <div class="exercise">
+            <h3>Complétez chaque phrase conditionnelle avec إِذَا, en respectant condition + réponse</h3>
+            <ol>
+                <li><span class="idha">إِذَا</span> <span class="arabic">دَرَسْتَ</span>، ___ (tu réussiras — futur avec
+                    سَـ) → <span class="answer-space wide-space"></span></li>
+                <li><span class="idha">إِذَا</span> <span class="arabic">جِئْتَ إِلَى بَيْتِي</span>، ___ (tu mangeras
+                    un bon plat — présent) → <span class="answer-space wide-space"></span></li>
+                <li><span class="idha">إِذَا</span> <span class="arabic">ذَهَبْتَ إِلَى السُّوقِ</span>، ___ (achète des
+                    pommes — impératif avec فَـ) → <span class="answer-space wide-space"></span></li>
+            </ol>
+        </div>
+
+        <!-- ══════════════════════════════════════ -->
+        <h2><span class="section-number">2</span>Quand ajouter فَـ devant la réponse ?</h2>
+        <div class="exercise">
+            <h3>Indiquez si فَـ est nécessaire devant chaque réponse, et pourquoi</h3>
+            <ol>
+                <li>Réponse = phrase nominale → <span class="answer-space"></span></li>
+                <li>Réponse = verbe au passé simple → <span class="answer-space"></span></li>
+                <li>Réponse = impératif → <span class="answer-space"></span></li>
+                <li>Réponse avec لَنْ (négation) → <span class="answer-space"></span></li>
+            </ol>
+        </div>
+
+        <!-- ══════════════════════════════════════ -->
+        <h2><span class="section-number">3</span>Complétez avec إِنْ</h2>
+        <div class="exercise">
+            <h3>Complétez avec إِنْ et le mode approprié de la condition (passé ou apocopé)</h3>
+            <ol>
+                <li><span class="in">إِنْ</span> <span class="arabic">تَعْمَلْ</span>، ___ (tu réussiras — apocopé) →
+                    <span class="answer-space wide-space"></span></li>
+                <li><span class="in">إِنْ</span> <span class="arabic">دَرَسْتَ</span>، ___ (tu réussiras — futur avec
+                    سَـ) → <span class="answer-space wide-space"></span></li>
+                <li>Traduisez : « Quiconque travaille réussira » avec مَنْ → <span
+                        class="answer-space wide-space"></span></li>
+            </ol>
+        </div>
+
+        <!-- ══════════════════════════════════════ -->
+        <h2><span class="section-number">4</span>Complétez avec لَوْ</h2>
+        <div class="exercise">
+            <h3>Complétez avec لَوْ + passé + لَـ + passé</h3>
+            <ol>
+                <li><span class="law">لَوْ</span> <span class="arabic">كُنْتُ مُدِيرًا</span>، ___ (le problème serait
+                    résolu) → <span class="answer-space wide-space"></span></li>
+                <li><span class="law">لَوْ</span> <span class="arabic">وَاكَبْتَنِي البَارِحَةَ</span>، ___ (tu aurais
+                    passé un bon moment) → <span class="answer-space wide-space"></span></li>
+            </ol>
+        </div>
+
+        <!-- ══════════════════════════════════════ -->
+        <h2><span class="section-number">5</span>Quelle particule choisir ?</h2>
+        <div class="exercise">
+            <h3>Choisissez إِذَا، إِنْ ou لَوْ selon la nuance décrite entre parenthèses</h3>
+            <ol>
+                <li><span class="answer-space"></span> نَجَحْتَ فِي الاِمْتِحَانِ، سَأَحْتَفِلُ مَعَكَ. (probable,
+                    réaliste)</li>
+                <li><span class="answer-space"></span> كُنْتُ طَائِرًا، لَطِرْتُ إِلَيْكَ. (totalement irréel)</li>
+                <li><span class="answer-space"></span> عَمِلْتَ بِجِدٍّ، نَجَحْتَ. (possible, incertain)</li>
+            </ol>
+        </div>
+
+        <!-- ══════════════════════════════════════ -->
+        <h2><span class="section-number">6</span>لَوْلا et لَوْ لَمْ</h2>
+        <div class="exercise">
+            <h3>Traduisez en arabe en utilisant لَوْلا ou لَوْ لَمْ selon le cas</h3>
+            <ol>
+                <li>S'il n'y avait pas cette vieille amitié entre nous… <em>(لَوْلا + nom)</em> → <span
+                        class="answer-space wide-space"></span></li>
+                <li>Si tu n'avais pas perdu ton temps, tu aurais appris beaucoup de choses <em>(لَوْ لَمْ +
+                        apocopé)</em> → <span class="answer-space wide-space"></span></li>
+            </ol>
+        </div>
+
+        <!-- ══════════════════════════════════════ -->
+        <h2><span class="section-number">7</span>Les particules concessives</h2>
+        <div class="exercise">
+            <h3>Reliez chaque expression à sa traduction</h3>
+            <ol>
+                <li><span class="arabic">وَلَوْ</span> — <span class="answer-space"></span> &nbsp;a. bien que / même si
+                </li>
+                <li><span class="arabic">مَعَ أَنَّ</span> — <span class="answer-space"></span> &nbsp;b. malgré</li>
+                <li><span class="arabic">رَغْمَ</span> — <span class="answer-space"></span> &nbsp;c. même si / quand
+                    même</li>
+                <li><span class="arabic">حَتَّى وَإِنْ</span> — <span class="answer-space"></span> &nbsp;d. même si</li>
+            </ol>
+        </div>
+
+        <!-- ══════════════════════════════════════ -->
+        <h2><span class="section-number">8</span>Tableau comparatif</h2>
+        <div class="exercise">
+            <h3>Complétez le tableau des trois particules conditionnelles</h3>
+            <div class="table-wrapper"><table>
+                <thead>
+                    <tr>
+                        <th>Particule</th>
+                        <th>Nuance</th>
+                        <th>Mode de la condition</th>
+                        <th>Mode de la réponse</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="idha">إِذَا</td>
+                        <td><span class="answer-space"></span></td>
+                        <td><span class="answer-space"></span></td>
+                        <td><span class="answer-space"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="in">إِنْ</td>
+                        <td><span class="answer-space"></span></td>
+                        <td><span class="answer-space"></span></td>
+                        <td><span class="answer-space"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="law">لَوْ</td>
+                        <td><span class="answer-space"></span></td>
+                        <td><span class="answer-space"></span></td>
+                        <td><span class="answer-space"></span></td>
+                    </tr>
+                </tbody>
+            </table></div>
+        </div>
+
+        <!-- ══════════════════════════════════════ -->
+        <h2><span class="section-number">9</span>Vrai ou faux ?</h2>
+        <div class="exercise">
+            <h3>Indiquez si les affirmations sont vraies (V) ou fausses (F)</h3>
+            <ol>
+                <li>La condition et la réponse peuvent s'inverser dans une phrase avec لَوْ <span
+                        class="answer-space"></span></li>
+                <li>On peut utiliser l'impératif dans la condition après إِذَا <span class="answer-space"></span></li>
+                <li>لَوْ exprime une hypothèse réaliste et probable <span class="answer-space"></span></li>
+                <li>La réponse de لَوْ est presque toujours précédée de لَـ <span class="answer-space"></span></li>
+                <li>مَنْ، مَا et مَهْما suivent les mêmes règles que إِنْ <span class="answer-space"></span></li>
+            </ol>
+        </div>
+
+        <!-- ══════════════════════════════════════ -->
+        <h2><span class="section-number">10</span>Exercice de compréhension</h2>
+        <div class="exercise">
+            <h3>Lisez et répondez</h3>
+            <div class="question">
+                <p style="direction: rtl; text-align: right; font-size: 1.2em; line-height: 2.2;">
+                    إِذَا دَرَسْتَ جَيِّدًا، سَتَنْجَحُ فِي الاِمْتِحَانِ. إِنْ تَعْمَلْ بِجِدٍّ، تَنْجَحْ.
+                    لَوْ كُنْتُ غَنِيًّا، لَسَاعَدْتُ الفُقَرَاءَ. مَعَ أَنَّ الاِمْتِحَانَ كَانَ صَعْبًا، حَصَلْتُ
+                    عَلَى نَتِيجَةٍ جَيِّدَةٍ.
+                </p>
+                <p><strong>Questions :</strong></p>
+                <ol>
+                    <li>Combien de phrases conditionnelles trouve-t-on dans ce texte ? <span
+                            class="answer-space"></span></li>
+                    <li>Quelle phrase exprime une hypothèse irréelle ? Comment le sait-on ? <span
+                            class="answer-space wide-space"></span></li>
+                    <li>Quelle est la différence de nuance entre la 1ʳᵉ et la 2ᵉ phrase ? <span
+                            class="answer-space wide-space"></span></li>
+                    <li>Traduisez <span class="arabic">لَسَاعَدْتُ الفُقَرَاءَ</span> : <span
+                            class="answer-space wide-space"></span></li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="intro" style="background: #e3f2fd; border-left-color: #2196f3; margin-top: 30px;">
+            <strong>🎯 Objectifs atteints :</strong> Après avoir complété ces exercices, vous devriez savoir choisir
+            entre إِذَا، إِنْ et لَوْ selon la nuance de probabilité, construire correctement condition et réponse
+            pour chacune, et reconnaître les principales particules concessives. Bravo ! 🎉
+        </div>
+
+    </div>
+</body>
+
+</html>

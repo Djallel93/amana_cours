@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le présent et le futur en arabe — الفِعْل المُضارِع</title>
+    <style>
+/* ===== AMANA – feuille de style commune (structure, impression, accessibilité) =====
+   Les thèmes (theme_adulte / theme_enfant) ne changent que l'apparence : couleurs, polices, formes.
+   Pas d'animation, pas de JavaScript : tout le contenu est visible partout. */
+:root {
+    --ink: #1d1d1b; --mut: #5b5b57; --line: #d9d6cf; --accent: #0f766e; --paper: #fff;
+    --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --ar: "Amiri", "Noto Naskh Arabic", serif;
+    --radius: 8px;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.6 var(--font); overflow-wrap: break-word; }
+.container { max-width: 880px; margin: 0 auto; padding: 20px 18px 48px; }
+h1, h2, h3, h4 { line-height: 1.25; margin: 1.2em 0 .45em; }
+h1 { margin-top: .3em; }
+p { margin: .55em 0; }
+ul, ol { margin: .5em 0; padding-left: 1.4em; }
+li { margin: .25em 0; }
+img { max-width: 100%; height: auto; }
+.arabic, .ar { font-family: var(--ar); direction: rtl; unicode-bidi: isolate; }
+.arabic-title { direction: rtl; font-family: var(--ar); }
+.table-wrapper { overflow-x: auto; margin: 12px 0; -webkit-overflow-scrolling: touch; }
+table { border-collapse: collapse; width: 100%; }
+th, td { padding: 6px 8px; text-align: left; vertical-align: top; }
+td .arabic, th .arabic { white-space: nowrap; }
+/* exercices */
+.answer-space { display: inline-block; width: 200px; max-width: 100%; min-height: 1.4em; vertical-align: bottom; margin: 0 .5em; border-bottom: 1.5px solid var(--ink); }
+.wide-space { width: 340px; }
+.question { margin: 14px 0; line-height: 2; }
+.section-divider { display: flex; align-items: center; gap: 14px; margin: 1.8em 0 1.2em; }
+/* repères de grammaire (communs aux deux niveaux) */
+.hamza { color: #c2410c; font-weight: 700; }
+.solaire { color: #c2410c; font-weight: 700; }
+.lunaire { color: #1d4ed8; font-weight: 700; }
+.letters { font: 700 1.8em/2 var(--ar); text-align: center; direction: rtl; color: var(--accent); letter-spacing: .15em; }
+/* logo de l'association (voir Styles/logo) */
+.brand { display: flex; align-items: center; gap: 10px; max-width: 880px; margin: 0 auto; padding: 14px 18px 0; }
+.brand img, .brand svg, .brand-logo { height: 46px; width: auto; }
+.brand-logo { min-width: 46px; display: inline-grid; place-items: center; padding: 0 8px; border: 1.5px dashed #888; border-radius: 8px; font: 600 .6rem/1 var(--font); letter-spacing: .12em; color: #666; }
+.brand-name { font-size: .8rem; color: var(--mut); }
+@media (max-width: 600px) {
+    .container { padding: 14px 12px 36px; }
+    .answer-space { width: 140px; }
+    .wide-space { width: min(340px, 100%); }
+}
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+/* impression : fond blanc, pas d'ombre, logo répété sur chaque page */
+@page { size: A4; margin: 18mm 14mm 16mm; }
+@media print {
+    * { background: transparent !important; box-shadow: none !important; animation: none !important; transition: none !important; }
+    html, body { background: #fff !important; color: #000; }
+    body { font-size: 11pt; line-height: 1.5; }
+    .container { max-width: none; padding: 0; }
+    .brand { position: fixed; top: -13mm; right: 0; left: 0; max-width: none; padding: 0; }
+    .brand img, .brand svg, .brand-logo { height: 9mm; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    tr, .rule-box, .example-box, .info-box, .warning-box, .note, .intro, .question, .exercise, .phrase-example { break-inside: avoid; }
+    .table-wrapper { overflow: visible; }
+    a { color: inherit; text-decoration: none; }
+}
+</style>
+    <link rel="stylesheet" href="../../fonts/fonts.css">
+<style>
+/* ===== Thème ENFANT : coloré et ludique (modèle K4 : mascotte et bulles) ===== */
+:root { --accent: #7c3aed; --font: "Baloo 2", "Comic Sans MS", system-ui, sans-serif; --ar: "Amiri", "Noto Naskh Arabic", serif; --radius: 18px; }
+body { font-size: 17px; }
+h1 { font-size: 1.8rem; color: var(--accent); }
+.arabic-title { font-size: 1.6rem; color: var(--mut); margin: 0 0 1.2em; }
+h2 { font-size: 1.35rem; color: #0d9488; margin-top: 1.7em; padding-bottom: .15em; border-bottom: 3px dotted var(--line); }
+h3 { font-size: 1.1rem; color: #d97706; }
+h4 { font-size: 1rem; margin: .2em 0 .3em; }
+.arabic, .ar { font-size: 1.35em; }
+.highlight { font-weight: 700; border-bottom: 3px solid #f59e0b; }
+/* encadrés = bulles de dialogue avec une mascotte */
+.intro, .rule-box, .example-box, .info-box, .warning-box, .note { --c: var(--accent); position: relative; margin: 18px 0 18px 60px; padding: 10px 16px; border: 3px solid var(--c); border-radius: var(--radius); }
+.intro::before, .rule-box::before, .example-box::before, .info-box::before, .warning-box::before, .note::before { position: absolute; left: -58px; top: 4px; font-size: 2.1rem; line-height: 1.2; }
+.intro::after, .rule-box::after, .example-box::after, .info-box::after, .warning-box::after, .note::after { content: ""; position: absolute; left: -11px; top: 18px; width: 16px; height: 16px; background: #fff; border-left: 3px solid var(--c); border-bottom: 3px solid var(--c); transform: rotate(45deg); }
+.intro::before { content: "🦉"; }
+.rule-box { --c: #0d9488; } .rule-box::before { content: "💡"; }
+.example-box { --c: #f59e0b; } .example-box::before { content: "🌟"; }
+.info-box { --c: #2563eb; } .info-box::before { content: "🔍"; }
+.warning-box { --c: #dc2626; } .warning-box::before { content: "⚠️"; }
+.note { --c: #db2777; } .note::before { content: "📌"; }
+.phrase-example, .example-item { border: 3px solid var(--line); border-radius: 14px; padding: 8px 14px; margin: 10px 0; }
+th { color: var(--accent); border-bottom: 3px solid var(--accent); font-weight: 700; }
+td { border-bottom: 2px dotted var(--line); }
+/* exercices */
+.exercise { border: 3px dashed #db2777; border-radius: 14px; padding: 10px 16px; margin: 14px 0 22px; }
+.exercise h3 { margin: 0 0 .5em; color: #db2777; font-size: 1.05rem; }
+.section-number { display: inline-flex; align-items: center; justify-content: center; width: 1.9em; height: 1.9em; margin-right: .5em; border: 3px solid var(--accent); border-radius: 50%; color: var(--accent); font-weight: 700; font-size: .85em; }
+.question { border-left: 4px solid #0d9488; padding: 4px 12px; }
+.answer-space { border-bottom-width: 2px; border-bottom-style: dashed; }
+.section-divider { color: var(--accent); }
+@media (max-width: 520px) {
+    .intro, .rule-box, .example-box, .info-box, .warning-box, .note { margin-left: 44px; }
+    .intro::before, .rule-box::before, .example-box::before, .info-box::before, .warning-box::before, .note::before { left: -44px; font-size: 1.7rem; }
+    .intro::after, .rule-box::after, .example-box::after, .info-box::after, .warning-box::after, .note::after { display: none; }
+}
+</style>
+    <style>
+        /* Composants propres à ce cours (couleurs de rôle grammatical, cartes, etc.) */
+        .prefix { color: #1565c0; font-weight: bold; }
+        .suffix { color: #d32f2f; font-weight: bold; }
+        .fut-particle { color: #2e7d32; font-weight: bold; font-size: 1.1em; }
+        .future-box { background: #e8f5e9; border: 2px solid #4caf50; border-radius: 12px; padding: 20px; margin: 20px 0; }
+        .future-box h4 { color: #2e7d32; margin-top: 0; }
+        .verb-card { border: 2px solid #667eea; border-radius: 12px; padding: 20px; margin: 25px 0; }
+        .verb-card-header { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; flex-wrap: wrap; }
+        .verb-badge { color: var(--ink); padding: 6px 16px; border-radius: 20px; font-size: 1.1em; font-weight: bold; white-space: nowrap; border: 1.5px solid var(--accent); }
+        .verb-meaning { color: #555; font-size: 1.05em; }
+        .prefix-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin: 15px 0; }
+        .prefix-item { background: #e3f2fd; border: 1px solid #90caf9; border-radius: 8px; padding: 12px; text-align: center; }
+        .prefix-item .ar { font-size: 1.8em; color: #1565c0; font-weight: bold; }
+        .prefix-item .label { font-size: 0.85em; color: #555; margin-top: 5px; }
+        .compare-past { color: #6a1b9a; }
+        .compare-pres { color: #1565c0; }
+    </style>
+</head>
+
+<body class="cours">
+    <!-- Logo de l'association : remplacer le contenu de .brand-logo par <img src="data:image/svg+xml;base64,..." alt="Logo de l'association">
+     (ou un <svg> en ligne). Ce fichier est inclus dans toutes les pages : une seule modification suffit. -->
+<header class="brand">
+    <span class="brand-logo" role="img" aria-label="Logo de l'association">LOGO</span>
+    <span class="brand-name">Nom de l'association</span>
+</header>
+<div class="container">
+
+    <h1>Le présent et le futur en arabe</h1>
+    <div class="arabic-title">الفِعْل المُضارِع</div>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <div class="intro">
+        <strong>Bienvenue dans ce cours sur le présent et le futur en arabe !</strong><br>
+        En arabe, le présent et le futur sont exprimés par <strong>un seul et même temps</strong> : l'<strong>inaccompli</strong>
+        (<span class="arabic">الفِعْل المُضارِع</span>). Ce terme signifie littéralement le verbe qui
+        « ressemble » — car il ressemble formellement au nom, contrairement au passé. L'inaccompli décrit une
+        action <em>en cours ou à venir</em>, dont l'accomplissement n'est pas encore complet. Le futur s'exprime
+        simplement en ajoutant une particule devant ce même temps.
+    </div>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <h2>🏗️ Structure de l'inaccompli — كيف يُبنى المُضارِع</h2>
+
+    <div class="rule-box">
+        <strong>Principe clé :</strong> Contrairement au passé (suffixes uniquement), l'inaccompli se construit
+        avec des <span class="highlight">préfixes obligatoires</span> qui indiquent la personne, et
+        éventuellement des <span class="highlight">suffixes</span> pour le genre et le nombre.
+        La formule générale est :
+        <p style="text-align: center; margin: 12px 0; font-size: 1.15em;">
+            <span style="color: #1565c0; font-weight: bold;">Préfixe</span>
+            + Racine (avec ses voyelles)
+            + <span style="color: #d32f2f; font-weight: bold;">Suffixe</span>
+        </p>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <h2>🔤 Les quatre préfixes — حُرُوف المُضارَعَة</h2>
+
+    <div class="intro">
+        Il n'existe que <strong>quatre préfixes possibles</strong> à l'inaccompli. Ils sont faciles à retenir
+        car leurs initiales forment le mot <span class="arabic" style="font-size: 1.6em;">أَنَيْتُ</span>.
+    </div>
+
+    <div class="prefix-grid">
+        <div class="prefix-item">
+            <div class="ar">أَ</div>
+            <div class="label">1ʳᵉ pers. sg.<br>Je</div>
+        </div>
+        <div class="prefix-item">
+            <div class="ar">نَ</div>
+            <div class="label">1ʳᵉ pers. pl.<br>Nous</div>
+        </div>
+        <div class="prefix-item">
+            <div class="ar">يَ</div>
+            <div class="label">3ᵉ pers. masc.<br>Il / Ils</div>
+        </div>
+        <div class="prefix-item">
+            <div class="ar">تَ</div>
+            <div class="label">2ᵉ pers. (toutes) &<br>3ᵉ pers. fém.</div>
+        </div>
+    </div>
+
+    <div class="note">
+        <strong>📝 À observer :</strong>
+        <ul>
+            <li>Le préfixe <span class="arabic">تَ</span> est partagé par la <strong>2ᵉ personne</strong>
+            (tu/vous) et la <strong>3ᵉ personne féminine</strong> (elle). Ce sont les suffixes qui permettront
+            de distinguer les formes.</li>
+            <li>La <strong>voyelle du préfixe</strong> est généralement une <em>fatḥa</em> (a). Elle peut
+            changer pour certains schèmes verbaux augmentés (hors programme de ce cours).</li>
+        </ul>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <h2>📊 Tableau modèle — يَفْعَلُ</h2>
+
+    <div class="intro">
+        Voici le tableau complet de conjugaison à l'inaccompli avec le verbe modèle abstrait
+        <span class="arabic">يَفْعَلُ</span>. Les préfixes apparaissent en
+        <span style="color: #1565c0; font-weight: bold;">bleu</span>, les suffixes en
+        <span style="color: #d32f2f; font-weight: bold;">rouge</span>.
+    </div>
+
+    <div class="table-wrapper"><table>
+        <thead>
+            <tr>
+                <th>Personne</th>
+                <th>Genre</th>
+                <th>Singulier</th>
+                <th>Duel</th>
+                <th>Pluriel</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2"><strong>3ᵉ personne</strong><br><span class="arabic" style="font-size: 1em;">الغائِب</span></td>
+                <td>Masculin</td>
+                <td><span class="arabic"><span class="prefix">يَ</span>فْعَلُ</span></td>
+                <td><span class="arabic"><span class="prefix">يَ</span>فْعَلَ<span class="suffix">انِ</span></span></td>
+                <td><span class="arabic"><span class="prefix">يَ</span>فْعَلُ<span class="suffix">ونَ</span></span></td>
+            </tr>
+            <tr>
+                <td>Féminin</td>
+                <td><span class="arabic"><span class="prefix">تَ</span>فْعَلُ</span></td>
+                <td><span class="arabic"><span class="prefix">تَ</span>فْعَلَ<span class="suffix">انِ</span></span></td>
+                <td><span class="arabic"><span class="prefix">يَ</span>فْعَلْ<span class="suffix">نَ</span></span></td>
+            </tr>
+            <tr>
+                <td rowspan="2"><strong>2ᵉ personne</strong><br><span class="arabic" style="font-size: 1em;">المُخاطَب</span></td>
+                <td>Masculin</td>
+                <td><span class="arabic"><span class="prefix">تَ</span>فْعَلُ</span></td>
+                <td rowspan="2"><span class="arabic"><span class="prefix">تَ</span>فْعَلَ<span class="suffix">انِ</span></span></td>
+                <td><span class="arabic"><span class="prefix">تَ</span>فْعَلُ<span class="suffix">ونَ</span></span></td>
+            </tr>
+            <tr>
+                <td>Féminin</td>
+                <td><span class="arabic"><span class="prefix">تَ</span>فْعَلِ<span class="suffix">ينَ</span></span></td>
+                <td><span class="arabic"><span class="prefix">تَ</span>فْعَلْ<span class="suffix">نَ</span></span></td>
+            </tr>
+            <tr>
+                <td><strong>1ʳᵉ personne</strong><br><span class="arabic" style="font-size: 1em;">المُتَكَلِّم</span></td>
+                <td>M / F</td>
+                <td><span class="arabic"><span class="prefix">أَ</span>فْعَلُ</span></td>
+                <td>—</td>
+                <td><span class="arabic"><span class="prefix">نَ</span>فْعَلُ</span></td>
+            </tr>
+        </tbody>
+    </table></div>
+
+    <div class="note">
+        <strong>📝 Points clés à observer :</strong>
+        <ul>
+            <li>La <strong>3ᵉ pers. sg. masc.</strong> (يَفْعَلُ) est la forme de référence de l'inaccompli —
+            c'est sous cette forme que les dictionnaires citent l'inaccompli d'un verbe.</li>
+            <li>La <strong>3ᵉ pers. sg. masc.</strong> et la <strong>2ᵉ pers. sg. masc.</strong> ont la même
+            terminaison (ـُ) mais des préfixes différents : <span class="arabic">يَ</span> vs
+            <span class="arabic">تَ</span>.</li>
+            <li>Le <strong>duel</strong> porte le suffixe <span class="arabic">ـانِ</span> et est identique
+            pour le masculin et le féminin à chaque personne.</li>
+            <li>La <strong>nūn finale</strong> de certaines formes (ـُونَ, ـِينَ, ـَانِ) est appelée
+            <em>nūn d'indicatif</em> — elle marque que le verbe est à l'indicatif (mode de base).</li>
+        </ul>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <h2>🔤 La voyelle de la 2ᵉ radicale à l'inaccompli</h2>
+
+    <div class="info-box">
+        <strong>💡 Lien avec le passé :</strong> Tout comme au passé, la voyelle portée par la 2ᵉ radicale à
+        l'inaccompli peut varier. Elle n'est pas forcément la même qu'au passé et doit être mémorisée
+        avec chaque verbe. Les trois verbes étudiés au cours précédent illustrent bien cette variation.
+    </div>
+
+    <div class="table-wrapper"><table>
+        <thead>
+            <tr>
+                <th>Verbe</th>
+                <th>Passé (الماضِي)</th>
+                <th>Inaccompli (المُضارِع)</th>
+                <th>Voyelle du milieu</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>écrire</td>
+                <td><span class="arabic compare-past">كَتَبَ</span></td>
+                <td><span class="arabic compare-pres">يَكْتُبُ</span></td>
+                <td>a → <strong>u</strong></td>
+            </tr>
+            <tr>
+                <td>comprendre</td>
+                <td><span class="arabic compare-past">فَهِمَ</span></td>
+                <td><span class="arabic compare-pres">يَفْهَمُ</span></td>
+                <td>i → <strong>a</strong></td>
+            </tr>
+            <tr>
+                <td>être grand</td>
+                <td><span class="arabic compare-past">كَبُرَ</span></td>
+                <td><span class="arabic compare-pres">يَكْبُرُ</span></td>
+                <td>u → <strong>u</strong></td>
+            </tr>
+        </tbody>
+    </table></div>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <h2>📊 Conjugaison complète des trois verbes</h2>
+
+    <!-- ---- كَتَبَ / يَكْتُبُ ---- -->
+    <div class="verb-card">
+        <div class="verb-card-header">
+            <span class="verb-badge">Type فَعَلَ → يَفْعُلُ</span>
+            <span class="arabic" style="font-size: 1.8em;">يَكْتُبُ</span>
+            <span class="verb-meaning">écrire — passé : كَتَبَ</span>
+        </div>
+        <div class="table-wrapper"><table>
+            <thead>
+                <tr>
+                    <th>Personne</th>
+                    <th>Genre</th>
+                    <th>Singulier</th>
+                    <th>Duel</th>
+                    <th>Pluriel</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2"><strong>3ᵉ</strong></td>
+                    <td>M.</td>
+                    <td><span class="arabic"><span class="prefix">يَ</span>كْتُبُ</span></td>
+                    <td><span class="arabic"><span class="prefix">يَ</span>كْتُبَ<span class="suffix">انِ</span></span></td>
+                    <td><span class="arabic"><span class="prefix">يَ</span>كْتُبُ<span class="suffix">ونَ</span></span></td>
+                </tr>
+                <tr>
+                    <td>F.</td>
+                    <td><span class="arabic"><span class="prefix">تَ</span>كْتُبُ</span></td>
+                    <td><span class="arabic"><span class="prefix">تَ</span>كْتُبَ<span class="suffix">انِ</span></span></td>
+                    <td><span class="arabic"><span class="prefix">يَ</span>كْتُبْ<span class="suffix">نَ</span></span></td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><strong>2ᵉ</strong></td>
+                    <td>M.</td>
+                    <td><span class="arabic"><span class="prefix">تَ</span>كْتُبُ</span></td>
+                    <td rowspan="2"><span class="arabic"><span class="prefix">تَ</span>كْتُبَ<span class="suffix">انِ</span></span></td>
+                    <td><span class="arabic"><span class="prefix">تَ</span>كْتُبُ<span class="suffix">ونَ</span></span></td>
+                </tr>
+                <tr>
+                    <td>F.</td>
+                    <td><span class="arabic"><span class="prefix">تَ</span>كْتُبِ<span class="suffix">ينَ</span></span></td>
+                    <td><span class="arabic"><span class="prefix">تَ</span>كْتُبْ<span class="suffix">نَ</span></span></td>
+                </tr>
+                <tr>
+                    <td><strong>1ʳᵉ</strong></td>
+                    <td>M/F</td>
+                    <td><span class="arabic"><span class="prefix">أَ</span>كْتُبُ</span></td>
+                    <td>—</td>
+                    <td><span class="arabic"><span class="prefix">نَ</span>كْتُبُ</span></td>
+                </tr>
+            </tbody>
+        </table></div>
+        <div class="example-box" style="margin-top: 10px;">
+            <strong>Exemples :</strong>
+            <ul>
+                <li><span class="arabic">يَكْتُبُ الوَلَدُ رِسَالَةً</span> → Le garçon écrit une lettre</li>
+                <li><span class="arabic">أَكْتُبُ في دَفْتَرِي</span> → J'écris dans mon cahier</li>
+                <li><span class="arabic">نَكْتُبُ الدَّرْسَ</span> → Nous écrivons la leçon</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ---- فَهِمَ / يَفْهَمُ ---- -->
+    <div class="verb-card">
+        <div class="verb-card-header">
+            <span class="verb-badge">Type فَعِلَ → يَفْعَلُ</span>
+            <span class="arabic" style="font-size: 1.8em;">يَفْهَمُ</span>
+            <span class="verb-meaning">comprendre — passé : فَهِمَ</span>
+        </div>
+        <div class="table-wrapper"><table>
+            <thead>
+                <tr>
+                    <th>Personne</th>
+                    <th>Genre</th>
+                    <th>Singulier</th>
+                    <th>Duel</th>
+                    <th>Pluriel</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2"><strong>3ᵉ</strong></td>
+                    <td>M.</td>
+                    <td><span class="arabic"><span class="prefix">يَ</span>فْهَمُ</span></td>
+                    <td><span class="arabic"><span class="prefix">يَ</span>فْهَمَ<span class="suffix">انِ</span></span></td>
+                    <td><span class="arabic"><span class="prefix">يَ</span>فْهَمُ<span class="suffix">ونَ</span></span></td>
+                </tr>
+                <tr>
+                    <td>F.</td>
+                    <td><span class="arabic"><span class="prefix">تَ</span>فْهَمُ</span></td>
+                    <td><span class="arabic"><span class="prefix">تَ</span>فْهَمَ<span class="suffix">انِ</span></span></td>
+                    <td><span class="arabic"><span class="prefix">يَ</span>فْهَمْ<span class="suffix">نَ</span></span></td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><strong>2ᵉ</strong></td>
+                    <td>M.</td>
+                    <td><span class="arabic"><span class="prefix">تَ</span>فْهَمُ</span></td>
+                    <td rowspan="2"><span class="arabic"><span class="prefix">تَ</span>فْهَمَ<span class="suffix">انِ</span></span></td>
+                    <td><span class="arabic"><span class="prefix">تَ</span>فْهَمُ<span class="suffix">ونَ</span></span></td>
+                </tr>
+                <tr>
+                    <td>F.</td>
+                    <td><span class="arabic"><span class="prefix">تَ</span>فْهَمِ<span class="suffix">ينَ</span></span></td>
+                    <td><span class="arabic"><span class="prefix">تَ</span>فْهَمْ<span class="suffix">نَ</span></span></td>
+                </tr>
+                <tr>
+                    <td><strong>1ʳᵉ</strong></td>
+                    <td>M/F</td>
+                    <td><span class="arabic"><span class="prefix">أَ</span>فْهَمُ</span></td>
+                    <td>—</td>
+                    <td><span class="arabic"><span class="prefix">نَ</span>فْهَمُ</span></td>
+                </tr>
+            </tbody>
+        </table></div>
+        <div class="example-box" style="margin-top: 10px;">
+            <strong>Exemples :</strong>
+            <ul>
+                <li><span class="arabic">يَفْهَمُ الطَّالِبُ الدَّرْسَ</span> → L'étudiant comprend la leçon</li>
+                <li><span class="arabic">أَفْهَمُ العَرَبِيَّةَ</span> → Je comprends l'arabe</li>
+                <li><span class="arabic">نَفْهَمُ السُّؤالَ</span> → Nous comprenons la question</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ---- كَبُرَ / يَكْبُرُ ---- -->
+    <div class="verb-card">
+        <div class="verb-card-header">
+            <span class="verb-badge">Type فَعُلَ → يَفْعُلُ</span>
+            <span class="arabic" style="font-size: 1.8em;">يَكْبُرُ</span>
+            <span class="verb-meaning">être grand / grandir — passé : كَبُرَ</span>
+        </div>
+        <div class="warning-box">
+            <strong>⚠️ Rappel :</strong> Les verbes de type <span class="arabic">فَعُلَ / يَفْعُلُ</span> sont
+            rares et expriment des qualités innées. La voyelle ḍamma se maintient à l'inaccompli.
+        </div>
+        <div class="table-wrapper"><table>
+            <thead>
+                <tr>
+                    <th>Personne</th>
+                    <th>Genre</th>
+                    <th>Singulier</th>
+                    <th>Duel</th>
+                    <th>Pluriel</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2"><strong>3ᵉ</strong></td>
+                    <td>M.</td>
+                    <td><span class="arabic"><span class="prefix">يَ</span>كْبُرُ</span></td>
+                    <td><span class="arabic"><span class="prefix">يَ</span>كْبُرَ<span class="suffix">انِ</span></span></td>
+                    <td><span class="arabic"><span class="prefix">يَ</span>كْبُرُ<span class="suffix">ونَ</span></span></td>
+                </tr>
+                <tr>
+                    <td>F.</td>
+                    <td><span class="arabic"><span class="prefix">تَ</span>كْبُرُ</span></td>
+                    <td><span class="arabic"><span class="prefix">تَ</span>كْبُرَ<span class="suffix">انِ</span></span></td>
+                    <td><span class="arabic"><span class="prefix">يَ</span>كْبُرْ<span class="suffix">نَ</span></span></td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><strong>2ᵉ</strong></td>
+                    <td>M.</td>
+                    <td><span class="arabic"><span class="prefix">تَ</span>كْبُرُ</span></td>
+                    <td rowspan="2"><span class="arabic"><span class="prefix">تَ</span>كْبُرَ<span class="suffix">انِ</span></span></td>
+                    <td><span class="arabic"><span class="prefix">تَ</span>كْبُرُ<span class="suffix">ونَ</span></span></td>
+                </tr>
+                <tr>
+                    <td>F.</td>
+                    <td><span class="arabic"><span class="prefix">تَ</span>كْبُرِ<span class="suffix">ينَ</span></span></td>
+                    <td><span class="arabic"><span class="prefix">تَ</span>كْبُرْ<span class="suffix">نَ</span></span></td>
+                </tr>
+                <tr>
+                    <td><strong>1ʳᵉ</strong></td>
+                    <td>M/F</td>
+                    <td><span class="arabic"><span class="prefix">أَ</span>كْبُرُ</span></td>
+                    <td>—</td>
+                    <td><span class="arabic"><span class="prefix">نَ</span>كْبُرُ</span></td>
+                </tr>
+            </tbody>
+        </table></div>
+        <div class="example-box" style="margin-top: 10px;">
+            <strong>Exemples :</strong>
+            <ul>
+                <li><span class="arabic">يَكْبُرُ الوَلَدُ بِسُرْعَةٍ</span> → Le garçon grandit vite</li>
+                <li><span class="arabic">أَكْبُرُ كُلَّ يَوْمٍ</span> → Je grandis chaque jour</li>
+                <li><span class="arabic">نَكْبُرُ مَعاً</span> → Nous grandissons ensemble</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <h2>🚀 Exprimer le futur — المُسْتَقْبَل</h2>
+
+    <div class="intro">
+        Pour exprimer le futur en arabe, il suffit d'ajouter l'une des deux particules suivantes
+        <strong>directement devant</strong> la forme de l'inaccompli. La forme du verbe elle-même
+        ne change pas.
+    </div>
+
+    <div class="future-box">
+        <h4>Les deux particules du futur :</h4>
+        <div class="table-wrapper"><table style="margin: 0;">
+            <thead>
+                <tr>
+                    <th>Particule</th>
+                    <th>Forme</th>
+                    <th>Usage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="arabic fut-particle">سَـ</span></td>
+                    <td>Préfixe collé au verbe</td>
+                    <td>Futur proche ou général (le plus courant)</td>
+                </tr>
+                <tr>
+                    <td><span class="arabic fut-particle">سَوْفَ</span></td>
+                    <td>Mot indépendant avant le verbe</td>
+                    <td>Futur avec insistance, solennel ou plus lointain</td>
+                </tr>
+            </tbody>
+        </table></div>
+    </div>
+
+    <div class="rule-box">
+        <strong>Formule :</strong>
+        <p style="text-align: center; font-size: 1.15em; margin: 10px 0;">
+            <span class="fut-particle">سَـ</span> + inaccompli
+            &nbsp;&nbsp; ou &nbsp;&nbsp;
+            <span class="fut-particle">سَوْفَ</span> + inaccompli
+        </p>
+    </div>
+
+    <div class="example-box">
+        <h4>📝 Exemples avec les trois verbes :</h4>
+        <ul>
+            <li><span class="arabic"><span class="fut-particle">سَ</span>يَكْتُبُ الوَلَدُ رِسَالَةً</span><br>
+            → Le garçon <strong>écrira</strong> une lettre</li>
+            <li><span class="arabic"><span class="fut-particle">سَوْفَ</span> يَكْتُبُ الوَلَدُ رِسَالَةً</span><br>
+            → Le garçon <strong>écrira (certainement)</strong> une lettre</li>
+            <li><span class="arabic"><span class="fut-particle">سَ</span>أَفْهَمُ الدَّرْسَ</span><br>
+            → Je <strong>comprendrai</strong> la leçon</li>
+            <li><span class="arabic"><span class="fut-particle">سَوْفَ</span> نَفْهَمُ</span><br>
+            → Nous <strong>comprendrons</strong></li>
+            <li><span class="arabic"><span class="fut-particle">سَ</span>يَكْبُرُونَ</span><br>
+            → Ils <strong>grandiront</strong></li>
+            <li><span class="arabic"><span class="fut-particle">سَوْفَ</span> تَكْبُرِينَ</span><br>
+            → Tu <strong>grandiras</strong> (en parlant à une femme)</li>
+        </ul>
+    </div>
+
+    <div class="note">
+        <strong>📝 À retenir :</strong> La particule <span class="arabic">سَـ</span> s'écrit
+        <strong>collée</strong> au verbe (sans espace). La particule <span class="arabic">سَوْفَ</span>
+        s'écrit <strong>séparée</strong> du verbe. Les deux sont interchangeables dans la plupart des
+        contextes ; <span class="arabic">سَوْفَ</span> apporte simplement plus d'emphase ou de certitude.
+    </div>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <h2>📝 Résumé de la leçon</h2>
+
+    <div class="rule-box">
+        <ul>
+            <li>L'inaccompli exprime à la fois le <strong>présent et le futur</strong> — un seul temps pour deux notions</li>
+            <li>Il se construit avec un <strong>préfixe obligatoire</strong> et éventuellement un <strong>suffixe</strong></li>
+            <li>Il n'existe que <strong>quatre préfixes</strong> : <span class="arabic">أَ / نَ / يَ / تَ</span></li>
+            <li>La <strong>3ᵉ pers. sg. masc.</strong> (<span class="arabic">يَفْعَلُ</span>) est la forme de référence</li>
+            <li>La <strong>voyelle de la 2ᵉ radicale</strong> à l'inaccompli peut différer de celle du passé — à mémoriser avec chaque verbe</li>
+            <li>Le <strong>futur</strong> s'exprime en ajoutant <span class="arabic">سَـ</span> (collé) ou <span class="arabic">سَوْفَ</span> (séparé) devant l'inaccompli</li>
+            <li><span class="arabic">سَوْفَ</span> apporte davantage d'<strong>emphase ou de certitude</strong> que <span class="arabic">سَـ</span></li>
+            <li>La <strong>nūn d'indicatif</strong> (dans ـُونَ, ـِينَ, ـَانِ) marque le mode de base</li>
+        </ul>
+    </div>
+
+</div>
+</body>
+
+</html>

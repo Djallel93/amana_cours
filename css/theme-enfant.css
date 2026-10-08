@@ -1,0 +1,20 @@
+/* Thème ENFANT : coloré, grandes lettres, consignes courtes. */
+:root { --accent: #c2410c; --soft: #fff7ed; --line: #f5b27a; --font: "Baloo 2", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; --ar: "Amiri", "Noto Naskh Arabic", serif; --radius: 16px; }
+body { font-size: 18px; line-height: 1.55; }
+h1 { font-size: 2rem; color: var(--accent); }
+h2 { font-size: 1.35rem; color: #1d4ed8; }
+h3 { font-size: 1.1rem; color: var(--accent); }
+.lrow { font-size: 2.6rem; }
+.lrow .cell { border-width: 2px; }
+.lgrid { font-size: 2.8rem; }
+.lgrid .cell { border-width: 2px; }
+.glyph { font-size: 5.4rem; color: #1d4ed8; }
+.intro, .tip { position: relative; background: #eff6ff; border: 2px solid #93c5fd; border-radius: var(--radius); padding: 10px 16px 10px 52px; margin: 14px 0; }
+.intro::before, .tip::before { content: "🦉"; position: absolute; left: 12px; top: 8px; font-size: 1.7rem; }
+.tip { background: #fefce8; border-color: #fde047; border-left-width: 2px; }
+.tip::before { content: "💡"; }
+.exo .num { background: #1d4ed8; width: 2.1em; height: 2.1em; }
+.pill { border-color: #1d4ed8; color: #1d4ed8; }
+.trace { font-size: 4.2rem; }
+.ruled { height: 4.2rem; }
+.img-ph { border-color: #f59e0b; background: #fffbeb; }

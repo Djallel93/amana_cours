@@ -1,0 +1,8 @@
+/* Thème ADULTE : sobre et lisible. */
+:root { --accent: #0f766e; --ar: "Amiri", "Noto Naskh Arabic", serif; }
+h1 { font-size: 1.65rem; letter-spacing: -.01em; }
+h2 { font-size: 1.2rem; margin-top: 1.6em; padding-bottom: .2em; border-bottom: 1px solid var(--line); }
+h3 { font-size: 1.02rem; color: var(--accent); }
+.exo h2 { border-bottom: 0; }
+.intro { border-left: 3px solid var(--accent); padding: 2px 0 2px 14px; margin: 0 0 1.2em; }
+.glyph { color: var(--accent); }

@@ -45,14 +45,14 @@ img { max-width: 100%; height: auto; }
 .meta h3, .box h3 { margin: .2em 0 .3em; font-size: 1rem; }
 .box { margin: 14px 0; }
 .lcard { display: flex; gap: 16px; align-items: center; border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 14px; margin: 12px 0; break-inside: avoid; }
-.lcard .glyph { flex: none; width: 5.5rem; border-right: 1px solid var(--line); padding-right: 12px; }
+.lcard .glyph { flex: none; width: auto; min-width: 5.5rem; font-size: 3.8rem; border-right: 1px solid var(--line); padding-right: 14px; }
 .lcard h3 { margin: 0 0 .2em; }
 .lcard ul { margin: .2em 0; }
 .pill { display: inline-block; font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; border: 1px solid var(--accent); color: var(--accent); border-radius: 99px; padding: 0 10px; margin-left: 6px; vertical-align: middle; }
 .tbl { border-collapse: collapse; width: 100%; margin: 10px 0; }
 .tbl th, .tbl td { border: 1px solid var(--line); padding: 6px 8px; text-align: center; vertical-align: middle; }
 .tbl td.l { text-align: left; }
-.tbl .ar { font-size: 1.6em; }
+.tbl .ar { font-size: 1.9em; }
 .links a { display: inline-block; margin: 2px 4px 2px 0; padding: 0 10px; border: 1px solid var(--line); border-radius: 99px; text-decoration: none; }
 .links a .ar { font-size: 1.3em; }
 
@@ -93,3 +93,9 @@ img { max-width: 100%; height: auto; }
 }
 .answer-space.wide{width:260px}
 .lrow .cell, .lgrid .cell { white-space: nowrap; }
+@media print {
+  .lgrid { grid-template-columns: repeat(6, 1fr); font-size: 2rem; }
+  .lcard { flex-direction: row; text-align: left; }
+  .lcard .glyph { border-right: 1px solid var(--line); padding-right: 14px; }
+}
+.idline { margin: 4px 0 0; }

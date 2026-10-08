@@ -4,7 +4,9 @@ body { font-size: 18px; line-height: 1.55; }
 h1 { font-size: 2rem; color: var(--accent); }
 h2 { font-size: 1.35rem; color: #1d4ed8; }
 h3 { font-size: 1.1rem; color: var(--accent); }
-.lrow { font-size: 2.6rem; }
+.lrow { font-size: 2.2rem; }
+.lrow.big { font-size: 2.6rem; }
+.tbl .ar { font-size: 2.1em; }
 .lrow .cell { border-width: 2px; }
 .lgrid { font-size: 2.8rem; }
 .lgrid .cell { border-width: 2px; }
@@ -18,3 +20,5 @@ h3 { font-size: 1.1rem; color: var(--accent); }
 .trace { font-size: 4.2rem; }
 .ruled { height: 4.2rem; }
 .img-ph { border-color: #f59e0b; background: #fffbeb; }
+
+.lcard .glyph { font-size: 4.4rem; }

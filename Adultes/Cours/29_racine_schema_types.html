@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Du verbe sain à la racine et au schème</title>
+    <style>
+/* ===== AMANA – feuille de style commune (structure, impression, accessibilité) =====
+   Les thèmes (theme_adulte / theme_enfant) ne changent que l'apparence : couleurs, polices, formes.
+   Pas d'animation, pas de JavaScript : tout le contenu est visible partout. */
+:root {
+    --ink: #1d1d1b; --mut: #5b5b57; --line: #d9d6cf; --accent: #0f766e; --paper: #fff;
+    --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --ar: "Amiri", "Noto Naskh Arabic", serif;
+    --radius: 8px;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.6 var(--font); overflow-wrap: break-word; }
+.container { max-width: 880px; margin: 0 auto; padding: 20px 18px 48px; }
+h1, h2, h3, h4 { line-height: 1.25; margin: 1.2em 0 .45em; }
+h1 { margin-top: .3em; }
+p { margin: .55em 0; }
+ul, ol { margin: .5em 0; padding-left: 1.4em; }
+li { margin: .25em 0; }
+img { max-width: 100%; height: auto; }
+.arabic, .ar { font-family: var(--ar); direction: rtl; unicode-bidi: isolate; }
+.arabic-title { direction: rtl; font-family: var(--ar); }
+.table-wrapper { overflow-x: auto; margin: 12px 0; -webkit-overflow-scrolling: touch; }
+table { border-collapse: collapse; width: 100%; }
+th, td { padding: 6px 8px; text-align: left; vertical-align: top; }
+td .arabic, th .arabic { white-space: nowrap; }
+/* exercices */
+.answer-space { display: inline-block; width: 200px; max-width: 100%; min-height: 1.4em; vertical-align: bottom; margin: 0 .5em; border-bottom: 1.5px solid var(--ink); }
+.wide-space { width: 340px; }
+.question { margin: 14px 0; line-height: 2; }
+.section-divider { display: flex; align-items: center; gap: 14px; margin: 1.8em 0 1.2em; }
+/* repères de grammaire (communs aux deux niveaux) */
+.hamza { color: #c2410c; font-weight: 700; }
+.solaire { color: #c2410c; font-weight: 700; }
+.lunaire { color: #1d4ed8; font-weight: 700; }
+.letters { font: 700 1.8em/2 var(--ar); text-align: center; direction: rtl; color: var(--accent); letter-spacing: .15em; }
+/* logo de l'association (voir Styles/logo) */
+.brand { display: flex; align-items: center; gap: 10px; max-width: 880px; margin: 0 auto; padding: 14px 18px 0; }
+.brand img, .brand svg, .brand-logo { height: 46px; width: auto; }
+.brand-logo { min-width: 46px; display: inline-grid; place-items: center; padding: 0 8px; border: 1.5px dashed #888; border-radius: 8px; font: 600 .6rem/1 var(--font); letter-spacing: .12em; color: #666; }
+.brand-name { font-size: .8rem; color: var(--mut); }
+@media (max-width: 600px) {
+    .container { padding: 14px 12px 36px; }
+    .answer-space { width: 140px; }
+    .wide-space { width: min(340px, 100%); }
+}
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+/* impression : fond blanc, pas d'ombre, logo répété sur chaque page */
+@page { size: A4; margin: 18mm 14mm 16mm; }
+@media print {
+    * { background: transparent !important; box-shadow: none !important; animation: none !important; transition: none !important; }
+    html, body { background: #fff !important; color: #000; }
+    body { font-size: 11pt; line-height: 1.5; }
+    .container { max-width: none; padding: 0; }
+    .brand { position: fixed; top: -13mm; right: 0; left: 0; max-width: none; padding: 0; }
+    .brand img, .brand svg, .brand-logo { height: 9mm; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    tr, .rule-box, .example-box, .info-box, .warning-box, .note, .intro, .question, .exercise, .phrase-example { break-inside: avoid; }
+    .table-wrapper { overflow: visible; }
+    a { color: inherit; text-decoration: none; }
+}
+</style>
+    <link rel="stylesheet" href="../../fonts/fonts.css">
+<style>
+/* ===== Thème ADULTE : sobre et élégant (modèle A2) ===== */
+:root { --accent: #0f766e; --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; --ar: "Cairo", "Amiri", "Noto Naskh Arabic", sans-serif; }
+h1 { font-size: 1.7rem; letter-spacing: -.01em; }
+.arabic-title { font-size: 1.5rem; font-weight: 600; color: var(--accent); margin: 0 0 1.4em; padding-bottom: .5em; border-bottom: 1px solid var(--line); }
+h2 { font-size: 1.2rem; margin-top: 1.8em; padding-bottom: .25em; border-bottom: 1px solid var(--line); }
+h3 { font-size: 1.02rem; color: var(--accent); }
+h4 { font-size: .95rem; margin: .2em 0 .3em; }
+.arabic, .ar { font-size: 1.2em; font-weight: 500; }
+.hamza, .solaire, .lunaire { font-weight: 700; }
+strong { font-weight: 650; }
+.highlight { font-weight: 700; color: var(--accent); border-bottom: 2px solid var(--accent); }
+/* encadrés : un filet fin et une étiquette discrète */
+.rule-box, .example-box, .info-box, .warning-box { --c: var(--accent); position: relative; border: 1px solid var(--c); border-radius: var(--radius); padding: 10px 16px 12px; margin: 16px 0; }
+.rule-box::before, .example-box::before, .info-box::before, .warning-box::before { display: block; font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; color: var(--c); margin-bottom: 2px; }
+.rule-box::before { content: "Règle"; }
+.example-box { --c: #475569; } .example-box::before { content: "Exemple"; }
+.info-box { --c: #1d4ed8; } .info-box::before { content: "Information"; }
+.warning-box { --c: #b91c1c; } .warning-box::before { content: "Attention"; }
+.intro { border-left: 3px solid var(--accent); padding: 2px 0 2px 14px; margin: 0 0 1.4em; font-size: 1.04em; }
+.note { border-left: 3px solid #b45309; padding: 3px 0 3px 12px; margin: 14px 0; font-size: .95em; }
+.phrase-example, .example-item { border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 14px; margin: 10px 0; }
+th { color: var(--accent); font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; border-bottom: 2px solid var(--accent); }
+td { border-bottom: 1px solid var(--line); }
+/* exercices */
+.exercise { border-top: 1px solid var(--ink); padding: 10px 0 4px; margin: 14px 0 22px; }
+.exercise h3 { margin: 0 0 .6em; font-size: .95rem; color: var(--mut); font-weight: 600; }
+.section-number { display: inline-flex; align-items: center; justify-content: center; width: 1.9em; height: 1.9em; margin-right: .5em; border: 1.5px solid var(--accent); border-radius: 50%; color: var(--accent); font-size: .85em; font-weight: 700; }
+.question { border-left: 3px solid var(--line); padding: 4px 12px; }
+.section-divider { color: var(--accent); }
+</style>
+</head>
+
+<body class="cours">
+    <!-- Logo de l'association : remplacer le contenu de .brand-logo par <img src="data:image/svg+xml;base64,..." alt="Logo de l'association">
+     (ou un <svg> en ligne). Ce fichier est inclus dans toutes les pages : une seule modification suffit. -->
+<header class="brand">
+    <span class="brand-logo" role="img" aria-label="Logo de l'association">LOGO</span>
+    <span class="brand-name">Nom de l'association</span>
+</header>
+    <div class="container">
+        <h1>Du verbe sain à la racine et au schème</h1>
+        <div class="arabic-title">الْجَذْرُ وَالْوَزْنُ وَأَنْوَاعُ الْأَفْعَالِ</div>
+        <div class="intro">L'année dernière, nous avons étudié des verbes <strong>réguliers</strong> : <span class="arabic">كَتَبَ</span>, <span class="arabic">دَرَسَ</span>, <span class="arabic">ذَهَبَ</span>… Cette année, nous allons explorer deux grands chantiers : les <strong>schèmes</strong> (<span class="arabic">الْأَوْزَانُ</span>) et les <strong>verbes irréguliers</strong> (<span class="arabic">الْأَفْعَالُ الْمُعْتَلَّةُ</span>). Avant de partir, cette leçon fait le point sur ce que vous savez déjà et pose le vocabulaire dont nous aurons besoin toute l'année.</div>
+
+        <h2>🔁 Bilan : le verbe régulier</h2>
+        <p>Voici le verbe <span class="arabic">كَتَبَ</span> (écrire) aux trois formes que vous connaissez : le <strong>passé</strong> (leçon 13), le <strong>présent</strong> (leçon 14) et l'<strong>impératif</strong> (leçon 15).</p>
+        <div class="table-wrapper"><table><thead><tr><th>Pronom</th><th>Passé</th><th>Présent</th><th>Impératif</th></tr></thead><tbody>
+            <tr><td><span class="arabic">هُوَ</span></td><td><span class="arabic">كَتَبَ</span></td><td><span class="arabic">يَكْتُبُ</span></td><td>—</td></tr>
+            <tr><td><span class="arabic">هِيَ</span></td><td><span class="arabic">كَتَبَتْ</span></td><td><span class="arabic">تَكْتُبُ</span></td><td>—</td></tr>
+            <tr><td><span class="arabic">هُمَا</span> (m.)</td><td><span class="arabic">كَتَبَا</span></td><td><span class="arabic">يَكْتُبَانِ</span></td><td>—</td></tr>
+            <tr><td><span class="arabic">هُمَا</span> (f.)</td><td><span class="arabic">كَتَبَتَا</span></td><td><span class="arabic">تَكْتُبَانِ</span></td><td>—</td></tr>
+            <tr><td><span class="arabic">هُمْ</span></td><td><span class="arabic">كَتَبُوا</span></td><td><span class="arabic">يَكْتُبُونَ</span></td><td>—</td></tr>
+            <tr><td><span class="arabic">هُنَّ</span></td><td><span class="arabic">كَتَبْنَ</span></td><td><span class="arabic">يَكْتُبْنَ</span></td><td>—</td></tr>
+            <tr><td><span class="arabic">أَنْتَ</span></td><td><span class="arabic">كَتَبْتَ</span></td><td><span class="arabic">تَكْتُبُ</span></td><td><span class="arabic">اُكْتُبْ</span></td></tr>
+            <tr><td><span class="arabic">أَنْتِ</span></td><td><span class="arabic">كَتَبْتِ</span></td><td><span class="arabic">تَكْتُبِينَ</span></td><td><span class="arabic">اُكْتُبِي</span></td></tr>
+            <tr><td><span class="arabic">أَنْتُمَا</span></td><td><span class="arabic">كَتَبْتُمَا</span></td><td><span class="arabic">تَكْتُبَانِ</span></td><td><span class="arabic">اُكْتُبَا</span></td></tr>
+            <tr><td><span class="arabic">أَنْتُمْ</span></td><td><span class="arabic">كَتَبْتُمْ</span></td><td><span class="arabic">تَكْتُبُونَ</span></td><td><span class="arabic">اُكْتُبُوا</span></td></tr>
+            <tr><td><span class="arabic">أَنْتُنَّ</span></td><td><span class="arabic">كَتَبْتُنَّ</span></td><td><span class="arabic">تَكْتُبْنَ</span></td><td><span class="arabic">اُكْتُبْنَ</span></td></tr>
+            <tr><td><span class="arabic">أَنَا</span></td><td><span class="arabic">كَتَبْتُ</span></td><td><span class="arabic">أَكْتُبُ</span></td><td>—</td></tr>
+            <tr><td><span class="arabic">نَحْنُ</span></td><td><span class="arabic">كَتَبْنَا</span></td><td><span class="arabic">نَكْتُبُ</span></td><td>—</td></tr>
+        </tbody></table></div>
+        <div class="note"><strong>🔍 Observez :</strong> dans ce tableau, les trois consonnes <span class="arabic">ك ـ ت ـ ب</span> sont présentes <strong>à toutes les personnes et à tous les temps</strong>. Rien ne disparaît, rien ne change. C'est précisément ce qui fait de <span class="arabic">كَتَبَ</span> un verbe « sain ». Cette année, nous allons rencontrer des verbes dont les consonnes <em>bougent</em> : c'est ce qu'on appelle les verbes irréguliers.</div>
+
+        <h2>🌱 La racine : le squelette du mot</h2>
+        <div class="rule-box"><p>La <strong>racine</strong> (<span class="arabic">الْجَذْرُ</span>) est le squelette de consonnes qui porte le <strong>sens de base</strong> d'une famille de mots. La plupart des racines comptent <strong>trois consonnes</strong> (on dit qu'elles sont <em>trilitères</em>). Ces trois consonnes s'appellent les <strong>radicales</strong>.</p></div>
+        <p>La racine <span class="arabic">ك ـ ت ـ ب</span> porte l'idée d'<em>écrire</em>. Tous ces mots appartiennent à sa famille :</p>
+        <div class="table-wrapper"><table><thead><tr><th>Mot</th><th>Sens</th></tr></thead><tbody>
+            <tr><td><span class="arabic">كَتَبَ</span></td><td>il a écrit</td></tr>
+            <tr><td><span class="arabic">كِتَابٌ</span></td><td>un livre</td></tr>
+            <tr><td><span class="arabic">كَاتِبٌ</span></td><td>un écrivain, celui qui écrit</td></tr>
+            <tr><td><span class="arabic">مَكْتُوبٌ</span></td><td>écrit</td></tr>
+            <tr><td><span class="arabic">مَكْتَبٌ</span></td><td>un bureau</td></tr>
+            <tr><td><span class="arabic">مَكْتَبَةٌ</span></td><td>une bibliothèque, une librairie</td></tr>
+        </tbody></table></div>
+        <div class="info-box"><p><strong>Pourquoi la racine est-elle si importante ?</strong> D'abord parce que le <strong>dictionnaire arabe est classé par racines</strong> : pour chercher <span class="arabic">مَكْتَبَةٌ</span>, on cherche <span class="arabic">كتب</span>. Ensuite parce que, devant un mot nouveau, retrouver la racine permet de deviner son sens.</p></div>
+
+        <h2>📐 Le schème : le moule du mot</h2>
+        <div class="rule-box"><p>Le <strong>schème</strong> (<span class="arabic">الْوَزْنُ</span>, pluriel <span class="arabic">الْأَوْزَانُ</span>) est le <strong>moule</strong> dans lequel on coule la racine : il fixe les voyelles et les lettres ajoutées, et il indique la <strong>fonction</strong> du mot (verbe, celui qui fait, lieu, nom d'action…).</p></div>
+        <p>Pour décrire un schème, les grammairiens arabes utilisent les trois lettres <span class="arabic">ف ـ ع ـ ل</span>, qui signifient « faire » : elles servent de <strong>gabarit</strong>.</p>
+        <div class="table-wrapper"><table><thead><tr><th>Lettre du gabarit</th><th>Nom</th><th>Représente</th></tr></thead><tbody>
+            <tr><td><span class="arabic">فَ</span></td><td><span class="arabic">الْفَاءُ</span></td><td>la 1<sup>re</sup> radicale</td></tr>
+            <tr><td><span class="arabic">عَ</span></td><td><span class="arabic">الْعَيْنُ</span></td><td>la 2<sup>e</sup> radicale</td></tr>
+            <tr><td><span class="arabic">لَ</span></td><td><span class="arabic">اللَّامُ</span></td><td>la 3<sup>e</sup> radicale</td></tr>
+        </tbody></table></div>
+        <p>On remplace <span class="arabic">ف</span>, <span class="arabic">ع</span>, <span class="arabic">ل</span> par les trois radicales, et on garde tout le reste. Avec la racine <span class="arabic">ك ـ ت ـ ب</span> :</p>
+        <div class="table-wrapper"><table><thead><tr><th>Schème</th><th>Mot obtenu</th><th>Fonction</th></tr></thead><tbody>
+            <tr><td><span class="arabic">فَعَلَ</span></td><td><span class="arabic">كَتَبَ</span></td><td>verbe au passé</td></tr>
+            <tr><td><span class="arabic">يَفْعُلُ</span></td><td><span class="arabic">يَكْتُبُ</span></td><td>verbe au présent</td></tr>
+            <tr><td><span class="arabic">فَاعِلٌ</span></td><td><span class="arabic">كَاتِبٌ</span></td><td>celui qui fait l'action</td></tr>
+            <tr><td><span class="arabic">مَفْعُولٌ</span></td><td><span class="arabic">مَكْتُوبٌ</span></td><td>ce qui subit l'action</td></tr>
+            <tr><td><span class="arabic">مَفْعَلٌ</span></td><td><span class="arabic">مَكْتَبٌ</span></td><td>lieu de l'action</td></tr>
+            <tr><td><span class="arabic">فِعَالٌ</span></td><td><span class="arabic">كِتَابٌ</span></td><td>nom (ici : le livre)</td></tr>
+        </tbody></table></div>
+        <div class="example-box"><h4>🌟 Même schème, autre racine</h4>
+            <p>Avec la racine <span class="arabic">د ـ ر ـ س</span> (étudier) : <span class="arabic">دَرَسَ</span> · <span class="arabic">يَدْرُسُ</span> · <span class="arabic">دَارِسٌ</span> · <span class="arabic">مَدْرُوسٌ</span> · <span class="arabic">مَدْرَسَةٌ</span> (une école). Les moules sont les mêmes : seules les consonnes changent.</p></div>
+        <div class="note"><strong>💡 Retenez :</strong> <strong>racine + schème = mot</strong>. La racine donne le <em>sens</em>, le schème donne la <em>fonction</em>. Toute l'année, nous allons apprendre à reconnaître les schèmes pour comprendre comment les mots se fabriquent.</div>
+
+        <h2>🧩 Les lettres faibles et les types de verbes</h2>
+        <p>Une racine peut contenir trois sortes de « fragilités » qui compliquent la conjugaison :</p>
+        <ul>
+            <li>une <strong>lettre faible</strong> (<span class="arabic">حَرْفُ الْعِلَّةِ</span>) : <span class="arabic">و</span> ou <span class="arabic">ي</span> ;</li>
+            <li>une <strong>hamza</strong> (<span class="arabic">ء</span>) ;</li>
+            <li>deux radicales <strong>identiques</strong> côte à côte (la 2<sup>e</sup> et la 3<sup>e</sup>).</li>
+        </ul>
+        <div class="warning-box"><p>L'<span class="arabic">ا</span> (alif) n'est <strong>jamais</strong> une radicale à part entière : quand on voit un alif au milieu d'un verbe comme <span class="arabic">قَالَ</span>, il <strong>remplace</strong> un <span class="arabic">و</span> (la racine est <span class="arabic">ق ـ و ـ ل</span>). C'est pourquoi la racine d'un verbe n'est pas toujours visible à l'écrit, et c'est tout l'enjeu des cours à venir.</p></div>
+        <p>Selon l'endroit où se trouve la « fragilité », les grammairiens distinguent <strong>sept types de verbes</strong>, regroupés en deux grandes familles :</p>
+        <div class="table-wrapper"><table><thead><tr><th>Famille</th><th>Type</th><th>Critère</th><th>Exemples</th></tr></thead><tbody>
+            <tr><td rowspan="3"><strong>Verbes sains</strong><br><span class="arabic">الصَّحِيحُ</span></td><td><span class="arabic">سَالِمٌ</span> (sain)</td><td>aucune hamza, aucune lettre faible, aucun doublement</td><td><span class="arabic">كَتَبَ</span> · <span class="arabic">دَرَسَ</span> · <span class="arabic">فَتَحَ</span></td></tr>
+            <tr><td><span class="arabic">مَهْمُوزٌ</span> (hamzé)</td><td>une radicale est une hamza</td><td><span class="arabic">أَخَذَ</span> · <span class="arabic">سَأَلَ</span> · <span class="arabic">قَرَأَ</span></td></tr>
+            <tr><td><span class="arabic">مُضَاعَفٌ</span> (redoublé)</td><td>la 2<sup>e</sup> et la 3<sup>e</sup> radicales sont identiques</td><td><span class="arabic">مَدَّ</span> · <span class="arabic">رَدَّ</span> · <span class="arabic">شَدَّ</span></td></tr>
+            <tr><td rowspan="4"><strong>Verbes faibles</strong><br><span class="arabic">الْمُعْتَلُّ</span></td><td><span class="arabic">مِثَالٌ</span> (assimilé)</td><td>la 1<sup>re</sup> radicale est <span class="arabic">و</span> ou <span class="arabic">ي</span></td><td><span class="arabic">وَصَلَ</span> · <span class="arabic">وَقَفَ</span> · <span class="arabic">وَلَدَ</span></td></tr>
+            <tr><td><span class="arabic">أَجْوَفُ</span> (creux)</td><td>la 2<sup>e</sup> radicale est <span class="arabic">و</span> ou <span class="arabic">ي</span></td><td><span class="arabic">قَالَ</span> · <span class="arabic">بَاعَ</span> · <span class="arabic">نَامَ</span></td></tr>
+            <tr><td><span class="arabic">نَاقِصٌ</span> (défectueux)</td><td>la 3<sup>e</sup> radicale est <span class="arabic">و</span> ou <span class="arabic">ي</span></td><td><span class="arabic">دَعَا</span> · <span class="arabic">رَمَى</span> · <span class="arabic">بَنَى</span></td></tr>
+            <tr><td><span class="arabic">لَفِيفٌ</span></td><td>deux radicales faibles dans la même racine</td><td><span class="arabic">طَوَى</span> · <span class="arabic">وَقَى</span></td></tr>
+        </tbody></table></div>
+        <div class="note"><strong>📌 Le lien avec l'an dernier :</strong> les verbes <em>sains</em> sont ceux que vous avez étudiés. Le <strong>hamzé</strong> a déjà été abordé dans les leçons 24 à 26 (pour l'écriture de la hamza) ; nous reviendrons sur sa <em>conjugaison</em> au cours 32. Tous les autres types sont nouveaux.</div>
+        <div class="info-box"><p><strong>Le cas du lafīf.</strong> On distingue le <span class="arabic">لَفِيفٌ مَقْرُونٌ</span> (« rapproché ») où les deux lettres faibles se suivent : <span class="arabic">طَوَى</span> (<span class="arabic">ط ـ و ـ ي</span>) ; et le <span class="arabic">لَفِيفٌ مَفْرُوقٌ</span> (« séparé ») où elles sont séparées par une consonne : <span class="arabic">وَقَى</span> (<span class="arabic">و ـ ق ـ ي</span>). Nous y reviendrons au cours 39.</p></div>
+
+        <h2>🔬 Méthode : reconnaître le type d'un verbe</h2>
+        <div class="example-box"><ol>
+            <li><strong>Mettez le verbe à la 3<sup>e</sup> personne du masculin singulier du passé</strong> (c'est sa forme « de dictionnaire »).</li>
+            <li><strong>Retrouvez la racine</strong> : retirez les préfixes et suffixes, et demandez-vous si un alif cache un <span class="arabic">و</span> ou un <span class="arabic">ي</span>.</li>
+            <li><strong>Examinez les trois radicales</strong> dans l'ordre : la 1<sup>re</sup> est-elle une hamza ou une lettre faible ? la 2<sup>e</sup> ? la 3<sup>e</sup> ? la 2<sup>e</sup> et la 3<sup>e</sup> sont-elles identiques ?</li>
+            <li><strong>Nommez le type</strong> d'après le tableau ci-dessus.</li></ol></div>
+        <p>Exemple : <span class="arabic">رَمَى</span> → racine <span class="arabic">ر ـ م ـ ي</span> → la 3<sup>e</sup> radicale est <span class="arabic">ي</span> → verbe <strong>défectueux</strong> (<span class="arabic">نَاقِصٌ</span>).</p>
+
+        <h2>🗺️ Le programme de l'année</h2>
+        <p>Pour que vous sachiez où nous allons, voici les grandes étapes. À chaque nouveau type de verbe, nous reviendrons sur la conjugaison complète (passé, présent, impératif, négation, subjonctif et apocopé) : c'est la <strong>révision en spirale</strong>.</p>
+        <ol>
+            <li><strong>La forme I et le passif</strong> du verbe sain (cours 30 et 31).</li>
+            <li><strong>Les verbes irréguliers de forme I</strong> : hamzé, redoublé, assimilé, creux, défectueux, lafīf (cours 32 à 40).</li>
+            <li><strong>Les dix formes</strong> du verbe trilitère, d'abord sur des verbes sains (cours 41 à 47), puis avec des verbes irréguliers (cours 48 à 51).</li>
+            <li><strong>Les schèmes des noms</strong> : lieu, pluriels brisés, comparatif, relatif, adjectifs, intensité (cours 52 à 56).</li>
+        </ol>
+
+        <div class="note"><strong>📚 Résumé de la leçon :</strong>
+            <ul><li>Le verbe <em>sain</em> garde ses trois consonnes à tous les temps et à toutes les personnes</li>
+            <li>La <strong>racine</strong> porte le sens ; le <strong>schème</strong> (<span class="arabic">فَعَلَ</span>, <span class="arabic">فَاعِلٌ</span>, <span class="arabic">مَفْعُولٌ</span>…) porte la fonction : <strong>racine + schème = mot</strong></li>
+            <li>Les radicales se nomment <span class="arabic">الْفَاءُ</span>, <span class="arabic">الْعَيْنُ</span>, <span class="arabic">اللَّامُ</span></li>
+            <li>Sept types de verbes : <strong>sain, hamzé, redoublé</strong> (famille <span class="arabic">الصَّحِيحُ</span>) ; <strong>assimilé, creux, défectueux, lafīf</strong> (famille <span class="arabic">الْمُعْتَلُّ</span>)</li>
+            <li>L'alif n'est jamais une radicale : il remplace un <span class="arabic">و</span> ou un <span class="arabic">ي</span></li></ul></div>
+    </div>
+</body>
+
+</html>

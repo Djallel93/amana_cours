@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La voix passive du verbe sain</title>
+    <style>
+/* ===== AMANA – feuille de style commune (structure, impression, accessibilité) =====
+   Les thèmes (theme_adulte / theme_enfant) ne changent que l'apparence : couleurs, polices, formes.
+   Pas d'animation, pas de JavaScript : tout le contenu est visible partout. */
+:root {
+    --ink: #1d1d1b; --mut: #5b5b57; --line: #d9d6cf; --accent: #0f766e; --paper: #fff;
+    --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --ar: "Amiri", "Noto Naskh Arabic", serif;
+    --radius: 8px;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.6 var(--font); overflow-wrap: break-word; }
+.container { max-width: 880px; margin: 0 auto; padding: 20px 18px 48px; }
+h1, h2, h3, h4 { line-height: 1.25; margin: 1.2em 0 .45em; }
+h1 { margin-top: .3em; }
+p { margin: .55em 0; }
+ul, ol { margin: .5em 0; padding-left: 1.4em; }
+li { margin: .25em 0; }
+img { max-width: 100%; height: auto; }
+.arabic, .ar { font-family: var(--ar); direction: rtl; unicode-bidi: isolate; }
+.arabic-title { direction: rtl; font-family: var(--ar); }
+.table-wrapper { overflow-x: auto; margin: 12px 0; -webkit-overflow-scrolling: touch; }
+table { border-collapse: collapse; width: 100%; }
+th, td { padding: 6px 8px; text-align: left; vertical-align: top; }
+td .arabic, th .arabic { white-space: nowrap; }
+/* exercices */
+.answer-space { display: inline-block; width: 200px; max-width: 100%; min-height: 1.4em; vertical-align: bottom; margin: 0 .5em; border-bottom: 1.5px solid var(--ink); }
+.wide-space { width: 340px; }
+.question { margin: 14px 0; line-height: 2; }
+.section-divider { display: flex; align-items: center; gap: 14px; margin: 1.8em 0 1.2em; }
+/* repères de grammaire (communs aux deux niveaux) */
+.hamza { color: #c2410c; font-weight: 700; }
+.solaire { color: #c2410c; font-weight: 700; }
+.lunaire { color: #1d4ed8; font-weight: 700; }
+.letters { font: 700 1.8em/2 var(--ar); text-align: center; direction: rtl; color: var(--accent); letter-spacing: .15em; }
+/* logo de l'association (voir Styles/logo) */
+.brand { display: flex; align-items: center; gap: 10px; max-width: 880px; margin: 0 auto; padding: 14px 18px 0; }
+.brand img, .brand svg, .brand-logo { height: 46px; width: auto; }
+.brand-logo { min-width: 46px; display: inline-grid; place-items: center; padding: 0 8px; border: 1.5px dashed #888; border-radius: 8px; font: 600 .6rem/1 var(--font); letter-spacing: .12em; color: #666; }
+.brand-name { font-size: .8rem; color: var(--mut); }
+@media (max-width: 600px) {
+    .container { padding: 14px 12px 36px; }
+    .answer-space { width: 140px; }
+    .wide-space { width: min(340px, 100%); }
+}
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+/* impression : fond blanc, pas d'ombre, logo répété sur chaque page */
+@page { size: A4; margin: 18mm 14mm 16mm; }
+@media print {
+    * { background: transparent !important; box-shadow: none !important; animation: none !important; transition: none !important; }
+    html, body { background: #fff !important; color: #000; }
+    body { font-size: 11pt; line-height: 1.5; }
+    .container { max-width: none; padding: 0; }
+    .brand { position: fixed; top: -13mm; right: 0; left: 0; max-width: none; padding: 0; }
+    .brand img, .brand svg, .brand-logo { height: 9mm; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    tr, .rule-box, .example-box, .info-box, .warning-box, .note, .intro, .question, .exercise, .phrase-example { break-inside: avoid; }
+    .table-wrapper { overflow: visible; }
+    a { color: inherit; text-decoration: none; }
+}
+</style>
+    <link rel="stylesheet" href="../../fonts/fonts.css">
+<style>
+/* ===== Thème ADULTE : sobre et élégant (modèle A2) ===== */
+:root { --accent: #0f766e; --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; --ar: "Cairo", "Amiri", "Noto Naskh Arabic", sans-serif; }
+h1 { font-size: 1.7rem; letter-spacing: -.01em; }
+.arabic-title { font-size: 1.5rem; font-weight: 600; color: var(--accent); margin: 0 0 1.4em; padding-bottom: .5em; border-bottom: 1px solid var(--line); }
+h2 { font-size: 1.2rem; margin-top: 1.8em; padding-bottom: .25em; border-bottom: 1px solid var(--line); }
+h3 { font-size: 1.02rem; color: var(--accent); }
+h4 { font-size: .95rem; margin: .2em 0 .3em; }
+.arabic, .ar { font-size: 1.2em; font-weight: 500; }
+.hamza, .solaire, .lunaire { font-weight: 700; }
+strong { font-weight: 650; }
+.highlight { font-weight: 700; color: var(--accent); border-bottom: 2px solid var(--accent); }
+/* encadrés : un filet fin et une étiquette discrète */
+.rule-box, .example-box, .info-box, .warning-box { --c: var(--accent); position: relative; border: 1px solid var(--c); border-radius: var(--radius); padding: 10px 16px 12px; margin: 16px 0; }
+.rule-box::before, .example-box::before, .info-box::before, .warning-box::before { display: block; font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; color: var(--c); margin-bottom: 2px; }
+.rule-box::before { content: "Règle"; }
+.example-box { --c: #475569; } .example-box::before { content: "Exemple"; }
+.info-box { --c: #1d4ed8; } .info-box::before { content: "Information"; }
+.warning-box { --c: #b91c1c; } .warning-box::before { content: "Attention"; }
+.intro { border-left: 3px solid var(--accent); padding: 2px 0 2px 14px; margin: 0 0 1.4em; font-size: 1.04em; }
+.note { border-left: 3px solid #b45309; padding: 3px 0 3px 12px; margin: 14px 0; font-size: .95em; }
+.phrase-example, .example-item { border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 14px; margin: 10px 0; }
+th { color: var(--accent); font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; border-bottom: 2px solid var(--accent); }
+td { border-bottom: 1px solid var(--line); }
+/* exercices */
+.exercise { border-top: 1px solid var(--ink); padding: 10px 0 4px; margin: 14px 0 22px; }
+.exercise h3 { margin: 0 0 .6em; font-size: .95rem; color: var(--mut); font-weight: 600; }
+.section-number { display: inline-flex; align-items: center; justify-content: center; width: 1.9em; height: 1.9em; margin-right: .5em; border: 1.5px solid var(--accent); border-radius: 50%; color: var(--accent); font-size: .85em; font-weight: 700; }
+.question { border-left: 3px solid var(--line); padding: 4px 12px; }
+.section-divider { color: var(--accent); }
+</style>
+</head>
+
+<body class="cours">
+    <!-- Logo de l'association : remplacer le contenu de .brand-logo par <img src="data:image/svg+xml;base64,..." alt="Logo de l'association">
+     (ou un <svg> en ligne). Ce fichier est inclus dans toutes les pages : une seule modification suffit. -->
+<header class="brand">
+    <span class="brand-logo" role="img" aria-label="Logo de l'association">LOGO</span>
+    <span class="brand-name">Nom de l'association</span>
+</header>
+    <div class="container">
+        <h1>La voix passive du verbe sain</h1>
+        <div class="arabic-title">الْفِعْلُ الْمَبْنِيُّ لِلْمَجْهُولِ</div>
+        <div class="intro">Jusqu'ici, tous nos verbes étaient à la <strong>voix active</strong> : quelqu'un fait quelque chose (<span class="arabic">فَتَحَ الْحَارِسُ الْبَابَ</span>, « le gardien a ouvert la porte »). La <strong>voix passive</strong> (<span class="arabic">الْفِعْلُ الْمَبْنِيُّ لِلْمَجْهُولِ</span>) met en avant ce qui subit l'action : « la porte a été ouverte ». Le mot <span class="arabic">مَجْهُولٌ</span> signifie « inconnu » : on l'emploie quand <strong>l'auteur de l'action est inconnu, évident ou sans importance</strong>.</div>
+
+        <h2>🛠️ Fabriquer le passif</h2>
+        <div class="rule-box"><p>Le passif ne change <strong>ni les consonnes ni le sens du verbe</strong> : seules changent les <strong>voyelles</strong>. La règle est la même pour tous les verbes de forme I :</p>
+            <ul><li><strong>Au passé :</strong> ḍamma sur la 1<sup>re</sup> radicale, kasra sur la 2<sup>e</sup> → <span class="arabic">فُعِلَ</span></li>
+            <li><strong>Au présent :</strong> ḍamma sur la lettre du préfixe, fatḥa sur la 2<sup>e</sup> radicale → <span class="arabic">يُفْعَلُ</span></li></ul></div>
+        <div class="table-wrapper"><table><thead><tr><th>Actif (passé)</th><th>Passif (passé)</th><th>Actif (présent)</th><th>Passif (présent)</th><th>Français</th></tr></thead><tbody>
+            <tr><td><span class="arabic">كَتَبَ</span></td><td><span class="arabic">كُتِبَ</span></td><td><span class="arabic">يَكْتُبُ</span></td><td><span class="arabic">يُكْتَبُ</span></td><td>écrire → être écrit</td></tr>
+            <tr><td><span class="arabic">فَتَحَ</span></td><td><span class="arabic">فُتِحَ</span></td><td><span class="arabic">يَفْتَحُ</span></td><td><span class="arabic">يُفْتَحُ</span></td><td>ouvrir → être ouvert</td></tr>
+            <tr><td><span class="arabic">شَرِبَ</span></td><td><span class="arabic">شُرِبَ</span></td><td><span class="arabic">يَشْرَبُ</span></td><td><span class="arabic">يُشْرَبُ</span></td><td>boire → être bu</td></tr>
+            <tr><td><span class="arabic">سَمِعَ</span></td><td><span class="arabic">سُمِعَ</span></td><td><span class="arabic">يَسْمَعُ</span></td><td><span class="arabic">يُسْمَعُ</span></td><td>entendre → être entendu</td></tr>
+            <tr><td><span class="arabic">دَرَسَ</span></td><td><span class="arabic">دُرِسَ</span></td><td><span class="arabic">يَدْرُسُ</span></td><td><span class="arabic">يُدْرَسُ</span></td><td>étudier → être étudié</td></tr>
+            <tr><td><span class="arabic">مَنَعَ</span></td><td><span class="arabic">مُنِعَ</span></td><td><span class="arabic">يَمْنَعُ</span></td><td><span class="arabic">يُمْنَعُ</span></td><td>interdire → être interdit</td></tr>
+        </tbody></table></div>
+        <div class="note"><strong>💡 Le passif efface les différences de la forme I :</strong> que le verbe actif soit en <span class="arabic">يَفْعُلُ</span>, <span class="arabic">يَفْعِلُ</span> ou <span class="arabic">يَفْعَلُ</span> (leçon 30), son passif est toujours <span class="arabic">يُفْعَلُ</span>. On n'a donc rien à apprendre de plus.</div>
+
+        <h2>🔄 De l'actif au passif : le nouveau sujet</h2>
+        <p>Pour passer de l'actif au passif, on <strong>supprime l'auteur</strong> de l'action et on <strong>promeut le complément d'objet</strong> au rang de sujet. Ce nouveau sujet s'appelle <span class="arabic">نَائِبُ الْفَاعِلِ</span> (« le remplaçant du sujet »). Il se met au <strong>nominatif</strong> (<span class="arabic">مَرْفُوعٌ</span>), et le verbe s'accorde avec lui en genre.</p>
+        <div class="table-wrapper"><table><thead><tr><th>Actif</th><th>Passif</th></tr></thead><tbody>
+            <tr><td><span class="arabic">فَتَحَ الْحَارِسُ <strong>الْبَابَ</strong></span></td><td><span class="arabic">فُتِحَ <strong>الْبَابُ</strong></span></td></tr>
+            <tr><td><span class="arabic">كَتَبَ الطَّالِبُ <strong>الدَّرْسَ</strong></span></td><td><span class="arabic">كُتِبَ <strong>الدَّرْسُ</strong></span></td></tr>
+            <tr><td><span class="arabic">شَرِبَ الْوَلَدُ <strong>الْعَصِيرَ</strong></span></td><td><span class="arabic">شُرِبَ <strong>الْعَصِيرُ</strong></span></td></tr>
+            <tr><td><span class="arabic">سَمِعَ النَّاسُ <strong>الْخَبَرَ</strong></span></td><td><span class="arabic">سُمِعَ <strong>الْخَبَرُ</strong></span></td></tr>
+            <tr><td><span class="arabic">كَتَبَتِ الْمُعَلِّمَةُ <strong>الرِّسَالَةَ</strong></span></td><td><span class="arabic">كُتِبَتِ <strong>الرِّسَالَةُ</strong></span></td></tr>
+            <tr><td><span class="arabic">يَفْتَحُ الْحَارِسُ <strong>الْبَابَ</strong></span></td><td><span class="arabic">يُفْتَحُ <strong>الْبَابُ</strong></span></td></tr>
+        </tbody></table></div>
+        <div class="note"><strong>🔎 Observez :</strong> le complément d'objet <span class="arabic">الْبَابَ</span> (accusatif, en <span class="arabic">ـَ</span>) devient <span class="arabic">الْبَابُ</span> (nominatif, en <span class="arabic">ـُ</span>). Dans <span class="arabic">كُتِبَتِ الرِّسَالَةُ</span>, le <span class="arabic">ت</span> marque le féminin ; sa kasra vient de la rencontre de deux sukūn devant <span class="arabic">ال</span> (leçon 28).</div>
+        <div class="warning-box"><p><strong>Rappel d'accord.</strong> Quand le verbe <strong>précède</strong> son sujet, il reste au <strong>singulier</strong> et ne s'accorde qu'en <em>genre</em> : <span class="arabic">سُئِلَ الطُّلَّابُ</span> (« les étudiants ont été interrogés »). Et le pluriel des choses (non humain) se comporte comme un <strong>féminin singulier</strong> : <span class="arabic">تُكْتَبُ الدُّرُوسُ</span> (« les leçons sont écrites »).</p></div>
+
+        <h2>🧾 Conjugaison du passif</h2>
+        <p>Le passif se conjugue exactement comme l'actif : seules les voyelles internes changent. Voici <span class="arabic">كُتِبَ</span> aux personnes de l'absent :</p>
+        <div class="table-wrapper"><table><thead><tr><th>Pronom</th><th>Passé</th><th>Présent</th></tr></thead><tbody>
+            <tr><td><span class="arabic">هُوَ</span></td><td><span class="arabic">كُتِبَ</span></td><td><span class="arabic">يُكْتَبُ</span></td></tr>
+            <tr><td><span class="arabic">هِيَ</span></td><td><span class="arabic">كُتِبَتْ</span></td><td><span class="arabic">تُكْتَبُ</span></td></tr>
+            <tr><td><span class="arabic">هُمَا</span> (m.)</td><td><span class="arabic">كُتِبَا</span></td><td><span class="arabic">يُكْتَبَانِ</span></td></tr>
+            <tr><td><span class="arabic">هُمَا</span> (f.)</td><td><span class="arabic">كُتِبَتَا</span></td><td><span class="arabic">تُكْتَبَانِ</span></td></tr>
+            <tr><td><span class="arabic">هُمْ</span></td><td><span class="arabic">كُتِبُوا</span></td><td><span class="arabic">يُكْتَبُونَ</span></td></tr>
+            <tr><td><span class="arabic">هُنَّ</span></td><td><span class="arabic">كُتِبْنَ</span></td><td><span class="arabic">يُكْتَبْنَ</span></td></tr>
+        </tbody></table></div>
+        <p>Les 1<sup>re</sup> et 2<sup>e</sup> personnes existent aussi, avec les mêmes terminaisons que l'actif :</p>
+        <div class="example-box"><p><span class="arabic">شُكِرْتَ</span> (on t'a remercié) · <span class="arabic">شُكِرْتِ</span> (on t'a remerciée) · <span class="arabic">شُكِرْتُ</span> (on m'a remercié) · <span class="arabic">يُشْكَرُونَ</span> (on les remercie) · <span class="arabic">نُشْكَرُ</span> (on nous remercie)</p></div>
+        <div class="info-box"><p>Le passif existe à tous les modes : <span class="arabic">لَمْ يُفْتَحِ الْبَابُ</span> (apocopé, avec la kasra de la leçon 28) ; <span class="arabic">لَنْ يُكْتَبَ الدَّرْسُ</span> (subjonctif). En revanche, il n'y a <strong>pas d'impératif passif</strong>.</p></div>
+
+        <h2>⚖️ Verbe passif ou participe passif ?</h2>
+        <p>Les deux expriment le passif, mais pas de la même façon :</p>
+        <div class="table-wrapper"><table><thead><tr><th>Verbe passif : l'<strong>événement</strong></th><th>Participe passif : l'<strong>état</strong></th></tr></thead><tbody>
+            <tr><td><span class="arabic">فُتِحَ الْبَابُ.</span><br>La porte <em>a été ouverte</em>.</td><td><span class="arabic">الْبَابُ مَفْتُوحٌ.</span><br>La porte <em>est ouverte</em>.</td></tr>
+            <tr><td><span class="arabic">كُتِبَتِ الرِّسَالَةُ.</span><br>La lettre <em>a été écrite</em>.</td><td><span class="arabic">الرِّسَالَةُ مَكْتُوبَةٌ.</span><br>La lettre <em>est écrite</em>.</td></tr>
+        </tbody></table></div>
+
+        <h2>🎭 La question de l'auteur</h2>
+        <div class="rule-box"><p>En arabe classique, <strong>le passif n'exprime pas l'auteur</strong> de l'action. Si l'on veut le dire, on emploie la voix <strong>active</strong> : <span class="arabic">فَتَحَ الْحَارِسُ الْبَابَ</span>.</p></div>
+        <div class="note"><strong>📰 Dans l'arabe moderne</strong>, surtout dans la presse, on rencontre l'expression de l'agent avec <span class="arabic">مِنْ قِبَلِ</span>, <span class="arabic">مِنْ طَرَفِ</span> ou <span class="arabic">مِنْ جَانِبِ</span> : <span class="arabic">فُتِحَ الْبَابُ مِنْ قِبَلِ الْحَارِسِ</span>. C'est un calque des langues européennes, que les puristes évitent ; vous le comprendrez en lecture, mais dans un texte soigné, préférez l'actif.</div>
+
+        <h2>🚫 Quels verbes n'ont pas de passif direct ?</h2>
+        <p>Seuls les verbes <strong>transitifs</strong> (qui ont un complément d'objet direct) se mettent au passif, puisque c'est ce complément qui devient sujet. Les verbes intransitifs comme <span class="arabic">ذَهَبَ</span>, <span class="arabic">جَلَسَ</span>, <span class="arabic">دَخَلَ</span> n'ont donc pas de passif ordinaire.</p>
+        <div class="note"><strong>🎓 Pour aller plus loin :</strong> certains verbes suivis d'une préposition peuvent se mettre au passif ; c'est alors le groupe <em>préposition + nom</em> qui joue le rôle de nouveau sujet et le verbe reste au masculin singulier : <span class="arabic">نَظَرَ فِي الْأَمْرِ</span> → <span class="arabic">نُظِرَ فِي الْأَمْرِ</span> (« on a examiné l'affaire »).</div>
+
+        <h2>➕ Une autre façon d'exprimer le passif : <span class="arabic">تَمَّ</span></h2>
+        <div class="rule-box"><p>Dans l'arabe moderne, on exprime très souvent le passif avec le verbe <span class="arabic">تَمَّ</span> (« s'accomplir ») suivi du <strong>maṣdar</strong> (leçon 30), en annexion. Le verbe <span class="arabic">تَمَّ</span> s'accorde en genre avec le maṣdar.</p>
+            <p style="text-align:center;"><span class="arabic">تَمَّ</span> + maṣdar</p></div>
+        <div class="table-wrapper"><table><thead><tr><th>Avec <span class="arabic">تَمَّ</span></th><th>Passif classique</th><th>Français</th></tr></thead><tbody>
+            <tr><td><span class="arabic">تَمَّ فَتْحُ الْبَابِ</span></td><td><span class="arabic">فُتِحَ الْبَابُ</span></td><td>La porte a été ouverte.</td></tr>
+            <tr><td><span class="arabic">تَمَّتْ كِتَابَةُ الرِّسَالَةِ</span></td><td><span class="arabic">كُتِبَتِ الرِّسَالَةُ</span></td><td>La lettre a été écrite.</td></tr>
+            <tr><td><span class="arabic">تَمَّتْ دِرَاسَةُ الدَّرْسِ</span></td><td><span class="arabic">دُرِسَ الدَّرْسُ</span></td><td>La leçon a été étudiée.</td></tr>
+        </tbody></table></div>
+        <div class="note"><strong>🔭 Et les verbes irréguliers ?</strong> Le passif des verbes irréguliers suit les mêmes principes, mais avec des surprises : <span class="arabic">قَالَ</span> devient <span class="arabic">قِيلَ</span>, <span class="arabic">دَعَا</span> devient <span class="arabic">دُعِيَ</span>. Nous les retrouverons dans les cours 36 et 38.</div>
+
+        <div class="note"><strong>📚 Résumé de la leçon :</strong>
+            <ul><li>Passif = <strong>changement de voyelles</strong> : passé <span class="arabic">فُعِلَ</span>, présent <span class="arabic">يُفْعَلُ</span>, pour tous les verbes de forme I</li>
+            <li>L'auteur disparaît ; le complément d'objet devient <span class="arabic">نَائِبُ الْفَاعِلِ</span> (nominatif) et commande l'accord du verbe</li>
+            <li>Seuls les verbes <strong>transitifs</strong> ont un passif direct ; pas d'impératif passif</li>
+            <li><span class="arabic">فُتِحَ الْبَابُ</span> (événement) ≠ <span class="arabic">الْبَابُ مَفْتُوحٌ</span> (état)</li>
+            <li>L'arabe moderne emploie aussi <span class="arabic">تَمَّ</span> + maṣdar : <span class="arabic">تَمَّ فَتْحُ الْبَابِ</span></li></ul></div>
+    </div>
+</body>
+
+</html>

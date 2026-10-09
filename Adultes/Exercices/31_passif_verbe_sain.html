@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercices : La voix passive du verbe sain</title>
+    <style>
+/* ===== AMANA – feuille de style commune (structure, impression, accessibilité) =====
+   Les thèmes (theme_adulte / theme_enfant) ne changent que l'apparence : couleurs, polices, formes.
+   Pas d'animation, pas de JavaScript : tout le contenu est visible partout. */
+:root {
+    --ink: #1d1d1b; --mut: #5b5b57; --line: #d9d6cf; --accent: #0f766e; --paper: #fff;
+    --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --ar: "Amiri", "Noto Naskh Arabic", serif;
+    --radius: 8px;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.6 var(--font); overflow-wrap: break-word; }
+.container { max-width: 880px; margin: 0 auto; padding: 20px 18px 48px; }
+h1, h2, h3, h4 { line-height: 1.25; margin: 1.2em 0 .45em; }
+h1 { margin-top: .3em; }
+p { margin: .55em 0; }
+ul, ol { margin: .5em 0; padding-left: 1.4em; }
+li { margin: .25em 0; }
+img { max-width: 100%; height: auto; }
+.arabic, .ar { font-family: var(--ar); direction: rtl; unicode-bidi: isolate; }
+.arabic-title { direction: rtl; font-family: var(--ar); }
+.table-wrapper { overflow-x: auto; margin: 12px 0; -webkit-overflow-scrolling: touch; }
+table { border-collapse: collapse; width: 100%; }
+th, td { padding: 6px 8px; text-align: left; vertical-align: top; }
+td .arabic, th .arabic { white-space: nowrap; }
+/* exercices */
+.answer-space { display: inline-block; width: 200px; max-width: 100%; min-height: 1.4em; vertical-align: bottom; margin: 0 .5em; border-bottom: 1.5px solid var(--ink); }
+.wide-space { width: 340px; }
+.question { margin: 14px 0; line-height: 2; }
+.section-divider { display: flex; align-items: center; gap: 14px; margin: 1.8em 0 1.2em; }
+/* repères de grammaire (communs aux deux niveaux) */
+.hamza { color: #c2410c; font-weight: 700; }
+.solaire { color: #c2410c; font-weight: 700; }
+.lunaire { color: #1d4ed8; font-weight: 700; }
+.letters { font: 700 1.8em/2 var(--ar); text-align: center; direction: rtl; color: var(--accent); letter-spacing: .15em; }
+/* logo de l'association (voir Styles/logo) */
+.brand { display: flex; align-items: center; gap: 10px; max-width: 880px; margin: 0 auto; padding: 14px 18px 0; }
+.brand img, .brand svg, .brand-logo { height: 46px; width: auto; }
+.brand-logo { min-width: 46px; display: inline-grid; place-items: center; padding: 0 8px; border: 1.5px dashed #888; border-radius: 8px; font: 600 .6rem/1 var(--font); letter-spacing: .12em; color: #666; }
+.brand-name { font-size: .8rem; color: var(--mut); }
+@media (max-width: 600px) {
+    .container { padding: 14px 12px 36px; }
+    .answer-space { width: 140px; }
+    .wide-space { width: min(340px, 100%); }
+}
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+/* impression : fond blanc, pas d'ombre, logo répété sur chaque page */
+@page { size: A4; margin: 18mm 14mm 16mm; }
+@media print {
+    * { background: transparent !important; box-shadow: none !important; animation: none !important; transition: none !important; }
+    html, body { background: #fff !important; color: #000; }
+    body { font-size: 11pt; line-height: 1.5; }
+    .container { max-width: none; padding: 0; }
+    .brand { position: fixed; top: -13mm; right: 0; left: 0; max-width: none; padding: 0; }
+    .brand img, .brand svg, .brand-logo { height: 9mm; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    tr, .rule-box, .example-box, .info-box, .warning-box, .note, .intro, .question, .exercise, .phrase-example { break-inside: avoid; }
+    .table-wrapper { overflow: visible; }
+    a { color: inherit; text-decoration: none; }
+}
+</style>
+    <link rel="stylesheet" href="../../fonts/fonts.css">
+<style>
+/* ===== Thème ADULTE : sobre et élégant (modèle A2) ===== */
+:root { --accent: #0f766e; --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; --ar: "Cairo", "Amiri", "Noto Naskh Arabic", sans-serif; }
+h1 { font-size: 1.7rem; letter-spacing: -.01em; }
+.arabic-title { font-size: 1.5rem; font-weight: 600; color: var(--accent); margin: 0 0 1.4em; padding-bottom: .5em; border-bottom: 1px solid var(--line); }
+h2 { font-size: 1.2rem; margin-top: 1.8em; padding-bottom: .25em; border-bottom: 1px solid var(--line); }
+h3 { font-size: 1.02rem; color: var(--accent); }
+h4 { font-size: .95rem; margin: .2em 0 .3em; }
+.arabic, .ar { font-size: 1.2em; font-weight: 500; }
+.hamza, .solaire, .lunaire { font-weight: 700; }
+strong { font-weight: 650; }
+.highlight { font-weight: 700; color: var(--accent); border-bottom: 2px solid var(--accent); }
+/* encadrés : un filet fin et une étiquette discrète */
+.rule-box, .example-box, .info-box, .warning-box { --c: var(--accent); position: relative; border: 1px solid var(--c); border-radius: var(--radius); padding: 10px 16px 12px; margin: 16px 0; }
+.rule-box::before, .example-box::before, .info-box::before, .warning-box::before { display: block; font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; color: var(--c); margin-bottom: 2px; }
+.rule-box::before { content: "Règle"; }
+.example-box { --c: #475569; } .example-box::before { content: "Exemple"; }
+.info-box { --c: #1d4ed8; } .info-box::before { content: "Information"; }
+.warning-box { --c: #b91c1c; } .warning-box::before { content: "Attention"; }
+.intro { border-left: 3px solid var(--accent); padding: 2px 0 2px 14px; margin: 0 0 1.4em; font-size: 1.04em; }
+.note { border-left: 3px solid #b45309; padding: 3px 0 3px 12px; margin: 14px 0; font-size: .95em; }
+.phrase-example, .example-item { border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 14px; margin: 10px 0; }
+th { color: var(--accent); font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; border-bottom: 2px solid var(--accent); }
+td { border-bottom: 1px solid var(--line); }
+/* exercices */
+.exercise { border-top: 1px solid var(--ink); padding: 10px 0 4px; margin: 14px 0 22px; }
+.exercise h3 { margin: 0 0 .6em; font-size: .95rem; color: var(--mut); font-weight: 600; }
+.section-number { display: inline-flex; align-items: center; justify-content: center; width: 1.9em; height: 1.9em; margin-right: .5em; border: 1.5px solid var(--accent); border-radius: 50%; color: var(--accent); font-size: .85em; font-weight: 700; }
+.question { border-left: 3px solid var(--line); padding: 4px 12px; }
+.section-divider { color: var(--accent); }
+</style>
+</head>
+
+<body class="exercices">
+    <!-- Logo de l'association : remplacer le contenu de .brand-logo par <img src="data:image/svg+xml;base64,..." alt="Logo de l'association">
+     (ou un <svg> en ligne). Ce fichier est inclus dans toutes les pages : une seule modification suffit. -->
+<header class="brand">
+    <span class="brand-logo" role="img" aria-label="Logo de l'association">LOGO</span>
+    <span class="brand-name">Nom de l'association</span>
+</header>
+    <div class="container">
+        <h1>La voix passive du verbe sain</h1>
+        <div class="arabic-title">تَمَارِين</div>
+        <div class="intro"><strong>👋 Instructions :</strong> ces exercices accompagnent la leçon « La voix passive du verbe sain ». Rappel : passé <span class="arabic">فُعِلَ</span>, présent <span class="arabic">يُفْعَلُ</span> ; le complément d'objet devient sujet (nominatif) et le verbe s'accorde avec lui.</div>
+
+        <h2><span class="section-number">1</span>Actif ou passif ?</h2>
+        <div class="exercise">
+            <h3>Indiquez si le verbe est à l'actif ou au passif</h3>
+            <ol>
+                <li><span class="arabic">كَتَبَ الْوَلَدُ الدَّرْسَ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">كُتِبَ الدَّرْسُ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">يُفْتَحُ الْبَابُ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">يَفْتَحُ الْحَارِسُ الْبَابَ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">سُمِعَ الْخَبَرُ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">سَمِعَ النَّاسُ الْخَبَرَ</span> → <span class="answer-space"></span></li>
+            </ol>
+        </div>
+
+        <h2><span class="section-number">2</span>Former le passif</h2>
+        <div class="exercise">
+            <h3>Écrivez le passif du verbe, au passé puis au présent (3<sup>e</sup> personne du masculin singulier), avec les voyelles</h3>
+            <table><thead><tr><th>Actif</th><th>Passif au passé</th><th>Passif au présent</th></tr></thead><tbody>
+                <tr><td><span class="arabic">دَرَسَ ـ يَدْرُسُ</span></td><td><span class="answer-space"></span></td><td><span class="answer-space"></span></td></tr>
+                <tr><td><span class="arabic">شَرِبَ ـ يَشْرَبُ</span></td><td><span class="answer-space"></span></td><td><span class="answer-space"></span></td></tr>
+                <tr><td><span class="arabic">مَنَعَ ـ يَمْنَعُ</span></td><td><span class="answer-space"></span></td><td><span class="answer-space"></span></td></tr>
+                <tr><td><span class="arabic">ضَرَبَ ـ يَضْرِبُ</span></td><td><span class="answer-space"></span></td><td><span class="answer-space"></span></td></tr>
+                <tr><td><span class="arabic">فَهِمَ ـ يَفْهَمُ</span></td><td><span class="answer-space"></span></td><td><span class="answer-space"></span></td></tr>
+                <tr><td><span class="arabic">فَتَحَ ـ يَفْتَحُ</span></td><td><span class="answer-space"></span></td><td><span class="answer-space"></span></td></tr>
+            </tbody></table>
+        </div>
+
+        <h2><span class="section-number">3</span>De l'actif au passif</h2>
+        <div class="exercise">
+            <h3>Transformez chaque phrase à la voix passive (avec les voyelles, sans exprimer l'auteur)</h3>
+            <ol>
+                <li><span class="arabic">فَتَحَ الْحَارِسُ الْبَابَ</span> → <span class="answer-space wide-space"></span></li>
+                <li><span class="arabic">كَتَبَ الطَّالِبُ الدَّرْسَ</span> → <span class="answer-space wide-space"></span></li>
+                <li><span class="arabic">شَرِبَ الْوَلَدُ الْعَصِيرَ</span> → <span class="answer-space wide-space"></span></li>
+                <li><span class="arabic">كَتَبَتِ الْمُعَلِّمَةُ الرِّسَالَةَ</span> → <span class="answer-space wide-space"></span></li>
+                <li><span class="arabic">يَدْرُسُ الطُّلَّابُ الدَّرْسَ</span> → <span class="answer-space wide-space"></span></li>
+                <li><span class="arabic">سَمِعَ النَّاسُ الْخَبَرَ</span> → <span class="answer-space wide-space"></span></li>
+            </ol>
+        </div>
+
+        <h2><span class="section-number">4</span>Du passif à l'actif</h2>
+        <div class="exercise">
+            <h3>Retrouvez une phrase active possible, en choisissant vous-même l'auteur (avec les voyelles)</h3>
+            <ol>
+                <li><span class="arabic">فُتِحَ الْكِتَابُ</span> → <span class="answer-space wide-space"></span></li>
+                <li><span class="arabic">يُكْتَبُ الدَّرْسُ</span> → <span class="answer-space wide-space"></span></li>
+                <li><span class="arabic">شُرِبَ الْمَاءُ</span> → <span class="answer-space wide-space"></span></li>
+                <li><span class="arabic">دُرِسَتِ الْقِصَّةُ</span> → <span class="answer-space wide-space"></span></li>
+            </ol>
+        </div>
+
+        <h2><span class="section-number">5</span>L'accord du verbe passif</h2>
+        <div class="exercise">
+            <h3>Complétez avec le passif de <span class="arabic">كَتَبَ</span> (passé), bien accordé</h3>
+            <ol>
+                <li><span class="answer-space"></span> <span class="arabic">الدَّرْسُ</span>.</li>
+                <li><span class="answer-space"></span> <span class="arabic">الرِّسَالَةُ</span>.</li>
+                <li><span class="answer-space"></span> <span class="arabic">الرَّسَائِلُ</span>.</li>
+                <li><span class="answer-space"></span> <span class="arabic">الدُّرُوسُ</span>.</li>
+                <li><span class="arabic">الرِّسَالَةُ</span> <span class="answer-space"></span> (verbe après le sujet).</li>
+                <li><span class="arabic">الدَّرْسَانِ</span> <span class="answer-space"></span> (verbe après le sujet).</li>
+            </ol>
+        </div>
+
+        <h2><span class="section-number">6</span>Événement ou état ?</h2>
+        <div class="exercise">
+            <h3>Complétez avec le verbe passif ou le participe passif, selon le sens</h3>
+            <ol>
+                <li>La porte <strong>est</strong> ouverte → <span class="arabic">الْبَابُ</span> <span class="answer-space"></span></li>
+                <li>La porte <strong>a été</strong> ouverte → <span class="answer-space"></span> <span class="arabic">الْبَابُ</span></li>
+                <li>L'entrée <strong>est</strong> interdite → <span class="arabic">الدُّخُولُ</span> <span class="answer-space"></span></li>
+                <li>La leçon <strong>a été</strong> écrite → <span class="answer-space"></span> <span class="arabic">الدَّرْسُ</span></li>
+                <li>La lettre <strong>est</strong> écrite → <span class="arabic">الرِّسَالَةُ</span> <span class="answer-space"></span></li>
+            </ol>
+        </div>
+
+        <h2><span class="section-number">7</span>Le passif avec <span class="arabic">تَمَّ</span></h2>
+        <div class="exercise">
+            <h3>Récrivez chaque phrase avec <span class="arabic">تَمَّ</span> + maṣdar (aidez-vous du maṣdar donné)</h3>
+            <ol>
+                <li><span class="arabic">فُتِحَ الْبَابُ</span> (<span class="arabic">فَتْحٌ</span>) → <span class="answer-space wide-space"></span></li>
+                <li><span class="arabic">كُتِبَتِ الرِّسَالَةُ</span> (<span class="arabic">كِتَابَةٌ</span>) → <span class="answer-space wide-space"></span></li>
+                <li><span class="arabic">دُرِسَ الدَّرْسُ</span> (<span class="arabic">دِرَاسَةٌ</span>) → <span class="answer-space wide-space"></span></li>
+                <li><span class="arabic">مُنِعَ الدُّخُولُ</span> (<span class="arabic">مَنْعٌ</span>) → <span class="answer-space wide-space"></span></li>
+            </ol>
+        </div>
+
+        <h2><span class="section-number">8</span>Conjugaison du passif</h2>
+        <div class="exercise">
+            <h3>Conjuguez <span class="arabic">شَكَرَ</span> (remercier) au passif du passé</h3>
+            <ol>
+                <li><span class="arabic">هُوَ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">هِيَ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">هُمْ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">أَنْتَ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">أَنْتِ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">أَنَا</span> → <span class="answer-space"></span></li>
+            </ol>
+        </div>
+
+        <h2><span class="section-number">9</span>Trouvez l'erreur</h2>
+        <div class="exercise">
+            <h3>Corrigez la phrase fautive (voyelle ou case)</h3>
+            <ol>
+                <li><span class="arabic">فُتِحَ الْبَابَ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">كُتِبَ الرِّسَالَةُ</span> → <span class="answer-space"></span></li>
+                <li><span class="arabic">يَكْتَبُ الدَّرْسُ</span> (sens passif voulu) → <span class="answer-space"></span></li>
+                <li><span class="arabic">كُتِبُوا الدَّرْسُ</span> → <span class="answer-space"></span></li>
+            </ol>
+        </div>
+
+        <h2><span class="section-number">10</span>Traduisez en arabe</h2>
+        <div class="exercise">
+            <h3>Écrivez les phrases en arabe (avec les voyelles)</h3>
+            <ol>
+                <li>La leçon a été étudiée → <span class="answer-space wide-space"></span></li>
+                <li>Le jus a été bu → <span class="answer-space wide-space"></span></li>
+                <li>La porte n'a pas été ouverte → <span class="answer-space wide-space"></span></li>
+                <li>La lettre sera écrite (utilisez le futur avec <span class="arabic">سَـ</span>) → <span class="answer-space wide-space"></span></li>
+                <li>On t'a remercié (à un homme) → <span class="answer-space wide-space"></span></li>
+            </ol>
+        </div>
+
+        <h2><span class="section-number">11</span>Compréhension</h2>
+        <div class="exercise">
+            <h3>Lisez et répondez</h3>
+            <div class="question">
+                <p><span class="arabic">فُتِحَتِ الْمَكْتَبَةُ صَبَاحًا. كُتِبَتِ الْأَسْمَاءُ، ثُمَّ دُرِسَتِ الْقِصَّةُ. وَلَمْ يُسْمَعْ صَوْتٌ.</span></p>
+                <p><strong>Questions :</strong></p>
+                <ol>
+                    <li>Traduisez le texte en français. <span class="answer-space"></span></li>
+                    <li>Mettez la première phrase à l'actif en choisissant un auteur. <span class="answer-space"></span></li>
+                    <li>Pourquoi <span class="arabic">كُتِبَتِ</span> est-il au féminin singulier alors que <span class="arabic">الْأَسْمَاءُ</span> est un pluriel ? <span class="answer-space"></span></li>
+                    <li>Quel est le mode du verbe dans <span class="arabic">وَلَمْ يُسْمَعْ</span> ? <span class="answer-space"></span></li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="note">
+            <strong>💡 Conseil :</strong> devant un verbe non voyellé, regardez ce qui le suit : si un complément d'objet à l'accusatif apparaît, le verbe est actif ; s'il n'y a qu'un nom au nominatif sans auteur, il est probablement passif.
+        </div>
+    </div>
+</body>
+
+</html>

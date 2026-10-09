@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La hamza (1) : les règles de base</title>
+    <style>
+/* ===== AMANA – feuille de style commune (structure, impression, accessibilité) =====
+   Les thèmes (theme_adulte / theme_enfant) ne changent que l'apparence : couleurs, polices, formes.
+   Pas d'animation, pas de JavaScript : tout le contenu est visible partout. */
+:root {
+    --ink: #1d1d1b; --mut: #5b5b57; --line: #d9d6cf; --accent: #0f766e; --paper: #fff;
+    --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --ar: "Amiri", "Noto Naskh Arabic", serif;
+    --radius: 8px;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.6 var(--font); overflow-wrap: break-word; }
+.container { max-width: 880px; margin: 0 auto; padding: 20px 18px 48px; }
+h1, h2, h3, h4 { line-height: 1.25; margin: 1.2em 0 .45em; }
+h1 { margin-top: .3em; }
+p { margin: .55em 0; }
+ul, ol { margin: .5em 0; padding-left: 1.4em; }
+li { margin: .25em 0; }
+img { max-width: 100%; height: auto; }
+.arabic, .ar { font-family: var(--ar); direction: rtl; unicode-bidi: isolate; }
+.arabic-title { direction: rtl; font-family: var(--ar); }
+.table-wrapper { overflow-x: auto; margin: 12px 0; -webkit-overflow-scrolling: touch; }
+table { border-collapse: collapse; width: 100%; }
+th, td { padding: 6px 8px; text-align: left; vertical-align: top; }
+td .arabic, th .arabic { white-space: nowrap; }
+/* exercices */
+.answer-space { display: inline-block; width: 200px; max-width: 100%; min-height: 1.4em; vertical-align: bottom; margin: 0 .5em; border-bottom: 1.5px solid var(--ink); }
+.wide-space { width: 340px; }
+.question { margin: 14px 0; line-height: 2; }
+.section-divider { display: flex; align-items: center; gap: 14px; margin: 1.8em 0 1.2em; }
+/* repères de grammaire (communs aux deux niveaux) */
+.hamza { color: #c2410c; font-weight: 700; }
+.solaire { color: #c2410c; font-weight: 700; }
+.lunaire { color: #1d4ed8; font-weight: 700; }
+.letters { font: 700 1.8em/2 var(--ar); text-align: center; direction: rtl; color: var(--accent); letter-spacing: .15em; }
+/* logo de l'association (voir Styles/logo) */
+.brand { display: flex; align-items: center; gap: 10px; max-width: 880px; margin: 0 auto; padding: 14px 18px 0; }
+.brand img, .brand svg, .brand-logo { height: 46px; width: auto; }
+.brand-logo { min-width: 46px; display: inline-grid; place-items: center; padding: 0 8px; border: 1.5px dashed #888; border-radius: 8px; font: 600 .6rem/1 var(--font); letter-spacing: .12em; color: #666; }
+.brand-name { font-size: .8rem; color: var(--mut); }
+@media (max-width: 600px) {
+    .container { padding: 14px 12px 36px; }
+    .answer-space { width: 140px; }
+    .wide-space { width: min(340px, 100%); }
+}
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+/* impression : fond blanc, pas d'ombre, logo répété sur chaque page */
+@page { size: A4; margin: 18mm 14mm 16mm; }
+@media print {
+    * { background: transparent !important; box-shadow: none !important; animation: none !important; transition: none !important; }
+    html, body { background: #fff !important; color: #000; }
+    body { font-size: 11pt; line-height: 1.5; }
+    .container { max-width: none; padding: 0; }
+    .brand { position: fixed; top: -13mm; right: 0; left: 0; max-width: none; padding: 0; }
+    .brand img, .brand svg, .brand-logo { height: 9mm; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    tr, .rule-box, .example-box, .info-box, .warning-box, .note, .intro, .question, .exercise, .phrase-example { break-inside: avoid; }
+    .table-wrapper { overflow: visible; }
+    a { color: inherit; text-decoration: none; }
+}
+</style>
+    <link rel="stylesheet" href="../../fonts/fonts.css">
+<style>
+/* ===== Thème ENFANT : coloré et ludique (modèle K4 : mascotte et bulles) ===== */
+:root { --accent: #7c3aed; --font: "Baloo 2", "Comic Sans MS", system-ui, sans-serif; --ar: "Amiri", "Noto Naskh Arabic", serif; --radius: 18px; }
+body { font-size: 17px; }
+h1 { font-size: 1.8rem; color: var(--accent); }
+.arabic-title { font-size: 1.6rem; color: var(--mut); margin: 0 0 1.2em; }
+h2 { font-size: 1.35rem; color: #0d9488; margin-top: 1.7em; padding-bottom: .15em; border-bottom: 3px dotted var(--line); }
+h3 { font-size: 1.1rem; color: #d97706; }
+h4 { font-size: 1rem; margin: .2em 0 .3em; }
+.arabic, .ar { font-size: 1.35em; }
+.highlight { font-weight: 700; border-bottom: 3px solid #f59e0b; }
+/* encadrés = bulles de dialogue avec une mascotte */
+.intro, .rule-box, .example-box, .info-box, .warning-box, .note { --c: var(--accent); position: relative; margin: 18px 0 18px 60px; padding: 10px 16px; border: 3px solid var(--c); border-radius: var(--radius); }
+.intro::before, .rule-box::before, .example-box::before, .info-box::before, .warning-box::before, .note::before { position: absolute; left: -58px; top: 4px; font-size: 2.1rem; line-height: 1.2; }
+.intro::after, .rule-box::after, .example-box::after, .info-box::after, .warning-box::after, .note::after { content: ""; position: absolute; left: -11px; top: 18px; width: 16px; height: 16px; background: #fff; border-left: 3px solid var(--c); border-bottom: 3px solid var(--c); transform: rotate(45deg); }
+.intro::before { content: "🦉"; }
+.rule-box { --c: #0d9488; } .rule-box::before { content: "💡"; }
+.example-box { --c: #f59e0b; } .example-box::before { content: "🌟"; }
+.info-box { --c: #2563eb; } .info-box::before { content: "🔍"; }
+.warning-box { --c: #dc2626; } .warning-box::before { content: "⚠️"; }
+.note { --c: #db2777; } .note::before { content: "📌"; }
+.phrase-example, .example-item { border: 3px solid var(--line); border-radius: 14px; padding: 8px 14px; margin: 10px 0; }
+th { color: var(--accent); border-bottom: 3px solid var(--accent); font-weight: 700; }
+td { border-bottom: 2px dotted var(--line); }
+/* exercices */
+.exercise { border: 3px dashed #db2777; border-radius: 14px; padding: 10px 16px; margin: 14px 0 22px; }
+.exercise h3 { margin: 0 0 .5em; color: #db2777; font-size: 1.05rem; }
+.section-number { display: inline-flex; align-items: center; justify-content: center; width: 1.9em; height: 1.9em; margin-right: .5em; border: 3px solid var(--accent); border-radius: 50%; color: var(--accent); font-weight: 700; font-size: .85em; }
+.question { border-left: 4px solid #0d9488; padding: 4px 12px; }
+.answer-space { border-bottom-width: 2px; border-bottom-style: dashed; }
+.section-divider { color: var(--accent); }
+@media (max-width: 520px) {
+    .intro, .rule-box, .example-box, .info-box, .warning-box, .note { margin-left: 44px; }
+    .intro::before, .rule-box::before, .example-box::before, .info-box::before, .warning-box::before, .note::before { left: -44px; font-size: 1.7rem; }
+    .intro::after, .rule-box::after, .example-box::after, .info-box::after, .warning-box::after, .note::after { display: none; }
+}
+</style>
+</head>
+
+<body class="cours">
+    <!-- Logo de l'association : remplacer le contenu de .brand-logo par <img src="data:image/svg+xml;base64,..." alt="Logo de l'association">
+     (ou un <svg> en ligne). Ce fichier est inclus dans toutes les pages : une seule modification suffit. -->
+<header class="brand">
+    <span class="brand-logo" role="img" aria-label="Logo de l'association">LOGO</span>
+    <span class="brand-name">Nom de l'association</span>
+</header>
+    <div class="container">
+        <h1>La hamza (1) : les règles de base</h1>
+        <div class="arabic-title">الهَمْزَة: القَوَاعِدُ الأَسَاسِيَّة</div>
+        <div class="intro">Bienvenue dans cette leçon sur la <strong>hamza</strong> (<span class="arabic">الهَمْزَة</span>) ! C'est un petit signe qui pose beaucoup de questions : <em>sur quelle lettre l'écrire ?</em> Bonne nouvelle : tout repose sur quelques règles simples. Cette <strong>partie 1</strong> pose les bases de l'écriture de la hamza ; la <strong>partie 2</strong> (leçon 26) traite les cas avancés (voyelle longue, tanwīn, pronoms suffixes, pluriels). Pour savoir <em>quand</em> la hamza est prononcée ou non (hamzat al-qaṭʿ / al-waṣl), voir la <strong>leçon 24</strong>.</div>
+        <h2>🔎 Qu'est-ce que la hamza ?</h2>
+        <div class="rule-box"><p>La hamza <span class="arabic" style="font-size:1.5em;">ء</span> (<em>ʾ</em>) est un <span class="highlight">coup de glotte</span> : un petit arrêt net dans la gorge, comme au milieu du « uh-oh ! » anglais.</p>
+            <p>Elle n'a pas de forme « liée » comme les autres lettres : elle s'écrit soit <strong>seule sur la ligne</strong> (<span class="arabic">ء</span>), soit <strong>sur un support</strong> (une « chaise », <span class="arabic">كُرْسِيّ</span>) parmi trois : <span class="arabic">أ</span> (alif), <span class="arabic">ؤ</span> (wāw) ou <span class="arabic">ئ</span> (yāʾ sans points).</p></div>
+        <div class="table-wrapper"><table><thead><tr><th>Support</th><th>Lié à la voyelle</th><th>Exemple</th></tr></thead><tbody><tr><td><span class="arabic">أ / إ</span> (alif)</td><td>fatḥa <span class="arabic">ــَ</span></td><td><span class="arabic">سَأَلَ</span><br>saʾala</td></tr><tr><td><span class="arabic">ؤ</span> (wāw)</td><td>ḍamma <span class="arabic">ــُ</span></td><td><span class="arabic">مُؤْمِنٌ</span><br>muʾmin</td></tr><tr><td><span class="arabic">ئ</span> (yāʾ sans points)</td><td>kasra <span class="arabic">ــِ</span></td><td><span class="arabic">بِئْرٌ</span><br>biʾr</td></tr></tbody></table></div>
+        <div class="note"><strong>⚠️ Important :</strong> quand l'alif, le wāw ou le yāʾ servent de support à la hamza, ils <strong>ne se lisent pas comme des voyelles longues</strong>. Ils sont juste la « chaise » : on prononce uniquement le coup de glotte.</div>
+        <div class="note"><strong>📌 Précision :</strong> cette leçon porte sur l'écriture de la <strong>hamza qaṭʿ</strong> (<span class="arabic">همزة القطع</span>), c'est-à-dire la hamza qui est <strong>toujours prononcée</strong>. L'alif sans signe de la <strong>hamzat al-waṣl</strong> (<span class="arabic">ال</span>, <span class="arabic">اسْم</span>, <span class="arabic">اكْتُبْ</span>…) fait l'objet de la leçon 24.</div>
+        <h2>1️⃣ Hamza au début du mot</h2>
+        <div class="rule-box"><p><strong>Règle :</strong> au début d'un mot, la hamza s'écrit <span class="highlight">toujours sur l'alif</span>, jamais sur wāw ni sur yāʾ.</p>
+            <ul><li>fatḥa ou ḍamma → hamza <strong>au-dessus</strong> : <span class="arabic">أَ</span> · <span class="arabic">أُ</span></li>
+            <li>kasra → hamza <strong>en dessous</strong> : <span class="arabic">إِ</span></li></ul></div>
+        <div class="table-wrapper"><table><thead><tr><th>Arabe</th><th>Prononciation</th><th>Français</th></tr></thead><tbody><tr><td><span class="arabic">أَكَلَ</span></td><td>ʾakala</td><td>il a mangé</td></tr><tr><td><span class="arabic">أَخٌ</span></td><td>ʾakhun</td><td>un frère</td></tr><tr><td><span class="arabic">أَرْنَبٌ</span></td><td>ʾarnabun</td><td>un lapin</td></tr><tr><td><span class="arabic">أُمٌّ</span></td><td>ʾummun</td><td>une mère</td></tr><tr><td><span class="arabic">أُسْتَاذٌ</span></td><td>ʾustādhun</td><td>un professeur</td></tr><tr><td><span class="arabic">إِلَى</span></td><td>ʾilā</td><td>vers</td></tr><tr><td><span class="arabic">إِنْسَانٌ</span></td><td>ʾinsānun</td><td>un être humain</td></tr><tr><td><span class="arabic">إِيمَانٌ</span></td><td>ʾīmānun</td><td>la foi</td></tr></tbody></table></div>
+        <h3>〰️ L'alif madda (آ)</h3>
+        <div class="rule-box"><p>Quand une hamza avec fatḥa est suivie d'un alif long (<span class="arabic">أَا</span>), on n'écrit pas deux alifs : on met une vague (<em>madda</em>) sur un seul alif → <span class="arabic" style="font-size:1.6em;">آ</span> (<em>ʾā</em>).</p></div>
+        <div class="table-wrapper"><table><thead><tr><th>Arabe</th><th>Prononciation</th><th>Français</th></tr></thead><tbody><tr><td><span class="arabic">آخِرٌ</span></td><td>ʾākhirun</td><td>dernier</td></tr><tr><td><span class="arabic">آمَنَ</span></td><td>ʾāmana</td><td>il a cru</td></tr><tr><td><span class="arabic">آنِسَةٌ</span></td><td>ʾānisatun</td><td>mademoiselle</td></tr><tr><td><span class="arabic">قُرْآنٌ</span></td><td>qurʾānun</td><td>Coran</td></tr><tr><td><span class="arabic">مِرْآةٌ</span></td><td>mirʾātun</td><td>un miroir</td></tr></tbody></table></div>
+        <h2>2️⃣ Hamza au milieu du mot : la force des voyelles</h2>
+        <div class="rule-box"><p>Au milieu du mot, on compare la voyelle de la <strong>hamza</strong> et celle de la <strong>lettre qui la précède</strong>. La plus forte décide du support :</p>
+            <p style="text-align:center;font-size:1.2em;"><strong>kasra (3) &gt; ḍamma (2) &gt; fatḥa (1) &gt; sukūn (0)</strong></p>
+            <ul><li>kasra gagne → <span class="arabic">ئ</span></li><li>ḍamma gagne → <span class="arabic">ؤ</span></li><li>fatḥa gagne → <span class="arabic">أ</span></li></ul></div>
+        <p>Voici les 12 combinaisons (voyelle de la lettre précédente en lignes, voyelle de la hamza en colonnes) :</p>
+        <div class="table-wrapper"><table><thead><tr><th>Avant ↓ / Hamza →</th><th>fatḥa</th><th>ḍamma</th><th>kasra</th><th>sukūn</th></tr></thead><tbody><tr><td><strong>fatḥa</strong></td><td><span class="arabic">سَأَلَ</span> <br>saʾala → <span class="arabic">أ</span></td><td><span class="arabic">رَؤُوفٌ</span> <br>raʾūf → <span class="arabic">ؤ</span></td><td><span class="arabic">رَئِيسٌ</span> <br>raʾīs → <span class="arabic">ئ</span></td><td><span class="arabic">رَأْسٌ</span> <br>raʾs → <span class="arabic">أ</span></td></tr><tr><td><strong>ḍamma</strong></td><td><span class="arabic">مُؤَسَّسَةٌ</span> <br>muʾassasa → <span class="arabic">ؤ</span></td><td><span class="arabic">رُؤُوسٌ</span> <br>ruʾūs → <span class="arabic">ؤ</span></td><td><span class="arabic">سُئِلَ</span> <br>suʾila → <span class="arabic">ئ</span></td><td><span class="arabic">مُؤْمِنٌ</span> <br>muʾmin → <span class="arabic">ؤ</span></td></tr><tr><td><strong>kasra</strong></td><td><span class="arabic">مِئَةٌ</span> <br>miʾa → <span class="arabic">ئ</span></td><td><span class="arabic">مُسْتَهْزِئُونَ</span> <br>mustahziʾūna → <span class="arabic">ئ</span></td><td><span class="arabic">خَاطِئِينَ</span> <br>khāṭiʾīna → <span class="arabic">ئ</span></td><td><span class="arabic">بِئْرٌ</span> <br>biʾr → <span class="arabic">ئ</span></td></tr></tbody></table></div>
+        <div class="example-box"><h4>🧠 Exemple pas à pas : <span class="arabic">سُئِلَ</span> (<em>suʾila</em>, « on a demandé »)</h4>
+            <ol><li>Voyelle de la hamza : kasra (3)</li><li>Voyelle de la lettre avant (le sīn) : ḍamma (2)</li><li>La kasra est la plus forte → support <strong>yāʾ sans points</strong> <span class="arabic">ئ</span></li></ol></div>
+        <div class="note"><strong>💡 Si la lettre qui précède porte un sukūn</strong>, c'est la voyelle de la hamza qui décide : <span class="arabic">مَسْأَلَةٌ</span> (<em>masʾala</em>, fatḥa → <span class="arabic">أ</span>) ; <span class="arabic">مَسْؤُولٌ</span> (<em>masʾūl</em>, ḍamma → <span class="arabic">ؤ</span>). Et si c'est la hamza qui porte le sukūn, c'est la voyelle de la lettre précédente qui décide (dernière colonne du tableau).</div>
+        <h2>3️⃣ Hamza à la fin du mot</h2>
+        <div class="rule-box"><p><strong>Règle :</strong> en fin de mot, on <span class="highlight">ignore la voyelle de la hamza</span> : seule compte la lettre qui la précède.</p></div>
+        <div class="table-wrapper"><table><thead><tr><th>Ce qui précède la hamza</th><th>Support</th><th>Exemples</th></tr></thead><tbody><tr><td>fatḥa</td><td><span class="arabic">أ</span></td><td><span class="arabic">قَرَأَ</span> qaraʾa (il a lu)<br><span class="arabic">يَقْرَأُ</span> yaqraʾu (il lit)<br><span class="arabic">بَدَأَ</span> badaʾa (il a commencé)</td></tr><tr><td>ḍamma</td><td><span class="arabic">ؤ</span></td><td><span class="arabic">جَرُؤَ</span> jaruʾa (il a osé)<br><span class="arabic">تَبَاطُؤٌ</span> tabāṭuʾun (ralentissement)<br><span class="arabic">لُؤْلُؤٌ</span> luʾluʾun (perle)</td></tr><tr><td>kasra</td><td><span class="arabic">ئ</span></td><td><span class="arabic">قَارِئٌ</span> qāriʾun (lecteur)<br><span class="arabic">شَاطِئٌ</span> shāṭiʾun (rivage)<br><span class="arabic">هَادِئٌ</span> hādiʾun (calme)</td></tr><tr><td>sukūn <em>ou</em> voyelle longue</td><td><span class="arabic">ء</span> (seule sur la ligne)</td><td><span class="arabic">جُزْءٌ</span> juzʾun (une partie)<br><span class="arabic">شَيْءٌ</span> shayʾun (une chose)<br><span class="arabic">سَمَاءٌ</span> samāʾun (un ciel)<br><span class="arabic">سُوءٌ</span> sūʾun (le mal)<br><span class="arabic">بَطِيءٌ</span> baṭīʾun (lent)</td></tr></tbody></table></div>
+        <div class="note"><strong>🔑 Astuce :</strong> si la lettre avant la hamza n'a ni fatḥa, ni ḍamma, ni kasra (c'est-à-dire sukūn ou voyelle longue), il n'y a pas de « chaise » : la hamza reste seule.</div>
+        <h2>🧭 Méthode en 3 questions</h2>
+        <div class="example-box"><ol>
+            <li><strong>Où est la hamza ?</strong> Début → alif (<span class="arabic">أ</span> / <span class="arabic">إ</span>). Sinon, question 2 ou 3.</li>
+            <li><strong>Milieu :</strong> comparer la voyelle de la hamza et celle de la lettre précédente ; la plus forte (kasra &gt; ḍamma &gt; fatḥa &gt; sukūn) donne le support.</li>
+            <li><strong>Fin :</strong> regarder seulement la lettre précédente (fatḥa → <span class="arabic">أ</span>, ḍamma → <span class="arabic">ؤ</span>, kasra → <span class="arabic">ئ</span>, sukūn ou voyelle longue → <span class="arabic">ء</span>).</li></ol></div>
+        <div class="note"><strong>📚 Résumé de la leçon :</strong>
+            <ul><li>La hamza est un coup de glotte, écrite seule ou sur <span class="arabic">أ</span> / <span class="arabic">ؤ</span> / <span class="arabic">ئ</span></li>
+            <li>Début de mot : toujours sur alif (<span class="arabic">أ</span> fatḥa/ḍamma, <span class="arabic">إ</span> kasra) ; <span class="arabic">آ</span> = <span class="arabic">أَا</span></li>
+            <li>Milieu : la voyelle la plus forte décide (kasra &gt; ḍamma &gt; fatḥa &gt; sukūn)</li>
+            <li>Fin : on regarde uniquement la lettre qui précède</li></ul>
+            Suite : <strong>La hamza (2) : règles avancées</strong>.</div>
+
+    </div>
+</body>
+
+</html>

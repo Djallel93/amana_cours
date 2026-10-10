@@ -1,0 +1,63 @@
+/* AMANA — composants de contenu des cours/exercices du niveau 4-1.
+   À charger APRÈS amana-base.css et theme-adulte.css / theme-enfant.css.
+   Reprend les composants historiques du niveau 4-1 (encadrés, exercices, tableaux…)
+   en s'appuyant uniquement sur les variables des thèmes du niveau 1
+   (--accent, --line, --radius, --soft, --ar, --font) : polices, couleurs et formes restent identiques. */
+
+/* texte arabe (alias historique de .ar) */
+.arabic { font-family: var(--ar); direction: rtl; unicode-bidi: isolate; font-size: 1.25em; line-height: 1.8; }
+.arabic-title { direction: rtl; font-family: var(--ar); font-size: 1.5rem; font-weight: 700; color: var(--accent); margin: 0 0 1.2em; padding-bottom: .4em; border-bottom: 1px solid var(--line); }
+td .arabic, th .arabic { white-space: nowrap; }
+.letters { font: 700 1.8em/2 var(--ar); text-align: center; direction: rtl; color: var(--accent); letter-spacing: .15em; }
+
+/* repères de grammaire */
+.highlight { font-weight: 700; color: var(--accent); border-bottom: 2px solid var(--accent); }
+.hamza, .solaire { color: #c2410c; font-weight: 700; }
+.lunaire { color: #1d4ed8; font-weight: 700; }
+
+/* tableaux */
+.table-wrapper { overflow-x: auto; margin: 12px 0; -webkit-overflow-scrolling: touch; }
+.table-wrapper table, .container > table { border-collapse: collapse; width: 100%; }
+.table-wrapper th, .table-wrapper td, .container > table th, .container > table td { padding: 6px 8px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+.table-wrapper th, .container > table th { color: var(--accent); font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; border-bottom: 2px solid var(--accent); }
+
+/* encadrés pédagogiques */
+.rule-box, .example-box, .info-box, .warning-box { --c: var(--accent); border: 1px solid var(--c); border-radius: var(--radius); padding: 8px 16px 10px; margin: 14px 0; background: var(--soft); }
+.rule-box::before, .example-box::before, .info-box::before, .warning-box::before { display: block; font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; color: var(--c); margin-bottom: 2px; }
+.rule-box::before { content: "Règle"; }
+.example-box { --c: #475569; } .example-box::before { content: "Exemple"; }
+.info-box { --c: #1d4ed8; } .info-box::before { content: "Information"; }
+.warning-box { --c: #b91c1c; } .warning-box::before { content: "Attention"; }
+.note { border-left: 3px solid #b45309; padding: 3px 0 3px 12px; margin: 14px 0; font-size: .95em; }
+.phrase-example, .example-item { border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 14px; margin: 10px 0; }
+
+/* exercices */
+.exercise { border-top: 1px solid var(--ink); padding: 10px 0 4px; margin: 14px 0 22px; }
+.exercise h3 { margin: 0 0 .6em; font-size: .95rem; color: var(--mut); font-weight: 600; }
+.section-number { display: inline-grid; place-items: center; width: 1.9em; height: 1.9em; margin-right: .5em; border-radius: 50%; background: var(--accent); color: #fff; font-size: .85em; font-weight: 700; }
+.question { margin: 14px 0; line-height: 2; border-left: 3px solid var(--line); padding: 4px 12px; }
+.wide-space { width: 340px; }
+.section-divider { display: flex; align-items: center; gap: 14px; margin: 1.8em 0 1.2em; color: var(--accent); }
+
+/* variante enfant : mêmes composants, formes plus arrondies et repères visuels */
+body.enfant .rule-box, body.enfant .example-box, body.enfant .info-box, body.enfant .warning-box { border-width: 2px; padding: 8px 16px 10px; }
+body.enfant .rule-box { --c: #0d9488; } body.enfant .rule-box::before { content: "💡 Règle"; }
+body.enfant .example-box { --c: #f59e0b; } body.enfant .example-box::before { content: "🌟 Exemple"; }
+body.enfant .info-box { --c: #2563eb; } body.enfant .info-box::before { content: "🔍 Information"; }
+body.enfant .warning-box { --c: #dc2626; } body.enfant .warning-box::before { content: "⚠️ Attention"; }
+body.enfant .note { border-left-color: #db2777; }
+body.enfant .highlight { border-bottom-color: #f59e0b; color: inherit; }
+body.enfant .phrase-example, body.enfant .example-item { border-width: 2px; }
+body.enfant .exercise { border: 2px dashed #db2777; border-radius: var(--radius); padding: 10px 16px; }
+body.enfant .exercise h3 { color: #db2777; }
+body.enfant .section-number { background: #1d4ed8; }
+body.enfant .question { border-left-color: #0d9488; }
+body.enfant .answer-space { border-bottom-style: dashed; }
+body.enfant th, body.enfant .table-wrapper th, body.enfant .container > table th { border-bottom-width: 3px; }
+
+@media (max-width: 600px) { .answer-space { width: 140px; } .wide-space { width: min(340px, 100%); } }
+@media print {
+  .rule-box, .example-box, .info-box, .warning-box, .note, .intro, .question, .exercise, .phrase-example, .example-item { break-inside: avoid; }
+  .table-wrapper { overflow: visible; }
+  h1, h2, h3, h4 { break-after: avoid; }
+}

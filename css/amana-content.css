@@ -61,3 +61,57 @@ body.enfant th, body.enfant .table-wrapper th, body.enfant .container > table th
   .table-wrapper { overflow: visible; }
   h1, h2, h3, h4 { break-after: avoid; }
 }
+
+/* ---- textes de lecture et vocabulaire (niveau 4-1) ----
+   VOCALISATION : dans les textes (.texte), les harakat manquantes sont VOLONTAIRES. Le lecteur doit
+   les restituer en appliquant les règles de grammaire (ex. kasra finale après un harf jarr).
+   Ne jamais « compléter » la vocalisation d'un texte. Le drapeau data-harakat sur chaque .texte et le
+   commentaire HTML en tête de chaque page de texte le rappellent. */
+.texte { direction: rtl; text-align: right; font-family: var(--ar); font-size: 1.6rem; line-height: 2.3; margin: 18px 0 28px; }
+.texte p { margin: .45em 0; }
+.texte h2, .texte h3 { font-family: var(--ar); line-height: 1.6; }
+.texte h2 { font-size: 1.5rem; margin: 1.1em 0 .35em; }
+.texte h3.sect { font-size: 1.25rem; margin: 1em 0 .2em; }
+.texte .rep { display: flex; gap: .55em; align-items: baseline; }
+.texte .loc { flex: none; font-weight: 700; color: var(--accent); }
+.texte .dit { flex: 1; min-width: 0; }
+.texte hr.sep { border: 0; border-top: 1px dashed var(--line); margin: 1.2em 0; }
+body.enfant .texte { font-size: 1.9rem; }
+body.enfant .texte .rep { background: var(--soft); border: 2px solid var(--line); border-radius: var(--radius); padding: 2px 14px; margin: 8px 0; }
+body.enfant .texte .loc { color: #1d4ed8; }
+
+/* vocabulaire : une page par séance + un index */
+.vocab-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 12px 0 6px; font-size: .85rem; color: var(--mut); }
+.vocab-tools button { font: inherit; padding: 3px 14px; border: 1px solid var(--line); border-radius: 99px; background: var(--paper); color: var(--ink); cursor: pointer; }
+.vocab-tools button[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); background: var(--soft); font-weight: 600; }
+table.vocab { border-collapse: collapse; width: 100%; }
+table.vocab th, table.vocab td { padding: 6px 10px; vertical-align: middle; }
+table.vocab th.c-ar, table.vocab td.c-ar { text-align: right; width: 36%; }
+table.vocab td.n { width: 3em; color: var(--mut); font-size: .8rem; }
+table.vocab td.n a { color: inherit; text-decoration: none; }
+table.vocab td.c-ar .ar { font-size: 1.7rem; line-height: 1.6; }
+table.vocab td.c-type { color: var(--mut); font-size: .8rem; white-space: nowrap; }
+table.vocab td.c-type .ar { font-size: 1.15em; }
+table.vocab .prec { color: var(--mut); font-size: .85em; }
+table.vocab td.c-ar .prec { font-size: 1.05rem; }
+table.vocab tr:target td { background: var(--soft); }
+table.vocab[data-masque="ar"] td.c-ar:not(.show), table.vocab[data-masque="fr"] td.c-fr:not(.show) { background: var(--soft); cursor: pointer; }
+table.vocab[data-masque="ar"] td.c-ar:not(.show) .m, table.vocab[data-masque="fr"] td.c-fr:not(.show) .m { visibility: hidden; }
+.vocab-search { display: block; width: 100%; padding: 8px 12px; margin: 14px 0 4px; font: inherit; border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper); color: var(--ink); }
+.vocab-count { color: var(--mut); font-size: .85rem; margin: 0 0 8px; min-height: 1.3em; }
+.vocab-index { list-style: none; padding: 0; margin: 0 0 10px; }
+.vocab-index li { padding: 8px 2px; border-bottom: 1px solid var(--line); break-inside: avoid; }
+.vocab-index .date { font-weight: 600; }
+.vocab-index .nb { color: var(--mut); font-size: .82rem; margin: 0 .5em; }
+.vocab-index .pill { margin-left: 0; margin-right: 6px; }
+.vocab-index .apercu { display: flex; flex-wrap: wrap; direction: rtl; justify-content: flex-end; gap: .2em .9em; margin-top: 2px; color: var(--mut); font-family: var(--ar); font-size: 1.2rem; line-height: 1.7; }
+.vocab-index .liens { font-size: .85rem; margin-top: 2px; }
+@media print {
+  .texte { font-size: 16pt; line-height: 2.1; }
+  body.enfant .texte { font-size: 18pt; }
+  .texte .rep, .texte h2, .texte h3 { break-inside: avoid; }
+  .vocab-tools, .vocab-search, .vocab-count { display: none !important; }
+  table.vocab .m { visibility: visible !important; }
+  table.vocab td { background: none !important; }
+  table.vocab tr { break-inside: avoid; }
+}

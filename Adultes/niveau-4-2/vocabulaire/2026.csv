@@ -1,0 +1,761 @@
+id  , date_cours, mot              , langue  , type, chapitre    , definition                    , mot_full
+   1, 18/10/2026, جَذْرٌ          , Arabe   , إسم , Racine et schème, ج ذ ر                         , جَذْرٌ (ج ذ ر)
+   2, 18/10/2026, وَزْنٌ          , Arabe   , إسم , Racine et schème, و ز ن                         , وَزْنٌ (و ز ن)
+   3, 18/10/2026, كَلِمَةٌ        , Arabe   , إسم , Racine et schème, ك ل م                         , كَلِمَةٌ (ك ل م)
+   4, 18/10/2026, جُمْلَةٌ        , Arabe   , إسم , Racine et schème, ج م ل                         , جُمْلَةٌ (ج م ل)
+   5, 18/10/2026, مَعْنًى         , Arabe   , إسم , Racine et schème, ع ن ي                         , مَعْنًى (ع ن ي)
+   6, 18/10/2026, قَاعِدَةٌ       , Arabe   , إسم , Racine et schème, ق ع د                         , قَاعِدَةٌ (ق ع د)
+   7, 18/10/2026, مِثَالٌ         , Arabe   , إسم , Racine et schème, م ث ل                         , مِثَالٌ (م ث ل)
+   8, 18/10/2026, مَاضٍ           , Arabe   , إسم , Racine et schème, م ض ي                         , مَاضٍ (م ض ي)
+   9, 18/10/2026, مُضَارِعٌ       , Arabe   , إسم , Racine et schème, ض ر ع                         , مُضَارِعٌ (ض ر ع)
+  10, 18/10/2026, أَمْرٌ          , Arabe   , إسم , Racine et schème, أ م ر                         , أَمْرٌ (أ م ر)
+  11, 18/10/2026, صَحِيحٌ         , Arabe   , إسم , Racine et schème, ص ح ح                         , صَحِيحٌ (ص ح ح)
+  12, 18/10/2026, مُعْتَلٌّ       , Arabe   , إسم , Racine et schème, ع ل ل                         , مُعْتَلٌّ (ع ل ل)
+  13, 18/10/2026, racine          , Francais, إسم , Racine et schème,                               , racine
+  14, 18/10/2026, schème          , Francais, إسم , Racine et schème, mesure                        , schème (mesure)
+  15, 18/10/2026, mot             , Francais, إسم , Racine et schème,                               , mot
+  16, 18/10/2026, phrase          , Francais, إسم , Racine et schème,                               , phrase
+  17, 18/10/2026, sens            , Francais, إسم , Racine et schème,                               , sens
+  18, 18/10/2026, règle           , Francais, إسم , Racine et schème,                               , règle
+  19, 18/10/2026, exemple         , Francais, إسم , Racine et schème,                               , exemple
+  20, 18/10/2026, passé           , Francais, إسم , Racine et schème,                               , passé
+  21, 18/10/2026, présent         , Francais, إسم , Racine et schème, inaccompli                    , présent (inaccompli)
+  22, 18/10/2026, ordre           , Francais, إسم , Racine et schème, impératif                     , ordre (impératif)
+  23, 18/10/2026, sain            , Francais, إسم , Racine et schème, verbe                         , sain (verbe)
+  24, 18/10/2026, irrégulier      , Francais, إسم , Racine et schème, à lettre faible               , irrégulier (à lettre faible)
+  25, 25/10/2026, بَحَثَ          , Arabe   , فعل , Forme I     , ب ح ث · I                     , بَحَثَ (ب ح ث · I)
+  26, 25/10/2026, كَنَسَ          , Arabe   , فعل , Forme I     , ك ن س · I                     , كَنَسَ (ك ن س · I)
+  27, 25/10/2026, خَلَطَ          , Arabe   , فعل , Forme I     , خ ل ط · I                     , خَلَطَ (خ ل ط · I)
+  28, 25/10/2026, زَرَعَ          , Arabe   , فعل , Forme I     , ز ر ع · I                     , زَرَعَ (ز ر ع · I)
+  29, 25/10/2026, هَرَبَ          , Arabe   , فعل , Forme I     , ه ر ب · I                     , هَرَبَ (ه ر ب · I)
+  30, 25/10/2026, غَضِبَ          , Arabe   , فعل , Forme I     , غ ض ب · I                     , غَضِبَ (غ ض ب · I)
+  31, 25/10/2026, قَصَدَ          , Arabe   , فعل , Forme I     , ق ص د · I                     , قَصَدَ (ق ص د · I)
+  32, 25/10/2026, تَعِبَ          , Arabe   , فعل , Forme I     , ت ع ب · I                     , تَعِبَ (ت ع ب · I)
+  33, 25/10/2026, مَرِضَ          , Arabe   , فعل , Forme I     , م ر ض · I                     , مَرِضَ (م ر ض · I)
+  34, 25/10/2026, كَبُرَ          , Arabe   , فعل , Forme I     , ك ب ر · I                     , كَبُرَ (ك ب ر · I)
+  35, 25/10/2026, حَسُنَ          , Arabe   , فعل , Forme I     , ح س ن · I                     , حَسُنَ (ح س ن · I)
+  36, 25/10/2026, كَاتِبٌ         , Arabe   , إسم , Forme I     , ك ت ب                         , كَاتِبٌ (ك ت ب)
+  37, 25/10/2026, مَكْتُوبٌ       , Arabe   , إسم , Forme I     , ك ت ب                         , مَكْتُوبٌ (ك ت ب)
+  38, 25/10/2026, مَرِيضٌ         , Arabe   , إسم , Forme I     , م ر ض                         , مَرِيضٌ (م ر ض)
+  39, 25/10/2026, chercher        , Francais, فعل , Forme I     , faire des recherches          , chercher (faire des recherches)
+  40, 25/10/2026, balayer         , Francais, فعل , Forme I     ,                               , balayer
+  41, 25/10/2026, mélanger        , Francais, فعل , Forme I     ,                               , mélanger
+  42, 25/10/2026, planter         , Francais, فعل , Forme I     , cultiver                      , planter (cultiver)
+  43, 25/10/2026, s’enfuir        , Francais, فعل , Forme I     ,                               , s’enfuir
+  44, 25/10/2026, se fâcher       , Francais, فعل , Forme I     ,                               , se fâcher
+  45, 25/10/2026, se rendre à     , Francais, فعل , Forme I     , viser                         , se rendre à (viser)
+  46, 25/10/2026, se fatiguer     , Francais, فعل , Forme I     ,                               , se fatiguer
+  47, 25/10/2026, tomber malade   , Francais, فعل , Forme I     ,                               , tomber malade
+  48, 25/10/2026, grandir         , Francais, فعل , Forme I     , devenir grand                 , grandir (devenir grand)
+  49, 25/10/2026, être beau       , Francais, فعل , Forme I     , être bon                      , être beau (être bon)
+  50, 25/10/2026, écrivain        , Francais, إسم , Forme I     , celui qui écrit               , écrivain (celui qui écrit)
+  51, 25/10/2026, écrit           , Francais, إسم , Forme I     , participe passif              , écrit (participe passif)
+  52, 25/10/2026, malade          , Francais, إسم , Forme I     ,                               , malade
+  53, 01/11/2026, سَرَقَ          , Arabe   , فعل , Voix passive, س ر ق · I                     , سَرَقَ (س ر ق · I)
+  54, 01/11/2026, نَشَرَ          , Arabe   , فعل , Voix passive, ن ش ر · I                     , نَشَرَ (ن ش ر · I)
+  55, 01/11/2026, غَرَسَ          , Arabe   , فعل , Voix passive, غ ر س · I                     , غَرَسَ (غ ر س · I)
+  56, 01/11/2026, رَبَطَ          , Arabe   , فعل , Voix passive, ر ب ط · I                     , رَبَطَ (ر ب ط · I)
+  57, 01/11/2026, مَسَحَ          , Arabe   , فعل , Voix passive, م س ح · I                     , مَسَحَ (م س ح · I)
+  58, 01/11/2026, هَدَمَ          , Arabe   , فعل , Voix passive, ه د م · I                     , هَدَمَ (ه د م · I)
+  59, 01/11/2026, فَصَلَ          , Arabe   , فعل , Voix passive, ف ص ل · I                     , فَصَلَ (ف ص ل · I)
+  60, 01/11/2026, عَرَضَ          , Arabe   , فعل , Voix passive, ع ر ض · I                     , عَرَضَ (ع ر ض · I)
+  61, 01/11/2026, مَسْرُوقٌ       , Arabe   , إسم , Voix passive, س ر ق                         , مَسْرُوقٌ (س ر ق)
+  62, 01/11/2026, مَنْشُورٌ       , Arabe   , إسم , Voix passive, ن ش ر                         , مَنْشُورٌ (ن ش ر)
+  63, 01/11/2026, مَرْبُوطٌ       , Arabe   , إسم , Voix passive, ر ب ط                         , مَرْبُوطٌ (ر ب ط)
+  64, 01/11/2026, مَعْرُوضٌ       , Arabe   , إسم , Voix passive, ع ر ض                         , مَعْرُوضٌ (ع ر ض)
+  65, 01/11/2026, فَاعِلٌ         , Arabe   , إسم , Voix passive, ف ع ل                         , فَاعِلٌ (ف ع ل)
+  66, 01/11/2026, voler           , Francais, فعل , Voix passive, dérober                       , voler (dérober)
+  67, 01/11/2026, publier         , Francais, فعل , Voix passive,                               , publier
+  68, 01/11/2026, planter         , Francais, فعل , Voix passive, un arbre                      , planter (un arbre)
+  69, 01/11/2026, attacher        , Francais, فعل , Voix passive,                               , attacher
+  70, 01/11/2026, essuyer         , Francais, فعل , Voix passive,                               , essuyer
+  71, 01/11/2026, démolir         , Francais, فعل , Voix passive,                               , démolir
+  72, 01/11/2026, séparer         , Francais, فعل , Voix passive,                               , séparer
+  73, 01/11/2026, exposer         , Francais, فعل , Voix passive, présenter                     , exposer (présenter)
+  74, 01/11/2026, volé            , Francais, إسم , Voix passive, participe passif              , volé (participe passif)
+  75, 01/11/2026, publié          , Francais, إسم , Voix passive, participe passif              , publié (participe passif)
+  76, 01/11/2026, attaché         , Francais, إسم , Voix passive, participe passif              , attaché (participe passif)
+  77, 01/11/2026, exposé          , Francais, إسم , Voix passive, participe passif              , exposé (participe passif)
+  78, 01/11/2026, auteur          , Francais, إسم , Voix passive, de l’action                   , auteur (de l’action)
+  79, 08/11/2026, ظَمِئَ          , Arabe   , فعل , Verbe hamzé , ظ م أ · I                     , ظَمِئَ (ظ م أ · I)
+  80, 08/11/2026, أَذِنَ          , Arabe   , فعل , Verbe hamzé , أ ذ ن · I                     , أَذِنَ (أ ذ ن · I)
+  81, 08/11/2026, أَسِفَ          , Arabe   , فعل , Verbe hamzé , أ س ف · I                     , أَسِفَ (أ س ف · I)
+  82, 08/11/2026, أَمِنَ          , Arabe   , فعل , Verbe hamzé , أ م ن · I                     , أَمِنَ (أ م ن · I)
+  83, 08/11/2026, مَلَأَ          , Arabe   , فعل , Verbe hamzé , م ل أ · I                     , مَلَأَ (م ل أ · I)
+  84, 08/11/2026, هَدَأَ          , Arabe   , فعل , Verbe hamzé , ه د أ · I                     , هَدَأَ (ه د أ · I)
+  85, 08/11/2026, نَشَأَ          , Arabe   , فعل , Verbe hamzé , ن ش أ · I                     , نَشَأَ (ن ش أ · I)
+  86, 08/11/2026, سُؤَالٌ         , Arabe   , إسم , Verbe hamzé , س أ ل                         , سُؤَالٌ (س أ ل)
+  87, 08/11/2026, إِذْنٌ          , Arabe   , إسم , Verbe hamzé , أ ذ ن                         , إِذْنٌ (أ ذ ن)
+  88, 08/11/2026, أَمَانٌ         , Arabe   , إسم , Verbe hamzé , أ م ن                         , أَمَانٌ (أ م ن)
+  89, 08/11/2026, هُدُوءٌ         , Arabe   , إسم , Verbe hamzé , ه د أ                         , هُدُوءٌ (ه د أ)
+  90, 08/11/2026, مَلِيءٌ         , Arabe   , إسم , Verbe hamzé , م ل أ                         , مَلِيءٌ (م ل أ)
+  91, 08/11/2026, avoir soif      , Francais, فعل , Verbe hamzé ,                               , avoir soif
+  92, 08/11/2026, permettre       , Francais, فعل , Verbe hamzé ,                               , permettre
+  93, 08/11/2026, regretter       , Francais, فعل , Verbe hamzé ,                               , regretter
+  94, 08/11/2026, être en sécurité, Francais, فعل , Verbe hamzé ,                               , être en sécurité
+  95, 08/11/2026, remplir         , Francais, فعل , Verbe hamzé ,                               , remplir
+  96, 08/11/2026, calmer          , Francais, فعل , Verbe hamzé , se                            , calmer (se)
+  97, 08/11/2026, grandir         , Francais, فعل , Verbe hamzé , être élevé                    , grandir (être élevé)
+  98, 08/11/2026, question        , Francais, إسم , Verbe hamzé ,                               , question
+  99, 08/11/2026, permission      , Francais, إسم , Verbe hamzé ,                               , permission
+ 100, 08/11/2026, sécurité        , Francais, إسم , Verbe hamzé ,                               , sécurité
+ 101, 08/11/2026, calme           , Francais, إسم , Verbe hamzé ,                               , calme
+ 102, 08/11/2026, plein           , Francais, إسم , Verbe hamzé ,                               , plein
+ 103, 15/11/2026, مَرَّ           , Arabe   , فعل , Verbe redoublé, م ر ر · I                     , مَرَّ (م ر ر · I)
+ 104, 15/11/2026, رَدَّ           , Arabe   , فعل , Verbe redoublé, ر د د · I                     , رَدَّ (ر د د · I)
+ 105, 15/11/2026, شَدَّ           , Arabe   , فعل , Verbe redoublé, ش د د · I                     , شَدَّ (ش د د · I)
+ 106, 15/11/2026, ظَنَّ           , Arabe   , فعل , Verbe redoublé, ظ ن ن · I                     , ظَنَّ (ظ ن ن · I)
+ 107, 15/11/2026, عَدَّ           , Arabe   , فعل , Verbe redoublé, ع د د · I                     , عَدَّ (ع د د · I)
+ 108, 15/11/2026, مَدَّ           , Arabe   , فعل , Verbe redoublé, م د د · I                     , مَدَّ (م د د · I)
+ 109, 15/11/2026, حَجَّ           , Arabe   , فعل , Verbe redoublé, ح ج ج · I                     , حَجَّ (ح ج ج · I)
+ 110, 15/11/2026, دَلَّ           , Arabe   , فعل , Verbe redoublé, د ل ل · I                     , دَلَّ (د ل ل · I)
+ 111, 15/11/2026, رَدٌّ           , Arabe   , إسم , Verbe redoublé, ر د د                         , رَدٌّ (ر د د)
+ 112, 15/11/2026, حَجٌّ           , Arabe   , إسم , Verbe redoublé, ح ج ج                         , حَجٌّ (ح ج ج)
+ 113, 15/11/2026, مَمَرٌّ         , Arabe   , إسم , Verbe redoublé, م ر ر                         , مَمَرٌّ (م ر ر)
+ 114, 15/11/2026, شَدِيدٌ         , Arabe   , إسم , Verbe redoublé, ش د د                         , شَدِيدٌ (ش د د)
+ 115, 15/11/2026, passer          , Francais, فعل , Verbe redoublé,                               , passer
+ 116, 15/11/2026, répondre        , Francais, فعل , Verbe redoublé,                               , répondre
+ 117, 15/11/2026, serrer          , Francais, فعل , Verbe redoublé,                               , serrer
+ 118, 15/11/2026, penser          , Francais, فعل , Verbe redoublé, supposer                      , penser (supposer)
+ 119, 15/11/2026, compter         , Francais, فعل , Verbe redoublé,                               , compter
+ 120, 15/11/2026, tendre          , Francais, فعل , Verbe redoublé,                               , tendre
+ 121, 15/11/2026, faire le pèlerinage, Francais, فعل , Verbe redoublé,                               , faire le pèlerinage
+ 122, 15/11/2026, indiquer        , Francais, فعل , Verbe redoublé,                               , indiquer
+ 123, 15/11/2026, réponse         , Francais, إسم , Verbe redoublé,                               , réponse
+ 124, 15/11/2026, pèlerinage      , Francais, إسم , Verbe redoublé,                               , pèlerinage
+ 125, 15/11/2026, couloir         , Francais, إسم , Verbe redoublé,                               , couloir
+ 126, 15/11/2026, fort            , Francais, إسم , Verbe redoublé, intense                       , fort (intense)
+ 127, 22/11/2026, وَصَلَ          , Arabe   , فعل , Verbe assimilé, و ص ل · I                     , وَصَلَ (و ص ل · I)
+ 128, 22/11/2026, وَجَدَ          , Arabe   , فعل , Verbe assimilé, و ج د · I                     , وَجَدَ (و ج د · I)
+ 129, 22/11/2026, وَعَدَ          , Arabe   , فعل , Verbe assimilé, و ع د · I                     , وَعَدَ (و ع د · I)
+ 130, 22/11/2026, وَهَبَ          , Arabe   , فعل , Verbe assimilé, و ه ب · I                     , وَهَبَ (و ه ب · I)
+ 131, 22/11/2026, وَقَعَ          , Arabe   , فعل , Verbe assimilé, و ق ع · I                     , وَقَعَ (و ق ع · I)
+ 132, 22/11/2026, وَثِقَ          , Arabe   , فعل , Verbe assimilé, و ث ق · I                     , وَثِقَ (و ث ق · I)
+ 133, 22/11/2026, وَرِثَ          , Arabe   , فعل , Verbe assimilé, و ر ث · I                     , وَرِثَ (و ر ث · I)
+ 134, 22/11/2026, وُصُولٌ         , Arabe   , إسم , Verbe assimilé, و ص ل                         , وُصُولٌ (و ص ل)
+ 135, 22/11/2026, وَعْدٌ          , Arabe   , إسم , Verbe assimilé, و ع د                         , وَعْدٌ (و ع د)
+ 136, 22/11/2026, هِبَةٌ          , Arabe   , إسم , Verbe assimilé, و ه ب                         , هِبَةٌ (و ه ب)
+ 137, 22/11/2026, مَوْقِفٌ        , Arabe   , إسم , Verbe assimilé, و ق ف                         , مَوْقِفٌ (و ق ف)
+ 138, 22/11/2026, حَافِلَةٌ       , Arabe   , إسم , Verbe assimilé, ح ف ل                         , حَافِلَةٌ (ح ف ل)
+ 139, 22/11/2026, مَوْقِعٌ        , Arabe   , إسم , Verbe assimilé, و ق ع                         , مَوْقِعٌ (و ق ع)
+ 140, 22/11/2026, وَاجِبٌ         , Arabe   , إسم , Verbe assimilé, و ج ب                         , وَاجِبٌ (و ج ب)
+ 141, 22/11/2026, arriver         , Francais, فعل , Verbe assimilé,                               , arriver
+ 142, 22/11/2026, trouver         , Francais, فعل , Verbe assimilé,                               , trouver
+ 143, 22/11/2026, promettre       , Francais, فعل , Verbe assimilé,                               , promettre
+ 144, 22/11/2026, offrir          , Francais, فعل , Verbe assimilé, donner en cadeau              , offrir (donner en cadeau)
+ 145, 22/11/2026, tomber          , Francais, فعل , Verbe assimilé,                               , tomber
+ 146, 22/11/2026, avoir confiance , Francais, فعل , Verbe assimilé,                               , avoir confiance
+ 147, 22/11/2026, hériter         , Francais, فعل , Verbe assimilé,                               , hériter
+ 148, 22/11/2026, arrivée         , Francais, إسم , Verbe assimilé,                               , arrivée
+ 149, 22/11/2026, promesse        , Francais, إسم , Verbe assimilé,                               , promesse
+ 150, 22/11/2026, cadeau          , Francais, إسم , Verbe assimilé,                               , cadeau
+ 151, 22/11/2026, arrêt           , Francais, إسم , Verbe assimilé, de bus                        , arrêt (de bus)
+ 152, 22/11/2026, bus             , Francais, إسم , Verbe assimilé,                               , bus
+ 153, 22/11/2026, emplacement     , Francais, إسم , Verbe assimilé,                               , emplacement
+ 154, 22/11/2026, devoir          , Francais, إسم , Verbe assimilé,                               , devoir
+ 155, 29/11/2026, زَارَ           , Arabe   , فعل , Verbe creux (1), ز و ر · I                     , زَارَ (ز و ر · I)
+ 156, 29/11/2026, سَارَ           , Arabe   , فعل , Verbe creux (1), س ي ر · I                     , سَارَ (س ي ر · I)
+ 157, 29/11/2026, عَاشَ           , Arabe   , فعل , Verbe creux (1), ع ي ش · I                     , عَاشَ (ع ي ش · I)
+ 158, 29/11/2026, خَافَ           , Arabe   , فعل , Verbe creux (1), خ و ف · I                     , خَافَ (خ و ف · I)
+ 159, 29/11/2026, عَادَ           , Arabe   , فعل , Verbe creux (1), ع و د · I                     , عَادَ (ع و د · I)
+ 160, 29/11/2026, صَامَ           , Arabe   , فعل , Verbe creux (1), ص و م · I                     , صَامَ (ص و م · I)
+ 161, 29/11/2026, طَارَ           , Arabe   , فعل , Verbe creux (1), ط ي ر · I                     , طَارَ (ط ي ر · I)
+ 162, 29/11/2026, زِيَارَةٌ       , Arabe   , إسم , Verbe creux (1), ز و ر                         , زِيَارَةٌ (ز و ر)
+ 163, 29/11/2026, سَيَّارَةٌ      , Arabe   , إسم , Verbe creux (1), س ي ر                         , سَيَّارَةٌ (س ي ر)
+ 164, 29/11/2026, حَيَاةٌ         , Arabe   , إسم , Verbe creux (1), ح ي ي                         , حَيَاةٌ (ح ي ي)
+ 165, 29/11/2026, خَوْفٌ          , Arabe   , إسم , Verbe creux (1), خ و ف                         , خَوْفٌ (خ و ف)
+ 166, 29/11/2026, عَوْدَةٌ        , Arabe   , إسم , Verbe creux (1), ع و د                         , عَوْدَةٌ (ع و د)
+ 167, 29/11/2026, طَائِرَةٌ       , Arabe   , إسم , Verbe creux (1), ط ي ر                         , طَائِرَةٌ (ط ي ر)
+ 168, 29/11/2026, visiter         , Francais, فعل , Verbe creux (1),                               , visiter
+ 169, 29/11/2026, avancer         , Francais, فعل , Verbe creux (1), marcher                       , avancer (marcher)
+ 170, 29/11/2026, vivre           , Francais, فعل , Verbe creux (1),                               , vivre
+ 171, 29/11/2026, avoir peur      , Francais, فعل , Verbe creux (1),                               , avoir peur
+ 172, 29/11/2026, revenir         , Francais, فعل , Verbe creux (1),                               , revenir
+ 173, 29/11/2026, jeûner          , Francais, فعل , Verbe creux (1),                               , jeûner
+ 174, 29/11/2026, voler           , Francais, فعل , Verbe creux (1), dans les airs                 , voler (dans les airs)
+ 175, 29/11/2026, visite          , Francais, إسم , Verbe creux (1),                               , visite
+ 176, 29/11/2026, voiture         , Francais, إسم , Verbe creux (1),                               , voiture
+ 177, 29/11/2026, vie             , Francais, إسم , Verbe creux (1),                               , vie
+ 178, 29/11/2026, peur            , Francais, إسم , Verbe creux (1),                               , peur
+ 179, 29/11/2026, retour          , Francais, إسم , Verbe creux (1),                               , retour
+ 180, 29/11/2026, avion           , Francais, إسم , Verbe creux (1),                               , avion
+ 181, 06/12/2026, قَامَ           , Arabe   , فعل , Verbe creux (2), ق و م · I                     , قَامَ (ق و م · I)
+ 182, 06/12/2026, دَارَ           , Arabe   , فعل , Verbe creux (2), د و ر · I                     , دَارَ (د و ر · I)
+ 183, 06/12/2026, جَاعَ           , Arabe   , فعل , Verbe creux (2), ج و ع · I                     , جَاعَ (ج و ع · I)
+ 184, 06/12/2026, ذَاقَ           , Arabe   , فعل , Verbe creux (2), ذ و ق · I                     , ذَاقَ (ذ و ق · I)
+ 185, 06/12/2026, طَابَ           , Arabe   , فعل , Verbe creux (2), ط ي ب · I                     , طَابَ (ط ي ب · I)
+ 186, 06/12/2026, زَائِرٌ         , Arabe   , إسم , Verbe creux (2), ز و ر                         , زَائِرٌ (ز و ر)
+ 187, 06/12/2026, صَائِمٌ         , Arabe   , إسم , Verbe creux (2), ص و م                         , صَائِمٌ (ص و م)
+ 188, 06/12/2026, جَائِعٌ         , Arabe   , إسم , Verbe creux (2), ج و ع                         , جَائِعٌ (ج و ع)
+ 189, 06/12/2026, مَقُولٌ         , Arabe   , إسم , Verbe creux (2), ق و ل                         , مَقُولٌ (ق و ل)
+ 190, 06/12/2026, مَبِيعٌ         , Arabe   , إسم , Verbe creux (2), ب ي ع                         , مَبِيعٌ (ب ي ع)
+ 191, 06/12/2026, ذَوْقٌ          , Arabe   , إسم , Verbe creux (2), ذ و ق                         , ذَوْقٌ (ذ و ق)
+ 192, 06/12/2026, نَوْمٌ          , Arabe   , إسم , Verbe creux (2), ن و م                         , نَوْمٌ (ن و م)
+ 193, 06/12/2026, lever           , Francais, فعل , Verbe creux (2), se                            , lever (se)
+ 194, 06/12/2026, tourner         , Francais, فعل , Verbe creux (2),                               , tourner
+ 195, 06/12/2026, avoir faim      , Francais, فعل , Verbe creux (2),                               , avoir faim
+ 196, 06/12/2026, goûter          , Francais, فعل , Verbe creux (2),                               , goûter
+ 197, 06/12/2026, être bon        , Francais, فعل , Verbe creux (2),                               , être bon
+ 198, 06/12/2026, visiteur        , Francais, إسم , Verbe creux (2),                               , visiteur
+ 199, 06/12/2026, jeûneur         , Francais, إسم , Verbe creux (2), celui qui jeûne               , jeûneur (celui qui jeûne)
+ 200, 06/12/2026, affamé          , Francais, إسم , Verbe creux (2),                               , affamé
+ 201, 06/12/2026, dit             , Francais, إسم , Verbe creux (2), participe passif              , dit (participe passif)
+ 202, 06/12/2026, vendu           , Francais, إسم , Verbe creux (2), participe passif              , vendu (participe passif)
+ 203, 06/12/2026, goût            , Francais, إسم , Verbe creux (2),                               , goût
+ 204, 06/12/2026, sommeil         , Francais, إسم , Verbe creux (2),                               , sommeil
+ 205, 13/12/2026, مَشَى           , Arabe   , فعل , Verbe défectueux (1), م ش ي · I                     , مَشَى (م ش ي · I)
+ 206, 13/12/2026, بَنَى           , Arabe   , فعل , Verbe défectueux (1), ب ن ي · I                     , بَنَى (ب ن ي · I)
+ 207, 13/12/2026, رَمَى           , Arabe   , فعل , Verbe défectueux (1), ر م ي · I                     , رَمَى (ر م ي · I)
+ 208, 13/12/2026, دَعَا           , Arabe   , فعل , Verbe défectueux (1), د ع و · I                     , دَعَا (د ع و · I)
+ 209, 13/12/2026, نَسِيَ          , Arabe   , فعل , Verbe défectueux (1), ن س ي · I                     , نَسِيَ (ن س ي · I)
+ 210, 13/12/2026, بَقِيَ          , Arabe   , فعل , Verbe défectueux (1), ب ق ي · I                     , بَقِيَ (ب ق ي · I)
+ 211, 13/12/2026, رَضِيَ          , Arabe   , فعل , Verbe défectueux (1), ر ض ي · I                     , رَضِيَ (ر ض ي · I)
+ 212, 13/12/2026, جَرَى           , Arabe   , فعل , Verbe défectueux (1), ج ر ي · I                     , جَرَى (ج ر ي · I)
+ 213, 13/12/2026, بِنَاءٌ         , Arabe   , إسم , Verbe défectueux (1), ب ن ي                         , بِنَاءٌ (ب ن ي)
+ 214, 13/12/2026, دَعْوَةٌ        , Arabe   , إسم , Verbe défectueux (1), د ع و                         , دَعْوَةٌ (د ع و)
+ 215, 13/12/2026, مَبْنًى         , Arabe   , إسم , Verbe défectueux (1), ب ن ي                         , مَبْنًى (ب ن ي)
+ 216, 13/12/2026, مَشْيٌ          , Arabe   , إسم , Verbe défectueux (1), م ش ي                         , مَشْيٌ (م ش ي)
+ 217, 13/12/2026, marcher         , Francais, فعل , Verbe défectueux (1),                               , marcher
+ 218, 13/12/2026, construire      , Francais, فعل , Verbe défectueux (1),                               , construire
+ 219, 13/12/2026, lancer          , Francais, فعل , Verbe défectueux (1),                               , lancer
+ 220, 13/12/2026, inviter         , Francais, فعل , Verbe défectueux (1), appeler                       , inviter (appeler)
+ 221, 13/12/2026, oublier         , Francais, فعل , Verbe défectueux (1),                               , oublier
+ 222, 13/12/2026, rester          , Francais, فعل , Verbe défectueux (1),                               , rester
+ 223, 13/12/2026, être satisfait  , Francais, فعل , Verbe défectueux (1),                               , être satisfait
+ 224, 13/12/2026, courir          , Francais, فعل , Verbe défectueux (1),                               , courir
+ 225, 13/12/2026, construction    , Francais, إسم , Verbe défectueux (1),                               , construction
+ 226, 13/12/2026, invitation      , Francais, إسم , Verbe défectueux (1),                               , invitation
+ 227, 13/12/2026, bâtiment        , Francais, إسم , Verbe défectueux (1),                               , bâtiment
+ 228, 13/12/2026, marche          , Francais, إسم , Verbe défectueux (1),                               , marche
+ 229, 20/12/2026, هَدَى           , Arabe   , فعل , Verbe défectueux (2), ه د ي · I                     , هَدَى (ه د ي · I)
+ 230, 20/12/2026, رَجَا           , Arabe   , فعل , Verbe défectueux (2), ر ج و · I                     , رَجَا (ر ج و · I)
+ 231, 20/12/2026, عَفَا           , Arabe   , فعل , Verbe défectueux (2), ع ف و · I                     , عَفَا (ع ف و · I)
+ 232, 20/12/2026, حَكَى           , Arabe   , فعل , Verbe défectueux (2), ح ك ي · I                     , حَكَى (ح ك ي · I)
+ 233, 20/12/2026, شَفَى           , Arabe   , فعل , Verbe défectueux (2), ش ف ي · I                     , شَفَى (ش ف ي · I)
+ 234, 20/12/2026, لَقِيَ          , Arabe   , فعل , Verbe défectueux (2), ل ق ي · I                     , لَقِيَ (ل ق ي · I)
+ 235, 20/12/2026, سَقَى           , Arabe   , فعل , Verbe défectueux (2), س ق ي · I                     , سَقَى (س ق ي · I)
+ 236, 20/12/2026, بَانٍ           , Arabe   , إسم , Verbe défectueux (2), ب ن ي                         , بَانٍ (ب ن ي)
+ 237, 20/12/2026, رَاضٍ           , Arabe   , إسم , Verbe défectueux (2), ر ض ي                         , رَاضٍ (ر ض ي)
+ 238, 20/12/2026, حِكَايَةٌ       , Arabe   , إسم , Verbe défectueux (2), ح ك ي                         , حِكَايَةٌ (ح ك ي)
+ 239, 20/12/2026, شِفَاءٌ         , Arabe   , إسم , Verbe défectueux (2), ش ف ي                         , شِفَاءٌ (ش ف ي)
+ 240, 20/12/2026, رَجَاءٌ         , Arabe   , إسم , Verbe défectueux (2), ر ج و                         , رَجَاءٌ (ر ج و)
+ 241, 20/12/2026, عَفْوٌ          , Arabe   , إسم , Verbe défectueux (2), ع ف و                         , عَفْوٌ (ع ف و)
+ 242, 20/12/2026, شَيْخٌ          , Arabe   , إسم , Verbe défectueux (2), ش ي خ                         , شَيْخٌ (ش ي خ)
+ 243, 20/12/2026, guider          , Francais, فعل , Verbe défectueux (2),                               , guider
+ 244, 20/12/2026, espérer         , Francais, فعل , Verbe défectueux (2),                               , espérer
+ 245, 20/12/2026, pardonner       , Francais, فعل , Verbe défectueux (2),                               , pardonner
+ 246, 20/12/2026, raconter        , Francais, فعل , Verbe défectueux (2),                               , raconter
+ 247, 20/12/2026, guérir          , Francais, فعل , Verbe défectueux (2),                               , guérir
+ 248, 20/12/2026, rencontrer      , Francais, فعل , Verbe défectueux (2),                               , rencontrer
+ 249, 20/12/2026, arroser         , Francais, فعل , Verbe défectueux (2),                               , arroser
+ 250, 20/12/2026, constructeur    , Francais, إسم , Verbe défectueux (2),                               , constructeur
+ 251, 20/12/2026, satisfait       , Francais, إسم , Verbe défectueux (2),                               , satisfait
+ 252, 20/12/2026, récit           , Francais, إسم , Verbe défectueux (2),                               , récit
+ 253, 20/12/2026, guérison        , Francais, إسم , Verbe défectueux (2),                               , guérison
+ 254, 20/12/2026, espoir          , Francais, إسم , Verbe défectueux (2),                               , espoir
+ 255, 20/12/2026, pardon          , Francais, إسم , Verbe défectueux (2),                               , pardon
+ 256, 20/12/2026, vieil homme     , Francais, إسم , Verbe défectueux (2),                               , vieil homme
+ 257, 27/12/2026, رَأَى           , Arabe   , فعل , Lafīf et verbes fréquents, ر أ ي · I                     , رَأَى (ر أ ي · I)
+ 258, 27/12/2026, أَتَى           , Arabe   , فعل , Lafīf et verbes fréquents, أ ت ي · I                     , أَتَى (أ ت ي · I)
+ 259, 27/12/2026, جَاءَ           , Arabe   , فعل , Lafīf et verbes fréquents, ج ي أ · I                     , جَاءَ (ج ي أ · I)
+ 260, 27/12/2026, وَفَى           , Arabe   , فعل , Lafīf et verbes fréquents, و ف ي · I                     , وَفَى (و ف ي · I)
+ 261, 27/12/2026, وَقَى           , Arabe   , فعل , Lafīf et verbes fréquents, و ق ي · I                     , وَقَى (و ق ي · I)
+ 262, 27/12/2026, طَوَى           , Arabe   , فعل , Lafīf et verbes fréquents, ط و ي · I                     , طَوَى (ط و ي · I)
+ 263, 27/12/2026, نَوَى           , Arabe   , فعل , Lafīf et verbes fréquents, ن و ي · I                     , نَوَى (ن و ي · I)
+ 264, 27/12/2026, شَوَى           , Arabe   , فعل , Lafīf et verbes fréquents, ش و ي · I                     , شَوَى (ش و ي · I)
+ 265, 27/12/2026, رَأْيٌ          , Arabe   , إسم , Lafīf et verbes fréquents, ر أ ي                         , رَأْيٌ (ر أ ي)
+ 266, 27/12/2026, رُؤْيَةٌ        , Arabe   , إسم , Lafīf et verbes fréquents, ر أ ي                         , رُؤْيَةٌ (ر أ ي)
+ 267, 27/12/2026, نِيَّةٌ         , Arabe   , إسم , Lafīf et verbes fréquents, ن و ي                         , نِيَّةٌ (ن و ي)
+ 268, 27/12/2026, وَفَاءٌ         , Arabe   , إسم , Lafīf et verbes fréquents, و ف ي                         , وَفَاءٌ (و ف ي)
+ 269, 27/12/2026, وِقَايَةٌ       , Arabe   , إسم , Lafīf et verbes fréquents, و ق ي                         , وِقَايَةٌ (و ق ي)
+ 270, 27/12/2026, عِلَاجٌ         , Arabe   , إسم , Lafīf et verbes fréquents, ع ل ج                         , عِلَاجٌ (ع ل ج)
+ 271, 27/12/2026, خَيْرٌ          , Arabe   , إسم , Lafīf et verbes fréquents, خ ي ر                         , خَيْرٌ (خ ي ر)
+ 272, 27/12/2026, voir            , Francais, فعل , Lafīf et verbes fréquents,                               , voir
+ 273, 27/12/2026, venir           , Francais, فعل , Lafīf et verbes fréquents,                               , venir
+ 274, 27/12/2026, venir           , Francais, فعل , Lafīf et verbes fréquents,                               , venir
+ 275, 27/12/2026, tenir parole    , Francais, فعل , Lafīf et verbes fréquents,                               , tenir parole
+ 276, 27/12/2026, protéger        , Francais, فعل , Lafīf et verbes fréquents,                               , protéger
+ 277, 27/12/2026, plier           , Francais, فعل , Lafīf et verbes fréquents,                               , plier
+ 278, 27/12/2026, avoir l’intention, Francais, فعل , Lafīf et verbes fréquents,                               , avoir l’intention
+ 279, 27/12/2026, griller         , Francais, فعل , Lafīf et verbes fréquents,                               , griller
+ 280, 27/12/2026, avis            , Francais, إسم , Lafīf et verbes fréquents,                               , avis
+ 281, 27/12/2026, vue             , Francais, إسم , Lafīf et verbes fréquents,                               , vue
+ 282, 27/12/2026, intention       , Francais, إسم , Lafīf et verbes fréquents,                               , intention
+ 283, 27/12/2026, fidélité        , Francais, إسم , Lafīf et verbes fréquents,                               , fidélité
+ 284, 27/12/2026, prévention      , Francais, إسم , Lafīf et verbes fréquents,                               , prévention
+ 285, 27/12/2026, traitement      , Francais, إسم , Lafīf et verbes fréquents,                               , traitement
+ 286, 27/12/2026, bien            , Francais, إسم , Lafīf et verbes fréquents, meilleur                      , bien (meilleur)
+ 287, 03/01/2027, كَانَ           , Arabe   , فعل , Kāna et ses sœurs, ك و ن · I                     , كَانَ (ك و ن · I)
+ 288, 03/01/2027, لَيْسَ          , Arabe   , فعل , Kāna et ses sœurs, ل ي س · I                     , لَيْسَ (ل ي س · I)
+ 289, 03/01/2027, أَصْبَحَ        , Arabe   , فعل , Kāna et ses sœurs, ص ب ح · IV                    , أَصْبَحَ (ص ب ح · IV)
+ 290, 03/01/2027, أَمْسَى         , Arabe   , فعل , Kāna et ses sœurs, م س ي · IV                    , أَمْسَى (م س ي · IV)
+ 291, 03/01/2027, ظَلَّ           , Arabe   , فعل , Kāna et ses sœurs, ظ ل ل · I                     , ظَلَّ (ظ ل ل · I)
+ 292, 03/01/2027, بَاتَ           , Arabe   , فعل , Kāna et ses sœurs, ب ي ت · I                     , بَاتَ (ب ي ت · I)
+ 293, 03/01/2027, صَارَ           , Arabe   , فعل , Kāna et ses sœurs, ص ي ر · I                     , صَارَ (ص ي ر · I)
+ 294, 03/01/2027, مَا زَالَ       , Arabe   , فعل , Kāna et ses sœurs, ز و ل · I                     , مَا زَالَ (ز و ل · I)
+ 295, 03/01/2027, خَبَرٌ          , Arabe   , إسم , Kāna et ses sœurs, خ ب ر                         , خَبَرٌ (خ ب ر)
+ 296, 03/01/2027, سَعِيدٌ         , Arabe   , إسم , Kāna et ses sœurs, س ع د                         , سَعِيدٌ (س ع د)
+ 297, 03/01/2027, حَزِينٌ         , Arabe   , إسم , Kāna et ses sœurs, ح ز ن                         , حَزِينٌ (ح ز ن)
+ 298, 03/01/2027, غَنِيٌّ         , Arabe   , إسم , Kāna et ses sœurs, غ ن ي                         , غَنِيٌّ (غ ن ي)
+ 299, 03/01/2027, فَقِيرٌ         , Arabe   , إسم , Kāna et ses sœurs, ف ق ر                         , فَقِيرٌ (ف ق ر)
+ 300, 03/01/2027, être            , Francais, فعل , Kāna et ses sœurs,                               , être
+ 301, 03/01/2027, ne pas être     , Francais, فعل , Kāna et ses sœurs,                               , ne pas être
+ 302, 03/01/2027, devenir         , Francais, فعل , Kāna et ses sœurs, le matin                      , devenir (le matin)
+ 303, 03/01/2027, devenir         , Francais, فعل , Kāna et ses sœurs, le soir                       , devenir (le soir)
+ 304, 03/01/2027, rester          , Francais, فعل , Kāna et ses sœurs,                               , rester
+ 305, 03/01/2027, passer la nuit  , Francais, فعل , Kāna et ses sœurs,                               , passer la nuit
+ 306, 03/01/2027, devenir         , Francais, فعل , Kāna et ses sœurs,                               , devenir
+ 307, 03/01/2027, continuer à être, Francais, فعل , Kāna et ses sœurs,                               , continuer à être
+ 308, 03/01/2027, nouvelle        , Francais, إسم , Kāna et ses sœurs, attribut                      , nouvelle (attribut)
+ 309, 03/01/2027, heureux         , Francais, إسم , Kāna et ses sœurs,                               , heureux
+ 310, 03/01/2027, triste          , Francais, إسم , Kāna et ses sœurs,                               , triste
+ 311, 03/01/2027, riche           , Francais, إسم , Kāna et ses sœurs,                               , riche
+ 312, 03/01/2027, pauvre          , Francais, إسم , Kāna et ses sœurs,                               , pauvre
+ 313, 10/01/2027, كَسَّرَ         , Arabe   , فعل , Forme II    , ك س ر · II                    , كَسَّرَ (ك س ر · II)
+ 314, 10/01/2027, دَرَّسَ         , Arabe   , فعل , Forme II    , د ر س · II                    , دَرَّسَ (د ر س · II)
+ 315, 10/01/2027, سَجَّلَ         , Arabe   , فعل , Forme II    , س ج ل · II                    , سَجَّلَ (س ج ل · II)
+ 316, 10/01/2027, غَيَّرَ         , Arabe   , فعل , Forme II    , غ ي ر · II                    , غَيَّرَ (غ ي ر · II)
+ 317, 10/01/2027, حَضَّرَ         , Arabe   , فعل , Forme II    , ح ض ر · II                    , حَضَّرَ (ح ض ر · II)
+ 318, 10/01/2027, فَرَّحَ         , Arabe   , فعل , Forme II    , ف ر ح · II                    , فَرَّحَ (ف ر ح · II)
+ 319, 10/01/2027, نَظَّمَ         , Arabe   , فعل , Forme II    , ن ظ م · II                    , نَظَّمَ (ن ظ م · II)
+ 320, 10/01/2027, ذَكَّرَ         , Arabe   , فعل , Forme II    , ذ ك ر · II                    , ذَكَّرَ (ذ ك ر · II)
+ 321, 10/01/2027, كَبَّرَ         , Arabe   , فعل , Forme II    , ك ب ر · II                    , كَبَّرَ (ك ب ر · II)
+ 322, 10/01/2027, تَنْظِيمٌ       , Arabe   , إسم , Forme II    , ن ظ م                         , تَنْظِيمٌ (ن ظ م)
+ 323, 10/01/2027, تَسْجِيلٌ       , Arabe   , إسم , Forme II    , س ج ل                         , تَسْجِيلٌ (س ج ل)
+ 324, 10/01/2027, تَحْضِيرٌ       , Arabe   , إسم , Forme II    , ح ض ر                         , تَحْضِيرٌ (ح ض ر)
+ 325, 10/01/2027, تَغْيِيرٌ       , Arabe   , إسم , Forme II    , غ ي ر                         , تَغْيِيرٌ (غ ي ر)
+ 326, 10/01/2027, مُعَلِّمٌ       , Arabe   , إسم , Forme II    , ع ل م                         , مُعَلِّمٌ (ع ل م)
+ 327, 10/01/2027, briser          , Francais, فعل , Forme II    , mettre en morceaux            , briser (mettre en morceaux)
+ 328, 10/01/2027, enseigner       , Francais, فعل , Forme II    , un cours                      , enseigner (un cours)
+ 329, 10/01/2027, enregistrer     , Francais, فعل , Forme II    , inscrire                      , enregistrer (inscrire)
+ 330, 10/01/2027, changer         , Francais, فعل , Forme II    ,                               , changer
+ 331, 10/01/2027, préparer        , Francais, فعل , Forme II    ,                               , préparer
+ 332, 10/01/2027, réjouir         , Francais, فعل , Forme II    ,                               , réjouir
+ 333, 10/01/2027, organiser       , Francais, فعل , Forme II    ,                               , organiser
+ 334, 10/01/2027, rappeler        , Francais, فعل , Forme II    ,                               , rappeler
+ 335, 10/01/2027, agrandir        , Francais, فعل , Forme II    ,                               , agrandir
+ 336, 10/01/2027, organisation    , Francais, إسم , Forme II    ,                               , organisation
+ 337, 10/01/2027, inscription     , Francais, إسم , Forme II    ,                               , inscription
+ 338, 10/01/2027, préparation     , Francais, إسم , Forme II    ,                               , préparation
+ 339, 10/01/2027, changement      , Francais, إسم , Forme II    ,                               , changement
+ 340, 10/01/2027, enseignant      , Francais, إسم , Forme II    ,                               , enseignant
+ 341, 17/01/2027, كَاتَبَ         , Arabe   , فعل , Forme III   , ك ت ب · III                   , كَاتَبَ (ك ت ب · III)
+ 342, 17/01/2027, سَاعَدَ         , Arabe   , فعل , Forme III   , س ع د · III                   , سَاعَدَ (س ع د · III)
+ 343, 17/01/2027, حَاوَلَ         , Arabe   , فعل , Forme III   , ح و ل · III                   , حَاوَلَ (ح و ل · III)
+ 344, 17/01/2027, نَاقَشَ         , Arabe   , فعل , Forme III   , ن ق ش · III                   , نَاقَشَ (ن ق ش · III)
+ 345, 17/01/2027, عَامَلَ         , Arabe   , فعل , Forme III   , ع م ل · III                   , عَامَلَ (ع م ل · III)
+ 346, 17/01/2027, شَارَكَ         , Arabe   , فعل , Forme III   , ش ر ك · III                   , شَارَكَ (ش ر ك · III)
+ 347, 17/01/2027, رَاجَعَ         , Arabe   , فعل , Forme III   , ر ج ع · III                   , رَاجَعَ (ر ج ع · III)
+ 348, 17/01/2027, سَامَحَ         , Arabe   , فعل , Forme III   , س م ح · III                   , سَامَحَ (س م ح · III)
+ 349, 17/01/2027, مُسَاعَدَةٌ     , Arabe   , إسم , Forme III   , س ع د                         , مُسَاعَدَةٌ (س ع د)
+ 350, 17/01/2027, مُنَاقَشَةٌ     , Arabe   , إسم , Forme III   , ن ق ش                         , مُنَاقَشَةٌ (ن ق ش)
+ 351, 17/01/2027, مُشَارَكَةٌ     , Arabe   , إسم , Forme III   , ش ر ك                         , مُشَارَكَةٌ (ش ر ك)
+ 352, 17/01/2027, مُرَاجَعَةٌ     , Arabe   , إسم , Forme III   , ر ج ع                         , مُرَاجَعَةٌ (ر ج ع)
+ 353, 17/01/2027, مُحَاوَلَةٌ     , Arabe   , إسم , Forme III   , ح و ل                         , مُحَاوَلَةٌ (ح و ل)
+ 354, 17/01/2027, correspondre avec, Francais, فعل , Forme III   ,                               , correspondre avec
+ 355, 17/01/2027, aider           , Francais, فعل , Forme III   ,                               , aider
+ 356, 17/01/2027, essayer         , Francais, فعل , Forme III   ,                               , essayer
+ 357, 17/01/2027, discuter        , Francais, فعل , Forme III   ,                               , discuter
+ 358, 17/01/2027, traiter         , Francais, فعل , Forme III   ,                               , traiter
+ 359, 17/01/2027, participer      , Francais, فعل , Forme III   ,                               , participer
+ 360, 17/01/2027, réviser         , Francais, فعل , Forme III   ,                               , réviser
+ 361, 17/01/2027, pardonner       , Francais, فعل , Forme III   ,                               , pardonner
+ 362, 17/01/2027, aide            , Francais, إسم , Forme III   ,                               , aide
+ 363, 17/01/2027, discussion      , Francais, إسم , Forme III   ,                               , discussion
+ 364, 17/01/2027, participation   , Francais, إسم , Forme III   ,                               , participation
+ 365, 17/01/2027, révision        , Francais, إسم , Forme III   ,                               , révision
+ 366, 17/01/2027, tentative       , Francais, إسم , Forme III   ,                               , tentative
+ 367, 24/01/2027, أَنْزَلَ        , Arabe   , فعل , Forme IV    , ن ز ل · IV                    , أَنْزَلَ (ن ز ل · IV)
+ 368, 24/01/2027, أَنْجَزَ        , Arabe   , فعل , Forme IV    , ن ج ز · IV                    , أَنْجَزَ (ن ج ز · IV)
+ 369, 24/01/2027, أَحْضَرَ        , Arabe   , فعل , Forme IV    , ح ض ر · IV                    , أَحْضَرَ (ح ض ر · IV)
+ 370, 24/01/2027, أَكْمَلَ        , Arabe   , فعل , Forme IV    , ك م ل · IV                    , أَكْمَلَ (ك م ل · IV)
+ 371, 24/01/2027, أَظْهَرَ        , Arabe   , فعل , Forme IV    , ظ ه ر · IV                    , أَظْهَرَ (ظ ه ر · IV)
+ 372, 24/01/2027, أَعْلَنَ        , Arabe   , فعل , Forme IV    , ع ل ن · IV                    , أَعْلَنَ (ع ل ن · IV)
+ 373, 24/01/2027, أَسْرَعَ        , Arabe   , فعل , Forme IV    , س ر ع · IV                    , أَسْرَعَ (س ر ع · IV)
+ 374, 24/01/2027, أَعْجَبَ        , Arabe   , فعل , Forme IV    , ع ج ب · IV                    , أَعْجَبَ (ع ج ب · IV)
+ 375, 24/01/2027, إِرْسَالٌ       , Arabe   , إسم , Forme IV    , ر س ل                         , إِرْسَالٌ (ر س ل)
+ 376, 24/01/2027, إِعْلَانٌ       , Arabe   , إسم , Forme IV    , ع ل ن                         , إِعْلَانٌ (ع ل ن)
+ 377, 24/01/2027, رِسَالَةٌ       , Arabe   , إسم , Forme IV    , ر س ل                         , رِسَالَةٌ (ر س ل)
+ 378, 24/01/2027, مُرْسِلٌ        , Arabe   , إسم , Forme IV    , ر س ل                         , مُرْسِلٌ (ر س ل)
+ 379, 24/01/2027, سُرْعَةٌ        , Arabe   , إسم , Forme IV    , س ر ع                         , سُرْعَةٌ (س ر ع)
+ 380, 24/01/2027, faire descendre , Francais, فعل , Forme IV    ,                               , faire descendre
+ 381, 24/01/2027, accomplir       , Francais, فعل , Forme IV    ,                               , accomplir
+ 382, 24/01/2027, apporter        , Francais, فعل , Forme IV    , amener                        , apporter (amener)
+ 383, 24/01/2027, achever         , Francais, فعل , Forme IV    ,                               , achever
+ 384, 24/01/2027, montrer         , Francais, فعل , Forme IV    ,                               , montrer
+ 385, 24/01/2027, annoncer        , Francais, فعل , Forme IV    ,                               , annoncer
+ 386, 24/01/2027, dépêcher        , Francais, فعل , Forme IV    , se                            , dépêcher (se)
+ 387, 24/01/2027, plaire          , Francais, فعل , Forme IV    ,                               , plaire
+ 388, 24/01/2027, envoi           , Francais, إسم , Forme IV    ,                               , envoi
+ 389, 24/01/2027, annonce         , Francais, إسم , Forme IV    ,                               , annonce
+ 390, 24/01/2027, lettre          , Francais, إسم , Forme IV    , message                       , lettre (message)
+ 391, 24/01/2027, expéditeur      , Francais, إسم , Forme IV    ,                               , expéditeur
+ 392, 24/01/2027, vitesse         , Francais, إسم , Forme IV    ,                               , vitesse
+ 393, 31/01/2027, تَقَدَّمَ       , Arabe   , فعل , Formes V et VI, ق د م · V                     , تَقَدَّمَ (ق د م · V)
+ 394, 31/01/2027, تَأَخَّرَ       , Arabe   , فعل , Formes V et VI, أ خ ر · V                     , تَأَخَّرَ (أ خ ر · V)
+ 395, 31/01/2027, تَخَرَّجَ       , Arabe   , فعل , Formes V et VI, خ ر ج · V                     , تَخَرَّجَ (خ ر ج · V)
+ 396, 31/01/2027, تَغَيَّرَ       , Arabe   , فعل , Formes V et VI, غ ي ر · V                     , تَغَيَّرَ (غ ي ر · V)
+ 397, 31/01/2027, تَطَوَّرَ       , Arabe   , فعل , Formes V et VI, ط و ر · V                     , تَطَوَّرَ (ط و ر · V)
+ 398, 31/01/2027, تَعَاوَنَ       , Arabe   , فعل , Formes V et VI, ع و ن · VI                    , تَعَاوَنَ (ع و ن · VI)
+ 399, 31/01/2027, تَبَادَلَ       , Arabe   , فعل , Formes V et VI, ب د ل · VI                    , تَبَادَلَ (ب د ل · VI)
+ 400, 31/01/2027, تَشَاوَرَ       , Arabe   , فعل , Formes V et VI, ش و ر · VI                    , تَشَاوَرَ (ش و ر · VI)
+ 401, 31/01/2027, تَعَارَفَ       , Arabe   , فعل , Formes V et VI, ع ر ف · VI                    , تَعَارَفَ (ع ر ف · VI)
+ 402, 31/01/2027, تَقَابَلَ       , Arabe   , فعل , Formes V et VI, ق ب ل · VI                    , تَقَابَلَ (ق ب ل · VI)
+ 403, 31/01/2027, تَعَاوُنٌ       , Arabe   , إسم , Formes V et VI, ع و ن                         , تَعَاوُنٌ (ع و ن)
+ 404, 31/01/2027, تَقَدُّمٌ       , Arabe   , إسم , Formes V et VI, ق د م                         , تَقَدُّمٌ (ق د م)
+ 405, 31/01/2027, تَطَوُّرٌ       , Arabe   , إسم , Formes V et VI, ط و ر                         , تَطَوُّرٌ (ط و ر)
+ 406, 31/01/2027, avancer         , Francais, فعل , Formes V et VI,                               , avancer
+ 407, 31/01/2027, être en retard  , Francais, فعل , Formes V et VI,                               , être en retard
+ 408, 31/01/2027, obtenir son diplôme, Francais, فعل , Formes V et VI,                               , obtenir son diplôme
+ 409, 31/01/2027, changer         , Francais, فعل , Formes V et VI,                               , changer
+ 410, 31/01/2027, se développer   , Francais, فعل , Formes V et VI,                               , se développer
+ 411, 31/01/2027, coopérer        , Francais, فعل , Formes V et VI,                               , coopérer
+ 412, 31/01/2027, échanger        , Francais, فعل , Formes V et VI,                               , échanger
+ 413, 31/01/2027, consulter       , Francais, فعل , Formes V et VI, se                            , consulter (se)
+ 414, 31/01/2027, faire connaissance, Francais, فعل , Formes V et VI,                               , faire connaissance
+ 415, 31/01/2027, rencontrer      , Francais, فعل , Formes V et VI, se                            , rencontrer (se)
+ 416, 31/01/2027, coopération     , Francais, إسم , Formes V et VI,                               , coopération
+ 417, 31/01/2027, progrès         , Francais, إسم , Formes V et VI,                               , progrès
+ 418, 31/01/2027, développement   , Francais, إسم , Formes V et VI,                               , développement
+ 419, 07/02/2027, اِنْكَسَرَ      , Arabe   , فعل , Formes VII et VIII, ك س ر · VII                   , اِنْكَسَرَ (ك س ر · VII)
+ 420, 07/02/2027, اِنْفَتَحَ      , Arabe   , فعل , Formes VII et VIII, ف ت ح · VII                   , اِنْفَتَحَ (ف ت ح · VII)
+ 421, 07/02/2027, اِنْطَلَقَ      , Arabe   , فعل , Formes VII et VIII, ط ل ق · VII                   , اِنْطَلَقَ (ط ل ق · VII)
+ 422, 07/02/2027, اِنْقَطَعَ      , Arabe   , فعل , Formes VII et VIII, ق ط ع · VII                   , اِنْقَطَعَ (ق ط ع · VII)
+ 423, 07/02/2027, اِجْتَمَعَ      , Arabe   , فعل , Formes VII et VIII, ج م ع · VIII                  , اِجْتَمَعَ (ج م ع · VIII)
+ 424, 07/02/2027, اِنْتَظَرَ      , Arabe   , فعل , Formes VII et VIII, ن ظ ر · VIII                  , اِنْتَظَرَ (ن ظ ر · VIII)
+ 425, 07/02/2027, اِحْتَرَمَ      , Arabe   , فعل , Formes VII et VIII, ح ر م · VIII                  , اِحْتَرَمَ (ح ر م · VIII)
+ 426, 07/02/2027, اِعْتَذَرَ      , Arabe   , فعل , Formes VII et VIII, ع ذ ر · VIII                  , اِعْتَذَرَ (ع ذ ر · VIII)
+ 427, 07/02/2027, اِبْتَسَمَ      , Arabe   , فعل , Formes VII et VIII, ب س م · VIII                  , اِبْتَسَمَ (ب س م · VIII)
+ 428, 07/02/2027, اِقْتَرَبَ      , Arabe   , فعل , Formes VII et VIII, ق ر ب · VIII                  , اِقْتَرَبَ (ق ر ب · VIII)
+ 429, 07/02/2027, اِجْتِمَاعٌ     , Arabe   , إسم , Formes VII et VIII, ج م ع                         , اِجْتِمَاعٌ (ج م ع)
+ 430, 07/02/2027, اِنْتِظَارٌ     , Arabe   , إسم , Formes VII et VIII, ن ظ ر                         , اِنْتِظَارٌ (ن ظ ر)
+ 431, 07/02/2027, اِحْتِرَامٌ     , Arabe   , إسم , Formes VII et VIII, ح ر م                         , اِحْتِرَامٌ (ح ر م)
+ 432, 07/02/2027, جَمْعِيَّةٌ     , Arabe   , إسم , Formes VII et VIII, ج م ع                         , جَمْعِيَّةٌ (ج م ع)
+ 433, 07/02/2027, عُضْوٌ          , Arabe   , إسم , Formes VII et VIII, ع ض و                         , عُضْوٌ (ع ض و)
+ 434, 07/02/2027, casser          , Francais, فعل , Formes VII et VIII, se                            , casser (se)
+ 435, 07/02/2027, ouvrir          , Francais, فعل , Formes VII et VIII, s’                            , ouvrir (s’)
+ 436, 07/02/2027, démarrer        , Francais, فعل , Formes VII et VIII, partir                        , démarrer (partir)
+ 437, 07/02/2027, interrompre     , Francais, فعل , Formes VII et VIII, s’                            , interrompre (s’)
+ 438, 07/02/2027, réunir          , Francais, فعل , Formes VII et VIII, se                            , réunir (se)
+ 439, 07/02/2027, attendre        , Francais, فعل , Formes VII et VIII,                               , attendre
+ 440, 07/02/2027, respecter       , Francais, فعل , Formes VII et VIII,                               , respecter
+ 441, 07/02/2027, excuser         , Francais, فعل , Formes VII et VIII, s’                            , excuser (s’)
+ 442, 07/02/2027, sourire         , Francais, فعل , Formes VII et VIII,                               , sourire
+ 443, 07/02/2027, approcher       , Francais, فعل , Formes VII et VIII, s’                            , approcher (s’)
+ 444, 07/02/2027, réunion         , Francais, إسم , Formes VII et VIII,                               , réunion
+ 445, 07/02/2027, attente         , Francais, إسم , Formes VII et VIII,                               , attente
+ 446, 07/02/2027, respect         , Francais, إسم , Formes VII et VIII,                               , respect
+ 447, 07/02/2027, association     , Francais, إسم , Formes VII et VIII,                               , association
+ 448, 07/02/2027, membre          , Francais, إسم , Formes VII et VIII,                               , membre
+ 449, 14/02/2027, اِحْمَرَّ       , Arabe   , فعل , Formes IX et X, ح م ر · IX                    , اِحْمَرَّ (ح م ر · IX)
+ 450, 14/02/2027, اِصْفَرَّ       , Arabe   , فعل , Formes IX et X, ص ف ر · IX                    , اِصْفَرَّ (ص ف ر · IX)
+ 451, 14/02/2027, اِخْضَرَّ       , Arabe   , فعل , Formes IX et X, خ ض ر · IX                    , اِخْضَرَّ (خ ض ر · IX)
+ 452, 14/02/2027, اِسْتَخْدَمَ    , Arabe   , فعل , Formes IX et X, خ د م · X                     , اِسْتَخْدَمَ (خ د م · X)
+ 453, 14/02/2027, اِسْتَقْبَلَ    , Arabe   , فعل , Formes IX et X, ق ب ل · X                     , اِسْتَقْبَلَ (ق ب ل · X)
+ 454, 14/02/2027, اِسْتَعْمَلَ    , Arabe   , فعل , Formes IX et X, ع م ل · X                     , اِسْتَعْمَلَ (ع م ل · X)
+ 455, 14/02/2027, اِسْتَعْلَمَ    , Arabe   , فعل , Formes IX et X, ع ل م · X                     , اِسْتَعْلَمَ (ع ل م · X)
+ 456, 14/02/2027, اِسْتَغْفَرَ    , Arabe   , فعل , Formes IX et X, غ ف ر · X                     , اِسْتَغْفَرَ (غ ف ر · X)
+ 457, 14/02/2027, اِسْتَعَدَّ     , Arabe   , فعل , Formes IX et X, ع د د · X                     , اِسْتَعَدَّ (ع د د · X)
+ 458, 14/02/2027, اِسْتِقْبَالٌ   , Arabe   , إسم , Formes IX et X, ق ب ل                         , اِسْتِقْبَالٌ (ق ب ل)
+ 459, 14/02/2027, اِسْتِعْمَالٌ   , Arabe   , إسم , Formes IX et X, ع م ل                         , اِسْتِعْمَالٌ (ع م ل)
+ 460, 14/02/2027, اِسْتِخْدَامٌ   , Arabe   , إسم , Formes IX et X, خ د م                         , اِسْتِخْدَامٌ (خ د م)
+ 461, 14/02/2027, اِسْتِعْلَامٌ   , Arabe   , إسم , Formes IX et X, ع ل م                         , اِسْتِعْلَامٌ (ع ل م)
+ 462, 14/02/2027, rougir          , Francais, فعل , Formes IX et X,                               , rougir
+ 463, 14/02/2027, jaunir          , Francais, فعل , Formes IX et X,                               , jaunir
+ 464, 14/02/2027, verdir          , Francais, فعل , Formes IX et X,                               , verdir
+ 465, 14/02/2027, utiliser        , Francais, فعل , Formes IX et X,                               , utiliser
+ 466, 14/02/2027, accueillir      , Francais, فعل , Formes IX et X,                               , accueillir
+ 467, 14/02/2027, employer        , Francais, فعل , Formes IX et X,                               , employer
+ 468, 14/02/2027, se renseigner   , Francais, فعل , Formes IX et X,                               , se renseigner
+ 469, 14/02/2027, demander pardon , Francais, فعل , Formes IX et X,                               , demander pardon
+ 470, 14/02/2027, préparer        , Francais, فعل , Formes IX et X, se                            , préparer (se)
+ 471, 14/02/2027, accueil         , Francais, إسم , Formes IX et X,                               , accueil
+ 472, 14/02/2027, emploi          , Francais, إسم , Formes IX et X,                               , emploi
+ 473, 14/02/2027, utilisation     , Francais, إسم , Formes IX et X,                               , utilisation
+ 474, 14/02/2027, renseignement   , Francais, إسم , Formes IX et X,                               , renseignement
+ 475, 21/02/2027, مُسْلِمٌ        , Arabe   , إسم , Participes et maṣdar, س ل م · IV                    , مُسْلِمٌ (س ل م · IV)
+ 476, 21/02/2027, مُؤْمِنٌ        , Arabe   , إسم , Participes et maṣdar, أ م ن · IV                    , مُؤْمِنٌ (أ م ن · IV)
+ 477, 21/02/2027, مُجْتَمَعٌ      , Arabe   , إسم , Participes et maṣdar, ج م ع · VIII                  , مُجْتَمَعٌ (ج م ع · VIII)
+ 478, 21/02/2027, مُسْتَقْبَلٌ    , Arabe   , إسم , Participes et maṣdar, ق ب ل · X                     , مُسْتَقْبَلٌ (ق ب ل · X)
+ 479, 21/02/2027, مُنَظَّمَةٌ     , Arabe   , إسم , Participes et maṣdar, ن ظ م · II                    , مُنَظَّمَةٌ (ن ظ م · II)
+ 480, 21/02/2027, مُتَرْجِمٌ      , Arabe   , إسم , Participes et maṣdar, ت ر ج م                       , مُتَرْجِمٌ (ت ر ج م)
+ 481, 21/02/2027, مُسْتَشْفًى     , Arabe   , إسم , Participes et maṣdar, ش ف ي · X                     , مُسْتَشْفًى (ش ف ي · X)
+ 482, 21/02/2027, مُسْتَخْدِمٌ    , Arabe   , إسم , Participes et maṣdar, خ د م · X                     , مُسْتَخْدِمٌ (خ د م · X)
+ 483, 21/02/2027, مُشَارِكٌ       , Arabe   , إسم , Participes et maṣdar, ش ر ك · III                   , مُشَارِكٌ (ش ر ك · III)
+ 484, 21/02/2027, مُتَعَلِّمٌ     , Arabe   , إسم , Participes et maṣdar, ع ل م · V                     , مُتَعَلِّمٌ (ع ل م · V)
+ 485, 21/02/2027, مَعْلُومَةٌ     , Arabe   , إسم , Participes et maṣdar, ع ل م                         , مَعْلُومَةٌ (ع ل م)
+ 486, 21/02/2027, مُرْسَلٌ        , Arabe   , إسم , Participes et maṣdar, ر س ل · IV                    , مُرْسَلٌ (ر س ل · IV)
+ 487, 21/02/2027, musulman        , Francais, إسم , Participes et maṣdar,                               , musulman
+ 488, 21/02/2027, croyant         , Francais, إسم , Participes et maṣdar,                               , croyant
+ 489, 21/02/2027, société         , Francais, إسم , Participes et maṣdar,                               , société
+ 490, 21/02/2027, avenir          , Francais, إسم , Participes et maṣdar,                               , avenir
+ 491, 21/02/2027, organisation    , Francais, إسم , Participes et maṣdar,                               , organisation
+ 492, 21/02/2027, traducteur      , Francais, إسم , Participes et maṣdar,                               , traducteur
+ 493, 21/02/2027, hôpital         , Francais, إسم , Participes et maṣdar,                               , hôpital
+ 494, 21/02/2027, utilisateur     , Francais, إسم , Participes et maṣdar,                               , utilisateur
+ 495, 21/02/2027, participant     , Francais, إسم , Participes et maṣdar,                               , participant
+ 496, 21/02/2027, apprenant       , Francais, إسم , Participes et maṣdar,                               , apprenant
+ 497, 21/02/2027, information     , Francais, إسم , Participes et maṣdar,                               , information
+ 498, 21/02/2027, envoyé          , Francais, إسم , Participes et maṣdar,                               , envoyé
+ 499, 28/02/2027, آمَنَ           , Arabe   , فعل , Augmentées : hamzé/redoublé/assimilé, أ م ن · IV                    , آمَنَ (أ م ن · IV)
+ 500, 28/02/2027, أَكَّدَ         , Arabe   , فعل , Augmentées : hamzé/redoublé/assimilé, أ ك د · II                    , أَكَّدَ (أ ك د · II)
+ 501, 28/02/2027, تَأَكَّدَ       , Arabe   , فعل , Augmentées : hamzé/redoublé/assimilé, أ ك د · V                     , تَأَكَّدَ (أ ك د · V)
+ 502, 28/02/2027, أَعَدَّ         , Arabe   , فعل , Augmentées : hamzé/redoublé/assimilé, ع د د · IV                    , أَعَدَّ (ع د د · IV)
+ 503, 28/02/2027, أَحَسَّ         , Arabe   , فعل , Augmentées : hamzé/redoublé/assimilé, ح س س · IV                    , أَحَسَّ (ح س س · IV)
+ 504, 28/02/2027, اِسْتَمَرَّ     , Arabe   , فعل , Augmentées : hamzé/redoublé/assimilé, م ر ر · X                     , اِسْتَمَرَّ (م ر ر · X)
+ 505, 28/02/2027, اِشْتَدَّ       , Arabe   , فعل , Augmentées : hamzé/redoublé/assimilé, ش د د · VIII                  , اِشْتَدَّ (ش د د · VIII)
+ 506, 28/02/2027, وَزَّعَ         , Arabe   , فعل , Augmentées : hamzé/redoublé/assimilé, و ز ع · II                    , وَزَّعَ (و ز ع · II)
+ 507, 28/02/2027, وَاصَلَ         , Arabe   , فعل , Augmentées : hamzé/redoublé/assimilé, و ص ل · III                   , وَاصَلَ (و ص ل · III)
+ 508, 28/02/2027, أَوْقَفَ        , Arabe   , فعل , Augmentées : hamzé/redoublé/assimilé, و ق ف · IV                    , أَوْقَفَ (و ق ف · IV)
+ 509, 28/02/2027, اِتَّصَلَ       , Arabe   , فعل , Augmentées : hamzé/redoublé/assimilé, و ص ل · VIII                  , اِتَّصَلَ (و ص ل · VIII)
+ 510, 28/02/2027, اِتَّفَقَ       , Arabe   , فعل , Augmentées : hamzé/redoublé/assimilé, و ف ق · VIII                  , اِتَّفَقَ (و ف ق · VIII)
+ 511, 28/02/2027, تَوَقَّفَ       , Arabe   , فعل , Augmentées : hamzé/redoublé/assimilé, و ق ف · V                     , تَوَقَّفَ (و ق ف · V)
+ 512, 28/02/2027, croire          , Francais, فعل , Augmentées : hamzé/redoublé/assimilé,                               , croire
+ 513, 28/02/2027, confirmer       , Francais, فعل , Augmentées : hamzé/redoublé/assimilé,                               , confirmer
+ 514, 28/02/2027, assurer         , Francais, فعل , Augmentées : hamzé/redoublé/assimilé, s’                            , assurer (s’)
+ 515, 28/02/2027, préparer        , Francais, فعل , Augmentées : hamzé/redoublé/assimilé,                               , préparer
+ 516, 28/02/2027, sentir          , Francais, فعل , Augmentées : hamzé/redoublé/assimilé,                               , sentir
+ 517, 28/02/2027, continuer       , Francais, فعل , Augmentées : hamzé/redoublé/assimilé,                               , continuer
+ 518, 28/02/2027, intensifier     , Francais, فعل , Augmentées : hamzé/redoublé/assimilé, s’                            , intensifier (s’)
+ 519, 28/02/2027, distribuer      , Francais, فعل , Augmentées : hamzé/redoublé/assimilé,                               , distribuer
+ 520, 28/02/2027, poursuivre      , Francais, فعل , Augmentées : hamzé/redoublé/assimilé,                               , poursuivre
+ 521, 28/02/2027, arrêter         , Francais, فعل , Augmentées : hamzé/redoublé/assimilé,                               , arrêter
+ 522, 28/02/2027, contacter       , Francais, فعل , Augmentées : hamzé/redoublé/assimilé,                               , contacter
+ 523, 28/02/2027, accorder        , Francais, فعل , Augmentées : hamzé/redoublé/assimilé, s’                            , accorder (s’)
+ 524, 28/02/2027, arrêter         , Francais, فعل , Augmentées : hamzé/redoublé/assimilé, s’                            , arrêter (s’)
+ 525, 07/03/2027, أَقَامَ         , Arabe   , فعل , Augmentées : verbe creux, ق و م · IV                    , أَقَامَ (ق و م · IV)
+ 526, 07/03/2027, أَجَابَ         , Arabe   , فعل , Augmentées : verbe creux, ج و ب · IV                    , أَجَابَ (ج و ب · IV)
+ 527, 07/03/2027, أَضَافَ         , Arabe   , فعل , Augmentées : verbe creux, ض ي ف · IV                    , أَضَافَ (ض ي ف · IV)
+ 528, 07/03/2027, أَشَارَ         , Arabe   , فعل , Augmentées : verbe creux, ش و ر · IV                    , أَشَارَ (ش و ر · IV)
+ 529, 07/03/2027, أَعَادَ         , Arabe   , فعل , Augmentées : verbe creux, ع و د · IV                    , أَعَادَ (ع و د · IV)
+ 530, 07/03/2027, أَدَارَ         , Arabe   , فعل , Augmentées : verbe creux, د و ر · IV                    , أَدَارَ (د و ر · IV)
+ 531, 07/03/2027, اِخْتَارَ       , Arabe   , فعل , Augmentées : verbe creux, خ ي ر · VIII                  , اِخْتَارَ (خ ي ر · VIII)
+ 532, 07/03/2027, اِحْتَاجَ       , Arabe   , فعل , Augmentées : verbe creux, ح و ج · VIII                  , اِحْتَاجَ (ح و ج · VIII)
+ 533, 07/03/2027, اِعْتَادَ       , Arabe   , فعل , Augmentées : verbe creux, ع و د · VIII                  , اِعْتَادَ (ع و د · VIII)
+ 534, 07/03/2027, اِسْتَفَادَ     , Arabe   , فعل , Augmentées : verbe creux, ف ي د · X                     , اِسْتَفَادَ (ف ي د · X)
+ 535, 07/03/2027, اِسْتَطَاعَ     , Arabe   , فعل , Augmentées : verbe creux, ط و ع · X                     , اِسْتَطَاعَ (ط و ع · X)
+ 536, 07/03/2027, اِسْتَشَارَ     , Arabe   , فعل , Augmentées : verbe creux, ش و ر · X                     , اِسْتَشَارَ (ش و ر · X)
+ 537, 07/03/2027, اِسْتَضَافَ     , Arabe   , فعل , Augmentées : verbe creux, ض ي ف · X                     , اِسْتَضَافَ (ض ي ف · X)
+ 538, 07/03/2027, مُنَاسِبٌ       , Arabe   , إسم , Augmentées : verbe creux, ن س ب                         , مُنَاسِبٌ (ن س ب)
+ 539, 07/03/2027, résider         , Francais, فعل , Augmentées : verbe creux,                               , résider
+ 540, 07/03/2027, répondre        , Francais, فعل , Augmentées : verbe creux,                               , répondre
+ 541, 07/03/2027, ajouter         , Francais, فعل , Augmentées : verbe creux,                               , ajouter
+ 542, 07/03/2027, indiquer        , Francais, فعل , Augmentées : verbe creux,                               , indiquer
+ 543, 07/03/2027, répéter         , Francais, فعل , Augmentées : verbe creux, rendre                        , répéter (rendre)
+ 544, 07/03/2027, diriger         , Francais, فعل , Augmentées : verbe creux,                               , diriger
+ 545, 07/03/2027, choisir         , Francais, فعل , Augmentées : verbe creux,                               , choisir
+ 546, 07/03/2027, avoir besoin    , Francais, فعل , Augmentées : verbe creux,                               , avoir besoin
+ 547, 07/03/2027, habituer        , Francais, فعل , Augmentées : verbe creux, s’                            , habituer (s’)
+ 548, 07/03/2027, profiter        , Francais, فعل , Augmentées : verbe creux,                               , profiter
+ 549, 07/03/2027, pouvoir         , Francais, فعل , Augmentées : verbe creux,                               , pouvoir
+ 550, 07/03/2027, consulter       , Francais, فعل , Augmentées : verbe creux,                               , consulter
+ 551, 07/03/2027, héberger        , Francais, فعل , Augmentées : verbe creux,                               , héberger
+ 552, 07/03/2027, convenable      , Francais, إسم , Augmentées : verbe creux,                               , convenable
+ 553, 14/03/2027, سَمَّى          , Arabe   , فعل , Augmentées : défectueux et lafīf, س م و · II                    , سَمَّى (س م و · II)
+ 554, 14/03/2027, غَنَّى          , Arabe   , فعل , Augmentées : défectueux et lafīf, غ ن ي · II                    , غَنَّى (غ ن ي · II)
+ 555, 14/03/2027, نَادَى          , Arabe   , فعل , Augmentées : défectueux et lafīf, ن د ي · III                   , نَادَى (ن د ي · III)
+ 556, 14/03/2027, أَنْهَى         , Arabe   , فعل , Augmentées : défectueux et lafīf, ن ه ي · IV                    , أَنْهَى (ن ه ي · IV)
+ 557, 14/03/2027, أَلْقَى         , Arabe   , فعل , Augmentées : défectueux et lafīf, ل ق ي · IV                    , أَلْقَى (ل ق ي · IV)
+ 558, 14/03/2027, أَبْقَى         , Arabe   , فعل , Augmentées : défectueux et lafīf, ب ق ي · IV                    , أَبْقَى (ب ق ي · IV)
+ 559, 14/03/2027, تَمَنَّى        , Arabe   , فعل , Augmentées : défectueux et lafīf, م ن ي · V                     , تَمَنَّى (م ن ي · V)
+ 560, 14/03/2027, تَلَقَّى        , Arabe   , فعل , Augmentées : défectueux et lafīf, ل ق ي · V                     , تَلَقَّى (ل ق ي · V)
+ 561, 14/03/2027, تَسَاوَى        , Arabe   , فعل , Augmentées : défectueux et lafīf, س و ي · VI                    , تَسَاوَى (س و ي · VI)
+ 562, 14/03/2027, اِنْتَهَى       , Arabe   , فعل , Augmentées : défectueux et lafīf, ن ه ي · VIII                  , اِنْتَهَى (ن ه ي · VIII)
+ 563, 14/03/2027, اِلْتَقَى       , Arabe   , فعل , Augmentées : défectueux et lafīf, ل ق ي · VIII                  , اِلْتَقَى (ل ق ي · VIII)
+ 564, 14/03/2027, اِشْتَكَى       , Arabe   , فعل , Augmentées : défectueux et lafīf, ش ك و · VIII                  , اِشْتَكَى (ش ك و · VIII)
+ 565, 14/03/2027, اِسْتَدْعَى     , Arabe   , فعل , Augmentées : défectueux et lafīf, د ع و · X                     , اِسْتَدْعَى (د ع و · X)
+ 566, 14/03/2027, nommer          , Francais, فعل , Augmentées : défectueux et lafīf,                               , nommer
+ 567, 14/03/2027, chanter         , Francais, فعل , Augmentées : défectueux et lafīf,                               , chanter
+ 568, 14/03/2027, appeler         , Francais, فعل , Augmentées : défectueux et lafīf,                               , appeler
+ 569, 14/03/2027, terminer        , Francais, فعل , Augmentées : défectueux et lafīf,                               , terminer
+ 570, 14/03/2027, lancer          , Francais, فعل , Augmentées : défectueux et lafīf, prononcer (un discours)       , lancer (prononcer (un discours))
+ 571, 14/03/2027, garder          , Francais, فعل , Augmentées : défectueux et lafīf,                               , garder
+ 572, 14/03/2027, souhaiter       , Francais, فعل , Augmentées : défectueux et lafīf,                               , souhaiter
+ 573, 14/03/2027, recevoir        , Francais, فعل , Augmentées : défectueux et lafīf,                               , recevoir
+ 574, 14/03/2027, être égal       , Francais, فعل , Augmentées : défectueux et lafīf,                               , être égal
+ 575, 14/03/2027, terminer        , Francais, فعل , Augmentées : défectueux et lafīf, se                            , terminer (se)
+ 576, 14/03/2027, rencontrer      , Francais, فعل , Augmentées : défectueux et lafīf, se                            , rencontrer (se)
+ 577, 14/03/2027, plaindre        , Francais, فعل , Augmentées : défectueux et lafīf, se                            , plaindre (se)
+ 578, 14/03/2027, convoquer       , Francais, فعل , Augmentées : défectueux et lafīf,                               , convoquer
+ 579, 21/03/2027, مُجَرَّدٌ       , Arabe   , إسم , Synthèse verbale, ج ر د                         , مُجَرَّدٌ (ج ر د)
+ 580, 21/03/2027, مَزِيدٌ         , Arabe   , إسم , Synthèse verbale, ز ي د                         , مَزِيدٌ (ز ي د)
+ 581, 21/03/2027, ثُلَاثِيٌّ      , Arabe   , إسم , Synthèse verbale, ث ل ث                         , ثُلَاثِيٌّ (ث ل ث)
+ 582, 21/03/2027, رُبَاعِيٌّ      , Arabe   , إسم , Synthèse verbale, ر ب ع                         , رُبَاعِيٌّ (ر ب ع)
+ 583, 21/03/2027, لَازِمٌ         , Arabe   , إسم , Synthèse verbale, ل ز م                         , لَازِمٌ (ل ز م)
+ 584, 21/03/2027, مُتَعَدٍّ       , Arabe   , إسم , Synthèse verbale, ع د و                         , مُتَعَدٍّ (ع د و)
+ 585, 21/03/2027, تَصْرِيفٌ       , Arabe   , إسم , Synthèse verbale, ص ر ف                         , تَصْرِيفٌ (ص ر ف)
+ 586, 21/03/2027, اِشْتِقَاقٌ     , Arabe   , إسم , Synthèse verbale, ش ق ق                         , اِشْتِقَاقٌ (ش ق ق)
+ 587, 21/03/2027, مَصْدَرٌ        , Arabe   , إسم , Synthèse verbale, ص د ر                         , مَصْدَرٌ (ص د ر)
+ 588, 21/03/2027, مَفْعُولٌ       , Arabe   , إسم , Synthèse verbale, ف ع ل                         , مَفْعُولٌ (ف ع ل)
+ 589, 21/03/2027, تَحْلِيلٌ       , Arabe   , إسم , Synthèse verbale, ح ل ل                         , تَحْلِيلٌ (ح ل ل)
+ 590, 21/03/2027, simple          , Francais, إسم , Synthèse verbale, non augmenté                  , simple (non augmenté)
+ 591, 21/03/2027, augmenté        , Francais, إسم , Synthèse verbale,                               , augmenté
+ 592, 21/03/2027, trilitère       , Francais, إسم , Synthèse verbale,                               , trilitère
+ 593, 21/03/2027, quadrilitère    , Francais, إسم , Synthèse verbale,                               , quadrilitère
+ 594, 21/03/2027, intransitif     , Francais, إسم , Synthèse verbale,                               , intransitif
+ 595, 21/03/2027, transitif       , Francais, إسم , Synthèse verbale,                               , transitif
+ 596, 21/03/2027, conjugaison     , Francais, إسم , Synthèse verbale,                               , conjugaison
+ 597, 21/03/2027, dérivation      , Francais, إسم , Synthèse verbale,                               , dérivation
+ 598, 21/03/2027, maṣdar          , Francais, إسم , Synthèse verbale, nom d’action                  , maṣdar (nom d’action)
+ 599, 21/03/2027, objet           , Francais, إسم , Synthèse verbale,                               , objet
+ 600, 21/03/2027, analyse         , Francais, إسم , Synthèse verbale,                               , analyse
+ 601, 28/03/2027, مَخْبَزٌ        , Arabe   , إسم , Lieu et instrument, خ ب ز                         , مَخْبَزٌ (خ ب ز)
+ 602, 28/03/2027, مَحَطَّةٌ       , Arabe   , إسم , Lieu et instrument, ح ط ط                         , مَحَطَّةٌ (ح ط ط)
+ 603, 28/03/2027, مَسْرَحٌ        , Arabe   , إسم , Lieu et instrument, س ر ح                         , مَسْرَحٌ (س ر ح)
+ 604, 28/03/2027, مَدْخَلٌ        , Arabe   , إسم , Lieu et instrument, د خ ل                         , مَدْخَلٌ (د خ ل)
+ 605, 28/03/2027, مَخْرَجٌ        , Arabe   , إسم , Lieu et instrument, خ ر ج                         , مَخْرَجٌ (خ ر ج)
+ 606, 28/03/2027, مَجْلِسٌ        , Arabe   , إسم , Lieu et instrument, ج ل س                         , مَجْلِسٌ (ج ل س)
+ 607, 28/03/2027, مَغْسَلٌ        , Arabe   , إسم , Lieu et instrument, غ س ل                         , مَغْسَلٌ (غ س ل)
+ 608, 28/03/2027, مِفْتَاحٌ       , Arabe   , إسم , Lieu et instrument, ف ت ح                         , مِفْتَاحٌ (ف ت ح)
+ 609, 28/03/2027, مِصْبَاحٌ       , Arabe   , إسم , Lieu et instrument, ص ب ح                         , مِصْبَاحٌ (ص ب ح)
+ 610, 28/03/2027, مِكْنَسَةٌ      , Arabe   , إسم , Lieu et instrument, ك ن س                         , مِكْنَسَةٌ (ك ن س)
+ 611, 28/03/2027, مِلْعَقَةٌ      , Arabe   , إسم , Lieu et instrument, ل ع ق                         , مِلْعَقَةٌ (ل ع ق)
+ 612, 28/03/2027, مِرْآةٌ         , Arabe   , إسم , Lieu et instrument, ر أ ي                         , مِرْآةٌ (ر أ ي)
+ 613, 28/03/2027, مِسْطَرَةٌ      , Arabe   , إسم , Lieu et instrument, س ط ر                         , مِسْطَرَةٌ (س ط ر)
+ 614, 28/03/2027, مِحْفَظَةٌ      , Arabe   , إسم , Lieu et instrument, ح ف ظ                         , مِحْفَظَةٌ (ح ف ظ)
+ 615, 28/03/2027, boulangerie     , Francais, إسم , Lieu et instrument,                               , boulangerie
+ 616, 28/03/2027, gare            , Francais, إسم , Lieu et instrument, station                       , gare (station)
+ 617, 28/03/2027, théâtre         , Francais, إسم , Lieu et instrument,                               , théâtre
+ 618, 28/03/2027, entrée          , Francais, إسم , Lieu et instrument,                               , entrée
+ 619, 28/03/2027, sortie          , Francais, إسم , Lieu et instrument,                               , sortie
+ 620, 28/03/2027, salon           , Francais, إسم , Lieu et instrument, assemblée                     , salon (assemblée)
+ 621, 28/03/2027, lavabo          , Francais, إسم , Lieu et instrument,                               , lavabo
+ 622, 28/03/2027, clé             , Francais, إسم , Lieu et instrument,                               , clé
+ 623, 28/03/2027, lampe           , Francais, إسم , Lieu et instrument,                               , lampe
+ 624, 28/03/2027, balai           , Francais, إسم , Lieu et instrument,                               , balai
+ 625, 28/03/2027, cuillère        , Francais, إسم , Lieu et instrument,                               , cuillère
+ 626, 28/03/2027, miroir          , Francais, إسم , Lieu et instrument,                               , miroir
+ 627, 28/03/2027, règle           , Francais, إسم , Lieu et instrument, instrument                    , règle (instrument)
+ 628, 28/03/2027, portefeuille    , Francais, إسم , Lieu et instrument,                               , portefeuille
+ 629, 04/04/2027, نَهْرٌ          , Arabe   , إسم , Pluriels brisés, ج: أَنْهَارٌ                  , نَهْرٌ (ج: أَنْهَارٌ)
+ 630, 04/04/2027, بَحْرٌ          , Arabe   , إسم , Pluriels brisés, ج: بِحَارٌ                    , بَحْرٌ (ج: بِحَارٌ)
+ 631, 04/04/2027, شَجَرَةٌ        , Arabe   , إسم , Pluriels brisés, ج: أَشْجَارٌ                  , شَجَرَةٌ (ج: أَشْجَارٌ)
+ 632, 04/04/2027, طَرِيقٌ         , Arabe   , إسم , Pluriels brisés, ج: طُرُقٌ                     , طَرِيقٌ (ج: طُرُقٌ)
+ 633, 04/04/2027, جَارٌ           , Arabe   , إسم , Pluriels brisés, ج: جِيرَانٌ                   , جَارٌ (ج: جِيرَانٌ)
+ 634, 04/04/2027, شَارِعٌ         , Arabe   , إسم , Pluriels brisés, ج: شَوَارِعُ                  , شَارِعٌ (ج: شَوَارِعُ)
+ 635, 04/04/2027, قَرْيَةٌ        , Arabe   , إسم , Pluriels brisés, ج: قُرًى                      , قَرْيَةٌ (ج: قُرًى)
+ 636, 04/04/2027, حَقْلٌ          , Arabe   , إسم , Pluriels brisés, ج: حُقُولٌ                    , حَقْلٌ (ج: حُقُولٌ)
+ 637, 04/04/2027, غُصْنٌ          , Arabe   , إسم , Pluriels brisés, ج: أَغْصَانٌ                  , غُصْنٌ (ج: أَغْصَانٌ)
+ 638, 04/04/2027, كَلْبٌ          , Arabe   , إسم , Pluriels brisés, ج: كِلَابٌ                    , كَلْبٌ (ج: كِلَابٌ)
+ 639, 04/04/2027, قَلْبٌ          , Arabe   , إسم , Pluriels brisés, ج: قُلُوبٌ                    , قَلْبٌ (ج: قُلُوبٌ)
+ 640, 04/04/2027, نَجْمٌ          , Arabe   , إسم , Pluriels brisés, ج: نُجُومٌ                    , نَجْمٌ (ج: نُجُومٌ)
+ 641, 04/04/2027, قَمَرٌ          , Arabe   , إسم , Pluriels brisés, ج: أَقْمَارٌ                  , قَمَرٌ (ج: أَقْمَارٌ)
+ 642, 04/04/2027, fleuve          , Francais, إسم , Pluriels brisés,                               , fleuve
+ 643, 04/04/2027, mer             , Francais, إسم , Pluriels brisés,                               , mer
+ 644, 04/04/2027, arbre           , Francais, إسم , Pluriels brisés,                               , arbre
+ 645, 04/04/2027, route           , Francais, إسم , Pluriels brisés,                               , route
+ 646, 04/04/2027, voisin          , Francais, إسم , Pluriels brisés,                               , voisin
+ 647, 04/04/2027, rue             , Francais, إسم , Pluriels brisés,                               , rue
+ 648, 04/04/2027, village         , Francais, إسم , Pluriels brisés,                               , village
+ 649, 04/04/2027, champ           , Francais, إسم , Pluriels brisés,                               , champ
+ 650, 04/04/2027, branche         , Francais, إسم , Pluriels brisés,                               , branche
+ 651, 04/04/2027, chien           , Francais, إسم , Pluriels brisés,                               , chien
+ 652, 04/04/2027, cœur            , Francais, إسم , Pluriels brisés,                               , cœur
+ 653, 04/04/2027, étoile          , Francais, إسم , Pluriels brisés,                               , étoile
+ 654, 04/04/2027, lune            , Francais, إسم , Pluriels brisés,                               , lune
+ 655, 11/04/2027, أَفْضَلُ        , Arabe   , إسم , Élatif et diptotes, ف ض ل                         , أَفْضَلُ (ف ض ل)
+ 656, 11/04/2027, أَقْرَبُ        , Arabe   , إسم , Élatif et diptotes, ق ر ب                         , أَقْرَبُ (ق ر ب)
+ 657, 11/04/2027, أَبْعَدُ        , Arabe   , إسم , Élatif et diptotes, ب ع د                         , أَبْعَدُ (ب ع د)
+ 658, 11/04/2027, أَكْثَرُ        , Arabe   , إسم , Élatif et diptotes, ك ث ر                         , أَكْثَرُ (ك ث ر)
+ 659, 11/04/2027, أَقَلُّ         , Arabe   , إسم , Élatif et diptotes, ق ل ل                         , أَقَلُّ (ق ل ل)
+ 660, 11/04/2027, أَهَمُّ         , Arabe   , إسم , Élatif et diptotes, ه م م                         , أَهَمُّ (ه م م)
+ 661, 11/04/2027, أَطْوَلُ        , Arabe   , إسم , Élatif et diptotes, ط و ل                         , أَطْوَلُ (ط و ل)
+ 662, 11/04/2027, أَغْلَى         , Arabe   , إسم , Élatif et diptotes, غ ل ي                         , أَغْلَى (غ ل ي)
+ 663, 11/04/2027, أَرْخَصُ        , Arabe   , إسم , Élatif et diptotes, ر خ ص                         , أَرْخَصُ (ر خ ص)
+ 664, 11/04/2027, مُهِمٌّ         , Arabe   , إسم , Élatif et diptotes, ه م م                         , مُهِمٌّ (ه م م)
+ 665, 11/04/2027, قَرِيبٌ         , Arabe   , إسم , Élatif et diptotes, ق ر ب                         , قَرِيبٌ (ق ر ب)
+ 666, 11/04/2027, رَخِيصٌ         , Arabe   , إسم , Élatif et diptotes, ر خ ص                         , رَخِيصٌ (ر خ ص)
+ 667, 11/04/2027, سَرِيعٌ         , Arabe   , إسم , Élatif et diptotes, س ر ع                         , سَرِيعٌ (س ر ع)
+ 668, 11/04/2027, meilleur        , Francais, إسم , Élatif et diptotes,                               , meilleur
+ 669, 11/04/2027, plus proche     , Francais, إسم , Élatif et diptotes,                               , plus proche
+ 670, 11/04/2027, plus loin       , Francais, إسم , Élatif et diptotes,                               , plus loin
+ 671, 11/04/2027, plus nombreux   , Francais, إسم , Élatif et diptotes,                               , plus nombreux
+ 672, 11/04/2027, moins           , Francais, إسم , Élatif et diptotes,                               , moins
+ 673, 11/04/2027, plus important  , Francais, إسم , Élatif et diptotes,                               , plus important
+ 674, 11/04/2027, plus long       , Francais, إسم , Élatif et diptotes,                               , plus long
+ 675, 11/04/2027, plus cher       , Francais, إسم , Élatif et diptotes,                               , plus cher
+ 676, 11/04/2027, moins cher      , Francais, إسم , Élatif et diptotes,                               , moins cher
+ 677, 11/04/2027, important       , Francais, إسم , Élatif et diptotes,                               , important
+ 678, 11/04/2027, proche          , Francais, إسم , Élatif et diptotes,                               , proche
+ 679, 11/04/2027, bon marché      , Francais, إسم , Élatif et diptotes,                               , bon marché
+ 680, 11/04/2027, rapide          , Francais, إسم , Élatif et diptotes,                               , rapide
+ 681, 18/04/2027, عَرَبِيٌّ       , Arabe   , إسم , Nisba et adjectifs, ع ر ب                         , عَرَبِيٌّ (ع ر ب)
+ 682, 18/04/2027, فَرَنْسِيٌّ     , Arabe   , إسم , Nisba et adjectifs, ف ر ن س                       , فَرَنْسِيٌّ (ف ر ن س)
+ 683, 18/04/2027, مَغْرِبِيٌّ     , Arabe   , إسم , Nisba et adjectifs, غ ر ب                         , مَغْرِبِيٌّ (غ ر ب)
+ 684, 18/04/2027, جَزَائِرِيٌّ    , Arabe   , إسم , Nisba et adjectifs, ج ز ر                         , جَزَائِرِيٌّ (ج ز ر)
+ 685, 18/04/2027, إِسْلَامِيٌّ    , Arabe   , إسم , Nisba et adjectifs, س ل م                         , إِسْلَامِيٌّ (س ل م)
+ 686, 18/04/2027, دِينِيٌّ        , Arabe   , إسم , Nisba et adjectifs, د ي ن                         , دِينِيٌّ (د ي ن)
+ 687, 18/04/2027, تَارِيخِيٌّ     , Arabe   , إسم , Nisba et adjectifs, أ ر خ                         , تَارِيخِيٌّ (أ ر خ)
+ 688, 18/04/2027, عِلْمِيٌّ       , Arabe   , إسم , Nisba et adjectifs, ع ل م                         , عِلْمِيٌّ (ع ل م)
+ 689, 18/04/2027, يَوْمِيٌّ       , Arabe   , إسم , Nisba et adjectifs, ي و م                         , يَوْمِيٌّ (ي و م)
+ 690, 18/04/2027, أَجْنَبِيٌّ     , Arabe   , إسم , Nisba et adjectifs, ج ن ب                         , أَجْنَبِيٌّ (ج ن ب)
+ 691, 18/04/2027, وَطَنِيٌّ       , Arabe   , إسم , Nisba et adjectifs, و ط ن                         , وَطَنِيٌّ (و ط ن)
+ 692, 18/04/2027, خَجِلٌ          , Arabe   , إسم , Nisba et adjectifs, خ ج ل                         , خَجِلٌ (خ ج ل)
+ 693, 18/04/2027, حَذِرٌ          , Arabe   , إسم , Nisba et adjectifs, ح ذ ر                         , حَذِرٌ (ح ذ ر)
+ 694, 18/04/2027, قَلِقٌ          , Arabe   , إسم , Nisba et adjectifs, ق ل ق                         , قَلِقٌ (ق ل ق)
+ 695, 18/04/2027, arabe           , Francais, إسم , Nisba et adjectifs,                               , arabe
+ 696, 18/04/2027, français        , Francais, إسم , Nisba et adjectifs,                               , français
+ 697, 18/04/2027, marocain        , Francais, إسم , Nisba et adjectifs,                               , marocain
+ 698, 18/04/2027, algérien        , Francais, إسم , Nisba et adjectifs,                               , algérien
+ 699, 18/04/2027, islamique       , Francais, إسم , Nisba et adjectifs,                               , islamique
+ 700, 18/04/2027, religieux       , Francais, إسم , Nisba et adjectifs,                               , religieux
+ 701, 18/04/2027, historique      , Francais, إسم , Nisba et adjectifs,                               , historique
+ 702, 18/04/2027, scientifique    , Francais, إسم , Nisba et adjectifs,                               , scientifique
+ 703, 18/04/2027, quotidien       , Francais, إسم , Nisba et adjectifs,                               , quotidien
+ 704, 18/04/2027, étranger        , Francais, إسم , Nisba et adjectifs,                               , étranger
+ 705, 18/04/2027, national        , Francais, إسم , Nisba et adjectifs,                               , national
+ 706, 18/04/2027, timide          , Francais, إسم , Nisba et adjectifs,                               , timide
+ 707, 18/04/2027, prudent         , Francais, إسم , Nisba et adjectifs,                               , prudent
+ 708, 18/04/2027, inquiet         , Francais, إسم , Nisba et adjectifs,                               , inquiet
+ 709, 25/04/2027, نَجَّارٌ        , Arabe   , إسم , Intensité et métiers, ن ج ر                         , نَجَّارٌ (ن ج ر)
+ 710, 25/04/2027, حَدَّادٌ        , Arabe   , إسم , Intensité et métiers, ح د د                         , حَدَّادٌ (ح د د)
+ 711, 25/04/2027, بَنَّاءٌ        , Arabe   , إسم , Intensité et métiers, ب ن ي                         , بَنَّاءٌ (ب ن ي)
+ 712, 25/04/2027, خَيَّاطٌ        , Arabe   , إسم , Intensité et métiers, خ ي ط                         , خَيَّاطٌ (خ ي ط)
+ 713, 25/04/2027, حَلَّاقٌ        , Arabe   , إسم , Intensité et métiers, ح ل ق                         , حَلَّاقٌ (ح ل ق)
+ 714, 25/04/2027, جَزَّارٌ        , Arabe   , إسم , Intensité et métiers, ج ز ر                         , جَزَّارٌ (ج ز ر)
+ 715, 25/04/2027, صَبَّاغٌ        , Arabe   , إسم , Intensité et métiers, ص ب غ                         , صَبَّاغٌ (ص ب غ)
+ 716, 25/04/2027, سَبَّاحٌ        , Arabe   , إسم , Intensité et métiers, س ب ح                         , سَبَّاحٌ (س ب ح)
+ 717, 25/04/2027, ثَلَّاجَةٌ      , Arabe   , إسم , Intensité et métiers, ث ل ج                         , ثَلَّاجَةٌ (ث ل ج)
+ 718, 25/04/2027, غَسَّالَةٌ      , Arabe   , إسم , Intensité et métiers, غ س ل                         , غَسَّالَةٌ (غ س ل)
+ 719, 25/04/2027, شَكُورٌ         , Arabe   , إسم , Intensité et métiers, ش ك ر                         , شَكُورٌ (ش ك ر)
+ 720, 25/04/2027, غَفُورٌ         , Arabe   , إسم , Intensité et métiers, غ ف ر                         , غَفُورٌ (غ ف ر)
+ 721, 25/04/2027, رَحِيمٌ         , Arabe   , إسم , Intensité et métiers, ر ح م                         , رَحِيمٌ (ر ح م)
+ 722, 25/04/2027, كَذَّابٌ        , Arabe   , إسم , Intensité et métiers, ك ذ ب                         , كَذَّابٌ (ك ذ ب)
+ 723, 25/04/2027, menuisier       , Francais, إسم , Intensité et métiers,                               , menuisier
+ 724, 25/04/2027, forgeron        , Francais, إسم , Intensité et métiers,                               , forgeron
+ 725, 25/04/2027, maçon           , Francais, إسم , Intensité et métiers,                               , maçon
+ 726, 25/04/2027, tailleur        , Francais, إسم , Intensité et métiers,                               , tailleur
+ 727, 25/04/2027, coiffeur        , Francais, إسم , Intensité et métiers,                               , coiffeur
+ 728, 25/04/2027, boucher         , Francais, إسم , Intensité et métiers,                               , boucher
+ 729, 25/04/2027, peintre         , Francais, إسم , Intensité et métiers, en bâtiment                   , peintre (en bâtiment)
+ 730, 25/04/2027, nageur          , Francais, إسم , Intensité et métiers,                               , nageur
+ 731, 25/04/2027, réfrigérateur   , Francais, إسم , Intensité et métiers,                               , réfrigérateur
+ 732, 25/04/2027, machine à laver , Francais, إسم , Intensité et métiers,                               , machine à laver
+ 733, 25/04/2027, reconnaissant   , Francais, إسم , Intensité et métiers,                               , reconnaissant
+ 734, 25/04/2027, indulgent       , Francais, إسم , Intensité et métiers, très                          , indulgent (très)
+ 735, 25/04/2027, miséricordieux  , Francais, إسم , Intensité et métiers,                               , miséricordieux
+ 736, 25/04/2027, menteur         , Francais, إسم , Intensité et métiers,                               , menteur
+ 737, 02/05/2027, تَرْجَمَ        , Arabe   , فعل , Bilan de l’année, ت ر ج م · Iq                  , تَرْجَمَ (ت ر ج م · Iq)
+ 738, 02/05/2027, دَحْرَجَ        , Arabe   , فعل , Bilan de l’année, د ح ر ج · Iq                  , دَحْرَجَ (د ح ر ج · Iq)
+ 739, 02/05/2027, زَلْزَلَ        , Arabe   , فعل , Bilan de l’année, ز ل ز ل · Iq                  , زَلْزَلَ (ز ل ز ل · Iq)
+ 740, 02/05/2027, طَمْأَنَ        , Arabe   , فعل , Bilan de l’année, ط م أ ن · Iq                  , طَمْأَنَ (ط م أ ن · Iq)
+ 741, 02/05/2027, تَرْجَمَةٌ      , Arabe   , إسم , Bilan de l’année, ت ر ج م                       , تَرْجَمَةٌ (ت ر ج م)
+ 742, 02/05/2027, زِلْزَالٌ       , Arabe   , إسم , Bilan de l’année, ز ل ز ل                       , زِلْزَالٌ (ز ل ز ل)
+ 743, 02/05/2027, كُتَيِّبٌ       , Arabe   , إسم , Bilan de l’année, ك ت ب                         , كُتَيِّبٌ (ك ت ب)
+ 744, 02/05/2027, بُنَيٌّ         , Arabe   , إسم , Bilan de l’année, ب ن ي                         , بُنَيٌّ (ب ن ي)
+ 745, 02/05/2027, وُلَيْدٌ        , Arabe   , إسم , Bilan de l’année, و ل د                         , وُلَيْدٌ (و ل د)
+ 746, 02/05/2027, كَاتِبَةٌ       , Arabe   , إسم , Bilan de l’année, ك ت ب                         , كَاتِبَةٌ (ك ت ب)
+ 747, 02/05/2027, مُكَاتَبَةٌ     , Arabe   , إسم , Bilan de l’année, ك ت ب                         , مُكَاتَبَةٌ (ك ت ب)
+ 748, 02/05/2027, كُتَّابٌ        , Arabe   , إسم , Bilan de l’année, ك ت ب                         , كُتَّابٌ (ك ت ب)
+ 749, 02/05/2027, traduire        , Francais, فعل , Bilan de l’année,                               , traduire
+ 750, 02/05/2027, faire rouler    , Francais, فعل , Bilan de l’année,                               , faire rouler
+ 751, 02/05/2027, secouer         , Francais, فعل , Bilan de l’année,                               , secouer
+ 752, 02/05/2027, rassurer        , Francais, فعل , Bilan de l’année,                               , rassurer
+ 753, 02/05/2027, traduction      , Francais, إسم , Bilan de l’année,                               , traduction
+ 754, 02/05/2027, séisme          , Francais, إسم , Bilan de l’année,                               , séisme
+ 755, 02/05/2027, petit livre     , Francais, إسم , Bilan de l’année, diminutif                     , petit livre (diminutif)
+ 756, 02/05/2027, mon petit       , Francais, إسم , Bilan de l’année, diminutif de ابن              , mon petit (diminutif de ابن)
+ 757, 02/05/2027, petit garçon    , Francais, إسم , Bilan de l’année, diminutif                     , petit garçon (diminutif)
+ 758, 02/05/2027, écrivaine       , Francais, إسم , Bilan de l’année,                               , écrivaine
+ 759, 02/05/2027, correspondance  , Francais, إسم , Bilan de l’année,                               , correspondance
+ 760, 02/05/2027, écrivains       , Francais, إسم , Bilan de l’année, pluriel de كاتب               , écrivains (pluriel de كاتب)

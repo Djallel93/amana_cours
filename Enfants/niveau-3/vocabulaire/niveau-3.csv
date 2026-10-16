@@ -265,319 +265,371 @@ id  , seance, mot              , langue  , type, chapitre    , definition       
  264,     16, plage            , Francais, إسم , L’eau, l’air et le ciel,                                , plage
  265,     16, lecteur          , Francais, إسم , L’eau, l’air et le ciel,                                , lecteur
  266,     16, calme            , Francais, إسم , L’eau, l’air et le ciel,                                , calme
- 267,     17, اِسْمٌ           , Arabe   , إسم , Mots à alif de liaison,                                , اِسْمٌ
- 268,     17, اِبْنٌ           , Arabe   , إسم , Mots à alif de liaison,                                , اِبْنٌ
- 269,     17, اِبْنَةٌ         , Arabe   , إسم , Mots à alif de liaison,                                , اِبْنَةٌ
- 270,     17, اِمْرَأَةٌ       , Arabe   , إسم , Mots à alif de liaison,                                , اِمْرَأَةٌ
- 271,     17, اِثْنَانِ        , Arabe   , إسم , Mots à alif de liaison,                                , اِثْنَانِ
- 272,     17, اِثْنَتَانِ      , Arabe   , إسم , Mots à alif de liaison,                                , اِثْنَتَانِ
- 273,     17, رَجُلٌ           , Arabe   , إسم , Mots à alif de liaison,                                , رَجُلٌ
- 274,     17, وَلَدٌ           , Arabe   , إسم , Mots à alif de liaison,                                , وَلَدٌ
- 275,     17, بِنْتٌ           , Arabe   , إسم , Mots à alif de liaison,                                , بِنْتٌ
- 276,     17, طِفْلٌ           , Arabe   , إسم , Mots à alif de liaison,                                , طِفْلٌ
- 277,     17, nom              , Francais, إسم , Mots à alif de liaison,                                , nom
- 278,     17, fils             , Francais, إسم , Mots à alif de liaison,                                , fils
- 279,     17, fille            , Francais, إسم , Mots à alif de liaison,                                , fille
- 280,     17, femme            , Francais, إسم , Mots à alif de liaison,                                , femme
- 281,     17, deux             , Francais, إسم , Mots à alif de liaison,                                , deux
- 282,     17, deux (fém.)      , Francais, إسم , Mots à alif de liaison,                                , deux (fém.)
- 283,     17, homme            , Francais, إسم , Mots à alif de liaison,                                , homme
- 284,     17, garçon           , Francais, إسم , Mots à alif de liaison,                                , garçon
- 285,     17, fille            , Francais, إسم , Mots à alif de liaison,                                , fille
- 286,     17, enfant           , Francais, إسم , Mots à alif de liaison,                                , enfant
- 287,     18, وَاحِدٌ          , Arabe   , إسم , Les nombres,                                , وَاحِدٌ
- 288,     18, ثَلَاثَةٌ        , Arabe   , إسم , Les nombres,                                , ثَلَاثَةٌ
- 289,     18, أَرْبَعَةٌ       , Arabe   , إسم , Les nombres,                                , أَرْبَعَةٌ
- 290,     18, خَمْسَةٌ         , Arabe   , إسم , Les nombres,                                , خَمْسَةٌ
- 291,     18, سِتَّةٌ          , Arabe   , إسم , Les nombres,                                , سِتَّةٌ
- 292,     18, سَبْعَةٌ         , Arabe   , إسم , Les nombres,                                , سَبْعَةٌ
- 293,     18, ثَمَانِيَةٌ      , Arabe   , إسم , Les nombres,                                , ثَمَانِيَةٌ
- 294,     18, تِسْعَةٌ         , Arabe   , إسم , Les nombres,                                , تِسْعَةٌ
- 295,     18, عَشَرَةٌ         , Arabe   , إسم , Les nombres,                                , عَشَرَةٌ
- 296,     18, اِثْنَانِ        , Arabe   , إسم , Les nombres,                                , اِثْنَانِ
- 297,     18, un               , Francais, إسم , Les nombres,                                , un
- 298,     18, trois            , Francais, إسم , Les nombres,                                , trois
- 299,     18, quatre           , Francais, إسم , Les nombres,                                , quatre
- 300,     18, cinq             , Francais, إسم , Les nombres,                                , cinq
- 301,     18, six              , Francais, إسم , Les nombres,                                , six
- 302,     18, sept             , Francais, إسم , Les nombres,                                , sept
- 303,     18, huit             , Francais, إسم , Les nombres,                                , huit
- 304,     18, neuf             , Francais, إسم , Les nombres,                                , neuf
- 305,     18, dix              , Francais, إسم , Les nombres,                                , dix
- 306,     18, deux             , Francais, إسم , Les nombres,                                , deux
- 307,     19, مُهَنْدِسٌ       , Arabe   , إسم , Les métiers,                                , مُهَنْدِسٌ
- 308,     19, مُمَرِّضٌ        , Arabe   , إسم , Les métiers,                                , مُمَرِّضٌ
- 309,     19, خَبَّازٌ         , Arabe   , إسم , Les métiers,                                , خَبَّازٌ
- 310,     19, خَيَّاطٌ         , Arabe   , إسم , Les métiers,                                , خَيَّاطٌ
- 311,     19, عَامِلٌ          , Arabe   , إسم , Les métiers,                                , عَامِلٌ
- 312,     19, كَاتِبٌ          , Arabe   , إسم , Les métiers,                                , كَاتِبٌ
- 313,     19, حَارِسٌ          , Arabe   , إسم , Les métiers,                                , حَارِسٌ
- 314,     19, مُصَوِّرٌ        , Arabe   , إسم , Les métiers,                                , مُصَوِّرٌ
- 315,     19, قَارِئٌ          , Arabe   , إسم , Les métiers,                                , قَارِئٌ
- 316,     19, فَلَّاحٌ         , Arabe   , إسم , Les métiers,                                , فَلَّاحٌ
- 317,     19, ingénieur        , Francais, إسم , Les métiers,                                , ingénieur
- 318,     19, infirmier        , Francais, إسم , Les métiers,                                , infirmier
- 319,     19, boulanger        , Francais, إسم , Les métiers,                                , boulanger
- 320,     19, tailleur         , Francais, إسم , Les métiers,                                , tailleur
- 321,     19, ouvrier          , Francais, إسم , Les métiers,                                , ouvrier
- 322,     19, écrivain         , Francais, إسم , Les métiers,                                , écrivain
- 323,     19, gardien          , Francais, إسم , Les métiers,                                , gardien
- 324,     19, photographe      , Francais, إسم , Les métiers,                                , photographe
- 325,     19, lecteur          , Francais, إسم , Les métiers,                                , lecteur
- 326,     19, paysan           , Francais, إسم , Les métiers,                                , paysan
- 327,     20, الْأَحَدُ        , Arabe   , إسم , Les jours et le temps,                                , الْأَحَدُ
- 328,     20, الْأَرْبِعَاءُ   , Arabe   , إسم , Les jours et le temps,                                , الْأَرْبِعَاءُ
- 329,     20, الْخَمِيسُ       , Arabe   , إسم , Les jours et le temps,                                , الْخَمِيسُ
- 330,     20, الْجُمُعَةُ      , Arabe   , إسم , Les jours et le temps,                                , الْجُمُعَةُ
- 331,     20, أُسْبُوعٌ        , Arabe   , إسم , Les jours et le temps,                                , أُسْبُوعٌ
- 332,     20, يَوْمٌ           , Arabe   , إسم , Les jours et le temps,                                , يَوْمٌ
- 333,     20, عَامٌ            , Arabe   , إسم , Les jours et le temps,                                , عَامٌ
- 334,     20, قَمَرٌ           , Arabe   , إسم , Les jours et le temps,                                , قَمَرٌ
- 335,     20, بَحْرٌ           , Arabe   , إسم , Les jours et le temps,                                , بَحْرٌ
- 336,     20, جَبَلٌ           , Arabe   , إسم , Les jours et le temps,                                , جَبَلٌ
- 337,     20, dimanche         , Francais, إسم , Les jours et le temps,                                , dimanche
- 338,     20, mercredi         , Francais, إسم , Les jours et le temps,                                , mercredi
- 339,     20, jeudi            , Francais, إسم , Les jours et le temps,                                , jeudi
- 340,     20, vendredi         , Francais, إسم , Les jours et le temps,                                , vendredi
- 341,     20, semaine          , Francais, إسم , Les jours et le temps,                                , semaine
- 342,     20, jour             , Francais, إسم , Les jours et le temps,                                , jour
- 343,     20, année            , Francais, إسم , Les jours et le temps,                                , année
- 344,     20, lune             , Francais, إسم , Les jours et le temps,                                , lune
- 345,     20, mer              , Francais, إسم , Les jours et le temps,                                , mer
- 346,     20, montagne         , Francais, إسم , Les jours et le temps,                                , montagne
- 347,     21, ثَلْجٌ           , Arabe   , إسم , La nature et les saisons,                                , ثَلْجٌ
- 348,     21, رِيحٌ            , Arabe   , إسم , La nature et les saisons,                                , رِيحٌ
- 349,     21, رَمْلٌ           , Arabe   , إسم , La nature et les saisons,                                , رَمْلٌ
- 350,     21, رَبِيعٌ          , Arabe   , إسم , La nature et les saisons,                                , رَبِيعٌ
- 351,     21, سَمَاءٌ          , Arabe   , إسم , La nature et les saisons,                                , سَمَاءٌ
- 352,     21, neige            , Francais, إسم , La nature et les saisons,                                , neige
- 353,     21, vent             , Francais, إسم , La nature et les saisons,                                , vent
- 354,     21, sable            , Francais, إسم , La nature et les saisons,                                , sable
- 355,     21, printemps        , Francais, إسم , La nature et les saisons,                                , printemps
- 356,     21, ciel             , Francais, إسم , La nature et les saisons,                                , ciel
- 357,     22, شَمْسٌ           , Arabe   , إسم , Les saisons et le ciel,                                , شَمْسٌ
- 358,     22, نَجْمٌ           , Arabe   , إسم , Les saisons et le ciel,                                , نَجْمٌ
- 359,     22, نَهْرٌ           , Arabe   , إسم , Les saisons et le ciel,                                , نَهْرٌ
- 360,     22, شِتَاءٌ          , Arabe   , إسم , Les saisons et le ciel,                                , شِتَاءٌ
- 361,     22, صَيْفٌ           , Arabe   , إسم , Les saisons et le ciel,                                , صَيْفٌ
- 362,     22, soleil           , Francais, إسم , Les saisons et le ciel,                                , soleil
- 363,     22, étoile           , Francais, إسم , Les saisons et le ciel,                                , étoile
- 364,     22, fleuve           , Francais, إسم , Les saisons et le ciel,                                , fleuve
- 365,     22, hiver            , Francais, إسم , Les saisons et le ciel,                                , hiver
- 366,     22, été              , Francais, إسم , Les saisons et le ciel,                                , été
- 367,     23, أَبْيَضُ         , Arabe   , إسم , Couleurs et jours,                                , أَبْيَضُ
- 368,     23, أَسْوَدُ         , Arabe   , إسم , Couleurs et jours,                                , أَسْوَدُ
- 369,     23, أَحْمَرُ         , Arabe   , إسم , Couleurs et jours,                                , أَحْمَرُ
- 370,     23, أَزْرَقُ         , Arabe   , إسم , Couleurs et jours,                                , أَزْرَقُ
- 371,     23, أَخْضَرُ         , Arabe   , إسم , Couleurs et jours,                                , أَخْضَرُ
- 372,     23, أَصْفَرُ         , Arabe   , إسم , Couleurs et jours,                                , أَصْفَرُ
- 373,     23, لَوْنٌ           , Arabe   , إسم , Couleurs et jours,                                , لَوْنٌ
- 374,     23, الثُّلَاثَاءُ    , Arabe   , إسم , Couleurs et jours,                                , الثُّلَاثَاءُ
- 375,     23, السَّبْتُ        , Arabe   , إسم , Couleurs et jours,                                , السَّبْتُ
- 376,     23, الِاثْنَيْنِ     , Arabe   , إسم , Couleurs et jours,                                , الِاثْنَيْنِ
- 377,     23, blanc            , Francais, إسم , Couleurs et jours,                                , blanc
- 378,     23, noir             , Francais, إسم , Couleurs et jours,                                , noir
- 379,     23, rouge            , Francais, إسم , Couleurs et jours,                                , rouge
- 380,     23, bleu             , Francais, إسم , Couleurs et jours,                                , bleu
- 381,     23, vert             , Francais, إسم , Couleurs et jours,                                , vert
- 382,     23, jaune            , Francais, إسم , Couleurs et jours,                                , jaune
- 383,     23, couleur          , Francais, إسم , Couleurs et jours,                                , couleur
- 384,     23, mardi            , Francais, إسم , Couleurs et jours,                                , mardi
- 385,     23, samedi           , Francais, إسم , Couleurs et jours,                                , samedi
- 386,     23, lundi            , Francais, إسم , Couleurs et jours,                                , lundi
- 387,     24, مَسْجِدٌ         , Arabe   , إسم , La mosquée,                                , مَسْجِدٌ
- 388,     24, مِحْرَابٌ        , Arabe   , إسم , La mosquée,                                , مِحْرَابٌ
- 389,     24, مِنْبَرٌ         , Arabe   , إسم , La mosquée,                                , مِنْبَرٌ
- 390,     24, مِئْذَنَةٌ       , Arabe   , إسم , La mosquée,                                , مِئْذَنَةٌ
- 391,     24, فِي              , Arabe   , حرف , La mosquée,                                , فِي
- 392,     24, mosquée          , Francais, إسم , La mosquée,                                , mosquée
- 393,     24, mihrab           , Francais, إسم , La mosquée,                                , mihrab
- 394,     24, chaire           , Francais, إسم , La mosquée,                                , chaire
- 395,     24, minaret          , Francais, إسم , La mosquée,                                , minaret
- 396,     24, dans             , Francais, حرف , La mosquée,                                , dans
- 397,     25, صَلَاةٌ          , Arabe   , إسم , La prière,                                , صَلَاةٌ
- 398,     25, وُضُوءٌ          , Arabe   , إسم , La prière,                                , وُضُوءٌ
- 399,     25, إِمَامٌ          , Arabe   , إسم , La prière,                                , إِمَامٌ
- 400,     25, قُرْآنٌ          , Arabe   , إسم , La prière,                                , قُرْآنٌ
- 401,     25, مِنْ             , Arabe   , حرف , La prière,                                , مِنْ
- 402,     25, prière           , Francais, إسم , La prière,                                , prière
- 403,     25, ablutions        , Francais, إسم , La prière,                                , ablutions
- 404,     25, imam             , Francais, إسم , La prière,                                , imam
- 405,     25, Coran            , Francais, إسم , La prière,                                , Coran
- 406,     25, de               , Francais, حرف , La prière,                                , de
- 407,     26, حَقِيبَةٌ        , Arabe   , إسم , Mes affaires,                                , حَقِيبَةٌ
- 408,     26, مَحْفَظَةٌ       , Arabe   , إسم , Mes affaires,                                , مَحْفَظَةٌ
- 409,     26, نَظَّارَةٌ       , Arabe   , إسم , Mes affaires,                                , نَظَّارَةٌ
- 410,     26, مِظَلَّةٌ        , Arabe   , إسم , Mes affaires,                                , مِظَلَّةٌ
- 411,     26, مِفْتَاحٌ        , Arabe   , إسم , Mes affaires,                                , مِفْتَاحٌ
- 412,     26, هَاتِفٌ          , Arabe   , إسم , Mes affaires,                                , هَاتِفٌ
- 413,     26, sac              , Francais, إسم , Mes affaires,                                , sac
- 414,     26, portefeuille     , Francais, إسم , Mes affaires,                                , portefeuille
- 415,     26, lunettes         , Francais, إسم , Mes affaires,                                , lunettes
- 416,     26, parapluie        , Francais, إسم , Mes affaires,                                , parapluie
- 417,     26, clé              , Francais, إسم , Mes affaires,                                , clé
- 418,     26, téléphone        , Francais, إسم , Mes affaires,                                , téléphone
- 419,     27, قُبَّعَةٌ        , Arabe   , إسم , Mes affaires (suite),                                , قُبَّعَةٌ
- 420,     27, كِيسٌ            , Arabe   , إسم , Mes affaires (suite),                                , كِيسٌ
- 421,     27, سَاعَةٌ          , Arabe   , إسم , Mes affaires (suite),                                , سَاعَةٌ
- 422,     27, دَفْتَرٌ         , Arabe   , إسم , Mes affaires (suite),                                , دَفْتَرٌ
- 423,     27, chapeau          , Francais, إسم , Mes affaires (suite),                                , chapeau
- 424,     27, sachet           , Francais, إسم , Mes affaires (suite),                                , sachet
- 425,     27, montre           , Francais, إسم , Mes affaires (suite),                                , montre
- 426,     27, cahier           , Francais, إسم , Mes affaires (suite),                                , cahier
- 427,     28, طَاوِلَةٌ        , Arabe   , إسم , Les meubles,                                , طَاوِلَةٌ
- 428,     28, خِزَانَةٌ        , Arabe   , إسم , Les meubles,                                , خِزَانَةٌ
- 429,     28, مِرْآةٌ          , Arabe   , إسم , Les meubles,                                , مِرْآةٌ
- 430,     28, سِتَارَةٌ        , Arabe   , إسم , Les meubles,                                , سِتَارَةٌ
- 431,     28, مِصْبَاحٌ        , Arabe   , إسم , Les meubles,                                , مِصْبَاحٌ
- 432,     28, وِسَادَةٌ        , Arabe   , إسم , Les meubles,                                , وِسَادَةٌ
- 433,     28, ثَلَّاجَةٌ       , Arabe   , إسم , Les meubles,                                , ثَلَّاجَةٌ
- 434,     28, تِلْفَازٌ        , Arabe   , إسم , Les meubles,                                , تِلْفَازٌ
- 435,     28, مِكْنَسَةٌ       , Arabe   , إسم , Les meubles,                                , مِكْنَسَةٌ
- 436,     28, فِرَاشٌ          , Arabe   , إسم , Les meubles,                                , فِرَاشٌ
- 437,     28, table            , Francais, إسم , Les meubles,                                , table
- 438,     28, armoire          , Francais, إسم , Les meubles,                                , armoire
- 439,     28, miroir           , Francais, إسم , Les meubles,                                , miroir
- 440,     28, rideau           , Francais, إسم , Les meubles,                                , rideau
- 441,     28, lampe            , Francais, إسم , Les meubles,                                , lampe
- 442,     28, coussin          , Francais, إسم , Les meubles,                                , coussin
- 443,     28, réfrigérateur    , Francais, إسم , Les meubles,                                , réfrigérateur
- 444,     28, télévision       , Francais, إسم , Les meubles,                                , télévision
- 445,     28, balai            , Francais, إسم , Les meubles,                                , balai
- 446,     28, matelas          , Francais, إسم , Les meubles,                                , matelas
- 447,     29, فَوْقَ           , Arabe   , حرف , Les lieux,                                , فَوْقَ
- 448,     29, تَحْتَ           , Arabe   , حرف , Les lieux,                                , تَحْتَ
- 449,     29, أَمَامَ          , Arabe   , حرف , Les lieux,                                , أَمَامَ
- 450,     29, خَلْفَ           , Arabe   , حرف , Les lieux,                                , خَلْفَ
- 451,     29, بَيْنَ           , Arabe   , حرف , Les lieux,                                , بَيْنَ
- 452,     29, عِنْدَ           , Arabe   , حرف , Les lieux,                                , عِنْدَ
- 453,     29, قُرْبَ           , Arabe   , حرف , Les lieux,                                , قُرْبَ
- 454,     29, يَمِينٌ          , Arabe   , إسم , Les lieux,                                , يَمِينٌ
- 455,     29, يَسَارٌ          , Arabe   , إسم , Les lieux,                                , يَسَارٌ
- 456,     29, وَسَطٌ           , Arabe   , إسم , Les lieux,                                , وَسَطٌ
- 457,     29, au-dessus de     , Francais, حرف , Les lieux,                                , au-dessus de
- 458,     29, au-dessous de    , Francais, حرف , Les lieux,                                , au-dessous de
- 459,     29, devant           , Francais, حرف , Les lieux,                                , devant
- 460,     29, derrière         , Francais, حرف , Les lieux,                                , derrière
- 461,     29, entre            , Francais, حرف , Les lieux,                                , entre
- 462,     29, chez / près de   , Francais, حرف , Les lieux,                                , chez / près de
- 463,     29, près de          , Francais, حرف , Les lieux,                                , près de
- 464,     29, droite           , Francais, إسم , Les lieux,                                , droite
- 465,     29, gauche           , Francais, إسم , Les lieux,                                , gauche
- 466,     29, milieu           , Francais, إسم , Les lieux,                                , milieu
- 467,     30, كَتَبَ           , Arabe   , فعل , Les verbes de la classe,                                , كَتَبَ
- 468,     30, دَرَسَ           , Arabe   , فعل , Les verbes de la classe,                                , دَرَسَ
- 469,     30, ذَهَبَ           , Arabe   , فعل , Les verbes de la classe,                                , ذَهَبَ
- 470,     30, جَلَسَ           , Arabe   , فعل , Les verbes de la classe,                                , جَلَسَ
- 471,     30, فَتَحَ           , Arabe   , فعل , Les verbes de la classe,                                , فَتَحَ
- 472,     30, نَزَلَ           , Arabe   , فعل , Les verbes de la classe,                                , نَزَلَ
- 473,     30, شَرِبَ           , Arabe   , فعل , Les verbes de la classe,                                , شَرِبَ
- 474,     30, سَمِعَ           , Arabe   , فعل , Les verbes de la classe,                                , سَمِعَ
- 475,     30, فَهِمَ           , Arabe   , فعل , Les verbes de la classe,                                , فَهِمَ
- 476,     30, عَمِلَ           , Arabe   , فعل , Les verbes de la classe,                                , عَمِلَ
- 477,     30, il a écrit       , Francais, فعل , Les verbes de la classe,                                , il a écrit
- 478,     30, il a étudié      , Francais, فعل , Les verbes de la classe,                                , il a étudié
- 479,     30, il est allé      , Francais, فعل , Les verbes de la classe,                                , il est allé
- 480,     30, il s’est assis   , Francais, فعل , Les verbes de la classe,                                , il s’est assis
- 481,     30, il a ouvert      , Francais, فعل , Les verbes de la classe,                                , il a ouvert
- 482,     30, il est descendu  , Francais, فعل , Les verbes de la classe,                                , il est descendu
- 483,     30, il a bu          , Francais, فعل , Les verbes de la classe,                                , il a bu
- 484,     30, il a entendu     , Francais, فعل , Les verbes de la classe,                                , il a entendu
- 485,     30, il a compris     , Francais, فعل , Les verbes de la classe,                                , il a compris
- 486,     30, il a travaillé   , Francais, فعل , Les verbes de la classe,                                , il a travaillé
- 487,     31, هَلْ             , Arabe   , حرف , Les questions,                                , هَلْ
- 488,     31, مَا              , Arabe   , إسم , Les questions,                                , مَا
- 489,     31, مَنْ             , Arabe   , إسم , Les questions,                                , مَنْ
- 490,     31, أَيْنَ           , Arabe   , إسم , Les questions,                                , أَيْنَ
- 491,     31, كَيْفَ           , Arabe   , إسم , Les questions,                                , كَيْفَ
- 492,     31, كَمْ             , Arabe   , إسم , Les questions,                                , كَمْ
- 493,     31, لِمَاذَا         , Arabe   , إسم , Les questions,                                , لِمَاذَا
- 494,     31, نَعَمْ           , Arabe   , حرف , Les questions,                                , نَعَمْ
- 495,     31, سُوقٌ            , Arabe   , إسم , Les questions,                                , سُوقٌ
- 496,     31, ثَمَنٌ           , Arabe   , إسم , Les questions,                                , ثَمَنٌ
- 497,     31, est-ce que       , Francais, حرف , Les questions,                                , est-ce que
- 498,     31, quoi             , Francais, إسم , Les questions,                                , quoi
- 499,     31, qui              , Francais, إسم , Les questions,                                , qui
- 500,     31, où               , Francais, إسم , Les questions,                                , où
- 501,     31, comment          , Francais, إسم , Les questions,                                , comment
- 502,     31, combien          , Francais, إسم , Les questions,                                , combien
- 503,     31, pourquoi         , Francais, إسم , Les questions,                                , pourquoi
- 504,     31, oui              , Francais, حرف , Les questions,                                , oui
- 505,     31, marché           , Francais, إسم , Les questions,                                , marché
- 506,     31, prix             , Francais, إسم , Les questions,                                , prix
- 507,     32, لَعِبَ           , Arabe   , فعل , Jeux et sport,                                , لَعِبَ
- 508,     32, سَبَحَ           , Arabe   , فعل , Jeux et sport,                                , سَبَحَ
- 509,     32, رَكَضَ           , Arabe   , فعل , Jeux et sport,                                , رَكَضَ
- 510,     32, رَسَمَ           , Arabe   , فعل , Jeux et sport,                                , رَسَمَ
- 511,     32, كُرَةٌ           , Arabe   , إسم , Jeux et sport,                                , كُرَةٌ
- 512,     32, رِحْلَةٌ         , Arabe   , إسم , Jeux et sport,                                , رِحْلَةٌ
- 513,     32, مَلْعَبٌ         , Arabe   , إسم , Jeux et sport,                                , مَلْعَبٌ
- 514,     32, سِبَاحَةٌ        , Arabe   , إسم , Jeux et sport,                                , سِبَاحَةٌ
- 515,     32, رِيَاضَةٌ        , Arabe   , إسم , Jeux et sport,                                , رِيَاضَةٌ
- 516,     32, لُعْبَةٌ         , Arabe   , إسم , Jeux et sport,                                , لُعْبَةٌ
- 517,     32, il a joué        , Francais, فعل , Jeux et sport,                                , il a joué
- 518,     32, il a nagé        , Francais, فعل , Jeux et sport,                                , il a nagé
- 519,     32, il a couru       , Francais, فعل , Jeux et sport,                                , il a couru
- 520,     32, il a dessiné     , Francais, فعل , Jeux et sport,                                , il a dessiné
- 521,     32, ballon           , Francais, إسم , Jeux et sport,                                , ballon
- 522,     32, voyage           , Francais, إسم , Jeux et sport,                                , voyage
- 523,     32, terrain de sport , Francais, إسم , Jeux et sport,                                , terrain de sport
- 524,     32, natation         , Francais, إسم , Jeux et sport,                                , natation
- 525,     32, sport            , Francais, إسم , Jeux et sport,                                , sport
- 526,     32, jeu              , Francais, إسم , Jeux et sport,                                , jeu
- 527,     33, جَدٌّ            , Arabe   , إسم , La famille,                                , جَدٌّ
- 528,     33, عَمٌّ            , Arabe   , إسم , La famille,                                , عَمٌّ
- 529,     33, خَالٌ            , Arabe   , إسم , La famille,                                , خَالٌ
- 530,     33, زَوْجٌ           , Arabe   , إسم , La famille,                                , زَوْجٌ
- 531,     33, عَائِلَةٌ        , Arabe   , إسم , La famille,                                , عَائِلَةٌ
- 532,     33, أُسْرَةٌ         , Arabe   , إسم , La famille,                                , أُسْرَةٌ
- 533,     33, أَوْلَادٌ        , Arabe   , إسم , La famille,                                , أَوْلَادٌ
- 534,     33, حَفِيدٌ          , Arabe   , إسم , La famille,                                , حَفِيدٌ
- 535,     33, grand-père       , Francais, إسم , La famille,                                , grand-père
- 536,     33, oncle paternel   , Francais, إسم , La famille,                                , oncle paternel
- 537,     33, oncle maternel   , Francais, إسم , La famille,                                , oncle maternel
- 538,     33, époux            , Francais, إسم , La famille,                                , époux
- 539,     33, famille          , Francais, إسم , La famille,                                , famille
- 540,     33, famille          , Francais, إسم , La famille,                                , famille
- 541,     33, enfants          , Francais, إسم , La famille,                                , enfants
- 542,     33, petit-fils       , Francais, إسم , La famille,                                , petit-fils
- 543,     34, صَبَاحٌ          , Arabe   , إسم , Le temps d’une journée,                                , صَبَاحٌ
- 544,     34, مَسَاءٌ          , Arabe   , إسم , Le temps d’une journée,                                , مَسَاءٌ
- 545,     34, فُطُورٌ          , Arabe   , إسم , Le temps d’une journée,                                , فُطُورٌ
- 546,     34, غَدَاءٌ          , Arabe   , إسم , Le temps d’une journée,                                , غَدَاءٌ
- 547,     34, عَشَاءٌ          , Arabe   , إسم , Le temps d’une journée,                                , عَشَاءٌ
- 548,     34, رَاحَةٌ          , Arabe   , إسم , Le temps d’une journée,                                , رَاحَةٌ
- 549,     34, إِلَى            , Arabe   , حرف , Le temps d’une journée,                                , إِلَى
- 550,     34, رَجَعَ           , Arabe   , فعل , Le temps d’une journée,                                , رَجَعَ
- 551,     34, بَعْدَ           , Arabe   , حرف , Le temps d’une journée,                                , بَعْدَ
- 552,     34, قَبْلَ           , Arabe   , حرف , Le temps d’une journée,                                , قَبْلَ
- 553,     34, matin            , Francais, إسم , Le temps d’une journée,                                , matin
- 554,     34, soir             , Francais, إسم , Le temps d’une journée,                                , soir
- 555,     34, petit-déjeuner   , Francais, إسم , Le temps d’une journée,                                , petit-déjeuner
- 556,     34, déjeuner         , Francais, إسم , Le temps d’une journée,                                , déjeuner
- 557,     34, dîner            , Francais, إسم , Le temps d’une journée,                                , dîner
- 558,     34, repos            , Francais, إسم , Le temps d’une journée,                                , repos
- 559,     34, vers             , Francais, حرف , Le temps d’une journée,                                , vers
- 560,     34, il est revenu    , Francais, فعل , Le temps d’une journée,                                , il est revenu
- 561,     34, après            , Francais, حرف , Le temps d’une journée,                                , après
- 562,     34, avant            , Francais, حرف , Le temps d’une journée,                                , avant
- 563,     35, خُبْزٌ           , Arabe   , إسم , Le marché et les aliments,                                , خُبْزٌ
- 564,     35, لَحْمٌ           , Arabe   , إسم , Le marché et les aliments,                                , لَحْمٌ
- 565,     35, سَمَكٌ           , Arabe   , إسم , Le marché et les aliments,                                , سَمَكٌ
- 566,     35, حَلِيبٌ          , Arabe   , إسم , Le marché et les aliments,                                , حَلِيبٌ
- 567,     35, بَيْضٌ           , Arabe   , إسم , Le marché et les aliments,                                , بَيْضٌ
- 568,     35, تُفَّاحٌ         , Arabe   , إسم , Le marché et les aliments,                                , تُفَّاحٌ
- 569,     35, فَاكِهَةٌ        , Arabe   , إسم , Le marché et les aliments,                                , فَاكِهَةٌ
- 570,     35, بَائِعٌ          , Arabe   , إسم , Le marché et les aliments,                                , بَائِعٌ
- 571,     35, أَخَذَ           , Arabe   , فعل , Le marché et les aliments,                                , أَخَذَ
- 572,     35, سُوقٌ            , Arabe   , إسم , Le marché et les aliments,                                , سُوقٌ
- 573,     35, pain             , Francais, إسم , Le marché et les aliments,                                , pain
- 574,     35, viande           , Francais, إسم , Le marché et les aliments,                                , viande
- 575,     35, poisson          , Francais, إسم , Le marché et les aliments,                                , poisson
- 576,     35, lait             , Francais, إسم , Le marché et les aliments,                                , lait
- 577,     35, œufs             , Francais, إسم , Le marché et les aliments,                                , œufs
- 578,     35, pommes           , Francais, إسم , Le marché et les aliments,                                , pommes
- 579,     35, fruit            , Francais, إسم , Le marché et les aliments,                                , fruit
- 580,     35, vendeur          , Francais, إسم , Le marché et les aliments,                                , vendeur
- 581,     35, il a pris        , Francais, فعل , Le marché et les aliments,                                , il a pris
- 582,     35, marché           , Francais, إسم , Le marché et les aliments,                                , marché
+ 267,     17, قِرَاءَةٌ        , Arabe   , إسم , La lecture et la nature,                                , قِرَاءَةٌ
+ 268,     17, عَبَاءَةٌ        , Arabe   , إسم , La lecture et la nature,                                , عَبَاءَةٌ
+ 269,     17, تَفَاؤُلٌ        , Arabe   , إسم , La lecture et la nature,                                , تَفَاؤُلٌ
+ 270,     17, سَائِلٌ          , Arabe   , إسم , La lecture et la nature,                                , سَائِلٌ
+ 271,     17, بِيئَةٌ          , Arabe   , إسم , La lecture et la nature,                                , بِيئَةٌ
+ 272,     17, هَيْئَةٌ         , Arabe   , إسم , La lecture et la nature,                                , هَيْئَةٌ
+ 273,     17, خَطِيئَةٌ        , Arabe   , إسم , La lecture et la nature,                                , خَطِيئَةٌ
+ 274,     17, lecture          , Francais, إسم , La lecture et la nature,                                , lecture
+ 275,     17, abaya (manteau long) , Francais, إسم , La lecture et la nature,                                , abaya (manteau long)
+ 276,     17, optimisme        , Francais, إسم , La lecture et la nature,                                , optimisme
+ 277,     17, liquide          , Francais, إسم , La lecture et la nature,                                , liquide
+ 278,     17, environnement    , Francais, إسم , La lecture et la nature,                                , environnement
+ 279,     17, apparence        , Francais, إسم , La lecture et la nature,                                , apparence
+ 280,     17, faute            , Francais, إسم , La lecture et la nature,                                , faute
+ 281,     18, اِسْمٌ           , Arabe   , إسم , Mots à alif de liaison,                                , اِسْمٌ
+ 282,     18, اِبْنٌ           , Arabe   , إسم , Mots à alif de liaison,                                , اِبْنٌ
+ 283,     18, اِبْنَةٌ         , Arabe   , إسم , Mots à alif de liaison,                                , اِبْنَةٌ
+ 284,     18, اِمْرَأَةٌ       , Arabe   , إسم , Mots à alif de liaison,                                , اِمْرَأَةٌ
+ 285,     18, اِثْنَانِ        , Arabe   , إسم , Mots à alif de liaison,                                , اِثْنَانِ
+ 286,     18, اِثْنَتَانِ      , Arabe   , إسم , Mots à alif de liaison,                                , اِثْنَتَانِ
+ 287,     18, رَجُلٌ           , Arabe   , إسم , Mots à alif de liaison,                                , رَجُلٌ
+ 288,     18, وَلَدٌ           , Arabe   , إسم , Mots à alif de liaison,                                , وَلَدٌ
+ 289,     18, بِنْتٌ           , Arabe   , إسم , Mots à alif de liaison,                                , بِنْتٌ
+ 290,     18, طِفْلٌ           , Arabe   , إسم , Mots à alif de liaison,                                , طِفْلٌ
+ 291,     18, nom              , Francais, إسم , Mots à alif de liaison,                                , nom
+ 292,     18, fils             , Francais, إسم , Mots à alif de liaison,                                , fils
+ 293,     18, fille            , Francais, إسم , Mots à alif de liaison,                                , fille
+ 294,     18, femme            , Francais, إسم , Mots à alif de liaison,                                , femme
+ 295,     18, deux             , Francais, إسم , Mots à alif de liaison,                                , deux
+ 296,     18, deux (fém.)      , Francais, إسم , Mots à alif de liaison,                                , deux (fém.)
+ 297,     18, homme            , Francais, إسم , Mots à alif de liaison,                                , homme
+ 298,     18, garçon           , Francais, إسم , Mots à alif de liaison,                                , garçon
+ 299,     18, fille            , Francais, إسم , Mots à alif de liaison,                                , fille
+ 300,     18, enfant           , Francais, إسم , Mots à alif de liaison,                                , enfant
+ 301,     19, وَاحِدٌ          , Arabe   , إسم , Les nombres,                                , وَاحِدٌ
+ 302,     19, ثَلَاثَةٌ        , Arabe   , إسم , Les nombres,                                , ثَلَاثَةٌ
+ 303,     19, أَرْبَعَةٌ       , Arabe   , إسم , Les nombres,                                , أَرْبَعَةٌ
+ 304,     19, خَمْسَةٌ         , Arabe   , إسم , Les nombres,                                , خَمْسَةٌ
+ 305,     19, سِتَّةٌ          , Arabe   , إسم , Les nombres,                                , سِتَّةٌ
+ 306,     19, سَبْعَةٌ         , Arabe   , إسم , Les nombres,                                , سَبْعَةٌ
+ 307,     19, ثَمَانِيَةٌ      , Arabe   , إسم , Les nombres,                                , ثَمَانِيَةٌ
+ 308,     19, تِسْعَةٌ         , Arabe   , إسم , Les nombres,                                , تِسْعَةٌ
+ 309,     19, عَشَرَةٌ         , Arabe   , إسم , Les nombres,                                , عَشَرَةٌ
+ 310,     19, اِثْنَانِ        , Arabe   , إسم , Les nombres,                                , اِثْنَانِ
+ 311,     19, un               , Francais, إسم , Les nombres,                                , un
+ 312,     19, trois            , Francais, إسم , Les nombres,                                , trois
+ 313,     19, quatre           , Francais, إسم , Les nombres,                                , quatre
+ 314,     19, cinq             , Francais, إسم , Les nombres,                                , cinq
+ 315,     19, six              , Francais, إسم , Les nombres,                                , six
+ 316,     19, sept             , Francais, إسم , Les nombres,                                , sept
+ 317,     19, huit             , Francais, إسم , Les nombres,                                , huit
+ 318,     19, neuf             , Francais, إسم , Les nombres,                                , neuf
+ 319,     19, dix              , Francais, إسم , Les nombres,                                , dix
+ 320,     19, deux             , Francais, إسم , Les nombres,                                , deux
+ 321,     20, مُهَنْدِسٌ       , Arabe   , إسم , Les métiers,                                , مُهَنْدِسٌ
+ 322,     20, مُمَرِّضٌ        , Arabe   , إسم , Les métiers,                                , مُمَرِّضٌ
+ 323,     20, خَبَّازٌ         , Arabe   , إسم , Les métiers,                                , خَبَّازٌ
+ 324,     20, خَيَّاطٌ         , Arabe   , إسم , Les métiers,                                , خَيَّاطٌ
+ 325,     20, عَامِلٌ          , Arabe   , إسم , Les métiers,                                , عَامِلٌ
+ 326,     20, كَاتِبٌ          , Arabe   , إسم , Les métiers,                                , كَاتِبٌ
+ 327,     20, حَارِسٌ          , Arabe   , إسم , Les métiers,                                , حَارِسٌ
+ 328,     20, مُصَوِّرٌ        , Arabe   , إسم , Les métiers,                                , مُصَوِّرٌ
+ 329,     20, قَارِئٌ          , Arabe   , إسم , Les métiers,                                , قَارِئٌ
+ 330,     20, فَلَّاحٌ         , Arabe   , إسم , Les métiers,                                , فَلَّاحٌ
+ 331,     20, ingénieur        , Francais, إسم , Les métiers,                                , ingénieur
+ 332,     20, infirmier        , Francais, إسم , Les métiers,                                , infirmier
+ 333,     20, boulanger        , Francais, إسم , Les métiers,                                , boulanger
+ 334,     20, tailleur         , Francais, إسم , Les métiers,                                , tailleur
+ 335,     20, ouvrier          , Francais, إسم , Les métiers,                                , ouvrier
+ 336,     20, écrivain         , Francais, إسم , Les métiers,                                , écrivain
+ 337,     20, gardien          , Francais, إسم , Les métiers,                                , gardien
+ 338,     20, photographe      , Francais, إسم , Les métiers,                                , photographe
+ 339,     20, lecteur          , Francais, إسم , Les métiers,                                , lecteur
+ 340,     20, paysan           , Francais, إسم , Les métiers,                                , paysan
+ 341,     21, الْأَحَدُ        , Arabe   , إسم , Les jours et le temps,                                , الْأَحَدُ
+ 342,     21, الْأَرْبِعَاءُ   , Arabe   , إسم , Les jours et le temps,                                , الْأَرْبِعَاءُ
+ 343,     21, الْخَمِيسُ       , Arabe   , إسم , Les jours et le temps,                                , الْخَمِيسُ
+ 344,     21, الْجُمُعَةُ      , Arabe   , إسم , Les jours et le temps,                                , الْجُمُعَةُ
+ 345,     21, أُسْبُوعٌ        , Arabe   , إسم , Les jours et le temps,                                , أُسْبُوعٌ
+ 346,     21, يَوْمٌ           , Arabe   , إسم , Les jours et le temps,                                , يَوْمٌ
+ 347,     21, عَامٌ            , Arabe   , إسم , Les jours et le temps,                                , عَامٌ
+ 348,     21, قَمَرٌ           , Arabe   , إسم , Les jours et le temps,                                , قَمَرٌ
+ 349,     21, بَحْرٌ           , Arabe   , إسم , Les jours et le temps,                                , بَحْرٌ
+ 350,     21, جَبَلٌ           , Arabe   , إسم , Les jours et le temps,                                , جَبَلٌ
+ 351,     21, dimanche         , Francais, إسم , Les jours et le temps,                                , dimanche
+ 352,     21, mercredi         , Francais, إسم , Les jours et le temps,                                , mercredi
+ 353,     21, jeudi            , Francais, إسم , Les jours et le temps,                                , jeudi
+ 354,     21, vendredi         , Francais, إسم , Les jours et le temps,                                , vendredi
+ 355,     21, semaine          , Francais, إسم , Les jours et le temps,                                , semaine
+ 356,     21, jour             , Francais, إسم , Les jours et le temps,                                , jour
+ 357,     21, année            , Francais, إسم , Les jours et le temps,                                , année
+ 358,     21, lune             , Francais, إسم , Les jours et le temps,                                , lune
+ 359,     21, mer              , Francais, إسم , Les jours et le temps,                                , mer
+ 360,     21, montagne         , Francais, إسم , Les jours et le temps,                                , montagne
+ 361,     22, ثَلْجٌ           , Arabe   , إسم , La nature et les saisons,                                , ثَلْجٌ
+ 362,     22, رِيحٌ            , Arabe   , إسم , La nature et les saisons,                                , رِيحٌ
+ 363,     22, رَمْلٌ           , Arabe   , إسم , La nature et les saisons,                                , رَمْلٌ
+ 364,     22, رَبِيعٌ          , Arabe   , إسم , La nature et les saisons,                                , رَبِيعٌ
+ 365,     22, سَمَاءٌ          , Arabe   , إسم , La nature et les saisons,                                , سَمَاءٌ
+ 366,     22, neige            , Francais, إسم , La nature et les saisons,                                , neige
+ 367,     22, vent             , Francais, إسم , La nature et les saisons,                                , vent
+ 368,     22, sable            , Francais, إسم , La nature et les saisons,                                , sable
+ 369,     22, printemps        , Francais, إسم , La nature et les saisons,                                , printemps
+ 370,     22, ciel             , Francais, إسم , La nature et les saisons,                                , ciel
+ 371,     23, شَمْسٌ           , Arabe   , إسم , Les saisons et le ciel,                                , شَمْسٌ
+ 372,     23, نَجْمٌ           , Arabe   , إسم , Les saisons et le ciel,                                , نَجْمٌ
+ 373,     23, نَهْرٌ           , Arabe   , إسم , Les saisons et le ciel,                                , نَهْرٌ
+ 374,     23, شِتَاءٌ          , Arabe   , إسم , Les saisons et le ciel,                                , شِتَاءٌ
+ 375,     23, صَيْفٌ           , Arabe   , إسم , Les saisons et le ciel,                                , صَيْفٌ
+ 376,     23, soleil           , Francais, إسم , Les saisons et le ciel,                                , soleil
+ 377,     23, étoile           , Francais, إسم , Les saisons et le ciel,                                , étoile
+ 378,     23, fleuve           , Francais, إسم , Les saisons et le ciel,                                , fleuve
+ 379,     23, hiver            , Francais, إسم , Les saisons et le ciel,                                , hiver
+ 380,     23, été              , Francais, إسم , Les saisons et le ciel,                                , été
+ 381,     24, أَبْيَضُ         , Arabe   , إسم , Couleurs et jours,                                , أَبْيَضُ
+ 382,     24, أَسْوَدُ         , Arabe   , إسم , Couleurs et jours,                                , أَسْوَدُ
+ 383,     24, أَحْمَرُ         , Arabe   , إسم , Couleurs et jours,                                , أَحْمَرُ
+ 384,     24, أَزْرَقُ         , Arabe   , إسم , Couleurs et jours,                                , أَزْرَقُ
+ 385,     24, أَخْضَرُ         , Arabe   , إسم , Couleurs et jours,                                , أَخْضَرُ
+ 386,     24, أَصْفَرُ         , Arabe   , إسم , Couleurs et jours,                                , أَصْفَرُ
+ 387,     24, لَوْنٌ           , Arabe   , إسم , Couleurs et jours,                                , لَوْنٌ
+ 388,     24, الثُّلَاثَاءُ    , Arabe   , إسم , Couleurs et jours,                                , الثُّلَاثَاءُ
+ 389,     24, السَّبْتُ        , Arabe   , إسم , Couleurs et jours,                                , السَّبْتُ
+ 390,     24, الِاثْنَيْنِ     , Arabe   , إسم , Couleurs et jours,                                , الِاثْنَيْنِ
+ 391,     24, blanc            , Francais, إسم , Couleurs et jours,                                , blanc
+ 392,     24, noir             , Francais, إسم , Couleurs et jours,                                , noir
+ 393,     24, rouge            , Francais, إسم , Couleurs et jours,                                , rouge
+ 394,     24, bleu             , Francais, إسم , Couleurs et jours,                                , bleu
+ 395,     24, vert             , Francais, إسم , Couleurs et jours,                                , vert
+ 396,     24, jaune            , Francais, إسم , Couleurs et jours,                                , jaune
+ 397,     24, couleur          , Francais, إسم , Couleurs et jours,                                , couleur
+ 398,     24, mardi            , Francais, إسم , Couleurs et jours,                                , mardi
+ 399,     24, samedi           , Francais, إسم , Couleurs et jours,                                , samedi
+ 400,     24, lundi            , Francais, إسم , Couleurs et jours,                                , lundi
+ 401,     25, مَسْجِدٌ         , Arabe   , إسم , La mosquée,                                , مَسْجِدٌ
+ 402,     25, مِحْرَابٌ        , Arabe   , إسم , La mosquée,                                , مِحْرَابٌ
+ 403,     25, مِنْبَرٌ         , Arabe   , إسم , La mosquée,                                , مِنْبَرٌ
+ 404,     25, مِئْذَنَةٌ       , Arabe   , إسم , La mosquée,                                , مِئْذَنَةٌ
+ 405,     25, فِي              , Arabe   , حرف , La mosquée,                                , فِي
+ 406,     25, mosquée          , Francais, إسم , La mosquée,                                , mosquée
+ 407,     25, mihrab           , Francais, إسم , La mosquée,                                , mihrab
+ 408,     25, chaire           , Francais, إسم , La mosquée,                                , chaire
+ 409,     25, minaret          , Francais, إسم , La mosquée,                                , minaret
+ 410,     25, dans             , Francais, حرف , La mosquée,                                , dans
+ 411,     26, صَلَاةٌ          , Arabe   , إسم , La prière,                                , صَلَاةٌ
+ 412,     26, وُضُوءٌ          , Arabe   , إسم , La prière,                                , وُضُوءٌ
+ 413,     26, إِمَامٌ          , Arabe   , إسم , La prière,                                , إِمَامٌ
+ 414,     26, قُرْآنٌ          , Arabe   , إسم , La prière,                                , قُرْآنٌ
+ 415,     26, مِنْ             , Arabe   , حرف , La prière,                                , مِنْ
+ 416,     26, prière           , Francais, إسم , La prière,                                , prière
+ 417,     26, ablutions        , Francais, إسم , La prière,                                , ablutions
+ 418,     26, imam             , Francais, إسم , La prière,                                , imam
+ 419,     26, Coran            , Francais, إسم , La prière,                                , Coran
+ 420,     26, de               , Francais, حرف , La prière,                                , de
+ 421,     27, مَطْعَمٌ         , Arabe   , إسم , Les lieux de la ville,                                , مَطْعَمٌ
+ 422,     27, مَتْجَرٌ         , Arabe   , إسم , Les lieux de la ville,                                , مَتْجَرٌ
+ 423,     27, مَكْتَبَةٌ       , Arabe   , إسم , Les lieux de la ville,                                , مَكْتَبَةٌ
+ 424,     27, مَحَطَّةٌ        , Arabe   , إسم , Les lieux de la ville,                                , مَحَطَّةٌ
+ 425,     27, جَامِعَةٌ        , Arabe   , إسم , Les lieux de la ville,                                , جَامِعَةٌ
+ 426,     27, مَتْحَفٌ         , Arabe   , إسم , Les lieux de la ville,                                , مَتْحَفٌ
+ 427,     27, restaurant       , Francais, إسم , Les lieux de la ville,                                , restaurant
+ 428,     27, magasin          , Francais, إسم , Les lieux de la ville,                                , magasin
+ 429,     27, bibliothèque     , Francais, إسم , Les lieux de la ville,                                , bibliothèque
+ 430,     27, gare             , Francais, إسم , Les lieux de la ville,                                , gare
+ 431,     27, université       , Francais, إسم , Les lieux de la ville,                                , université
+ 432,     27, musée            , Francais, إسم , Les lieux de la ville,                                , musée
+ 433,     28, حَقِيبَةٌ        , Arabe   , إسم , Mes affaires,                                , حَقِيبَةٌ
+ 434,     28, مَحْفَظَةٌ       , Arabe   , إسم , Mes affaires,                                , مَحْفَظَةٌ
+ 435,     28, نَظَّارَةٌ       , Arabe   , إسم , Mes affaires,                                , نَظَّارَةٌ
+ 436,     28, مِظَلَّةٌ        , Arabe   , إسم , Mes affaires,                                , مِظَلَّةٌ
+ 437,     28, مِفْتَاحٌ        , Arabe   , إسم , Mes affaires,                                , مِفْتَاحٌ
+ 438,     28, هَاتِفٌ          , Arabe   , إسم , Mes affaires,                                , هَاتِفٌ
+ 439,     28, sac              , Francais, إسم , Mes affaires,                                , sac
+ 440,     28, portefeuille     , Francais, إسم , Mes affaires,                                , portefeuille
+ 441,     28, lunettes         , Francais, إسم , Mes affaires,                                , lunettes
+ 442,     28, parapluie        , Francais, إسم , Mes affaires,                                , parapluie
+ 443,     28, clé              , Francais, إسم , Mes affaires,                                , clé
+ 444,     28, téléphone        , Francais, إسم , Mes affaires,                                , téléphone
+ 445,     29, قُبَّعَةٌ        , Arabe   , إسم , Mes affaires (suite),                                , قُبَّعَةٌ
+ 446,     29, كِيسٌ            , Arabe   , إسم , Mes affaires (suite),                                , كِيسٌ
+ 447,     29, سَاعَةٌ          , Arabe   , إسم , Mes affaires (suite),                                , سَاعَةٌ
+ 448,     29, دَفْتَرٌ         , Arabe   , إسم , Mes affaires (suite),                                , دَفْتَرٌ
+ 449,     29, chapeau          , Francais, إسم , Mes affaires (suite),                                , chapeau
+ 450,     29, sachet           , Francais, إسم , Mes affaires (suite),                                , sachet
+ 451,     29, montre           , Francais, إسم , Mes affaires (suite),                                , montre
+ 452,     29, cahier           , Francais, إسم , Mes affaires (suite),                                , cahier
+ 453,     30, دُعَاءٌ          , Arabe   , إسم , Le courrier et la famille,                                , دُعَاءٌ
+ 454,     30, أَبْنَاءٌ        , Arabe   , إسم , Le courrier et la famille,                                , أَبْنَاءٌ
+ 455,     30, رَسَائِلُ        , Arabe   , إسم , Le courrier et la famille,                                , رَسَائِلُ
+ 456,     30, جَرَائِدُ        , Arabe   , إسم , Le courrier et la famille,                                , جَرَائِدُ
+ 457,     30, أَسْئِلَةٌ       , Arabe   , إسم , Le courrier et la famille,                                , أَسْئِلَةٌ
+ 458,     30, هُدُوءٌ          , Arabe   , إسم , Le courrier et la famille,                                , هُدُوءٌ
+ 459,     30, prière           , Francais, إسم , Le courrier et la famille,                                , prière
+ 460,     30, fils (pluriel)   , Francais, إسم , Le courrier et la famille,                                , fils (pluriel)
+ 461,     30, lettres          , Francais, إسم , Le courrier et la famille,                                , lettres
+ 462,     30, journaux         , Francais, إسم , Le courrier et la famille,                                , journaux
+ 463,     30, questions        , Francais, إسم , Le courrier et la famille,                                , questions
+ 464,     30, calme            , Francais, إسم , Le courrier et la famille,                                , calme
+ 465,     31, طَاوِلَةٌ        , Arabe   , إسم , Les meubles,                                , طَاوِلَةٌ
+ 466,     31, خِزَانَةٌ        , Arabe   , إسم , Les meubles,                                , خِزَانَةٌ
+ 467,     31, مِرْآةٌ          , Arabe   , إسم , Les meubles,                                , مِرْآةٌ
+ 468,     31, سِتَارَةٌ        , Arabe   , إسم , Les meubles,                                , سِتَارَةٌ
+ 469,     31, مِصْبَاحٌ        , Arabe   , إسم , Les meubles,                                , مِصْبَاحٌ
+ 470,     31, وِسَادَةٌ        , Arabe   , إسم , Les meubles,                                , وِسَادَةٌ
+ 471,     31, ثَلَّاجَةٌ       , Arabe   , إسم , Les meubles,                                , ثَلَّاجَةٌ
+ 472,     31, تِلْفَازٌ        , Arabe   , إسم , Les meubles,                                , تِلْفَازٌ
+ 473,     31, مِكْنَسَةٌ       , Arabe   , إسم , Les meubles,                                , مِكْنَسَةٌ
+ 474,     31, فِرَاشٌ          , Arabe   , إسم , Les meubles,                                , فِرَاشٌ
+ 475,     31, table            , Francais, إسم , Les meubles,                                , table
+ 476,     31, armoire          , Francais, إسم , Les meubles,                                , armoire
+ 477,     31, miroir           , Francais, إسم , Les meubles,                                , miroir
+ 478,     31, rideau           , Francais, إسم , Les meubles,                                , rideau
+ 479,     31, lampe            , Francais, إسم , Les meubles,                                , lampe
+ 480,     31, coussin          , Francais, إسم , Les meubles,                                , coussin
+ 481,     31, réfrigérateur    , Francais, إسم , Les meubles,                                , réfrigérateur
+ 482,     31, télévision       , Francais, إسم , Les meubles,                                , télévision
+ 483,     31, balai            , Francais, إسم , Les meubles,                                , balai
+ 484,     31, matelas          , Francais, إسم , Les meubles,                                , matelas
+ 485,     32, فَوْقَ           , Arabe   , حرف , Les lieux,                                , فَوْقَ
+ 486,     32, تَحْتَ           , Arabe   , حرف , Les lieux,                                , تَحْتَ
+ 487,     32, أَمَامَ          , Arabe   , حرف , Les lieux,                                , أَمَامَ
+ 488,     32, خَلْفَ           , Arabe   , حرف , Les lieux,                                , خَلْفَ
+ 489,     32, بَيْنَ           , Arabe   , حرف , Les lieux,                                , بَيْنَ
+ 490,     32, عِنْدَ           , Arabe   , حرف , Les lieux,                                , عِنْدَ
+ 491,     32, قُرْبَ           , Arabe   , حرف , Les lieux,                                , قُرْبَ
+ 492,     32, يَمِينٌ          , Arabe   , إسم , Les lieux,                                , يَمِينٌ
+ 493,     32, يَسَارٌ          , Arabe   , إسم , Les lieux,                                , يَسَارٌ
+ 494,     32, وَسَطٌ           , Arabe   , إسم , Les lieux,                                , وَسَطٌ
+ 495,     32, au-dessus de     , Francais, حرف , Les lieux,                                , au-dessus de
+ 496,     32, au-dessous de    , Francais, حرف , Les lieux,                                , au-dessous de
+ 497,     32, devant           , Francais, حرف , Les lieux,                                , devant
+ 498,     32, derrière         , Francais, حرف , Les lieux,                                , derrière
+ 499,     32, entre            , Francais, حرف , Les lieux,                                , entre
+ 500,     32, chez / près de   , Francais, حرف , Les lieux,                                , chez / près de
+ 501,     32, près de          , Francais, حرف , Les lieux,                                , près de
+ 502,     32, droite           , Francais, إسم , Les lieux,                                , droite
+ 503,     32, gauche           , Francais, إسم , Les lieux,                                , gauche
+ 504,     32, milieu           , Francais, إسم , Les lieux,                                , milieu
+ 505,     33, كَتَبَ           , Arabe   , فعل , Les verbes de la classe,                                , كَتَبَ
+ 506,     33, دَرَسَ           , Arabe   , فعل , Les verbes de la classe,                                , دَرَسَ
+ 507,     33, ذَهَبَ           , Arabe   , فعل , Les verbes de la classe,                                , ذَهَبَ
+ 508,     33, جَلَسَ           , Arabe   , فعل , Les verbes de la classe,                                , جَلَسَ
+ 509,     33, فَتَحَ           , Arabe   , فعل , Les verbes de la classe,                                , فَتَحَ
+ 510,     33, نَزَلَ           , Arabe   , فعل , Les verbes de la classe,                                , نَزَلَ
+ 511,     33, شَرِبَ           , Arabe   , فعل , Les verbes de la classe,                                , شَرِبَ
+ 512,     33, سَمِعَ           , Arabe   , فعل , Les verbes de la classe,                                , سَمِعَ
+ 513,     33, فَهِمَ           , Arabe   , فعل , Les verbes de la classe,                                , فَهِمَ
+ 514,     33, عَمِلَ           , Arabe   , فعل , Les verbes de la classe,                                , عَمِلَ
+ 515,     33, il a écrit       , Francais, فعل , Les verbes de la classe,                                , il a écrit
+ 516,     33, il a étudié      , Francais, فعل , Les verbes de la classe,                                , il a étudié
+ 517,     33, il est allé      , Francais, فعل , Les verbes de la classe,                                , il est allé
+ 518,     33, il s’est assis   , Francais, فعل , Les verbes de la classe,                                , il s’est assis
+ 519,     33, il a ouvert      , Francais, فعل , Les verbes de la classe,                                , il a ouvert
+ 520,     33, il est descendu  , Francais, فعل , Les verbes de la classe,                                , il est descendu
+ 521,     33, il a bu          , Francais, فعل , Les verbes de la classe,                                , il a bu
+ 522,     33, il a entendu     , Francais, فعل , Les verbes de la classe,                                , il a entendu
+ 523,     33, il a compris     , Francais, فعل , Les verbes de la classe,                                , il a compris
+ 524,     33, il a travaillé   , Francais, فعل , Les verbes de la classe,                                , il a travaillé
+ 525,     34, هَلْ             , Arabe   , حرف , Les questions,                                , هَلْ
+ 526,     34, مَا              , Arabe   , إسم , Les questions,                                , مَا
+ 527,     34, مَنْ             , Arabe   , إسم , Les questions,                                , مَنْ
+ 528,     34, أَيْنَ           , Arabe   , إسم , Les questions,                                , أَيْنَ
+ 529,     34, كَيْفَ           , Arabe   , إسم , Les questions,                                , كَيْفَ
+ 530,     34, كَمْ             , Arabe   , إسم , Les questions,                                , كَمْ
+ 531,     34, لِمَاذَا         , Arabe   , إسم , Les questions,                                , لِمَاذَا
+ 532,     34, نَعَمْ           , Arabe   , حرف , Les questions,                                , نَعَمْ
+ 533,     34, سُوقٌ            , Arabe   , إسم , Les questions,                                , سُوقٌ
+ 534,     34, ثَمَنٌ           , Arabe   , إسم , Les questions,                                , ثَمَنٌ
+ 535,     34, est-ce que       , Francais, حرف , Les questions,                                , est-ce que
+ 536,     34, quoi             , Francais, إسم , Les questions,                                , quoi
+ 537,     34, qui              , Francais, إسم , Les questions,                                , qui
+ 538,     34, où               , Francais, إسم , Les questions,                                , où
+ 539,     34, comment          , Francais, إسم , Les questions,                                , comment
+ 540,     34, combien          , Francais, إسم , Les questions,                                , combien
+ 541,     34, pourquoi         , Francais, إسم , Les questions,                                , pourquoi
+ 542,     34, oui              , Francais, حرف , Les questions,                                , oui
+ 543,     34, marché           , Francais, إسم , Les questions,                                , marché
+ 544,     34, prix             , Francais, إسم , Les questions,                                , prix
+ 545,     35, قُلْتُ           , Arabe   , فعل , Je parle de moi,                                , قُلْتُ
+ 546,     35, كُنْتُ           , Arabe   , فعل , Je parle de moi,                                , كُنْتُ
+ 547,     35, زُرْتُ           , Arabe   , فعل , Je parle de moi,                                , زُرْتُ
+ 548,     35, نِمْتُ           , Arabe   , فعل , Je parle de moi,                                , نِمْتُ
+ 549,     35, خِفْتُ           , Arabe   , فعل , Je parle de moi,                                , خِفْتُ
+ 550,     35, قَالَتْ          , Arabe   , فعل , Je parle de moi,                                , قَالَتْ
+ 551,     35, أَنْتُمْ         , Arabe   , إسم , Je parle de moi,                                , أَنْتُمْ
+ 552,     35, j’ai dit         , Francais, فعل , Je parle de moi,                                , j’ai dit
+ 553,     35, j’ai été         , Francais, فعل , Je parle de moi,                                , j’ai été
+ 554,     35, j’ai visité      , Francais, فعل , Je parle de moi,                                , j’ai visité
+ 555,     35, j’ai dormi       , Francais, فعل , Je parle de moi,                                , j’ai dormi
+ 556,     35, j’ai eu peur     , Francais, فعل , Je parle de moi,                                , j’ai eu peur
+ 557,     35, elle a dit       , Francais, فعل , Je parle de moi,                                , elle a dit
+ 558,     35, vous (pluriel)   , Francais, إسم , Je parle de moi,                                , vous (pluriel)
+ 559,     36, لَعِبَ           , Arabe   , فعل , Jeux et sport,                                , لَعِبَ
+ 560,     36, سَبَحَ           , Arabe   , فعل , Jeux et sport,                                , سَبَحَ
+ 561,     36, رَكَضَ           , Arabe   , فعل , Jeux et sport,                                , رَكَضَ
+ 562,     36, رَسَمَ           , Arabe   , فعل , Jeux et sport,                                , رَسَمَ
+ 563,     36, كُرَةٌ           , Arabe   , إسم , Jeux et sport,                                , كُرَةٌ
+ 564,     36, رِحْلَةٌ         , Arabe   , إسم , Jeux et sport,                                , رِحْلَةٌ
+ 565,     36, مَلْعَبٌ         , Arabe   , إسم , Jeux et sport,                                , مَلْعَبٌ
+ 566,     36, سِبَاحَةٌ        , Arabe   , إسم , Jeux et sport,                                , سِبَاحَةٌ
+ 567,     36, رِيَاضَةٌ        , Arabe   , إسم , Jeux et sport,                                , رِيَاضَةٌ
+ 568,     36, لُعْبَةٌ         , Arabe   , إسم , Jeux et sport,                                , لُعْبَةٌ
+ 569,     36, il a joué        , Francais, فعل , Jeux et sport,                                , il a joué
+ 570,     36, il a nagé        , Francais, فعل , Jeux et sport,                                , il a nagé
+ 571,     36, il a couru       , Francais, فعل , Jeux et sport,                                , il a couru
+ 572,     36, il a dessiné     , Francais, فعل , Jeux et sport,                                , il a dessiné
+ 573,     36, ballon           , Francais, إسم , Jeux et sport,                                , ballon
+ 574,     36, voyage           , Francais, إسم , Jeux et sport,                                , voyage
+ 575,     36, terrain de sport , Francais, إسم , Jeux et sport,                                , terrain de sport
+ 576,     36, natation         , Francais, إسم , Jeux et sport,                                , natation
+ 577,     36, sport            , Francais, إسم , Jeux et sport,                                , sport
+ 578,     36, jeu              , Francais, إسم , Jeux et sport,                                , jeu
+ 579,     37, جَدٌّ            , Arabe   , إسم , La famille,                                , جَدٌّ
+ 580,     37, عَمٌّ            , Arabe   , إسم , La famille,                                , عَمٌّ
+ 581,     37, خَالٌ            , Arabe   , إسم , La famille,                                , خَالٌ
+ 582,     37, زَوْجٌ           , Arabe   , إسم , La famille,                                , زَوْجٌ
+ 583,     37, عَائِلَةٌ        , Arabe   , إسم , La famille,                                , عَائِلَةٌ
+ 584,     37, أُسْرَةٌ         , Arabe   , إسم , La famille,                                , أُسْرَةٌ
+ 585,     37, أَوْلَادٌ        , Arabe   , إسم , La famille,                                , أَوْلَادٌ
+ 586,     37, حَفِيدٌ          , Arabe   , إسم , La famille,                                , حَفِيدٌ
+ 587,     37, grand-père       , Francais, إسم , La famille,                                , grand-père
+ 588,     37, oncle paternel   , Francais, إسم , La famille,                                , oncle paternel
+ 589,     37, oncle maternel   , Francais, إسم , La famille,                                , oncle maternel
+ 590,     37, époux            , Francais, إسم , La famille,                                , époux
+ 591,     37, famille          , Francais, إسم , La famille,                                , famille
+ 592,     37, famille          , Francais, إسم , La famille,                                , famille
+ 593,     37, enfants          , Francais, إسم , La famille,                                , enfants
+ 594,     37, petit-fils       , Francais, إسم , La famille,                                , petit-fils
+ 595,     38, صَبَاحٌ          , Arabe   , إسم , Le temps d’une journée,                                , صَبَاحٌ
+ 596,     38, مَسَاءٌ          , Arabe   , إسم , Le temps d’une journée,                                , مَسَاءٌ
+ 597,     38, فُطُورٌ          , Arabe   , إسم , Le temps d’une journée,                                , فُطُورٌ
+ 598,     38, غَدَاءٌ          , Arabe   , إسم , Le temps d’une journée,                                , غَدَاءٌ
+ 599,     38, عَشَاءٌ          , Arabe   , إسم , Le temps d’une journée,                                , عَشَاءٌ
+ 600,     38, رَاحَةٌ          , Arabe   , إسم , Le temps d’une journée,                                , رَاحَةٌ
+ 601,     38, إِلَى            , Arabe   , حرف , Le temps d’une journée,                                , إِلَى
+ 602,     38, رَجَعَ           , Arabe   , فعل , Le temps d’une journée,                                , رَجَعَ
+ 603,     38, بَعْدَ           , Arabe   , حرف , Le temps d’une journée,                                , بَعْدَ
+ 604,     38, قَبْلَ           , Arabe   , حرف , Le temps d’une journée,                                , قَبْلَ
+ 605,     38, matin            , Francais, إسم , Le temps d’une journée,                                , matin
+ 606,     38, soir             , Francais, إسم , Le temps d’une journée,                                , soir
+ 607,     38, petit-déjeuner   , Francais, إسم , Le temps d’une journée,                                , petit-déjeuner
+ 608,     38, déjeuner         , Francais, إسم , Le temps d’une journée,                                , déjeuner
+ 609,     38, dîner            , Francais, إسم , Le temps d’une journée,                                , dîner
+ 610,     38, repos            , Francais, إسم , Le temps d’une journée,                                , repos
+ 611,     38, vers             , Francais, حرف , Le temps d’une journée,                                , vers
+ 612,     38, il est revenu    , Francais, فعل , Le temps d’une journée,                                , il est revenu
+ 613,     38, après            , Francais, حرف , Le temps d’une journée,                                , après
+ 614,     38, avant            , Francais, حرف , Le temps d’une journée,                                , avant
+ 615,     39, خُبْزٌ           , Arabe   , إسم , Le marché et les aliments,                                , خُبْزٌ
+ 616,     39, لَحْمٌ           , Arabe   , إسم , Le marché et les aliments,                                , لَحْمٌ
+ 617,     39, سَمَكٌ           , Arabe   , إسم , Le marché et les aliments,                                , سَمَكٌ
+ 618,     39, حَلِيبٌ          , Arabe   , إسم , Le marché et les aliments,                                , حَلِيبٌ
+ 619,     39, بَيْضٌ           , Arabe   , إسم , Le marché et les aliments,                                , بَيْضٌ
+ 620,     39, تُفَّاحٌ         , Arabe   , إسم , Le marché et les aliments,                                , تُفَّاحٌ
+ 621,     39, فَاكِهَةٌ        , Arabe   , إسم , Le marché et les aliments,                                , فَاكِهَةٌ
+ 622,     39, بَائِعٌ          , Arabe   , إسم , Le marché et les aliments,                                , بَائِعٌ
+ 623,     39, أَخَذَ           , Arabe   , فعل , Le marché et les aliments,                                , أَخَذَ
+ 624,     39, سُوقٌ            , Arabe   , إسم , Le marché et les aliments,                                , سُوقٌ
+ 625,     39, pain             , Francais, إسم , Le marché et les aliments,                                , pain
+ 626,     39, viande           , Francais, إسم , Le marché et les aliments,                                , viande
+ 627,     39, poisson          , Francais, إسم , Le marché et les aliments,                                , poisson
+ 628,     39, lait             , Francais, إسم , Le marché et les aliments,                                , lait
+ 629,     39, œufs             , Francais, إسم , Le marché et les aliments,                                , œufs
+ 630,     39, pommes           , Francais, إسم , Le marché et les aliments,                                , pommes
+ 631,     39, fruit            , Francais, إسم , Le marché et les aliments,                                , fruit
+ 632,     39, vendeur          , Francais, إسم , Le marché et les aliments,                                , vendeur
+ 633,     39, il a pris        , Francais, فعل , Le marché et les aliments,                                , il a pris
+ 634,     39, marché           , Francais, إسم , Le marché et les aliments,                                , marché

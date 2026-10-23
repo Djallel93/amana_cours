@@ -267,6 +267,10 @@
     a.chip:hover { border-color: var(--accent); }
     a.chip.on { background: var(--on); border-color: var(--accent); }
     details.tr ol.old { padding-left: 4px; }
+    /* bouton « Imprimer le livre » (livre.html), ajouté par le script ci-dessous */
+    .livre { display: flex; flex-wrap: wrap; gap: 6px; margin: 2px 4px 6px 18px; }
+    a.livre-btn { font-size: .78rem; font-weight: 600; padding: 2px 12px; border: 1px solid var(--accent); border-radius: 99px; color: var(--accent); text-decoration: none; }
+    a.livre-btn:hover { background: var(--on); }
   </style>
   <link rel="stylesheet" href="fonts/fonts.css">
 </head>
@@ -357,6 +361,30 @@
         if (window.matchMedia('(max-width:760px)').matches) document.querySelector('#list > details').open = false;
       }
       links.forEach(function (a) { a.addEventListener('click', function () { opened(a); }); });
+      /* « Imprimer le livre » sous chaque public d'un niveau (deux boutons pour les niveaux découpés par tranche d'âge).
+         Déduit des liens de chaque bloc : aucun bouton pour les aides, le placement et le guide enseignant. */
+      [].forEach.call(document.querySelectorAll('#list details.tr'), function (tr) {
+        var first = tr.querySelector('a[data-p]');
+        var seg = first ? first.getAttribute('data-p').split('/') : [];
+        if (!/^(Adultes|Enfants)$/.test(seg[0]) || !/^niveau-/.test(seg[1])) return;
+        var tranches = [];
+        [].forEach.call(tr.querySelectorAll('a[data-p]'), function (a) {
+          var t = a.getAttribute('data-p').split('/')[2];
+          if (/^\d+-\d+$/.test(t) && tranches.indexOf(t) === -1) tranches.push(t);
+        });
+        var box = document.createElement('div');
+        box.className = 'livre';
+        (tranches.length ? tranches : ['']).forEach(function (t) {
+          var a = document.createElement('a');
+          a.className = 'livre-btn';
+          a.href = 'livre.html?public=' + seg[0] + '&niveau=' + seg[1] + (t ? '&tranche=' + t : '');
+          a.target = '_blank'; a.rel = 'noopener';
+          a.textContent = 'Imprimer le livre' + (t ? ' ' + t.replace('-', '\u2013') + ' ans' : '');
+          box.appendChild(a);
+        });
+        var summary = tr.querySelector(':scope > summary');
+        tr.insertBefore(box, summary.nextSibling);
+      });
       var h = ''; try { h = decodeURIComponent(location.hash.slice(1)); } catch (e) { }
       var start = links.filter(function (l) { return l.getAttribute('data-p') === h; })[0];
       if (start) { openAncestors(start); v.removeAttribute('srcdoc'); v.src = start.getAttribute('href'); opened(start); }

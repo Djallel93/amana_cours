@@ -385,6 +385,32 @@
         var summary = tr.querySelector(':scope > summary');
         tr.insertBefore(box, summary.nextSibling);
       });
+      /* Documents imprimables : test de placement et aides à l'enseignant (adultes et enfants réunis), aides pour les élèves
+         (un document par public). Même déduction que ci-dessus, d'après le dossier du premier lien de chaque groupe. */
+      function docButton(href, label) {
+        var box = document.createElement('div'), a = document.createElement('a');
+        box.className = 'livre';
+        a.className = 'livre-btn';
+        a.href = href; a.target = '_blank'; a.rel = 'noopener';
+        a.textContent = label;
+        box.appendChild(a);
+        return box;
+      }
+      [].forEach.call(document.querySelectorAll('#list details.lv'), function (lv) {
+        var first = lv.querySelector('a[data-p]');
+        var dossier = first ? first.getAttribute('data-p').split('/')[1] : '';
+        var after = lv.querySelector(':scope > summary').nextSibling;
+        if (dossier === 'placement') {
+          lv.insertBefore(docButton('livre.html?doc=placement', 'Imprimer le test de placement (adultes et enfants)'), after);
+        } else if (dossier === 'guide-enseignant') {
+          lv.insertBefore(docButton('livre.html?doc=enseignant', 'Imprimer les aides à l’enseignant (adultes et enfants)'), after);
+        } else if (dossier === 'aides') {
+          [].forEach.call(lv.querySelectorAll(':scope > details.tr'), function (tr) {
+            var pub = tr.querySelector('a[data-p]').getAttribute('data-p').split('/')[0];
+            tr.insertBefore(docButton('livre.html?doc=aides&public=' + pub, 'Imprimer les aides pour les élèves (' + pub + ')'), tr.querySelector(':scope > summary').nextSibling);
+          });
+        }
+      });
       var h = ''; try { h = decodeURIComponent(location.hash.slice(1)); } catch (e) { }
       var start = links.filter(function (l) { return l.getAttribute('data-p') === h; })[0];
       if (start) { openAncestors(start); v.removeAttribute('srcdoc'); v.src = start.getAttribute('href'); opened(start); }

@@ -9,7 +9,9 @@
 <script>
 /* Thème adulte/enfant : ajouté ici pour garder l'ordre habituel des feuilles de style (base, thème, contenu). */
 (function () {
-  var enfant = new URLSearchParams(location.search).get('public') === 'Enfants';
+  var q = new URLSearchParams(location.search), d = q.get('doc');
+  if (d === 'placement' || d === 'enseignant') { return; } // documents mixtes (adultes et enfants) : thèmes appliqués section par section par js/livre.js
+  var enfant = q.get('public') === 'Enfants';
   var l = document.createElement('link');
   l.rel = 'stylesheet';
   l.href = 'css/theme-' + (enfant ? 'enfant' : 'adulte') + '.css';

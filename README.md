@@ -13,3 +13,13 @@ Sur la page d'accueil, sous chaque public d'un niveau, le bouton « Imprimer le 
 - **Textes** : ceux du niveau 4-2 se rattachent au cours cité dans leur introduction (« … (cours 26) »). Ceux du niveau 4-1 sont rattachés par la table `TEXTES` en tête de `js/livre.js`, à modifier si un texte change de cours. Un texte non rattaché est placé en fin de livre.
 - **Nouvelle page** : elle entre dans le livre dès qu'elle figure dans `index.html` (la liste des pages vient de l'index).
 - **Impression** : format A4, échelle 100 %, « En-têtes et pieds de page » décoché. Les numéros de page sont ajoutés par Chrome/Edge récents ; le sommaire n'en comporte pas.
+
+### Imprimer les documents (placement, enseignant, aides)
+
+Trois documents s'impriment aussi avec `livre.html`, depuis les boutons de la page d'accueil, sous le bloc concerné :
+
+- **Test de placement** (`livre.html?doc=placement`) : un seul document pour les adultes et les enfants, avec une rubrique « Adultes » puis une rubrique « Enfants ». Il contient les feuilles du candidat ; le corrigé reste réservé à l'enseignant et ne s'imprime pas (comme sur les pages).
+- **Aides à l'enseignant** (`livre.html?doc=enseignant`) : un seul document pour les adultes et les enfants (guides par niveau, mode d'emploi, fiche de préparation de séance).
+- **Aides pour les élèves** (`livre.html?doc=aides&public=Adultes` ou `Enfants`) : un document par public.
+
+Chaque page garde le thème de son public (sobre pour les adultes, coloré pour les enfants). Une nouvelle page entre dans le document dès qu'elle est présente dans le dossier `placement`, `guide-enseignant` ou `aides` du public.

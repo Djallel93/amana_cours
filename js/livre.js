@@ -1,5 +1,7 @@
-/* AMANA — livre imprimable d'un niveau.
+/* AMANA — livre imprimable d'un niveau, ou document imprimable (test de placement, guide enseignant, aides).
    Usage : livre.html?public=Adultes|Enfants&niveau=niveau-3[&tranche=9-11]
+           livre.html?doc=placement | enseignant            (un seul document pour adultes ET enfants)
+           livre.html?doc=aides&public=Adultes|Enfants      (un document par public)
 
    Le livre réunit, pour un niveau et un public : cours, textes de lecture, exercices, révisions et vocabulaire.
    Il EXCLUT tout ce qui est réservé à l'enseignant ou à l'évaluation : guide enseignant, test de placement,
@@ -10,6 +12,10 @@
    récupérée, nettoyée, puis assemblée. Les identifiants sont préfixés, les liens entre pages deviennent des
    liens internes au livre, et les <style> propres à une page sont limités à cette page.
    Nécessite un serveur HTTP (voir serve.sh) : fetch() ne fonctionne pas depuis file://.
+
+   Documents : mêmes pages, même nettoyage, mais le contenu est celui d'un dossier (placement, guide-enseignant,
+   aides), page après page. Dans un document mixte (adultes et enfants), chaque page garde l'apparence de son
+   public : les feuilles de style de chaque public sont limitées aux sections de ce public.
 
    Ordre du livre : pour chaque cours, le cours, puis ses textes, puis ses exercices ; ensuite les révisions,
    puis le vocabulaire. Un exercice suit le cours qui renvoie vers lui (au niveau 2, chaque partie A/B/C d'un
@@ -67,14 +73,26 @@
   var DOSSIERS_TRANCHE = ['cours', 'exercices'];
   var DOSSIERS_COMMUNS = ['textes', 'vocabulaire', 'revisions'];
   var LIBELLES = { cours: 'Cours', texte: 'Texte', exercices: 'Exercices', revision: 'Révision', vocabulaire: 'Vocabulaire' };
+  /* Documents : dossier regroupé ; « mixte » = un seul document pour les adultes ET les enfants. */
+  var DOCS = {
+    placement: { dossier: 'placement', mixte: true, note: 'Test de départ : feuilles du candidat (le corrigé reste réservé à l’enseignant).' },
+    enseignant: { dossier: 'guide-enseignant', mixte: true, note: 'Documents à l’usage des enseignants.' },
+    aides: { dossier: 'aides', mixte: false, note: 'Pages de référence pour l’élève.' }
+  };
 
   /* ================= Paramètres ================= */
 
   var params = new URLSearchParams(location.search);
   var book = { pub: params.get('public') || '', niveau: params.get('niveau') || '', tranche: params.get('tranche') || '' };
-  var valid = /^(Adultes|Enfants)$/.test(book.pub) && /^niveau-[A-Za-z0-9-]+$/.test(book.niveau) && /^(\d+-\d+)?$/.test(book.tranche);
+  var docName = params.get('doc') || '';
+  var isDoc = docName !== '';
+  var docDef = Object.prototype.hasOwnProperty.call(DOCS, docName) ? DOCS[docName] : null;
+  var valid = isDoc
+    ? !!docDef && (docDef.mixte || /^(Adultes|Enfants)$/.test(book.pub))
+    : /^(Adultes|Enfants)$/.test(book.pub) && /^niveau-[A-Za-z0-9-]+$/.test(book.niveau) && /^(\d+-\d+)?$/.test(book.tranche);
+  var mixed = isDoc && !!docDef && docDef.mixte;
   var theme = book.pub === 'Enfants' ? 'enfant' : 'adulte';
-  var bookKey = book.pub + '/' + book.niveau + (book.tranche ? '/' + book.tranche : '');
+  var bookKey = isDoc ? 'doc:' + docName + (mixed ? '' : '/' + book.pub) : book.pub + '/' + book.niveau + (book.tranche ? '/' + book.tranche : '');
   var ROOT = new URL('.', location.href);
 
   var el = {
@@ -157,6 +175,13 @@
     else { return null; }
     var num = (file.match(/^(\d+)/) || [])[1] || '';
     return { path: path, cat: cat, file: file, base: file.replace(/\.html$/, ''), num: num };
+  }
+
+  /* Document : toutes les pages du dossier (placement, guide-enseignant, aides) du ou des public(s) concerné(s). */
+  function classifyDoc(path) {
+    var m = path.match(/^(Adultes|Enfants)\/([^/]+)\/([^/]+\.html)$/);
+    if (!m || m[2] !== docDef.dossier || (!docDef.mixte && m[1] !== book.pub)) { return null; }
+    return { path: path, cat: 'doc', pub: m[1], file: m[3], base: m[3].replace(/\.html$/, ''), num: '' };
   }
 
   /* ================= Nettoyage d'une page ================= */
@@ -289,34 +314,68 @@
     return { seq: seq, by: by };
   }
 
+  /* Document : les pages de chaque public dans l'ordre des fichiers ; un séparateur par public s'il y en a deux. */
+  function planDoc(pages) {
+    var seq = [];
+    (docDef.mixte ? ['Adultes', 'Enfants'] : [book.pub]).forEach(function (pub) {
+      var list = pages.filter(function (p) { return p.pub === pub; }).sort(natural);
+      if (!list.length) { return; }
+      if (docDef.mixte) { seq.push({ divider: pub }); }
+      list.forEach(function (p) { seq.push({ kind: 'doc', page: p }); });
+    });
+    return { seq: seq };
+  }
+
   /* ================= Construction des sections ================= */
 
-  /* Limite chaque règle CSS d'un <style> de page à la section de cette page. */
-  function scopeSelector(list, scope) {
-    return list.split(',').map(function (s) {
-      s = s.trim();
-      return /^(html|body|:root)$/.test(s) ? scope : scope + ' ' + s.replace(/^(html|body)\s+/, '');
-    }).join(', ');
+  /* Limite chaque règle CSS à une portée : la section d'une page (pour son <style>), ou les sections d'un public
+     (documents mixtes). « html », « body » et « :root » deviennent la portée elle-même ; « body.enfant » et
+     « body.adulte » ne valent que pour ce public (aud) et sont ignorés pour l'autre. */
+  function scopeSelector(list, scope, aud) {
+    var out = [];
+    list.split(',').forEach(function (sel) {
+      sel = sel.trim();
+      var m = sel.match(/^(?:html|body|:root)((?:\.[\w-]+)*)(?![\w-])/);
+      if (!m) { out.push(scope + ' ' + sel); return; }
+      var other = m[1].split('.').filter(function (c) { return (c === 'enfant' || c === 'adulte') && c !== aud; });
+      if (!other.length) { out.push(scope + sel.slice(m[0].length)); }
+    });
+    return out.join(', ');
   }
-  function rulesToText(rules, scope) {
+  function rulesToText(rules, scope, aud) {
     var out = '';
     for (var i = 0; i < rules.length; i++) {
       var r = rules[i];
-      if (r.type === 1) { out += scopeSelector(r.selectorText, scope) + ' { ' + r.style.cssText + ' }\n'; }
-      else if (r.type === 4) { out += '@media ' + r.media.mediaText + ' {\n' + rulesToText(r.cssRules, scope) + '}\n'; }
+      if (r.type === 1) {
+        var sel = scopeSelector(r.selectorText, scope, aud);
+        if (sel) { out += sel + ' { ' + r.style.cssText + ' }\n'; }
+      } else if (r.type === 4) { out += '@media ' + r.media.mediaText + ' {\n' + rulesToText(r.cssRules, scope, aud) + '}\n'; }
       else { out += r.cssText + '\n'; }
     }
     return out;
   }
-  function scopeCss(text, scope) {
+  function scopeCss(text, scope, aud) {
     var st = document.createElement('style');
     st.media = 'not all';
     st.textContent = text;
     document.head.appendChild(st);
     var out = '';
-    try { out = rulesToText(st.sheet.cssRules, scope); } catch (e) { warnings.push('Style de page ignoré : ' + e.message); }
+    try { out = rulesToText(st.sheet.cssRules, scope, aud); } catch (e) { warnings.push('Style de page ignoré : ' + e.message); }
     document.head.removeChild(st);
     return out;
+  }
+
+  /* Documents mixtes : les feuilles de style de chaque public (base, thème, contenu, dans l'ordre habituel des pages)
+     sont limitées aux sections de ce public, pour que adultes et enfants gardent chacun leur apparence. */
+  function injectThemes() {
+    return Promise.all(['adulte', 'enfant'].map(function (aud) {
+      return Promise.all(['css/amana-base.css', 'css/theme-' + aud + '.css', 'css/amana-content.css'].map(getText)).then(function (css) {
+        var st = document.createElement('style');
+        st.setAttribute('data-bk-theme', aud);
+        st.textContent = css.map(function (t) { return scopeCss(t, '[data-th="' + aud + '"]', aud); }).join('\n');
+        document.head.appendChild(st);
+      });
+    }));
   }
 
   function prefixList(value, prefix) {
@@ -329,6 +388,7 @@
     sec.id = id;
     sec.className = 'bk-page bk-' + item.kind;
     sec.setAttribute('data-bk', id);
+    if (mixed) { sec.setAttribute('data-th', page.pub === 'Enfants' ? 'enfant' : 'adulte'); }
     sec.setAttribute('data-source', page.path + (item.part ? '#' + item.part : ''));
     var nodes = item.part ? partNodes(page, item.part) : [].slice.call(page.box.childNodes);
     nodes.forEach(function (nd) { sec.appendChild(document.importNode(nd, true)); });
@@ -379,23 +439,16 @@
     return parts.length < 2 ? parts.join('') : parts.slice(0, -1).join(', ') + ' et ' + parts[parts.length - 1];
   }
 
-  function buildCover(level, by) {
-    var title = level.title, sub = level.sub;
-    var pub = book.pub + (book.tranche ? ' · ' + book.tranche.replace('-', '–') + ' ans' : '');
-    var contenu = ['cours'];
-    if (by.textes.length) { contenu.push('textes de lecture'); }
-    contenu.push('exercices');
-    if (by.revisions.length) { contenu.push('révisions'); }
-    if (by.vocabulaire.length) { contenu.push('vocabulaire'); }
+  function buildCover(spec) {
     var s = document.createElement('section');
     s.className = 'bk-cover';
     s.innerHTML = '<img class="bk-logo" src="images/amana-logo.jpg" alt="Logo de l’association AMANA">' +
-      '<p class="bk-assoc">AMANA — Cours d’arabe</p><h1></h1>' + (sub ? '<p class="bk-sous"></p>' : '') +
+      '<p class="bk-assoc">AMANA — Cours d’arabe</p><h1></h1>' + (spec.sub ? '<p class="bk-sous"></p>' : '') +
       '<p class="bk-public"></p><p class="bk-note"></p>';
-    s.querySelector('h1').textContent = title;
-    if (sub) { s.querySelector('.bk-sous').innerHTML = sub; }
-    s.querySelector('.bk-public').textContent = pub;
-    s.querySelector('.bk-note').textContent = 'Livre de l’élève : ' + listFr(contenu) + '.';
+    s.querySelector('h1').textContent = spec.title;
+    if (spec.sub) { s.querySelector('.bk-sous').innerHTML = spec.sub; }
+    s.querySelector('.bk-public').textContent = spec.pub;
+    s.querySelector('.bk-note').textContent = spec.note;
     return s;
   }
 
@@ -425,11 +478,13 @@
       if (!ol) { openList(null); }
       var li = document.createElement('li'), a = document.createElement('a');
       a.href = '#' + e.id;
-      var t = document.createElement('span');
-      t.className = 'bk-type';
-      t.textContent = LIBELLES[e.kind];
-      a.appendChild(t);
-      a.appendChild(document.createTextNode(' '));
+      if (LIBELLES[e.kind]) {
+        var t = document.createElement('span');
+        t.className = 'bk-type';
+        t.textContent = LIBELLES[e.kind];
+        a.appendChild(t);
+        a.appendChild(document.createTextNode(' '));
+      }
       a.appendChild(e.label);
       li.appendChild(a);
       ol.appendChild(li);
@@ -451,7 +506,8 @@
 
   function main() {
     if (!valid) { fail('Livre inconnu : paramètres invalides.'); return Promise.resolve(); }
-    document.body.classList.add(theme);
+    if (!mixed) { document.body.classList.add(theme); } // document mixte : thème appliqué section par section
+
     if (book.tranche) { document.body.classList.add('tranche-' + book.tranche); }
     setStatus('Lecture de l’index…');
 
@@ -459,7 +515,7 @@
       var idx = new DOMParser().parseFromString(html, 'text/html');
       var pages = [], seen = {}, level = { title: book.niveau, sub: '' };
       [].forEach.call(idx.querySelectorAll('a[data-p]'), function (a) {
-        var p = classify(a.getAttribute('data-p'));
+        var p = (isDoc ? classifyDoc : classify)(a.getAttribute('data-p'));
         if (!p || seen[p.path]) { return; }
         seen[p.path] = true;
         pages.push(p);
@@ -471,15 +527,17 @@
           level = cut === -1 ? { title: norm(c.textContent), sub: '' } : { title: norm(txt.slice(0, cut)), sub: txt.slice(cut + 3) };
         }
       });
-      if (!pages.some(function (p) { return p.cat === 'cours'; })) { throw new Error('Aucun cours trouvé pour ce livre (' + bookKey + ').'); }
-      el.nom.textContent = level.title + ' — ' + book.pub + (book.tranche ? ' ' + book.tranche.replace('-', '–') + ' ans' : '');
+      if (isDoc ? !pages.length : !pages.some(function (p) { return p.cat === 'cours'; })) { throw new Error('Aucune page trouvée pour ce livre (' + bookKey + ').'); }
+      el.nom.textContent = level.title + ' — ' + (mixed ? 'Adultes et enfants' : book.pub + (book.tranche ? ' ' + book.tranche.replace('-', '–') + ' ans' : ''));
       document.title = 'AMANA — ' + el.nom.textContent;
       return pool(pages, 8, function (p) {
         return getText(p.path).then(function (h) { prepare(p, h); });
       }).then(function () { return { pages: pages, level: level }; });
     }).then(function (ctx) {
+      return (mixed ? injectThemes() : Promise.resolve()).then(function () { return ctx; });
+    }).then(function (ctx) {
       setStatus('Assemblage du livre…');
-      var pl = plan(ctx.pages), frag = document.createDocumentFragment(), entries = [], sources = [];
+      var pl = isDoc ? planDoc(ctx.pages) : plan(ctx.pages), frag = document.createDocumentFragment(), entries = [], sources = [];
       var lastCours = null;
       pl.seq.forEach(function (item) {
         if (item.divider) { lastCours = null; frag.appendChild(buildDivider(item)); entries.push({ divider: item.divider }); return; }
@@ -496,7 +554,22 @@
       entries.forEach(function (e) {
         if (e.kind === 'exercices' && e.cours && titles[e.titre] > 1) { e.label.appendChild(document.createTextNode(' — ' + norm(e.cours.textContent))); }
       });
-      var cover = buildCover(ctx.level, pl.by), toc = buildToc(entries);
+      var spec;
+      if (isDoc) {
+        spec = { title: ctx.level.title, sub: '', pub: mixed ? 'Adultes et enfants' : book.pub, note: docDef.note };
+      } else {
+        var contenu = ['cours'];
+        if (pl.by.textes.length) { contenu.push('textes de lecture'); }
+        contenu.push('exercices');
+        if (pl.by.revisions.length) { contenu.push('révisions'); }
+        if (pl.by.vocabulaire.length) { contenu.push('vocabulaire'); }
+        spec = {
+          title: ctx.level.title, sub: ctx.level.sub,
+          pub: book.pub + (book.tranche ? ' · ' + book.tranche.replace('-', '–') + ' ans' : ''),
+          note: 'Livre de l’élève : ' + listFr(contenu) + '.'
+        };
+      }
+      var cover = buildCover(spec), toc = buildToc(entries);
       el.host.appendChild(cover);
       el.host.appendChild(toc);
       el.host.appendChild(frag);

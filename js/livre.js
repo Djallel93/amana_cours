@@ -71,6 +71,7 @@
   var EXCLUS = ['revisions/bilan.html', 'vocabulaire/index.html'];
   /* Dossiers propres à une tranche d'âge (cours, exercices) ou communs à tout le niveau. */
   var DOSSIERS_TRANCHE = ['cours', 'exercices'];
+  /* Les révisions sont communes au niveau (revisions/) ou propres à une tranche d'âge (9-11/revisions/). */
   var DOSSIERS_COMMUNS = ['textes', 'vocabulaire', 'revisions'];
   var LIBELLES = { cours: 'Cours', texte: 'Texte', exercices: 'Exercices', revision: 'Révision', vocabulaire: 'Vocabulaire' };
   /* Documents : dossier regroupé ; « mixte » = un seul document pour les adultes ET les enfants. */
@@ -171,7 +172,7 @@
     var cat = rest[0], file = rest[1];
     if (EXCLUS.indexOf(cat + '/' + file) !== -1) { return null; }
     if (DOSSIERS_TRANCHE.indexOf(cat) !== -1) { if (tr !== book.tranche) { return null; } }
-    else if (DOSSIERS_COMMUNS.indexOf(cat) !== -1) { if (tr) { return null; } }
+    else if (DOSSIERS_COMMUNS.indexOf(cat) !== -1) { if (tr && !(cat === 'revisions' && tr === book.tranche)) { return null; } }
     else { return null; }
     var num = (file.match(/^(\d+)/) || [])[1] || '';
     return { path: path, cat: cat, file: file, base: file.replace(/\.html$/, ''), num: num };

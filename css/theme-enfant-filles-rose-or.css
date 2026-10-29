@@ -1,0 +1,12 @@
+/* Thème ENFANT · FILLES · « Rose & Or » (niveau 3) : rose, filets dorés, titres en Amiri.
+   Redéfinit seulement les variables de theme-enfant.css ; chargé par js/genre.js quand l'adresse porte ?genre=filles. */
+:root.filles-rose-or {
+  --accent: #a3265b; --soft: #fbe7ef; --line: #d9a441; --radius: 10px;
+  --accent2: #7a560f; --glyph: #a3265b;
+  --intro-bg: #fbe7ef; --intro-line: #d9a441; --tip-bg: #fbf0d2; --tip-line: #d9a441;
+  --ph-bg: #fbf0d2; --ph-line: #d9a441;
+  --c-rule: #a3265b; --c-example: #7a560f; --c-info: #5b3fa0; --c-warn: #b42318; --c-note: #a3265b; --c-exo: #a3265b;
+  --lbl-intro: "✦"; --lbl-tip: "❖"; --lbl-rule: "✦ Règle"; --lbl-example: "❖ Exemple"; --lbl-info: "✦ Information"; --lbl-warn: "⚠ Attention";
+}
+:root.filles-rose-or h1, :root.filles-rose-or h2 { font-family: var(--ar); }
+:root.filles-rose-or body:not(.livre) .container { border-top: 6px double var(--line); }

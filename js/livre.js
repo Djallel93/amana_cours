@@ -1,5 +1,5 @@
 /* AMANA — livre imprimable d'un niveau, ou document imprimable (test de placement, guide enseignant, aides).
-   Usage : livre.html?public=Adultes|Enfants&niveau=niveau-3[&tranche=9-11]
+   Usage : livre.html?public=Adultes|Enfants&niveau=niveau-3[&tranche=9-11][&genre=filles|garcons]
            livre.html?doc=placement | enseignant            (un seul document pour adultes ET enfants)
            livre.html?doc=aides&public=Adultes|Enfants      (un document par public)
 
@@ -69,10 +69,11 @@
   /* Pages jamais incluses, même si leur dossier l'est : « bilan » est une évaluation ; l'index du vocabulaire
      n'a de sens qu'à l'écran (le livre reprend les pages de séance, une par une). */
   var EXCLUS = ['revisions/bilan.html', 'vocabulaire/index.html'];
-  /* Dossiers propres à une tranche d'âge (cours, exercices) ou communs à tout le niveau. */
-  var DOSSIERS_TRANCHE = ['cours', 'exercices'];
-  /* Les révisions sont communes au niveau (revisions/) ou propres à une tranche d'âge (9-11/revisions/). */
-  var DOSSIERS_COMMUNS = ['textes', 'vocabulaire', 'revisions'];
+  /* Dossiers repris dans un livre. Les pages des enfants sont rangées par tranche d'âge :
+     Enfants/<tranche>-ans/<niveau>/<dossier>/. Les textes et le vocabulaire du niveau 4-1, communs aux deux
+     tranches (9-11 et 12-15 ans), sont dans Enfants/9-15-ans/niveau-4-1/. */
+  var DOSSIERS = ['cours', 'exercices', 'textes', 'revisions', 'vocabulaire'];
+  var DOSSIERS_PARTAGES = ['textes', 'vocabulaire'];
   var LIBELLES = { cours: 'Cours', texte: 'Texte', exercices: 'Exercices', revision: 'Révision', vocabulaire: 'Vocabulaire' };
   /* Documents : dossier regroupé ; « mixte » = un seul document pour les adultes ET les enfants. */
   var DOCS = {
@@ -84,13 +85,20 @@
   /* ================= Paramètres ================= */
 
   var params = new URLSearchParams(location.search);
-  var book = { pub: params.get('public') || '', niveau: params.get('niveau') || '', tranche: params.get('tranche') || '' };
+  var book = { pub: params.get('public') || '', niveau: params.get('niveau') || '', tranche: params.get('tranche') || '', genre: params.get('genre') || '' };
   var docName = params.get('doc') || '';
   var isDoc = docName !== '';
   var docDef = Object.prototype.hasOwnProperty.call(DOCS, docName) ? DOCS[docName] : null;
   var valid = isDoc
     ? !!docDef && (docDef.mixte || /^(Adultes|Enfants)$/.test(book.pub))
     : /^(Adultes|Enfants)$/.test(book.pub) && /^niveau-[A-Za-z0-9-]+$/.test(book.niveau) && /^(\d+-\d+)?$/.test(book.tranche);
+  /* Garçons / filles : mêmes pages, apparence différente (js/genre.js). Seulement pour les enfants, aux niveaux 1 à 3
+     et pour les aides ; sans ce paramètre, apparence d'origine. */
+  if (book.genre !== '') {
+    valid = valid && /^(filles|garcons)$/.test(book.genre) && book.pub === 'Enfants' &&
+      (isDoc ? docName === 'aides' : /^niveau-[123]$/.test(book.niveau));
+  }
+  var genreLabel = book.genre === 'filles' ? ' · Filles' : (book.genre === 'garcons' ? ' · Garçons' : '');
   var mixed = isDoc && !!docDef && docDef.mixte;
   var theme = book.pub === 'Enfants' ? 'enfant' : 'adulte';
   var bookKey = isDoc ? 'doc:' + docName + (mixed ? '' : '/' + book.pub) : book.pub + '/' + book.niveau + (book.tranche ? '/' + book.tranche : '');
@@ -162,18 +170,22 @@
 
   /* ================= Choix des pages ================= */
 
+  /* Adultes/<niveau>/<dossier>/<page>.html  ou  Enfants/<tranche>-ans/<niveau>/<dossier>/<page>.html */
   function classify(path) {
-    var base = book.pub + '/' + book.niveau + '/';
-    if (path.indexOf(base) !== 0 || !/\.html$/.test(path)) { return null; }
-    var rest = path.slice(base.length).split('/');
-    var tr = '';
-    if (/^\d+-\d+$/.test(rest[0])) { tr = rest.shift(); }
-    if (rest.length !== 2) { return null; }
-    var cat = rest[0], file = rest[1];
-    if (EXCLUS.indexOf(cat + '/' + file) !== -1) { return null; }
-    if (DOSSIERS_TRANCHE.indexOf(cat) !== -1) { if (tr !== book.tranche) { return null; } }
-    else if (DOSSIERS_COMMUNS.indexOf(cat) !== -1) { if (tr && !(cat === 'revisions' && tr === book.tranche)) { return null; } }
-    else { return null; }
+    if (!/\.html$/.test(path)) { return null; }
+    var rest = path.split('/'), age = '';
+    if (rest[0] !== book.pub) { return null; }
+    if (book.pub === 'Enfants') {
+      var m = rest[1] && rest[1].match(/^(\d+-\d+)-ans$/);
+      if (!m || rest.length !== 5) { return null; }
+      age = m[1];
+      rest.splice(1, 1);
+    } else if (rest.length !== 4) { return null; }
+    if (rest[1] !== book.niveau) { return null; }
+    var cat = rest[2], file = rest[3];
+    if (EXCLUS.indexOf(cat + '/' + file) !== -1 || DOSSIERS.indexOf(cat) === -1) { return null; }
+    /* Un livre à tranche d'âge ne reprend que son dossier, plus les dossiers communs aux deux tranches. */
+    if (book.tranche && age !== book.tranche && !(age === '9-15' && DOSSIERS_PARTAGES.indexOf(cat) !== -1)) { return null; }
     var num = (file.match(/^(\d+)/) || [])[1] || '';
     return { path: path, cat: cat, file: file, base: file.replace(/\.html$/, ''), num: num };
   }
@@ -529,7 +541,7 @@
         }
       });
       if (isDoc ? !pages.length : !pages.some(function (p) { return p.cat === 'cours'; })) { throw new Error('Aucune page trouvée pour ce livre (' + bookKey + ').'); }
-      el.nom.textContent = level.title + ' — ' + (mixed ? 'Adultes et enfants' : book.pub + (book.tranche ? ' ' + book.tranche.replace('-', '–') + ' ans' : ''));
+      el.nom.textContent = level.title + ' — ' + (mixed ? 'Adultes et enfants' : book.pub + genreLabel + (book.tranche ? ' ' + book.tranche.replace('-', '–') + ' ans' : ''));
       document.title = 'AMANA — ' + el.nom.textContent;
       return pool(pages, 8, function (p) {
         return getText(p.path).then(function (h) { prepare(p, h); });
@@ -557,7 +569,7 @@
       });
       var spec;
       if (isDoc) {
-        spec = { title: ctx.level.title, sub: '', pub: mixed ? 'Adultes et enfants' : book.pub, note: docDef.note };
+        spec = { title: ctx.level.title, sub: '', pub: mixed ? 'Adultes et enfants' : book.pub + genreLabel, note: docDef.note };
       } else {
         var contenu = ['cours'];
         if (pl.by.textes.length) { contenu.push('textes de lecture'); }
@@ -566,7 +578,7 @@
         if (pl.by.vocabulaire.length) { contenu.push('vocabulaire'); }
         spec = {
           title: ctx.level.title, sub: ctx.level.sub,
-          pub: book.pub + (book.tranche ? ' · ' + book.tranche.replace('-', '–') + ' ans' : ''),
+          pub: book.pub + genreLabel + (book.tranche ? ' · ' + book.tranche.replace('-', '–') + ' ans' : ''),
           note: 'Livre de l’élève : ' + listFr(contenu) + '.'
         };
       }

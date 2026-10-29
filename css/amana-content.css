@@ -41,17 +41,17 @@ td .arabic, th .arabic { white-space: nowrap; }
 
 /* variante enfant : mêmes composants, formes plus arrondies et repères visuels */
 body.enfant .rule-box, body.enfant .example-box, body.enfant .info-box, body.enfant .warning-box { border-width: 2px; padding: 8px 16px 10px; }
-body.enfant .rule-box { --c: #0d9488; } body.enfant .rule-box::before { content: "💡 Règle"; }
-body.enfant .example-box { --c: #f59e0b; } body.enfant .example-box::before { content: "🌟 Exemple"; }
-body.enfant .info-box { --c: #2563eb; } body.enfant .info-box::before { content: "🔍 Information"; }
-body.enfant .warning-box { --c: #dc2626; } body.enfant .warning-box::before { content: "⚠️ Attention"; }
-body.enfant .note { border-left-color: #db2777; }
-body.enfant .highlight { border-bottom-color: #f59e0b; color: inherit; }
+body.enfant .rule-box { --c: var(--c-rule); } body.enfant .rule-box::before { content: var(--lbl-rule); }
+body.enfant .example-box { --c: var(--c-example); } body.enfant .example-box::before { content: var(--lbl-example); }
+body.enfant .info-box { --c: var(--c-info); } body.enfant .info-box::before { content: var(--lbl-info); }
+body.enfant .warning-box { --c: var(--c-warn); } body.enfant .warning-box::before { content: var(--lbl-warn); }
+body.enfant .note { border-left-color: var(--c-note); }
+body.enfant .highlight { border-bottom-color: var(--c-example); color: inherit; }
 body.enfant .phrase-example, body.enfant .example-item { border-width: 2px; }
-body.enfant .exercise { border: 2px dashed #db2777; border-radius: var(--radius); padding: 10px 16px; }
-body.enfant .exercise h3 { color: #db2777; }
-body.enfant .section-number { background: #1d4ed8; }
-body.enfant .question { border-left-color: #0d9488; }
+body.enfant .exercise { border: 2px dashed var(--c-exo); border-radius: var(--radius); padding: 10px 16px; }
+body.enfant .exercise h3 { color: var(--c-exo); }
+body.enfant .section-number { background: var(--accent2); }
+body.enfant .question { border-left-color: var(--c-rule); }
 body.enfant .answer-space { border-bottom-style: dashed; }
 body.enfant th, body.enfant .table-wrapper th, body.enfant .container > table th { border-bottom-width: 3px; }
 
@@ -78,7 +78,7 @@ body.enfant th, body.enfant .table-wrapper th, body.enfant .container > table th
 .texte hr.sep { border: 0; border-top: 1px dashed var(--line); margin: 1.2em 0; }
 body.enfant .texte { font-size: 1.9rem; }
 body.enfant .texte .rep { background: var(--soft); border: 2px solid var(--line); border-radius: var(--radius); padding: 2px 14px; margin: 8px 0; }
-body.enfant .texte .loc { color: #1d4ed8; }
+body.enfant .texte .loc { color: var(--accent2); }
 
 /* vocabulaire : une page par séance + un index */
 .vocab-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 12px 0 6px; font-size: .85rem; color: var(--mut); }

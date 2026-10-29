@@ -1,0 +1,12 @@
+/* Thème ENFANT · FILLES · « Jardin » (niveaux 1 et 2, aides) : rose et menthe, formes très arrondies.
+   Redéfinit seulement les variables de theme-enfant.css ; chargé par js/genre.js quand l'adresse porte ?genre=filles. */
+:root.filles-jardin {
+  --accent: #b8336a; --soft: #ffe4ee; --line: #f2a9c4; --radius: 22px;
+  --accent2: #176650; --glyph: #b8336a;
+  --intro-bg: #ffe4ee; --intro-line: #f2a9c4; --tip-bg: #ddf3ea; --tip-line: #9ad7be;
+  --ph-bg: #fff0f6; --ph-line: #e58bb0;
+  --c-rule: #b8336a; --c-example: #176650; --c-info: #6b46a8; --c-warn: #b42318; --c-note: #b8336a; --c-exo: #b8336a;
+  --lbl-intro: "🌸"; --lbl-tip: "🌼"; --lbl-rule: "🌷 Règle"; --lbl-example: "🦋 Exemple"; --lbl-info: "🔍 Information"; --lbl-warn: "⚠️ Attention";
+}
+/* Frise de pointillés en haut de page (une bordure s'imprime même sans les arrière-plans). */
+:root.filles-jardin body:not(.livre) .container { border-top: 8px dotted var(--line); }

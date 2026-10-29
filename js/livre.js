@@ -10,7 +10,7 @@
 
    Principe : la liste des pages vient de index.html (aucune liste à maintenir ici) ; chaque page est
    récupérée, nettoyée, puis assemblée. Les identifiants sont préfixés, les liens entre pages deviennent des
-   liens internes au livre, et les <style> propres à une page sont limités à cette page.
+   liens internes au livre, et les règles propres à une page (<style> ou feuille css/page-*.css) sont limitées à cette page.
    Nécessite un serveur HTTP (voir serve.sh) : fetch() ne fonctionne pas depuis file://.
 
    Documents : mêmes pages, même nettoyage, mais le contenu est celui d'un dossier (placement, guide-enseignant,
@@ -70,10 +70,10 @@
      n'a de sens qu'à l'écran (le livre reprend les pages de séance, une par une). */
   var EXCLUS = ['revisions/bilan.html', 'vocabulaire/index.html'];
   /* Dossiers repris dans un livre. Les pages des enfants sont rangées par tranche d'âge :
-     Enfants/<tranche>-ans/<niveau>/<dossier>/. Les textes et le vocabulaire du niveau 4-1, communs aux deux
-     tranches (9-11 et 12-15 ans), sont dans Enfants/9-15-ans/niveau-4-1/. */
+     Enfants/<tranche>-ans/<niveau>/<dossier>/. Les textes et le vocabulaire du niveau 4-1, communs aux adultes et
+     aux deux tranches d'âge des enfants, n'existent qu'une fois : Commun/niveau-4-1/<dossier>/. */
   var DOSSIERS = ['cours', 'exercices', 'textes', 'revisions', 'vocabulaire'];
-  var DOSSIERS_PARTAGES = ['textes', 'vocabulaire'];
+  var DOSSIERS_COMMUNS = ['textes', 'vocabulaire'];
   var LIBELLES = { cours: 'Cours', texte: 'Texte', exercices: 'Exercices', revision: 'Révision', vocabulaire: 'Vocabulaire' };
   /* Documents : dossier regroupé ; « mixte » = un seul document pour les adultes ET les enfants. */
   var DOCS = {
@@ -170,22 +170,27 @@
 
   /* ================= Choix des pages ================= */
 
-  /* Adultes/<niveau>/<dossier>/<page>.html  ou  Enfants/<tranche>-ans/<niveau>/<dossier>/<page>.html */
+  /* Adultes/<niveau>/<dossier>/<page>.html, Enfants/<tranche>-ans/<niveau>/<dossier>/<page>.html
+     ou Commun/<niveau>/<dossier>/<page>.html (pages communes aux deux publics) */
   function classify(path) {
     if (!/\.html$/.test(path)) { return null; }
-    var rest = path.split('/'), age = '';
-    if (rest[0] !== book.pub) { return null; }
-    if (book.pub === 'Enfants') {
-      var m = rest[1] && rest[1].match(/^(\d+-\d+)-ans$/);
-      if (!m || rest.length !== 5) { return null; }
-      age = m[1];
-      rest.splice(1, 1);
-    } else if (rest.length !== 4) { return null; }
+    var rest = path.split('/'), age = '', commun = rest[0] === 'Commun';
+    if (commun) {
+      if (rest.length !== 4 || DOSSIERS_COMMUNS.indexOf(rest[2]) === -1) { return null; }
+    } else {
+      if (rest[0] !== book.pub) { return null; }
+      if (book.pub === 'Enfants') {
+        var m = rest[1] && rest[1].match(/^(\d+-\d+)-ans$/);
+        if (!m || rest.length !== 5) { return null; }
+        age = m[1];
+        rest.splice(1, 1);
+      } else if (rest.length !== 4) { return null; }
+    }
     if (rest[1] !== book.niveau) { return null; }
     var cat = rest[2], file = rest[3];
     if (EXCLUS.indexOf(cat + '/' + file) !== -1 || DOSSIERS.indexOf(cat) === -1) { return null; }
-    /* Un livre à tranche d'âge ne reprend que son dossier, plus les dossiers communs aux deux tranches. */
-    if (book.tranche && age !== book.tranche && !(age === '9-15' && DOSSIERS_PARTAGES.indexOf(cat) !== -1)) { return null; }
+    /* Un livre à tranche d'âge ne reprend que son dossier, plus les pages communes (Commun/). */
+    if (book.tranche && !commun && age !== book.tranche) { return null; }
     var num = (file.match(/^(\d+)/) || [])[1] || '';
     return { path: path, cat: cat, file: file, base: file.replace(/\.html$/, ''), num: num };
   }
@@ -212,10 +217,17 @@
     var doc = new DOMParser().parseFromString(html, 'text/html');
     var box = doc.querySelector('.container') || doc.body;
     page.raw = box.textContent; // avant nettoyage : sert à lire « (cours N) » dans l'introduction des textes
-    page.styles = [].map.call(doc.querySelectorAll('style'), function (s) { return s.textContent; });
+    /* Règles propres à la page, dans l'ordre du document : ses <style> et ses feuilles css/page-*.css (la même feuille
+       sert à de nombreuses pages). Elles sont limitées à la section de la page, comme le <style> d'une page. */
+    var parts = [].map.call(doc.querySelectorAll('style, link[rel="stylesheet"]'), function (n) {
+      if (n.tagName === 'STYLE') { return n.textContent; }
+      var k = keyOf(n.getAttribute('href') || '', pageUrl(page));
+      return k && /(^|\/)css\/page-[^\/]+\.css$/.test(k.path) ? getText(k.path) : null;
+    }).filter(function (p) { return p !== null; });
     [].forEach.call(box.querySelectorAll('nav, script, style, link, .noprint, .corrige'), remove);
     if (page.cat === 'cours') { dropEvaluation(box); }
     page.box = box;
+    return Promise.all(parts).then(function (list) { page.styles = list; });
   }
 
   function isPartHeading(n) { return n.nodeType === 1 && n.tagName === 'H2' && n.classList.contains('part') && !!n.id; }
@@ -544,7 +556,7 @@
       el.nom.textContent = level.title + ' — ' + (mixed ? 'Adultes et enfants' : book.pub + genreLabel + (book.tranche ? ' ' + book.tranche.replace('-', '–') + ' ans' : ''));
       document.title = 'AMANA — ' + el.nom.textContent;
       return pool(pages, 8, function (p) {
-        return getText(p.path).then(function (h) { prepare(p, h); });
+        return getText(p.path).then(function (h) { return prepare(p, h); });
       }).then(function () { return { pages: pages, level: level }; });
     }).then(function (ctx) {
       return (mixed ? injectThemes() : Promise.resolve()).then(function () { return ctx; });

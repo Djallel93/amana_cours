@@ -1,0 +1,7 @@
+/* Révisions : parties, exercices en colonnes, textes
+   Feuille propre à certaines pages (liée dans leur <head>, à la place d'un bloc <style> répété). js/livre.js la charge aussi
+   et la limite à la page, comme un <style> de page. */
+.rev-part { margin-top: 1.8em; }
+.exo ol.cols { columns: 2; column-gap: 2em; }
+.exo ol.cols li { break-inside: avoid; }
+.texte { font-size: 1.5rem; }

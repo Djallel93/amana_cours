@@ -1,0 +1,9 @@
+/* Tableaux, encadrés et espaces de réponse
+   Feuille propre à certaines pages (liée dans leur <head>, à la place d'un bloc <style> répété). js/livre.js la charge aussi
+   et la limite à la page, comme un <style> de page. */
+.tbl .ar { font-size: 1.4em; line-height: 1.6; }
+.tbl th, .tbl td { text-align: left; }
+.tbl sup { font-size: .7em; }
+.box h4 { margin: .3em 0; }
+.answer-space.wide { width: 340px; }
+@media (max-width: 560px) { .answer-space.wide { width: 100%; } }

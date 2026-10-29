@@ -1,0 +1,4 @@
+/* Cours avec sources : bloc « Sources » en bas de page
+   Feuille propre à certaines pages (liée dans leur <head>, à la place d'un bloc <style> répété). js/livre.js la charge aussi
+   et la limite à la page, comme un <style> de page. */
+.sources{margin-top:2em;padding-top:.8em;border-top:1px solid #bbb;font-size:.85em}.sources h2{font-size:1.05em}.sources li{margin:.25em 0}sup a{text-decoration:none}

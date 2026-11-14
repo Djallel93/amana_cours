@@ -79,6 +79,9 @@ img { max-width: 100%; height: auto; }
 .corrige summary { cursor: pointer; font-weight: 600; }
 .score { border: 1px solid var(--ink); border-radius: var(--radius); padding: 6px 14px; display: inline-block; margin: 8px 0; }
 .tip { border-left: 3px solid var(--accent); padding: 2px 0 2px 12px; margin: 12px 0; }
+.lecture-ar { direction: rtl; text-align: right; font-family: var(--ar); font-size: 1.9rem; line-height: 2.1; margin: .3em 0 .5em; }
+.lecture-ar .ar { font-size: 1em; line-height: inherit; }
+.lecture-tr { color: var(--mut); font-size: .95rem; margin: .2em 0 .4em; }
 
 @media (max-width: 560px) { .lcard { flex-direction: column; text-align: center; } .lcard .glyph { border: 0; padding: 0; } .lgrid { grid-template-columns: repeat(4, 1fr); } }
 @media print {

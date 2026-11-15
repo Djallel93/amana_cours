@@ -1,0 +1,40 @@
+/* AMANA — jetons de présentation communs (couleurs de rôle, tailles de l'arabe, espacements).
+   À charger APRÈS amana-base.css et le thème, AVANT amana-components.css.
+   Ne redéfinit aucune variable existante (--ink, --mut, --line, --accent, --soft, --paper, --radius, --ar) :
+   les composants s'appuient dessus, donc les thèmes adulte, garçons et filles continuent de s'appliquer seuls.
+
+   PALETTE DE RÔLES (fixe, la même dans tous les cours et tous les thèmes) :
+     1 vert  = l'élément étudié (la particule, le mot, la terminaison du cours)
+     2 bleu  = l'élément qui lui est lié (le verbe qui suit, le complément, le second terme)
+     3 orange = le résultat, la réponse, ce qui change
+     4 rouge = la mise en garde, l'exception
+   La couleur n'est jamais seule : chaque rôle a aussi un style de cadre différent (plein, tirets, points, double),
+   ce qui reste lisible à l'impression en noir et blanc et pour les élèves qui distinguent mal les couleurs. */
+:root {
+  --role-1: #0f766e;
+  --role-2: #1d4ed8;
+  --role-3: #b53b0a;
+  --role-4: #b91c1c;
+  --role-teinte: 13%;            /* part de la couleur de rôle dans les fonds teintés */
+
+  /* échelle de l'arabe : s = dans un tableau ou une ligne, m = exemple, l = mot mis en avant, xl = particule d'une carte */
+  --ar-s: 1.3rem;
+  --ar-m: 1.75rem;
+  --ar-l: 2.1rem;
+  --ar-xl: 2.6rem;
+  --ar-interligne: 1.9;
+
+  /* espacements */
+  --sp-1: 4px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px; --sp-5: 24px;
+}
+/* enfants : un cran plus grand pour l'arabe */
+body.enfant { --ar-s: 1.5rem; --ar-m: 2.05rem; --ar-l: 2.5rem; --ar-xl: 3.1rem; }
+
+@media (max-width: 560px) {
+  :root { --ar-m: 1.55rem; --ar-l: 1.9rem; --ar-xl: 2.3rem; }
+  body.enfant { --ar-m: 1.8rem; --ar-l: 2.15rem; --ar-xl: 2.6rem; }
+}
+@media print {
+  :root { --ar-s: 14pt; --ar-m: 17pt; --ar-l: 20pt; --ar-xl: 24pt; }
+  body.enfant { --ar-s: 16pt; --ar-m: 19pt; --ar-l: 22pt; --ar-xl: 26pt; }
+}

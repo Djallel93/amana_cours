@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Composants de présentation — Adultes</title>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="stylesheet" href="../css/amana-base.css">
+<link rel="stylesheet" href="../css/theme-adulte.css">
+<link rel="stylesheet" href="../css/amana-tokens.css">
+<link rel="stylesheet" href="../css/amana-components.css">
+
+<script src="../js/outils-lecture.js" defer></script>
+</head>
+<body class="cours adulte">
+<header class="brand"><img class="brand-logo" src="../images/amana-logo.jpg" alt="Logo de l’association AMANA"><span class="brand-name">AMANA — Page de référence · Adultes</span></header>
+<div class="container">
+<h1>Composants de présentation</h1>
+<div class="intro">Cette page montre chaque composant du système de présentation commun, tel qu’il s’affiche pour les adultes. Elle ne fait pas partie des cours : elle sert de référence et de test visuel.</div>
+
+<h2>1. Couleurs de rôle et mot mis en évidence</h2>
+<p>Quatre couleurs, les mêmes dans tous les cours. Chaque rôle a aussi un cadre différent (plein, tirets, points, double), pour rester lisible en noir et blanc.</p>
+<div class="legende">
+<span class="legende-item" data-role="1">l’élément étudié</span>
+<span class="legende-item" data-role="2">l’élément lié</span>
+<span class="legende-item" data-role="3">le résultat</span>
+<span class="legende-item" data-role="4">la mise en garde</span>
+</div>
+<p class="paire-ar" style="font-size:var(--ar-l)"><span class="mot" data-role="1">ما</span> <span class="mot" data-role="2">كَتَبَ</span> الوَلَدُ</p>
+
+<h2>2. Cartes par notion, avec formule et exemples appariés</h2>
+<p>Chaque carte réunit la notion, sa formule et ses exemples : l’arabe est toujours accolé à sa traduction, et la phrase d’origine apparaît en petit dessous.</p>
+<div class="notions">
+<article class="notion" data-role="1">
+<header class="notion-tete"><span class="notion-mot">ما</span><div><h3 class="notion-titre">Négation du passé</h3><p class="notion-sous">Se place directement avant le verbe au passé</p></div></header>
+<div class="formule"><span class="formule-part" data-role="1">ما</span><span class="formule-plus">+</span><span class="formule-part" data-role="2">verbe au passé</span></div>
+<ol class="paires"><li class="paire"><p class="paire-ar"><span class="mot" data-role="1">ما</span> كَتَبَ الوَلَدُ</p><p class="paire-fr">Le garçon n'a pas écrit</p><p class="paire-analyse">Phrase affirmative : <span class="ar" lang="ar" dir="rtl">كَتَبَ الوَلَدُ</span> <span class="trad">→ Le garçon a écrit
+                   </span></p></li><li class="paire"><p class="paire-ar"><span class="mot" data-role="1">ما</span> كَتَبْتُ رِسَالَةً</p><p class="paire-fr">Je n'ai pas écrit de lettre</p><p class="paire-analyse">Phrase affirmative : <span class="ar" lang="ar" dir="rtl">كَتَبْتُ رِسَالَةً</span> <span class="trad">→ J'ai écrit une lettre
+                   </span></p></li><li class="paire"><p class="paire-ar"><span class="mot" data-role="1">ما</span> كَتَبْنَا الدَّرْسَ</p><p class="paire-fr">Nous n'avons pas écrit la leçon</p><p class="paire-analyse">Phrase affirmative : <span class="ar" lang="ar" dir="rtl">كَتَبْنَا الدَّرْسَ</span> <span class="trad">→ Nous avons écrit la leçon
+                   </span></p></li></ol>
+</article>
+<article class="notion" data-role="2">
+<header class="notion-tete"><span class="notion-mot">لا</span><div><h3 class="notion-titre">Négation du présent</h3><p class="notion-sous">Se place avant le verbe au présent</p></div></header>
+<div class="formule"><span class="formule-part" data-role="2">لا</span><span class="formule-plus">+</span><span class="formule-part" data-role="1">verbe au présent</span></div>
+<ol class="paires"><li class="paire"><p class="paire-ar"><span class="mot" data-role="2">لا</span> يَكْتُبُ الوَلَدُ</p><p class="paire-fr">Le garçon n'écrit pas</p><p class="paire-analyse">Phrase affirmative : <span class="ar" lang="ar" dir="rtl">يَكْتُبُ الوَلَدُ</span> <span class="trad">→ Le garçon écrit
+                   </span></p></li><li class="paire"><p class="paire-ar"><span class="mot" data-role="2">لا</span> أَكْتُبُ رِسَالَةً</p><p class="paire-fr">Je n'écris pas de lettre</p><p class="paire-analyse">Phrase affirmative : <span class="ar" lang="ar" dir="rtl">أَكْتُبُ رِسَالَةً</span> <span class="trad">→ J'écris une lettre
+                   </span></p></li><li class="paire"><p class="paire-ar"><span class="mot" data-role="2">لا</span> تَكْتُبِينَ</p><p class="paire-fr">Tu n'écris pas (f.)</p><p class="paire-analyse">Phrase affirmative : <span class="ar" lang="ar" dir="rtl">تَكْتُبِينَ</span> <span class="trad">→ Tu écris (f.)
+                   </span></p></li></ol>
+</article>
+</div>
+
+<h2>3. Une liste de paires, puis l’observation juste en dessous</h2>
+<ol class="paires"><li class="paire"><p class="paire-ar"><span class="ar" lang="ar" dir="rtl">مُهَنْدِسٌ الْمُهَنْدِسُ</span></p><p class="paire-fr">un ingénieur, l’ingénieur</p></li><li class="paire"><p class="paire-ar"><span class="ar" lang="ar" dir="rtl">خَبَّازٌ الْخَبَّازُ</span></p><p class="paire-fr">un boulanger, le boulanger</p></li><li class="paire"><p class="paire-ar"><span class="ar" lang="ar" dir="rtl">كَاتِبٌ الْكَاتِبُ</span></p><p class="paire-fr">un écrivain, l’écrivain</p></li><li class="paire"><p class="paire-ar"><span class="ar" lang="ar" dir="rtl">عَامِلٌ الْعَامِلُ</span></p><p class="paire-fr">un ouvrier, l’ouvrier</p></li><li class="paire"><p class="paire-ar"><span class="ar" lang="ar" dir="rtl">حَارِسٌ الْحَارِسُ</span></p><p class="paire-fr">un gardien, le gardien</p></li><li class="paire"><p class="paire-ar"><span class="ar" lang="ar" dir="rtl"><span class="mot" data-role="1">كِتَابٌ</span> الْكِتَابُ</span></p><p class="paire-fr">un livre, le livre</p></li><li class="paire"><p class="paire-ar"><span class="ar" lang="ar" dir="rtl">الْكِتَابُ الْجَدِيدُ</span></p><p class="paire-fr">le livre neuf</p></li></ol>
+<div class="observer"><p>L’observation reste collée à ce qu’elle commente : on la lit sans remonter, et elle prend la place des paragraphes séparés des anciens cours.</p></div>
+
+<h2>4. Dialogue</h2>
+<p>Même composant, avec un fond léger une réplique sur deux. Les numéros restent disponibles pour les consignes du type « ligne 3 ».</p>
+<ol class="paires dialogue"><li class="paire"><p class="paire-ar"><span class="ar" lang="ar" dir="rtl">هَلْ عِنْدَكَ سَمَكٌ؟</span></p><p class="paire-fr">As-tu du poisson ?</p></li><li class="paire"><p class="paire-ar"><span class="ar" lang="ar" dir="rtl">لَا، عِنْدِي لَحْمٌ وَخُبْزٌ.</span></p><p class="paire-fr">Non, j’ai de la viande et du pain.</p></li><li class="paire"><p class="paire-ar"><span class="ar" lang="ar" dir="rtl">أَيْنَ الْفَاكِهَةُ؟</span></p><p class="paire-fr">Où sont les fruits ?</p></li><li class="paire"><p class="paire-ar"><span class="ar" lang="ar" dir="rtl">الْفَاكِهَةُ فَوْقَ الطَّاوِلَةِ.</span></p><p class="paire-fr">Les fruits sont sur la table.</p></li><li class="paire"><p class="paire-ar"><span class="ar" lang="ar" dir="rtl">هَلِ التُّفَّاحُ كَبِيرٌ؟</span></p><p class="paire-fr">Les pommes sont-elles grosses ?</p></li><li class="paire"><p class="paire-ar"><span class="ar" lang="ar" dir="rtl">نَعَمْ، هُوَ كَبِيرٌ.</span></p><p class="paire-fr">Oui, elles sont grosses.</p></li></ol>
+<p>Sans numéros (liste d’exemples courts) :</p>
+<ol class="paires sans-num"><li class="paire"><p class="paire-ar"><span class="ar" lang="ar" dir="rtl">هَلْ عِنْدَكَ سَمَكٌ؟</span></p><p class="paire-fr">As-tu du poisson ?</p></li><li class="paire"><p class="paire-ar"><span class="ar" lang="ar" dir="rtl">لَا، عِنْدِي لَحْمٌ وَخُبْزٌ.</span></p><p class="paire-fr">Non, j’ai de la viande et du pain.</p></li></ol>
+
+<h2>5. Tableau de synthèse</h2>
+<p>Sur un téléphone, chaque ligne du tableau devient une petite carte : plus de défilement horizontal.</p>
+<div class="synthese-wrap"><table class="synthese">
+<thead><tr><th>Temps nié</th><th>Particule</th><th>Verbe qui suit</th><th>Sens</th></tr></thead>
+<tbody>
+<tr><th scope="row" data-role="1">Passé</th><td data-label="Particule"><span class="mot" data-role="1">ما</span></td><td data-label="Verbe qui suit">Passé (<span class="ar" lang="ar" dir="rtl">ماضي</span>)</td><td data-label="Sens">« Il n’a pas… »</td></tr>
+<tr><th scope="row" data-role="2">Présent</th><td data-label="Particule"><span class="mot" data-role="2">لا</span></td><td data-label="Verbe qui suit">Présent (<span class="ar" lang="ar" dir="rtl">مضارع</span>)</td><td data-label="Sens">« Il ne… pas »</td></tr>
+</tbody></table></div>
+
+<div class="retenir"><ul><li>Pour nier le passé, on utilise <span class="ar" lang="ar" dir="rtl">ما</span> ; pour nier le présent, on utilise <span class="ar" lang="ar" dir="rtl">لا</span>.</li><li>La particule se place simplement avant le verbe.</li><li>La conjugaison du verbe ne change pas.</li></ul></div>
+</div>
+</body>
+</html>

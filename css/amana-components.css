@@ -1,0 +1,131 @@
+/* AMANA — composants communs de présentation.
+   Prérequis : amana-base.css, un thème, puis amana-tokens.css (dans cet ordre).
+   Composants : .mot (mot coloré) · .legende · .notions/.notion (carte par notion) · .formule · .paires/.paire (arabe, puis sa traduction en note dessous)
+                .observer · .synthese (tableau) · .retenir · .outils-lecture (boutons, voir js/outils-lecture.js)
+   Marquage de rôle : un seul attribut, data-role="1" à "4", sur n'importe quel élément (carte, mot, pièce de formule, légende).
+   Traductions : tout ce qui traduit un exemple arabe porte la classe .paire-fr (dans une paire) ou .trad (ailleurs, en ligne).
+   C'est ce que masquent le bouton « Masquer les traductions » et l'impression sans traductions. */
+
+[data-role="1"] { --c: var(--role-1); }
+[data-role="2"] { --c: var(--role-2); }
+[data-role="3"] { --c: var(--role-3); }
+[data-role="4"] { --c: var(--role-4); }
+
+/* ---------- mot ou particule mis en couleur, dans une phrase arabe ---------- */
+.mot { color: var(--c, var(--accent)); font-weight: 700; padding: 0 .18em; border: 1.5px solid currentColor; border-radius: 5px; background: rgba(15, 118, 110, .13); }
+.mot { background: color-mix(in srgb, var(--c, var(--accent)) var(--role-teinte), transparent); }
+.mot[data-role="2"] { border-style: dashed; }
+.mot[data-role="3"] { border-style: dotted; }
+.mot[data-role="4"] { border-style: double; border-width: 3px; }
+
+/* ---------- légende des couleurs ---------- */
+.legende { display: flex; flex-wrap: wrap; gap: var(--sp-2) var(--sp-4); margin: var(--sp-3) 0; font-size: .9rem; }
+.legende-item { display: inline-flex; align-items: center; gap: .5em; }
+.legende-item::before { content: ""; width: 1.1em; height: 1.1em; border: 2px solid var(--c, var(--accent)); border-radius: 4px; background: var(--c, var(--accent)); opacity: .9; }
+.legende-item[data-role="2"]::before { border-style: dashed; background: transparent; }
+.legende-item[data-role="3"]::before { border-style: dotted; background: transparent; }
+.legende-item[data-role="4"]::before { border-style: double; border-width: 4px; background: transparent; }
+
+/* ---------- carte par notion (grille de cartes) ---------- */
+.notions { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: var(--sp-4); align-items: start; margin: var(--sp-4) 0; }
+.notion { min-width: 0; padding: var(--sp-4) var(--sp-4) var(--sp-2); border: 2px solid var(--c, var(--accent)); border-radius: calc(var(--radius) + 6px); background: var(--paper); break-inside: avoid; }
+.notion { background: color-mix(in srgb, var(--c, var(--accent)) 6%, var(--paper)); }
+.notion-tete { display: flex; align-items: center; gap: 14px; margin-bottom: var(--sp-3); }
+.notion-mot { flex: none; padding: 0 .35em; border-radius: var(--radius); background: var(--c, var(--accent)); color: #fff; font-family: var(--ar); font-size: var(--ar-xl); font-weight: 700; line-height: 1.4; direction: rtl; unicode-bidi: isolate; }
+.notion-titre { margin: 0; font-size: 1.08rem; color: var(--c, var(--accent)); }
+.notion-sous { margin: .15em 0 0; font-size: .9rem; color: var(--mut); }
+.notion > :last-child { margin-bottom: var(--sp-2); }
+
+/* ---------- formule visuelle : pièce + pièce ---------- */
+.formule { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 10px; margin: var(--sp-3) 0; padding: 10px; border: 1px dashed var(--line); border-radius: var(--radius); background: var(--paper); }
+.formule-part { padding: 2px 14px; border: 2px solid var(--c, var(--accent)); border-radius: 99px; color: var(--c, var(--accent)); font-weight: 700; background: rgba(15, 118, 110, .1); }
+.formule-part { background: color-mix(in srgb, var(--c, var(--accent)) 10%, var(--paper)); }
+.formule-part[data-role="2"] { border-style: dashed; }
+.formule-part[data-role="3"] { border-style: dotted; }
+.formule-part[data-role="4"] { border-style: double; border-width: 4px; }
+.formule-part .ar { font-size: 1.4em; line-height: 1.5; }
+.formule-plus { font-size: 1.2rem; font-weight: 700; color: var(--mut); }
+
+/* ---------- paires : chaque ligne arabe est accolée à sa traduction ---------- */
+.paires { list-style: none; margin: .3em 0; padding: 0; counter-reset: paire; }
+.paire { counter-increment: paire; display: grid; grid-template-columns: 1.9em minmax(0, 1fr); column-gap: 12px; row-gap: 2px; align-items: start; margin: 0; padding: var(--sp-2) 0; border-top: 1px solid var(--line); break-inside: avoid; }
+.paire:first-child { border-top: 0; }
+.paire::before { content: counter(paire); grid-row: 1 / span 3; margin-top: .45em; display: grid; place-items: center; width: 1.8em; height: 1.8em; border-radius: 50%; background: var(--c, var(--accent)); color: #fff; font-size: .78rem; font-weight: 700; }
+.paire-ar { grid-column: 2; margin: 0; direction: rtl; text-align: right; font-family: var(--ar); font-size: var(--ar-m); line-height: var(--ar-interligne); }
+.paire-ar .ar { font-size: 1em; line-height: inherit; }
+/* la traduction est une note : sous l'arabe, à gauche, plus petite et grisée */
+.paire-fr { grid-column: 2; margin: 0; text-align: left; direction: ltr; font-size: .92rem; line-height: 1.45; color: var(--mut); }
+.paire-analyse { grid-column: 2; margin: 2px 0 0; padding-top: 4px; border-top: 1px dashed var(--line); color: var(--mut); font-size: .84rem; font-style: italic; }
+.paires.sans-num .paire { grid-template-columns: minmax(0, 1fr); }
+.paires.sans-num .paire::before { display: none; }
+.paires.sans-num .paire-ar, .paires.sans-num .paire-fr, .paires.sans-num .paire-analyse { grid-column: 1; }
+.paires.dialogue .paire:nth-child(even) { background: rgba(29, 78, 216, .06); }
+/* une petite carte par ligne : par défaut chez les enfants, au choix ailleurs */
+.paires.cartes .paire, body.enfant .paires .paire { margin: var(--sp-2) 0 0; padding: 6px 12px; border: 2px solid var(--line); border-radius: var(--radius); background: var(--paper); }
+.paires.cartes .paire:first-child, body.enfant .paires .paire:first-child { border-top: 2px solid var(--line); }
+body.enfant .paire-ar { font-size: var(--ar-m); }
+body.enfant .paire-fr { font-size: 1rem; }
+
+/* ---------- observation placée juste sous ce qu'elle commente ---------- */
+.observer { margin: 14px 0; padding: 3px 0 3px 12px; border-left: 3px solid #b45309; font-size: .95em; }
+.observer::before { content: "À observer"; display: block; margin-bottom: 2px; color: #b45309; font-size: .68rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.observer > :first-child { margin-top: .2em; }
+.observer > :last-child { margin-bottom: .1em; }
+body.enfant .observer { border-left-color: var(--c-note); }
+body.enfant .observer::before { content: "👀 Observez"; color: var(--c-note); }
+
+/* ---------- tableau de synthèse (devient une pile de cartes sur téléphone) ---------- */
+.synthese-wrap { margin: var(--sp-3) 0; }
+.synthese { width: 100%; border-collapse: collapse; }
+.synthese th, .synthese td { padding: 8px 10px; border: 1px solid var(--line); text-align: left; vertical-align: middle; }
+.synthese thead th { background: var(--soft); color: var(--accent); font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; }
+.synthese tbody th { background: var(--soft); font-weight: 700; }
+.synthese th[data-role], .synthese td[data-role] { border-left: 4px solid var(--c); }
+.synthese .ar { font-size: var(--ar-s); line-height: 1.6; }
+body.enfant .synthese thead th { border-bottom-width: 3px; }
+
+/* ---------- à retenir ---------- */
+.retenir { margin: var(--sp-5) 0 var(--sp-3); padding: 6px 16px 10px; border: 1px solid var(--role-1); border-left-width: 5px; border-radius: var(--radius); background: var(--soft); break-inside: avoid; }
+.retenir::before { content: "À retenir"; display: block; margin: .4em 0 .2em; color: var(--role-1); font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.retenir ul { margin: .2em 0; padding: 0; list-style: none; }
+.retenir li { position: relative; padding-left: 1.5em; }
+.retenir li::before { content: "✓"; position: absolute; left: 0; color: var(--role-1); font-weight: 700; }
+body.enfant .retenir { border-width: 2px; border-left-width: 6px; }
+body.enfant .retenir::before { content: "⭐ À retenir"; font-size: .85rem; }
+
+/* ---------- boutons de lecture (injectés par js/outils-lecture.js) ---------- */
+.outils-lecture { position: sticky; top: 0; z-index: 20; display: flex; flex-wrap: wrap; gap: var(--sp-2); margin: var(--sp-2) 0; padding: var(--sp-2) 0; border-bottom: 1px solid var(--line); background: var(--paper); }
+.outils-lecture button { padding: 3px 14px; border: 1px solid var(--line); border-radius: 99px; background: var(--paper); color: var(--ink); font: inherit; font-size: .88rem; cursor: pointer; }
+.outils-lecture button:hover { border-color: var(--accent); }
+.outils-lecture button[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); background: var(--soft); font-weight: 700; }
+.outils-lecture button:focus-visible, .masque-trad .paire-fr:focus-visible, .masque-trad .trad:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+/* mode « masquer les traductions » : flou ; un clic sur la ligne (ou sur sa traduction) révèle la traduction seule */
+.masque-trad .paire-fr:not(.revele), .masque-trad .trad:not(.revele) { filter: blur(7px); opacity: .65; cursor: pointer; user-select: none; }
+.masque-trad .paire { cursor: pointer; }
+
+/* ---------- téléphone (≤ 560 px) ---------- */
+@media (max-width: 560px) {
+  body.enfant .paires .paire, .paires.cartes .paire { padding: 6px 10px; }
+  .notion { padding: var(--sp-3) var(--sp-3) var(--sp-1); }
+  .synthese thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .synthese, .synthese tbody, .synthese tr, .synthese th, .synthese td { display: block; width: 100%; }
+  .synthese tr { margin: var(--sp-3) 0; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+  .synthese th, .synthese td { border: 0; }
+  .synthese td { display: flex; justify-content: space-between; align-items: baseline; gap: var(--sp-3); border-top: 1px solid var(--line); text-align: right; }
+  .synthese td::before { content: attr(data-label); flex: none; color: var(--mut); font-size: .76rem; letter-spacing: .05em; text-align: left; text-transform: uppercase; }
+}
+/* ---------- impression ---------- */
+@media print {
+  .outils-lecture { display: none !important; }
+  .masque-trad .paire-fr, .masque-trad .trad { filter: none; opacity: 1; }
+  .notion, .retenir, .observer, .formule { break-inside: avoid; }
+  .notion, .formule, .retenir { background: none; }
+  .notion-mot { border: 2px solid var(--ink); background: none; color: var(--ink); }
+  .paire::before { border: 1.5px solid var(--ink); background: none; color: var(--ink); }
+  .mot, .formule-part { background: none; }
+  .legende-item::before { background: none; }
+  .legende-item[data-role="1"]::before { background: var(--ink); }
+  /* impression sans traductions : seules les traductions des exemples disparaissent, le cours reste tel quel */
+  .impr-sans-trad .paire-fr, .impr-sans-trad .trad { display: none !important; }
+}

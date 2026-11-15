@@ -102,3 +102,59 @@ img { max-width: 100%; height: auto; }
   .lcard .glyph { border-right: 1px solid var(--line); padding-right: 14px; }
 }
 .idline { margin: 4px 0 0; }
+
+/* ---- Mots de la séance en contexte : chaque ligne arabe est accolée à sa traduction (niveau 3) ----
+   Même balisage pour les adultes et les enfants ; body.enfant ne change que l'habillage.
+   N'utilise que les variables des thèmes (--accent, --accent2, --soft, --line, --radius, --ar, --c-note) :
+   les thèmes « filles » et « garçons » s'appliquent sans règle supplémentaire. */
+.ctx { --c: var(--accent); margin: 16px 0; padding: 2px 16px 6px; border: 1px solid var(--c); border-radius: var(--radius); background: var(--soft); }
+.ctx > h3 { margin: .55em 0 .2em; font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; color: var(--c); }
+.ctx > h3 .ar { font-size: 1.5em; letter-spacing: 0; text-transform: none; }
+.ctx-lines { list-style: none; margin: .2em 0 0; padding: 0; counter-reset: ctx; }
+.ctx-line { counter-increment: ctx; display: grid; grid-template-columns: 1.9em minmax(0, 1.2fr) minmax(0, 1fr); column-gap: 14px; align-items: center; margin: 0; padding: 8px 0; border-top: 1px solid var(--line); break-inside: avoid; }
+.ctx-line:first-child { border-top: 0; }
+.ctx-line::before { content: counter(ctx); display: grid; place-items: center; width: 1.8em; height: 1.8em; border-radius: 50%; background: var(--c); color: #fff; font-size: .78rem; font-weight: 700; }
+.ctx-ar { direction: rtl; text-align: right; font-family: var(--ar); font-size: 1.75rem; line-height: 1.9; margin: 0; }
+.ctx-ar .ar { font-size: 1em; line-height: inherit; }
+.ctx-fr { margin: 0; font-size: .98rem; line-height: 1.45; }
+.ctx-fr::before { content: "→"; margin-right: .55em; font-weight: 700; color: var(--c); }
+.ctx-mark { color: var(--c); font-weight: 700; background: color-mix(in srgb, var(--c) 14%, transparent); border-radius: 4px; padding: 0 .12em; }
+.ctx-note { border-left: 3px solid #b45309; padding: 3px 0 3px 12px; margin: 14px 0; font-size: .95em; }
+.ctx-note::before { content: "À observer"; display: block; font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; color: #b45309; margin-bottom: 2px; }
+.ctx-note p:first-child { margin-top: .2em; }
+.ctx-note p:last-child { margin-bottom: .1em; }
+
+/* enfants : une petite carte par ligne, arabe plus grand, repères de couleur du thème */
+body.enfant .ctx { --c: var(--accent2); border: 2px solid var(--line); background: var(--soft); padding: 2px 14px 10px; }
+body.enfant .ctx > h3 { font-size: .8rem; color: var(--accent); }
+body.enfant .ctx-line { margin: 8px 0 0; padding: 6px 12px; border: 2px solid var(--line); border-radius: var(--radius); background: var(--paper); }
+body.enfant .ctx-line:first-child { border-top: 2px solid var(--line); }
+body.enfant .ctx-ar { font-size: 2.05rem; }
+body.enfant .ctx-fr { font-size: 1.02rem; }
+body.enfant .ctx-fr::before { color: var(--accent); }
+body.enfant .ctx-mark { color: var(--accent); background: color-mix(in srgb, var(--accent) 14%, transparent); }
+body.enfant .ctx-note { border-left-color: var(--c-note); }
+body.enfant .ctx-note::before { content: "👀 Observez"; color: var(--c-note); }
+
+@media (max-width: 560px) {
+  .ctx { padding: 2px 12px 6px; }
+  .ctx-line { grid-template-columns: 1.9em minmax(0, 1fr); row-gap: 2px; }
+  .ctx-line::before { grid-row: 1 / span 2; align-self: start; margin-top: .55em; }
+  .ctx-ar { font-size: 1.55rem; }
+  body.enfant .ctx-ar { font-size: 1.75rem; }
+  body.enfant .ctx-line { padding: 6px 10px; }
+}
+@media print {
+  .ctx { background: none; }
+  .ctx-line { break-inside: avoid; }
+  .ctx > h3 { break-after: avoid; }
+  .ctx-ar { font-size: 17pt; line-height: 1.9; }
+  body.enfant .ctx-ar { font-size: 19pt; }
+  .ctx-line::before { background: none; color: var(--ink); border: 1.5px solid var(--ink); }
+  .ctx-note { break-inside: avoid; }
+}
+
+/* variante sans titre interne : texte de révision repris dans un corrigé (le titre « Texte N » est le h3 qui précède) */
+.ctx-sans-titre { padding-top: 6px; }
+.ctx-sans-titre::before { content: "Texte et traduction"; display: block; margin: .35em 0 .1em; font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; color: var(--c); }
+body.enfant .ctx-sans-titre::before { font-size: .8rem; color: var(--accent); }

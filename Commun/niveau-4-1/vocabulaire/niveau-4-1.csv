@@ -1,12 +1,12 @@
 id  , seance    , mot              , langue  , type, chapitre    , definition                    , mot_full
-   1, 1         , جَدِيدٌ             , Arabe   , إسم , Introduction,                               , جَدِيدٌ
-   2, 1         , قَدِيمٌ             , Arabe   , إسم , Introduction,                               , قَدِيمٌ
-   3, 1         , سَهْلٌ              , Arabe   , إسم , Introduction,                               , سَهْلٌ
-   4, 1         , صَعْبٌ              , Arabe   , إسم , Introduction,                               , صَعْبٌ
-   5, 1         , صَغِيرٌ             , Arabe   , إسم , Introduction,                               , صَغِيرٌ
-   6, 1         , كَبِيرٌ             , Arabe   , إسم , Introduction,                               , كَبِيرٌ
-   7, 1         , قَصِيرٌ             , Arabe   , إسم , Introduction,                               , قَصِيرٌ
-   8, 1         , طَوِيلٌ             , Arabe   , إسم , Introduction,                               , طَوِيلٌ
+   1, 1         , جَدِيدٌ             , Arabe   , اسم , Introduction,                               , جَدِيدٌ
+   2, 1         , قَدِيمٌ             , Arabe   , اسم , Introduction,                               , قَدِيمٌ
+   3, 1         , سَهْلٌ              , Arabe   , اسم , Introduction,                               , سَهْلٌ
+   4, 1         , صَعْبٌ              , Arabe   , اسم , Introduction,                               , صَعْبٌ
+   5, 1         , صَغِيرٌ             , Arabe   , اسم , Introduction,                               , صَغِيرٌ
+   6, 1         , كَبِيرٌ             , Arabe   , اسم , Introduction,                               , كَبِيرٌ
+   7, 1         , قَصِيرٌ             , Arabe   , اسم , Introduction,                               , قَصِيرٌ
+   8, 1         , طَوِيلٌ             , Arabe   , اسم , Introduction,                               , طَوِيلٌ
    9, 1         , و                , Arabe   , حرف , Introduction,                               , و
   10, 1         , سَأَلَ              , Arabe   , فعل , Introduction,                               , سَأَلَ
   11, 1         , قَالَ              , Arabe   , فعل , Introduction,                               , قَالَ
@@ -19,14 +19,14 @@ id  , seance    , mot              , langue  , type, chapitre    , definition   
   18, 1         , دَخَلَ              , Arabe   , فعل , Introduction,                               , دَخَلَ
   19, 1         , ذَهَبَ              , Arabe   , فعل , Introduction,                               , ذَهَبَ
   20, 1         , رَجَعَ              , Arabe   , فعل , Introduction,                               , رَجَعَ
-  21, 1         , nouveau          , Francais, إسم , Introduction,                               , nouveau
-  22, 1         , ancien           , Francais, إسم , Introduction,                               , ancien
-  23, 1         , facile           , Francais, إسم , Introduction,                               , facile
-  24, 1         , difficile        , Francais, إسم , Introduction,                               , difficile
-  25, 1         , petit            , Francais, إسم , Introduction,                               , petit
-  26, 1         , grand            , Francais, إسم , Introduction,                               , grand
-  27, 1         , court            , Francais, إسم , Introduction,                               , court
-  28, 1         , long             , Francais, إسم , Introduction,                               , long
+  21, 1         , nouveau          , Francais, اسم , Introduction,                               , nouveau
+  22, 1         , ancien           , Francais, اسم , Introduction,                               , ancien
+  23, 1         , facile           , Francais, اسم , Introduction,                               , facile
+  24, 1         , difficile        , Francais, اسم , Introduction,                               , difficile
+  25, 1         , petit            , Francais, اسم , Introduction,                               , petit
+  26, 1         , grand            , Francais, اسم , Introduction,                               , grand
+  27, 1         , court            , Francais, اسم , Introduction,                               , court
+  28, 1         , long             , Francais, اسم , Introduction,                               , long
   29, 1         , et               , Francais, حرف , Introduction,                               , et
   30, 1         , demander         , Francais, فعل , Introduction, Poser une question            , demander (Poser une question)
   31, 1         , dire             , Francais, فعل , Introduction,                               , dire
@@ -39,217 +39,217 @@ id  , seance    , mot              , langue  , type, chapitre    , definition   
   38, 1         , entrer           , Francais, فعل , Introduction,                               , entrer
   39, 1         , aller            , Francais, فعل , Introduction,                               , aller
   40, 1         , revenir          , Francais, فعل , Introduction,                               , revenir
-  41, 2         , أَنَا              , Arabe   , إسم , Introduction,                               , أَنَا
-  42, 2         , نَحْنُ              , Arabe   , إسم , Introduction,                               , نَحْنُ
-  43, 2         , أَنْتَ              , Arabe   , إسم , Introduction,                               , أَنْتَ
-  44, 2         , أَنْتِ              , Arabe   , إسم , Introduction,                               , أَنْتِ
-  45, 2         , أَنْتُمَا            , Arabe   , إسم , Introduction,                               , أَنْتُمَا
-  46, 2         , أَنْتُمْ             , Arabe   , إسم , Introduction,                               , أَنْتُمْ
-  47, 2         , أَنْتُنَّ             , Arabe   , إسم , Introduction,                               , أَنْتُنَّ
-  48, 2         , هُوَ               , Arabe   , إسم , Introduction,                               , هُوَ
-  49, 2         , هِيَ               , Arabe   , إسم , Introduction,                               , هِيَ
-  50, 2         , هُمَا              , Arabe   , إسم , Introduction,                               , هُمَا
-  51, 2         , هُمْ               , Arabe   , إسم , Introduction,                               , هُمْ
-  52, 2         , هُنَّ               , Arabe   , إسم , Introduction,                               , هُنَّ
-  53, 2         , je               , Francais, إسم , Introduction,                               , je
-  54, 2         , nous             , Francais, إسم , Introduction,                               , nous
-  55, 2         , tu               , Francais, إسم , Introduction, masculin                      , tu (masculin)
-  56, 2         , tu               , Francais, إسم , Introduction, féminin                       , tu (féminin)
-  57, 2         , vous             , Francais, إسم , Introduction, deux personnes                , vous (deux personnes)
-  58, 2         , vous             , Francais, إسم , Introduction, pluriel masculin              , vous (pluriel masculin)
-  59, 2         , vous             , Francais, إسم , Introduction, pluriel féminin               , vous (pluriel féminin)
-  60, 2         , il               , Francais, إسم , Introduction,                               , il
-  61, 2         , elle             , Francais, إسم , Introduction,                               , elle
-  62, 2         , ils              , Francais, إسم , Introduction, deux personnes                , ils (deux personnes)
-  63, 2         , ils              , Francais, إسم , Introduction,                               , ils
-  64, 2         , elles            , Francais, إسم , Introduction,                               , elles
-  65, 3         , هَذَا              , Arabe   , إسم , Introduction,                               , هَذَا
-  66, 3         , هَذِهِ              , Arabe   , إسم , Introduction,                               , هَذِهِ
-  67, 3         , هَذَانِ             , Arabe   , إسم , Introduction,                               , هَذَانِ
-  68, 3         , هَاتَانِ            , Arabe   , إسم , Introduction,                               , هَاتَانِ
-  69, 3         , هَؤُلَاءِ            , Arabe   , إسم , Introduction,                               , هَؤُلَاءِ
-  70, 3         , ذَلِكَ              , Arabe   , إسم , Introduction,                               , ذَلِكَ
-  71, 3         , تِلْكَ              , Arabe   , إسم , Introduction,                               , تِلْكَ
-  72, 3         , ذَانِكَ             , Arabe   , إسم , Introduction,                               , ذَانِكَ
-  73, 3         , تَانِكَ             , Arabe   , إسم , Introduction,                               , تَانِكَ
-  74, 3         , أُولَئِكَ            , Arabe   , إسم , Introduction,                               , أُولَئِكَ
-  75, 3         , رَجُلٌ              , Arabe   , إسم , Introduction,                               , رَجُلٌ
-  76, 3         , اِمْرَأَةٌ            , Arabe   , إسم , Introduction,                               , اِمْرَأَةٌ
+  41, 2         , أَنَا              , Arabe   , اسم , Introduction,                               , أَنَا
+  42, 2         , نَحْنُ              , Arabe   , اسم , Introduction,                               , نَحْنُ
+  43, 2         , أَنْتَ              , Arabe   , اسم , Introduction,                               , أَنْتَ
+  44, 2         , أَنْتِ              , Arabe   , اسم , Introduction,                               , أَنْتِ
+  45, 2         , أَنْتُمَا            , Arabe   , اسم , Introduction,                               , أَنْتُمَا
+  46, 2         , أَنْتُمْ             , Arabe   , اسم , Introduction,                               , أَنْتُمْ
+  47, 2         , أَنْتُنَّ             , Arabe   , اسم , Introduction,                               , أَنْتُنَّ
+  48, 2         , هُوَ               , Arabe   , اسم , Introduction,                               , هُوَ
+  49, 2         , هِيَ               , Arabe   , اسم , Introduction,                               , هِيَ
+  50, 2         , هُمَا              , Arabe   , اسم , Introduction,                               , هُمَا
+  51, 2         , هُمْ               , Arabe   , اسم , Introduction,                               , هُمْ
+  52, 2         , هُنَّ               , Arabe   , اسم , Introduction,                               , هُنَّ
+  53, 2         , je               , Francais, اسم , Introduction,                               , je
+  54, 2         , nous             , Francais, اسم , Introduction,                               , nous
+  55, 2         , tu               , Francais, اسم , Introduction, masculin                      , tu (masculin)
+  56, 2         , tu               , Francais, اسم , Introduction, féminin                       , tu (féminin)
+  57, 2         , vous             , Francais, اسم , Introduction, deux personnes                , vous (deux personnes)
+  58, 2         , vous             , Francais, اسم , Introduction, pluriel masculin              , vous (pluriel masculin)
+  59, 2         , vous             , Francais, اسم , Introduction, pluriel féminin               , vous (pluriel féminin)
+  60, 2         , il               , Francais, اسم , Introduction,                               , il
+  61, 2         , elle             , Francais, اسم , Introduction,                               , elle
+  62, 2         , ils              , Francais, اسم , Introduction, deux personnes                , ils (deux personnes)
+  63, 2         , ils              , Francais, اسم , Introduction,                               , ils
+  64, 2         , elles            , Francais, اسم , Introduction,                               , elles
+  65, 3         , هَذَا              , Arabe   , اسم , Introduction,                               , هَذَا
+  66, 3         , هَذِهِ              , Arabe   , اسم , Introduction,                               , هَذِهِ
+  67, 3         , هَذَانِ             , Arabe   , اسم , Introduction,                               , هَذَانِ
+  68, 3         , هَاتَانِ            , Arabe   , اسم , Introduction,                               , هَاتَانِ
+  69, 3         , هَؤُلَاءِ            , Arabe   , اسم , Introduction,                               , هَؤُلَاءِ
+  70, 3         , ذَلِكَ              , Arabe   , اسم , Introduction,                               , ذَلِكَ
+  71, 3         , تِلْكَ              , Arabe   , اسم , Introduction,                               , تِلْكَ
+  72, 3         , ذَانِكَ             , Arabe   , اسم , Introduction,                               , ذَانِكَ
+  73, 3         , تَانِكَ             , Arabe   , اسم , Introduction,                               , تَانِكَ
+  74, 3         , أُولَئِكَ            , Arabe   , اسم , Introduction,                               , أُولَئِكَ
+  75, 3         , رَجُلٌ              , Arabe   , اسم , Introduction,                               , رَجُلٌ
+  76, 3         , اِمْرَأَةٌ            , Arabe   , اسم , Introduction,                               , اِمْرَأَةٌ
   77, 3         , اِسْتَيْقَظَ           , Arabe   , فعل , Introduction,                               , اِسْتَيْقَظَ
   78, 3         , نَامَ              , Arabe   , فعل , Introduction,                               , نَامَ
-  79, 3         , ce               , Francais, إسم , Introduction, masculin proche               , ce (masculin proche)
-  80, 3         , cette            , Francais, إسم , Introduction, féminin proche                , cette (féminin proche)
-  81, 3         , ces              , Francais, إسم , Introduction, deux personnes masculin proche, ces (deux personnes masculin proche)
-  82, 3         , ces              , Francais, إسم , Introduction, deux personnes féminin proche , ces (deux personnes féminin proche)
-  83, 3         , ceux             , Francais, إسم , Introduction, pluriel masculin proche       , ceux (pluriel masculin proche)
-  84, 3         , celles           , Francais, إسم , Introduction, pluriel féminin proche        , celles (pluriel féminin proche)
-  85, 3         , ce               , Francais, إسم , Introduction, masculin éloigné              , ce (masculin éloigné)
-  86, 3         , cette            , Francais, إسم , Introduction, féminin éloigné               , cette (féminin éloigné)
-  87, 3         , ces              , Francais, إسم , Introduction, deux personnes masculin éloign, ces (deux personnes masculin éloign)
-  88, 3         , ces              , Francais, إسم , Introduction, deux personnes féminin éloigné, ces (deux personnes féminin éloigné)
-  89, 3         , ceux             , Francais, إسم , Introduction, pluriel masculin éloigné      , ceux (pluriel masculin éloigné)
-  90, 3         , celles           , Francais, إسم , Introduction, pluriel féminin éloigné       , celles (pluriel féminin éloigné)
-  91, 3         , homme            , Francais, إسم , Introduction,                               , homme
-  92, 3         , femme            , Francais, إسم , Introduction,                               , femme
+  79, 3         , ce               , Francais, اسم , Introduction, masculin proche               , ce (masculin proche)
+  80, 3         , cette            , Francais, اسم , Introduction, féminin proche                , cette (féminin proche)
+  81, 3         , ces              , Francais, اسم , Introduction, deux personnes masculin proche, ces (deux personnes masculin proche)
+  82, 3         , ces              , Francais, اسم , Introduction, deux personnes féminin proche , ces (deux personnes féminin proche)
+  83, 3         , ceux             , Francais, اسم , Introduction, pluriel masculin proche       , ceux (pluriel masculin proche)
+  84, 3         , celles           , Francais, اسم , Introduction, pluriel féminin proche        , celles (pluriel féminin proche)
+  85, 3         , ce               , Francais, اسم , Introduction, masculin éloigné              , ce (masculin éloigné)
+  86, 3         , cette            , Francais, اسم , Introduction, féminin éloigné               , cette (féminin éloigné)
+  87, 3         , ces              , Francais, اسم , Introduction, deux personnes masculin éloign, ces (deux personnes masculin éloign)
+  88, 3         , ces              , Francais, اسم , Introduction, deux personnes féminin éloigné, ces (deux personnes féminin éloigné)
+  89, 3         , ceux             , Francais, اسم , Introduction, pluriel masculin éloigné      , ceux (pluriel masculin éloigné)
+  90, 3         , celles           , Francais, اسم , Introduction, pluriel féminin éloigné       , celles (pluriel féminin éloigné)
+  91, 3         , homme            , Francais, اسم , Introduction,                               , homme
+  92, 3         , femme            , Francais, اسم , Introduction,                               , femme
   93, 3         , réveiller (se)   , Francais, فعل , Introduction,                               , réveiller (se)
   94, 3         , dormir           , Francais, فعل , Introduction,                               , dormir
-  95, 4         , مَرْحَبًا            , Arabe   , إسم , Salutation  ,                               , مَرْحَبًا
-  96, 4         , صَبَاحٌ             , Arabe   , إسم , Salutation  ,                               , صَبَاحٌ
-  97, 4         , مَسَاءٌ             , Arabe   , إسم , Salutation  ,                               , مَسَاءٌ
-  98, 4         , سَيِّدٌ              , Arabe   , إسم , Salutation  ,                               , سَيِّدٌ
-  99, 4         , سَيِّدَةٌ             , Arabe   , إسم , Salutation  ,                               , سَيِّدَةٌ
- 100, 4         , صَدِيقٌ             , Arabe   , إسم , Salutation  ,                               , صَدِيقٌ
- 101, 4         , عَدُوٌّ              , Arabe   , إسم , Salutation  ,                               , عَدُوٌّ
- 102, 4         , طَالِبٌ             , Arabe   , إسم , Métiers     ,                               , طَالِبٌ
- 103, 4         , طَالِبَةٌ            , Arabe   , إسم , Métiers     ,                               , طَالِبَةٌ
+  95, 4         , مَرْحَبًا            , Arabe   , اسم , Salutation  ,                               , مَرْحَبًا
+  96, 4         , صَبَاحٌ             , Arabe   , اسم , Salutation  ,                               , صَبَاحٌ
+  97, 4         , مَسَاءٌ             , Arabe   , اسم , Salutation  ,                               , مَسَاءٌ
+  98, 4         , سَيِّدٌ              , Arabe   , اسم , Salutation  ,                               , سَيِّدٌ
+  99, 4         , سَيِّدَةٌ             , Arabe   , اسم , Salutation  ,                               , سَيِّدَةٌ
+ 100, 4         , صَدِيقٌ             , Arabe   , اسم , Salutation  ,                               , صَدِيقٌ
+ 101, 4         , عَدُوٌّ              , Arabe   , اسم , Salutation  ,                               , عَدُوٌّ
+ 102, 4         , طَالِبٌ             , Arabe   , اسم , Métiers     ,                               , طَالِبٌ
+ 103, 4         , طَالِبَةٌ            , Arabe   , اسم , Métiers     ,                               , طَالِبَةٌ
  104, 4         , سَلَّمَ              , Arabe   , فعل , Salutation  ,                               , سَلَّمَ
  105, 4         , رَحَّبَ              , Arabe   , فعل , Salutation  ,                               , رَحَّبَ
  106, 4         , قَدَّمَ              , Arabe   , فعل , Salutation  ,                               , قَدَّمَ
  107, 4         , قَابَلَ             , Arabe   , فعل , Salutation  ,                               , قَابَلَ
  108, 4         , عَرَفَ              , Arabe   , فعل , Salutation  ,                               , عَرَفَ
- 109, 4         , bienvenue        , Francais, إسم , Salutation  ,                               , bienvenue
- 110, 4         , matin            , Francais, إسم , Salutation  ,                               , matin
- 111, 4         , soir             , Francais, إسم , Salutation  ,                               , soir
- 112, 4         , monsieur         , Francais, إسم , Salutation  ,                               , monsieur
- 113, 4         , madame           , Francais, إسم , Salutation  ,                               , madame
- 114, 4         , ami              , Francais, إسم , Salutation  ,                               , ami
- 115, 4         , ennemi           , Francais, إسم , Salutation  ,                               , ennemi
- 116, 4         , étudiant         , Francais, إسم , Métiers     ,                               , étudiant
- 117, 4         , étudiante        , Francais, إسم , Métiers     ,                               , étudiante
+ 109, 4         , bienvenue        , Francais, اسم , Salutation  ,                               , bienvenue
+ 110, 4         , matin            , Francais, اسم , Salutation  ,                               , matin
+ 111, 4         , soir             , Francais, اسم , Salutation  ,                               , soir
+ 112, 4         , monsieur         , Francais, اسم , Salutation  ,                               , monsieur
+ 113, 4         , madame           , Francais, اسم , Salutation  ,                               , madame
+ 114, 4         , ami              , Francais, اسم , Salutation  ,                               , ami
+ 115, 4         , ennemi           , Francais, اسم , Salutation  ,                               , ennemi
+ 116, 4         , étudiant         , Francais, اسم , Métiers     ,                               , étudiant
+ 117, 4         , étudiante        , Francais, اسم , Métiers     ,                               , étudiante
  118, 4         , saluer           , Francais, فعل , Salutation  ,                               , saluer
  119, 4         , accueillir       , Francais, فعل , Salutation  ,                               , accueillir
  120, 4         , présenter        , Francais, فعل , Salutation  ,                               , présenter
  121, 4         , rencontrer       , Francais, فعل , Salutation  ,                               , rencontrer
  122, 4         , connaître        , Francais, فعل , Salutation  ,                               , connaître
- 123, 5         , عُمُرٌ              , Arabe   , إسم , Salutation  ,                               , عُمُرٌ
- 124, 5         , طَيِّبٌ              , Arabe   , إسم , Salutation  ,                               , طَيِّبٌ
- 125, 5         , أَمْسِ              , Arabe   , إسم , Salutation  ,                               , أَمْسِ
- 126, 5         , اَلْيَوْمَ            , Arabe   , إسم , Salutation  ,                               , اَلْيَوْمَ
- 127, 5         , غَدًا              , Arabe   , إسم , Salutation  ,                               , غَدًا
- 128, 5         , بَلَدٌ              , Arabe   , إسم , Habitation  ,                               , بَلَدٌ
- 129, 5         , مَدِينَةٌ            , Arabe   , إسم , Habitation  ,                               , مَدِينَةٌ
- 130, 5         , بَيْتٌ              , Arabe   , إسم , Habitation  ,                               , بَيْتٌ
- 131, 5         , شُقَّةٌ              , Arabe   , إسم , Habitation  ,                               , شُقَّةٌ
- 132, 5         , كِتَابٌ             , Arabe   , إسم , Autre       ,                               , كِتَابٌ
+ 123, 5         , عُمُرٌ              , Arabe   , اسم , Salutation  ,                               , عُمُرٌ
+ 124, 5         , طَيِّبٌ              , Arabe   , اسم , Salutation  ,                               , طَيِّبٌ
+ 125, 5         , أَمْسِ              , Arabe   , اسم , Salutation  ,                               , أَمْسِ
+ 126, 5         , اَلْيَوْمَ            , Arabe   , اسم , Salutation  ,                               , اَلْيَوْمَ
+ 127, 5         , غَدًا              , Arabe   , اسم , Salutation  ,                               , غَدًا
+ 128, 5         , بَلَدٌ              , Arabe   , اسم , Habitation  ,                               , بَلَدٌ
+ 129, 5         , مَدِينَةٌ            , Arabe   , اسم , Habitation  ,                               , مَدِينَةٌ
+ 130, 5         , بَيْتٌ              , Arabe   , اسم , Habitation  ,                               , بَيْتٌ
+ 131, 5         , شُقَّةٌ              , Arabe   , اسم , Habitation  ,                               , شُقَّةٌ
+ 132, 5         , كِتَابٌ             , Arabe   , اسم , Autre       ,                               , كِتَابٌ
  133, 5         , عَمِلَ              , Arabe   , فعل , Métiers     ,                               , عَمِلَ
  134, 5         , أَخَذَ              , Arabe   , فعل , Autre       ,                               , أَخَذَ
  135, 5         , أَعْطَى             , Arabe   , فعل , Autre       ,                               , أَعْطَى
- 136, 5         , âge              , Francais, إسم , Salutation  ,                               , âge
- 137, 5         , gentil           , Francais, إسم , Salutation  ,                               , gentil
- 138, 5         , hier             , Francais, إسم , Salutation  ,                               , hier
- 139, 5         , aujourd'hui      , Francais, إسم , Salutation  ,                               , aujourd'hui
- 140, 5         , demain           , Francais, إسم , Salutation  ,                               , demain
- 141, 5         , pays             , Francais, إسم , Habitation  ,                               , pays
- 142, 5         , ville            , Francais, إسم , Habitation  ,                               , ville
- 143, 5         , maison           , Francais, إسم , Habitation  ,                               , maison
- 144, 5         , appartement      , Francais, إسم , Habitation  ,                               , appartement
- 145, 5         , livre            , Francais, إسم , Autre       ,                               , livre
+ 136, 5         , âge              , Francais, اسم , Salutation  ,                               , âge
+ 137, 5         , gentil           , Francais, اسم , Salutation  ,                               , gentil
+ 138, 5         , hier             , Francais, اسم , Salutation  ,                               , hier
+ 139, 5         , aujourd'hui      , Francais, اسم , Salutation  ,                               , aujourd'hui
+ 140, 5         , demain           , Francais, اسم , Salutation  ,                               , demain
+ 141, 5         , pays             , Francais, اسم , Habitation  ,                               , pays
+ 142, 5         , ville            , Francais, اسم , Habitation  ,                               , ville
+ 143, 5         , maison           , Francais, اسم , Habitation  ,                               , maison
+ 144, 5         , appartement      , Francais, اسم , Habitation  ,                               , appartement
+ 145, 5         , livre            , Francais, اسم , Autre       ,                               , livre
  146, 5         , travailler       , Francais, فعل , Métiers     ,                               , travailler
  147, 5         , prendre          , Francais, فعل , Autre       ,                               , prendre
  148, 5         , donner           , Francais, فعل , Autre       ,                               , donner
- 149, 6         , أُسْرَةٌ             , Arabe   , إسم , Famille     ,                               , أُسْرَةٌ
- 150, 6         , أَبٌ               , Arabe   , إسم , Famille     ,                               , أَبٌ
- 151, 6         , أُمٌّ               , Arabe   , إسم , Famille     ,                               , أُمٌّ
- 152, 6         , أَخٌ               , Arabe   , إسم , Famille     ,                               , أَخٌ
- 153, 6         , أُخْتٌ              , Arabe   , إسم , Famille     ,                               , أُخْتٌ
- 154, 6         , اِبْنٌ              , Arabe   , إسم , Famille     ,                               , اِبْنٌ
- 155, 6         , بِنْتٌ              , Arabe   , إسم , Famille     ,                               , بِنْتٌ
- 156, 6         , جَدٌّ               , Arabe   , إسم , Famille     ,                               , جَدٌّ
- 157, 6         , جَدَّةٌ              , Arabe   , إسم , Famille     ,                               , جَدَّةٌ
- 158, 6         , زَوْجٌ              , Arabe   , إسم , Famille     ,                               , زَوْجٌ
- 159, 6         , زَوْجَةٌ             , Arabe   , إسم , Famille     ,                               , زَوْجَةٌ
- 160, 6         , عَمٌّ               , Arabe   , إسم , Famille     ,                               , عَمٌّ
- 161, 6         , عَمَّةٌ              , Arabe   , إسم , Famille     ,                               , عَمَّةٌ
- 162, 6         , خَالٌ              , Arabe   , إسم , Famille     ,                               , خَالٌ
- 163, 6         , خَالَةٌ             , Arabe   , إسم , Famille     ,                               , خَالَةٌ
- 164, 6         , مُدَرِّسٌ             , Arabe   , إسم , Métiers     ,                               , مُدَرِّسٌ
- 165, 6         , طَبِيبٌ             , Arabe   , إسم , Métiers     ,                               , طَبِيبٌ
- 166, 6         , مُوَظَّفٌ             , Arabe   , إسم , Métiers     ,                               , مُوَظَّفٌ
- 167, 6         , مُهَنْدِسٌ            , Arabe   , إسم , Métiers     ,                               , مُهَنْدِسٌ
- 168, 6         , مُحَامٍ             , Arabe   , إسم , Métiers     ,                               , مُحَامٍ
- 169, 6         , طَبَّاخٌ             , Arabe   , إسم , Métiers     ,                               , طَبَّاخٌ
- 170, 6         , سَائِقٌ             , Arabe   , إسم , Métiers     ,                               , سَائِقٌ
- 171, 6         , مُدِيرٌ             , Arabe   , إسم , Métiers     ,                               , مُدِيرٌ
- 172, 6         , فَلَّاحٌ             , Arabe   , إسم , Métiers     ,                               , فَلَّاحٌ
- 173, 6         , بَائِعٌ             , Arabe   , إسم , Métiers     ,                               , بَائِعٌ
- 174, 6         , خَبَّازٌ             , Arabe   , إسم , Métiers     ,                               , خَبَّازٌ
- 175, 6         , شُرْطِيٌّ             , Arabe   , إسم , Métiers     ,                               , شُرْطِيٌّ
- 176, 6         , تِلْمِيذٌ            , Arabe   , إسم , Métiers     ,                               , تِلْمِيذٌ
- 177, 6         , famille          , Francais, إسم , Famille     ,                               , famille
- 178, 6         , père             , Francais, إسم , Famille     ,                               , père
- 179, 6         , mère             , Francais, إسم , Famille     ,                               , mère
- 180, 6         , frère            , Francais, إسم , Famille     ,                               , frère
- 181, 6         , sœur             , Francais, إسم , Famille     ,                               , sœur
- 182, 6         , fils             , Francais, إسم , Famille     ,                               , fils
- 183, 6         , fille            , Francais, إسم , Famille     ,                               , fille
- 184, 6         , grand-père       , Francais, إسم , Famille     ,                               , grand-père
- 185, 6         , grand-mère       , Francais, إسم , Famille     ,                               , grand-mère
- 186, 6         , mari             , Francais, إسم , Famille     ,                               , mari
- 187, 6         , épouse           , Francais, إسم , Famille     ,                               , épouse
- 188, 6         , oncle            , Francais, إسم , Famille     , paternel                      , oncle (paternel)
- 189, 6         , tante            , Francais, إسم , Famille     , paternel                      , tante (paternel)
- 190, 6         , oncle            , Francais, إسم , Famille     , maternel                      , oncle (maternel)
- 191, 6         , tante            , Francais, إسم , Famille     , maternel                      , tante (maternel)
- 192, 6         , enseignant       , Francais, إسم , Métiers     ,                               , enseignant
- 193, 6         , médecin          , Francais, إسم , Métiers     ,                               , médecin
- 194, 6         , employé          , Francais, إسم , Métiers     ,                               , employé
- 195, 6         , ingénieur        , Francais, إسم , Métiers     ,                               , ingénieur
- 196, 6         , avocat           , Francais, إسم , Métiers     ,                               , avocat
- 197, 6         , cuisinier        , Francais, إسم , Métiers     ,                               , cuisinier
- 198, 6         , conducteur       , Francais, إسم , Métiers     ,                               , conducteur
- 199, 6         , directeur        , Francais, إسم , Métiers     ,                               , directeur
- 200, 6         , agriculteur      , Francais, إسم , Métiers     ,                               , agriculteur
- 201, 6         , vendeur          , Francais, إسم , Métiers     ,                               , vendeur
- 202, 6         , boulanger        , Francais, إسم , Métiers     ,                               , boulanger
- 203, 6         , policier         , Francais, إسم , Métiers     ,                               , policier
- 204, 6         , élève            , Francais, إسم , Métiers     ,                               , élève
- 205, 7         , لُغَةٌ              , Arabe   , إسم , Salutation  ,                               , لُغَةٌ
- 206, 7         , سَنَةٌ              , Arabe   , إسم , Salutation  ,                               , سَنَةٌ
- 207, 7         , هَوَايَةٌ            , Arabe   , إسم , Salutation  ,                               , هَوَايَةٌ
- 208, 7         , مِهْنَةٌ             , Arabe   , إسم , Métiers     ,                               , مِهْنَةٌ
- 209, 7         , غُرْفَةٌ             , Arabe   , إسم , Habitation  ,                               , غُرْفَةٌ
- 210, 7         , مَكْتَبٌ             , Arabe   , إسم , Habitation  ,                               , مَكْتَبٌ
- 211, 7         , مَدْرَسَةٌ            , Arabe   , إسم , Habitation  ,                               , مَدْرَسَةٌ
- 212, 7         , جَامِعَةٌ            , Arabe   , إسم , Habitation  ,                               , جَامِعَةٌ
- 213, 7         , قَلِيلٌ             , Arabe   , إسم , Autre       ,                               , قَلِيلٌ
- 214, 7         , كَثِيرٌ             , Arabe   , إسم , Autre       ,                               , كَثِيرٌ
+ 149, 6         , أُسْرَةٌ             , Arabe   , اسم , Famille     ,                               , أُسْرَةٌ
+ 150, 6         , أَبٌ               , Arabe   , اسم , Famille     ,                               , أَبٌ
+ 151, 6         , أُمٌّ               , Arabe   , اسم , Famille     ,                               , أُمٌّ
+ 152, 6         , أَخٌ               , Arabe   , اسم , Famille     ,                               , أَخٌ
+ 153, 6         , أُخْتٌ              , Arabe   , اسم , Famille     ,                               , أُخْتٌ
+ 154, 6         , اِبْنٌ              , Arabe   , اسم , Famille     ,                               , اِبْنٌ
+ 155, 6         , بِنْتٌ              , Arabe   , اسم , Famille     ,                               , بِنْتٌ
+ 156, 6         , جَدٌّ               , Arabe   , اسم , Famille     ,                               , جَدٌّ
+ 157, 6         , جَدَّةٌ              , Arabe   , اسم , Famille     ,                               , جَدَّةٌ
+ 158, 6         , زَوْجٌ              , Arabe   , اسم , Famille     ,                               , زَوْجٌ
+ 159, 6         , زَوْجَةٌ             , Arabe   , اسم , Famille     ,                               , زَوْجَةٌ
+ 160, 6         , عَمٌّ               , Arabe   , اسم , Famille     ,                               , عَمٌّ
+ 161, 6         , عَمَّةٌ              , Arabe   , اسم , Famille     ,                               , عَمَّةٌ
+ 162, 6         , خَالٌ              , Arabe   , اسم , Famille     ,                               , خَالٌ
+ 163, 6         , خَالَةٌ             , Arabe   , اسم , Famille     ,                               , خَالَةٌ
+ 164, 6         , مُدَرِّسٌ             , Arabe   , اسم , Métiers     ,                               , مُدَرِّسٌ
+ 165, 6         , طَبِيبٌ             , Arabe   , اسم , Métiers     ,                               , طَبِيبٌ
+ 166, 6         , مُوَظَّفٌ             , Arabe   , اسم , Métiers     ,                               , مُوَظَّفٌ
+ 167, 6         , مُهَنْدِسٌ            , Arabe   , اسم , Métiers     ,                               , مُهَنْدِسٌ
+ 168, 6         , مُحَامٍ             , Arabe   , اسم , Métiers     ,                               , مُحَامٍ
+ 169, 6         , طَبَّاخٌ             , Arabe   , اسم , Métiers     ,                               , طَبَّاخٌ
+ 170, 6         , سَائِقٌ             , Arabe   , اسم , Métiers     ,                               , سَائِقٌ
+ 171, 6         , مُدِيرٌ             , Arabe   , اسم , Métiers     ,                               , مُدِيرٌ
+ 172, 6         , فَلَّاحٌ             , Arabe   , اسم , Métiers     ,                               , فَلَّاحٌ
+ 173, 6         , بَائِعٌ             , Arabe   , اسم , Métiers     ,                               , بَائِعٌ
+ 174, 6         , خَبَّازٌ             , Arabe   , اسم , Métiers     ,                               , خَبَّازٌ
+ 175, 6         , شُرْطِيٌّ             , Arabe   , اسم , Métiers     ,                               , شُرْطِيٌّ
+ 176, 6         , تِلْمِيذٌ            , Arabe   , اسم , Métiers     ,                               , تِلْمِيذٌ
+ 177, 6         , famille          , Francais, اسم , Famille     ,                               , famille
+ 178, 6         , père             , Francais, اسم , Famille     ,                               , père
+ 179, 6         , mère             , Francais, اسم , Famille     ,                               , mère
+ 180, 6         , frère            , Francais, اسم , Famille     ,                               , frère
+ 181, 6         , sœur             , Francais, اسم , Famille     ,                               , sœur
+ 182, 6         , fils             , Francais, اسم , Famille     ,                               , fils
+ 183, 6         , fille            , Francais, اسم , Famille     ,                               , fille
+ 184, 6         , grand-père       , Francais, اسم , Famille     ,                               , grand-père
+ 185, 6         , grand-mère       , Francais, اسم , Famille     ,                               , grand-mère
+ 186, 6         , mari             , Francais, اسم , Famille     ,                               , mari
+ 187, 6         , épouse           , Francais, اسم , Famille     ,                               , épouse
+ 188, 6         , oncle            , Francais, اسم , Famille     , paternel                      , oncle (paternel)
+ 189, 6         , tante            , Francais, اسم , Famille     , paternel                      , tante (paternel)
+ 190, 6         , oncle            , Francais, اسم , Famille     , maternel                      , oncle (maternel)
+ 191, 6         , tante            , Francais, اسم , Famille     , maternel                      , tante (maternel)
+ 192, 6         , enseignant       , Francais, اسم , Métiers     ,                               , enseignant
+ 193, 6         , médecin          , Francais, اسم , Métiers     ,                               , médecin
+ 194, 6         , employé          , Francais, اسم , Métiers     ,                               , employé
+ 195, 6         , ingénieur        , Francais, اسم , Métiers     ,                               , ingénieur
+ 196, 6         , avocat           , Francais, اسم , Métiers     ,                               , avocat
+ 197, 6         , cuisinier        , Francais, اسم , Métiers     ,                               , cuisinier
+ 198, 6         , conducteur       , Francais, اسم , Métiers     ,                               , conducteur
+ 199, 6         , directeur        , Francais, اسم , Métiers     ,                               , directeur
+ 200, 6         , agriculteur      , Francais, اسم , Métiers     ,                               , agriculteur
+ 201, 6         , vendeur          , Francais, اسم , Métiers     ,                               , vendeur
+ 202, 6         , boulanger        , Francais, اسم , Métiers     ,                               , boulanger
+ 203, 6         , policier         , Francais, اسم , Métiers     ,                               , policier
+ 204, 6         , élève            , Francais, اسم , Métiers     ,                               , élève
+ 205, 7         , لُغَةٌ              , Arabe   , اسم , Salutation  ,                               , لُغَةٌ
+ 206, 7         , سَنَةٌ              , Arabe   , اسم , Salutation  ,                               , سَنَةٌ
+ 207, 7         , هَوَايَةٌ            , Arabe   , اسم , Salutation  ,                               , هَوَايَةٌ
+ 208, 7         , مِهْنَةٌ             , Arabe   , اسم , Métiers     ,                               , مِهْنَةٌ
+ 209, 7         , غُرْفَةٌ             , Arabe   , اسم , Habitation  ,                               , غُرْفَةٌ
+ 210, 7         , مَكْتَبٌ             , Arabe   , اسم , Habitation  ,                               , مَكْتَبٌ
+ 211, 7         , مَدْرَسَةٌ            , Arabe   , اسم , Habitation  ,                               , مَدْرَسَةٌ
+ 212, 7         , جَامِعَةٌ            , Arabe   , اسم , Habitation  ,                               , جَامِعَةٌ
+ 213, 7         , قَلِيلٌ             , Arabe   , اسم , Autre       ,                               , قَلِيلٌ
+ 214, 7         , كَثِيرٌ             , Arabe   , اسم , Autre       ,                               , كَثِيرٌ
  215, 7         , فِي               , Arabe   , حرف , Habitation  ,                               , فِي
  216, 7         , عَلَى              , Arabe   , حرف , Habitation  ,                               , عَلَى
  217, 7         , دَرَسَ              , Arabe   , فعل , Métiers     ,                               , دَرَسَ
  218, 7         , سَكَنَ              , Arabe   , فعل , Habitation  ,                               , سَكَنَ
  219, 7         , سَافَرَ             , Arabe   , فعل , Autre       ,                               , سَافَرَ
- 220, 7         , langue           , Francais, إسم , Salutation  ,                               , langue
- 221, 7         , année            , Francais, إسم , Salutation  ,                               , année
- 222, 7         , hobby            , Francais, إسم , Salutation  ,                               , hobby
- 223, 7         , profession       , Francais, إسم , Métiers     ,                               , profession
- 224, 7         , chambre          , Francais, إسم , Habitation  ,                               , chambre
- 225, 7         , bureau           , Francais, إسم , Habitation  , pièce ou meuble               , bureau (pièce ou meuble)
- 226, 7         , école            , Francais, إسم , Habitation  ,                               , école
- 227, 7         , université       , Francais, إسم , Habitation  ,                               , université
- 228, 7         , peu              , Francais, إسم , Autre       ,                               , peu
- 229, 7         , beaucoup         , Francais, إسم , Autre       ,                               , beaucoup
+ 220, 7         , langue           , Francais, اسم , Salutation  ,                               , langue
+ 221, 7         , année            , Francais, اسم , Salutation  ,                               , année
+ 222, 7         , hobby            , Francais, اسم , Salutation  ,                               , hobby
+ 223, 7         , profession       , Francais, اسم , Métiers     ,                               , profession
+ 224, 7         , chambre          , Francais, اسم , Habitation  ,                               , chambre
+ 225, 7         , bureau           , Francais, اسم , Habitation  , pièce ou meuble               , bureau (pièce ou meuble)
+ 226, 7         , école            , Francais, اسم , Habitation  ,                               , école
+ 227, 7         , université       , Francais, اسم , Habitation  ,                               , université
+ 228, 7         , peu              , Francais, اسم , Autre       ,                               , peu
+ 229, 7         , beaucoup         , Francais, اسم , Autre       ,                               , beaucoup
  230, 7         , dans             , Francais, حرف , Métiers     ,                               , dans
  231, 7         , sur              , Francais, حرف , Métiers     ,                               , sur
  232, 7         , étudier          , Francais, فعل , Métiers     ,                               , étudier
  233, 7         , habiter          , Francais, فعل , Autre       ,                               , habiter
  234, 7         , voyager          , Francais, فعل , Autre       ,                               , voyager
- 235, 8         , مَهْجَعٌ             , Arabe   , إسم , Habitation  ,                               , مَهْجَعٌ
- 236, 8         , دَوْرٌ              , Arabe   , إسم , Habitation  ,                               , دَوْرٌ
- 237, 8         , طَابِقٌ             , Arabe   , إسم , Habitation  ,                               , طَابِقٌ
- 238, 8         , صِفْرٌ              , Arabe   , إسم , Autre       ,                               , صِفْرٌ
- 239, 8         , وَاحِدٌ             , Arabe   , إسم , Autre       ,                               , وَاحِدٌ
- 240, 8         , اثْنَانِ            , Arabe   , إسم , Autre       ,                               , اثْنَانِ
- 241, 8         , ثَلَاثَةٌ            , Arabe   , إسم , Autre       ,                               , ثَلَاثَةٌ
- 242, 8         , أَرْبَعَةٌ            , Arabe   , إسم , Autre       ,                               , أَرْبَعَةٌ
- 243, 8         , خَمْسَةٌ             , Arabe   , إسم , Autre       ,                               , خَمْسَةٌ
- 244, 8         , سِتَّةٌ              , Arabe   , إسم , Autre       ,                               , سِتَّةٌ
- 245, 8         , سَبْعَةٌ             , Arabe   , إسم , Autre       ,                               , سَبْعَةٌ
- 246, 8         , ثَمَانِيَةٌ           , Arabe   , إسم , Autre       ,                               , ثَمَانِيَةٌ
- 247, 8         , تِسْعَةٌ             , Arabe   , إسم , Autre       ,                               , تِسْعَةٌ
- 248, 8         , عَشَرَةٌ             , Arabe   , إسم , Autre       ,                               , عَشَرَةٌ
- 249, 8         , عِشْرُونَ            , Arabe   , إسم , Autre       ,                               , عِشْرُونَ
- 250, 8         , مِائَةٌ             , Arabe   , إسم , Autre       ,                               , مِائَةٌ
- 251, 8         , أَلْفٌ              , Arabe   , إسم , Autre       ,                               , أَلْفٌ
+ 235, 8         , مَهْجَعٌ             , Arabe   , اسم , Habitation  ,                               , مَهْجَعٌ
+ 236, 8         , دَوْرٌ              , Arabe   , اسم , Habitation  ,                               , دَوْرٌ
+ 237, 8         , طَابِقٌ             , Arabe   , اسم , Habitation  ,                               , طَابِقٌ
+ 238, 8         , صِفْرٌ              , Arabe   , اسم , Autre       ,                               , صِفْرٌ
+ 239, 8         , وَاحِدٌ             , Arabe   , اسم , Autre       ,                               , وَاحِدٌ
+ 240, 8         , اثْنَانِ            , Arabe   , اسم , Autre       ,                               , اثْنَانِ
+ 241, 8         , ثَلَاثَةٌ            , Arabe   , اسم , Autre       ,                               , ثَلَاثَةٌ
+ 242, 8         , أَرْبَعَةٌ            , Arabe   , اسم , Autre       ,                               , أَرْبَعَةٌ
+ 243, 8         , خَمْسَةٌ             , Arabe   , اسم , Autre       ,                               , خَمْسَةٌ
+ 244, 8         , سِتَّةٌ              , Arabe   , اسم , Autre       ,                               , سِتَّةٌ
+ 245, 8         , سَبْعَةٌ             , Arabe   , اسم , Autre       ,                               , سَبْعَةٌ
+ 246, 8         , ثَمَانِيَةٌ           , Arabe   , اسم , Autre       ,                               , ثَمَانِيَةٌ
+ 247, 8         , تِسْعَةٌ             , Arabe   , اسم , Autre       ,                               , تِسْعَةٌ
+ 248, 8         , عَشَرَةٌ             , Arabe   , اسم , Autre       ,                               , عَشَرَةٌ
+ 249, 8         , عِشْرُونَ            , Arabe   , اسم , Autre       ,                               , عِشْرُونَ
+ 250, 8         , مِائَةٌ             , Arabe   , اسم , Autre       ,                               , مِائَةٌ
+ 251, 8         , أَلْفٌ              , Arabe   , اسم , Autre       ,                               , أَلْفٌ
  252, 8         , مِنْ               , Arabe   , حرف , Autre       ,                               , مِنْ
  253, 8         , إِلَى              , Arabe   , حرف , Autre       ,                               , إِلَى
  254, 8         , عَنْ               , Arabe   , حرف , Autre       ,                               , عَنْ
@@ -257,23 +257,23 @@ id  , seance    , mot              , langue  , type, chapitre    , definition   
  256, 8         , وَضَعَ              , Arabe   , فعل , Autre       ,                               , وَضَعَ
  257, 8         , ضَحِكَ              , Arabe   , فعل , Autre       ,                               , ضَحِكَ
  258, 8         , بَكَى              , Arabe   , فعل , Autre       ,                               , بَكَى
- 259, 8         , dortoir          , Francais, إسم , Habitation  ,                               , dortoir
- 260, 8         , étage            , Francais, إسم , Habitation  ,                               , étage
- 261, 8         , étage            , Francais, إسم , Habitation  ,                               , étage
- 262, 8         , zéro             , Francais, إسم , Autre       ,                               , zéro
- 263, 8         , un               , Francais, إسم , Autre       ,                               , un
- 264, 8         , deux             , Francais, إسم , Autre       ,                               , deux
- 265, 8         , trois            , Francais, إسم , Autre       ,                               , trois
- 266, 8         , quatre           , Francais, إسم , Autre       ,                               , quatre
- 267, 8         , cinq             , Francais, إسم , Autre       ,                               , cinq
- 268, 8         , six              , Francais, إسم , Autre       ,                               , six
- 269, 8         , sept             , Francais, إسم , Autre       ,                               , sept
- 270, 8         , huit             , Francais, إسم , Autre       ,                               , huit
- 271, 8         , neuf             , Francais, إسم , Autre       ,                               , neuf
- 272, 8         , dix              , Francais, إسم , Autre       ,                               , dix
- 273, 8         , vingt            , Francais, إسم , Autre       ,                               , vingt
- 274, 8         , cent             , Francais, إسم , Autre       ,                               , cent
- 275, 8         , mille            , Francais, إسم , Autre       ,                               , mille
+ 259, 8         , dortoir          , Francais, اسم , Habitation  ,                               , dortoir
+ 260, 8         , étage            , Francais, اسم , Habitation  ,                               , étage
+ 261, 8         , étage            , Francais, اسم , Habitation  ,                               , étage
+ 262, 8         , zéro             , Francais, اسم , Autre       ,                               , zéro
+ 263, 8         , un               , Francais, اسم , Autre       ,                               , un
+ 264, 8         , deux             , Francais, اسم , Autre       ,                               , deux
+ 265, 8         , trois            , Francais, اسم , Autre       ,                               , trois
+ 266, 8         , quatre           , Francais, اسم , Autre       ,                               , quatre
+ 267, 8         , cinq             , Francais, اسم , Autre       ,                               , cinq
+ 268, 8         , six              , Francais, اسم , Autre       ,                               , six
+ 269, 8         , sept             , Francais, اسم , Autre       ,                               , sept
+ 270, 8         , huit             , Francais, اسم , Autre       ,                               , huit
+ 271, 8         , neuf             , Francais, اسم , Autre       ,                               , neuf
+ 272, 8         , dix              , Francais, اسم , Autre       ,                               , dix
+ 273, 8         , vingt            , Francais, اسم , Autre       ,                               , vingt
+ 274, 8         , cent             , Francais, اسم , Autre       ,                               , cent
+ 275, 8         , mille            , Francais, اسم , Autre       ,                               , mille
  276, 8         , de               , Francais, حرف , Autre       , provenance                    , de (provenance)
  277, 8         , vers             , Francais, حرف , Autre       ,                               , vers
  278, 8         , sur              , Francais, حرف , Autre       , à propos de                   , sur (à propos de)
@@ -281,156 +281,156 @@ id  , seance    , mot              , langue  , type, chapitre    , definition   
  280, 8         , poser            , Francais, فعل , Autre       , déposer                       , poser (déposer)
  281, 8         , rire             , Francais, فعل , Autre       ,                               , rire
  282, 8         , pleurer          , Francais, فعل , Autre       ,                               , pleurer
- 283, 9         , وَلَدٌ              , Arabe   , إسم , Famille     ,                               , وَلَدٌ
+ 283, 9         , وَلَدٌ              , Arabe   , اسم , Famille     ,                               , وَلَدٌ
  284, 9         , تَوَضَّأَ             , Arabe   , فعل , Habitudes   ,                               , تَوَضَّأَ
  285, 9         , قَرَأَ              , Arabe   , فعل , Habitudes   ,                               , قَرَأَ
  286, 9         , صَلَّى              , Arabe   , فعل , Habitudes   ,                               , صَلَّى
- 287, 9         , أَيْنَ              , Arabe   , حرف , Autre       ,                               , أَيْنَ
- 288, 9         , مِعْطَفٌ             , Arabe   , إسم , Autre       ,                               , مِعْطَفٌ
- 289, 9         , نَظَّارَةٌ            , Arabe   , إسم , Autre       ,                               , نَظَّارَةٌ
- 290, 9         , مَسْجِدٌ             , Arabe   , إسم , Autre       ,                               , مَسْجِدٌ
- 291, 9         , الْفَجْرُ            , Arabe   , إسم , Habitudes   ,                               , الْفَجْرُ
- 292, 9         , الظُّهْرُ            , Arabe   , إسم , Habitudes   ,                               , الظُّهْرُ
- 293, 9         , الْعَصْرُ            , Arabe   , إسم , Habitudes   ,                               , الْعَصْرُ
- 294, 9         , الْمَغْرِبُ           , Arabe   , إسم , Habitudes   ,                               , الْمَغْرِبُ
- 295, 9         , الْعِشَاءُ           , Arabe   , إسم , Habitudes   ,                               , الْعِشَاءُ
- 296, 9         , enfant           , Francais, إسم , Famille     ,                               , enfant
+ 287, 9         , أَيْنَ              , Arabe   , اسم , Autre       ,                               , أَيْنَ
+ 288, 9         , مِعْطَفٌ             , Arabe   , اسم , Autre       ,                               , مِعْطَفٌ
+ 289, 9         , نَظَّارَةٌ            , Arabe   , اسم , Autre       ,                               , نَظَّارَةٌ
+ 290, 9         , مَسْجِدٌ             , Arabe   , اسم , Autre       ,                               , مَسْجِدٌ
+ 291, 9         , الْفَجْرُ            , Arabe   , اسم , Habitudes   ,                               , الْفَجْرُ
+ 292, 9         , الظُّهْرُ            , Arabe   , اسم , Habitudes   ,                               , الظُّهْرُ
+ 293, 9         , الْعَصْرُ            , Arabe   , اسم , Habitudes   ,                               , الْعَصْرُ
+ 294, 9         , الْمَغْرِبُ           , Arabe   , اسم , Habitudes   ,                               , الْمَغْرِبُ
+ 295, 9         , الْعِشَاءُ           , Arabe   , اسم , Habitudes   ,                               , الْعِشَاءُ
+ 296, 9         , enfant           , Francais, اسم , Famille     ,                               , enfant
  297, 9         , ablutions        , Francais, فعل , Habitudes   , faire les                     , ablutions (faire les)
  298, 9         , lire             , Francais, فعل , Habitudes   ,                               , lire
  299, 9         , prier            , Francais, فعل , Habitudes   ,                               , prier
- 300, 9         , où               , Francais, حرف , Autre       ,                               , où
- 301, 9         , manteau          , Francais, إسم , Autre       ,                               , manteau
- 302, 9         , lunettes         , Francais, إسم , Autre       ,                               , lunettes
- 303, 9         , mosquée          , Francais, إسم , Autre       ,                               , mosquée
- 304, 9         , aube             , Francais, إسم , Habitudes   , prière de                     , aube (prière de)
- 305, 9         , midi             , Francais, إسم , Habitudes   , prière de                     , midi (prière de)
- 306, 9         , après-midi       , Francais, إسم , Habitudes   , prière de                     , après-midi (prière de)
- 307, 9         , coucher du soleil, Francais, إسم , Habitudes   , prière de                     , coucher du soleil (prière de)
- 308, 9         , nuit             , Francais, إسم , Habitudes   , prière de                     , nuit (prière de)
+ 300, 9         , où               , Francais, اسم , Autre       ,                               , où
+ 301, 9         , manteau          , Francais, اسم , Autre       ,                               , manteau
+ 302, 9         , lunettes         , Francais, اسم , Autre       ,                               , lunettes
+ 303, 9         , mosquée          , Francais, اسم , Autre       ,                               , mosquée
+ 304, 9         , aube             , Francais, اسم , Habitudes   , prière de                     , aube (prière de)
+ 305, 9         , midi             , Francais, اسم , Habitudes   , prière de                     , midi (prière de)
+ 306, 9         , après-midi       , Francais, اسم , Habitudes   , prière de                     , après-midi (prière de)
+ 307, 9         , coucher du soleil, Francais, اسم , Habitudes   , prière de                     , coucher du soleil (prière de)
+ 308, 9         , nuit             , Francais, اسم , Habitudes   , prière de                     , nuit (prière de)
  309, 10        , نَعَمْ              , Arabe   , حرف , Autre       ,                               , نَعَمْ
  310, 10        , لَا               , Arabe   , حرف , Habitation  ,                               , لَا
- 311, 10        , رَقْمٌ              , Arabe   , إسم , Habitation  ,                               , رَقْمٌ
- 312, 10        , حَيٌّ               , Arabe   , إسم , Habitation  ,                               , حَيٌّ
- 313, 10        , جَمِيلٌ             , Arabe   , إسم , Habitation  ,                               , جَمِيلٌ
- 314, 10        , بَابٌ              , Arabe   , إسم , Habitation  ,                               , بَابٌ
- 315, 10        , خِدْمَةٌ             , Arabe   , إسم , Autre       ,                               , خِدْمَةٌ
- 316, 10        , شَيْءٌ              , Arabe   , إسم , Autre       ,                               , شَيْءٌ
- 317, 10        , حَمَّامٌ             , Arabe   , إسم , Habitation  ,                               , حَمَّامٌ
- 318, 10        , مَطْبَخٌ             , Arabe   , إسم , Habitation  ,                               , مَطْبَخٌ
- 319, 10        , مَطَارٌ             , Arabe   , إسم , Habitation  ,                               , مَطَارٌ
- 320, 10        , جَامِعَةٌ            , Arabe   , إسم , Habitation  ,                               , جَامِعَةٌ
+ 311, 10        , رَقْمٌ              , Arabe   , اسم , Habitation  ,                               , رَقْمٌ
+ 312, 10        , حَيٌّ               , Arabe   , اسم , Habitation  ,                               , حَيٌّ
+ 313, 10        , جَمِيلٌ             , Arabe   , اسم , Habitation  ,                               , جَمِيلٌ
+ 314, 10        , بَابٌ              , Arabe   , اسم , Habitation  ,                               , بَابٌ
+ 315, 10        , خِدْمَةٌ             , Arabe   , اسم , Autre       ,                               , خِدْمَةٌ
+ 316, 10        , شَيْءٌ              , Arabe   , اسم , Autre       ,                               , شَيْءٌ
+ 317, 10        , حَمَّامٌ             , Arabe   , اسم , Habitation  ,                               , حَمَّامٌ
+ 318, 10        , مَطْبَخٌ             , Arabe   , اسم , Habitation  ,                               , مَطْبَخٌ
+ 319, 10        , مَطَارٌ             , Arabe   , اسم , Habitation  ,                               , مَطَارٌ
+ 320, 10        , جَامِعَةٌ            , Arabe   , اسم , Habitation  ,                               , جَامِعَةٌ
  321, 10        , oui              , Francais, حرف , Autre       ,                               , oui
  322, 10        , non              , Francais, حرف , Habitation  ,                               , non
- 323, 10        , numéro           , Francais, إسم , Habitation  ,                               , numéro
- 324, 10        , quartier         , Francais, إسم , Habitation  ,                               , quartier
- 325, 10        , beau             , Francais, إسم , Habitation  ,                               , beau
- 326, 10        , porte            , Francais, إسم , Habitation  ,                               , porte
- 327, 10        , service          , Francais, إسم , Autre       ,                               , service
- 328, 10        , chose            , Francais, إسم , Autre       ,                               , chose
- 329, 10        , salle de bain    , Francais, إسم , Habitation  ,                               , salle de bain
- 330, 10        , cuisine          , Francais, إسم , Habitation  ,                               , cuisine
- 331, 10        , aéroport         , Francais, إسم , Habitation  ,                               , aéroport
- 332, 10        , université       , Francais, إسم , Habitation  ,                               , université
- 333, 11        , الأوَّلُ            , Arabe   , إسم , Habitation  ,                               , الأوَّلُ
- 334, 11        , الثَّانِيُ           , Arabe   , إسم , Habitation  ,                               , الثَّانِيُ
- 335, 11        , الثَّالِثُ           , Arabe   , إسم , Habitation  ,                               , الثَّالِثُ
- 336, 11        , الرَّابِعُ           , Arabe   , إسم , Habitation  ,                               , الرَّابِعُ
- 337, 11        , الخَامِسُ           , Arabe   , إسم , Habitation  ,                               , الخَامِسُ
- 338, 11        , السَّادِسُ           , Arabe   , إسم , Habitation  ,                               , السَّادِسُ
- 339, 11        , السَّابِعُ           , Arabe   , إسم , Habitation  ,                               , السَّابِعُ
- 340, 11        , الثَّامِنُ           , Arabe   , إسم , Habitation  ,                               , الثَّامِنُ
- 341, 11        , التَّاسِعُ           , Arabe   , إسم , Habitation  ,                               , التَّاسِعُ
- 342, 11        , العَاشِرُ           , Arabe   , إسم , Habitation  ,                               , العَاشِرُ
- 343, 11        , الآخِرُ            , Arabe   , إسم , Habitation  ,                               , الآخِرُ
- 344, 11        , أَيْضًا             , Arabe   , حرف , Autre       ,                               , أَيْضًا
+ 323, 10        , numéro           , Francais, اسم , Habitation  ,                               , numéro
+ 324, 10        , quartier         , Francais, اسم , Habitation  ,                               , quartier
+ 325, 10        , beau             , Francais, اسم , Habitation  ,                               , beau
+ 326, 10        , porte            , Francais, اسم , Habitation  ,                               , porte
+ 327, 10        , service          , Francais, اسم , Autre       ,                               , service
+ 328, 10        , chose            , Francais, اسم , Autre       ,                               , chose
+ 329, 10        , salle de bain    , Francais, اسم , Habitation  ,                               , salle de bain
+ 330, 10        , cuisine          , Francais, اسم , Habitation  ,                               , cuisine
+ 331, 10        , aéroport         , Francais, اسم , Habitation  ,                               , aéroport
+ 332, 10        , université       , Francais, اسم , Habitation  ,                               , université
+ 333, 11        , الأوَّلُ            , Arabe   , اسم , Habitation  ,                               , الأوَّلُ
+ 334, 11        , الثَّانِيُ           , Arabe   , اسم , Habitation  ,                               , الثَّانِيُ
+ 335, 11        , الثَّالِثُ           , Arabe   , اسم , Habitation  ,                               , الثَّالِثُ
+ 336, 11        , الرَّابِعُ           , Arabe   , اسم , Habitation  ,                               , الرَّابِعُ
+ 337, 11        , الخَامِسُ           , Arabe   , اسم , Habitation  ,                               , الخَامِسُ
+ 338, 11        , السَّادِسُ           , Arabe   , اسم , Habitation  ,                               , السَّادِسُ
+ 339, 11        , السَّابِعُ           , Arabe   , اسم , Habitation  ,                               , السَّابِعُ
+ 340, 11        , الثَّامِنُ           , Arabe   , اسم , Habitation  ,                               , الثَّامِنُ
+ 341, 11        , التَّاسِعُ           , Arabe   , اسم , Habitation  ,                               , التَّاسِعُ
+ 342, 11        , العَاشِرُ           , Arabe   , اسم , Habitation  ,                               , العَاشِرُ
+ 343, 11        , الآخِرُ            , Arabe   , اسم , Habitation  ,                               , الآخِرُ
+ 344, 11        , أَيْضًا             , Arabe   , اسم , Autre       ,                               , أَيْضًا
  345, 11        , يَا               , Arabe   , حرف , Salutation  ,                               , يَا
- 346, 11        , صَفٌّ               , Arabe   , إسم , Métiers     ,                               , صَفٌّ
- 347, 11        , دَرْسٌ              , Arabe   , إسم , Métiers     ,                               , دَرْسٌ
- 348, 11        , Premier          , Francais, إسم , Habitation  ,                               , Premier
- 349, 11        , Deuxième         , Francais, إسم , Habitation  ,                               , Deuxième
- 350, 11        , Troisième        , Francais, إسم , Habitation  ,                               , Troisième
- 351, 11        , Quatrième        , Francais, إسم , Habitation  ,                               , Quatrième
- 352, 11        , Cinquième        , Francais, إسم , Habitation  ,                               , Cinquième
- 353, 11        , Sixième          , Francais, إسم , Habitation  ,                               , Sixième
- 354, 11        , Septième         , Francais, إسم , Habitation  ,                               , Septième
- 355, 11        , Huitième         , Francais, إسم , Habitation  ,                               , Huitième
- 356, 11        , Neuvième         , Francais, إسم , Habitation  ,                               , Neuvième
- 357, 11        , Dixième          , Francais, إسم , Habitation  ,                               , Dixième
- 358, 11        , Dernier          , Francais, إسم , Habitation  ,                               , Dernier
- 359, 11        , aussi            , Francais, حرف , Autre       ,                               , aussi
+ 346, 11        , صَفٌّ               , Arabe   , اسم , Métiers     ,                               , صَفٌّ
+ 347, 11        , دَرْسٌ              , Arabe   , اسم , Métiers     ,                               , دَرْسٌ
+ 348, 11        , Premier          , Francais, اسم , Habitation  ,                               , Premier
+ 349, 11        , Deuxième         , Francais, اسم , Habitation  ,                               , Deuxième
+ 350, 11        , Troisième        , Francais, اسم , Habitation  ,                               , Troisième
+ 351, 11        , Quatrième        , Francais, اسم , Habitation  ,                               , Quatrième
+ 352, 11        , Cinquième        , Francais, اسم , Habitation  ,                               , Cinquième
+ 353, 11        , Sixième          , Francais, اسم , Habitation  ,                               , Sixième
+ 354, 11        , Septième         , Francais, اسم , Habitation  ,                               , Septième
+ 355, 11        , Huitième         , Francais, اسم , Habitation  ,                               , Huitième
+ 356, 11        , Neuvième         , Francais, اسم , Habitation  ,                               , Neuvième
+ 357, 11        , Dixième          , Francais, اسم , Habitation  ,                               , Dixième
+ 358, 11        , Dernier          , Francais, اسم , Habitation  ,                               , Dernier
+ 359, 11        , aussi            , Francais, اسم , Autre       ,                               , aussi
  360, 11        , ô                , Francais, حرف , Salutation  , particule vocative            , ô (particule vocative)
- 361, 11        , classe           , Francais, إسم , Métiers     , école                         , classe (école)
- 362, 11        , leçon            , Francais, إسم , Métiers     ,                               , leçon
- 363, 12        , سَاعَةٌ             , Arabe   , إسم , Habitudes   ,                               , سَاعَةٌ
- 364, 12        , دَقِيقَةٌ            , Arabe   , إسم , Habitudes   ,                               , دَقِيقَةٌ
- 365, 12        , ثَانِيَةٌ            , Arabe   , إسم , Habitudes   ,                               , ثَانِيَةٌ
- 366, 12        , نِصْفٌ              , Arabe   , إسم , Habitudes   ,                               , نِصْفٌ
- 367, 12        , كَمْ               , Arabe   , حرف , Autre       ,                               , كَمْ
- 368, 12        , مَتَى              , Arabe   , حرف , Autre       ,                               , مَتَى
- 369, 12        , الآنَ             , Arabe   , إسم , Habitudes   ,                               , الآنَ
- 370, 12        , بَعْدَ              , Arabe   , إسم , Habitudes   ,                               , بَعْدَ
- 371, 12        , قَبْل              , Arabe   , إسم , Habitudes   ,                               , قَبْل
- 372, 12        , لَيْلٌ              , Arabe   , إسم , Habitudes   ,                               , لَيْلٌ
+ 361, 11        , classe           , Francais, اسم , Métiers     , école                         , classe (école)
+ 362, 11        , leçon            , Francais, اسم , Métiers     ,                               , leçon
+ 363, 12        , سَاعَةٌ             , Arabe   , اسم , Habitudes   ,                               , سَاعَةٌ
+ 364, 12        , دَقِيقَةٌ            , Arabe   , اسم , Habitudes   ,                               , دَقِيقَةٌ
+ 365, 12        , ثَانِيَةٌ            , Arabe   , اسم , Habitudes   ,                               , ثَانِيَةٌ
+ 366, 12        , نِصْفٌ              , Arabe   , اسم , Habitudes   ,                               , نِصْفٌ
+ 367, 12        , كَمْ               , Arabe   , اسم , Autre       ,                               , كَمْ
+ 368, 12        , مَتَى              , Arabe   , اسم , Autre       ,                               , مَتَى
+ 369, 12        , الآنَ             , Arabe   , اسم , Habitudes   ,                               , الآنَ
+ 370, 12        , بَعْدَ              , Arabe   , اسم , Habitudes   ,                               , بَعْدَ
+ 371, 12        , قَبْل              , Arabe   , اسم , Habitudes   ,                               , قَبْل
+ 372, 12        , لَيْلٌ              , Arabe   , اسم , Habitudes   ,                               , لَيْلٌ
  373, 12        , بَدَأَ              , Arabe   , فعل , Habitudes   ,                               , بَدَأَ
- 374, 12        , مُدَّةٌ              , Arabe   , إسم , Habitudes   ,                               , مُدَّةٌ
+ 374, 12        , مُدَّةٌ              , Arabe   , اسم , Habitudes   ,                               , مُدَّةٌ
  375, 12        , لِ                , Arabe   , حرف , Autre       , إسم                           , لِ (إسم)
- 376, 12        , عَدَدٌ              , Arabe   , إسم , Habitudes   ,                               , عَدَدٌ
- 377, 12        , heure            , Francais, إسم , Habitudes   ,                               , heure
- 378, 12        , minute           , Francais, إسم , Habitudes   ,                               , minute
- 379, 12        , seconde          , Francais, إسم , Habitudes   ,                               , seconde
- 380, 12        , demi             , Francais, إسم , Habitudes   ,                               , demi
- 381, 12        , combien          , Francais, حرف , Autre       ,                               , combien
- 382, 12        , quand            , Francais, حرف , Autre       ,                               , quand
- 383, 12        , maintenant       , Francais, إسم , Habitudes   ,                               , maintenant
- 384, 12        , après            , Francais, إسم , Habitudes   ,                               , après
- 385, 12        , avant            , Francais, إسم , Habitudes   ,                               , avant
- 386, 12        , nuit             , Francais, إسم , Habitudes   ,                               , nuit
+ 376, 12        , عَدَدٌ              , Arabe   , اسم , Habitudes   ,                               , عَدَدٌ
+ 377, 12        , heure            , Francais, اسم , Habitudes   ,                               , heure
+ 378, 12        , minute           , Francais, اسم , Habitudes   ,                               , minute
+ 379, 12        , seconde          , Francais, اسم , Habitudes   ,                               , seconde
+ 380, 12        , demi             , Francais, اسم , Habitudes   ,                               , demi
+ 381, 12        , combien          , Francais, اسم , Autre       ,                               , combien
+ 382, 12        , quand            , Francais, اسم , Autre       ,                               , quand
+ 383, 12        , maintenant       , Francais, اسم , Habitudes   ,                               , maintenant
+ 384, 12        , après            , Francais, اسم , Habitudes   ,                               , après
+ 385, 12        , avant            , Francais, اسم , Habitudes   ,                               , avant
+ 386, 12        , nuit             , Francais, اسم , Habitudes   ,                               , nuit
  387, 12        , commencer        , Francais, فعل , Habitudes   ,                               , commencer
- 388, 12        , durée            , Francais, إسم , Habitudes   ,                               , durée
+ 388, 12        , durée            , Francais, اسم , Habitudes   ,                               , durée
  389, 12        , pour             , Francais, حرف , Habitudes   ,                               , pour
- 390, 12        , nombre           , Francais, إسم , Autre       ,                               , nombre
- 391, 13        , أَمامَ             , Arabe   , إسم , Habitation  ,                               , أَمامَ
- 392, 13        , خَلْفَ              , Arabe   , إسم , Habitation  ,                               , خَلْفَ
- 393, 13        , تَحْتَ              , Arabe   , إسم , Habitation  ,                               , تَحْتَ
- 394, 13        , فَوْقَ              , Arabe   , إسم , Habitation  ,                               , فَوْقَ
- 395, 13        , مَعَ               , Arabe   , حرف , Habitation  ,                               , مَعَ
- 396, 13        , عِنْدَ              , Arabe   , حرف , Habitation  ,                               , عِنْدَ
- 397, 13        , وَسْطَ              , Arabe   , إسم , Habitation  ,                               , وَسْطَ
- 398, 13        , عَبْرَ              , Arabe   , إسم , Habitation  ,                               , عَبْرَ
- 399, 13        , بَيْنَ              , Arabe   , حرف , Habitation  ,                               , بَيْنَ
- 400, 13        , حَوْلَ              , Arabe   , إسم , Habitation  ,                               , حَوْلَ
- 401, 13        , لَدى              , Arabe   , إسم , Habitation  ,                               , لَدى
- 402, 13        , حَيْثُ              , Arabe   , حرف , Habitation  ,                               , حَيْثُ
- 403, 13        , هنا              , Arabe   , إسم , Habitation  ,                               , هنا
- 404, 13        , هُناك             , Arabe   , إسم , Habitation  ,                               , هُناك
+ 390, 12        , nombre           , Francais, اسم , Autre       ,                               , nombre
+ 391, 13        , أَمامَ             , Arabe   , اسم , Habitation  ,                               , أَمامَ
+ 392, 13        , خَلْفَ              , Arabe   , اسم , Habitation  ,                               , خَلْفَ
+ 393, 13        , تَحْتَ              , Arabe   , اسم , Habitation  ,                               , تَحْتَ
+ 394, 13        , فَوْقَ              , Arabe   , اسم , Habitation  ,                               , فَوْقَ
+ 395, 13        , مَعَ               , Arabe   , اسم , Habitation  ,                               , مَعَ
+ 396, 13        , عِنْدَ              , Arabe   , اسم , Habitation  ,                               , عِنْدَ
+ 397, 13        , وَسْطَ              , Arabe   , اسم , Habitation  ,                               , وَسْطَ
+ 398, 13        , عَبْرَ              , Arabe   , اسم , Habitation  ,                               , عَبْرَ
+ 399, 13        , بَيْنَ              , Arabe   , اسم , Habitation  ,                               , بَيْنَ
+ 400, 13        , حَوْلَ              , Arabe   , اسم , Habitation  ,                               , حَوْلَ
+ 401, 13        , لَدى              , Arabe   , اسم , Habitation  ,                               , لَدى
+ 402, 13        , حَيْثُ              , Arabe   , اسم , Habitation  ,                               , حَيْثُ
+ 403, 13        , هنا              , Arabe   , اسم , Habitation  ,                               , هنا
+ 404, 13        , هُناك             , Arabe   , اسم , Habitation  ,                               , هُناك
  405, 13        , ثُمَّ               , Arabe   , حرف , Habitudes   ,                               , ثُمَّ
- 406, 13        , حِينَ              , Arabe   , إسم , Habitudes   ,                               , حِينَ
- 407, 13        , أَثْناء            , Arabe   , إسم , Habitudes   ,                               , أَثْناء
- 408, 13        , فَوْرَ              , Arabe   , إسم , Habitudes   ,                               , فَوْرَ
- 409, 13        , قَطُّ               , Arabe   , حرف , Habitudes   ,                               , قَطُّ
- 410, 13        , بَيْنَما            , Arabe   , حرف , Habitudes   ,                               , بَيْنَما
+ 406, 13        , حِينَ              , Arabe   , اسم , Habitudes   ,                               , حِينَ
+ 407, 13        , أَثْناء            , Arabe   , اسم , Habitudes   ,                               , أَثْناء
+ 408, 13        , فَوْرَ              , Arabe   , اسم , Habitudes   ,                               , فَوْرَ
+ 409, 13        , قَطُّ               , Arabe   , اسم , Habitudes   ,                               , قَطُّ
+ 410, 13        , بَيْنَما            , Arabe   , اسم , Habitudes   ,                               , بَيْنَما
  411, 13        , لَمّا              , Arabe   , حرف , Habitudes   ,                               , لَمّا
  412, 13        , مُنْذُ              , Arabe   , حرف , Habitudes   ,                               , مُنْذُ
- 413, 13        , devant           , Francais, إسم , Habitation  ,                               , devant
- 414, 13        , derrière         , Francais, إسم , Habitation  ,                               , derrière
- 415, 13        , sous             , Francais, إسم , Habitation  ,                               , sous
- 416, 13        , au-dessus        , Francais, إسم , Habitation  ,                               , au-dessus
- 417, 13        , avec             , Francais, حرف , Habitation  ,                               , avec
- 418, 13        , chez             , Francais, حرف , Habitation  , auprès de                     , chez (auprès de)
- 419, 13        , au milieu        , Francais, إسم , Habitation  ,                               , au milieu
- 420, 13        , à travers        , Francais, إسم , Habitation  ,                               , à travers
- 421, 13        , entre            , Francais, حرف , Habitation  ,                               , entre
- 422, 13        , autour (de)      , Francais, إسم , Habitation  ,                               , autour (de)
- 423, 13        , auprès (de)      , Francais, إسم , Habitation  ,                               , auprès (de)
- 424, 13        , où               , Francais, حرف , Habitation  ,                               , où
- 425, 13        , ici              , Francais, إسم , Habitation  ,                               , ici
- 426, 13        , là-bas           , Francais, إسم , Habitation  ,                               , là-bas
+ 413, 13        , devant           , Francais, اسم , Habitation  ,                               , devant
+ 414, 13        , derrière         , Francais, اسم , Habitation  ,                               , derrière
+ 415, 13        , sous             , Francais, اسم , Habitation  ,                               , sous
+ 416, 13        , au-dessus        , Francais, اسم , Habitation  ,                               , au-dessus
+ 417, 13        , avec             , Francais, اسم , Habitation  ,                               , avec
+ 418, 13        , chez             , Francais, اسم , Habitation  , auprès de                     , chez (auprès de)
+ 419, 13        , au milieu        , Francais, اسم , Habitation  ,                               , au milieu
+ 420, 13        , à travers        , Francais, اسم , Habitation  ,                               , à travers
+ 421, 13        , entre            , Francais, اسم , Habitation  ,                               , entre
+ 422, 13        , autour (de)      , Francais, اسم , Habitation  ,                               , autour (de)
+ 423, 13        , auprès (de)      , Francais, اسم , Habitation  ,                               , auprès (de)
+ 424, 13        , où               , Francais, اسم , Habitation  ,                               , où
+ 425, 13        , ici              , Francais, اسم , Habitation  ,                               , ici
+ 426, 13        , là-bas           , Francais, اسم , Habitation  ,                               , là-bas
  427, 13        , puis             , Francais, حرف , Habitudes   ,                               , puis
- 428, 13        , lorsque          , Francais, إسم , Habitudes   ,                               , lorsque
- 429, 13        , pendant          , Francais, إسم , Habitudes   ,                               , pendant
- 430, 13        , immédiatement    , Francais, إسم , Habitudes   ,                               , immédiatement
- 431, 13        , jamais           , Francais, حرف , Habitudes   ,                               , jamais
- 432, 13        , tandis (que)     , Francais, حرف , Habitudes   ,                               , tandis (que)
+ 428, 13        , lorsque          , Francais, اسم , Habitudes   ,                               , lorsque
+ 429, 13        , pendant          , Francais, اسم , Habitudes   ,                               , pendant
+ 430, 13        , immédiatement    , Francais, اسم , Habitudes   ,                               , immédiatement
+ 431, 13        , jamais           , Francais, اسم , Habitudes   ,                               , jamais
+ 432, 13        , tandis (que)     , Francais, اسم , Habitudes   ,                               , tandis (que)
  433, 13        , dès (que)        , Francais, حرف , Habitudes   ,                               , dès (que)
  434, 13        , depuis           , Francais, حرف , Habitudes   ,                               , depuis
  435, 14        , بِ                , Arabe   , حرف , Autre       ,                               , بِ
@@ -438,324 +438,324 @@ id  , seance    , mot              , langue  , type, chapitre    , definition   
  437, 14        , حَتَّى              , Arabe   , حرف , Autre       ,                               , حَتَّى
  438, 14        , رُبَّ               , Arabe   , حرف , Autre       ,                               , رُبَّ
  439, 14        , وَ                , Arabe   , حرف , Autre       ,                               , وَ
- 440, 14        , السَّبْتِ            , Arabe   , إسم , Habitudes   ,                               , السَّبْتِ
- 441, 14        , الأَحَدِ            , Arabe   , إسم , Habitudes   ,                               , الأَحَدِ
- 442, 14        , الإثْنَيْنِ          , Arabe   , إسم , Habitudes   ,                               , الإثْنَيْنِ
- 443, 14        , الثُّلاَثَاء         , Arabe   , إسم , Habitudes   ,                               , الثُّلاَثَاء
- 444, 14        , الأَرْبِعَاء         , Arabe   , إسم , Habitudes   ,                               , الأَرْبِعَاء
- 445, 14        , الخَمِيسِ           , Arabe   , إسم , Habitudes   ,                               , الخَمِيسِ
- 446, 14        , الجُمُعَة           , Arabe   , إسم , Habitudes   ,                               , الجُمُعَة
+ 440, 14        , السَّبْتِ            , Arabe   , اسم , Habitudes   ,                               , السَّبْتِ
+ 441, 14        , الأَحَدِ            , Arabe   , اسم , Habitudes   ,                               , الأَحَدِ
+ 442, 14        , الإثْنَيْنِ          , Arabe   , اسم , Habitudes   ,                               , الإثْنَيْنِ
+ 443, 14        , الثُّلاَثَاء         , Arabe   , اسم , Habitudes   ,                               , الثُّلاَثَاء
+ 444, 14        , الأَرْبِعَاء         , Arabe   , اسم , Habitudes   ,                               , الأَرْبِعَاء
+ 445, 14        , الخَمِيسِ           , Arabe   , اسم , Habitudes   ,                               , الخَمِيسِ
+ 446, 14        , الجُمُعَة           , Arabe   , اسم , Habitudes   ,                               , الجُمُعَة
  447, 14        , avec             , Francais, حرف , Autre       ,                               , avec
  448, 14        , pour             , Francais, حرف , Autre       ,                               , pour
  449, 14        , comme            , Francais, حرف , Autre       ,                               , comme
  450, 14        , jusque (à)       , Francais, حرف , Autre       ,                               , jusque (à)
  451, 14        , probable (que)   , Francais, حرف , Autre       ,                               , probable (que)
  452, 14        , par              , Francais, حرف , Autre       , serment                       , par (serment)
- 453, 14        , Samedi           , Francais, إسم , Habitudes   ,                               , Samedi
- 454, 14        , Dimanche         , Francais, إسم , Habitudes   ,                               , Dimanche
- 455, 14        , Lundi            , Francais, إسم , Habitudes   ,                               , Lundi
- 456, 14        , Mardi            , Francais, إسم , Habitudes   ,                               , Mardi
- 457, 14        , Mercredi         , Francais, إسم , Habitudes   ,                               , Mercredi
- 458, 14        , Jeudi            , Francais, إسم , Habitudes   ,                               , Jeudi
- 459, 14        , Vendredi         , Francais, إسم , Habitudes   ,                               , Vendredi
- 460, 15        , لَحْظَةٌ             , Arabe   , إسم , Habitudes   ,                               , لَحْظَةٌ
- 461, 15        , وَقْتٌ              , Arabe   , إسم , Habitudes   ,                               , وَقْتٌ
- 462, 15        , أُسْبُوعٌ            , Arabe   , إسم , Habitudes   ,                               , أُسْبُوعٌ
- 463, 15        , شَهْرٌ              , Arabe   , إسم , Habitudes   ,                               , شَهْرٌ
- 464, 15        , عِشْرِيَّةٌ            , Arabe   , إسم , Habitudes   ,                               , عِشْرِيَّةٌ
- 465, 15        , قَرْنٌ              , Arabe   , إسم , Habitudes   ,                               , قَرْنٌ
- 466, 15        , قَادِمٌ             , Arabe   , إسم , Habitudes   ,                               , قَادِمٌ
- 467, 15        , الْمَاضِي           , Arabe   , إسم , Habitudes   ,                               , الْمَاضِي
- 468, 15        , الْفَارِطُ           , Arabe   , إسم , Habitudes   ,                               , الْفَارِطُ
- 469, 15        , الخَرِيفُ           , Arabe   , إسم , Habitudes   ,                               , الخَرِيفُ
- 470, 15        , الشِّتَاءُ           , Arabe   , إسم , Habitudes   ,                               , الشِّتَاءُ
- 471, 15        , الرَّبِيعُ           , Arabe   , إسم , Habitudes   ,                               , الرَّبِيعُ
- 472, 15        , الصَّيْفُ            , Arabe   , إسم , Habitudes   ,                               , الصَّيْفُ
- 473, 15        , moment           , Francais, إسم , Habitudes   ,                               , moment
- 474, 15        , temps            , Francais, إسم , Habitudes   ,                               , temps
- 475, 15        , semaine          , Francais, إسم , Habitudes   ,                               , semaine
- 476, 15        , mois             , Francais, إسم , Habitudes   ,                               , mois
- 477, 15        , décennie         , Francais, إسم , Habitudes   ,                               , décennie
- 478, 15        , siècle           , Francais, إسم , Habitudes   ,                               , siècle
- 479, 15        , venir (à)        , Francais, إسم , Habitudes   ,                               , venir (à)
- 480, 15        , passé            , Francais, إسم , Habitudes   ,                               , passé
- 481, 15        , révolu           , Francais, إسم , Habitudes   ,                               , révolu
- 482, 15        , automne          , Francais, إسم , Habitudes   ,                               , automne
- 483, 15        , hiver            , Francais, إسم , Habitudes   ,                               , hiver
- 484, 15        , printemps        , Francais, إسم , Habitudes   ,                               , printemps
- 485, 15        , été              , Francais, إسم , Habitudes   ,                               , été
- 486, 16        , جُدُدٌ              , Arabe   , إسم , Autre       ,                               , جُدُدٌ
- 487, 16        , قُدَمَاءُ            , Arabe   , إسم , Autre       ,                               , قُدَمَاءُ
- 488, 16        , سِهَالٌ             , Arabe   , إسم , Autre       ,                               , سِهَالٌ
- 489, 16        , صِعَابٌ             , Arabe   , إسم , Autre       ,                               , صِعَابٌ
- 490, 16        , صِغَارٌ             , Arabe   , إسم , Autre       ,                               , صِغَارٌ
- 491, 16        , كِبَارٌ             , Arabe   , إسم , Autre       ,                               , كِبَارٌ
- 492, 16        , قِصَارٌ             , Arabe   , إسم , Autre       ,                               , قِصَارٌ
- 493, 16        , طِوَالٌ             , Arabe   , إسم , Autre       ,                               , طِوَالٌ
- 494, 16        , رِجَالٌ             , Arabe   , إسم , Autre       ,                               , رِجَالٌ
- 495, 16        , نِسَاءٌ             , Arabe   , إسم , Autre       ,                               , نِسَاءٌ
- 496, 16        , سَادَةٌ             , Arabe   , إسم , Autre       ,                               , سَادَةٌ
- 497, 16        , أَصْدِقَاءٌ           , Arabe   , إسم , Autre       ,                               , أَصْدِقَاءٌ
- 498, 16        , أَعْدَاءٌ            , Arabe   , إسم , Autre       ,                               , أَعْدَاءٌ
- 499, 16        , طُلَّابٌ             , Arabe   , إسم , Autre       ,                               , طُلَّابٌ
- 500, 16        , طَلَبَةٌ             , Arabe   , إسم , Autre       ,                               , طَلَبَةٌ
- 501, 16        , أَعْمَارٌ            , Arabe   , إسم , Autre       ,                               , أَعْمَارٌ
- 502, 16        , بُلْدَانٌ            , Arabe   , إسم , Autre       ,                               , بُلْدَانٌ
- 503, 16        , مُدُنٌ              , Arabe   , إسم , Autre       ,                               , مُدُنٌ
- 504, 16        , بُيُوتٌ             , Arabe   , إسم , Autre       ,                               , بُيُوتٌ
- 505, 16        , شُقَقٌ              , Arabe   , إسم , Autre       ,                               , شُقَقٌ
- 506, 16        , كُتُبٌ              , Arabe   , إسم , Autre       ,                               , كُتُبٌ
- 507, 16        , أُسَرٌ              , Arabe   , إسم , Autre       ,                               , أُسَرٌ
- 508, 16        , آبَاءٌ             , Arabe   , إسم , Autre       ,                               , آبَاءٌ
- 509, 16        , أُمَّهَاتٌ            , Arabe   , إسم , Autre       ,                               , أُمَّهَاتٌ
- 510, 16        , إِخْوَةٌ             , Arabe   , إسم , Autre       ,                               , إِخْوَةٌ
- 511, 16        , أَخَوَاتٌ            , Arabe   , إسم , Autre       ,                               , أَخَوَاتٌ
- 512, 16        , أَبْنَاءُ            , Arabe   , إسم , Autre       ,                               , أَبْنَاءُ
- 513, 16        , بَنَاتٌ             , Arabe   , إسم , Autre       ,                               , بَنَاتٌ
- 514, 16        , أَجْدَادٌ            , Arabe   , إسم , Autre       ,                               , أَجْدَادٌ
- 515, 16        , أَزْوَاجٌ            , Arabe   , إسم , Autre       ,                               , أَزْوَاجٌ
- 516, 16        , أَعْمَامٌ            , Arabe   , إسم , Autre       ,                               , أَعْمَامٌ
- 517, 16        , أَخْوَالٌ            , Arabe   , إسم , Autre       ,                               , أَخْوَالٌ
- 518, 16        , أَطِبَّاءٌ            , Arabe   , إسم , Autre       ,                               , أَطِبَّاءٌ
- 519, 16        , تَلَامِيذٌ           , Arabe   , إسم , Autre       ,                               , تَلَامِيذٌ
- 520, 16        , أَعْوَامٌ            , Arabe   , إسم , Autre       ,                               , أَعْوَامٌ
- 521, 16        , غُرَفٌ              , Arabe   , إسم , Autre       ,                               , غُرَفٌ
- 522, 16        , مَكَاتِبٌ            , Arabe   , إسم , Autre       ,                               , مَكَاتِبٌ
- 523, 16        , مَدَارِسٌ            , Arabe   , إسم , Autre       ,                               , مَدَارِسٌ
- 524, 16        , أَوْلَادٌ            , Arabe   , إسم , Autre       ,                               , أَوْلَادٌ
- 525, 16        , مَسَاجِدٌ            , Arabe   , إسم , Autre       ,                               , مَسَاجِدٌ
- 526, 16        , أَرْقَامٌ            , Arabe   , إسم , Autre       ,                               , أَرْقَامٌ
- 527, 16        , أَحْيَاءٌ            , Arabe   , إسم , Autre       ,                               , أَحْيَاءٌ
- 528, 16        , أَبْوَابٌ            , Arabe   , إسم , Autre       ,                               , أَبْوَابٌ
- 529, 16        , أَشْيَاءٌ            , Arabe   , إسم , Autre       ,                               , أَشْيَاءٌ
- 530, 16        , دُرُوسٌ             , Arabe   , إسم , Autre       ,                               , دُرُوسٌ
- 531, 16        , دَقَائِقٌ            , Arabe   , إسم , Autre       ,                               , دَقَائِقٌ
- 532, 16        , ثَوَانٍ             , Arabe   , إسم , Autre       ,                               , ثَوَانٍ
- 533, 16        , لَيَالٍ             , Arabe   , إسم , Autre       ,                               , لَيَالٍ
- 534, 16        , أَعْدَادٌ            , Arabe   , إسم , Autre       ,                               , أَعْدَادٌ
- 535, 16        , أَوْقَاتٌ            , Arabe   , إسم , Autre       ,                               , أَوْقَاتٌ
- 536, 16        , أَسَابِيعٌ           , Arabe   , إسم , Autre       ,                               , أَسَابِيعٌ
- 537, 16        , أَشْهُرٌ             , Arabe   , إسم , Autre       ,                               , أَشْهُرٌ
- 538, 16        , شُهُورٌ             , Arabe   , إسم , Autre       ,                               , شُهُورٌ
- 539, 16        , قُرُونٌ             , Arabe   , إسم , Autre       ,                               , قُرُونٌ
- 540, 16        , nouveaux         , Francais, إسم , Autre       ,                               , nouveaux
- 541, 16        , anciens          , Francais, إسم , Autre       ,                               , anciens
- 542, 16        , faciles          , Francais, إسم , Autre       ,                               , faciles
- 543, 16        , difficiles       , Francais, إسم , Autre       ,                               , difficiles
- 544, 16        , petits           , Francais, إسم , Autre       ,                               , petits
- 545, 16        , grands           , Francais, إسم , Autre       ,                               , grands
- 546, 16        , courts           , Francais, إسم , Autre       ,                               , courts
- 547, 16        , longs            , Francais, إسم , Autre       ,                               , longs
- 548, 16        , hommes           , Francais, إسم , Autre       ,                               , hommes
- 549, 16        , femmes           , Francais, إسم , Autre       ,                               , femmes
- 550, 16        , messieurs        , Francais, إسم , Autre       ,                               , messieurs
- 551, 16        , amis             , Francais, إسم , Autre       ,                               , amis
- 552, 16        , ennemis          , Francais, إسم , Autre       ,                               , ennemis
- 553, 16        , étudiants        , Francais, إسم , Autre       ,                               , étudiants
- 554, 16        , âges             , Francais, إسم , Autre       ,                               , âges
- 555, 16        , pays             , Francais, إسم , Autre       , pluriel                       , pays (pluriel)
- 556, 16        , villes           , Francais, إسم , Autre       ,                               , villes
- 557, 16        , maisons          , Francais, إسم , Autre       ,                               , maisons
- 558, 16        , appartements     , Francais, إسم , Autre       ,                               , appartements
- 559, 16        , livres           , Francais, إسم , Autre       ,                               , livres
- 560, 16        , familles         , Francais, إسم , Autre       ,                               , familles
- 561, 16        , pères            , Francais, إسم , Autre       ,                               , pères
- 562, 16        , mères            , Francais, إسم , Autre       ,                               , mères
- 563, 16        , frères           , Francais, إسم , Autre       ,                               , frères
- 564, 16        , sœurs            , Francais, إسم , Autre       ,                               , sœurs
- 565, 16        , fils             , Francais, إسم , Autre       , pluriel                       , fils (pluriel)
- 566, 16        ,                  , Francais, إسم , Autre       ,                               , 
- 567, 16        , grands-pères     , Francais, إسم , Autre       ,                               , grands-pères
- 568, 16        , maris            , Francais, إسم , Autre       ,                               , maris
- 569, 16        , oncles           , Francais, إسم , Autre       , paternel                      , oncles (paternel)
- 570, 16        , oncles           , Francais, إسم , Autre       , maternel                      , oncles (maternel)
- 571, 16        , médecins         , Francais, إسم , Autre       ,                               , médecins
- 572, 16        , élèves           , Francais, إسم , Autre       ,                               , élèves
- 573, 16        , années           , Francais, إسم , Autre       ,                               , années
- 574, 16        , chambres         , Francais, إسم , Autre       ,                               , chambres
- 575, 16        , bureaux          , Francais, إسم , Autre       ,                               , bureaux
- 576, 16        , écoles           , Francais, إسم , Autre       ,                               , écoles
- 577, 16        , enfants          , Francais, إسم , Autre       ,                               , enfants
- 578, 16        , mosquées         , Francais, إسم , Autre       ,                               , mosquées
- 579, 16        , numéros          , Francais, إسم , Autre       ,                               , numéros
- 580, 16        , quartiers        , Francais, إسم , Autre       ,                               , quartiers
- 581, 16        , portes           , Francais, إسم , Autre       ,                               , portes
- 582, 16        , choses           , Francais, إسم , Autre       ,                               , choses
- 583, 16        , leçons           , Francais, إسم , Autre       ,                               , leçons
- 584, 16        , minutes          , Francais, إسم , Autre       ,                               , minutes
- 585, 16        , secondes         , Francais, إسم , Autre       ,                               , secondes
- 586, 16        , nuits            , Francais, إسم , Autre       ,                               , nuits
- 587, 16        , nombres          , Francais, إسم , Autre       ,                               , nombres
- 588, 16        , moments          , Francais, إسم , Autre       ,                               , moments
- 589, 16        , semaines         , Francais, إسم , Autre       ,                               , semaines
- 590, 16        , mois             , Francais, إسم , Autre       , pluriel                       , mois (pluriel)
- 591, 16        , siècles          , Francais, إسم , Autre       ,                               , siècles
- 592, 17        , خُبْزٌ              , Arabe   , إسم , Nourritures ,                               , خُبْزٌ
- 593, 17        , جُبْنٌ              , Arabe   , إسم , Nourritures ,                               , جُبْنٌ
- 594, 17        , سِعْرٌ              , Arabe   , إسم , Nourritures ,                               , سِعْرٌ
- 595, 17        , سُوقٌ              , Arabe   , إسم , Nourritures ,                               , سُوقٌ
- 596, 17        , بَيْضٌ              , Arabe   , إسم , Nourritures ,                               , بَيْضٌ
+ 453, 14        , Samedi           , Francais, اسم , Habitudes   ,                               , Samedi
+ 454, 14        , Dimanche         , Francais, اسم , Habitudes   ,                               , Dimanche
+ 455, 14        , Lundi            , Francais, اسم , Habitudes   ,                               , Lundi
+ 456, 14        , Mardi            , Francais, اسم , Habitudes   ,                               , Mardi
+ 457, 14        , Mercredi         , Francais, اسم , Habitudes   ,                               , Mercredi
+ 458, 14        , Jeudi            , Francais, اسم , Habitudes   ,                               , Jeudi
+ 459, 14        , Vendredi         , Francais, اسم , Habitudes   ,                               , Vendredi
+ 460, 15        , لَحْظَةٌ             , Arabe   , اسم , Habitudes   ,                               , لَحْظَةٌ
+ 461, 15        , وَقْتٌ              , Arabe   , اسم , Habitudes   ,                               , وَقْتٌ
+ 462, 15        , أُسْبُوعٌ            , Arabe   , اسم , Habitudes   ,                               , أُسْبُوعٌ
+ 463, 15        , شَهْرٌ              , Arabe   , اسم , Habitudes   ,                               , شَهْرٌ
+ 464, 15        , عِشْرِيَّةٌ            , Arabe   , اسم , Habitudes   ,                               , عِشْرِيَّةٌ
+ 465, 15        , قَرْنٌ              , Arabe   , اسم , Habitudes   ,                               , قَرْنٌ
+ 466, 15        , قَادِمٌ             , Arabe   , اسم , Habitudes   ,                               , قَادِمٌ
+ 467, 15        , الْمَاضِي           , Arabe   , اسم , Habitudes   ,                               , الْمَاضِي
+ 468, 15        , الْفَارِطُ           , Arabe   , اسم , Habitudes   ,                               , الْفَارِطُ
+ 469, 15        , الخَرِيفُ           , Arabe   , اسم , Habitudes   ,                               , الخَرِيفُ
+ 470, 15        , الشِّتَاءُ           , Arabe   , اسم , Habitudes   ,                               , الشِّتَاءُ
+ 471, 15        , الرَّبِيعُ           , Arabe   , اسم , Habitudes   ,                               , الرَّبِيعُ
+ 472, 15        , الصَّيْفُ            , Arabe   , اسم , Habitudes   ,                               , الصَّيْفُ
+ 473, 15        , moment           , Francais, اسم , Habitudes   ,                               , moment
+ 474, 15        , temps            , Francais, اسم , Habitudes   ,                               , temps
+ 475, 15        , semaine          , Francais, اسم , Habitudes   ,                               , semaine
+ 476, 15        , mois             , Francais, اسم , Habitudes   ,                               , mois
+ 477, 15        , décennie         , Francais, اسم , Habitudes   ,                               , décennie
+ 478, 15        , siècle           , Francais, اسم , Habitudes   ,                               , siècle
+ 479, 15        , venir (à)        , Francais, اسم , Habitudes   ,                               , venir (à)
+ 480, 15        , passé            , Francais, اسم , Habitudes   ,                               , passé
+ 481, 15        , révolu           , Francais, اسم , Habitudes   ,                               , révolu
+ 482, 15        , automne          , Francais, اسم , Habitudes   ,                               , automne
+ 483, 15        , hiver            , Francais, اسم , Habitudes   ,                               , hiver
+ 484, 15        , printemps        , Francais, اسم , Habitudes   ,                               , printemps
+ 485, 15        , été              , Francais, اسم , Habitudes   ,                               , été
+ 486, 16        , جُدُدٌ              , Arabe   , اسم , Autre       ,                               , جُدُدٌ
+ 487, 16        , قُدَمَاءُ            , Arabe   , اسم , Autre       ,                               , قُدَمَاءُ
+ 488, 16        , سِهَالٌ             , Arabe   , اسم , Autre       ,                               , سِهَالٌ
+ 489, 16        , صِعَابٌ             , Arabe   , اسم , Autre       ,                               , صِعَابٌ
+ 490, 16        , صِغَارٌ             , Arabe   , اسم , Autre       ,                               , صِغَارٌ
+ 491, 16        , كِبَارٌ             , Arabe   , اسم , Autre       ,                               , كِبَارٌ
+ 492, 16        , قِصَارٌ             , Arabe   , اسم , Autre       ,                               , قِصَارٌ
+ 493, 16        , طِوَالٌ             , Arabe   , اسم , Autre       ,                               , طِوَالٌ
+ 494, 16        , رِجَالٌ             , Arabe   , اسم , Autre       ,                               , رِجَالٌ
+ 495, 16        , نِسَاءٌ             , Arabe   , اسم , Autre       ,                               , نِسَاءٌ
+ 496, 16        , سَادَةٌ             , Arabe   , اسم , Autre       ,                               , سَادَةٌ
+ 497, 16        , أَصْدِقَاءٌ           , Arabe   , اسم , Autre       ,                               , أَصْدِقَاءٌ
+ 498, 16        , أَعْدَاءٌ            , Arabe   , اسم , Autre       ,                               , أَعْدَاءٌ
+ 499, 16        , طُلَّابٌ             , Arabe   , اسم , Autre       ,                               , طُلَّابٌ
+ 500, 16        , طَلَبَةٌ             , Arabe   , اسم , Autre       ,                               , طَلَبَةٌ
+ 501, 16        , أَعْمَارٌ            , Arabe   , اسم , Autre       ,                               , أَعْمَارٌ
+ 502, 16        , بُلْدَانٌ            , Arabe   , اسم , Autre       ,                               , بُلْدَانٌ
+ 503, 16        , مُدُنٌ              , Arabe   , اسم , Autre       ,                               , مُدُنٌ
+ 504, 16        , بُيُوتٌ             , Arabe   , اسم , Autre       ,                               , بُيُوتٌ
+ 505, 16        , شُقَقٌ              , Arabe   , اسم , Autre       ,                               , شُقَقٌ
+ 506, 16        , كُتُبٌ              , Arabe   , اسم , Autre       ,                               , كُتُبٌ
+ 507, 16        , أُسَرٌ              , Arabe   , اسم , Autre       ,                               , أُسَرٌ
+ 508, 16        , آبَاءٌ             , Arabe   , اسم , Autre       ,                               , آبَاءٌ
+ 509, 16        , أُمَّهَاتٌ            , Arabe   , اسم , Autre       ,                               , أُمَّهَاتٌ
+ 510, 16        , إِخْوَةٌ             , Arabe   , اسم , Autre       ,                               , إِخْوَةٌ
+ 511, 16        , أَخَوَاتٌ            , Arabe   , اسم , Autre       ,                               , أَخَوَاتٌ
+ 512, 16        , أَبْنَاءُ            , Arabe   , اسم , Autre       ,                               , أَبْنَاءُ
+ 513, 16        , بَنَاتٌ             , Arabe   , اسم , Autre       ,                               , بَنَاتٌ
+ 514, 16        , أَجْدَادٌ            , Arabe   , اسم , Autre       ,                               , أَجْدَادٌ
+ 515, 16        , أَزْوَاجٌ            , Arabe   , اسم , Autre       ,                               , أَزْوَاجٌ
+ 516, 16        , أَعْمَامٌ            , Arabe   , اسم , Autre       ,                               , أَعْمَامٌ
+ 517, 16        , أَخْوَالٌ            , Arabe   , اسم , Autre       ,                               , أَخْوَالٌ
+ 518, 16        , أَطِبَّاءٌ            , Arabe   , اسم , Autre       ,                               , أَطِبَّاءٌ
+ 519, 16        , تَلَامِيذٌ           , Arabe   , اسم , Autre       ,                               , تَلَامِيذٌ
+ 520, 16        , أَعْوَامٌ            , Arabe   , اسم , Autre       ,                               , أَعْوَامٌ
+ 521, 16        , غُرَفٌ              , Arabe   , اسم , Autre       ,                               , غُرَفٌ
+ 522, 16        , مَكَاتِبٌ            , Arabe   , اسم , Autre       ,                               , مَكَاتِبٌ
+ 523, 16        , مَدَارِسٌ            , Arabe   , اسم , Autre       ,                               , مَدَارِسٌ
+ 524, 16        , أَوْلَادٌ            , Arabe   , اسم , Autre       ,                               , أَوْلَادٌ
+ 525, 16        , مَسَاجِدٌ            , Arabe   , اسم , Autre       ,                               , مَسَاجِدٌ
+ 526, 16        , أَرْقَامٌ            , Arabe   , اسم , Autre       ,                               , أَرْقَامٌ
+ 527, 16        , أَحْيَاءٌ            , Arabe   , اسم , Autre       ,                               , أَحْيَاءٌ
+ 528, 16        , أَبْوَابٌ            , Arabe   , اسم , Autre       ,                               , أَبْوَابٌ
+ 529, 16        , أَشْيَاءٌ            , Arabe   , اسم , Autre       ,                               , أَشْيَاءٌ
+ 530, 16        , دُرُوسٌ             , Arabe   , اسم , Autre       ,                               , دُرُوسٌ
+ 531, 16        , دَقَائِقٌ            , Arabe   , اسم , Autre       ,                               , دَقَائِقٌ
+ 532, 16        , ثَوَانٍ             , Arabe   , اسم , Autre       ,                               , ثَوَانٍ
+ 533, 16        , لَيَالٍ             , Arabe   , اسم , Autre       ,                               , لَيَالٍ
+ 534, 16        , أَعْدَادٌ            , Arabe   , اسم , Autre       ,                               , أَعْدَادٌ
+ 535, 16        , أَوْقَاتٌ            , Arabe   , اسم , Autre       ,                               , أَوْقَاتٌ
+ 536, 16        , أَسَابِيعٌ           , Arabe   , اسم , Autre       ,                               , أَسَابِيعٌ
+ 537, 16        , أَشْهُرٌ             , Arabe   , اسم , Autre       ,                               , أَشْهُرٌ
+ 538, 16        , شُهُورٌ             , Arabe   , اسم , Autre       ,                               , شُهُورٌ
+ 539, 16        , قُرُونٌ             , Arabe   , اسم , Autre       ,                               , قُرُونٌ
+ 540, 16        , nouveaux         , Francais, اسم , Autre       ,                               , nouveaux
+ 541, 16        , anciens          , Francais, اسم , Autre       ,                               , anciens
+ 542, 16        , faciles          , Francais, اسم , Autre       ,                               , faciles
+ 543, 16        , difficiles       , Francais, اسم , Autre       ,                               , difficiles
+ 544, 16        , petits           , Francais, اسم , Autre       ,                               , petits
+ 545, 16        , grands           , Francais, اسم , Autre       ,                               , grands
+ 546, 16        , courts           , Francais, اسم , Autre       ,                               , courts
+ 547, 16        , longs            , Francais, اسم , Autre       ,                               , longs
+ 548, 16        , hommes           , Francais, اسم , Autre       ,                               , hommes
+ 549, 16        , femmes           , Francais, اسم , Autre       ,                               , femmes
+ 550, 16        , messieurs        , Francais, اسم , Autre       ,                               , messieurs
+ 551, 16        , amis             , Francais, اسم , Autre       ,                               , amis
+ 552, 16        , ennemis          , Francais, اسم , Autre       ,                               , ennemis
+ 553, 16        , étudiants        , Francais, اسم , Autre       ,                               , étudiants
+ 554, 16        , âges             , Francais, اسم , Autre       ,                               , âges
+ 555, 16        , pays             , Francais, اسم , Autre       , pluriel                       , pays (pluriel)
+ 556, 16        , villes           , Francais, اسم , Autre       ,                               , villes
+ 557, 16        , maisons          , Francais, اسم , Autre       ,                               , maisons
+ 558, 16        , appartements     , Francais, اسم , Autre       ,                               , appartements
+ 559, 16        , livres           , Francais, اسم , Autre       ,                               , livres
+ 560, 16        , familles         , Francais, اسم , Autre       ,                               , familles
+ 561, 16        , pères            , Francais, اسم , Autre       ,                               , pères
+ 562, 16        , mères            , Francais, اسم , Autre       ,                               , mères
+ 563, 16        , frères           , Francais, اسم , Autre       ,                               , frères
+ 564, 16        , sœurs            , Francais, اسم , Autre       ,                               , sœurs
+ 565, 16        , fils             , Francais, اسم , Autre       , pluriel                       , fils (pluriel)
+ 566, 16        ,                  , Francais, اسم , Autre       ,                               , 
+ 567, 16        , grands-pères     , Francais, اسم , Autre       ,                               , grands-pères
+ 568, 16        , maris            , Francais, اسم , Autre       ,                               , maris
+ 569, 16        , oncles           , Francais, اسم , Autre       , paternel                      , oncles (paternel)
+ 570, 16        , oncles           , Francais, اسم , Autre       , maternel                      , oncles (maternel)
+ 571, 16        , médecins         , Francais, اسم , Autre       ,                               , médecins
+ 572, 16        , élèves           , Francais, اسم , Autre       ,                               , élèves
+ 573, 16        , années           , Francais, اسم , Autre       ,                               , années
+ 574, 16        , chambres         , Francais, اسم , Autre       ,                               , chambres
+ 575, 16        , bureaux          , Francais, اسم , Autre       ,                               , bureaux
+ 576, 16        , écoles           , Francais, اسم , Autre       ,                               , écoles
+ 577, 16        , enfants          , Francais, اسم , Autre       ,                               , enfants
+ 578, 16        , mosquées         , Francais, اسم , Autre       ,                               , mosquées
+ 579, 16        , numéros          , Francais, اسم , Autre       ,                               , numéros
+ 580, 16        , quartiers        , Francais, اسم , Autre       ,                               , quartiers
+ 581, 16        , portes           , Francais, اسم , Autre       ,                               , portes
+ 582, 16        , choses           , Francais, اسم , Autre       ,                               , choses
+ 583, 16        , leçons           , Francais, اسم , Autre       ,                               , leçons
+ 584, 16        , minutes          , Francais, اسم , Autre       ,                               , minutes
+ 585, 16        , secondes         , Francais, اسم , Autre       ,                               , secondes
+ 586, 16        , nuits            , Francais, اسم , Autre       ,                               , nuits
+ 587, 16        , nombres          , Francais, اسم , Autre       ,                               , nombres
+ 588, 16        , moments          , Francais, اسم , Autre       ,                               , moments
+ 589, 16        , semaines         , Francais, اسم , Autre       ,                               , semaines
+ 590, 16        , mois             , Francais, اسم , Autre       , pluriel                       , mois (pluriel)
+ 591, 16        , siècles          , Francais, اسم , Autre       ,                               , siècles
+ 592, 17        , خُبْزٌ              , Arabe   , اسم , Nourritures ,                               , خُبْزٌ
+ 593, 17        , جُبْنٌ              , Arabe   , اسم , Nourritures ,                               , جُبْنٌ
+ 594, 17        , سِعْرٌ              , Arabe   , اسم , Nourritures ,                               , سِعْرٌ
+ 595, 17        , سُوقٌ              , Arabe   , اسم , Nourritures ,                               , سُوقٌ
+ 596, 17        , بَيْضٌ              , Arabe   , اسم , Nourritures ,                               , بَيْضٌ
  597, 17        , اِشْتَرَى            , Arabe   , فعل , Nourritures ,                               , اِشْتَرَى
  598, 17        , بَاعَ              , Arabe   , فعل , Nourritures ,                               , بَاعَ
  599, 17        , طَلَبَ              , Arabe   , فعل , Nourritures ,                               , طَلَبَ
  600, 17        , دَفَعَ              , Arabe   , فعل , Nourritures ,                               , دَفَعَ
  601, 17        , أَرَادَ             , Arabe   , فعل , Nourritures ,                               , أَرَادَ
- 602, 17        , أَرُزٌّ              , Arabe   , إسم , Nourritures ,                               , أَرُزٌّ
- 603, 17        , مِلْحٌ              , Arabe   , إسم , Nourritures ,                               , مِلْحٌ
- 604, 17        , لَحْمٌ              , Arabe   , إسم , Nourritures ,                               , لَحْمٌ
- 605, 17        , pain             , Francais, إسم , Nourritures ,                               , pain
- 606, 17        , fromage          , Francais, إسم , Nourritures ,                               , fromage
- 607, 17        , prix             , Francais, إسم , Nourritures ,                               , prix
- 608, 17        , marché           , Francais, إسم , Nourritures ,                               , marché
- 609, 17        , œuf              , Francais, إسم , Nourritures ,                               , œuf
+ 602, 17        , أَرُزٌّ              , Arabe   , اسم , Nourritures ,                               , أَرُزٌّ
+ 603, 17        , مِلْحٌ              , Arabe   , اسم , Nourritures ,                               , مِلْحٌ
+ 604, 17        , لَحْمٌ              , Arabe   , اسم , Nourritures ,                               , لَحْمٌ
+ 605, 17        , pain             , Francais, اسم , Nourritures ,                               , pain
+ 606, 17        , fromage          , Francais, اسم , Nourritures ,                               , fromage
+ 607, 17        , prix             , Francais, اسم , Nourritures ,                               , prix
+ 608, 17        , marché           , Francais, اسم , Nourritures ,                               , marché
+ 609, 17        , œuf              , Francais, اسم , Nourritures ,                               , œuf
  610, 17        , acheter          , Francais, فعل , Nourritures ,                               , acheter
  611, 17        , vendre           , Francais, فعل , Nourritures ,                               , vendre
  612, 17        , demander         , Francais, فعل , Nourritures ,                               , demander
  613, 17        , payer            , Francais, فعل , Nourritures ,                               , payer
  614, 17        , vouloir          , Francais, فعل , Nourritures ,                               , vouloir
- 615, 17        , riz              , Francais, إسم , Nourritures ,                               , riz
- 616, 17        , sel              , Francais, إسم , Nourritures ,                               , sel
- 617, 17        , viande           , Francais, إسم , Nourritures ,                               , viande
- 618, 18        , الَّذِي             , Arabe   , إسم , Autre       ,                               , الَّذِي
- 619, 18        , الَّتِي             , Arabe   , إسم , Autre       ,                               , الَّتِي
- 620, 18        , اللَّذانِ           , Arabe   , إسم , Autre       ,                               , اللَّذانِ
- 621, 18        , اللَّتَانِ           , Arabe   , إسم , Autre       ,                               , اللَّتَانِ
- 622, 18        , الَّذِينَ            , Arabe   , إسم , Autre       ,                               , الَّذِينَ
- 623, 18        , اللَّوَاتِي          , Arabe   , إسم , Autre       ,                               , اللَّوَاتِي
- 624, 18        , مَا               , Arabe   , إسم , Autre       ,                               , مَا
- 625, 18        , مَنْ               , Arabe   , إسم , Autre       ,                               , مَنْ
- 626, 18        , أَيٌّ               , Arabe   , إسم , Autre       ,                               , أَيٌّ
- 627, 18        , qui              , Francais, إسم , Autre       , masculin singulier            , qui (masculin singulier)
- 628, 18        , qui              , Francais, إسم , Autre       , féminin singulier             , qui (féminin singulier)
- 629, 18        , qui              , Francais, إسم , Autre       , masculin duel                 , qui (masculin duel)
- 630, 18        , qui              , Francais, إسم , Autre       , féminin duel                  , qui (féminin duel)
- 631, 18        , qui              , Francais, إسم , Autre       , masculin pluriel              , qui (masculin pluriel)
- 632, 18        , qui              , Francais, إسم , Autre       , féminin pluriel               , qui (féminin pluriel)
- 633, 18        , ce que           , Francais, إسم , Autre       , génériques pour les choses    , ce que (génériques pour les choses)
- 634, 18        , qui              , Francais, إسم , Autre       , générique pour les personnes  , qui (générique pour les personnes)
- 635, 18        , quel (n’importe) , Francais, إسم , Autre       ,                               , quel (n’importe)
- 636, 19        , دَجَاجٌ             , Arabe   , إسم , Nourritures ,                               , دَجَاجٌ
- 637, 19        , سَمَكٌ              , Arabe   , إسم , Nourritures ,                               , سَمَكٌ
- 638, 19        , زَيْتٌ              , Arabe   , إسم , Nourritures ,                               , زَيْتٌ
- 639, 19        , سُكَّرٌ              , Arabe   , إسم , Nourritures ,                               , سُكَّرٌ
- 640, 19        , تُفَّاحٌ             , Arabe   , إسم , Nourritures ,                               , تُفَّاحٌ
- 641, 19        , مَوْزٌ              , Arabe   , إسم , Nourritures ,                               , مَوْزٌ
- 642, 19        , بُرْتُقَالٌ           , Arabe   , إسم , Nourritures ,                               , بُرْتُقَالٌ
- 643, 19        , طَمَاطِمُ            , Arabe   , إسم , Nourritures ,                               , طَمَاطِمُ
- 644, 19        , خَسٌّ               , Arabe   , إسم , Nourritures ,                               , خَسٌّ
- 645, 19        , بَصَلٌ              , Arabe   , إسم , Nourritures ,                               , بَصَلٌ
- 646, 19        , ثُومٌ              , Arabe   , إسم , Nourritures ,                               , ثُومٌ
- 647, 19        , مَاءٌ              , Arabe   , إسم , Nourritures ,                               , مَاءٌ
- 648, 19        , poulet           , Francais, إسم , Nourritures ,                               , poulet
- 649, 19        , poisson          , Francais, إسم , Nourritures ,                               , poisson
- 650, 19        , huile            , Francais, إسم , Nourritures ,                               , huile
- 651, 19        , sucre            , Francais, إسم , Nourritures ,                               , sucre
- 652, 19        , pomme            , Francais, إسم , Nourritures ,                               , pomme
- 653, 19        , banane           , Francais, إسم , Nourritures ,                               , banane
- 654, 19        , orange           , Francais, إسم , Nourritures ,                               , orange
- 655, 19        , tomates          , Francais, إسم , Nourritures ,                               , tomates
- 656, 19        , laitue           , Francais, إسم , Nourritures ,                               , laitue
- 657, 19        , oignon           , Francais, إسم , Nourritures ,                               , oignon
- 658, 19        , ail              , Francais, إسم , Nourritures ,                               , ail
- 659, 19        , eau              , Francais, إسم , Nourritures ,                               , eau
- 660, 20        , حَلِيبٌ             , Arabe   , إسم , Nourritures ,                               , حَلِيبٌ
- 661, 20        , شَايٌ              , Arabe   , إسم , Nourritures ,                               , شَايٌ
- 662, 20        , قَهْوَةٌ             , Arabe   , إسم , Nourritures ,                               , قَهْوَةٌ
- 663, 20        , عَصِيرٌ             , Arabe   , إسم , Nourritures ,                               , عَصِيرٌ
- 664, 20        , مَطْعَمٌ             , Arabe   , إسم , Nourritures ,                               , مَطْعَمٌ
- 665, 20        , مَتْجَرٌ             , Arabe   , إسم , Nourritures ,                               , مَتْجَرٌ
- 666, 20        , دُكَّانٌ             , Arabe   , إسم , Nourritures ,                               , دُكَّانٌ
- 667, 20        , طَعَامٌ             , Arabe   , إسم , Nourritures ,                               , طَعَامٌ
- 668, 20        , شَرَابٌ             , Arabe   , إسم , Nourritures ,                               , شَرَابٌ
- 669, 20        , وَجْبَةٌ             , Arabe   , إسم , Nourritures ,                               , وَجْبَةٌ
- 670, 20        , فُطُورٌ             , Arabe   , إسم , Nourritures ,                               , فُطُورٌ
- 671, 20        , غَدَاءٌ             , Arabe   , إسم , Nourritures ,                               , غَدَاءٌ
- 672, 20        , عَشَاءٌ             , Arabe   , إسم , Nourritures ,                               , عَشَاءٌ
- 673, 20        , lait             , Francais, إسم , Nourritures ,                               , lait
- 674, 20        , thé              , Francais, إسم , Nourritures ,                               , thé
- 675, 20        , café             , Francais, إسم , Nourritures ,                               , café
- 676, 20        , jus              , Francais, إسم , Nourritures ,                               , jus
- 677, 20        , restaurant       , Francais, إسم , Nourritures ,                               , restaurant
- 678, 20        , magasin          , Francais, إسم , Nourritures ,                               , magasin
- 679, 20        , boutique         , Francais, إسم , Nourritures ,                               , boutique
- 680, 20        , nourriture       , Francais, إسم , Nourritures ,                               , nourriture
- 681, 20        , boisson          , Francais, إسم , Nourritures ,                               , boisson
- 682, 20        , repas            , Francais, إسم , Nourritures ,                               , repas
- 683, 20        , petit-déjeuner   , Francais, إسم , Nourritures ,                               , petit-déjeuner
- 684, 20        , déjeuner         , Francais, إسم , Nourritures ,                               , déjeuner
- 685, 20        , dîner            , Francais, إسم , Nourritures ,                               , dîner
- 686, 21        , أَبْيَضٌ             , Arabe   , إسم , Autre       ,                               , أَبْيَضٌ
- 687, 21        , أَسْوَدٌ             , Arabe   , إسم , Autre       ,                               , أَسْوَدٌ
- 688, 21        , أَحْمَرُ             , Arabe   , إسم , Autre       ,                               , أَحْمَرُ
- 689, 21        , أَزْرَقُ             , Arabe   , إسم , Autre       ,                               , أَزْرَقُ
- 690, 21        , أَخْضَرُ             , Arabe   , إسم , Autre       ,                               , أَخْضَرُ
- 691, 21        , أَصْفَرُ             , Arabe   , إسم , Autre       ,                               , أَصْفَرُ
- 692, 21        , بُنِّيٌّ              , Arabe   , إسم , Autre       ,                               , بُنِّيٌّ
- 693, 21        , رَمَادِيٌّ            , Arabe   , إسم , Autre       ,                               , رَمَادِيٌّ
- 694, 21        , مِيزَانٌ            , Arabe   , إسم , Nourritures ,                               , مِيزَانٌ
- 695, 21        , زَبُونٌ             , Arabe   , إسم , Nourritures ,                               , زَبُونٌ
- 696, 21        , blanc            , Francais, إسم , Autre       ,                               , blanc
- 697, 21        , noir             , Francais, إسم , Autre       ,                               , noir
- 698, 21        , rouge            , Francais, إسم , Autre       ,                               , rouge
- 699, 21        , bleu             , Francais, إسم , Autre       ,                               , bleu
- 700, 21        , vert             , Francais, إسم , Autre       ,                               , vert
- 701, 21        , jaune            , Francais, إسم , Autre       ,                               , jaune
- 702, 21        , marron           , Francais, إسم , Autre       ,                               , marron
- 703, 21        , gris             , Francais, إسم , Autre       ,                               , gris
- 704, 21        , balance          , Francais, إسم , Nourritures ,                               , balance
- 705, 21        , client           , Francais, إسم , Nourritures ,                               , client
- 706, 22        , أَسْعَارٌ            , Arabe   , إسم , Autre       ,                               , أَسْعَارٌ
- 707, 22        , أَسْوَاقٌ            , Arabe   , إسم , Autre       ,                               , أَسْوَاقٌ
- 708, 22        , لُحُومٌ             , Arabe   , إسم , Autre       ,                               , لُحُومٌ
- 709, 22        , دَجَاجَاتٌ           , Arabe   , إسم , Autre       ,                               , دَجَاجَاتٌ
- 710, 22        , أَسْمَاكٌ            , Arabe   , إسم , Autre       ,                               , أَسْمَاكٌ
- 711, 22        , زُيُوتٌ             , Arabe   , إسم , Autre       ,                               , زُيُوتٌ
- 712, 22        , تُفَّاحَاتٌ           , Arabe   , إسم , Autre       ,                               , تُفَّاحَاتٌ
- 713, 22        , مَوْزَاتٌ            , Arabe   , إسم , Autre       ,                               , مَوْزَاتٌ
- 714, 22        , بُرْتُقَالَاتٌ         , Arabe   , إسم , Autre       ,                               , بُرْتُقَالَاتٌ
- 715, 22        , بَصَلَاتٌ            , Arabe   , إسم , Autre       ,                               , بَصَلَاتٌ
- 716, 22        , مِيَاهٌ             , Arabe   , إسم , Autre       ,                               , مِيَاهٌ
- 717, 22        , مَطَاعِمُ            , Arabe   , إسم , Autre       ,                               , مَطَاعِمُ
- 718, 22        , مَتَاجِرُ            , Arabe   , إسم , Autre       ,                               , مَتَاجِرُ
- 719, 23        , دَكَاكِينُ           , Arabe   , إسم , Autre       ,                               , دَكَاكِينُ
- 720, 23        , أَطْعِمَةٌ            , Arabe   , إسم , Autre       ,                               , أَطْعِمَةٌ
- 721, 23        , أَشْرِبَةٌ            , Arabe   , إسم , Autre       ,                               , أَشْرِبَةٌ
- 722, 23        , وَجَبَاتٌ            , Arabe   , إسم , Autre       ,                               , وَجَبَاتٌ
- 723, 23        , بِيضٌ              , Arabe   , إسم , Autre       ,                               , بِيضٌ
- 724, 23        , سُودٌ              , Arabe   , إسم , Autre       ,                               , سُودٌ
- 725, 23        , حُمْرٌ              , Arabe   , إسم , Autre       ,                               , حُمْرٌ
- 726, 23        , زُرْقٌ              , Arabe   , إسم , Autre       ,                               , زُرْقٌ
- 727, 23        , خُضْرٌ              , Arabe   , إسم , Autre       ,                               , خُضْرٌ
- 728, 23        , صُفْرٌ              , Arabe   , إسم , Autre       ,                               , صُفْرٌ
- 729, 23        , بُنِّيُّونَ            , Arabe   , إسم , Autre       ,                               , بُنِّيُّونَ
- 730, 23        , رَمَادِيُّونَ          , Arabe   , إسم , Autre       ,                               , رَمَادِيُّونَ
- 731, 23        , زَبَائِنُ            , Arabe   , إسم , Autre       ,                               , زَبَائِنُ
- 732, 22        , prix             , Francais, إسم , Autre       ,                               , prix
- 733, 22        , marchés          , Francais, إسم , Autre       ,                               , marchés
- 734, 22        , viandes          , Francais, إسم , Autre       ,                               , viandes
- 735, 22        , poulets          , Francais, إسم , Autre       ,                               , poulets
- 736, 22        , poissons         , Francais, إسم , Autre       ,                               , poissons
- 737, 22        , huiles           , Francais, إسم , Autre       ,                               , huiles
- 738, 22        , pommes           , Francais, إسم , Autre       ,                               , pommes
- 739, 22        , bananes          , Francais, إسم , Autre       ,                               , bananes
- 740, 22        , oranges          , Francais, إسم , Autre       ,                               , oranges
- 741, 22        , oignons          , Francais, إسم , Autre       ,                               , oignons
- 742, 22        , eaux             , Francais, إسم , Autre       ,                               , eaux
- 743, 22        , restaurants      , Francais, إسم , Autre       ,                               , restaurants
- 744, 22        , magasins         , Francais, إسم , Autre       ,                               , magasins
- 745, 23        , boutiques        , Francais, إسم , Autre       ,                               , boutiques
- 746, 23        , aliments         , Francais, إسم , Autre       ,                               , aliments
- 747, 23        , boissons         , Francais, إسم , Autre       ,                               , boissons
- 748, 23        , repas            , Francais, إسم , Autre       , pluriel                       , repas (pluriel)
- 749, 23        , blancs           , Francais, إسم , Autre       ,                               , blancs
- 750, 23        , noirs            , Francais, إسم , Autre       ,                               , noirs
- 751, 23        , rouges           , Francais, إسم , Autre       ,                               , rouges
- 752, 23        , bleus            , Francais, إسم , Autre       ,                               , bleus
- 753, 23        , verts            , Francais, إسم , Autre       ,                               , verts
- 754, 23        , jaunes           , Francais, إسم , Autre       ,                               , jaunes
- 755, 23        , bruns            , Francais, إسم , Autre       ,                               , bruns
- 756, 23        , gris             , Francais, إسم , Autre       ,                               , gris
- 757, 23        , clients          , Francais, إسم , Autre       ,                               , clients
+ 615, 17        , riz              , Francais, اسم , Nourritures ,                               , riz
+ 616, 17        , sel              , Francais, اسم , Nourritures ,                               , sel
+ 617, 17        , viande           , Francais, اسم , Nourritures ,                               , viande
+ 618, 18        , الَّذِي             , Arabe   , اسم , Autre       ,                               , الَّذِي
+ 619, 18        , الَّتِي             , Arabe   , اسم , Autre       ,                               , الَّتِي
+ 620, 18        , اللَّذانِ           , Arabe   , اسم , Autre       ,                               , اللَّذانِ
+ 621, 18        , اللَّتَانِ           , Arabe   , اسم , Autre       ,                               , اللَّتَانِ
+ 622, 18        , الَّذِينَ            , Arabe   , اسم , Autre       ,                               , الَّذِينَ
+ 623, 18        , اللَّوَاتِي          , Arabe   , اسم , Autre       ,                               , اللَّوَاتِي
+ 624, 18        , مَا               , Arabe   , اسم , Autre       ,                               , مَا
+ 625, 18        , مَنْ               , Arabe   , اسم , Autre       ,                               , مَنْ
+ 626, 18        , أَيٌّ               , Arabe   , اسم , Autre       ,                               , أَيٌّ
+ 627, 18        , qui              , Francais, اسم , Autre       , masculin singulier            , qui (masculin singulier)
+ 628, 18        , qui              , Francais, اسم , Autre       , féminin singulier             , qui (féminin singulier)
+ 629, 18        , qui              , Francais, اسم , Autre       , masculin duel                 , qui (masculin duel)
+ 630, 18        , qui              , Francais, اسم , Autre       , féminin duel                  , qui (féminin duel)
+ 631, 18        , qui              , Francais, اسم , Autre       , masculin pluriel              , qui (masculin pluriel)
+ 632, 18        , qui              , Francais, اسم , Autre       , féminin pluriel               , qui (féminin pluriel)
+ 633, 18        , ce que           , Francais, اسم , Autre       , génériques pour les choses    , ce que (génériques pour les choses)
+ 634, 18        , qui              , Francais, اسم , Autre       , générique pour les personnes  , qui (générique pour les personnes)
+ 635, 18        , quel (n’importe) , Francais, اسم , Autre       ,                               , quel (n’importe)
+ 636, 19        , دَجَاجٌ             , Arabe   , اسم , Nourritures ,                               , دَجَاجٌ
+ 637, 19        , سَمَكٌ              , Arabe   , اسم , Nourritures ,                               , سَمَكٌ
+ 638, 19        , زَيْتٌ              , Arabe   , اسم , Nourritures ,                               , زَيْتٌ
+ 639, 19        , سُكَّرٌ              , Arabe   , اسم , Nourritures ,                               , سُكَّرٌ
+ 640, 19        , تُفَّاحٌ             , Arabe   , اسم , Nourritures ,                               , تُفَّاحٌ
+ 641, 19        , مَوْزٌ              , Arabe   , اسم , Nourritures ,                               , مَوْزٌ
+ 642, 19        , بُرْتُقَالٌ           , Arabe   , اسم , Nourritures ,                               , بُرْتُقَالٌ
+ 643, 19        , طَمَاطِمُ            , Arabe   , اسم , Nourritures ,                               , طَمَاطِمُ
+ 644, 19        , خَسٌّ               , Arabe   , اسم , Nourritures ,                               , خَسٌّ
+ 645, 19        , بَصَلٌ              , Arabe   , اسم , Nourritures ,                               , بَصَلٌ
+ 646, 19        , ثُومٌ              , Arabe   , اسم , Nourritures ,                               , ثُومٌ
+ 647, 19        , مَاءٌ              , Arabe   , اسم , Nourritures ,                               , مَاءٌ
+ 648, 19        , poulet           , Francais, اسم , Nourritures ,                               , poulet
+ 649, 19        , poisson          , Francais, اسم , Nourritures ,                               , poisson
+ 650, 19        , huile            , Francais, اسم , Nourritures ,                               , huile
+ 651, 19        , sucre            , Francais, اسم , Nourritures ,                               , sucre
+ 652, 19        , pomme            , Francais, اسم , Nourritures ,                               , pomme
+ 653, 19        , banane           , Francais, اسم , Nourritures ,                               , banane
+ 654, 19        , orange           , Francais, اسم , Nourritures ,                               , orange
+ 655, 19        , tomates          , Francais, اسم , Nourritures ,                               , tomates
+ 656, 19        , laitue           , Francais, اسم , Nourritures ,                               , laitue
+ 657, 19        , oignon           , Francais, اسم , Nourritures ,                               , oignon
+ 658, 19        , ail              , Francais, اسم , Nourritures ,                               , ail
+ 659, 19        , eau              , Francais, اسم , Nourritures ,                               , eau
+ 660, 20        , حَلِيبٌ             , Arabe   , اسم , Nourritures ,                               , حَلِيبٌ
+ 661, 20        , شَايٌ              , Arabe   , اسم , Nourritures ,                               , شَايٌ
+ 662, 20        , قَهْوَةٌ             , Arabe   , اسم , Nourritures ,                               , قَهْوَةٌ
+ 663, 20        , عَصِيرٌ             , Arabe   , اسم , Nourritures ,                               , عَصِيرٌ
+ 664, 20        , مَطْعَمٌ             , Arabe   , اسم , Nourritures ,                               , مَطْعَمٌ
+ 665, 20        , مَتْجَرٌ             , Arabe   , اسم , Nourritures ,                               , مَتْجَرٌ
+ 666, 20        , دُكَّانٌ             , Arabe   , اسم , Nourritures ,                               , دُكَّانٌ
+ 667, 20        , طَعَامٌ             , Arabe   , اسم , Nourritures ,                               , طَعَامٌ
+ 668, 20        , شَرَابٌ             , Arabe   , اسم , Nourritures ,                               , شَرَابٌ
+ 669, 20        , وَجْبَةٌ             , Arabe   , اسم , Nourritures ,                               , وَجْبَةٌ
+ 670, 20        , فُطُورٌ             , Arabe   , اسم , Nourritures ,                               , فُطُورٌ
+ 671, 20        , غَدَاءٌ             , Arabe   , اسم , Nourritures ,                               , غَدَاءٌ
+ 672, 20        , عَشَاءٌ             , Arabe   , اسم , Nourritures ,                               , عَشَاءٌ
+ 673, 20        , lait             , Francais, اسم , Nourritures ,                               , lait
+ 674, 20        , thé              , Francais, اسم , Nourritures ,                               , thé
+ 675, 20        , café             , Francais, اسم , Nourritures ,                               , café
+ 676, 20        , jus              , Francais, اسم , Nourritures ,                               , jus
+ 677, 20        , restaurant       , Francais, اسم , Nourritures ,                               , restaurant
+ 678, 20        , magasin          , Francais, اسم , Nourritures ,                               , magasin
+ 679, 20        , boutique         , Francais, اسم , Nourritures ,                               , boutique
+ 680, 20        , nourriture       , Francais, اسم , Nourritures ,                               , nourriture
+ 681, 20        , boisson          , Francais, اسم , Nourritures ,                               , boisson
+ 682, 20        , repas            , Francais, اسم , Nourritures ,                               , repas
+ 683, 20        , petit-déjeuner   , Francais, اسم , Nourritures ,                               , petit-déjeuner
+ 684, 20        , déjeuner         , Francais, اسم , Nourritures ,                               , déjeuner
+ 685, 20        , dîner            , Francais, اسم , Nourritures ,                               , dîner
+ 686, 21        , أَبْيَضٌ             , Arabe   , اسم , Autre       ,                               , أَبْيَضٌ
+ 687, 21        , أَسْوَدٌ             , Arabe   , اسم , Autre       ,                               , أَسْوَدٌ
+ 688, 21        , أَحْمَرُ             , Arabe   , اسم , Autre       ,                               , أَحْمَرُ
+ 689, 21        , أَزْرَقُ             , Arabe   , اسم , Autre       ,                               , أَزْرَقُ
+ 690, 21        , أَخْضَرُ             , Arabe   , اسم , Autre       ,                               , أَخْضَرُ
+ 691, 21        , أَصْفَرُ             , Arabe   , اسم , Autre       ,                               , أَصْفَرُ
+ 692, 21        , بُنِّيٌّ              , Arabe   , اسم , Autre       ,                               , بُنِّيٌّ
+ 693, 21        , رَمَادِيٌّ            , Arabe   , اسم , Autre       ,                               , رَمَادِيٌّ
+ 694, 21        , مِيزَانٌ            , Arabe   , اسم , Nourritures ,                               , مِيزَانٌ
+ 695, 21        , زَبُونٌ             , Arabe   , اسم , Nourritures ,                               , زَبُونٌ
+ 696, 21        , blanc            , Francais, اسم , Autre       ,                               , blanc
+ 697, 21        , noir             , Francais, اسم , Autre       ,                               , noir
+ 698, 21        , rouge            , Francais, اسم , Autre       ,                               , rouge
+ 699, 21        , bleu             , Francais, اسم , Autre       ,                               , bleu
+ 700, 21        , vert             , Francais, اسم , Autre       ,                               , vert
+ 701, 21        , jaune            , Francais, اسم , Autre       ,                               , jaune
+ 702, 21        , marron           , Francais, اسم , Autre       ,                               , marron
+ 703, 21        , gris             , Francais, اسم , Autre       ,                               , gris
+ 704, 21        , balance          , Francais, اسم , Nourritures ,                               , balance
+ 705, 21        , client           , Francais, اسم , Nourritures ,                               , client
+ 706, 22        , أَسْعَارٌ            , Arabe   , اسم , Autre       ,                               , أَسْعَارٌ
+ 707, 22        , أَسْوَاقٌ            , Arabe   , اسم , Autre       ,                               , أَسْوَاقٌ
+ 708, 22        , لُحُومٌ             , Arabe   , اسم , Autre       ,                               , لُحُومٌ
+ 709, 22        , دَجَاجَاتٌ           , Arabe   , اسم , Autre       ,                               , دَجَاجَاتٌ
+ 710, 22        , أَسْمَاكٌ            , Arabe   , اسم , Autre       ,                               , أَسْمَاكٌ
+ 711, 22        , زُيُوتٌ             , Arabe   , اسم , Autre       ,                               , زُيُوتٌ
+ 712, 22        , تُفَّاحَاتٌ           , Arabe   , اسم , Autre       ,                               , تُفَّاحَاتٌ
+ 713, 22        , مَوْزَاتٌ            , Arabe   , اسم , Autre       ,                               , مَوْزَاتٌ
+ 714, 22        , بُرْتُقَالَاتٌ         , Arabe   , اسم , Autre       ,                               , بُرْتُقَالَاتٌ
+ 715, 22        , بَصَلَاتٌ            , Arabe   , اسم , Autre       ,                               , بَصَلَاتٌ
+ 716, 22        , مِيَاهٌ             , Arabe   , اسم , Autre       ,                               , مِيَاهٌ
+ 717, 22        , مَطَاعِمُ            , Arabe   , اسم , Autre       ,                               , مَطَاعِمُ
+ 718, 22        , مَتَاجِرُ            , Arabe   , اسم , Autre       ,                               , مَتَاجِرُ
+ 719, 23        , دَكَاكِينُ           , Arabe   , اسم , Autre       ,                               , دَكَاكِينُ
+ 720, 23        , أَطْعِمَةٌ            , Arabe   , اسم , Autre       ,                               , أَطْعِمَةٌ
+ 721, 23        , أَشْرِبَةٌ            , Arabe   , اسم , Autre       ,                               , أَشْرِبَةٌ
+ 722, 23        , وَجَبَاتٌ            , Arabe   , اسم , Autre       ,                               , وَجَبَاتٌ
+ 723, 23        , بِيضٌ              , Arabe   , اسم , Autre       ,                               , بِيضٌ
+ 724, 23        , سُودٌ              , Arabe   , اسم , Autre       ,                               , سُودٌ
+ 725, 23        , حُمْرٌ              , Arabe   , اسم , Autre       ,                               , حُمْرٌ
+ 726, 23        , زُرْقٌ              , Arabe   , اسم , Autre       ,                               , زُرْقٌ
+ 727, 23        , خُضْرٌ              , Arabe   , اسم , Autre       ,                               , خُضْرٌ
+ 728, 23        , صُفْرٌ              , Arabe   , اسم , Autre       ,                               , صُفْرٌ
+ 729, 23        , بُنِّيُّونَ            , Arabe   , اسم , Autre       ,                               , بُنِّيُّونَ
+ 730, 23        , رَمَادِيُّونَ          , Arabe   , اسم , Autre       ,                               , رَمَادِيُّونَ
+ 731, 23        , زَبَائِنُ            , Arabe   , اسم , Autre       ,                               , زَبَائِنُ
+ 732, 22        , prix             , Francais, اسم , Autre       ,                               , prix
+ 733, 22        , marchés          , Francais, اسم , Autre       ,                               , marchés
+ 734, 22        , viandes          , Francais, اسم , Autre       ,                               , viandes
+ 735, 22        , poulets          , Francais, اسم , Autre       ,                               , poulets
+ 736, 22        , poissons         , Francais, اسم , Autre       ,                               , poissons
+ 737, 22        , huiles           , Francais, اسم , Autre       ,                               , huiles
+ 738, 22        , pommes           , Francais, اسم , Autre       ,                               , pommes
+ 739, 22        , bananes          , Francais, اسم , Autre       ,                               , bananes
+ 740, 22        , oranges          , Francais, اسم , Autre       ,                               , oranges
+ 741, 22        , oignons          , Francais, اسم , Autre       ,                               , oignons
+ 742, 22        , eaux             , Francais, اسم , Autre       ,                               , eaux
+ 743, 22        , restaurants      , Francais, اسم , Autre       ,                               , restaurants
+ 744, 22        , magasins         , Francais, اسم , Autre       ,                               , magasins
+ 745, 23        , boutiques        , Francais, اسم , Autre       ,                               , boutiques
+ 746, 23        , aliments         , Francais, اسم , Autre       ,                               , aliments
+ 747, 23        , boissons         , Francais, اسم , Autre       ,                               , boissons
+ 748, 23        , repas            , Francais, اسم , Autre       , pluriel                       , repas (pluriel)
+ 749, 23        , blancs           , Francais, اسم , Autre       ,                               , blancs
+ 750, 23        , noirs            , Francais, اسم , Autre       ,                               , noirs
+ 751, 23        , rouges           , Francais, اسم , Autre       ,                               , rouges
+ 752, 23        , bleus            , Francais, اسم , Autre       ,                               , bleus
+ 753, 23        , verts            , Francais, اسم , Autre       ,                               , verts
+ 754, 23        , jaunes           , Francais, اسم , Autre       ,                               , jaunes
+ 755, 23        , bruns            , Francais, اسم , Autre       ,                               , bruns
+ 756, 23        , gris             , Francais, اسم , Autre       ,                               , gris
+ 757, 23        , clients          , Francais, اسم , Autre       ,                               , clients
  758, 24        , فَعَلَ              , Arabe   , فعل , Autre       ,                               , فَعَلَ
  759, 24        , كَتَبَ              , Arabe   , فعل , Autre       ,                               , كَتَبَ
  760, 24        , شَرِبَ              , Arabe   , فعل , Autre       ,                               , شَرِبَ
@@ -888,7 +888,7 @@ id  , seance    , mot              , langue  , type, chapitre    , definition   
  887, 29        , وَزَنَ              , Arabe   , فعل , Autre       ,                               , وَزَنَ
  888, 29        , نَقَلَ              , Arabe   , فعل , Autre       ,                               , نَقَلَ
  889, 29        , رَتَّبَ              , Arabe   , فعل , Autre       ,                               , رَتَّبَ
- 890, 29        , سَّبُّورَةٌ            , Arabe   , إسم , Autre       ,                               , سَّبُّورَةٌ
+ 890, 29        , سَّبُّورَةٌ            , Arabe   , اسم , Autre       ,                               , سَّبُّورَةٌ
  891, 29        , taire (se)       , Francais, فعل , Autre       ,                               , taire (se)
  892, 29        , ordonner         , Francais, فعل , Autre       ,                               , ordonner
  893, 29        , ressentir        , Francais, فعل , Autre       ,                               , ressentir
@@ -899,7 +899,7 @@ id  , seance    , mot              , langue  , type, chapitre    , definition   
  898, 29        , peser            , Francais, فعل , Autre       ,                               , peser
  899, 29        , transporter      , Francais, فعل , Autre       ,                               , transporter
  900, 29        , organiser        , Francais, فعل , Autre       ,                               , organiser
- 901, 29        , tableau          , Francais, إسم , Autre       , scolaire                      , tableau (scolaire)
+ 901, 29        , tableau          , Francais, اسم , Autre       , scolaire                      , tableau (scolaire)
  902, 30        , كَلَّمَ              , Arabe   , فعل , Autre       ,                               , كَلَّمَ
  903, 30        , عَلَّمَ              , Arabe   , فعل , Autre       ,                               , عَلَّمَ
  904, 30        , قَرَّرَ              , Arabe   , فعل , Autre       ,                               , قَرَّرَ
@@ -910,9 +910,9 @@ id  , seance    , mot              , langue  , type, chapitre    , definition   
  909, 30        , تَعَلَّمَ             , Arabe   , فعل , Autre       ,                               , تَعَلَّمَ
  910, 30        , تَذَكَّرَ             , Arabe   , فعل , Autre       ,                               , تَذَكَّرَ
  911, 30        , اِسْتَمَعَ            , Arabe   , فعل , Autre       ,                               , اِسْتَمَعَ
- 912, 30        , قِدْرٌ              , Arabe   , إسم , Autre       ,                               , قِدْرٌ
- 913, 30        , مِظَلَّةٌ             , Arabe   , إسم , Autre       ,                               , مِظَلَّةٌ
- 914, 30        , حَقِيبَةٌ            , Arabe   , إسم , Autre       ,                               , حَقِيبَةٌ
+ 912, 30        , قِدْرٌ              , Arabe   , اسم , Autre       ,                               , قِدْرٌ
+ 913, 30        , مِظَلَّةٌ             , Arabe   , اسم , Autre       ,                               , مِظَلَّةٌ
+ 914, 30        , حَقِيبَةٌ            , Arabe   , اسم , Autre       ,                               , حَقِيبَةٌ
  915, 30        , ما               , Arabe   , حرف , Autre       ,                               , ما
  916, 30        , لا               , Arabe   , حرف , Autre       ,                               , لا
  917, 30        , لَنْ               , Arabe   , حرف , Autre       ,                               , لَنْ
@@ -926,156 +926,156 @@ id  , seance    , mot              , langue  , type, chapitre    , definition   
  925, 30        , apprendre        , Francais, فعل , Autre       ,                               , apprendre
  926, 30        , souvenir (se)    , Francais, فعل , Autre       ,                               , souvenir (se)
  927, 30        , écouter          , Francais, فعل , Autre       ,                               , écouter
- 928, 30        , marmite          , Francais, إسم , Autre       ,                               , marmite
- 929, 30        , parapluie        , Francais, إسم , Autre       ,                               , parapluie
- 930, 30        , sac              , Francais, إسم , Autre       ,                               , sac
+ 928, 30        , marmite          , Francais, اسم , Autre       ,                               , marmite
+ 929, 30        , parapluie        , Francais, اسم , Autre       ,                               , parapluie
+ 930, 30        , sac              , Francais, اسم , Autre       ,                               , sac
  931, 30        , négation         , Francais, حرف , Autre       , Passé                         , négation (Passé)
  932, 30        , négation         , Francais, حرف , Autre       , Présent                       , négation (Présent)
  933, 30        , négation         , Francais, حرف , Autre       , Futur                         , négation (Futur)
- 934, 31        , مَنْ               , Arabe   , حرف , Autre       ,                               , مَنْ
- 935, 31        , ما               , Arabe   , حرف , Autre       ,                               , ما
- 936, 31        , ماذا             , Arabe   , حرف , Autre       ,                               , ماذا
- 937, 31        , مَتى              , Arabe   , حرف , Autre       ,                               , مَتى
- 938, 31        , أَيّانَ             , Arabe   , حرف , Autre       ,                               , أَيّانَ
- 939, 31        , أَيْنَ              , Arabe   , حرف , Autre       ,                               , أَيْنَ
- 940, 32        , كَيْفَ              , Arabe   , حرف , Autre       ,                               , كَيْفَ
- 941, 32        , أَنّى              , Arabe   , حرف , Autre       ,                               , أَنّى
- 942, 32        , أَيّ               , Arabe   , حرف , Autre       ,                               , أَيّ
+ 934, 31        , مَنْ               , Arabe   , اسم , Autre       ,                               , مَنْ
+ 935, 31        , ما               , Arabe   , اسم , Autre       ,                               , ما
+ 936, 31        , ماذا             , Arabe   , اسم , Autre       ,                               , ماذا
+ 937, 31        , مَتى              , Arabe   , اسم , Autre       ,                               , مَتى
+ 938, 31        , أَيّانَ             , Arabe   , اسم , Autre       ,                               , أَيّانَ
+ 939, 31        , أَيْنَ              , Arabe   , اسم , Autre       ,                               , أَيْنَ
+ 940, 32        , كَيْفَ              , Arabe   , اسم , Autre       ,                               , كَيْفَ
+ 941, 32        , أَنّى              , Arabe   , اسم , Autre       ,                               , أَنّى
+ 942, 32        , أَيّ               , Arabe   , اسم , Autre       ,                               , أَيّ
  943, 32        , هَلْ               , Arabe   , حرف , Autre       ,                               , هَلْ
  944, 32        , أَ                , Arabe   , حرف , Autre       ,                               , أَ
- 945, 31        , qui              , Francais, حرف , Autre       ,                               , qui
- 946, 31        , quoi             , Francais, حرف , Autre       , nom                           , quoi (nom)
- 947, 31        , quoi             , Francais, حرف , Autre       , verbe                         , quoi (verbe)
- 948, 31        , quand            , Francais, حرف , Autre       ,                               , quand
- 949, 31        , quand            , Francais, حرف , Autre       , futur                         , quand (futur)
- 950, 31        , où               , Francais, حرف , Autre       ,                               , où
- 951, 32        , comment          , Francais, حرف , Autre       ,                               , comment
- 952, 32        , où (d')          , Francais, حرف , Autre       ,                               , où (d')
- 953, 32        , qui/quel         , Francais, حرف , Autre       ,                               , qui/quel
+ 945, 31        , qui              , Francais, اسم , Autre       ,                               , qui
+ 946, 31        , quoi             , Francais, اسم , Autre       , nom                           , quoi (nom)
+ 947, 31        , quoi             , Francais, اسم , Autre       , verbe                         , quoi (verbe)
+ 948, 31        , quand            , Francais, اسم , Autre       ,                               , quand
+ 949, 31        , quand            , Francais, اسم , Autre       , futur                         , quand (futur)
+ 950, 31        , où               , Francais, اسم , Autre       ,                               , où
+ 951, 32        , comment          , Francais, اسم , Autre       ,                               , comment
+ 952, 32        , où (d')          , Francais, اسم , Autre       ,                               , où (d')
+ 953, 32        , qui/quel         , Francais, اسم , Autre       ,                               , qui/quel
  954, 32        , est-ce que       , Francais, حرف , Autre       ,                               , est-ce que
  955, 32        , est-ce que       , Francais, حرف , Autre       , littéraire                    , est-ce que (littéraire)
- 956, 33        , حَدِيقَةٌ            , Arabe   , إسم , Loisirs     ,                               , حَدِيقَةٌ
- 957, 33        , مَلْعَبٌ             , Arabe   , إسم , Loisirs     ,                               , مَلْعَبٌ
- 958, 33        , مَسْبَحٌ             , Arabe   , إسم , Loisirs     ,                               , مَسْبَحٌ
- 959, 33        , مَكْتَبَةٌ            , Arabe   , إسم , Loisirs     ,                               , مَكْتَبَةٌ
- 960, 33        , سِينِمَا            , Arabe   , إسم , Loisirs     ,                               , سِينِمَا
- 961, 33        , مُتْحَفٌ             , Arabe   , إسم , Loisirs     ,                               , مُتْحَفٌ
- 962, 33        , سِبَاحَةٌ            , Arabe   , إسم , Loisirs     ,                               , سِبَاحَةٌ
- 963, 33        , رِيَاضَةٌ            , Arabe   , إسم , Loisirs     ,                               , رِيَاضَةٌ
- 964, 33        , فَرِيقٌ             , Arabe   , إسم , Loisirs     ,                               , فَرِيقٌ
- 965, 33        , بُطُولَةٌ            , Arabe   , إسم , Loisirs     ,                               , بُطُولَةٌ
- 966, 33        , فِيلْمٌ             , Arabe   , إسم , Loisirs     ,                               , فِيلْمٌ
- 967, 33        , مُوسِيقَى           , Arabe   , إسم , Loisirs     ,                               , مُوسِيقَى
- 968, 33        , آلَةٌ              , Arabe   , إسم , Loisirs     ,                               , آلَةٌ
- 969, 33        , jardin           , Francais, إسم , Loisirs     ,                               , jardin
- 970, 33        , stade            , Francais, إسم , Loisirs     ,                               , stade
- 971, 33        , piscine          , Francais, إسم , Loisirs     ,                               , piscine
- 972, 33        , bibliothèque     , Francais, إسم , Loisirs     ,                               , bibliothèque
- 973, 33        , cinéma           , Francais, إسم , Loisirs     ,                               , cinéma
- 974, 33        , musée            , Francais, إسم , Loisirs     ,                               , musée
- 975, 33        , natation         , Francais, إسم , Loisirs     ,                               , natation
- 976, 33        , sport            , Francais, إسم , Loisirs     ,                               , sport
- 977, 33        , équipe           , Francais, إسم , Loisirs     ,                               , équipe
- 978, 33        , compétition      , Francais, إسم , Loisirs     ,                               , compétition
- 979, 33        , film             , Francais, إسم , Loisirs     ,                               , film
- 980, 33        , musique          , Francais, إسم , Loisirs     ,                               , musique
- 981, 33        , instrument       , Francais, إسم , Loisirs     ,                               , instrument
- 982, 34        , لُعْبَةٌ             , Arabe   , إسم , Loisirs     ,                               , لُعْبَةٌ
- 983, 34        , رِحْلَةٌ             , Arabe   , إسم , Loisirs     ,                               , رِحْلَةٌ
- 984, 34        , صُورَةٌ             , Arabe   , إسم , Loisirs     ,                               , صُورَةٌ
- 985, 34        , هَاتِفٌ             , Arabe   , إسم , Loisirs     ,                               , هَاتِفٌ
- 986, 34        , تِلْفَازٌ            , Arabe   , إسم , Loisirs     ,                               , تِلْفَازٌ
- 987, 34        , دَرَّاجَةٌ            , Arabe   , إسم , Loisirs     ,                               , دَرَّاجَةٌ
- 988, 34        , مَجَلَّةٌ             , Arabe   , إسم , Loisirs     ,                               , مَجَلَّةٌ
- 989, 34        , شَاطِئٌ             , Arabe   , إسم , Loisirs     ,                               , شَاطِئٌ
- 990, 34        , نُزْهَةٌ             , Arabe   , إسم , Loisirs     ,                               , نُزْهَةٌ
+ 956, 33        , حَدِيقَةٌ            , Arabe   , اسم , Loisirs     ,                               , حَدِيقَةٌ
+ 957, 33        , مَلْعَبٌ             , Arabe   , اسم , Loisirs     ,                               , مَلْعَبٌ
+ 958, 33        , مَسْبَحٌ             , Arabe   , اسم , Loisirs     ,                               , مَسْبَحٌ
+ 959, 33        , مَكْتَبَةٌ            , Arabe   , اسم , Loisirs     ,                               , مَكْتَبَةٌ
+ 960, 33        , سِينِمَا            , Arabe   , اسم , Loisirs     ,                               , سِينِمَا
+ 961, 33        , مُتْحَفٌ             , Arabe   , اسم , Loisirs     ,                               , مُتْحَفٌ
+ 962, 33        , سِبَاحَةٌ            , Arabe   , اسم , Loisirs     ,                               , سِبَاحَةٌ
+ 963, 33        , رِيَاضَةٌ            , Arabe   , اسم , Loisirs     ,                               , رِيَاضَةٌ
+ 964, 33        , فَرِيقٌ             , Arabe   , اسم , Loisirs     ,                               , فَرِيقٌ
+ 965, 33        , بُطُولَةٌ            , Arabe   , اسم , Loisirs     ,                               , بُطُولَةٌ
+ 966, 33        , فِيلْمٌ             , Arabe   , اسم , Loisirs     ,                               , فِيلْمٌ
+ 967, 33        , مُوسِيقَى           , Arabe   , اسم , Loisirs     ,                               , مُوسِيقَى
+ 968, 33        , آلَةٌ              , Arabe   , اسم , Loisirs     ,                               , آلَةٌ
+ 969, 33        , jardin           , Francais, اسم , Loisirs     ,                               , jardin
+ 970, 33        , stade            , Francais, اسم , Loisirs     ,                               , stade
+ 971, 33        , piscine          , Francais, اسم , Loisirs     ,                               , piscine
+ 972, 33        , bibliothèque     , Francais, اسم , Loisirs     ,                               , bibliothèque
+ 973, 33        , cinéma           , Francais, اسم , Loisirs     ,                               , cinéma
+ 974, 33        , musée            , Francais, اسم , Loisirs     ,                               , musée
+ 975, 33        , natation         , Francais, اسم , Loisirs     ,                               , natation
+ 976, 33        , sport            , Francais, اسم , Loisirs     ,                               , sport
+ 977, 33        , équipe           , Francais, اسم , Loisirs     ,                               , équipe
+ 978, 33        , compétition      , Francais, اسم , Loisirs     ,                               , compétition
+ 979, 33        , film             , Francais, اسم , Loisirs     ,                               , film
+ 980, 33        , musique          , Francais, اسم , Loisirs     ,                               , musique
+ 981, 33        , instrument       , Francais, اسم , Loisirs     ,                               , instrument
+ 982, 34        , لُعْبَةٌ             , Arabe   , اسم , Loisirs     ,                               , لُعْبَةٌ
+ 983, 34        , رِحْلَةٌ             , Arabe   , اسم , Loisirs     ,                               , رِحْلَةٌ
+ 984, 34        , صُورَةٌ             , Arabe   , اسم , Loisirs     ,                               , صُورَةٌ
+ 985, 34        , هَاتِفٌ             , Arabe   , اسم , Loisirs     ,                               , هَاتِفٌ
+ 986, 34        , تِلْفَازٌ            , Arabe   , اسم , Loisirs     ,                               , تِلْفَازٌ
+ 987, 34        , دَرَّاجَةٌ            , Arabe   , اسم , Loisirs     ,                               , دَرَّاجَةٌ
+ 988, 34        , مَجَلَّةٌ             , Arabe   , اسم , Loisirs     ,                               , مَجَلَّةٌ
+ 989, 34        , شَاطِئٌ             , Arabe   , اسم , Loisirs     ,                               , شَاطِئٌ
+ 990, 34        , نُزْهَةٌ             , Arabe   , اسم , Loisirs     ,                               , نُزْهَةٌ
  991, 34        , يَا               , Arabe   , حرف , Autre       ,                               , يَا
- 992, 34        , أَيُّها             , Arabe   , حرف , Autre       ,                               , أَيُّها
+ 992, 34        , أَيُّها             , Arabe   , اسم , Autre       ,                               , أَيُّها
  993, 34        , أ                , Arabe   , حرف , Autre       ,                               , أ
  994, 34        , أيا              , Arabe   , حرف , Autre       ,                               , أيا
- 995, 34        , jeu              , Francais, إسم , Loisirs     ,                               , jeu
- 996, 34        , voyage           , Francais, إسم , Loisirs     ,                               , voyage
- 997, 34        , photo            , Francais, إسم , Loisirs     ,                               , photo
- 998, 34        , téléphone        , Francais, إسم , Loisirs     ,                               , téléphone
- 999, 34        , télévision       , Francais, إسم , Loisirs     ,                               , télévision
-1000, 34        , vélo             , Francais, إسم , Loisirs     ,                               , vélo
-1001, 34        , magazine         , Francais, إسم , Loisirs     ,                               , magazine
-1002, 34        , plage            , Francais, إسم , Loisirs     ,                               , plage
-1003, 34        , promenade        , Francais, إسم , Loisirs     ,                               , promenade
+ 995, 34        , jeu              , Francais, اسم , Loisirs     ,                               , jeu
+ 996, 34        , voyage           , Francais, اسم , Loisirs     ,                               , voyage
+ 997, 34        , photo            , Francais, اسم , Loisirs     ,                               , photo
+ 998, 34        , téléphone        , Francais, اسم , Loisirs     ,                               , téléphone
+ 999, 34        , télévision       , Francais, اسم , Loisirs     ,                               , télévision
+1000, 34        , vélo             , Francais, اسم , Loisirs     ,                               , vélo
+1001, 34        , magazine         , Francais, اسم , Loisirs     ,                               , magazine
+1002, 34        , plage            , Francais, اسم , Loisirs     ,                               , plage
+1003, 34        , promenade        , Francais, اسم , Loisirs     ,                               , promenade
 1004, 34        , ô                , Francais, حرف , Autre       , générale proche/lointain      , ô (générale proche/lointain)
 1005, 34        , ô                , Francais, حرف , Autre       , toi qui…/vous qui…            , ô (toi qui…/vous qui…)
 1006, 34        , ô                , Francais, حرف , Autre       , personne proche               , ô (personne proche)
 1007, 34        , ô                , Francais, حرف , Autre       , personne éloignée             , ô (personne éloignée)
-1008, 35        , إِذَا              , Arabe   , حرف , Autre       ,                               , إِذَا
+1008, 35        , إِذَا              , Arabe   , اسم , Autre       ,                               , إِذَا
 1009, 35        , إِنْ               , Arabe   , حرف , Autre       ,                               , إِنْ
 1010, 35        , لَوْ               , Arabe   , حرف , Autre       ,                               , لَوْ
-1011, 35        , الْكِتَابَة          , Arabe   , إسم , Loisirs     ,                               , الْكِتَابَة
-1012, 35        , الْمُطَالَعَةُ         , Arabe   , إسم , Loisirs     ,                               , الْمُطَالَعَةُ
-1013, 35        , صَحِيفَة            , Arabe   , إسم , Loisirs     ,                               , صَحِيفَة
-1014, 35        , التَّصْوِيرُ          , Arabe   , إسم , Loisirs     ,                               , التَّصْوِيرُ
-1015, 35        , الصَّيْدُ            , Arabe   , إسم , Loisirs     ,                               , الصَّيْدُ
-1016, 35        , الْجَرْيُ            , Arabe   , إسم , Loisirs     ,                               , الْجَرْيُ
-1017, 35        , الْمَشْيُ            , Arabe   , إسم , Loisirs     ,                               , الْمَشْيُ
-1018, 35        , الشِّطْرَنْجُ          , Arabe   , إسم , Loisirs     ,                               , الشِّطْرَنْجُ
-1019, 35        , Lorsque          , Francais, حرف , Autre       ,                               , Lorsque
+1011, 35        , الْكِتَابَة          , Arabe   , اسم , Loisirs     ,                               , الْكِتَابَة
+1012, 35        , الْمُطَالَعَةُ         , Arabe   , اسم , Loisirs     ,                               , الْمُطَالَعَةُ
+1013, 35        , صَحِيفَة            , Arabe   , اسم , Loisirs     ,                               , صَحِيفَة
+1014, 35        , التَّصْوِيرُ          , Arabe   , اسم , Loisirs     ,                               , التَّصْوِيرُ
+1015, 35        , الصَّيْدُ            , Arabe   , اسم , Loisirs     ,                               , الصَّيْدُ
+1016, 35        , الْجَرْيُ            , Arabe   , اسم , Loisirs     ,                               , الْجَرْيُ
+1017, 35        , الْمَشْيُ            , Arabe   , اسم , Loisirs     ,                               , الْمَشْيُ
+1018, 35        , الشِّطْرَنْجُ          , Arabe   , اسم , Loisirs     ,                               , الشِّطْرَنْجُ
+1019, 35        , Lorsque          , Francais, اسم , Autre       ,                               , Lorsque
 1020, 35        , Si               , Francais, حرف , Autre       ,                               , Si
 1021, 35        , Si               , Francais, حرف , Autre       , hypothèse irréelle            , Si (hypothèse irréelle)
-1022, 35        , écriture         , Francais, إسم , Loisirs     ,                               , écriture
-1023, 35        , lecture          , Francais, إسم , Loisirs     , loisir                        , lecture (loisir)
-1024, 35        , journal          , Francais, إسم , Loisirs     ,                               , journal
-1025, 35        , photographie     , Francais, إسم , Loisirs     ,                               , photographie
-1026, 35        , pêche            , Francais, إسم , Loisirs     ,                               , pêche
-1027, 35        , course           , Francais, إسم , Loisirs     , à pied                        , course ( à pied)
-1028, 35        , marche           , Francais, إسم , Loisirs     ,                               , marche
-1029, 35        , échecs           , Francais, إسم , Loisirs     , jeu                           , échecs (jeu)
-1030, 36        , فَرَاغ             , Arabe   , إسم , Loisirs     ,                               , فَرَاغ
-1031, 36        , نَشَاط             , Arabe   , إسم , Loisirs     ,                               , نَشَاط
-1032, 36        , دَرَّاجَة            , Arabe   , إسم , Loisirs     ,                               , دَرَّاجَة
-1033, 36        , مُسَلْسَل            , Arabe   , إسم , Loisirs     ,                               , مُسَلْسَل
-1034, 36        , الصَّيْد            , Arabe   , إسم , Loisirs     ,                               , الصَّيْد
-1035, 36        , الحَدِيقَة          , Arabe   , إسم , Loisirs     ,                               , الحَدِيقَة
-1036, 36        , البُسْتَان          , Arabe   , إسم , Loisirs     ,                               , البُسْتَان
+1022, 35        , écriture         , Francais, اسم , Loisirs     ,                               , écriture
+1023, 35        , lecture          , Francais, اسم , Loisirs     , loisir                        , lecture (loisir)
+1024, 35        , journal          , Francais, اسم , Loisirs     ,                               , journal
+1025, 35        , photographie     , Francais, اسم , Loisirs     ,                               , photographie
+1026, 35        , pêche            , Francais, اسم , Loisirs     ,                               , pêche
+1027, 35        , course           , Francais, اسم , Loisirs     , à pied                        , course ( à pied)
+1028, 35        , marche           , Francais, اسم , Loisirs     ,                               , marche
+1029, 35        , échecs           , Francais, اسم , Loisirs     , jeu                           , échecs (jeu)
+1030, 36        , فَرَاغ             , Arabe   , اسم , Loisirs     ,                               , فَرَاغ
+1031, 36        , نَشَاط             , Arabe   , اسم , Loisirs     ,                               , نَشَاط
+1032, 36        , دَرَّاجَة            , Arabe   , اسم , Loisirs     ,                               , دَرَّاجَة
+1033, 36        , مُسَلْسَل            , Arabe   , اسم , Loisirs     ,                               , مُسَلْسَل
+1034, 36        , الصَّيْد            , Arabe   , اسم , Loisirs     ,                               , الصَّيْد
+1035, 36        , الحَدِيقَة          , Arabe   , اسم , Loisirs     ,                               , الحَدِيقَة
+1036, 36        , البُسْتَان          , Arabe   , اسم , Loisirs     ,                               , البُسْتَان
 1037, 36        , شَاهَدَ             , Arabe   , فعل , Loisirs     ,                               , شَاهَدَ
 1038, 36        , تَنَزَّهَ             , Arabe   , فعل , Loisirs     ,                               , تَنَزَّهَ
 1039, 36        , تَحَدَّثَ             , Arabe   , فعل , Loisirs     ,                               , تَحَدَّثَ
 1040, 36        , اسْتَرَاحَ           , Arabe   , فعل , Loisirs     ,                               , اسْتَرَاحَ
-1041, 36        , vide             , Francais, إسم , Loisirs     ,                               , vide
-1042, 36        , activité         , Francais, إسم , Loisirs     ,                               , activité
-1043, 36        , vélo             , Francais, إسم , Loisirs     ,                               , vélo
-1044, 36        , série            , Francais, إسم , Loisirs     ,                               , série
-1045, 36        , chasse           , Francais, إسم , Loisirs     ,                               , chasse
-1046, 36        , jardin           , Francais, إسم , Loisirs     ,                               , jardin
-1047, 36        , verger           , Francais, إسم , Loisirs     ,                               , verger
+1041, 36        , vide             , Francais, اسم , Loisirs     ,                               , vide
+1042, 36        , activité         , Francais, اسم , Loisirs     ,                               , activité
+1043, 36        , vélo             , Francais, اسم , Loisirs     ,                               , vélo
+1044, 36        , série            , Francais, اسم , Loisirs     ,                               , série
+1045, 36        , chasse           , Francais, اسم , Loisirs     ,                               , chasse
+1046, 36        , jardin           , Francais, اسم , Loisirs     ,                               , jardin
+1047, 36        , verger           , Francais, اسم , Loisirs     ,                               , verger
 1048, 36        , regarder         , Francais, فعل , Loisirs     ,                               , regarder
 1049, 36        , promener (se)    , Francais, فعل , Loisirs     ,                               , promener (se)
 1050, 36        , discuter         , Francais, فعل , Loisirs     ,                               , discuter
 1051, 36        , reposer (se)     , Francais, فعل , Loisirs     ,                               , reposer (se)
-1052, 37        , حَفْلَةٌ             , Arabe   , إسم , Loisirs     ,                               , حَفْلَةٌ
-1053, 37        , مُبَارَاةٌ           , Arabe   , إسم , Loisirs     ,                               , مُبَارَاةٌ
-1054, 37        , مُغَامَرَةٌ           , Arabe   , إسم , Loisirs     ,                               , مُغَامَرَةٌ
-1055, 37        , تَسَلُّقٌ             , Arabe   , إسم , Loisirs     ,                               , تَسَلُّقٌ
-1056, 37        , تَخْيِيمٌ            , Arabe   , إسم , Loisirs     ,                               , تَخْيِيمٌ
-1057, 37        , خَيْمَةٌ             , Arabe   , إسم , Loisirs     ,                               , خَيْمَةٌ
-1058, 37        , حَاسُوبٌ            , Arabe   , إسم , Loisirs     ,                               , حَاسُوبٌ
-1059, 37        , جَبَلٌ              , Arabe   , إسم , Loisirs     ,                               , جَبَلٌ
-1060, 37        , لَوْحَةٌ             , Arabe   , إسم , Loisirs     ,                               , لَوْحَةٌ
-1061, 37        , طَابَعٌ             , Arabe   , إسم , Loisirs     ,                               , طَابَعٌ
+1052, 37        , حَفْلَةٌ             , Arabe   , اسم , Loisirs     ,                               , حَفْلَةٌ
+1053, 37        , مُبَارَاةٌ           , Arabe   , اسم , Loisirs     ,                               , مُبَارَاةٌ
+1054, 37        , مُغَامَرَةٌ           , Arabe   , اسم , Loisirs     ,                               , مُغَامَرَةٌ
+1055, 37        , تَسَلُّقٌ             , Arabe   , اسم , Loisirs     ,                               , تَسَلُّقٌ
+1056, 37        , تَخْيِيمٌ            , Arabe   , اسم , Loisirs     ,                               , تَخْيِيمٌ
+1057, 37        , خَيْمَةٌ             , Arabe   , اسم , Loisirs     ,                               , خَيْمَةٌ
+1058, 37        , حَاسُوبٌ            , Arabe   , اسم , Loisirs     ,                               , حَاسُوبٌ
+1059, 37        , جَبَلٌ              , Arabe   , اسم , Loisirs     ,                               , جَبَلٌ
+1060, 37        , لَوْحَةٌ             , Arabe   , اسم , Loisirs     ,                               , لَوْحَةٌ
+1061, 37        , طَابَعٌ             , Arabe   , اسم , Loisirs     ,                               , طَابَعٌ
 1062, 37        , كَي               , Arabe   , حرف , Autre       ,                               , كَي
 1063, 37        , فَـ               , Arabe   , حرف , Autre       , بعد الأمر                     , فَـ (بعد الأمر)
 1064, 37        , أَنْ               , Arabe   , حرف , Autre       ,                               , أَنْ
 1065, 37        , لِـ               , Arabe   , حرف , Autre       , فعل                           , لِـ (فعل)
 1066, 37        , حَتّى              , Arabe   , حرف , Autre       ,                               , حَتّى
 1067, 37        , إِذَنْ              , Arabe   , حرف , Autre       ,                               , إِذَنْ
-1068, 37        , fête             , Francais, إسم , Loisirs     ,                               , fête
-1069, 37        , match            , Francais, إسم , Loisirs     ,                               , match
-1070, 37        , aventure         , Francais, إسم , Loisirs     ,                               , aventure
-1071, 37        , escalade         , Francais, إسم , Loisirs     ,                               , escalade
-1072, 37        , camping          , Francais, إسم , Loisirs     ,                               , camping
-1073, 37        , tente            , Francais, إسم , Loisirs     ,                               , tente
-1074, 37        , ordinateur       , Francais, إسم , Loisirs     ,                               , ordinateur
-1075, 37        , montagne         , Francais, إسم , Loisirs     ,                               , montagne
-1076, 37        , tableau          , Francais, إسم , Loisirs     ,                               , tableau
-1077, 37        , imprimante       , Francais, إسم , Loisirs     ,                               , imprimante
+1068, 37        , fête             , Francais, اسم , Loisirs     ,                               , fête
+1069, 37        , match            , Francais, اسم , Loisirs     ,                               , match
+1070, 37        , aventure         , Francais, اسم , Loisirs     ,                               , aventure
+1071, 37        , escalade         , Francais, اسم , Loisirs     ,                               , escalade
+1072, 37        , camping          , Francais, اسم , Loisirs     ,                               , camping
+1073, 37        , tente            , Francais, اسم , Loisirs     ,                               , tente
+1074, 37        , ordinateur       , Francais, اسم , Loisirs     ,                               , ordinateur
+1075, 37        , montagne         , Francais, اسم , Loisirs     ,                               , montagne
+1076, 37        , tableau          , Francais, اسم , Loisirs     ,                               , tableau
+1077, 37        , imprimante       , Francais, اسم , Loisirs     ,                               , imprimante
 1078, 37        , afin (de)        , Francais, حرف , Autre       ,                               , afin (de)
 1079, 37        , afin (que)       , Francais, حرف , Autre       ,                               , afin (que)
 1080, 37        , que              , Francais, حرف , Autre       ,                               , que

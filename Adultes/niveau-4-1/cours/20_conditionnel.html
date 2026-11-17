@@ -26,21 +26,6 @@
         .cond-part .ar { font-size: 1.3em; font-weight: bold; direction: rtl; }
         .cond-part .fr { font-size: .9em; color: #555; }
         .cond-part .fr-white { font-size: .9em; color: rgba(255,255,255,.85); }
-        .three-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin: 20px 0; }
-        @media (max-width:600px) {
-            .three-grid { grid-template-columns: 1fr; }
-        }
-        .cond-card { border-radius: 12px; padding: 18px; text-align: center; }
-        .cond-card.idha { border: 2px solid var(--role-3); }
-        .cond-card.in { border: 2px solid var(--role-4); }
-        .cond-card.law { border: 2px solid var(--role-1); }
-        .cond-card h3 { margin-top: 0; font-size: 1em; }
-        .cond-card .arabic-lg { display: block; margin: 8px 0; font-size: 2.4em; }
-        .cond-card p { font-size: .85em; color: #555; margin: 3px 0; }
-        .cond-card .badge { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: .82em; font-weight: bold; margin-top: 8px; }
-        .idha .badge { color: var(--ink); border: 1.5px solid var(--role-3); }
-        .in   .badge { color: var(--ink); border: 1.5px solid var(--role-4); }
-        .law  .badge { color: var(--ink); border: 1.5px solid var(--role-1); }
         .conc-row td:first-child { font-weight: bold; color: #764ba2; font-size: 1.1em; }
     </style>
 </head>
@@ -53,7 +38,7 @@
     <h1>Le conditionnel en arabe</h1>
     <div class="arabic-title">الجُمْلة الشَرْطِيّة</div>
 
-    <div class="note"><strong>🔗 Prérequis :</strong> les cours sur le passé, sur le présent et le futur, et sur le subjonctif et l'apocopé.</div>
+    <div class="encart"><strong>🔗 Prérequis :</strong> les cours sur le passé, sur le présent et le futur, et sur le subjonctif et l'apocopé.</div>
 
     <div class="intro">
         La phrase conditionnelle exprime un lien de <strong>cause à effet</strong> : « si X, alors Y ».
@@ -65,7 +50,7 @@
     <!-- CONCEPT DE LA DOUBLE PHRASE -->
     <h2>🔗 La structure : la phrase double</h2>
 
-    <div class="rule-box">
+    <div class="encart" data-role="1">
         <strong>⚙️ Formule universelle :</strong>
         <div style="text-align: center; font-size: 1.2em; margin: 12px 0;">
             <span class="mot part-cond" data-role="1">particule conditionnelle</span>
@@ -77,7 +62,7 @@
         </div>
     </div>
 
-    <div class="example-box" style="text-align: center;">
+    <div class="exemples" style="text-align: center;">
         <span class="mot arabic part-cond" data-role="1" style="font-size: 1.5em;">إِذَا</span>
         <span class="mot arabic shart" data-role="2" style="font-size: 1.5em;">دَرَسْتَ</span>
         <span class="mot arabic jawab" data-role="3" style="font-size: 1.5em;">نَجَحْتَ</span><br>
@@ -92,31 +77,22 @@
     <!-- VUE D'ENSEMBLE 3 PARTICULES -->
     <h2>📊 Vue d'ensemble des trois particules</h2>
 
-    <div class="three-grid">
-        <div class="cond-card idha">
-            <h3>Éventualité concrète</h3>
-            <span class="arabic-lg">إِذَا</span>
+    <div class="notions">
+        <div class="notion" data-role="3"><div class="notion-tete"><div><h3 class="notion-titre">Éventualité concrète</h3><p class="notion-sous"><span class="arabic-lg">إِذَا</span></p></div></div>
             <p>Quelque chose qui a de<br>bonnes chances de se produire</p>
             <p>Condition → <strong>passé</strong></p>
             <p>Réponse → passé / présent / futur</p>
-            <span class="badge">Si (probable)</span>
-        </div>
-        <div class="cond-card in">
-            <h3>Hypothèse possible</h3>
-            <span class="arabic-lg">إِنْ</span>
+            <div class="formule"><span class="formule-part">Si (probable)</span></div></div>
+        <div class="notion" data-role="4"><div class="notion-tete"><div><h3 class="notion-titre">Hypothèse possible</h3><p class="notion-sous"><span class="arabic-lg">إِنْ</span></p></div></div>
             <p>Potentialité — peut arriver<br>ou non</p>
             <p>Condition → <strong>passé ou apocopé</strong></p>
             <p>Réponse → passé / apocopé / futur</p>
-            <span class="badge">Si (possible)</span>
-        </div>
-        <div class="cond-card law">
-            <h3>Hypothèse irréelle</h3>
-            <span class="arabic-lg">لَوْ</span>
+            <div class="formule"><span class="formule-part">Si (possible)</span></div></div>
+        <div class="notion" data-role="1"><div class="notion-tete"><div><h3 class="notion-titre">Hypothèse irréelle</h3><p class="notion-sous"><span class="arabic-lg">لَوْ</span></p></div></div>
             <p>Très improbable ou<br>contraire à la réalité</p>
             <p>Condition → <strong>passé</strong></p>
             <p>Réponse → <strong>لَـ + passé</strong></p>
-            <span class="badge">Si (irréel)</span>
-        </div>
+            <div class="formule"><span class="formule-part">Si (irréel)</span></div></div>
     </div>
 
     <!-- ════════════ إذا ════════════ -->
@@ -180,33 +156,33 @@
     <h3>📌 Quand ajouter فَـ devant la réponse ?</h3>
     <p>La réponse est introduite par <strong>فَـ</strong> dans ces cas :</p>
 
-    <div class="table-wrapper"><table>
+    <div class="synthese-wrap"><table class="synthese">
         <thead><tr><th>Cas</th><th>Exemple</th><th>Traduction</th></tr></thead>
         <tbody>
             <tr>
-                <td>Réponse = phrase nominale</td>
-                <td><span class="arabic">إِذَا اشْتَرَكْتَ فِي الحَرْبِ <span class="mot jawab" data-role="3">فَدُعَائِي مَعَكَ</span></span></td>
-                <td>Si tu pars à la guerre, mes prières t'accompagnent.</td>
+                <td data-label="Cas">Réponse = phrase nominale</td>
+                <td data-label="Exemple"><span class="arabic">إِذَا اشْتَرَكْتَ فِي الحَرْبِ <span class="mot jawab" data-role="3">فَدُعَائِي مَعَكَ</span></span></td>
+                <td data-label="Traduction">Si tu pars à la guerre, mes prières t'accompagnent.</td>
             </tr>
             <tr>
-                <td>Réponse = impératif</td>
-                <td><span class="arabic">إِذَا ذَهَبْتَ إِلَى السُوقِ <span class="mot jawab" data-role="3">فَاشْتَرِ</span> تُفَّاحًا</span></td>
-                <td>Si tu vas au marché, achète des pommes.</td>
+                <td data-label="Cas">Réponse = impératif</td>
+                <td data-label="Exemple"><span class="arabic">إِذَا ذَهَبْتَ إِلَى السُوقِ <span class="mot jawab" data-role="3">فَاشْتَرِ</span> تُفَّاحًا</span></td>
+                <td data-label="Traduction">Si tu vas au marché, achète des pommes.</td>
             </tr>
             <tr>
-                <td>Réponse avec سَـ / سَوْفَ</td>
-                <td><span class="arabic">إِذَا أَكْمَلْتُ الدِّرَاسَةَ <span class="mot jawab" data-role="3">فَسَأَذْهَبُ</span> إِلَى المَكْتَبِ</span></td>
-                <td>Si je termine l'étude, je me rendrai au bureau.</td>
+                <td data-label="Cas">Réponse avec سَـ / سَوْفَ</td>
+                <td data-label="Exemple"><span class="arabic">إِذَا أَكْمَلْتُ الدِّرَاسَةَ <span class="mot jawab" data-role="3">فَسَأَذْهَبُ</span> إِلَى المَكْتَبِ</span></td>
+                <td data-label="Traduction">Si je termine l'étude, je me rendrai au bureau.</td>
             </tr>
             <tr>
-                <td>Réponse avec لَنْ / لا (négation)</td>
-                <td><span class="arabic">إِذَا تَبَعْتَ نَصِيحَتِي <span class="mot jawab" data-role="3">فَلَنْ تَفْشَلَ</span></span></td>
-                <td>Si tu suis mes conseils, tu n'échoueras pas.</td>
+                <td data-label="Cas">Réponse avec لَنْ / لا (négation)</td>
+                <td data-label="Exemple"><span class="arabic">إِذَا تَبَعْتَ نَصِيحَتِي <span class="mot jawab" data-role="3">فَلَنْ تَفْشَلَ</span></span></td>
+                <td data-label="Traduction">Si tu suis mes conseils, tu n'échoueras pas.</td>
             </tr>
         </tbody>
     </table></div>
 
-    <div class="warning-box">
+    <div class="encart" data-role="4">
         <strong>⚠️ À ne pas faire avec إِذَا :</strong><br>
         Le présent de l'apocopé (المُضارِع المَجْزوم) et l'impératif ne peuvent <strong>pas</strong> être utilisés
         dans la condition après إِذَا. → Pour cela, on utilise إِنْ.
@@ -260,7 +236,7 @@
         </div>
     </div>
 
-    <div class="note">
+    <div class="encart">
         <strong>📌 مَنْ, مَا, مَهْما — fonctionnent comme إِنْ :</strong><br>
         Les pronoms relatifs-conditionnels مَنْ (quiconque), مَا (quoi que), et مَهْما (quoi qu'il arrive)
         suivent les mêmes règles que إِنْ :<br>
@@ -278,7 +254,7 @@
         (sauf si elle commence par لا ou لَمْ).
     </div>
 
-    <div class="rule-box">
+    <div class="encart" data-role="1">
         <strong>⚙️ Formule :</strong>
         <div style="text-align: center; font-size: 1.15em; margin: 10px 0;">
             <span class="mot part-cond" data-role="1">لَوْ</span> + <span class="mot shart" data-role="2">passé</span>
@@ -314,21 +290,21 @@
 
     <h3>📌 Cas particuliers de لَوْ</h3>
 
-    <div class="example-box">
+    <div class="exemples">
         <strong>لَوْلا — « Sans… / Si ce n'était pas… »</strong><br>
         لَوْ + لا = لَوْلا, suivi d'un nom au <strong>cas sujet</strong> ou d'un suffixe pronominal :<br><br>
         <span class="arabic">لَوْلا صَدَاقَةٌ قَدِيمَةٌ بَيْنَنَا لَصَفَعْتُكَ</span><br>
         → S'il n'y avait pas une vieille amitié entre nous, je t'aurais giflé.
     </div>
 
-    <div class="example-box">
+    <div class="exemples">
         <strong>لَوْ لَمْ — « Si… n'avait pas… »</strong><br>
         لَوْ + لَمْ + présent de l'apocopé :<br><br>
         <span class="arabic">لَوْ لَمْ تُضَيِّعْ وَقْتَكَ لَتَعَلَّمْتَ أَشْيَاءَ كَثِيرَةً</span><br>
         → Si tu n'avais pas perdu ton temps, tu aurais appris beaucoup de choses.
     </div>
 
-    <div class="note">
+    <div class="encart">
         <strong>📌 L'ordre peut s'inverser !</strong><br>
         La réponse (جَواب الشَرْط) peut précéder la condition :<br>
         <span class="arabic">لَأَصْبَحُوا مَجَانِينَ لَوْ عَمِلُوا فِي هَذِهِ الشَّرِكَةِ</span><br>
@@ -339,7 +315,7 @@
     <div class="section-divider"><span>⚖️ Comparaison</span></div>
     <h2>⚖️ Les trois particules en un coup d'œil</h2>
 
-    <div class="table-wrapper"><table>
+    <div class="synthese-wrap"><table class="synthese">
         <thead>
             <tr>
                 <th>Particule</th>
@@ -351,25 +327,25 @@
         </thead>
         <tbody>
             <tr>
-                <td><span class="arabic mot part-cond" data-role="1" style="font-size: 1.6em;">إِذَا</span></td>
-                <td>Éventualité concrète</td>
-                <td>Passé</td>
-                <td>Passé / Présent / Futur</td>
-                <td><em>Si tu viens (et tu vas probablement venir)…</em></td>
+                <td data-label="Particule"><span class="arabic mot part-cond" data-role="1" style="font-size: 1.6em;">إِذَا</span></td>
+                <td data-label="Nuance">Éventualité concrète</td>
+                <td data-label="Condition">Passé</td>
+                <td data-label="Réponse">Passé / Présent / Futur</td>
+                <td data-label="Exemple fr."><em>Si tu viens (et tu vas probablement venir)…</em></td>
             </tr>
             <tr>
-                <td><span class="arabic mot part-cond" data-role="1" style="font-size: 1.6em;">إِنْ</span></td>
-                <td>Hypothèse possible</td>
-                <td>Passé ou Apocopé</td>
-                <td>Passé / Apocopé / Futur</td>
-                <td><em>Si tu étudies (peut-être que tu étudieras)…</em></td>
+                <td data-label="Particule"><span class="arabic mot part-cond" data-role="1" style="font-size: 1.6em;">إِنْ</span></td>
+                <td data-label="Nuance">Hypothèse possible</td>
+                <td data-label="Condition">Passé ou Apocopé</td>
+                <td data-label="Réponse">Passé / Apocopé / Futur</td>
+                <td data-label="Exemple fr."><em>Si tu étudies (peut-être que tu étudieras)…</em></td>
             </tr>
             <tr>
-                <td><span class="arabic mot part-cond" data-role="1" style="font-size: 1.6em;">لَوْ</span></td>
-                <td>Irréel / très improbable</td>
-                <td>Passé</td>
-                <td>لَـ + Passé</td>
-                <td><em>Si j'avais été riche (mais je ne le suis pas)…</em></td>
+                <td data-label="Particule"><span class="arabic mot part-cond" data-role="1" style="font-size: 1.6em;">لَوْ</span></td>
+                <td data-label="Nuance">Irréel / très improbable</td>
+                <td data-label="Condition">Passé</td>
+                <td data-label="Réponse">لَـ + Passé</td>
+                <td data-label="Exemple fr."><em>Si j'avais été riche (mais je ne le suis pas)…</em></td>
             </tr>
         </tbody>
     </table></div>
@@ -435,7 +411,7 @@
 
     <!-- RÉSUMÉ -->
     <h2>📝 Résumé de la leçon</h2>
-    <div class="rule-box">
+    <div class="encart" data-role="1">
         <ul style="line-height: 2.2;">
             <li>La phrase conditionnelle = <strong>particule + condition (الشَرْط) + réponse (جَوَاب الشَرْط)</strong></li>
             <li><strong>إِذَا</strong> → éventualité concrète ; condition au <strong>passé</strong> ; réponse au passé / présent / futur</li>

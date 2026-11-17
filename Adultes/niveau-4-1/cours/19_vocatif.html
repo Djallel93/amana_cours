@@ -17,30 +17,6 @@
         .arabic-lg { font-size: 1.9em; color: #764ba2; font-weight: bold; }
         .part { color: var(--role-1); font-weight: bold; }
         .munaada { color: var(--role-2); font-weight: bold; }
-        .part-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin: 20px 0; }
-        @media (max-width:600px) {
-            .part-grid { grid-template-columns: 1fr; }
-        }
-        .part-card { border-radius: 12px; padding: 18px; text-align: center; }
-        .part-card.ya { border: 2px solid var(--role-1); }
-        .part-card.ayy { border: 2px solid var(--role-3); }
-        .part-card.ayyt { border: 2px solid var(--role-2); }
-        .part-card h3 { margin-top: 0; font-size: 1.05em; }
-        .part-card .arabic-lg { display: block; margin: 8px 0; font-size: 2.2em; }
-        .part-card p { font-size: .88em; color: #555; margin: 4px 0; }
-        .part-card .badge { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: .82em; font-weight: bold; margin-top: 8px; }
-        .ya   .badge { color: var(--ink); border: 1.5px solid var(--role-1); }
-        .ayy  .badge { color: var(--ink); border: 1.5px solid var(--role-3); }
-        .ayyt .badge { color: var(--ink); border: 1.5px solid var(--role-2); }
-        .cas-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 18px 0; }
-        @media (max-width:600px) {
-            .cas-grid { grid-template-columns: 1fr; }
-        }
-        .cas-card { border-radius: 10px; padding: 16px; border: 2px solid; }
-        .cas-card.marfou { background: color-mix(in srgb, var(--role-3) 18%, #fff); border-color: var(--role-3); }
-        .cas-card.mansou { background: color-mix(in srgb, var(--role-4) 18%, #fff); border-color: var(--role-4); }
-        .cas-card h4 { margin: 0 0 8px; font-size: 1em; }
-        .cas-card ul { margin: 0; padding-left: 18px; font-size: .92em; line-height: 1.8; }
     </style>
 </head>
 
@@ -52,7 +28,7 @@
     <h1>Le vocatif en arabe</h1>
     <div class="arabic-title">النِداء</div>
 
-    <div class="note"><strong>🔗 Prérequis :</strong> les cours sur le défini et l'indéfini (les cas) et sur les pronoms.</div>
+    <div class="encart"><strong>🔗 Prérequis :</strong> les cours sur le défini et l'indéfini (les cas) et sur les pronoms.</div>
 
     <div class="intro">
         Le vocatif (النِداء) est l'acte d'<strong>appeler ou d'interpeller quelqu'un directement</strong>. Contrairement au français où
@@ -69,31 +45,22 @@
         régulièrement utilisées selon le contexte :
     </div>
 
-    <div class="part-grid">
-        <div class="part-card ya">
-            <h3>La plus courante</h3>
-            <span class="arabic-lg">يَا</span>
+    <div class="notions">
+        <div class="notion" data-role="1"><div class="notion-tete"><div><h3 class="notion-titre">La plus courante</h3><p class="notion-sous"><span class="arabic-lg">يَا</span></p></div></div>
             <p>Utilisée pour appeler <strong>sans article défini</strong></p>
             <p>Prénoms, noms communs, professions…</p>
-            <span class="badge">يا + nom sans الـ</span>
-        </div>
-        <div class="part-card ayy">
-            <h3>Pour les hommes (défini)</h3>
-            <span class="arabic-lg">أَيُّها</span>
+            <div class="formule"><span class="formule-part">يا + nom sans الـ</span></div></div>
+        <div class="notion" data-role="3"><div class="notion-tete"><div><h3 class="notion-titre">Pour les hommes (défini)</h3><p class="notion-sous"><span class="arabic-lg">أَيُّها</span></p></div></div>
             <p>Utilisée quand le nom qui suit porte <strong>l'article الـ</strong></p>
             <p>Masculin — singulier, duel, pluriel</p>
-            <span class="badge">أَيُّها + الـ + nom masc.</span>
-        </div>
-        <div class="part-card ayyt">
-            <h3>Pour les femmes (défini)</h3>
-            <span class="arabic-lg">أَيَّتُها</span>
+            <div class="formule"><span class="formule-part">أَيُّها + الـ + nom masc.</span></div></div>
+        <div class="notion" data-role="2"><div class="notion-tete"><div><h3 class="notion-titre">Pour les femmes (défini)</h3><p class="notion-sous"><span class="arabic-lg">أَيَّتُها</span></p></div></div>
             <p>Utilisée quand le nom qui suit porte <strong>l'article الـ</strong></p>
             <p>Féminin — singulier, duel, pluriel</p>
-            <span class="badge">أَيَّتُها + الـ + nom fém.</span>
-        </div>
+            <div class="formule"><span class="formule-part">أَيَّتُها + الـ + nom fém.</span></div></div>
     </div>
 
-    <div class="rule-box">
+    <div class="encart" data-role="1">
         <strong>⚙️ Règle de base :</strong>
         <ul style="margin-top: 8px; line-height: 2.2;">
             <li>Le nom appelé <strong>n'a pas l'article الـ</strong> → on utilise <span class="mot part" data-role="1">يَا</span></li>
@@ -140,16 +107,14 @@
         selon le type de nom. C'est la règle la plus importante du vocatif !
     </div>
 
-    <div class="cas-grid">
-        <div class="cas-card marfou">
-            <h4>✅ Cas sujet (مَرْفُوع) sans <span class="arabic" lang="ar" dir="rtl">تَنْوِينٌ</span></h4>
+    <div class="notions">
+        <div class="notion" data-role="3"><h4 class="notion-titre">✅ Cas sujet (مَرْفُوع) sans <span class="arabic" lang="ar" dir="rtl">تَنْوِينٌ</span></h4>
             <ul>
                 <li>Nom propre simple<br><span class="arabic" style="font-size: 1.1em;">يَا <span class="mot munaada" data-role="2">عَلِيُّ</span></span></li>
                 <li>Nom commun singulier bien identifié<br><span class="arabic" style="font-size: 1.1em;">يَا <span class="mot munaada" data-role="2">أُسْتَاذُ</span></span></li>
             </ul>
         </div>
-        <div class="cas-card mansou">
-            <h4>✅ Cas direct (مَنْصُوب)</h4>
+        <div class="notion" data-role="4"><h4 class="notion-titre">✅ Cas direct (مَنْصُوب)</h4>
             <ul>
                 <li>Entité vague / indéfinie<br><span class="arabic" style="font-size: 1.1em;">يَا <span class="mot munaada" data-role="2">زَعِيمًا</span> كُنْ عادِلاً</span></li>
                 <li>Nom suivi d'une annexion (إضافة)<br><span class="arabic" style="font-size: 1.1em;">يَا <span class="mot munaada" data-role="2">رَئِيسَ</span> الوُزَرَاءِ</span></li>
@@ -167,7 +132,7 @@
     <li class="paire"><p class="paire-ar"><span class="mot part" data-role="1">يَا</span> <span class="mot munaada" data-role="2">طَالِبًا</span> كُنْ مُجْتَهِدًا !</p><p class="paire-fr">Ô étudiant (en général), sois appliqué !</p><p class="paire-analyse">Destinataire vague (n'importe quel étudiant) → cas direct + <span class="arabic" lang="ar" dir="rtl">تَنْوِينٌ</span></p></li>
 </ol>
 
-    <div class="note">
+    <div class="encart">
         <strong>📌 يَا + suffixe pronom ي :</strong> Quand le nom appelé est suivi du pronom personnel suffixe ي
         (mon/ma), la dernière voyelle s'allège souvent :<br>
         <span class="arabic">يَا رَبِّي</span> → <span class="arabic">يَا رَبِّ</span> (Ô mon Seigneur !)
@@ -194,7 +159,7 @@
 
     <h3>📖 يَا + أَيُّها — la formule coranique</h3>
 
-    <div class="example-box">
+    <div class="exemples">
         <strong>La combinaison يَا أَيُّها</strong> ajoute encore plus de solennité. C'est la formule
         utilisée dans le Coran pour s'adresser aux croyants :<br><br>
         <div style="text-align: center; margin: 10px 0;">
@@ -204,7 +169,7 @@
     </div>
 
     <!-- ════════════ NOTE ALLAH ════════════ -->
-    <div class="info-box">
+    <div class="encart" data-role="2">
         <strong>🕌 Cas particulier : s'adresser à Dieu</strong><br><br>
         Pour s'adresser à Dieu, on peut utiliser la construction normale <span class="arabic">يَا إِلَهِي</span>,
         mais il existe une forme spéciale sans particule vocative, largement utilisée dans le Coran :<br><br>
@@ -223,28 +188,28 @@
         Voici les règles pour ces cas :
     </div>
 
-    <div class="table-wrapper"><table>
+    <div class="synthese-wrap"><table class="synthese">
         <thead>
             <tr><th>Cas</th><th>Règle</th><th>Exemple</th><th>Traduction</th></tr>
         </thead>
         <tbody>
             <tr>
-                <td>Destinataire indéclinable (démonstratif, pronom)</td>
-                <td>Le nom qui suit est au <strong>cas sujet</strong></td>
-                <td><span class="arabic">يَا هَذَا <span class="mot munaada" data-role="2">الحَارِسُ</span></span></td>
-                <td>Ô ce gardien !</td>
+                <td data-label="Cas">Destinataire indéclinable (démonstratif, pronom)</td>
+                <td data-label="Règle">Le nom qui suit est au <strong>cas sujet</strong></td>
+                <td data-label="Exemple"><span class="arabic">يَا هَذَا <span class="mot munaada" data-role="2">الحَارِسُ</span></span></td>
+                <td data-label="Traduction">Ô ce gardien !</td>
             </tr>
             <tr>
-                <td>Adjectif non premier terme d'annexion</td>
-                <td>Cas direct <strong>ou</strong> cas sujet</td>
-                <td><span class="arabic">يَا سُفْيَانُ <span class="mot munaada" data-role="2">الشَّرِيفُ</span></span></td>
-                <td>Ô honorable Sofiane !</td>
+                <td data-label="Cas">Adjectif non premier terme d'annexion</td>
+                <td data-label="Règle">Cas direct <strong>ou</strong> cas sujet</td>
+                <td data-label="Exemple"><span class="arabic">يَا سُفْيَانُ <span class="mot munaada" data-role="2">الشَّرِيفُ</span></span></td>
+                <td data-label="Traduction">Ô honorable Sofiane !</td>
             </tr>
             <tr>
-                <td>Deux noms reliés par وَ</td>
-                <td>Le deuxième suit le premier</td>
-                <td><span class="arabic">يَا <span class="mot munaada" data-role="2">سَمِيرُ وَمُحْسِنُ</span></span></td>
-                <td>Ô Samir et Mohsin !</td>
+                <td data-label="Cas">Deux noms reliés par وَ</td>
+                <td data-label="Règle">Le deuxième suit le premier</td>
+                <td data-label="Exemple"><span class="arabic">يَا <span class="mot munaada" data-role="2">سَمِيرُ وَمُحْسِنُ</span></span></td>
+                <td data-label="Traduction">Ô Samir et Mohsin !</td>
             </tr>
         </tbody>
     </table></div>
@@ -253,59 +218,59 @@
     <div class="section-divider"><span>🗺️ Récapitulatif</span></div>
     <h2>🗺️ Tableau récapitulatif</h2>
 
-    <div class="table-wrapper"><table>
+    <div class="synthese-wrap"><table class="synthese">
         <thead>
             <tr><th>Situation</th><th>Particule</th><th>Cas du nom</th><th>Exemple</th></tr>
         </thead>
         <tbody>
             <tr>
-                <td>Prénom / nom propre simple</td>
-                <td><span class="mot arabic part" data-role="1">يَا</span></td>
-                <td>Cas sujet (ضمة)</td>
-                <td><span class="arabic">يَا أَحْمَدُ</span></td>
+                <td data-label="Situation">Prénom / nom propre simple</td>
+                <td data-label="Particule"><span class="mot arabic part" data-role="1">يَا</span></td>
+                <td data-label="Cas du nom">Cas sujet (ضمة)</td>
+                <td data-label="Exemple"><span class="arabic">يَا أَحْمَدُ</span></td>
             </tr>
             <tr>
-                <td>Nom commun bien identifié</td>
-                <td><span class="mot arabic part" data-role="1">يَا</span></td>
-                <td>Cas sujet (ضمة)</td>
-                <td><span class="arabic">يَا أُسْتَاذُ</span></td>
+                <td data-label="Situation">Nom commun bien identifié</td>
+                <td data-label="Particule"><span class="mot arabic part" data-role="1">يَا</span></td>
+                <td data-label="Cas du nom">Cas sujet (ضمة)</td>
+                <td data-label="Exemple"><span class="arabic">يَا أُسْتَاذُ</span></td>
             </tr>
             <tr>
-                <td>Entité vague / indéfinie</td>
-                <td><span class="mot arabic part" data-role="1">يَا</span></td>
-                <td>Cas direct + <span class="arabic" lang="ar" dir="rtl">تَنْوِينٌ</span></td>
-                <td><span class="arabic">يَا طَالِبًا</span></td>
+                <td data-label="Situation">Entité vague / indéfinie</td>
+                <td data-label="Particule"><span class="mot arabic part" data-role="1">يَا</span></td>
+                <td data-label="Cas du nom">Cas direct + <span class="arabic" lang="ar" dir="rtl">تَنْوِينٌ</span></td>
+                <td data-label="Exemple"><span class="arabic">يَا طَالِبًا</span></td>
             </tr>
             <tr>
-                <td>Nom en annexion (إضافة)</td>
-                <td><span class="mot arabic part" data-role="1">يَا</span></td>
-                <td>Cas direct (فتحة)</td>
-                <td><span class="arabic">يَا رَئِيسَ الوُزَرَاءِ</span></td>
+                <td data-label="Situation">Nom en annexion (إضافة)</td>
+                <td data-label="Particule"><span class="mot arabic part" data-role="1">يَا</span></td>
+                <td data-label="Cas du nom">Cas direct (فتحة)</td>
+                <td data-label="Exemple"><span class="arabic">يَا رَئِيسَ الوُزَرَاءِ</span></td>
             </tr>
             <tr>
-                <td>Nom défini (الـ) masculin</td>
-                <td><span class="mot arabic part" data-role="1">أَيُّها</span></td>
-                <td>Cas sujet (ضمة)</td>
-                <td><span class="arabic">أَيُّها المُدِيرُ</span></td>
+                <td data-label="Situation">Nom défini (الـ) masculin</td>
+                <td data-label="Particule"><span class="mot arabic part" data-role="1">أَيُّها</span></td>
+                <td data-label="Cas du nom">Cas sujet (ضمة)</td>
+                <td data-label="Exemple"><span class="arabic">أَيُّها المُدِيرُ</span></td>
             </tr>
             <tr>
-                <td>Nom défini (الـ) féminin</td>
-                <td><span class="mot arabic part" data-role="1">أَيَّتُها</span></td>
-                <td>Cas sujet (ضمة)</td>
-                <td><span class="arabic">أَيَّتُها الطَّالِبَةُ</span></td>
+                <td data-label="Situation">Nom défini (الـ) féminin</td>
+                <td data-label="Particule"><span class="mot arabic part" data-role="1">أَيَّتُها</span></td>
+                <td data-label="Cas du nom">Cas sujet (ضمة)</td>
+                <td data-label="Exemple"><span class="arabic">أَيَّتُها الطَّالِبَةُ</span></td>
             </tr>
             <tr>
-                <td>S'adresser à Dieu</td>
-                <td><span class="mot arabic part" data-role="1">اللّهُمَّ</span></td>
-                <td>—</td>
-                <td><span class="arabic">اللّهُمَّ ارْحَمْنَا</span></td>
+                <td data-label="Situation">S'adresser à Dieu</td>
+                <td data-label="Particule"><span class="mot arabic part" data-role="1">اللّهُمَّ</span></td>
+                <td data-label="Cas du nom">—</td>
+                <td data-label="Exemple"><span class="arabic">اللّهُمَّ ارْحَمْنَا</span></td>
             </tr>
         </tbody>
     </table></div>
 
     <!-- RÉSUMÉ -->
     <h2>📝 Résumé de la leçon</h2>
-    <div class="rule-box">
+    <div class="encart" data-role="1">
         <ul style="line-height: 2.2;">
             <li>Le vocatif = <strong>particule + nom appelé (المُنادى)</strong></li>
             <li><strong>يَا</strong> s'utilise avec les noms <strong>sans article الـ</strong> (prénoms, noms communs, entités vagues, annexions)</li>

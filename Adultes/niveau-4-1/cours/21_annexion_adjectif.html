@@ -19,31 +19,6 @@
         .manout { color: var(--role-1); font-weight: bold; }
         .naat { color: var(--role-2); font-weight: bold; }
         .arabic-lg { font-size: 1.7em; color: #764ba2; font-weight: bold; }
-        .phrase-type-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 25px 0; }
-        @media (max-width: 600px) {
-            .phrase-type-grid { grid-template-columns: 1fr; }
-        }
-        .phrase-card { border-radius: 12px; padding: 20px; text-align: center; }
-        .phrase-card.nominale { border: 2px solid var(--role-1); }
-        .phrase-card.verbale { border: 2px solid var(--role-2); }
-        .phrase-card h3 { margin-top: 0; font-size: 1.2em; }
-        .phrase-card .arabic-lg { display: block; margin: 10px 0; font-size: 2em; }
-        .phrase-card p { font-size: 0.95em; color: #555; margin: 5px 0; }
-        .phrase-card .badge { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 0.85em; font-weight: bold; margin-top: 8px; }
-        .nominale .badge { color: var(--ink); border: 1.5px solid var(--role-1); }
-        .verbale .badge { color: var(--ink); border: 1.5px solid var(--role-2); }
-        .anatomy { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 8px; padding: 18px; background: #fafafa; border-radius: 10px; border: 1px solid #ddd; margin: 15px 0; font-size: 1.1em; }
-        .anatomy .block { text-align: center; padding: 10px 16px; border-radius: 8px; min-width: 90px; }
-        .anatomy .block .arabic { font-size: 1.6em; }
-        .anatomy .block .label { font-size: 0.75em; font-weight: bold; margin-top: 4px; }
-        .anatomy .arrow { font-size: 1.5em; color: #999; }
-        .block.b-modaf { background: color-mix(in srgb, var(--role-1) 18%, #fff); border: 2px solid var(--role-1); }
-        .block.b-modaf-ilayh { background: color-mix(in srgb, var(--role-3) 18%, #fff); border: 2px solid var(--role-3); }
-        .block.b-manout { background: color-mix(in srgb, var(--role-1) 18%, #fff); border: 2px solid var(--role-1); }
-        .block.b-naat { border: 2px solid var(--role-2); }
-        .legend { display: flex; flex-wrap: wrap; gap: 10px; margin: 10px 0 20px; font-size: 0.9em; }
-        .legend-item { display: flex; align-items: center; gap: 6px; }
-        .legend-dot { width: 14px; height: 14px; border-radius: 50%; display: inline-block; }
     </style>
 </head>
 
@@ -55,7 +30,7 @@
         <h1>L'annexion et l'adjectif</h1>
         <div class="arabic-title">الإِضافة والنَعْت</div>
 
-    <div class="note"><strong>🔗 Prérequis :</strong> les cours sur le défini et l'indéfini, le masculin et le féminin, le duel et le pluriel.</div>
+    <div class="encart"><strong>🔗 Prérequis :</strong> les cours sur le défini et l'indéfini, le masculin et le féminin, le duel et le pluriel.</div>
 
         <!-- ─── INTRODUCTION ─────────────────────────── -->
         <div class="intro">
@@ -70,26 +45,20 @@
         <!-- ─── VUE D'ENSEMBLE ───────────────────────── -->
         <h2>📊 Vue d'ensemble</h2>
 
-        <div class="phrase-type-grid">
-            <div class="phrase-card nominale">
-                <h3>L'annexion</h3>
-                <span class="arabic-lg">الإِضافة</span>
+        <div class="notions">
+            <div class="notion" data-role="1"><div class="notion-tete"><div><h3 class="notion-titre">L'annexion</h3><p class="notion-sous"><span class="arabic-lg">الإِضافة</span></p></div></div>
                 <p>Deux <strong>noms</strong> mis bout à bout</p>
                 <p>Le 2ème complète le 1er</p>
                 <p>Équivalent de "le X de Y" en français</p>
-                <span class="badge">مُضاف + مُضاف إليه</span>
-            </div>
-            <div class="phrase-card verbale">
-                <h3>L'adjectif</h3>
-                <span class="arabic-lg">النَعْت</span>
+                <div class="formule"><span class="formule-part">مُضاف + مُضاف إليه</span></div></div>
+            <div class="notion" data-role="2"><div class="notion-tete"><div><h3 class="notion-titre">L'adjectif</h3><p class="notion-sous"><span class="arabic-lg">النَعْت</span></p></div></div>
                 <p>Un <strong>nom</strong> suivi d'un <strong>adjectif</strong></p>
                 <p>L'adjectif décrit le nom</p>
                 <p>Équivalent de "le X Y" en français</p>
-                <span class="badge">مَنْعوت + نَعْت</span>
-            </div>
+                <div class="formule"><span class="formule-part">مَنْعوت + نَعْت</span></div></div>
         </div>
 
-        <div class="note">
+        <div class="encart">
             <strong>💡 Comment les distinguer :</strong> Dans une annexion, le 2ème mot est presque toujours un
             <strong>nom défini</strong> et le 1er terme ne porte jamais ال. Dans le cas de l'adjectif, les deux mots
             <strong>s'accordent</strong> — même article, même genre, même cas. C'est ce test de l'accord qui te
@@ -114,7 +83,7 @@
             pour « de » : l'ordre des deux noms suffit.
         </div>
 
-        <div class="rule-box">
+        <div class="encart" data-role="1">
             <strong>⚙️ Formule :</strong>
             <p style="text-align: center; font-size: 1.2em; margin: 8px 0;">
                 <span class="mot modaf" data-role="1">المُضاف</span> (1er terme) + <span class="mot modaf-ilayh" data-role="3">المُضاف إِليه</span>
@@ -127,32 +96,26 @@
         <!-- Anatomie visuelle -->
         <h3>🔬 Anatomie d'une annexion</h3>
 
-        <div class="anatomy">
-            <div class="block b-modaf">
-                <div class="arabic">قَصْرُ</div>
-                <div class="label modaf">1er terme (مُضاف)</div>
-            </div>
-            <div class="arrow">+</div>
-            <div class="block b-modaf-ilayh">
-                <div class="arabic">المَلِكِ</div>
-                <div class="label modaf-ilayh">2ème terme (مُضاف إِليه)</div>
-            </div>
+        <div class="formule">
+            <div class="formule-part bloc" data-role="1"><span class="arabic">قَصْرُ</span><span class="formule-legende">1er terme (مُضاف)</span></div>
+            <span class="formule-plus">+</span>
+            <div class="formule-part bloc" data-role="3"><span class="arabic">المَلِكِ</span><span class="formule-legende">2ème terme (مُضاف إِليه)</span></div>
         </div>
-        <div class="example-box" style="text-align: center;">
+        <div class="exemples" style="text-align: center;">
             <span class="arabic">قَصْرُ المَلِكِ</span> → <span class="trad">Le château du roi</span>
         </div>
 
-        <div class="legend">
-            <div class="legend-item"><span class="legend-dot" style="border: 1.5px solid var(--role-1);"></span> <span
+        <div class="legende">
+            <div class="legende-item" data-role="1"><span
                     class="modaf">1er terme (مُضاف)</span></div>
-            <div class="legend-item"><span class="legend-dot" style="border: 1.5px solid var(--role-3);"></span> <span
+            <div class="legende-item" data-role="3"><span
                     class="modaf-ilayh">2ème terme (مُضاف إِليه)</span></div>
         </div>
 
         <!-- Règles -->
         <h3>📜 Les règles de l'annexion</h3>
 
-        <div class="rule-box">
+        <div class="encart" data-role="1">
             <ul style="line-height: 2;">
                 <li>Le <span class="mot modaf" data-role="1">1er terme</span> — qu'il soit « logiquement » défini ou non — <strong>ne
                         prend jamais ال</strong> et <strong>n'est jamais nuné</strong> (pas de <span class="arabic" lang="ar" dir="rtl">تَنْوِينٌ</span>).</li>
@@ -165,7 +128,7 @@
             </ul>
         </div>
 
-        <div class="table-wrapper"><table>
+        <div class="synthese-wrap"><table class="synthese">
             <thead>
                 <tr>
                     <th>Forme définie</th>
@@ -174,21 +137,21 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><span class="arabic"><span class="mot modaf" data-role="1">قَصْرُ</span> <span
+                    <td data-label="Forme définie"><span class="arabic"><span class="mot modaf" data-role="1">قَصْرُ</span> <span
                                 class="modaf-ilayh">المَلِكِ</span></span><br><small>Le château du roi</small></td>
-                    <td><span class="arabic"><span class="mot modaf" data-role="1">قَصْرُ</span> <span
+                    <td data-label="Forme indéfinie"><span class="arabic"><span class="mot modaf" data-role="1">قَصْرُ</span> <span
                                 class="modaf-ilayh">مَلِكٍ</span></span><br><small>Le château d'un roi</small></td>
                 </tr>
                 <tr>
-                    <td><span class="arabic"><span class="mot modaf" data-role="1">وَزيرُ</span> <span
+                    <td data-label="Forme définie"><span class="arabic"><span class="mot modaf" data-role="1">وَزيرُ</span> <span
                                 class="modaf-ilayh">البَلَدِ</span></span><br><small>Le ministre du pays</small></td>
-                    <td><span class="arabic"><span class="mot modaf" data-role="1">وَزيرُ</span> <span
+                    <td data-label="Forme indéfinie"><span class="arabic"><span class="mot modaf" data-role="1">وَزيرُ</span> <span
                                 class="modaf-ilayh">بَلَدٍ</span></span><br><small>Ministre d'un pays</small></td>
                 </tr>
                 <tr>
-                    <td><span class="arabic"><span class="mot modaf" data-role="1">كُرْسيُّ</span> <span
+                    <td data-label="Forme définie"><span class="arabic"><span class="mot modaf" data-role="1">كُرْسيُّ</span> <span
                                 class="modaf-ilayh">الخَشَبِ</span></span><br><small>Le siège en bois</small></td>
-                    <td><span class="arabic"><span class="mot modaf" data-role="1">كُرْسيُّ</span> <span
+                    <td data-label="Forme indéfinie"><span class="arabic"><span class="mot modaf" data-role="1">كُرْسيُّ</span> <span
                                 class="modaf-ilayh">خَشَبٍ</span></span><br><small>Un siège en bois</small></td>
                 </tr>
             </tbody>
@@ -197,13 +160,13 @@
         <!-- Deux types -->
         <h3>🧩 Deux types d'annexion</h3>
 
-        <div class="info-box">
+        <div class="encart" data-role="2">
             <strong>1. L'annexion authentique — الإِضافة الحَقِيقِيّة</strong><br>
             C'est le type que tu viens de voir : elle correspond à la construction génitive du français (« le X de
             Y », « le X en Y »), et peut exprimer une possession, une appartenance ou la matière d'un objet.
         </div>
 
-        <div class="info-box">
+        <div class="encart" data-role="2">
             <strong>2. L'annexion adjectivale — الإِضافة المَجازِيّة</strong><br>
             Ici, c'est un <strong>adjectif</strong> qui joue le rôle du 1er terme, suivi de son complément. On
             l'appelle « métaphorique » car elle exprime une qualité plutôt qu'une possession réelle — pense-y comme
@@ -220,12 +183,12 @@
         <!-- Duel et pluriel -->
         <h3>🔢 L'annexion avec le duel et le pluriel</h3>
 
-        <div class="note">
+        <div class="encart">
             <strong>💡 Une lettre disparaît :</strong> Quand le 1er terme est un duel ou un pluriel régulier masculin,
             le ن final <strong>disparaît</strong> dès qu'on lui ajoute un complément (annexion).
         </div>
 
-        <div class="table-wrapper"><table>
+        <div class="synthese-wrap"><table class="synthese">
             <thead>
                 <tr>
                     <th>Forme seule</th>
@@ -235,37 +198,37 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><span class="arabic">مُعَلِّمانِ</span><br><small>les deux enseignants</small></td>
-                    <td><span class="arabic"><span class="mot modaf" data-role="1">مُعَلِّما</span> <span
+                    <td data-label="Forme seule"><span class="arabic">مُعَلِّمانِ</span><br><small>les deux enseignants</small></td>
+                    <td data-label="En annexion"><span class="arabic"><span class="mot modaf" data-role="1">مُعَلِّما</span> <span
                                 class="modaf-ilayh">المَدْرَسةِ</span></span><br><small>les deux enseignants de
                             l'école</small></td>
-                    <td>Duel — cas sujet</td>
+                    <td data-label="Cas">Duel — cas sujet</td>
                 </tr>
                 <tr>
-                    <td><span class="arabic">مُعَلِّمَيْنِ</span><br><small>les deux enseignants</small></td>
-                    <td><span class="arabic"><span class="mot modaf" data-role="1">مُعَلِّمَيِ</span> <span
+                    <td data-label="Forme seule"><span class="arabic">مُعَلِّمَيْنِ</span><br><small>les deux enseignants</small></td>
+                    <td data-label="En annexion"><span class="arabic"><span class="mot modaf" data-role="1">مُعَلِّمَيِ</span> <span
                                 class="modaf-ilayh">المَدْرَسةِ</span></span><br><small>les deux enseignants de
                             l'école</small></td>
-                    <td>Duel — accusatif / génitif</td>
+                    <td data-label="Cas">Duel — accusatif / génitif</td>
                 </tr>
                 <tr>
-                    <td><span class="arabic">مُعَلِّمُونَ</span><br><small>les enseignants</small></td>
-                    <td><span class="arabic"><span class="mot modaf" data-role="1">مُعَلِّمُو</span> <span
+                    <td data-label="Forme seule"><span class="arabic">مُعَلِّمُونَ</span><br><small>les enseignants</small></td>
+                    <td data-label="En annexion"><span class="arabic"><span class="mot modaf" data-role="1">مُعَلِّمُو</span> <span
                                 class="modaf-ilayh">المَدْرَسةِ</span></span><br><small>les enseignants de
                             l'école</small></td>
-                    <td>Pluriel régulier — cas sujet</td>
+                    <td data-label="Cas">Pluriel régulier — cas sujet</td>
                 </tr>
                 <tr>
-                    <td><span class="arabic">مُعَلِّمِينَ</span><br><small>les enseignants</small></td>
-                    <td><span class="arabic"><span class="mot modaf" data-role="1">مُعَلِّمِي</span> <span
+                    <td data-label="Forme seule"><span class="arabic">مُعَلِّمِينَ</span><br><small>les enseignants</small></td>
+                    <td data-label="En annexion"><span class="arabic"><span class="mot modaf" data-role="1">مُعَلِّمِي</span> <span
                                 class="modaf-ilayh">المَدْرَسةِ</span></span><br><small>les enseignants de
                             l'école</small></td>
-                    <td>Pluriel régulier — cas direct / indirect</td>
+                    <td data-label="Cas">Pluriel régulier — cas direct / indirect</td>
                 </tr>
             </tbody>
         </table></div>
 
-        <div class="warning-box">
+        <div class="encart" data-role="4">
             <strong>⚠️ Attention :</strong> Cette disparition du ن ne concerne que le <strong>duel</strong> et le
             <strong>pluriel régulier masculin</strong> — jamais les pluriels brisés, qui se comportent comme des noms
             singuliers ordinaires en annexion.
@@ -282,7 +245,7 @@
             après le nom, l'arabe suit une règle stricte : <strong>l'adjectif vient toujours après le nom</strong>.
         </div>
 
-        <div class="rule-box">
+        <div class="encart" data-role="1">
             <strong>⚙️ La règle d'accord :</strong>
             <p style="text-align: center; font-size: 1.2em; margin: 8px 0;">
                 <span class="mot manout" data-role="1">المَنْعوت</span> (nom) + <span class="mot naat" data-role="2">النَعْت</span> (adjectif)
@@ -294,19 +257,13 @@
         <!-- Anatomie visuelle -->
         <h3>🔬 Les quatre accords</h3>
 
-        <div class="anatomy">
-            <div class="block b-naat">
-                <div class="arabic">الكَبِيرةِ</div>
-                <div class="label naat">Adjectif (نَعْت)</div>
-            </div>
-            <div class="block b-manout">
-                <div class="arabic">الجامِعةِ</div>
-                <div class="label manout">Nom (مَنْعوت)</div>
-            </div>
-            <div class="arrow">+</div>
+        <div class="formule">
+            <div class="formule-part bloc" data-role="2"><span class="arabic">الكَبِيرةِ</span><span class="formule-legende">Adjectif (نَعْت)</span></div>
+            <div class="formule-part bloc" data-role="1"><span class="arabic">الجامِعةِ</span><span class="formule-legende">Nom (مَنْعوت)</span></div>
+            <span class="formule-plus">+</span>
         </div>
 
-        <div class="table-wrapper"><table>
+        <div class="synthese-wrap"><table class="synthese">
             <thead>
                 <tr>
                     <th>Plan d'accord</th>
@@ -316,37 +273,37 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><strong>Genre (الجِنْس)</strong></td>
-                    <td>Féminin (par nature)</td>
-                    <td>Prend la marque du féminin ة</td>
+                    <td data-label="Plan d'accord"><strong>Genre (الجِنْس)</strong></td>
+                    <td data-label="Nom : اَلجامِعةِ (l'université)">Féminin (par nature)</td>
+                    <td data-label="Adjectif : اَلكَبِيرةِ (grande)">Prend la marque du féminin ة</td>
                 </tr>
                 <tr>
-                    <td><strong>Nombre (العَدَد)</strong></td>
-                    <td>Singulier</td>
-                    <td>Reste au singulier</td>
+                    <td data-label="Plan d'accord"><strong>Nombre (العَدَد)</strong></td>
+                    <td data-label="Nom : اَلجامِعةِ (l'université)">Singulier</td>
+                    <td data-label="Adjectif : اَلكَبِيرةِ (grande)">Reste au singulier</td>
                 </tr>
                 <tr>
-                    <td><strong>Définition (التَعْريف)</strong></td>
-                    <td>Défini (ال)</td>
-                    <td>Porte aussi ال</td>
+                    <td data-label="Plan d'accord"><strong>Définition (التَعْريف)</strong></td>
+                    <td data-label="Nom : اَلجامِعةِ (l'université)">Défini (ال)</td>
+                    <td data-label="Adjectif : اَلكَبِيرةِ (grande)">Porte aussi ال</td>
                 </tr>
                 <tr>
-                    <td><strong>Déclinaison (الإِعْراب)</strong></td>
-                    <td>Cas indirect → <span class="arabic" lang="ar" dir="rtl">كَسْرَةٌ</span></td>
-                    <td>Même cas → <span class="arabic" lang="ar" dir="rtl">كَسْرَةٌ</span></td>
+                    <td data-label="Plan d'accord"><strong>Déclinaison (الإِعْراب)</strong></td>
+                    <td data-label="Nom : اَلجامِعةِ (l'université)">Cas indirect → <span class="arabic" lang="ar" dir="rtl">كَسْرَةٌ</span></td>
+                    <td data-label="Adjectif : اَلكَبِيرةِ (grande)">Même cas → <span class="arabic" lang="ar" dir="rtl">كَسْرَةٌ</span></td>
                 </tr>
             </tbody>
         </table></div>
 
-        <div class="example-box" style="text-align: center;">
+        <div class="exemples" style="text-align: center;">
             <span class="arabic"><span class="mot manout" data-role="1">الجامِعةِ</span> <span class="mot naat" data-role="2">الكَبِيرةِ</span></span> → <span class="trad">la
             grande université</span>
         </div>
 
-        <div class="legend">
-            <div class="legend-item"><span class="legend-dot" style="border: 1.5px solid var(--role-1);"></span> <span
+        <div class="legende">
+            <div class="legende-item" data-role="1"><span
                     class="manout">Nom qualifié (مَنْعوت)</span></div>
-            <div class="legend-item"><span class="legend-dot" style="border: 1.5px solid var(--role-2);"></span> <span
+            <div class="legende-item" data-role="2"><span
                     class="naat">Adjectif (نَعْت)</span></div>
         </div>
 
@@ -362,7 +319,7 @@
                 immédiatement le nom qu'il décrit.</p></li>
 </ol>
 
-        <div class="note">
+        <div class="encart">
             <strong>💡 Adjectif ou information ?</strong> Un mot placé juste après le nom qu'il qualifie, avec le
             <strong>même article</strong> (défini/indéfini), est un adjectif (نَعْت). Un mot qui suit un nom
             <strong>déjà défini</strong> mais qui, lui, reste <strong>indéfini</strong>, n'est pas un adjectif : c'est
@@ -372,13 +329,13 @@
         <!-- Pluriels inanimés -->
         <h3>📦 Le cas des pluriels inanimés</h3>
 
-        <div class="rule-box">
+        <div class="encart" data-role="1">
             Lorsque le nom au pluriel désigne une <strong>chose</strong> ou un <strong>animal</strong> — donc rien de
             personnifié — l'adjectif qui le qualifie se met <strong>au féminin singulier</strong>, quel que soit le
             genre du nom au singulier. Cette règle ne s'applique qu'au pluriel, jamais au duel.
         </div>
 
-        <div class="table-wrapper"><table>
+        <div class="synthese-wrap"><table class="synthese">
             <thead>
                 <tr>
                     <th>Nom (pluriel inanimé)</th>
@@ -388,24 +345,24 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><span class="arabic mot manout" data-role="1">حِكاياتٌ</span></td>
-                    <td><span class="arabic mot naat" data-role="2">جميلةٌ</span></td>
-                    <td>De belles histoires</td>
+                    <td data-label="Nom (pluriel inanimé)"><span class="arabic mot manout" data-role="1">حِكاياتٌ</span></td>
+                    <td data-label="Adjectif (féminin singulier)"><span class="arabic mot naat" data-role="2">جميلةٌ</span></td>
+                    <td data-label="Traduction">De belles histoires</td>
                 </tr>
                 <tr>
-                    <td><span class="arabic mot manout" data-role="1">أُسُدٌ</span></td>
-                    <td><span class="arabic mot naat" data-role="2">شَرِسةٌ</span></td>
-                    <td>Lions féroces</td>
+                    <td data-label="Nom (pluriel inanimé)"><span class="arabic mot manout" data-role="1">أُسُدٌ</span></td>
+                    <td data-label="Adjectif (féminin singulier)"><span class="arabic mot naat" data-role="2">شَرِسةٌ</span></td>
+                    <td data-label="Traduction">Lions féroces</td>
                 </tr>
                 <tr>
-                    <td><span class="arabic mot manout" data-role="1">الوِلاياتُ</span></td>
-                    <td><span class="arabic mot naat" data-role="2">المُتَّحِدةُ</span></td>
-                    <td>Les États-Unis</td>
+                    <td data-label="Nom (pluriel inanimé)"><span class="arabic mot manout" data-role="1">الوِلاياتُ</span></td>
+                    <td data-label="Adjectif (féminin singulier)"><span class="arabic mot naat" data-role="2">المُتَّحِدةُ</span></td>
+                    <td data-label="Traduction">Les États-Unis</td>
                 </tr>
             </tbody>
         </table></div>
 
-        <div class="note">
+        <div class="encart">
             <strong>💡 Exception rare :</strong> Certains adjectifs restent au pluriel avec un pluriel inanimé, pour
             <strong>insister</strong> sur la valeur de la qualité exprimée — par exemple
             <span class="arabic"><span class="mot manout" data-role="1">أَيّامٌ</span> <span class="mot naat" data-role="2">مَعْدُوداتٌ</span></span>
@@ -427,7 +384,7 @@
             <strong>après le 2ème terme</strong>, tout à la fin.
         </div>
 
-        <div class="rule-box">
+        <div class="encart" data-role="1">
             <strong>⚙️ Formule :</strong>
             <p style="text-align: center; font-size: 1.15em; margin: 8px 0;">
                 <span class="mot modaf" data-role="1">مُضاف</span> + <span class="mot modaf-ilayh" data-role="3">مُضاف إليه</span> + <span
@@ -440,7 +397,7 @@
                 place après الوَلَدِ (le garçon), le 2ème terme, car rien ne peut s'intercaler entre les deux.</p></li>
 </ol>
 
-        <div class="warning-box">
+        <div class="encart" data-role="4">
             <strong>⚠️ Comment savoir qui est qualifié ?</strong> Si le 2ème terme peut lui aussi avoir un adjectif,
             une phrase peut devenir ambiguë à l'écrit. C'est alors le <strong>genre</strong> ou le <strong>cas</strong>
             de l'adjectif qui permet de trancher : il s'accorde avec le terme qu'il qualifie réellement, jamais avec
@@ -456,7 +413,7 @@
         <!-- ════════════════════════════════════════════ -->
         <h2>📝 Résumé de la leçon</h2>
 
-        <div class="rule-box">
+        <div class="encart" data-role="1">
             <ul style="line-height: 2;">
                 <li>L'<strong>annexion</strong> (الإِضافة) lie deux noms sans préposition : <span
                         class="modaf">مُضاف</span> (jamais ال, jamais de <span class="arabic" lang="ar" dir="rtl">تَنْوِينٌ</span>) + <span class="mot modaf-ilayh" data-role="3">مُضاف

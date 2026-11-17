@@ -17,32 +17,11 @@
         .prefix { color: var(--role-2); font-weight: bold; }
         .suffix { color: #d32f2f; font-weight: bold; }
         .neg { color: var(--role-1); font-weight: bold; font-size: 1.1em; }
-        .neg-card { border-radius: 14px; padding: 22px; margin: 22px 0; }
-        .neg-card.ma { border: 2px solid #e53935; background: #fff5f5; }
-        .neg-card.lam { border: 2px solid #1e88e5; background: #f0f7ff; }
-        .neg-card.lan { border: 2px solid #43a047; background: #f1faf1; }
-        .neg-card-header { display: flex; align-items: center; gap: 18px; margin-bottom: 14px; flex-wrap: wrap; }
-        .neg-particle { font-size: 2.2em; font-weight: bold; border-radius: 10px; padding: 4px 18px; font-family: var(--ar); }
-        .neg-card.ma  .neg-particle { color: var(--role-1); background: color-mix(in srgb, var(--role-1) 18%, #fff); }
-        .neg-card.lam .neg-particle { color: var(--role-2); background: color-mix(in srgb, var(--role-2) 18%, #fff); }
-        .neg-card.lan .neg-particle { color: #2e7d32; background: #c8e6c9; }
-        .neg-title { font-size: 1.25em; font-weight: bold; color: #333; }
-        .neg-subtitle { color: #777; font-style: italic; font-size: 0.97em; }
-        .formula { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; margin: 14px 0; font-size: 1.1em; background: white; border-radius: 10px; padding: 12px; }
-        .formula-part { padding: 6px 14px; border-radius: 8px; font-weight: bold; font-size: 1.05em; }
-        .fp-neg { background: color-mix(in srgb, var(--role-1) 18%, #fff); color: var(--role-1); }
-        .fp-neg-b { background: color-mix(in srgb, var(--role-2) 18%, #fff); color: var(--role-2); }
         .fp-neg-g { background: #c8e6c9; color: #2e7d32; }
-        .fp-verb { background: #e8eaf6; color: #283593; }
-        .fp-plus { color: #999; font-size: 1.2em; font-weight: normal; }
         .synth-table td:first-child { font-weight: bold; }
         .synth-table .part-ma { color: var(--role-1); font-weight: bold; font-size: 1.15em; }
         .synth-table .part-lam { color: var(--role-2); font-weight: bold; font-size: 1.15em; }
         .synth-table .part-lan { color: #2e7d32; font-weight: bold; font-size: 1.15em; }
-        @media screen and (max-width: 768px) {
-            .formula { font-size: 0.95em; gap: 8px; }
-            .neg-particle { font-size: 1.7em; }
-        }
     </style>
 </head>
 
@@ -54,7 +33,7 @@
     <h1>La négation en arabe</h1>
     <div class="arabic-title">النَّفْي</div>
 
-    <div class="note"><strong>🔗 Prérequis :</strong> le cours sur les types de phrases ; le passé et le présent.</div>
+    <div class="encart"><strong>🔗 Prérequis :</strong> le cours sur les types de phrases ; le passé et le présent.</div>
 
     <!-- ═══════════════════════════════════════════════ -->
     <div class="intro">
@@ -66,7 +45,7 @@
     <!-- ═══════════════════════════════════════════════ -->
     <h2>🗺️ Vue d'ensemble — les deux particules</h2>
 
-    <div class="table-wrapper"><table class="synth-table">
+    <div class="synthese-wrap"><table class="synthese">
         <thead>
             <tr>
                 <th>Temps nié</th>
@@ -77,21 +56,21 @@
         </thead>
         <tbody>
             <tr>
-                <td>Passé</td>
-                <td><span class="part-ma">ما</span></td>
-                <td>Passé (ماضي)</td>
-                <td>« Il n'a pas… »</td>
+                <td data-label="Temps nié">Passé</td>
+                <td data-label="Particule"><span class="part-ma">ما</span></td>
+                <td data-label="Verbe qui suit">Passé (ماضي)</td>
+                <td data-label="Sens">« Il n'a pas… »</td>
             </tr>
             <tr>
-                <td>Présent</td>
-                <td><span class="part-lam">لا</span></td>
-                <td>Présent (مضارع)</td>
-                <td>« Il ne… pas »</td>
+                <td data-label="Temps nié">Présent</td>
+                <td data-label="Particule"><span class="part-lam">لا</span></td>
+                <td data-label="Verbe qui suit">Présent (مضارع)</td>
+                <td data-label="Sens">« Il ne… pas »</td>
             </tr>
             </tbody>
     </table></div>
 
-    <div class="note">
+    <div class="encart">
         <strong>📝 À retenir :</strong> Pour nier le passé on utilise <span style="color: var(--role-1); font-weight: bold;">ما</span>,
         pour nier le présent on utilise <span style="color: var(--role-2); font-weight: bold;">لا</span>,
         et la négation du futur, avec <span class="arabic">لَنْ</span>, est étudiée avec le subjonctif. Dans les deux cas, la particule se place simplement <strong>avant le verbe</strong>.
@@ -101,22 +80,13 @@
     <!-- ═══════════════════════════════════════════════ -->
     <h2>① Nier le passé — <span style="color: var(--role-1);">ما</span> + ماضي</h2>
 
-    <div class="neg-card ma">
-        <div class="neg-card-header">
-            <span class="neg-particle">ما</span>
-            <div>
-                <div class="neg-title">Négation du passé</div>
-                <div class="neg-subtitle">Se place directement avant le verbe au passé — rien ne change dans la conjugaison</div>
-            </div>
+    <div class="notion" data-role="1"><div class="notion-tete"><span class="notion-mot">ما</span><div><h3 class="notion-titre">Négation du passé</h3><p class="notion-sous">Se place directement avant le verbe au passé — rien ne change dans la conjugaison</p></div></div><div class="formule">
+            <span class="formule-part" data-role="1">ما</span>
+            <span class="formule-plus">+</span>
+            <span class="formule-part">verbe au passé (ماضي)</span>
         </div>
 
-        <div class="formula">
-            <span class="formula-part fp-neg">ما</span>
-            <span class="fp-plus">+</span>
-            <span class="formula-part fp-verb">verbe au passé (ماضي)</span>
-        </div>
-
-        <div class="example-box">
+        <div class="exemples">
             <strong>Exemples avec كَتَبَ (écrire) :</strong>
             <ul>
                 <li><span class="arabic">كَتَبَ الوَلَدُ</span> → <span class="trad">Le garçon a écrit</span>
@@ -128,7 +98,7 @@
             </ul>
         </div>
 
-        <div class="example-box">
+        <div class="exemples">
             <strong>Exemples avec فَهِمَ (comprendre) :</strong>
             <ul>
                 <li><span class="arabic">فَهِمَ الطَّالِبُ</span> → <span class="trad">L'étudiant a compris</span>
@@ -140,7 +110,7 @@
             </ul>
         </div>
 
-        <div class="info-box">
+        <div class="encart" data-role="2">
             <strong>ℹ️ Aussi simple que ça !</strong> La particule <span style="color: var(--role-1); font-weight: bold;">ما</span>
             ne modifie pas du tout la forme du verbe. Il suffit de la placer devant.
             C'est la négation la plus facile de l'arabe.
@@ -150,22 +120,13 @@
     <!-- ═══════════════════════════════════════════════ -->
     <h2>② Nier le présent — <span style="color: var(--role-2);">لا</span> + مضارع</h2>
 
-    <div class="neg-card lam">
-        <div class="neg-card-header">
-            <span class="neg-particle">لا</span>
-            <div>
-                <div class="neg-title">Négation du présent</div>
-                <div class="neg-subtitle">Se place avant le verbe au présent — la conjugaison ne change pas</div>
-            </div>
+    <div class="notion" data-role="2"><div class="notion-tete"><span class="notion-mot">لا</span><div><h3 class="notion-titre">Négation du présent</h3><p class="notion-sous">Se place avant le verbe au présent — la conjugaison ne change pas</p></div></div><div class="formule">
+            <span class="formule-part" data-role="2">لا</span>
+            <span class="formule-plus">+</span>
+            <span class="formule-part">verbe au présent (مضارع)</span>
         </div>
 
-        <div class="formula">
-            <span class="formula-part fp-neg-b">لا</span>
-            <span class="fp-plus">+</span>
-            <span class="formula-part fp-verb">verbe au présent (مضارع)</span>
-        </div>
-
-        <div class="example-box">
+        <div class="exemples">
             <strong>Exemples avec يَكْتُبُ (écrire) :</strong>
             <ul>
                 <li><span class="arabic">يَكْتُبُ الوَلَدُ</span> → <span class="trad">Le garçon écrit</span>
@@ -179,7 +140,7 @@
             </ul>
         </div>
 
-        <div class="example-box">
+        <div class="exemples">
             <strong>Exemples avec يَفْهَمُ (comprendre) :</strong>
             <ul>
                 <li><span class="arabic">يَفْهَمُ الطَّالِبُ</span> → <span class="trad">L'étudiant comprend</span>
@@ -189,7 +150,7 @@
             </ul>
         </div>
 
-        <div class="note">
+        <div class="encart">
             <strong>📝 لا de négation vs لا de prohibition :</strong><br>
             Vous avez vu dans le cours sur l'impératif que <span style="color: var(--role-1); font-weight: bold;">لا</span>
             + présent pouvait aussi exprimer un <strong>ordre négatif</strong> (« Ne fais pas… »).
@@ -207,7 +168,7 @@
     <!-- ═══════════════════════════════════════════════ -->
     <h2>③ Nier le futur — voir le subjonctif</h2>
 
-    <div class="note"><strong>🔗 Renvoi :</strong> la négation du futur, avec <span class="arabic">لَنْ</span>, demande le subjonctif ; elle est étudiée dans le cours sur le subjonctif et l'apocopé.</div>
+    <div class="encart"><strong>🔗 Renvoi :</strong> la négation du futur, avec <span class="arabic">لَنْ</span>, demande le subjonctif ; elle est étudiée dans le cours sur le subjonctif et l'apocopé.</div>
 
     <!-- ═══════════════════════════════════════════════ -->
     <h2>📊 Tableau récapitulatif — avec كَتَبَ / يَكْتُبُ</h2>
@@ -273,7 +234,7 @@
     <!-- ═══════════════════════════════════════════════ -->
     <h2>🗣️ Phrases complètes — mise en contexte</h2>
 
-    <div class="example-box">
+    <div class="exemples">
         <strong>Avec ما (passé) :</strong>
         <ul>
             <li><span class="arabic">ما ذَهَبَ أَحمَدُ إلى المَدرَسَةِ</span><br>→ Ahmed n'est pas allé à l'école</li>
@@ -282,7 +243,7 @@
         </ul>
     </div>
 
-    <div class="example-box">
+    <div class="exemples">
         <strong>Avec لا (présent) :</strong>
         <ul>
             <li><span class="arabic">لا يَفْهَمُ الطَّالِبُ اللُّغَةَ العَرَبِيَّةَ</span><br>→ L'étudiant ne comprend pas la langue arabe</li>
@@ -294,7 +255,7 @@
     <!-- ═══════════════════════════════════════════════ -->
     <h2>📝 Résumé de la leçon</h2>
 
-    <div class="rule-box">
+    <div class="encart" data-role="1">
         <ul>
             <li>Il existe <strong>deux particules de négation</strong> étudiées ici : <span style="color: var(--role-1); font-weight: bold;">ما</span> (passé) et <span style="color: var(--role-2); font-weight: bold;">لا</span> (présent) ; <span class="arabic">لَنْ</span> (futur) est étudiée avec le subjonctif</li>
             <li>Elles se placent toutes <strong>directement avant le verbe</strong></li>

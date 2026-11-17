@@ -63,6 +63,13 @@
 /* une petite carte par ligne : par défaut chez les enfants, au choix ailleurs */
 .paires.cartes .paire, body.enfant .paires .paire { margin: var(--sp-2) 0 0; padding: 6px 12px; border: 2px solid var(--line); border-radius: var(--radius); background: var(--paper); }
 .paires.cartes .paire:first-child, body.enfant .paires .paire:first-child { border-top: 2px solid var(--line); }
+/* variante « tuiles » : petits exemples côte à côte (une tuile = un mot arabe, sa traduction, une précision) */
+.paires.cartes.tuiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 170px), 1fr)); gap: var(--sp-2); padding: 0; }
+.paires.cartes.tuiles .paire { display: block; margin: 0; }
+.paires.cartes.tuiles .paire::before { content: none; }
+.paires.cartes.tuiles .paire-ar { text-align: center; }
+.paires.cartes.tuiles .paire-fr { text-align: center; font-weight: 600; color: var(--ink); }
+.paires.cartes.tuiles .paire-analyse { text-align: center; }
 body.enfant .paire-ar { font-size: var(--ar-m); }
 body.enfant .paire-fr { font-size: 1rem; }
 
@@ -74,6 +81,27 @@ body.enfant .paire-fr { font-size: 1rem; }
 .exemples.sans-titre::before { content: "Texte et traduction"; display: block; margin: .35em 0 .1em; font-size: .7rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--c); }
 body.enfant .exemples { --c: var(--accent2); border: 2px solid var(--line); padding: 2px 14px 10px; }
 body.enfant .exemples > h3, body.enfant .exemples.sans-titre::before { font-size: .8rem; color: var(--accent); }
+
+/* ---------- encart : remarque, règle, information, mise en garde (le titre est dans le texte de l'encart) ---------- */
+.encart { --c: var(--accent); margin: 14px 0; padding: 8px 16px; border: 1px solid var(--c); border-left-width: 5px; border-radius: var(--radius); background: var(--soft); break-inside: avoid; }
+.encart { background: color-mix(in srgb, var(--c) 6%, var(--paper)); }
+.encart[data-role="2"] { border-style: dashed; border-left-style: solid; }
+.encart[data-role="3"] { border-style: dotted; border-left-style: solid; }
+.encart[data-role="4"] { border-style: double; border-left-style: solid; border-left-width: 6px; }
+.encart > :first-child { margin-top: .2em; }
+.encart > :last-child { margin-bottom: .2em; }
+
+/* ---------- carte par notion : texte courant, mot arabe mis en avant, formule en pied de carte ---------- */
+.notion p { margin: .35em 0; font-size: .95em; }
+.notion .arabic-lg { display: block; margin: 2px 0; font-family: var(--ar); font-size: var(--ar-l); font-weight: 700; line-height: 1.6; color: var(--c, var(--accent)); }
+.notion h4.notion-titre { margin: 0 0 .4em; font-size: 1rem; }
+.notion ul { margin: .3em 0; padding-left: 1.2em; }
+.notion .formule { margin-bottom: var(--sp-2); }
+
+/* ---------- pièce de formule à deux lignes : le mot arabe puis son nom (schémas d'anatomie de la phrase) ---------- */
+.formule-part.bloc { min-width: 92px; padding: 6px 16px; border-radius: var(--radius); text-align: center; }
+.formule-part.bloc .arabic { display: block; font-size: var(--ar-m); line-height: 1.6; }
+.formule-legende { display: block; margin-top: 2px; font-size: .75rem; font-weight: 700; line-height: 1.3; }
 
 /* ---------- observation placée juste sous ce qu'elle commente ---------- */
 .observer { margin: 14px 0; padding: 3px 0 3px 12px; border-left: 3px solid #b45309; font-size: .95em; }

@@ -18,23 +18,23 @@
   --role-teinte: 13%;            /* part de la couleur de rôle dans les fonds teintés */
 
   /* échelle de l'arabe : s = dans un tableau ou une ligne, m = exemple, l = mot mis en avant, xl = particule d'une carte */
-  --ar-s: 1.3rem;
-  --ar-m: 1.75rem;
-  --ar-l: 2.1rem;
-  --ar-xl: 2.6rem;
+  --ar-s: 1.45rem;
+  --ar-m: 1.95rem;
+  --ar-l: 2.3rem;
+  --ar-xl: 2.85rem;
   --ar-interligne: 1.9;
 
   /* espacements */
   --sp-1: 4px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px; --sp-5: 24px;
 }
 /* enfants : un cran plus grand pour l'arabe */
-body.enfant { --ar-s: 1.5rem; --ar-m: 2.05rem; --ar-l: 2.5rem; --ar-xl: 3.1rem; }
+body.enfant { --ar-s: 1.65rem; --ar-m: 2.25rem; --ar-l: 2.75rem; --ar-xl: 3.4rem; }
 
 @media (max-width: 560px) {
-  :root { --ar-m: 1.55rem; --ar-l: 1.9rem; --ar-xl: 2.3rem; }
-  body.enfant { --ar-m: 1.8rem; --ar-l: 2.15rem; --ar-xl: 2.6rem; }
+  :root { --ar-m: 1.7rem; --ar-l: 2.1rem; --ar-xl: 2.55rem; }
+  body.enfant { --ar-m: 1.8rem; --ar-l: 2.15rem; --ar-xl: 2.85rem; }
 }
 @media print {
-  :root { --ar-s: 14pt; --ar-m: 17pt; --ar-l: 20pt; --ar-xl: 24pt; }
-  body.enfant { --ar-s: 16pt; --ar-m: 19pt; --ar-l: 22pt; --ar-xl: 26pt; }
+  :root { --ar-s: 15pt; --ar-m: 18pt; --ar-l: 22pt; --ar-xl: 26pt; }
+  body.enfant { --ar-s: 17pt; --ar-m: 21pt; --ar-l: 24pt; --ar-xl: 28pt; }
 }

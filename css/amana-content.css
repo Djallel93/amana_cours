@@ -5,7 +5,7 @@
    (--accent, --line, --radius, --soft, --ar, --font) : polices, couleurs et formes restent identiques. */
 
 /* texte arabe (alias historique de .ar) */
-.arabic { font-family: var(--ar); direction: rtl; unicode-bidi: isolate; font-size: 1.25em; line-height: 1.8; }
+.arabic { font-family: var(--ar); direction: rtl; unicode-bidi: isolate; font-size: 1.4em; line-height: 1.8; }
 .arabic-title { direction: rtl; font-family: var(--ar); font-size: 1.5rem; font-weight: 700; color: var(--accent); margin: 0 0 1.2em; padding-bottom: .4em; border-bottom: 1px solid var(--line); }
 td .arabic, th .arabic { white-space: nowrap; }
 .letters { font: 700 1.8em/2 var(--ar); text-align: center; direction: rtl; color: var(--accent); letter-spacing: .15em; }

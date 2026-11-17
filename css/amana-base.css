@@ -27,7 +27,7 @@ img { max-width: 100%; height: auto; }
 .nav a { text-decoration: none; border: 1px solid var(--line); border-radius: 99px; padding: 2px 12px; }
 
 /* texte arabe */
-.ar { font-family: var(--ar); direction: rtl; unicode-bidi: isolate; font-size: 1.25em; line-height: 1.8; }
+.ar { font-family: var(--ar); direction: rtl; unicode-bidi: isolate; font-size: 1.4em; line-height: 1.8; }
 .glyph { font-family: var(--ar); direction: rtl; font-size: 4.2rem; line-height: 1.3; text-align: center; }
 .lrow { display: flex; flex-wrap: wrap; gap: 6px; direction: rtl; font-family: var(--ar); font-size: 2rem; line-height: 1.5; margin: 8px 0; }
 .lrow.big { font-size: 2.6rem; }

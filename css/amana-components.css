@@ -66,6 +66,15 @@
 body.enfant .paire-ar { font-size: var(--ar-m); }
 body.enfant .paire-fr { font-size: 1rem; }
 
+/* ---------- bloc d'exemples : cadre autour d'une liste de paires, avec son petit titre (niveau 3 et corrigés) ---------- */
+.exemples { --c: var(--accent); margin: 16px 0; padding: 2px 16px 6px; border: 1px solid var(--c); border-radius: var(--radius); background: var(--soft); }
+.exemples > h3 { margin: .55em 0 .2em; font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; color: var(--c); }
+.exemples > h3 .ar { font-size: 1.5em; letter-spacing: 0; text-transform: none; }
+.exemples.sans-titre { padding-top: 6px; }
+.exemples.sans-titre::before { content: "Texte et traduction"; display: block; margin: .35em 0 .1em; font-size: .7rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--c); }
+body.enfant .exemples { --c: var(--accent2); border: 2px solid var(--line); padding: 2px 14px 10px; }
+body.enfant .exemples > h3, body.enfant .exemples.sans-titre::before { font-size: .8rem; color: var(--accent); }
+
 /* ---------- observation placée juste sous ce qu'elle commente ---------- */
 .observer { margin: 14px 0; padding: 3px 0 3px 12px; border-left: 3px solid #b45309; font-size: .95em; }
 .observer::before { content: "À observer"; display: block; margin-bottom: 2px; color: #b45309; font-size: .68rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
@@ -106,6 +115,7 @@ body.enfant .retenir::before { content: "⭐ À retenir"; font-size: .85rem; }
 
 /* ---------- téléphone (≤ 560 px) ---------- */
 @media (max-width: 560px) {
+  .exemples { padding: 2px 12px 6px; }
   body.enfant .paires .paire, .paires.cartes .paire { padding: 6px 10px; }
   .notion { padding: var(--sp-3) var(--sp-3) var(--sp-1); }
   .synthese thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
@@ -117,6 +127,8 @@ body.enfant .retenir::before { content: "⭐ À retenir"; font-size: .85rem; }
 }
 /* ---------- impression ---------- */
 @media print {
+  .exemples { background: none; }
+  .exemples > h3 { break-after: avoid; }
   .outils-lecture { display: none !important; }
   .masque-trad .paire-fr, .masque-trad .trad { filter: none; opacity: 1; }
   .notion, .retenir, .observer, .formule { break-inside: avoid; }

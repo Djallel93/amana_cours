@@ -394,7 +394,7 @@
      sont limitées aux sections de ce public, pour que adultes et enfants gardent chacun leur apparence. */
   function injectThemes() {
     return Promise.all(['adulte', 'enfant'].map(function (aud) {
-      return Promise.all(['css/amana-base.css', 'css/theme-' + aud + '.css', 'css/amana-content.css'].map(getText)).then(function (css) {
+      return Promise.all(['css/amana-base.css', 'css/theme-' + aud + '.css', 'css/amana-content.css', 'css/amana-tokens.css', 'css/amana-components.css'].map(getText)).then(function (css) {
         var st = document.createElement('style');
         st.setAttribute('data-bk-theme', aud);
         st.textContent = css.map(function (t) { return scopeCss(t, '[data-th="' + aud + '"]', aud); }).join('\n');

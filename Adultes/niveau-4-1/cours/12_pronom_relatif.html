@@ -9,18 +9,9 @@
     <link rel="stylesheet" href="../../../css/amana-base.css">
     <link rel="stylesheet" href="../../../css/theme-adulte.css">
     <link rel="stylesheet" href="../../../css/amana-content.css">
-    <style>
-        /* Composants propres à ce cours (couleurs de rôle grammatical, cartes, etc.) */
-        .ar-rel { font-size: 1.45em; color: #d32f2f; font-weight: bold; direction: rtl; display: inline-block; }
-        .ar-rev { font-size: 1.45em; color: #1565c0; font-weight: bold; direction: rtl; display: inline-block; }
-        .ar-ant { font-size: 1.45em; color: #2e7d32; font-weight: bold; direction: rtl; display: inline-block; }
-        .example-item .ar-line { font-size: 1.35em; direction: rtl; text-align: right; display: block; font-weight: bold; margin-bottom: 4px; }
-        .example-item .fr-line { color: #444; font-size: 0.95em; }
-        .example-item .analyse-line { color: #777; font-size: 0.88em; font-style: italic; border-top: 1px dashed #ddd; margin-top: 6px; padding-top: 6px; }
-        .legende { display: flex; flex-wrap: wrap; gap: 14px; margin: 14px 0; align-items: center; }
-        .legende-item { display: flex; align-items: center; gap: 6px; font-size: 0.95em; }
-        .legende-dot { width: 14px; height: 14px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
-    </style>
+<link rel="stylesheet" href="../../../css/amana-tokens.css">
+<link rel="stylesheet" href="../../../css/amana-components.css">
+<script src="../../../js/outils-lecture.js" defer></script>
 </head>
 
 <body class="cours adulte">
@@ -114,144 +105,80 @@
         <h3>📝 Exemples avec les pronoms relatifs spécifiques</h3>
 
         <div class="legende">
-            <div class="legende-item">
-                <div class="legende-dot" style="border: 1.5px solid #2e7d32;"></div> Antécédent (nom défini)
+            <div class="legende-item" data-role="1"> Antécédent (nom défini)
             </div>
-            <div class="legende-item">
-                <div class="legende-dot" style="border: 1.5px solid #d32f2f;"></div> Pronom relatif
+            <div class="legende-item" data-role="2"> Pronom relatif
             </div>
-            <div class="legende-item">
-                <div class="legende-dot" style="border: 1.5px solid #1565c0;"></div> Revenant (pronom de rappel)
+            <div class="legende-item" data-role="3"> Revenant (pronom de rappel)
             </div>
         </div>
 
         <div class="example-box">
-            <h3>الذِي — masculin singulier (qui / que)</h3>
+            <h3>الذِي — masculin singulier (qui / que)</h3><ol class="paires sans-num">
 
-            <div class="example-item">
-                <span class="ar-line"><span class="ar-ant">الوَلَدُ</span> <span class="ar-rel">الذِي</span> يَلْعَبُ في
-                    الشارِعِ صَدِيقِي</span>
-                <p class="fr-line">🇫🇷 Le garçon qui joue dans la rue est mon ami.</p>
-                <p class="analyse-line">Antécédent : الوَلَدُ (m. sg. défini) → relatif : الذِي | Revenant implicite
-                    (sujet du verbe يَلْعَبُ)</p>
-            </div>
+            <li class="paire"><p class="paire-ar"><span class="mot" data-role="1">الوَلَدُ</span> <span class="mot" data-role="2">الذِي</span> يَلْعَبُ في
+                    الشارِعِ صَدِيقِي</p><p class="paire-fr">Le garçon qui joue dans la rue est mon ami.</p><p class="paire-analyse">Antécédent : الوَلَدُ (m. sg. défini) → relatif : الذِي | Revenant implicite
+                    (sujet du verbe يَلْعَبُ)</p></li>
 
-            <div class="example-item">
-                <span class="ar-line">قَرَأْتُ <span class="ar-ant">الكِتابَ</span> <span class="ar-rel">الذِي</span>
-                    اشْتَرَيْتُ<span class="ar-rev">هُ</span> أَمْسِ</span>
-                <p class="fr-line">🇫🇷 J'ai lu le livre que j'ai acheté hier.</p>
-                <p class="analyse-line">Antécédent : الكِتابَ (m. sg. défini) → relatif : الذِي | Revenant : هُ
-                    (complément du verbe)</p>
-            </div>
+            <li class="paire"><p class="paire-ar">قَرَأْتُ <span class="mot" data-role="1">الكِتابَ</span> <span class="mot" data-role="2">الذِي</span>
+                    اشْتَرَيْتُ<span class="mot" data-role="3">هُ</span> أَمْسِ</p><p class="paire-fr">J'ai lu le livre que j'ai acheté hier.</p><p class="paire-analyse">Antécédent : الكِتابَ (m. sg. défini) → relatif : الذِي | Revenant : هُ
+                    (complément du verbe)</p></li>
 
-            <div class="example-item">
-                <span class="ar-line"><span class="ar-ant">الرَّجُلُ</span> <span class="ar-rel">الذِي</span> يَسْكُنُ
-                    هُنا مُعَلِّمٌ</span>
-                <p class="fr-line">🇫🇷 L'homme qui habite ici est un enseignant.</p>
-                <p class="analyse-line">Antécédent : الرَّجُلُ (m. sg. défini) → relatif : الذِي | Revenant implicite
-                    (sujet du verbe)</p>
-            </div>
+            <li class="paire"><p class="paire-ar"><span class="mot" data-role="1">الرَّجُلُ</span> <span class="mot" data-role="2">الذِي</span> يَسْكُنُ
+                    هُنا مُعَلِّمٌ</p><p class="paire-fr">L'homme qui habite ici est un enseignant.</p><p class="paire-analyse">Antécédent : الرَّجُلُ (m. sg. défini) → relatif : الذِي | Revenant implicite
+                    (sujet du verbe)</p></li>
 
-            <div class="example-item">
-                <span class="ar-line">هَذا هُوَ <span class="ar-ant">الطَّبِيبُ</span> <span class="ar-rel">الذِي</span>
-                    عالَجَ<span class="ar-rev">نِي</span></span>
-                <p class="fr-line">🇫🇷 C'est le médecin qui m'a soigné.</p>
-                <p class="analyse-line">Antécédent : الطَّبِيبُ (m. sg. défini) → relatif : الذِي | Revenant : نِي
-                    (pronom complément)</p>
-            </div>
+            <li class="paire"><p class="paire-ar">هَذا هُوَ <span class="mot" data-role="1">الطَّبِيبُ</span> <span class="mot" data-role="2">الذِي</span>
+                    عالَجَ<span class="mot" data-role="3">نِي</span></p><p class="paire-fr">C'est le médecin qui m'a soigné.</p><p class="paire-analyse">Antécédent : الطَّبِيبُ (m. sg. défini) → relatif : الذِي | Revenant : نِي
+                    (pronom complément)</p></li>
+</ol>
         </div>
 
         <div class="example-box">
-            <h3>التِي — féminin singulier (qui / que)</h3>
+            <h3>التِي — féminin singulier (qui / que)</h3><ol class="paires sans-num">
 
-                <div class="example-item">
-                    <span class="ar-line"><span class="ar-ant">الطَّالِبَةُ</span> <span class="ar-rel">التِي</span>
-                        نَجَحَتْ في الاِمْتِحانِ مُجْتَهِدَةٌ</span>
-                    <p class="fr-line">🇫🇷 L'étudiante qui a réussi l'examen est sérieuse.</p>
-                    <p class="analyse-line">Antécédent : الطَّالِبَةُ (f. sg. défini) → relatif : التِي | Revenant
+                <li class="paire"><p class="paire-ar"><span class="mot" data-role="1">الطَّالِبَةُ</span> <span class="mot" data-role="2">التِي</span>
+                        نَجَحَتْ في الاِمْتِحانِ مُجْتَهِدَةٌ</p><p class="paire-fr">L'étudiante qui a réussi l'examen est sérieuse.</p><p class="paire-analyse">Antécédent : الطَّالِبَةُ (f. sg. défini) → relatif : التِي | Revenant
                         implicite
-                        (sujet de نَجَحَتْ)</p>
-                </div>
+                        (sujet de نَجَحَتْ)</p></li>
 
-                <div class="example-item">
-                    <span class="ar-line">أُحِبُّ <span class="ar-ant">السَّيَّارَةَ</span> <span
-                            class="ar-rel">التِي</span> اشْتَرَى<span class="ar-rev">ها</span> أَبِي</span>
-                    <p class="fr-line">🇫🇷 J'aime la voiture que mon père a achetée.</p>
-                    <p class="analyse-line">Antécédent : السَّيَّارَةَ (f. sg. défini) → relatif : التِي | Revenant : ها
-                    </p>
-                </div>
+                <li class="paire"><p class="paire-ar">أُحِبُّ <span class="mot" data-role="1">السَّيَّارَةَ</span> <span class="mot" data-role="2">التِي</span> اشْتَرَى<span class="mot" data-role="3">ها</span> أَبِي</p><p class="paire-fr">J'aime la voiture que mon père a achetée.</p><p class="paire-analyse">Antécédent : السَّيَّارَةَ (f. sg. défini) → relatif : التِي | Revenant : ها</p></li>
 
-                <div class="example-item">
-                    <span class="ar-line"><span class="ar-ant">الكُتُبُ</span> <span class="ar-rel">التِي</span>
-                        قَرَأْتُ<span class="ar-rev">ها</span> مُفِيدَةٌ</span>
-                    <p class="fr-line">🇫🇷 Les livres que j'ai lus sont utiles.</p>
-                    <p class="analyse-line">Antécédent : الكُتُبُ (pluriel non-humain) → relatif : التِي (féminin
+                <li class="paire"><p class="paire-ar"><span class="mot" data-role="1">الكُتُبُ</span> <span class="mot" data-role="2">التِي</span>
+                        قَرَأْتُ<span class="mot" data-role="3">ها</span> مُفِيدَةٌ</p><p class="paire-fr">Les livres que j'ai lus sont utiles.</p><p class="paire-analyse">Antécédent : الكُتُبُ (pluriel non-humain) → relatif : التِي (féminin
                         singulier
-                        !) | Revenant : ها</p>
-                </div>
+                        !) | Revenant : ها</p></li>
 
-                <div class="example-item">
-                    <span class="ar-line">زُرْتُ <span class="ar-ant">المَدِينَةَ</span> <span
-                            class="ar-rel">التِي</span>
-                        وُلِدَتْ فِي<span class="ar-rev">ها</span> أُمِّي</span>
-                    <p class="fr-line">🇫🇷 J'ai visité la ville dans laquelle ma mère est née.</p>
-                    <p class="analyse-line">Antécédent : المَدِينَةَ (f. sg. défini) → relatif : التِي | Revenant : ها
-                        (après préposition)</p>
-                </div>
+                <li class="paire"><p class="paire-ar">زُرْتُ <span class="mot" data-role="1">المَدِينَةَ</span> <span class="mot" data-role="2">التِي</span>
+                        وُلِدَتْ فِي<span class="mot" data-role="3">ها</span> أُمِّي</p><p class="paire-fr">J'ai visité la ville dans laquelle ma mère est née.</p><p class="paire-analyse">Antécédent : المَدِينَةَ (f. sg. défini) → relatif : التِي | Revenant : ها
+                        (après préposition)</p></li>
+</ol>
         </div>
 
         <div class="example-box">
-            <h3>الذِينَ — masculin pluriel humain (qui / que)</h3>
+            <h3>الذِينَ — masculin pluriel humain (qui / que)</h3><ol class="paires sans-num">
 
-                <div class="example-item">
-                    <span class="ar-line">أَحْتَرِمُ <span class="ar-ant">المُعَلِّمِينَ</span> <span
-                            class="ar-rel">الذِينَ</span> يَعْمَلُونَ بِجِدٍّ</span>
-                    <p class="fr-line">🇫🇷 Je respecte les enseignants qui travaillent sérieusement.</p>
-                    <p class="analyse-line">Antécédent : المُعَلِّمِينَ (m. pl. humain défini) → relatif : الذِينَ</p>
-                </div>
+                <li class="paire"><p class="paire-ar">أَحْتَرِمُ <span class="mot" data-role="1">المُعَلِّمِينَ</span> <span class="mot" data-role="2">الذِينَ</span> يَعْمَلُونَ بِجِدٍّ</p><p class="paire-fr">Je respecte les enseignants qui travaillent sérieusement.</p><p class="paire-analyse">Antécédent : المُعَلِّمِينَ (m. pl. humain défini) → relatif : الذِينَ</p></li>
 
-                <div class="example-item">
-                    <span class="ar-line">هَؤُلاءِ هُمُ <span class="ar-ant">الطُّلاَّبُ</span> <span
-                            class="ar-rel">الذِينَ</span> نَجَحُوا</span>
-                    <p class="fr-line">🇫🇷 Ce sont les étudiants qui ont réussi.</p>
-                    <p class="analyse-line">Antécédent : الطُّلاَّبُ (m. pl. humain défini) → relatif : الذِينَ</p>
-                </div>
+                <li class="paire"><p class="paire-ar">هَؤُلاءِ هُمُ <span class="mot" data-role="1">الطُّلاَّبُ</span> <span class="mot" data-role="2">الذِينَ</span> نَجَحُوا</p><p class="paire-fr">Ce sont les étudiants qui ont réussi.</p><p class="paire-analyse">Antécédent : الطُّلاَّبُ (m. pl. humain défini) → relatif : الذِينَ</p></li>
 
-                <div class="example-item">
-                    <span class="ar-line">رَأَيْتُ <span class="ar-ant">الأَطِبَّاءَ</span> <span
-                            class="ar-rel">الذِينَ</span> عالَجُوا<span class="ar-rev">ني</span></span>
-                    <p class="fr-line">🇫🇷 J'ai vu les médecins qui m'ont soigné.</p>
-                    <p class="analyse-line">Antécédent : الأَطِبَّاءَ (m. pl. humain défini) → relatif : الذِينَ |
+                <li class="paire"><p class="paire-ar">رَأَيْتُ <span class="mot" data-role="1">الأَطِبَّاءَ</span> <span class="mot" data-role="2">الذِينَ</span> عالَجُوا<span class="mot" data-role="3">ني</span></p><p class="paire-fr">J'ai vu les médecins qui m'ont soigné.</p><p class="paire-analyse">Antécédent : الأَطِبَّاءَ (m. pl. humain défini) → relatif : الذِينَ |
                         Revenant
-                        : ني</p>
-                </div>
+                        : ني</p></li>
+</ol>
         </div>
 
         <div class="example-box">
-            <h3>اللَّواتِي / اللَّائِي — féminin pluriel humain (qui / que)</h3>
+            <h3>اللَّواتِي / اللَّائِي — féminin pluriel humain (qui / que)</h3><ol class="paires sans-num">
 
-                <div class="example-item">
-                    <span class="ar-line"><span class="ar-ant">الطَّالِباتُ</span> <span
-                            class="ar-rel">اللَّواتِي</span>
-                        حَضَرْنَ الدَّرْسَ فَهِمْنَ المَوْضُوعَ</span>
-                    <p class="fr-line">🇫🇷 Les étudiantes qui ont assisté au cours ont compris le sujet.</p>
-                    <p class="analyse-line">Antécédent : الطَّالِباتُ (f. pl. humain défini) → relatif : اللَّواتِي</p>
-                </div>
+                <li class="paire"><p class="paire-ar"><span class="mot" data-role="1">الطَّالِباتُ</span> <span class="mot" data-role="2">اللَّواتِي</span>
+                        حَضَرْنَ الدَّرْسَ فَهِمْنَ المَوْضُوعَ</p><p class="paire-fr">Les étudiantes qui ont assisté au cours ont compris le sujet.</p><p class="paire-analyse">Antécédent : الطَّالِباتُ (f. pl. humain défini) → relatif : اللَّواتِي</p></li>
 
-                <div class="example-item">
-                    <span class="ar-line">أَعْرِفُ <span class="ar-ant">النِّسَاءَ</span> <span
-                            class="ar-rel">اللَّواتِي</span> يَسْكُنَّ في هَذا الحَيِّ</span>
-                    <p class="fr-line">🇫🇷 Je connais les femmes qui habitent dans ce quartier.</p>
-                    <p class="analyse-line">Antécédent : النِّسَاءَ (f. pl. humain défini) → relatif : اللَّواتِي</p>
-                </div>
+                <li class="paire"><p class="paire-ar">أَعْرِفُ <span class="mot" data-role="1">النِّسَاءَ</span> <span class="mot" data-role="2">اللَّواتِي</span> يَسْكُنَّ في هَذا الحَيِّ</p><p class="paire-fr">Je connais les femmes qui habitent dans ce quartier.</p><p class="paire-analyse">Antécédent : النِّسَاءَ (f. pl. humain défini) → relatif : اللَّواتِي</p></li>
 
-                <div class="example-item">
-                    <span class="ar-line">شَكَرْتُ <span class="ar-ant">المُمَرِّضاتِ</span> <span
-                            class="ar-rel">اللَّائِي</span> اعْتَنَيْنَ بِجَدَّتِي</span>
-                    <p class="fr-line">🇫🇷 J'ai remercié les infirmières qui ont pris soin de ma grand-mère.</p>
-                    <p class="analyse-line">Antécédent : المُمَرِّضاتِ (f. pl. humain défini) → relatif : اللَّائِي
-                        (variante de اللَّواتِي)</p>
-                </div>
+                <li class="paire"><p class="paire-ar">شَكَرْتُ <span class="mot" data-role="1">المُمَرِّضاتِ</span> <span class="mot" data-role="2">اللَّائِي</span> اعْتَنَيْنَ بِجَدَّتِي</p><p class="paire-fr">J'ai remercié les infirmières qui ont pris soin de ma grand-mère.</p><p class="paire-analyse">Antécédent : المُمَرِّضاتِ (f. pl. humain défini) → relatif : اللَّائِي
+                        (variante de اللَّواتِي)</p></li>
+</ol>
         </div>
 
         <!-- ============================================================ -->
@@ -296,84 +223,41 @@
         </div>
 
         <div class="example-box">
-            <h4>مَنْ — pour les personnes (celui qui / quiconque)</h4>
+            <h4>مَنْ — pour les personnes (celui qui / quiconque)</h4><ol class="paires sans-num">
 
-            <div class="example-item">
-                <span class="ar-line">يُخاطِبُ <span class="ar-rel">مَنْ</span> يَحْضُرُ الدَّرْسَ</span>
-                <p class="fr-line">🇫🇷 Il s'adresse à ceux qui assistent au cours.</p>
-                <p class="analyse-line">مَنْ = « ceux qui » | Pas d'antécédent explicite → clause réduite</p>
-            </div>
+            <li class="paire"><p class="paire-ar">يُخاطِبُ <span class="mot" data-role="2">مَنْ</span> يَحْضُرُ الدَّرْسَ</p><p class="paire-fr">Il s'adresse à ceux qui assistent au cours.</p><p class="paire-analyse">مَنْ = « ceux qui » | Pas d'antécédent explicite → clause réduite</p></li>
 
-            <div class="example-item">
-                <span class="ar-line"><span class="ar-rel">مَنْ</span> يَزْرَعُ الخَيْرَ يَحْصُدُ السَّعادَةَ</span>
-                <p class="fr-line">🇫🇷 Celui qui sème le bien récolte le bonheur.</p>
-                <p class="analyse-line">مَنْ = « celui qui » | Proverbe classique illustrant l'usage générique</p>
-            </div>
+            <li class="paire"><p class="paire-ar"><span class="mot" data-role="2">مَنْ</span> يَزْرَعُ الخَيْرَ يَحْصُدُ السَّعادَةَ</p><p class="paire-fr">Celui qui sème le bien récolte le bonheur.</p><p class="paire-analyse">مَنْ = « celui qui » | Proverbe classique illustrant l'usage générique</p></li>
 
-            <div class="example-item">
-                <span class="ar-line">أَحْتَرِمُ <span class="ar-rel">مَنْ</span> يَعْمَلُ بِصِدْقٍ</span>
-                <p class="fr-line">🇫🇷 Je respecte ceux qui travaillent honnêtement.</p>
-                <p class="analyse-line">مَنْ = « ceux qui » | L'antécédent est absent, inclus dans مَنْ</p>
-            </div>
+            <li class="paire"><p class="paire-ar">أَحْتَرِمُ <span class="mot" data-role="2">مَنْ</span> يَعْمَلُ بِصِدْقٍ</p><p class="paire-fr">Je respecte ceux qui travaillent honnêtement.</p><p class="paire-analyse">مَنْ = « ceux qui » | L'antécédent est absent, inclus dans مَنْ</p></li>
 
-            <div class="example-item">
-                <span class="ar-line">تَطْلُبُونَ المالَ <span class="ar-rel">مِمَّنْ</span> سَرَقَ مِنْكُمْ</span>
-                <p class="fr-line">🇫🇷 Vous réclamez l'argent à celui qui vous a volés.</p>
-                <p class="analyse-line">مِمَّنْ = مِنْ + مَنْ (de celui qui) | Préposition fusionnée avec مَنْ</p>
-            </div>
+            <li class="paire"><p class="paire-ar">تَطْلُبُونَ المالَ <span class="mot" data-role="2">مِمَّنْ</span> سَرَقَ مِنْكُمْ</p><p class="paire-fr">Vous réclamez l'argent à celui qui vous a volés.</p><p class="paire-analyse">مِمَّنْ = مِنْ + مَنْ (de celui qui) | Préposition fusionnée avec مَنْ</p></li>
+</ol>
         </div>
 
         <div class="example-box">
-            <h4>ما — pour les choses (ce que / ce qui)</h4>
+            <h4>ما — pour les choses (ce que / ce qui)</h4><ol class="paires sans-num">
 
-            <div class="example-item">
-                <span class="ar-line">نَسِيَ <span class="ar-rel">ما</span> فَعَلَ<span class="ar-rev">هُ</span></span>
-                <p class="fr-line">🇫🇷 Il a oublié ce qu'il a fait.</p>
-                <p class="analyse-line">ما = « ce que » | Revenant : هُ (complément du verbe فَعَلَ)</p>
-            </div>
+            <li class="paire"><p class="paire-ar">نَسِيَ <span class="mot" data-role="2">ما</span> فَعَلَ<span class="mot" data-role="3">هُ</span></p><p class="paire-fr">Il a oublié ce qu'il a fait.</p><p class="paire-analyse">ما = « ce que » | Revenant : هُ (complément du verbe فَعَلَ)</p></li>
 
-            <div class="example-item">
-                <span class="ar-line">قُلْ <span class="ar-rel">ما</span> في قَلْبِ<span class="ar-rev">كَ</span></span>
-                <p class="fr-line">🇫🇷 Dis ce qui est dans ton cœur.</p>
-                <p class="analyse-line">ما = « ce qui » | Revenant : كَ (pronom affixe de قَلْب)</p>
-            </div>
+            <li class="paire"><p class="paire-ar">قُلْ <span class="mot" data-role="2">ما</span> في قَلْبِ<span class="mot" data-role="3">كَ</span></p><p class="paire-fr">Dis ce qui est dans ton cœur.</p><p class="paire-analyse">ما = « ce qui » | Revenant : كَ (pronom affixe de قَلْب)</p></li>
 
-            <div class="example-item">
-                <span class="ar-line">فَعَلْتُ <span class="ar-rel">ما</span> طَلَبْتَ<span class="ar-rev">هُ</span>
-                    مِنِّي</span>
-                <p class="fr-line">🇫🇷 J'ai fait ce que tu m'as demandé.</p>
-                <p class="analyse-line">ما = « ce que » | Revenant : هُ (complément de طَلَبْتَ)</p>
-            </div>
+            <li class="paire"><p class="paire-ar">فَعَلْتُ <span class="mot" data-role="2">ما</span> طَلَبْتَ<span class="mot" data-role="3">هُ</span>
+                    مِنِّي</p><p class="paire-fr">J'ai fait ce que tu m'as demandé.</p><p class="paire-analyse">ما = « ce que » | Revenant : هُ (complément de طَلَبْتَ)</p></li>
 
-            <div class="example-item">
-                <span class="ar-line">أُعْطِيكَ <span class="ar-rel">ما</span> تَحْتَاجُ إِلَيْ<span
-                        class="ar-rev">هِ</span></span>
-                <p class="fr-line">🇫🇷 Je te donne ce dont tu as besoin.</p>
-                <p class="analyse-line">ما = « ce dont » | Revenant : هِ (après la préposition إِلى)</p>
-            </div>
+            <li class="paire"><p class="paire-ar">أُعْطِيكَ <span class="mot" data-role="2">ما</span> تَحْتَاجُ إِلَيْ<span class="mot" data-role="3">هِ</span></p><p class="paire-fr">Je te donne ce dont tu as besoin.</p><p class="paire-analyse">ما = « ce dont » | Revenant : هِ (après la préposition إِلى)</p></li>
+</ol>
         </div>
 
         <div class="example-box">
-            <h4>أَيّ / أَيَّة — pour les personnes et les choses (lequel / laquelle)</h4>
+            <h4>أَيّ / أَيَّة — pour les personnes et les choses (lequel / laquelle)</h4><ol class="paires sans-num">
 
-            <div class="example-item">
-                <span class="ar-line">لا يَعْرِفُ <span class="ar-rel">أَيَّهُم</span> أَفْضَلُ</span>
-                <p class="fr-line">🇫🇷 Il ne sait pas lequel d'entre eux est le meilleur.</p>
-                <p class="analyse-line">أَيَّهُم = أَيَّ + هُم (lequel d'entre eux) | أَيّ avec pronom affixe</p>
-            </div>
+            <li class="paire"><p class="paire-ar">لا يَعْرِفُ <span class="mot" data-role="2">أَيَّهُم</span> أَفْضَلُ</p><p class="paire-fr">Il ne sait pas lequel d'entre eux est le meilleur.</p><p class="paire-analyse">أَيَّهُم = أَيَّ + هُم (lequel d'entre eux) | أَيّ avec pronom affixe</p></li>
 
-            <div class="example-item">
-                <span class="ar-line">اخْتَرْ <span class="ar-rel">أَيَّ</span> كِتابٍ تُرِيدُ<span
-                        class="ar-rev">هُ</span></span>
-                <p class="fr-line">🇫🇷 Choisis n'importe quel livre que tu veux.</p>
-                <p class="analyse-line">أَيَّ = « n'importe lequel » | Pour une chose ; Revenant : هُ</p>
-            </div>
+            <li class="paire"><p class="paire-ar">اخْتَرْ <span class="mot" data-role="2">أَيَّ</span> كِتابٍ تُرِيدُ<span class="mot" data-role="3">هُ</span></p><p class="paire-fr">Choisis n'importe quel livre que tu veux.</p><p class="paire-analyse">أَيَّ = « n'importe lequel » | Pour une chose ; Revenant : هُ</p></li>
 
-            <div class="example-item">
-                <span class="ar-line">سَأُساعِدُ <span class="ar-rel">أَيَّ</span> شَخْصٍ يَحْتاجُ إِلَيَّ</span>
-                <p class="fr-line">🇫🇷 J'aiderai quiconque a besoin de moi.</p>
-                <p class="analyse-line">أَيَّ = « quiconque » | Pour une personne</p>
-            </div>
+            <li class="paire"><p class="paire-ar">سَأُساعِدُ <span class="mot" data-role="2">أَيَّ</span> شَخْصٍ يَحْتاجُ إِلَيَّ</p><p class="paire-fr">J'aiderai quiconque a besoin de moi.</p><p class="paire-analyse">أَيَّ = « quiconque » | Pour une personne</p></li>
+</ol>
         </div>
 
         <!-- ============================================================ -->
@@ -382,11 +266,11 @@
         <div class="rule-box">
             <strong>La clause relative se construit autour de trois éléments :</strong>
             <ul>
-                <li><span style="color: #2e7d32; font-weight: bold;">① L'antécédent (المَوْصُول إليه)</span> : le nom que
+                <li><span style="color: var(--role-1); font-weight: bold;">① L'antécédent (المَوْصُول إليه)</span> : le nom que
                     la clause vient préciser. Peut être défini, indéfini, ou absent.</li>
-                <li><span style="color: #d32f2f; font-weight: bold;">② Le pronom relatif (الاِسْم المَوْصُول)</span> :
+                <li><span style="color: var(--role-2); font-weight: bold;">② Le pronom relatif (الاِسْم المَوْصُول)</span> :
                     s'accorde avec l'antécédent défini, ou est générique si l'antécédent est absent.</li>
-                <li><span style="color: #1565c0; font-weight: bold;">③ Le revenant (العائِد)</span> : pronom intégré à la
+                <li><span style="color: var(--role-3); font-weight: bold;">③ Le revenant (العائِد)</span> : pronom intégré à la
                     clause relative qui « rappelle » l'antécédent. Peut être explicite ou implicite.</li>
             </ul>
         </div>
@@ -403,28 +287,19 @@
 
         <div class="rule-box">
             <strong>Structure :</strong><br>
-            <span style="color: #2e7d32;">Nom défini (antécédent)</span> + <span style="color: #d32f2f;">الذِي / التِي /
-                الذِينَ…</span> + <span style="color: #1565c0;">Phrase (avec revenant)</span>
+            <span style="color: var(--role-1);">Nom défini (antécédent)</span> + <span style="color: var(--role-2);">الذِي / التِي /
+                الذِينَ…</span> + <span style="color: var(--role-3);">Phrase (avec revenant)</span>
         </div>
 
         <div class="example-box">
-            <h4>📝 Exemples variés de clauses relatives définies</h4>
+            <h4>📝 Exemples variés de clauses relatives définies</h4><ol class="paires sans-num">
 
-            <div class="example-item">
-                <span class="ar-line">سَلَّمْتُ عَلى <span class="ar-ant">المَرْأَةِ</span> <span
-                        class="ar-rel">التِي</span> تَجْلِسُ أَمامَنا</span>
-                <p class="fr-line">🇫🇷 J'ai salué la femme qui est assise devant nous.</p>
-                <p class="analyse-line">Antécédent : المَرْأَةِ (f. sg. défini) → التِي | Revenant implicite (sujet de
-                    تَجْلِسُ)</p>
-            </div>
+            <li class="paire"><p class="paire-ar">سَلَّمْتُ عَلى <span class="mot" data-role="1">المَرْأَةِ</span> <span class="mot" data-role="2">التِي</span> تَجْلِسُ أَمامَنا</p><p class="paire-fr">J'ai salué la femme qui est assise devant nous.</p><p class="paire-analyse">Antécédent : المَرْأَةِ (f. sg. défini) → التِي | Revenant implicite (sujet de
+                    تَجْلِسُ)</p></li>
 
-            <div class="example-item">
-                <span class="ar-line">الشَّارِعُ <span class="ar-rel">الذِي</span> تَسْكُنُ فِي<span
-                        class="ar-rev">هِ</span> عائِلَتِي بَعِيدٌ</span>
-                <p class="fr-line">🇫🇷 La rue dans laquelle habite ma famille est loin.</p>
-                <p class="analyse-line">Antécédent : الشَّارِعُ (m. sg. défini) → الذِي | Revenant : هِ (après
-                    préposition في)</p>
-            </div>
+            <li class="paire"><p class="paire-ar">الشَّارِعُ <span class="mot" data-role="2">الذِي</span> تَسْكُنُ فِي<span class="mot" data-role="3">هِ</span> عائِلَتِي بَعِيدٌ</p><p class="paire-fr">La rue dans laquelle habite ma famille est loin.</p><p class="paire-analyse">Antécédent : الشَّارِعُ (m. sg. défini) → الذِي | Revenant : هِ (après
+                    préposition في)</p></li>
+</ol>
         </div>
 
         <!-- ============================================================ -->
@@ -438,7 +313,7 @@
 
         <div class="rule-box">
             <strong>Structure :</strong><br>
-            <span style="color: #2e7d32;">Nom indéfini (antécédent)</span> + <span style="color: #888;">Phrase (sans
+            <span style="color: var(--role-1);">Nom indéfini (antécédent)</span> + <span style="color: #888;">Phrase (sans
                 pronom relatif, sans revenant explicite)</span>
         </div>
 
@@ -449,33 +324,17 @@
         </div>
 
         <div class="example-box">
-            <h4>📝 Exemples de clauses relatives indéfinies</h4>
+            <h4>📝 Exemples de clauses relatives indéfinies</h4><ol class="paires sans-num">
 
-            <div class="example-item">
-                <span class="ar-line">سافَرْتُ مَعَ <span class="ar-ant">شابٍّ</span> لا يَسْكُنُ هُنا</span>
-                <p class="fr-line">🇫🇷 J'ai voyagé avec un jeune homme qui n'habite pas ici.</p>
-                <p class="analyse-line">Antécédent indéfini : شابٍّ → pas de pronom relatif | La clause suit directement
-                </p>
-            </div>
+            <li class="paire"><p class="paire-ar">سافَرْتُ مَعَ <span class="mot" data-role="1">شابٍّ</span> لا يَسْكُنُ هُنا</p><p class="paire-fr">J'ai voyagé avec un jeune homme qui n'habite pas ici.</p><p class="paire-analyse">Antécédent indéfini : شابٍّ → pas de pronom relatif | La clause suit directement</p></li>
 
-            <div class="example-item">
-                <span class="ar-line">اِلْتَقَيْتُ بِ<span class="ar-ant">ناسٍ</span> يَتَحَدَّثُونَ كَثِيرًا</span>
-                <p class="fr-line">🇫🇷 J'ai rencontré des gens qui parlent beaucoup.</p>
-                <p class="analyse-line">Antécédent indéfini : ناسٍ → pas de pronom relatif</p>
-            </div>
+            <li class="paire"><p class="paire-ar">اِلْتَقَيْتُ بِ<span class="mot" data-role="1">ناسٍ</span> يَتَحَدَّثُونَ كَثِيرًا</p><p class="paire-fr">J'ai rencontré des gens qui parlent beaucoup.</p><p class="paire-analyse">Antécédent indéfini : ناسٍ → pas de pronom relatif</p></li>
 
-            <div class="example-item">
-                <span class="ar-line">رَأَيْتُ <span class="ar-ant">طِفْلًا</span> يَبْكِي في الشَّارِعِ</span>
-                <p class="fr-line">🇫🇷 J'ai vu un enfant qui pleurait dans la rue.</p>
-                <p class="analyse-line">Antécédent indéfini : طِفْلًا → pas de pronom relatif | La clause verbale suit
-                    directement</p>
-            </div>
+            <li class="paire"><p class="paire-ar">رَأَيْتُ <span class="mot" data-role="1">طِفْلًا</span> يَبْكِي في الشَّارِعِ</p><p class="paire-fr">J'ai vu un enfant qui pleurait dans la rue.</p><p class="paire-analyse">Antécédent indéfini : طِفْلًا → pas de pronom relatif | La clause verbale suit
+                    directement</p></li>
 
-            <div class="example-item">
-                <span class="ar-line">وَجَدْتُ <span class="ar-ant">كِتابًا</span> يَتَحَدَّثُ عَنِ التَّارِيخِ</span>
-                <p class="fr-line">🇫🇷 J'ai trouvé un livre qui parle d'histoire.</p>
-                <p class="analyse-line">Antécédent indéfini : كِتابًا → pas de pronom relatif</p>
-            </div>
+            <li class="paire"><p class="paire-ar">وَجَدْتُ <span class="mot" data-role="1">كِتابًا</span> يَتَحَدَّثُ عَنِ التَّارِيخِ</p><p class="paire-fr">J'ai trouvé un livre qui parle d'histoire.</p><p class="paire-analyse">Antécédent indéfini : كِتابًا → pas de pronom relatif</p></li>
+</ol>
         </div>
 
         <!-- ============================================================ -->
@@ -490,39 +349,22 @@
 
         <div class="rule-box">
             <strong>Structure :</strong><br>
-            <span style="color: #d32f2f;">مَنْ / ما / أَيّ</span> (= antécédent + relatif fusionnés) + <span
-                style="color: #1565c0;">Phrase (avec revenant)</span>
+            <span style="color: var(--role-2);">مَنْ / ما / أَيّ</span> (= antécédent + relatif fusionnés) + <span
+                style="color: var(--role-3);">Phrase (avec revenant)</span>
         </div>
 
         <div class="example-box">
-            <h4>📝 Exemples de clauses relatives réduites</h4>
+            <h4>📝 Exemples de clauses relatives réduites</h4><ol class="paires sans-num">
 
-            <div class="example-item">
-                <span class="ar-line"><span class="ar-rel">مَنْ</span> يَصْبِرُ يَنْجَحُ</span>
-                <p class="fr-line">🇫🇷 Celui qui est patient réussit. (Qui patiente réussit.)</p>
-                <p class="analyse-line">مَنْ = « celui qui » | Pas d'antécédent, valeur proverbiale générale</p>
-            </div>
+            <li class="paire"><p class="paire-ar"><span class="mot" data-role="2">مَنْ</span> يَصْبِرُ يَنْجَحُ</p><p class="paire-fr">Celui qui est patient réussit. (Qui patiente réussit.)</p><p class="paire-analyse">مَنْ = « celui qui » | Pas d'antécédent, valeur proverbiale générale</p></li>
 
-            <div class="example-item">
-                <span class="ar-line">أَعْطِني <span class="ar-rel">ما</span> عِنْدَ<span
-                        class="ar-rev">كَ</span></span>
-                <p class="fr-line">🇫🇷 Donne-moi ce que tu as.</p>
-                <p class="analyse-line">ما = « ce que » | Revenant : كَ (pronom possessif attaché à عِنْد)</p>
-            </div>
+            <li class="paire"><p class="paire-ar">أَعْطِني <span class="mot" data-role="2">ما</span> عِنْدَ<span class="mot" data-role="3">كَ</span></p><p class="paire-fr">Donne-moi ce que tu as.</p><p class="paire-analyse">ما = « ce que » | Revenant : كَ (pronom possessif attaché à عِنْد)</p></li>
 
-            <div class="example-item">
-                <span class="ar-line">يَثِقُ الناسُ بِ<span class="ar-rel">مَنْ</span> يُوفِي بِوُعُودِ<span
-                        class="ar-rev">هِ</span></span>
-                <p class="fr-line">🇫🇷 Les gens font confiance à celui qui tient ses promesses.</p>
-                <p class="analyse-line">مَنْ précédé de بِ (préposition) | Revenant : هِ</p>
-            </div>
+            <li class="paire"><p class="paire-ar">يَثِقُ الناسُ بِ<span class="mot" data-role="2">مَنْ</span> يُوفِي بِوُعُودِ<span class="mot" data-role="3">هِ</span></p><p class="paire-fr">Les gens font confiance à celui qui tient ses promesses.</p><p class="paire-analyse">مَنْ précédé de بِ (préposition) | Revenant : هِ</p></li>
 
-            <div class="example-item">
-                <span class="ar-line">لا أَعْرِفُ <span class="ar-rel">ما</span> قالَ<span class="ar-rev">هُ</span>
-                    الوَزِيرُ</span>
-                <p class="fr-line">🇫🇷 Je ne sais pas ce que le ministre a dit.</p>
-                <p class="analyse-line">ما = « ce que » | Revenant : هُ (complément de قالَ)</p>
-            </div>
+            <li class="paire"><p class="paire-ar">لا أَعْرِفُ <span class="mot" data-role="2">ما</span> قالَ<span class="mot" data-role="3">هُ</span>
+                    الوَزِيرُ</p><p class="paire-fr">Je ne sais pas ce que le ministre a dit.</p><p class="paire-analyse">ما = « ce que » | Revenant : هُ (complément de قالَ)</p></li>
+</ol>
         </div>
 
         <!-- ============================================================ -->

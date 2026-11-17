@@ -9,23 +9,26 @@
     <link rel="stylesheet" href="../../../css/amana-base.css">
     <link rel="stylesheet" href="../../../css/theme-adulte.css">
     <link rel="stylesheet" href="../../../css/amana-content.css">
+<link rel="stylesheet" href="../../../css/amana-tokens.css">
+<link rel="stylesheet" href="../../../css/amana-components.css">
+<script src="../../../js/outils-lecture.js" defer></script>
     <style>
         /* Composants propres à ce cours (couleurs de rôle grammatical, cartes, etc.) */
-        .prefix { color: #1565c0; font-weight: bold; }
-        .suffix { color: #d32f2f; font-weight: bold; }
-        .fut-particle { color: #2e7d32; font-weight: bold; font-size: 1.1em; }
-        .future-box { background: #e8f5e9; border: 2px solid #4caf50; border-radius: 12px; padding: 20px; margin: 20px 0; }
-        .future-box h4 { color: #2e7d32; margin-top: 0; }
+        .prefix { color: var(--role-2); font-weight: bold; }
+        .suffix { color: var(--role-3); font-weight: bold; }
+        .fut-particle { color: var(--role-1); font-weight: bold; font-size: 1.1em; }
+        .future-box { background: color-mix(in srgb, var(--role-1) 18%, #fff); border: 2px solid #4caf50; border-radius: 12px; padding: 20px; margin: 20px 0; }
+        .future-box h4 { color: var(--role-1); margin-top: 0; }
         .verb-card { border: 2px solid #667eea; border-radius: 12px; padding: 20px; margin: 25px 0; }
         .verb-card-header { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; flex-wrap: wrap; }
         .verb-badge { color: var(--ink); padding: 6px 16px; border-radius: 20px; font-size: 1.1em; font-weight: bold; white-space: nowrap; border: 1.5px solid var(--accent); }
         .verb-meaning { color: #555; font-size: 1.05em; }
         .prefix-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin: 15px 0; }
-        .prefix-item { background: #e3f2fd; border: 1px solid #90caf9; border-radius: 8px; padding: 12px; text-align: center; }
-        .prefix-item .ar { font-size: 1.8em; color: #1565c0; font-weight: bold; }
+        .prefix-item { background: color-mix(in srgb, var(--role-2) 18%, #fff); border: 1px solid #90caf9; border-radius: 8px; padding: 12px; text-align: center; }
+        .prefix-item .ar { font-size: 1.8em; color: var(--role-2); font-weight: bold; }
         .prefix-item .label { font-size: 0.85em; color: #555; margin-top: 5px; }
-        .compare-past { color: #6a1b9a; }
-        .compare-pres { color: #1565c0; }
+        .compare-past { color: var(--role-4); }
+        .compare-pres { color: var(--role-2); }
     </style>
 </head>
 
@@ -58,9 +61,9 @@
         éventuellement des <span class="highlight">suffixes</span> pour le genre et le nombre.
         La formule générale est :
         <p style="text-align: center; margin: 12px 0; font-size: 1.15em;">
-            <span style="color: #1565c0; font-weight: bold;">Préfixe</span>
+            <span style="color: var(--role-2); font-weight: bold;">Préfixe</span>
             + Racine (avec ses voyelles)
-            + <span style="color: #d32f2f; font-weight: bold;">Suffixe</span>
+            + <span style="color: var(--role-3); font-weight: bold;">Suffixe</span>
         </p>
     </div>
 
@@ -108,8 +111,8 @@
     <div class="intro">
         Voici le tableau complet de conjugaison à l'inaccompli avec le verbe modèle abstrait
         <span class="arabic">يَفْعَلُ</span>. Les préfixes apparaissent en
-        <span style="color: #1565c0; font-weight: bold;">bleu</span>, les suffixes en
-        <span style="color: #d32f2f; font-weight: bold;">rouge</span>.
+        <span style="color: var(--role-2); font-weight: bold;">bleu</span>, les suffixes en
+        <span style="color: var(--role-3); font-weight: bold;">rouge</span>.
     </div>
 
     <div class="table-wrapper"><table>
@@ -271,9 +274,9 @@
         <div class="example-box" style="margin-top: 10px;">
             <strong>Exemples :</strong>
             <ul>
-                <li><span class="arabic">يَكْتُبُ الوَلَدُ رِسَالَةً</span> → Le garçon écrit une lettre</li>
-                <li><span class="arabic">أَكْتُبُ في دَفْتَرِي</span> → J'écris dans mon cahier</li>
-                <li><span class="arabic">نَكْتُبُ الدَّرْسَ</span> → Nous écrivons la leçon</li>
+                <li><span class="arabic">يَكْتُبُ الوَلَدُ رِسَالَةً</span> → <span class="trad">Le garçon écrit une lettre</span></li>
+                <li><span class="arabic">أَكْتُبُ في دَفْتَرِي</span> → <span class="trad">J'écris dans mon cahier</span></li>
+                <li><span class="arabic">نَكْتُبُ الدَّرْسَ</span> → <span class="trad">Nous écrivons la leçon</span></li>
             </ul>
         </div>
     </div>
@@ -333,9 +336,9 @@
         <div class="example-box" style="margin-top: 10px;">
             <strong>Exemples :</strong>
             <ul>
-                <li><span class="arabic">يَفْهَمُ الطَّالِبُ الدَّرْسَ</span> → L'étudiant comprend la leçon</li>
-                <li><span class="arabic">أَفْهَمُ العَرَبِيَّةَ</span> → Je comprends l'arabe</li>
-                <li><span class="arabic">نَفْهَمُ السُّؤالَ</span> → Nous comprenons la question</li>
+                <li><span class="arabic">يَفْهَمُ الطَّالِبُ الدَّرْسَ</span> → <span class="trad">L'étudiant comprend la leçon</span></li>
+                <li><span class="arabic">أَفْهَمُ العَرَبِيَّةَ</span> → <span class="trad">Je comprends l'arabe</span></li>
+                <li><span class="arabic">نَفْهَمُ السُّؤالَ</span> → <span class="trad">Nous comprenons la question</span></li>
             </ul>
         </div>
     </div>
@@ -399,9 +402,9 @@
         <div class="example-box" style="margin-top: 10px;">
             <strong>Exemples :</strong>
             <ul>
-                <li><span class="arabic">يَكْبُرُ الوَلَدُ بِسُرْعَةٍ</span> → Le garçon grandit vite</li>
-                <li><span class="arabic">أَكْبُرُ كُلَّ يَوْمٍ</span> → Je grandis chaque jour</li>
-                <li><span class="arabic">نَكْبُرُ مَعاً</span> → Nous grandissons ensemble</li>
+                <li><span class="arabic">يَكْبُرُ الوَلَدُ بِسُرْعَةٍ</span> → <span class="trad">Le garçon grandit vite</span></li>
+                <li><span class="arabic">أَكْبُرُ كُلَّ يَوْمٍ</span> → <span class="trad">Je grandis chaque jour</span></li>
+                <li><span class="arabic">نَكْبُرُ مَعاً</span> → <span class="trad">Nous grandissons ensemble</span></li>
             </ul>
         </div>
     </div>

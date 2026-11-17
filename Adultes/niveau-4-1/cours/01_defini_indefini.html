@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="../../../css/amana-base.css">
     <link rel="stylesheet" href="../../../css/theme-adulte.css">
     <link rel="stylesheet" href="../../../css/amana-content.css">
+<link rel="stylesheet" href="../../../css/amana-tokens.css">
+<link rel="stylesheet" href="../../../css/amana-components.css">
+<script src="../../../js/outils-lecture.js" defer></script>
     <style>
         /* Composants propres à ce cours (couleurs de rôle grammatical, cartes, etc.) */
         .comparison-table { margin: 25px 0; }
@@ -50,11 +53,11 @@
         <div class="example-box">
             <h4>📝 Exemples simples :</h4>
             <ul>
-                <li><span class="arabic">رَجُلٌ</span> → un homme</li>
-                <li><span class="arabic">كِتَابٌ</span> → un livre</li>
-                <li><span class="arabic">مَدْرَسَةٌ</span> → une école</li>
-                <li><span class="arabic">بَيْتٌ</span> → une maison</li>
-                <li><span class="arabic">سَيَّارَةٌ</span> → une voiture</li>
+                <li><span class="arabic">رَجُلٌ</span> → <span class="trad">un homme</span></li>
+                <li><span class="arabic">كِتَابٌ</span> → <span class="trad">un livre</span></li>
+                <li><span class="arabic">مَدْرَسَةٌ</span> → <span class="trad">une école</span></li>
+                <li><span class="arabic">بَيْتٌ</span> → <span class="trad">une maison</span></li>
+                <li><span class="arabic">سَيَّارَةٌ</span> → <span class="trad">une voiture</span></li>
             </ul>
         </div>
 
@@ -83,27 +86,27 @@
             <tbody>
                 <tr>
                     <td><span class="arabic">رَجُلٌ</span></td>
-                    <td>un homme</td>
+                    <td class="trad">un homme</td>
                 </tr>
                 <tr>
                     <td><span class="arabic">كِتَابٌ</span></td>
-                    <td>un livre</td>
+                    <td class="trad">un livre</td>
                 </tr>
                 <tr>
                     <td><span class="arabic">طَالِبٌ</span></td>
-                    <td>un étudiant</td>
+                    <td class="trad">un étudiant</td>
                 </tr>
                 <tr>
                     <td><span class="arabic">مُعَلِّمَةٌ</span></td>
-                    <td>une enseignante</td>
+                    <td class="trad">une enseignante</td>
                 </tr>
             </tbody>
         </table></div>
 
         <div class="example-box">
             <h4>En phrase :</h4>
-            <p><span class="arabic">جَاءَ رَجُلٌ</span> → Un homme est venu</p>
-            <p><span class="arabic">هَذَا كِتَابٌ</span> → Ceci est un livre</p>
+            <p><span class="arabic">جَاءَ رَجُلٌ</span> → <span class="trad">Un homme est venu</span></p>
+            <p><span class="arabic">هَذَا كِتَابٌ</span> → <span class="trad">Ceci est un livre</span></p>
         </div>
 
         <h3>2️⃣ Le cas direct/accusatif (مَنْصُوب) - Complément</h3>
@@ -122,27 +125,27 @@
             <tbody>
                 <tr>
                     <td><span class="arabic">رَجُلاً</span></td>
-                    <td>un homme</td>
+                    <td class="trad">un homme</td>
                 </tr>
                 <tr>
                     <td><span class="arabic">كِتَابًا</span></td>
-                    <td>un livre</td>
+                    <td class="trad">un livre</td>
                 </tr>
                 <tr>
                     <td><span class="arabic">طَالِبًا</span></td>
-                    <td>un étudiant</td>
+                    <td class="trad">un étudiant</td>
                 </tr>
                 <tr>
                     <td><span class="arabic">بَيْتًا</span></td>
-                    <td>une maison</td>
+                    <td class="trad">une maison</td>
                 </tr>
             </tbody>
         </table></div>
 
         <div class="example-box">
             <h4>En phrase :</h4>
-            <p><span class="arabic">رَأَيْتُ رَجُلاً</span> → J'ai vu un homme</p>
-            <p><span class="arabic">قَرَأْتُ كِتَابًا</span> → J'ai lu un livre</p>
+            <p><span class="arabic">رَأَيْتُ رَجُلاً</span> → <span class="trad">J'ai vu un homme</span></p>
+            <p><span class="arabic">قَرَأْتُ كِتَابًا</span> → <span class="trad">J'ai lu un livre</span></p>
         </div>
 
         <div class="note">
@@ -173,28 +176,28 @@
             <tbody>
                 <tr>
                     <td><span class="arabic">رَجُلٍ</span></td>
-                    <td>un homme</td>
+                    <td class="trad">un homme</td>
                 </tr>
                 <tr>
                     <td><span class="arabic">كِتَابٍ</span></td>
-                    <td>un livre</td>
+                    <td class="trad">un livre</td>
                 </tr>
                 <tr>
                     <td><span class="arabic">مَدْرَسَةٍ</span></td>
-                    <td>une école</td>
+                    <td class="trad">une école</td>
                 </tr>
                 <tr>
                     <td><span class="arabic">بَيْتٍ</span></td>
-                    <td>une maison</td>
+                    <td class="trad">une maison</td>
                 </tr>
             </tbody>
         </table></div>
 
         <div class="example-box">
             <h4>En phrase :</h4>
-            <p><span class="arabic">ذَهَبَ مَعَ رَجُلٍ</span> → Il est parti avec un homme</p>
-            <p><span class="arabic">فِي بَيْتٍ</span> → dans une maison</p>
-            <p><span class="arabic">مِنْ مَدْرَسَةٍ</span> → d'une école</p>
+            <p><span class="arabic">ذَهَبَ مَعَ رَجُلٍ</span> → <span class="trad">Il est parti avec un homme</span></p>
+            <p><span class="arabic">فِي بَيْتٍ</span> → <span class="trad">dans une maison</span></p>
+            <p><span class="arabic">مِنْ مَدْرَسَةٍ</span> → <span class="trad">d'une école</span></p>
         </div>
 
         <h2>✨ L'article défini (أَداة التَّعْرِيف)</h2>
@@ -212,11 +215,11 @@
         <div class="example-box">
             <h4>📝 Exemples simples :</h4>
             <ul>
-                <li><span class="arabic">الرَّجُلُ</span> → l'homme / le homme</li>
-                <li><span class="arabic">الكِتَابُ</span> → le livre</li>
-                <li><span class="arabic">المَدْرَسَةُ</span> → l'école</li>
-                <li><span class="arabic">البَيْتُ</span> → la maison</li>
-                <li><span class="arabic">السَّيَّارَةُ</span> → la voiture</li>
+                <li><span class="arabic">الرَّجُلُ</span> → <span class="trad">l'homme / le homme</span></li>
+                <li><span class="arabic">الكِتَابُ</span> → <span class="trad">le livre</span></li>
+                <li><span class="arabic">المَدْرَسَةُ</span> → <span class="trad">l'école</span></li>
+                <li><span class="arabic">البَيْتُ</span> → <span class="trad">la maison</span></li>
+                <li><span class="arabic">السَّيَّارَةُ</span> → <span class="trad">la voiture</span></li>
             </ul>
         </div>
 
@@ -270,42 +273,42 @@
                 <tr>
                     <td><span class="arabic">كِتَابٌ</span></td>
                     <td><span class="arabic">الكِتَابُ</span></td>
-                    <td>un livre → le livre</td>
+                    <td class="trad">un livre → le livre</td>
                 </tr>
                 <tr>
                     <td><span class="arabic">مَدْرَسَةٌ</span></td>
                     <td><span class="arabic">المَدْرَسَةُ</span></td>
-                    <td>une école → l'école</td>
+                    <td class="trad">une école → l'école</td>
                 </tr>
                 <tr>
                     <td><span class="arabic">طَالِبٌ</span></td>
                     <td><span class="arabic">الطَّالِبُ</span></td>
-                    <td>un étudiant → l'étudiant</td>
+                    <td class="trad">un étudiant → l'étudiant</td>
                 </tr>
                 <tr>
                     <td><span class="arabic">مُعَلِّمَةٌ</span></td>
                     <td><span class="arabic">المُعَلِّمَةُ</span></td>
-                    <td>une enseignante → l'enseignante</td>
+                    <td class="trad">une enseignante → l'enseignante</td>
                 </tr>
                 <tr>
                     <td><span class="arabic">بَيْتٌ</span></td>
                     <td><span class="arabic">البَيْتُ</span></td>
-                    <td>une maison → la maison</td>
+                    <td class="trad">une maison → la maison</td>
                 </tr>
                 <tr>
                     <td><span class="arabic">سَيَّارَةٌ</span></td>
                     <td><span class="arabic">السَّيَّارَةُ</span></td>
-                    <td>une voiture → la voiture</td>
+                    <td class="trad">une voiture → la voiture</td>
                 </tr>
                 <tr>
                     <td><span class="arabic">قَلَمٌ</span></td>
                     <td><span class="arabic">القَلَمُ</span></td>
-                    <td>un stylo → le stylo</td>
+                    <td class="trad">un stylo → le stylo</td>
                 </tr>
                 <tr>
                     <td><span class="arabic">شَجَرَةٌ</span></td>
                     <td><span class="arabic">الشَّجَرَةُ</span></td>
-                    <td>un arbre → l'arbre</td>
+                    <td class="trad">un arbre → l'arbre</td>
                 </tr>
             </tbody>
         </table></div>
@@ -313,10 +316,10 @@
         <div class="example-box">
             <h4>🗣️ En phrases complètes :</h4>
             <ul>
-                <li><span class="arabic">التَّعْلِيمُ مُهِمٌّ</span> → L'éducation est importante</li>
-                <li><span class="arabic">القِطَطُ حَيَوَانَاتٌ</span> → Les chats sont des animaux</li>
-                <li><span class="arabic">الوَلَدُ فِي المَدْرَسَةِ</span> → Le garçon est à l'école</li>
-                <li><span class="arabic">الكِتَابُ عَلَى الطَّاوِلَةِ</span> → Le livre est sur la table</li>
+                <li><span class="arabic">التَّعْلِيمُ مُهِمٌّ</span> → <span class="trad">L'éducation est importante</span></li>
+                <li><span class="arabic">القِطَطُ حَيَوَانَاتٌ</span> → <span class="trad">Les chats sont des animaux</span></li>
+                <li><span class="arabic">الوَلَدُ فِي المَدْرَسَةِ</span> → <span class="trad">Le garçon est à l'école</span></li>
+                <li><span class="arabic">الكِتَابُ عَلَى الطَّاوِلَةِ</span> → <span class="trad">Le livre est sur la table</span></li>
             </ul>
         </div>
 
@@ -324,8 +327,8 @@
             <strong>💡 Remarque importante :</strong> Certains noms propres (comme les prénoms) peuvent avoir le <span class="arabic" lang="ar" dir="rtl">تَنْوِينٌ</span>
             même s'ils sont grammaticalement définis :
             <ul>
-                <li><span class="arabic">مُحَمَّدٌ</span> → Mohammed (avec <span class="arabic" lang="ar" dir="rtl">تَنْوِينٌ</span>)</li>
-                <li><span class="arabic">كَرِيمٌ</span> → Karim (avec <span class="arabic" lang="ar" dir="rtl">تَنْوِينٌ</span>)</li>
+                <li><span class="arabic">مُحَمَّدٌ</span> → <span class="trad">Mohammed (avec</span> <span class="arabic" lang="ar" dir="rtl">تَنْوِينٌ</span>)</li>
+                <li><span class="arabic">كَرِيمٌ</span> → <span class="trad">Karim (avec</span> <span class="arabic" lang="ar" dir="rtl">تَنْوِينٌ</span>)</li>
             </ul>
             Ces noms sont définis par nature (ils désignent une personne précise) mais gardent la forme indéfinie !
         </div>

@@ -9,9 +9,12 @@
     <link rel="stylesheet" href="../../../css/amana-base.css">
     <link rel="stylesheet" href="../../../css/theme-adulte.css">
     <link rel="stylesheet" href="../../../css/amana-content.css">
+<link rel="stylesheet" href="../../../css/amana-tokens.css">
+<link rel="stylesheet" href="../../../css/amana-components.css">
+<script src="../../../js/outils-lecture.js" defer></script>
     <style>
         /* Composants propres à ce cours (couleurs de rôle grammatical, cartes, etc.) */
-        .suffix { color: #d32f2f; font-weight: bold; }
+        .suffix { color: var(--role-3); font-weight: bold; }
         .verb-card { border: 2px solid #667eea; border-radius: 12px; padding: 20px; margin: 25px 0; }
         .verb-card-header { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; flex-wrap: wrap; }
         .verb-badge { color: var(--ink); padding: 6px 16px; border-radius: 20px; font-size: 1.1em; font-weight: bold; white-space: nowrap; border: 1.5px solid var(--accent); }
@@ -58,9 +61,9 @@
     <div class="example-box">
         <h4>📝 Comment utiliser le modèle فَعَلَ :</h4>
         <ul>
-            <li>Racine <span class="arabic">ك – ت – ب</span> → verbe de base : <span class="arabic">كَتَبَ</span> (écrire)</li>
-            <li>Racine <span class="arabic">ذ – ه – ب</span> → verbe de base : <span class="arabic">ذَهَبَ</span> (aller)</li>
-            <li>Racine <span class="arabic">ف – ه – م</span> → verbe de base : <span class="arabic">فَهِمَ</span> (comprendre)</li>
+            <li>Racine <span class="arabic">ك – ت – ب</span> → <span class="trad">verbe de base :</span> <span class="arabic">كَتَبَ</span> (écrire)</li>
+            <li>Racine <span class="arabic">ذ – ه – ب</span> → <span class="trad">verbe de base :</span> <span class="arabic">ذَهَبَ</span> (aller)</li>
+            <li>Racine <span class="arabic">ف – ه – م</span> → <span class="trad">verbe de base :</span> <span class="arabic">فَهِمَ</span> (comprendre)</li>
         </ul>
         <p>La forme de base au passé correspond toujours à la <strong>3ème personne du singulier masculin</strong>
         (il…). C'est sous cette forme que les verbes sont listés dans les dictionnaires.</p>
@@ -94,27 +97,27 @@
                         <td style="border: 1px solid #ddd; padding: 10px; text-align: center; background: #fafafa;">M.</td>
                         <td style="border: 1px solid #ddd; padding: 12px; text-align: center; background: #e3f2fd;">
                             <div style="color: #555; font-size: 0.85em; margin-bottom: 4px;">il</div>
-                            <div style="color: #d32f2f; font-size: 1.6em; font-weight: bold;">—</div>
+                            <div style="color: var(--role-3); font-size: 1.6em; font-weight: bold;">—</div>
                             <div style="color: #777; font-size: 0.78em; font-style: italic;">forme de base</div>
                         </td>
                         <td rowspan="2" style="border: 1px solid #ddd; padding: 12px; text-align: center; background: #e8f5e9;">
                             <div style="color: #555; font-size: 0.85em; margin-bottom: 4px;">ils/elles deux</div>
-                            <div style="color: #d32f2f; font-size: 1.6em; font-weight: bold;">ـَا</div>
+                            <div style="color: var(--role-3); font-size: 1.6em; font-weight: bold;">ـَا</div>
                         </td>
                         <td style="border: 1px solid #ddd; padding: 12px; text-align: center; background: #fff3e0;">
                             <div style="color: #555; font-size: 0.85em; margin-bottom: 4px;">ils</div>
-                            <div style="color: #d32f2f; font-size: 1.6em; font-weight: bold;">ـُوا</div>
+                            <div style="color: var(--role-3); font-size: 1.6em; font-weight: bold;">ـُوا</div>
                         </td>
                     </tr>
                     <tr>
                         <td style="border: 1px solid #ddd; padding: 10px; text-align: center; background: #fafafa;">F.</td>
                         <td style="border: 1px solid #ddd; padding: 12px; text-align: center; background: #e3f2fd;">
                             <div style="color: #555; font-size: 0.85em; margin-bottom: 4px;">elle</div>
-                            <div style="color: #d32f2f; font-size: 1.6em; font-weight: bold;">ـَتْ</div>
+                            <div style="color: var(--role-3); font-size: 1.6em; font-weight: bold;">ـَتْ</div>
                         </td>
                         <td style="border: 1px solid #ddd; padding: 12px; text-align: center; background: #fff3e0;">
                             <div style="color: #555; font-size: 0.85em; margin-bottom: 4px;">elles</div>
-                            <div style="color: #d32f2f; font-size: 1.6em; font-weight: bold;">ـْنَ</div>
+                            <div style="color: var(--role-3); font-size: 1.6em; font-weight: bold;">ـْنَ</div>
                         </td>
                     </tr>
                     <tr>
@@ -122,26 +125,26 @@
                         <td style="border: 1px solid #ddd; padding: 10px; text-align: center; background: #fafafa;">M.</td>
                         <td style="border: 1px solid #ddd; padding: 12px; text-align: center; background: #e3f2fd;">
                             <div style="color: #555; font-size: 0.85em; margin-bottom: 4px;">tu (m.)</div>
-                            <div style="color: #d32f2f; font-size: 1.6em; font-weight: bold;">ـْتَ</div>
+                            <div style="color: var(--role-3); font-size: 1.6em; font-weight: bold;">ـْتَ</div>
                         </td>
                         <td rowspan="2" style="border: 1px solid #ddd; padding: 12px; text-align: center; background: #e8f5e9;">
                             <div style="color: #555; font-size: 0.85em; margin-bottom: 4px;">vous deux</div>
-                            <div style="color: #d32f2f; font-size: 1.6em; font-weight: bold;">ـْتُمَا</div>
+                            <div style="color: var(--role-3); font-size: 1.6em; font-weight: bold;">ـْتُمَا</div>
                         </td>
                         <td style="border: 1px solid #ddd; padding: 12px; text-align: center; background: #fff3e0;">
                             <div style="color: #555; font-size: 0.85em; margin-bottom: 4px;">vous (m.)</div>
-                            <div style="color: #d32f2f; font-size: 1.6em; font-weight: bold;">ـْتُمْ</div>
+                            <div style="color: var(--role-3); font-size: 1.6em; font-weight: bold;">ـْتُمْ</div>
                         </td>
                     </tr>
                     <tr>
                         <td style="border: 1px solid #ddd; padding: 10px; text-align: center; background: #fafafa;">F.</td>
                         <td style="border: 1px solid #ddd; padding: 12px; text-align: center; background: #e3f2fd;">
                             <div style="color: #555; font-size: 0.85em; margin-bottom: 4px;">tu (f.)</div>
-                            <div style="color: #d32f2f; font-size: 1.6em; font-weight: bold;">ـْتِ</div>
+                            <div style="color: var(--role-3); font-size: 1.6em; font-weight: bold;">ـْتِ</div>
                         </td>
                         <td style="border: 1px solid #ddd; padding: 12px; text-align: center; background: #fff3e0;">
                             <div style="color: #555; font-size: 0.85em; margin-bottom: 4px;">vous (f.)</div>
-                            <div style="color: #d32f2f; font-size: 1.6em; font-weight: bold;">ـْتُنَّ</div>
+                            <div style="color: var(--role-3); font-size: 1.6em; font-weight: bold;">ـْتُنَّ</div>
                         </td>
                     </tr>
                     <tr>
@@ -149,12 +152,12 @@
                         <td style="border: 1px solid #ddd; padding: 10px; text-align: center; background: #fafafa;">M/F</td>
                         <td style="border: 1px solid #ddd; padding: 12px; text-align: center; background: #e3f2fd;">
                             <div style="color: #555; font-size: 0.85em; margin-bottom: 4px;">je</div>
-                            <div style="color: #d32f2f; font-size: 1.6em; font-weight: bold;">ـْتُ</div>
+                            <div style="color: var(--role-3); font-size: 1.6em; font-weight: bold;">ـْتُ</div>
                         </td>
                         <td style="border: 1px solid #ddd; padding: 12px; text-align: center; background: #e8f5e9; color: #888; font-style: italic;">—</td>
                         <td style="border: 1px solid #ddd; padding: 12px; text-align: center; background: #fff3e0;">
                             <div style="color: #555; font-size: 0.85em; margin-bottom: 4px;">nous</div>
-                            <div style="color: #d32f2f; font-size: 1.6em; font-weight: bold;">ـْنَا</div>
+                            <div style="color: var(--role-3); font-size: 1.6em; font-weight: bold;">ـْنَا</div>
                         </td>
                     </tr>
                 </tbody>
@@ -178,7 +181,7 @@
 
     <div class="intro">
         Voici le tableau complet de conjugaison au passé avec le verbe modèle abstrait
-        <span class="arabic">فَعَلَ</span>. Les suffixes apparaissent en <span style="color: #d32f2f; font-weight: bold;">rouge</span>.
+        <span class="arabic">فَعَلَ</span>. Les suffixes apparaissent en <span style="color: var(--role-3); font-weight: bold;">rouge</span>.
     </div>
 
     <div class="table-wrapper"><table>
@@ -303,9 +306,9 @@
         <div class="example-box" style="margin-top: 10px;">
             <strong>Exemples :</strong>
             <ul>
-                <li><span class="arabic">كَتَبَ الوَلَدُ رِسَالَةً</span> → Le garçon a écrit une lettre</li>
-                <li><span class="arabic">كَتَبْتُ في دَفْتَرِي</span> → J'ai écrit dans mon cahier</li>
-                <li><span class="arabic">كَتَبْنَا الدَّرْسَ</span> → Nous avons écrit la leçon</li>
+                <li><span class="arabic">كَتَبَ الوَلَدُ رِسَالَةً</span> → <span class="trad">Le garçon a écrit une lettre</span></li>
+                <li><span class="arabic">كَتَبْتُ في دَفْتَرِي</span> → <span class="trad">J'ai écrit dans mon cahier</span></li>
+                <li><span class="arabic">كَتَبْنَا الدَّرْسَ</span> → <span class="trad">Nous avons écrit la leçon</span></li>
             </ul>
         </div>
     </div>
@@ -367,9 +370,9 @@
         <div class="example-box" style="margin-top: 10px;">
             <strong>Exemples :</strong>
             <ul>
-                <li><span class="arabic">فَهِمَ الطَّالِبُ الدَّرْسَ</span> → L'étudiant a compris la leçon</li>
-                <li><span class="arabic">فَهِمْتُ السُّؤالَ</span> → J'ai compris la question</li>
-                <li><span class="arabic">فَهِمْنَا الكِتَابَ</span> → Nous avons compris le livre</li>
+                <li><span class="arabic">فَهِمَ الطَّالِبُ الدَّرْسَ</span> → <span class="trad">L'étudiant a compris la leçon</span></li>
+                <li><span class="arabic">فَهِمْتُ السُّؤالَ</span> → <span class="trad">J'ai compris la question</span></li>
+                <li><span class="arabic">فَهِمْنَا الكِتَابَ</span> → <span class="trad">Nous avons compris le livre</span></li>
             </ul>
         </div>
     </div>
@@ -436,9 +439,9 @@
         <div class="example-box" style="margin-top: 10px;">
             <strong>Exemples :</strong>
             <ul>
-                <li><span class="arabic">كَبُرَ الوَلَدُ</span> → Le garçon a grandi</li>
-                <li><span class="arabic">كَبُرْتُ في هَذِهِ المَدِينَةِ</span> → J'ai grandi dans cette ville</li>
-                <li><span class="arabic">كَبُرْنَا مَعاً</span> → Nous avons grandi ensemble</li>
+                <li><span class="arabic">كَبُرَ الوَلَدُ</span> → <span class="trad">Le garçon a grandi</span></li>
+                <li><span class="arabic">كَبُرْتُ في هَذِهِ المَدِينَةِ</span> → <span class="trad">J'ai grandi dans cette ville</span></li>
+                <li><span class="arabic">كَبُرْنَا مَعاً</span> → <span class="trad">Nous avons grandi ensemble</span></li>
             </ul>
         </div>
     </div>

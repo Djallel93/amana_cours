@@ -140,4 +140,5 @@ body.enfant .retenir::before { content: "⭐ À retenir"; font-size: .85rem; }
   .legende-item[data-role="1"]::before { background: var(--ink); }
   /* impression sans traductions : seules les traductions des exemples disparaissent, le cours reste tel quel */
   .impr-sans-trad .paire-fr, .impr-sans-trad .trad { display: none !important; }
+  .impr-sans-trad td.trad, .impr-sans-trad th.trad { display: table-cell !important; visibility: hidden; }
 }

@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="../../../css/amana-base.css">
     <link rel="stylesheet" href="../../../css/theme-adulte.css">
     <link rel="stylesheet" href="../../../css/amana-content.css">
+<link rel="stylesheet" href="../../../css/amana-tokens.css">
+<link rel="stylesheet" href="../../../css/amana-components.css">
+<script src="../../../js/outils-lecture.js" defer></script>
     <style>
         /* Composants propres à ce cours (couleurs de rôle grammatical, cartes, etc.) */
         .prep-card { background: #e3f2fd; padding: 20px; border-radius: 10px; margin: 20px 0; border-left: 5px solid #2196f3; }
@@ -52,7 +55,7 @@
         <div class="example-box">
             <h4>📝 Exemple de base :</h4>
             <ul>
-                <li><span class="arabic">ذَهَبْتُ إِلَى المَدْرَسَةِ</span> → Je suis allé(e) à l'école
+                <li><span class="arabic">ذَهَبْتُ إِلَى المَدْرَسَةِ</span> → <span class="trad">Je suis allé(e) à l'école</span>
                     <ul>
                         <li><span class="arabic">إِلَى</span> = préposition (vers, à)</li>
                         <li><span class="arabic">المَدْرَسَةِ</span> = nom au génitif (marqué par la <span class="arabic" lang="ar" dir="rtl">كَسْرَةٌ</span>)</li>
@@ -134,26 +137,26 @@
             <ul>
                 <li><strong>Point de départ spatial :</strong> de, depuis
                     <ul>
-                        <li><span class="arabic">جِئْتُ مِنَ البَيْتِ</span> → Je suis venu de la maison</li>
-                        <li><span class="arabic">سَافَرْتُ مِنْ بَارِيسَ إِلَى لَنْدَنَ</span> → J'ai voyagé de Paris à
-                            Londres</li>
+                        <li><span class="arabic">جِئْتُ مِنَ البَيْتِ</span> → <span class="trad">Je suis venu de la maison</span></li>
+                        <li><span class="arabic">سَافَرْتُ مِنْ بَارِيسَ إِلَى لَنْدَنَ</span> → <span class="trad">J'ai voyagé de Paris à
+                            Londres</span></li>
                     </ul>
                 </li>
                 <li><strong>Point de départ temporel :</strong> depuis, à partir de
                     <ul>
-                        <li><span class="arabic">مِنَ الصَّبَاحِ</span> → Depuis le matin</li>
-                        <li><span class="arabic">مِنْ يَوْمِ الاِثْنَيْنِ</span> → À partir de lundi</li>
+                        <li><span class="arabic">مِنَ الصَّبَاحِ</span> → <span class="trad">Depuis le matin</span></li>
+                        <li><span class="arabic">مِنْ يَوْمِ الاِثْنَيْنِ</span> → <span class="trad">À partir de lundi</span></li>
                     </ul>
                 </li>
                 <li><strong>Partie d'un tout :</strong> de, parmi
                     <ul>
-                        <li><span class="arabic">وَاحِدٌ مِنَ الطُّلَّابِ</span> → Un des étudiants</li>
-                        <li><span class="arabic">بَعْضٌ مِنَ الكُتُبِ</span> → Quelques-uns des livres</li>
+                        <li><span class="arabic">وَاحِدٌ مِنَ الطُّلَّابِ</span> → <span class="trad">Un des étudiants</span></li>
+                        <li><span class="arabic">بَعْضٌ مِنَ الكُتُبِ</span> → <span class="trad">Quelques-uns des livres</span></li>
                     </ul>
                 </li>
                 <li><strong>Cause :</strong> de, à cause de
                     <ul>
-                        <li><span class="arabic">أَرْتَعِشُ مِنَ البَرْدِ</span> → Je tremble de froid</li>
+                        <li><span class="arabic">أَرْتَعِشُ مِنَ البَرْدِ</span> → <span class="trad">Je tremble de froid</span></li>
                     </ul>
                 </li>
             </ul>
@@ -165,19 +168,19 @@
             <ul>
                 <li><strong>Direction, destination :</strong> vers, à
                     <ul>
-                        <li><span class="arabic">ذَهَبْتُ إِلَى المَدْرَسَةِ</span> → Je suis allé(e) à l'école</li>
-                        <li><span class="arabic">سَافَرَ إِلَى مِصْرَ</span> → Il a voyagé vers l'Égypte</li>
+                        <li><span class="arabic">ذَهَبْتُ إِلَى المَدْرَسَةِ</span> → <span class="trad">Je suis allé(e) à l'école</span></li>
+                        <li><span class="arabic">سَافَرَ إِلَى مِصْرَ</span> → <span class="trad">Il a voyagé vers l'Égypte</span></li>
                     </ul>
                 </li>
                 <li><strong>Limite temporelle :</strong> jusqu'à
                     <ul>
-                        <li><span class="arabic">مِنَ الاِثْنَيْنِ إِلَى الجُمُعَةِ</span> → De lundi à vendredi</li>
-                        <li><span class="arabic">إِلَى الغَدِ</span> → Jusqu'à demain</li>
+                        <li><span class="arabic">مِنَ الاِثْنَيْنِ إِلَى الجُمُعَةِ</span> → <span class="trad">De lundi à vendredi</span></li>
+                        <li><span class="arabic">إِلَى الغَدِ</span> → <span class="trad">Jusqu'à demain</span></li>
                     </ul>
                 </li>
                 <li><strong>But :</strong> pour, en vue de
                     <ul>
-                        <li><span class="arabic">يَسْعَى إِلَى النَّجَاحِ</span> → Il aspire au succès</li>
+                        <li><span class="arabic">يَسْعَى إِلَى النَّجَاحِ</span> → <span class="trad">Il aspire au succès</span></li>
                     </ul>
                 </li>
             </ul>
@@ -189,19 +192,19 @@
             <ul>
                 <li><strong>Localisation dans un lieu :</strong> dans, à
                     <ul>
-                        <li><span class="arabic">أَسْكُنُ فِي بَارِيسَ</span> → J'habite à Paris</li>
-                        <li><span class="arabic">الكِتَابُ فِي الحَقِيبَةِ</span> → Le livre est dans le sac</li>
+                        <li><span class="arabic">أَسْكُنُ فِي بَارِيسَ</span> → <span class="trad">J'habite à Paris</span></li>
+                        <li><span class="arabic">الكِتَابُ فِي الحَقِيبَةِ</span> → <span class="trad">Le livre est dans le sac</span></li>
                     </ul>
                 </li>
                 <li><strong>Moment dans le temps :</strong> en, à, pendant
                     <ul>
-                        <li><span class="arabic">فِي الصَّبَاحِ</span> → Le matin</li>
-                        <li><span class="arabic">فِي شَهْرِ رَمَضَانَ</span> → Pendant le mois de Ramadan</li>
+                        <li><span class="arabic">فِي الصَّبَاحِ</span> → <span class="trad">Le matin</span></li>
+                        <li><span class="arabic">فِي شَهْرِ رَمَضَانَ</span> → <span class="trad">Pendant le mois de Ramadan</span></li>
                     </ul>
                 </li>
                 <li><strong>Domaine, sujet :</strong> en, dans
                     <ul>
-                        <li><span class="arabic">خَبِيرٌ فِي الرِّيَاضِيَّاتِ</span> → Expert en mathématiques</li>
+                        <li><span class="arabic">خَبِيرٌ فِي الرِّيَاضِيَّاتِ</span> → <span class="trad">Expert en mathématiques</span></li>
                     </ul>
                 </li>
             </ul>
@@ -213,19 +216,19 @@
             <ul>
                 <li><strong>Position supérieure :</strong> sur
                     <ul>
-                        <li><span class="arabic">الكِتَابُ عَلَى الطَّاوِلَةِ</span> → Le livre est sur la table</li>
-                        <li><span class="arabic">الصُّورَةُ عَلَى الجِدَارِ</span> → L'image est sur le mur</li>
+                        <li><span class="arabic">الكِتَابُ عَلَى الطَّاوِلَةِ</span> → <span class="trad">Le livre est sur la table</span></li>
+                        <li><span class="arabic">الصُّورَةُ عَلَى الجِدَارِ</span> → <span class="trad">L'image est sur le mur</span></li>
                     </ul>
                 </li>
                 <li><strong>Obligation, responsabilité :</strong> à (quelqu'un de faire)
                     <ul>
-                        <li><span class="arabic">عَلَيْكَ أَنْ تَدْرُسَ</span> → Tu dois étudier</li>
-                        <li><span class="arabic">عَلَيْهِ دَيْنٌ</span> → Il a une dette (sur lui pèse une dette)</li>
+                        <li><span class="arabic">عَلَيْكَ أَنْ تَدْرُسَ</span> → <span class="trad">Tu dois étudier</span></li>
+                        <li><span class="arabic">عَلَيْهِ دَيْنٌ</span> → <span class="trad">Il a une dette (sur lui pèse une dette)</span></li>
                     </ul>
                 </li>
                 <li><strong>Opposition :</strong> contre
                     <ul>
-                        <li><span class="arabic">حَرْبٌ عَلَى العَدُوِّ</span> → Guerre contre l'ennemi</li>
+                        <li><span class="arabic">حَرْبٌ عَلَى العَدُوِّ</span> → <span class="trad">Guerre contre l'ennemi</span></li>
                     </ul>
                 </li>
             </ul>
@@ -237,18 +240,18 @@
             <ul>
                 <li><strong>Éloignement :</strong> de, loin de
                     <ul>
-                        <li><span class="arabic">ابْتَعَدَ عَنِ المَدِينَةِ</span> → Il s'est éloigné de la ville</li>
+                        <li><span class="arabic">ابْتَعَدَ عَنِ المَدِينَةِ</span> → <span class="trad">Il s'est éloigné de la ville</span></li>
                     </ul>
                 </li>
                 <li><strong>Sujet, propos :</strong> au sujet de, à propos de
                     <ul>
-                        <li><span class="arabic">تَحَدَّثَ عَنِ السَّفَرِ</span> → Il a parlé du voyage</li>
-                        <li><span class="arabic">بَحَثَ عَنِ الحَقِيقَةِ</span> → Il a cherché la vérité</li>
+                        <li><span class="arabic">تَحَدَّثَ عَنِ السَّفَرِ</span> → <span class="trad">Il a parlé du voyage</span></li>
+                        <li><span class="arabic">بَحَثَ عَنِ الحَقِيقَةِ</span> → <span class="trad">Il a cherché la vérité</span></li>
                     </ul>
                 </li>
                 <li><strong>Substitution :</strong> à la place de, pour
                     <ul>
-                        <li><span class="arabic">نَابَ عَنْهُ</span> → Il l'a remplacé</li>
+                        <li><span class="arabic">نَابَ عَنْهُ</span> → <span class="trad">Il l'a remplacé</span></li>
                     </ul>
                 </li>
             </ul>
@@ -260,24 +263,24 @@
             <ul>
                 <li><strong>Accompagnement :</strong> avec
                     <ul>
-                        <li><span class="arabic">كَتَبْتُ بِالقَلَمِ</span> → J'ai écrit avec le stylo</li>
+                        <li><span class="arabic">كَتَبْتُ بِالقَلَمِ</span> → <span class="trad">J'ai écrit avec le stylo</span></li>
                     </ul>
                 </li>
                 <li><strong>Moyen, instrument :</strong> par, au moyen de
                     <ul>
-                        <li><span class="arabic">سَافَرْتُ بِالطَّائِرَةِ</span> → J'ai voyagé en avion</li>
-                        <li><span class="arabic">قَطَعَ بِالسِّكِّينِ</span> → Il a coupé avec le couteau</li>
+                        <li><span class="arabic">سَافَرْتُ بِالطَّائِرَةِ</span> → <span class="trad">J'ai voyagé en avion</span></li>
+                        <li><span class="arabic">قَطَعَ بِالسِّكِّينِ</span> → <span class="trad">Il a coupé avec le couteau</span></li>
                     </ul>
                 </li>
                 <li><strong>Attachement :</strong> à
                     <ul>
-                        <li><span class="arabic">مَرْحَبًا بِكَ</span> → Bienvenue (à toi)</li>
+                        <li><span class="arabic">مَرْحَبًا بِكَ</span> → <span class="trad">Bienvenue (à toi)</span></li>
                     </ul>
                 </li>
                 <li><strong>Prix :</strong> pour, à
                     <ul>
-                        <li><span class="arabic">اشْتَرَيْتُهُ بِعَشَرَةِ دَنَانِيرَ</span> → Je l'ai acheté pour dix
-                            dinars</li>
+                        <li><span class="arabic">اشْتَرَيْتُهُ بِعَشَرَةِ دَنَانِيرَ</span> → <span class="trad">Je l'ai acheté pour dix
+                            dinars</span></li>
                     </ul>
                 </li>
             </ul>
@@ -289,19 +292,19 @@
             <ul>
                 <li><strong>Possession :</strong> à, de
                     <ul>
-                        <li><span class="arabic">هَذَا الكِتَابُ لِي</span> → Ce livre est à moi</li>
-                        <li><span class="arabic">البَيْتُ لِأَحْمَدَ</span> → La maison est à Ahmad</li>
+                        <li><span class="arabic">هَذَا الكِتَابُ لِي</span> → <span class="trad">Ce livre est à moi</span></li>
+                        <li><span class="arabic">البَيْتُ لِأَحْمَدَ</span> → <span class="trad">La maison est à Ahmad</span></li>
                     </ul>
                 </li>
                 <li><strong>But, destination :</strong> pour
                     <ul>
-                        <li><span class="arabic">هَدِيَّةٌ لَكَ</span> → Un cadeau pour toi</li>
-                        <li><span class="arabic">أَدْرُسُ لِلاِمْتِحَانِ</span> → J'étudie pour l'examen</li>
+                        <li><span class="arabic">هَدِيَّةٌ لَكَ</span> → <span class="trad">Un cadeau pour toi</span></li>
+                        <li><span class="arabic">أَدْرُسُ لِلاِمْتِحَانِ</span> → <span class="trad">J'étudie pour l'examen</span></li>
                     </ul>
                 </li>
                 <li><strong>Cause :</strong> à cause de
                     <ul>
-                        <li><span class="arabic">فَرِحْتُ لِنَجَاحِهِ</span> → Je me suis réjoui de sa réussite</li>
+                        <li><span class="arabic">فَرِحْتُ لِنَجَاحِهِ</span> → <span class="trad">Je me suis réjoui de sa réussite</span></li>
                     </ul>
                 </li>
             </ul>
@@ -313,13 +316,13 @@
             <ul>
                 <li><strong>Comparaison :</strong> comme, tel que
                     <ul>
-                        <li><span class="arabic">هُوَ كَالأَسَدِ</span> → Il est comme un lion</li>
-                        <li><span class="arabic">كَالشَّمْسِ</span> → Comme le soleil</li>
+                        <li><span class="arabic">هُوَ كَالأَسَدِ</span> → <span class="trad">Il est comme un lion</span></li>
+                        <li><span class="arabic">كَالشَّمْسِ</span> → <span class="trad">Comme le soleil</span></li>
                     </ul>
                 </li>
                 <li><strong>Approximation :</strong> environ, à peu près
                     <ul>
-                        <li><span class="arabic">كَسَاعَةٍ</span> → Environ une heure</li>
+                        <li><span class="arabic">كَسَاعَةٍ</span> → <span class="trad">Environ une heure</span></li>
                     </ul>
                 </li>
             </ul>
@@ -345,13 +348,13 @@
         <div class="example-box">
             <h4>📝 Exemples de cas génitif :</h4>
             <ul>
-                <li><span class="arabic">ذَهَبْتُ إِلَى المَدْرَسَةِ</span> → Je suis allé(e) à l'école
+                <li><span class="arabic">ذَهَبْتُ إِلَى المَدْرَسَةِ</span> → <span class="trad">Je suis allé(e) à l'école</span>
                     <br>(المَدْرَسَةِ avec <span class="arabic" lang="ar" dir="rtl">كَسْرَةٌ</span> car défini)
                 </li>
-                <li><span class="arabic">جَلَسْتُ فِي حَدِيقَةٍ</span> → Je me suis assis(e) dans un jardin
+                <li><span class="arabic">جَلَسْتُ فِي حَدِيقَةٍ</span> → <span class="trad">Je me suis assis(e) dans un jardin</span>
                     <br>(حَدِيقَةٍ avec <span class="arabic" lang="ar" dir="rtl">تَنْوِينٌ</span> <span class="arabic" lang="ar" dir="rtl">كَسْرَةٌ</span> car indéfini)
                 </li>
-                <li><span class="arabic">تَحَدَّثْتُ مَعَ الطُّلَّابِ</span> → J'ai parlé avec les étudiants
+                <li><span class="arabic">تَحَدَّثْتُ مَعَ الطُّلَّابِ</span> → <span class="trad">J'ai parlé avec les étudiants</span>
                     <br>(الطُّلَّابِ avec <span class="arabic" lang="ar" dir="rtl">كَسْرَةٌ</span>, pluriel irrégulier)
                 </li>
             </ul>
@@ -368,10 +371,10 @@
         <div class="example-box">
             <h4>✏️ Exemples d'attachement :</h4>
             <ul>
-                <li><span class="arabic">بِ + القَلَم = بِالقَلَمِ</span> → avec le stylo</li>
-                <li><span class="arabic">لِ + الطَّالِب = لِلطَّالِبِ</span> → pour/à l'étudiant</li>
-                <li><span class="arabic">كَ + الشَّمْس = كَالشَّمْسِ</span> → comme le soleil</li>
-                <li><span class="arabic">بِ + كِتَاب = بِكِتَابٍ</span> → avec un livre</li>
+                <li><span class="arabic">بِ + القَلَم = بِالقَلَمِ</span> → <span class="trad">avec le stylo</span></li>
+                <li><span class="arabic">لِ + الطَّالِب = لِلطَّالِبِ</span> → <span class="trad">pour/à l'étudiant</span></li>
+                <li><span class="arabic">كَ + الشَّمْس = كَالشَّمْسِ</span> → <span class="trad">comme le soleil</span></li>
+                <li><span class="arabic">بِ + كِتَاب = بِكِتَابٍ</span> → <span class="trad">avec un livre</span></li>
             </ul>
         </div>
 
@@ -494,10 +497,10 @@
         <div class="example-box">
             <h4>📝 Exemples avec pronoms :</h4>
             <ul>
-                <li><span class="arabic">جِئْتُ إِلَيْكَ</span> → Je suis venu vers toi</li>
-                <li><span class="arabic">هَذَا الكِتَابُ لِي</span> → Ce livre est à moi</li>
-                <li><span class="arabic">تَحَدَّثَ عَنْهَا</span> → Il a parlé d'elle</li>
-                <li><span class="arabic">ذَهَبْتُ مَعَهُمْ</span> → Je suis allé(e) avec eux</li>
+                <li><span class="arabic">جِئْتُ إِلَيْكَ</span> → <span class="trad">Je suis venu vers toi</span></li>
+                <li><span class="arabic">هَذَا الكِتَابُ لِي</span> → <span class="trad">Ce livre est à moi</span></li>
+                <li><span class="arabic">تَحَدَّثَ عَنْهَا</span> → <span class="trad">Il a parlé d'elle</span></li>
+                <li><span class="arabic">ذَهَبْتُ مَعَهُمْ</span> → <span class="trad">Je suis allé(e) avec eux</span></li>
             </ul>
         </div>
 
@@ -514,50 +517,50 @@
         <div class="prep-card">
             <h4><span class="arabic">أَمَامَ</span> - Devant</h4>
             <ul>
-                <li><span class="arabic">وَقَفْتُ أَمَامَ البَابِ</span> → Je me suis tenu(e) devant la porte</li>
-                <li><span class="arabic">السَّيَّارَةُ أَمَامَ البَيْتِ</span> → La voiture est devant la maison</li>
+                <li><span class="arabic">وَقَفْتُ أَمَامَ البَابِ</span> → <span class="trad">Je me suis tenu(e) devant la porte</span></li>
+                <li><span class="arabic">السَّيَّارَةُ أَمَامَ البَيْتِ</span> → <span class="trad">La voiture est devant la maison</span></li>
             </ul>
         </div>
 
         <div class="prep-card">
             <h4><span class="arabic">خَلْفَ</span> - Derrière</h4>
             <ul>
-                <li><span class="arabic">الحَدِيقَةُ خَلْفَ المَنْزِلِ</span> → Le jardin est derrière la maison</li>
-                <li><span class="arabic">جَلَسَ خَلْفِي</span> → Il s'est assis derrière moi</li>
+                <li><span class="arabic">الحَدِيقَةُ خَلْفَ المَنْزِلِ</span> → <span class="trad">Le jardin est derrière la maison</span></li>
+                <li><span class="arabic">جَلَسَ خَلْفِي</span> → <span class="trad">Il s'est assis derrière moi</span></li>
             </ul>
         </div>
 
         <div class="prep-card">
             <h4><span class="arabic">فَوْقَ</span> - Au-dessus de, sur</h4>
             <ul>
-                <li><span class="arabic">الطَّائِرُ فَوْقَ الشَّجَرَةِ</span> → L'oiseau est au-dessus de l'arbre</li>
-                <li><span class="arabic">السَّمَاءُ فَوْقَنَا</span> → Le ciel est au-dessus de nous</li>
+                <li><span class="arabic">الطَّائِرُ فَوْقَ الشَّجَرَةِ</span> → <span class="trad">L'oiseau est au-dessus de l'arbre</span></li>
+                <li><span class="arabic">السَّمَاءُ فَوْقَنَا</span> → <span class="trad">Le ciel est au-dessus de nous</span></li>
             </ul>
         </div>
 
         <div class="prep-card">
             <h4><span class="arabic">تَحْتَ</span> - Sous, en-dessous de</h4>
             <ul>
-                <li><span class="arabic">القِطُّ تَحْتَ الطَّاوِلَةِ</span> → Le chat est sous la table</li>
-                <li><span class="arabic">جَلَسْنَا تَحْتَ الشَّجَرَةِ</span> → Nous nous sommes assis sous l'arbre</li>
+                <li><span class="arabic">القِطُّ تَحْتَ الطَّاوِلَةِ</span> → <span class="trad">Le chat est sous la table</span></li>
+                <li><span class="arabic">جَلَسْنَا تَحْتَ الشَّجَرَةِ</span> → <span class="trad">Nous nous sommes assis sous l'arbre</span></li>
             </ul>
         </div>
 
         <div class="prep-card">
             <h4><span class="arabic">بَيْنَ</span> - Entre</h4>
             <ul>
-                <li><span class="arabic">جَلَسْتُ بَيْنَ أَحْمَدَ وَفَاطِمَةَ</span> → Je me suis assis(e) entre Ahmad
-                    et Fatima</li>
-                <li><span class="arabic">العَلَاقَةُ بَيْنَ البَلَدَيْنِ</span> → La relation entre les deux pays</li>
+                <li><span class="arabic">جَلَسْتُ بَيْنَ أَحْمَدَ وَفَاطِمَةَ</span> → <span class="trad">Je me suis assis(e) entre Ahmad
+                    et Fatima</span></li>
+                <li><span class="arabic">العَلَاقَةُ بَيْنَ البَلَدَيْنِ</span> → <span class="trad">La relation entre les deux pays</span></li>
             </ul>
         </div>
 
         <div class="prep-card">
             <h4><span class="arabic">عِنْدَ</span> - Chez, auprès de, à</h4>
             <ul>
-                <li><span class="arabic">أَنَا عِنْدَ صَدِيقِي</span> → Je suis chez mon ami</li>
-                <li><span class="arabic">عِنْدِي كِتَابٌ</span> → J'ai un livre (chez moi il y a un livre)</li>
-                <li><span class="arabic">المَوْعِدُ عِنْدَ الظُّهْرِ</span> → Le rendez-vous est à midi</li>
+                <li><span class="arabic">أَنَا عِنْدَ صَدِيقِي</span> → <span class="trad">Je suis chez mon ami</span></li>
+                <li><span class="arabic">عِنْدِي كِتَابٌ</span> → <span class="trad">J'ai un livre (chez moi il y a un livre)</span></li>
+                <li><span class="arabic">المَوْعِدُ عِنْدَ الظُّهْرِ</span> → <span class="trad">Le rendez-vous est à midi</span></li>
             </ul>
         </div>
 
@@ -566,32 +569,32 @@
         <div class="prep-card">
             <h4><span class="arabic">مُنْذُ / مُذْ</span> - Depuis, il y a</h4>
             <ul>
-                <li><span class="arabic">لَمْ أَرَهُ مُنْذُ سَنَةٍ</span> → Je ne l'ai pas vu depuis un an</li>
-                <li><span class="arabic">مُنْذُ الصَّبَاحِ</span> → Depuis le matin</li>
+                <li><span class="arabic">لَمْ أَرَهُ مُنْذُ سَنَةٍ</span> → <span class="trad">Je ne l'ai pas vu depuis un an</span></li>
+                <li><span class="arabic">مُنْذُ الصَّبَاحِ</span> → <span class="trad">Depuis le matin</span></li>
             </ul>
         </div>
 
         <div class="prep-card">
             <h4><span class="arabic">حَتَّى</span> - Jusqu'à</h4>
             <ul>
-                <li><span class="arabic">انْتَظَرْتُهُ حَتَّى المَسَاءِ</span> → Je l'ai attendu jusqu'au soir</li>
-                <li><span class="arabic">مِنَ الإِثْنَيْنِ حَتَّى الجُمُعَةِ</span> → Du lundi jusqu'à vendredi</li>
+                <li><span class="arabic">انْتَظَرْتُهُ حَتَّى المَسَاءِ</span> → <span class="trad">Je l'ai attendu jusqu'au soir</span></li>
+                <li><span class="arabic">مِنَ الإِثْنَيْنِ حَتَّى الجُمُعَةِ</span> → <span class="trad">Du lundi jusqu'à vendredi</span></li>
             </ul>
         </div>
 
         <div class="prep-card">
             <h4><span class="arabic">قَبْلَ</span> - Avant</h4>
             <ul>
-                <li><span class="arabic">قَبْلَ الظُّهْرِ</span> → Avant midi</li>
-                <li><span class="arabic">قَبْلَ سَنَةٍ</span> → Il y a un an (avant une année)</li>
+                <li><span class="arabic">قَبْلَ الظُّهْرِ</span> → <span class="trad">Avant midi</span></li>
+                <li><span class="arabic">قَبْلَ سَنَةٍ</span> → <span class="trad">Il y a un an (avant une année)</span></li>
             </ul>
         </div>
 
         <div class="prep-card">
             <h4><span class="arabic">بَعْدَ</span> - Après</h4>
             <ul>
-                <li><span class="arabic">بَعْدَ الدَّرْسِ</span> → Après le cours</li>
-                <li><span class="arabic">بَعْدَ قَلِيلٍ</span> → Après un peu (sous peu)</li>
+                <li><span class="arabic">بَعْدَ الدَّرْسِ</span> → <span class="trad">Après le cours</span></li>
+                <li><span class="arabic">بَعْدَ قَلِيلٍ</span> → <span class="trad">Après un peu (sous peu)</span></li>
             </ul>
         </div>
 
@@ -792,16 +795,16 @@
         <div class="example-box">
             <h4>✨ Phrases récapitulatives :</h4>
             <ul>
-                <li><span class="arabic">سَافَرْتُ مِنْ بَارِيسَ إِلَى القَاهِرَةِ</span> → J'ai voyagé de Paris au
-                    Caire</li>
-                <li><span class="arabic">أَسْكُنُ فِي شَقَّةٍ فَوْقَ المَقْهَى</span> → J'habite dans un appartement
-                    au-dessus du café</li>
-                <li><span class="arabic">كَتَبْتُ بِالقَلَمِ عَلَى الوَرَقَةِ</span> → J'ai écrit avec le stylo sur la
-                    feuille</li>
-                <li><span class="arabic">هَذَا الكِتَابُ لِي، وَذَلِكَ لَكَ</span> → Ce livre est à moi, et celui-là est
-                    à toi</li>
-                <li><span class="arabic">جَلَسْتُ بَيْنَ أَحْمَدَ وَعَلِيٍّ أَمَامَ المُعَلِّمِ</span> → Je me suis
-                    assis entre Ahmad et Ali devant le professeur</li>
+                <li><span class="arabic">سَافَرْتُ مِنْ بَارِيسَ إِلَى القَاهِرَةِ</span> → <span class="trad">J'ai voyagé de Paris au
+                    Caire</span></li>
+                <li><span class="arabic">أَسْكُنُ فِي شَقَّةٍ فَوْقَ المَقْهَى</span> → <span class="trad">J'habite dans un appartement
+                    au-dessus du café</span></li>
+                <li><span class="arabic">كَتَبْتُ بِالقَلَمِ عَلَى الوَرَقَةِ</span> → <span class="trad">J'ai écrit avec le stylo sur la
+                    feuille</span></li>
+                <li><span class="arabic">هَذَا الكِتَابُ لِي، وَذَلِكَ لَكَ</span> → <span class="trad">Ce livre est à moi, et celui-là est
+                    à toi</span></li>
+                <li><span class="arabic">جَلَسْتُ بَيْنَ أَحْمَدَ وَعَلِيٍّ أَمَامَ المُعَلِّمِ</span> → <span class="trad">Je me suis
+                    assis entre Ahmad et Ali devant le professeur</span></li>
             </ul>
         </div>
 

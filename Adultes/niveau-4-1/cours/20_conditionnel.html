@@ -8,18 +8,21 @@
     <link rel="stylesheet" href="../../../fonts/fonts.css">
     <link rel="stylesheet" href="../../../css/amana-base.css">
     <link rel="stylesheet" href="../../../css/theme-adulte.css">
+<link rel="stylesheet" href="../../../css/amana-tokens.css">
+<link rel="stylesheet" href="../../../css/amana-components.css">
+<script src="../../../js/outils-lecture.js" defer></script>
     <link rel="stylesheet" href="../../../css/amana-content.css">
     <style>
         /* Composants propres à ce cours (couleurs de rôle grammatical, cartes, etc.) */
         .arabic-lg { font-size: 2em; color: #764ba2; font-weight: bold; }
-        .part-cond { color: #c62828; font-weight: bold; }
-        .shart { color: #1565c0; font-weight: bold; }
-        .jawab { color: #2e7d32; font-weight: bold; }
+        .part-cond { color: var(--role-1); font-weight: bold; }
+        .shart { color: var(--role-2); font-weight: bold; }
+        .jawab { color: var(--role-3); font-weight: bold; }
         .cond-block { border-radius: 12px; overflow: hidden; margin: 16px 0; }
         .cond-part { padding: 11px 18px; font-size: 1.1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
         .cond-part.header { color: var(--ink); font-size: .9em; font-weight: bold; border: 1.5px solid var(--accent); }
-        .cond-part.p-shart { background: #e3f2fd; border-left: 4px solid #1565c0; }
-        .cond-part.p-jawab { background: #e8f5e9; border-left: 4px solid #2e7d32; }
+        .cond-part.p-shart { background: color-mix(in srgb, var(--role-2) 18%, #fff); border-left: 4px solid var(--role-2); }
+        .cond-part.p-jawab { background: color-mix(in srgb, var(--role-3) 18%, #fff); border-left: 4px solid var(--role-3); }
         .cond-part .ar { font-size: 1.3em; font-weight: bold; direction: rtl; }
         .cond-part .fr { font-size: .9em; color: #555; }
         .cond-part .fr-white { font-size: .9em; color: rgba(255,255,255,.85); }
@@ -28,16 +31,16 @@
             .three-grid { grid-template-columns: 1fr; }
         }
         .cond-card { border-radius: 12px; padding: 18px; text-align: center; }
-        .cond-card.idha { border: 2px solid #2e7d32; }
-        .cond-card.in { border: 2px solid #e65100; }
-        .cond-card.law { border: 2px solid #c62828; }
+        .cond-card.idha { border: 2px solid var(--role-3); }
+        .cond-card.in { border: 2px solid var(--role-4); }
+        .cond-card.law { border: 2px solid var(--role-1); }
         .cond-card h3 { margin-top: 0; font-size: 1em; }
         .cond-card .arabic-lg { display: block; margin: 8px 0; font-size: 2.4em; }
         .cond-card p { font-size: .85em; color: #555; margin: 3px 0; }
         .cond-card .badge { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: .82em; font-weight: bold; margin-top: 8px; }
-        .idha .badge { color: var(--ink); border: 1.5px solid #2e7d32; }
-        .in   .badge { color: var(--ink); border: 1.5px solid #e65100; }
-        .law  .badge { color: var(--ink); border: 1.5px solid #c62828; }
+        .idha .badge { color: var(--ink); border: 1.5px solid var(--role-3); }
+        .in   .badge { color: var(--ink); border: 1.5px solid var(--role-4); }
+        .law  .badge { color: var(--ink); border: 1.5px solid var(--role-1); }
         .conc-row td:first-child { font-weight: bold; color: #764ba2; font-size: 1.1em; }
     </style>
 </head>
@@ -65,9 +68,9 @@
     <div class="rule-box">
         <strong>⚙️ Formule universelle :</strong>
         <div style="text-align: center; font-size: 1.2em; margin: 12px 0;">
-            <span class="part-cond">particule conditionnelle</span>
-            + <span class="shart">condition (الشَرْط)</span>
-            + <span class="jawab">réponse (جَوَاب الشَرْط)</span>
+            <span class="mot part-cond" data-role="1">particule conditionnelle</span>
+            + <span class="mot shart" data-role="2">condition (الشَرْط)</span>
+            + <span class="mot jawab" data-role="3">réponse (جَوَاب الشَرْط)</span>
         </div>
         <div style="text-align: center; font-size: .9em; color: #666;">
             = protase + apodose (terminologie française)
@@ -75,14 +78,14 @@
     </div>
 
     <div class="example-box" style="text-align: center;">
-        <span class="part-cond arabic" style="font-size: 1.5em;">إِذَا</span>
-        <span class="shart arabic" style="font-size: 1.5em;">دَرَسْتَ</span>
-        <span class="jawab arabic" style="font-size: 1.5em;">نَجَحْتَ</span><br>
+        <span class="mot arabic part-cond" data-role="1" style="font-size: 1.5em;">إِذَا</span>
+        <span class="mot arabic shart" data-role="2" style="font-size: 1.5em;">دَرَسْتَ</span>
+        <span class="mot arabic jawab" data-role="3" style="font-size: 1.5em;">نَجَحْتَ</span><br>
         <span style="color: #888; font-size: .9em;">↑ particule</span>
         &nbsp;&nbsp;&nbsp;
-        <span style="color: #1565c0; font-size: .9em;">↑ condition</span>
+        <span style="color: var(--role-2); font-size: .9em;">↑ condition</span>
         &nbsp;&nbsp;&nbsp;
-        <span style="color: #2e7d32; font-size: .9em;">↑ réponse</span><br><br>
+        <span style="color: var(--role-3); font-size: .9em;">↑ réponse</span><br><br>
         <strong>Si tu étudies, tu réussiras.</strong>
     </div>
 
@@ -133,12 +136,12 @@
             <span>Condition (الشَرْط)</span><span>Réponse (جَوَاب الشَرْط)</span>
         </div>
         <div class="cond-part p-shart">
-            <span class="ar"><span class="part-cond">إِذَا</span> <span class="shart">جِئْتَ إِلَى بَيْتِي</span></span>
-            <span class="fr shart">Si tu viens chez moi…</span>
+            <span class="ar"><span class="mot part-cond" data-role="1">إِذَا</span> <span class="mot shart" data-role="2">جِئْتَ إِلَى بَيْتِي</span></span>
+            <span class="fr trad shart">Si tu viens chez moi…</span>
         </div>
         <div class="cond-part p-jawab">
-            <span class="ar"><span class="jawab">أَكَلْتَ طَبَقًا طَيِّبًا</span></span>
-            <span class="fr jawab">…tu mangeras un bon plat.</span>
+            <span class="ar"><span class="mot jawab" data-role="3">أَكَلْتَ طَبَقًا طَيِّبًا</span></span>
+            <span class="fr trad jawab">…tu mangeras un bon plat.</span>
         </div>
     </div>
 
@@ -149,12 +152,12 @@
             <span>Condition (الشَرْط)</span><span>Réponse (جَوَاب الشَرْط)</span>
         </div>
         <div class="cond-part p-shart">
-            <span class="ar"><span class="part-cond">إِذَا</span> <span class="shart">جِئْتَ إِلَى بَيْتِي</span></span>
-            <span class="fr shart">Si tu viens chez moi…</span>
+            <span class="ar"><span class="mot part-cond" data-role="1">إِذَا</span> <span class="mot shart" data-role="2">جِئْتَ إِلَى بَيْتِي</span></span>
+            <span class="fr trad shart">Si tu viens chez moi…</span>
         </div>
         <div class="cond-part p-jawab">
-            <span class="ar"><span class="jawab">تَأْكُلُ طَبَقًا طَيِّبًا</span></span>
-            <span class="fr jawab">…tu mangeras un bon plat.</span>
+            <span class="ar"><span class="mot jawab" data-role="3">تَأْكُلُ طَبَقًا طَيِّبًا</span></span>
+            <span class="fr trad jawab">…tu mangeras un bon plat.</span>
         </div>
     </div>
 
@@ -165,12 +168,12 @@
             <span>Condition (الشَرْط)</span><span>Réponse (جَوَاب الشَرْط)</span>
         </div>
         <div class="cond-part p-shart">
-            <span class="ar"><span class="part-cond">إِذَا</span> <span class="shart">نَجَحْتَ فِي الاِمْتِحَانِ</span></span>
-            <span class="fr shart">Si tu réussis l'examen…</span>
+            <span class="ar"><span class="mot part-cond" data-role="1">إِذَا</span> <span class="mot shart" data-role="2">نَجَحْتَ فِي الاِمْتِحَانِ</span></span>
+            <span class="fr trad shart">Si tu réussis l'examen…</span>
         </div>
         <div class="cond-part p-jawab">
-            <span class="ar"><span class="jawab">سَأَحْتَفِلُ مَعَ أَصْدِقَائِي</span></span>
-            <span class="fr jawab">…je ferai la fête avec mes amis.</span>
+            <span class="ar"><span class="mot jawab" data-role="3">سَأَحْتَفِلُ مَعَ أَصْدِقَائِي</span></span>
+            <span class="fr trad jawab">…je ferai la fête avec mes amis.</span>
         </div>
     </div>
 
@@ -182,22 +185,22 @@
         <tbody>
             <tr>
                 <td>Réponse = phrase nominale</td>
-                <td><span class="arabic">إِذَا اشْتَرَكْتَ فِي الحَرْبِ <span class="jawab">فَدُعَائِي مَعَكَ</span></span></td>
+                <td><span class="arabic">إِذَا اشْتَرَكْتَ فِي الحَرْبِ <span class="mot jawab" data-role="3">فَدُعَائِي مَعَكَ</span></span></td>
                 <td>Si tu pars à la guerre, mes prières t'accompagnent.</td>
             </tr>
             <tr>
                 <td>Réponse = impératif</td>
-                <td><span class="arabic">إِذَا ذَهَبْتَ إِلَى السُوقِ <span class="jawab">فَاشْتَرِ</span> تُفَّاحًا</span></td>
+                <td><span class="arabic">إِذَا ذَهَبْتَ إِلَى السُوقِ <span class="mot jawab" data-role="3">فَاشْتَرِ</span> تُفَّاحًا</span></td>
                 <td>Si tu vas au marché, achète des pommes.</td>
             </tr>
             <tr>
                 <td>Réponse avec سَـ / سَوْفَ</td>
-                <td><span class="arabic">إِذَا أَكْمَلْتُ الدِّرَاسَةَ <span class="jawab">فَسَأَذْهَبُ</span> إِلَى المَكْتَبِ</span></td>
+                <td><span class="arabic">إِذَا أَكْمَلْتُ الدِّرَاسَةَ <span class="mot jawab" data-role="3">فَسَأَذْهَبُ</span> إِلَى المَكْتَبِ</span></td>
                 <td>Si je termine l'étude, je me rendrai au bureau.</td>
             </tr>
             <tr>
                 <td>Réponse avec لَنْ / لا (négation)</td>
-                <td><span class="arabic">إِذَا تَبَعْتَ نَصِيحَتِي <span class="jawab">فَلَنْ تَفْشَلَ</span></span></td>
+                <td><span class="arabic">إِذَا تَبَعْتَ نَصِيحَتِي <span class="mot jawab" data-role="3">فَلَنْ تَفْشَلَ</span></span></td>
                 <td>Si tu suis mes conseils, tu n'échoueras pas.</td>
             </tr>
         </tbody>
@@ -224,36 +227,36 @@
     <div class="cond-block">
         <div class="cond-part header"><span>إِنْ + passé</span><span>→ passé</span></div>
         <div class="cond-part p-shart">
-            <span class="ar"><span class="part-cond">إِنْ</span> <span class="shart">دَرَسْتَ</span></span>
-            <span class="fr shart">Si tu étudies…</span>
+            <span class="ar"><span class="mot part-cond" data-role="1">إِنْ</span> <span class="mot shart" data-role="2">دَرَسْتَ</span></span>
+            <span class="fr trad shart">Si tu étudies…</span>
         </div>
         <div class="cond-part p-jawab">
-            <span class="ar"><span class="jawab">نَجَحْتَ</span></span>
-            <span class="fr jawab">…tu réussiras.</span>
+            <span class="ar"><span class="mot jawab" data-role="3">نَجَحْتَ</span></span>
+            <span class="fr trad jawab">…tu réussiras.</span>
         </div>
     </div>
 
     <div class="cond-block">
         <div class="cond-part header"><span>إِنْ + passé</span><span>→ futur</span></div>
         <div class="cond-part p-shart">
-            <span class="ar"><span class="part-cond">إِنْ</span> <span class="shart">دَرَسْتَ</span></span>
-            <span class="fr shart">Si tu étudies…</span>
+            <span class="ar"><span class="mot part-cond" data-role="1">إِنْ</span> <span class="mot shart" data-role="2">دَرَسْتَ</span></span>
+            <span class="fr trad shart">Si tu étudies…</span>
         </div>
         <div class="cond-part p-jawab">
-            <span class="ar"><span class="jawab">سَتَنْجَحُ</span></span>
-            <span class="fr jawab">…tu réussiras.</span>
+            <span class="ar"><span class="mot jawab" data-role="3">سَتَنْجَحُ</span></span>
+            <span class="fr trad jawab">…tu réussiras.</span>
         </div>
     </div>
 
     <div class="cond-block">
         <div class="cond-part header"><span>إِنْ + apocopé</span><span>→ apocopé</span></div>
         <div class="cond-part p-shart">
-            <span class="ar"><span class="part-cond">إِنْ</span> <span class="shart">تَعْمَلْ</span></span>
-            <span class="fr shart">Si tu travailles…</span>
+            <span class="ar"><span class="mot part-cond" data-role="1">إِنْ</span> <span class="mot shart" data-role="2">تَعْمَلْ</span></span>
+            <span class="fr trad shart">Si tu travailles…</span>
         </div>
         <div class="cond-part p-jawab">
-            <span class="ar"><span class="jawab">تَنْجَحْ</span></span>
-            <span class="fr jawab">…tu réussiras.</span>
+            <span class="ar"><span class="mot jawab" data-role="3">تَنْجَحْ</span></span>
+            <span class="fr trad jawab">…tu réussiras.</span>
         </div>
     </div>
 
@@ -261,7 +264,7 @@
         <strong>📌 مَنْ, مَا, مَهْما — fonctionnent comme إِنْ :</strong><br>
         Les pronoms relatifs-conditionnels مَنْ (quiconque), مَا (quoi que), et مَهْما (quoi qu'il arrive)
         suivent les mêmes règles que إِنْ :<br>
-        <span class="arabic">مَنْ يَعْمَلْ يَنْجَحْ</span> → Quiconque travaille réussira.
+        <span class="arabic">مَنْ يَعْمَلْ يَنْجَحْ</span> → <span class="trad">Quiconque travaille réussira.</span>
     </div>
 
     <!-- ════════════ لو ════════════ -->
@@ -278,8 +281,8 @@
     <div class="rule-box">
         <strong>⚙️ Formule :</strong>
         <div style="text-align: center; font-size: 1.15em; margin: 10px 0;">
-            <span class="part-cond">لَوْ</span> + <span class="shart">passé</span>
-            + <span class="jawab">لَـ + passé</span>
+            <span class="mot part-cond" data-role="1">لَوْ</span> + <span class="mot shart" data-role="2">passé</span>
+            + <span class="mot jawab" data-role="3">لَـ + passé</span>
         </div>
     </div>
 
@@ -288,24 +291,24 @@
     <div class="cond-block">
         <div class="cond-part header"><span>لَوْ + passé</span><span>→ لَـ + passé</span></div>
         <div class="cond-part p-shart">
-            <span class="ar"><span class="part-cond">لَوْ</span> <span class="shart">كُنْتُ مُدِيرًا</span></span>
-            <span class="fr shart">Si j'étais directeur…</span>
+            <span class="ar"><span class="mot part-cond" data-role="1">لَوْ</span> <span class="mot shart" data-role="2">كُنْتُ مُدِيرًا</span></span>
+            <span class="fr trad shart">Si j'étais directeur…</span>
         </div>
         <div class="cond-part p-jawab">
-            <span class="ar"><span class="jawab">لَحَلَّتِ المُشْكِلَةُ</span></span>
-            <span class="fr jawab">…le problème serait résolu.</span>
+            <span class="ar"><span class="mot jawab" data-role="3">لَحَلَّتِ المُشْكِلَةُ</span></span>
+            <span class="fr trad jawab">…le problème serait résolu.</span>
         </div>
     </div>
 
     <div class="cond-block">
         <div class="cond-part header"><span>لَوْ + passé</span><span>→ لَـ + passé</span></div>
         <div class="cond-part p-shart">
-            <span class="ar"><span class="part-cond">لَوْ</span> <span class="shart">وَاكَبْتَنِي البَارِحَةَ</span></span>
-            <span class="fr shart">Si tu m'avais accompagné hier…</span>
+            <span class="ar"><span class="mot part-cond" data-role="1">لَوْ</span> <span class="mot shart" data-role="2">وَاكَبْتَنِي البَارِحَةَ</span></span>
+            <span class="fr trad shart">Si tu m'avais accompagné hier…</span>
         </div>
         <div class="cond-part p-jawab">
-            <span class="ar"><span class="jawab">لاسْتَمْتَعْتَ بِوَقْتِكَ</span></span>
-            <span class="fr jawab">…tu aurais passé un bon moment.</span>
+            <span class="ar"><span class="mot jawab" data-role="3">لاسْتَمْتَعْتَ بِوَقْتِكَ</span></span>
+            <span class="fr trad jawab">…tu aurais passé un bon moment.</span>
         </div>
     </div>
 
@@ -348,21 +351,21 @@
         </thead>
         <tbody>
             <tr>
-                <td><span class="arabic part-cond" style="font-size: 1.6em;">إِذَا</span></td>
+                <td><span class="arabic mot part-cond" data-role="1" style="font-size: 1.6em;">إِذَا</span></td>
                 <td>Éventualité concrète</td>
                 <td>Passé</td>
                 <td>Passé / Présent / Futur</td>
                 <td><em>Si tu viens (et tu vas probablement venir)…</em></td>
             </tr>
             <tr>
-                <td><span class="arabic part-cond" style="font-size: 1.6em;">إِنْ</span></td>
+                <td><span class="arabic mot part-cond" data-role="1" style="font-size: 1.6em;">إِنْ</span></td>
                 <td>Hypothèse possible</td>
                 <td>Passé ou Apocopé</td>
                 <td>Passé / Apocopé / Futur</td>
                 <td><em>Si tu étudies (peut-être que tu étudieras)…</em></td>
             </tr>
             <tr>
-                <td><span class="arabic part-cond" style="font-size: 1.6em;">لَوْ</span></td>
+                <td><span class="arabic mot part-cond" data-role="1" style="font-size: 1.6em;">لَوْ</span></td>
                 <td>Irréel / très improbable</td>
                 <td>Passé</td>
                 <td>لَـ + Passé</td>

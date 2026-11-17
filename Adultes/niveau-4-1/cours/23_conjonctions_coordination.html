@@ -8,26 +8,27 @@
     <link rel="stylesheet" href="../../../fonts/fonts.css">
     <link rel="stylesheet" href="../../../css/amana-base.css">
     <link rel="stylesheet" href="../../../css/theme-adulte.css">
+<link rel="stylesheet" href="../../../css/amana-tokens.css">
+<link rel="stylesheet" href="../../../css/amana-components.css">
+<script src="../../../js/outils-lecture.js" defer></script>
     <link rel="stylesheet" href="../../../css/amana-content.css">
     <style>
         /* Composants propres à ce cours (couleurs de rôle grammatical, cartes, etc.) */
-        .maatouf-alayh { color: #1565c0; font-weight: bold; }
-        .harf { color: #6a1b9a; font-weight: bold; }
-        .maatouf { color: #e65100; font-weight: bold; }
+        .maatouf-alayh { color: var(--role-2); font-weight: bold; }
+        .harf { color: var(--role-1); font-weight: bold; }
+        .maatouf { color: var(--role-3); font-weight: bold; }
         .arabic-lg { font-size: 1.7em; color: #764ba2; font-weight: bold; }
         .anatomy { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 8px; padding: 18px; background: #fafafa; border-radius: 10px; border: 1px solid #ddd; margin: 15px 0; font-size: 1.1em; }
         .anatomy .block { text-align: center; padding: 10px 16px; border-radius: 8px; min-width: 90px; }
         .anatomy .block .arabic { font-size: 1.6em; }
         .anatomy .block .label { font-size: 0.75em; font-weight: bold; margin-top: 4px; }
         .anatomy .arrow { font-size: 1.5em; color: #999; }
-        .block.b-maatouf-alayh { background: #bbdefb; border: 2px solid #1565c0; }
-        .block.b-harf { border: 2px solid #6a1b9a; }
-        .block.b-maatouf { background: #ffe0b2; border: 2px solid #e65100; }
+        .block.b-maatouf-alayh { background: color-mix(in srgb, var(--role-2) 18%, #fff); border: 2px solid var(--role-2); }
+        .block.b-harf { border: 2px solid var(--role-1); }
+        .block.b-maatouf { background: color-mix(in srgb, var(--role-3) 18%, #fff); border: 2px solid var(--role-3); }
         .legend { display: flex; flex-wrap: wrap; gap: 10px; margin: 10px 0 20px; font-size: 0.9em; }
         .legend-item { display: flex; align-items: center; gap: 6px; }
         .legend-dot { width: 14px; height: 14px; border-radius: 50%; display: inline-block; }
-        .phrase-example .fr { color: #555; }
-        .phrase-example .parse { font-size: 0.88em; color: #777; margin-top: 5px; }
     </style>
 </head>
 
@@ -45,9 +46,9 @@
         <div class="intro">
             Une conjonction de coordination relie deux mots ou deux phrases de <strong>même niveau</strong> — deux
             noms, deux verbes, deux phrases entières — un peu comme « et », « ou », « mais » en français. En
-            grammaire arabe traditionnelle, ce chapitre s'appelle <span class="harf">العَطْف</span> (littéralement
-            « le rattachement ») : le second élément est <span class="maatouf">« rattaché »</span> au premier, qui
-            lui sert de <span class="maatouf-alayh">référence</span>. Les grammairiens classiques, notamment l'auteur
+            grammaire arabe traditionnelle, ce chapitre s'appelle <span class="mot harf" data-role="1">العَطْف</span> (littéralement
+            « le rattachement ») : le second élément est <span class="mot maatouf" data-role="3">« rattaché »</span> au premier, qui
+            lui sert de <span class="mot maatouf-alayh" data-role="2">référence</span>. Les grammairiens classiques, notamment l'auteur
             de la <em><span class="arabic" lang="ar" dir="rtl">الْآجُرُّومِيَّةُ</span></em> — le petit traité qui sert de référence à l'apprentissage du <span class="arabic" lang="ar" dir="rtl">النَّحْوِ</span> (la grammaire arabe) depuis huit siècles — en dénombrent exactement <strong>dix</strong>.
         </div>
 
@@ -63,43 +64,43 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><span class="arabic harf">وَ</span></td>
+                    <td><span class="arabic mot harf" data-role="1">وَ</span></td>
                     <td>et</td>
                 </tr>
                 <tr>
-                    <td><span class="arabic harf">فَـ</span></td>
+                    <td><span class="arabic mot harf" data-role="1">فَـ</span></td>
                     <td>puis, donc, alors</td>
                 </tr>
                 <tr>
-                    <td><span class="arabic harf">ثُمَّ</span></td>
+                    <td><span class="arabic mot harf" data-role="1">ثُمَّ</span></td>
                     <td>puis, ensuite (avec une pause)</td>
                 </tr>
                 <tr>
-                    <td><span class="arabic harf">أَوْ</span></td>
+                    <td><span class="arabic mot harf" data-role="1">أَوْ</span></td>
                     <td>ou</td>
                 </tr>
                 <tr>
-                    <td><span class="arabic harf">أَمْ</span></td>
+                    <td><span class="arabic mot harf" data-role="1">أَمْ</span></td>
                     <td>ou (dans une question à choix)</td>
                 </tr>
                 <tr>
-                    <td><span class="arabic harf">إِمَّا</span></td>
+                    <td><span class="arabic mot harf" data-role="1">إِمَّا</span></td>
                     <td>soit... soit...</td>
                 </tr>
                 <tr>
-                    <td><span class="arabic harf">بَلْ</span></td>
+                    <td><span class="arabic mot harf" data-role="1">بَلْ</span></td>
                     <td>plutôt, voire, au contraire</td>
                 </tr>
                 <tr>
-                    <td><span class="arabic harf">لا</span></td>
+                    <td><span class="arabic mot harf" data-role="1">لا</span></td>
                     <td>et non, pas</td>
                 </tr>
                 <tr>
-                    <td><span class="arabic harf">لٰكِنْ</span></td>
+                    <td><span class="arabic mot harf" data-role="1">لٰكِنْ</span></td>
                     <td>mais</td>
                 </tr>
                 <tr>
-                    <td><span class="arabic harf">حَتّى</span></td>
+                    <td><span class="arabic mot harf" data-role="1">حَتّى</span></td>
                     <td>même, y compris</td>
                 </tr>
             </tbody>
@@ -141,7 +142,7 @@
         <div class="rule-box">
             <strong>⚙️ Formule :</strong>
             <p style="text-align: center; font-size: 1.15em; margin: 8px 0;">
-                <span class="maatouf-alayh">مَعْطُوف عَلَيْه</span> + <span class="harf">حَرْف عَطْف</span> + <span
+                <span class="mot maatouf-alayh" data-role="2">مَعْطُوف عَلَيْه</span> + <span class="mot harf" data-role="1">حَرْف عَطْف</span> + <span
                     class="maatouf">مَعْطُوف</span>
             </p>
             <p style="text-align: center; color: #666; margin: 0;">Le مَعْطُوف (le second mot) prend toujours le
@@ -161,26 +162,26 @@
             <tbody>
                 <tr>
                     <td>مَرْفُوع (sujet)</td>
-                    <td><span class="arabic">قامَ <span class="maatouf-alayh">زَيْدٌ</span> <span
-                                class="harf">وَ</span><span class="maatouf">عَمْرٌو</span></span></td>
+                    <td><span class="arabic">قامَ <span class="mot maatouf-alayh" data-role="2">زَيْدٌ</span> <span
+                                class="harf">وَ</span><span class="mot maatouf" data-role="3">عَمْرٌو</span></span></td>
                     <td>Zayd et Amr se sont levés</td>
                 </tr>
                 <tr>
                     <td>مَنْصُوب (COD)</td>
-                    <td><span class="arabic">رَأَيْتُ <span class="maatouf-alayh">زَيْدًا</span> <span
-                                class="harf">وَ</span><span class="maatouf">عَمْرًا</span></span></td>
+                    <td><span class="arabic">رَأَيْتُ <span class="mot maatouf-alayh" data-role="2">زَيْدًا</span> <span
+                                class="harf">وَ</span><span class="mot maatouf" data-role="3">عَمْرًا</span></span></td>
                     <td>J'ai vu Zayd et Amr</td>
                 </tr>
                 <tr>
                     <td>مَجْرُور (après préposition)</td>
-                    <td><span class="arabic">مَرَرْتُ بِ<span class="maatouf-alayh">زَيْدٍ</span> <span
-                                class="harf">وَ</span><span class="maatouf">عَمْرٍو</span></span></td>
+                    <td><span class="arabic">مَرَرْتُ بِ<span class="mot maatouf-alayh" data-role="2">زَيْدٍ</span> <span
+                                class="harf">وَ</span><span class="mot maatouf" data-role="3">عَمْرٍو</span></span></td>
                     <td>Je suis passé près de Zayd et Amr</td>
                 </tr>
                 <tr>
                     <td>مَجْزُوم (verbe à l'apocopé)</td>
-                    <td><span class="arabic">زَيْدٌ <span class="maatouf-alayh">لَمْ يَقُمْ</span> <span
-                                class="harf">وَ</span>لَمْ <span class="maatouf">يَقْعُدْ</span></span></td>
+                    <td><span class="arabic">زَيْدٌ <span class="mot maatouf-alayh" data-role="2">لَمْ يَقُمْ</span> <span
+                                class="harf">وَ</span>لَمْ <span class="mot maatouf" data-role="3">يَقْعُدْ</span></span></td>
                     <td>Zayd ne s'est ni levé ni assis</td>
                 </tr>
             </tbody>
@@ -205,38 +206,27 @@
             Formée d'une seule lettre, elle se <strong>colle directement</strong> au mot qui suit, sans espace ni
             voyelle propre. C'est la conjonction la plus courante : elle relie deux noms ou deux phrases sans
             imposer d'ordre chronologique entre les deux actions.
-        </div>
+        </div><ol class="paires sans-num">
 
-        <div class="phrase-example">
-            <div class="ar">لَعِبَ مَعَ <span class="maatouf-alayh">اِبْنِهِ</span> <span class="harf">وَ</span><span
-                    class="maatouf">كَلْبِهِ</span></div>
-            <div class="fr">Il a joué avec son fils et son chien</div>
-        </div>
+        <li class="paire"><p class="paire-ar">لَعِبَ مَعَ <span class="mot maatouf-alayh" data-role="2">اِبْنِهِ</span> <span class="mot harf" data-role="1">وَ</span><span
+                    class="maatouf">كَلْبِهِ</span></p><p class="paire-fr">Il a joué avec son fils et son chien</p></li>
 
-        <div class="phrase-example">
-            <div class="ar"><span class="maatouf-alayh">قامَ</span> <span class="harf">وَ</span><span
-                    class="maatouf">تَكَلَّمَ</span></div>
-            <div class="fr">Il s'est levé et a parlé</div>
-        </div>
+        <li class="paire"><p class="paire-ar"><span class="mot maatouf-alayh" data-role="2">قامَ</span> <span class="mot harf" data-role="1">وَ</span><span
+                    class="maatouf">تَكَلَّمَ</span></p><p class="paire-fr">Il s'est levé et a parlé</p></li>
+</ol>
 
         <div class="note">
             <strong>💡 Une conjonction pour chaque élément :</strong> Contrairement au français, qui ne place « et »
             que devant le tout dernier élément d'une liste, l'arabe répète وَ devant <strong>chaque</strong> nom
-            coordonné :
-            <div class="phrase-example" style="margin-top: 10px;">
-                <div class="ar">رَأَيْتُ كَريمًا <span class="harf">وَ</span>سالِمًا <span class="harf">وَ</span>لَيْلَى
-                    <span class="harf">وَ</span>خَديجةَ
-                </div>
-                <div class="fr">J'ai vu Karim, Salim, Layla et Khadija</div>
-            </div>
-        </div>
+            coordonné :<ol class="paires sans-num">
+            <li class="paire"><p class="paire-ar">رَأَيْتُ كَريمًا <span class="mot harf" data-role="1">وَ</span>سالِمًا <span class="mot harf" data-role="1">وَ</span>لَيْلَى
+                    <span class="mot harf" data-role="1">وَ</span>خَديجةَ</p><p class="paire-fr">J'ai vu Karim, Salim, Layla et Khadija</p></li>
+</ol>
+        </div><ol class="paires sans-num">
 
-        <div class="phrase-example">
-            <div class="ar">لَيْسَ قَلِقًا <span class="harf">وَ</span>لا مُرْتاحًا</div>
-            <div class="fr">Il n'est ni stressé ni détendu</div>
-            <div class="parse">Pour dire « ni... ni... », l'arabe combine toujours وَ + لا devant le second terme
-                nié, quelle que soit la négation employée dans la phrase.</div>
-        </div>
+        <li class="paire"><p class="paire-ar">لَيْسَ قَلِقًا <span class="mot harf" data-role="1">وَ</span>لا مُرْتاحًا</p><p class="paire-fr">Il n'est ni stressé ni détendu</p><p class="paire-analyse">Pour dire « ni... ni... », l'arabe combine toujours وَ + لا devant le second terme
+                nié, quelle que soit la négation employée dans la phrase.</p></li>
+</ol>
 
         <!-- FA -->
         <h3>فَـ — puis, donc, alors</h3>
@@ -246,19 +236,13 @@
             <strong>enchaînement rapide</strong>, souvent avec une nuance de cause à effet. Selon le contexte, elle
             se traduit par « puis », « donc » ou « alors » — un peu comme jouerait, en français, une virgule ou un
             point-virgule.
-        </div>
+        </div><ol class="paires sans-num">
 
-        <div class="phrase-example">
-            <div class="ar">لَمْ يَعْرِفِ الجَوابَ <span class="harf">فَ</span>سَأَلَ صَدِيقَهُ</div>
-            <div class="fr">Il ne connaissait pas la réponse, donc il a demandé à son ami</div>
-        </div>
+        <li class="paire"><p class="paire-ar">لَمْ يَعْرِفِ الجَوابَ <span class="mot harf" data-role="1">فَ</span>سَأَلَ صَدِيقَهُ</p><p class="paire-fr">Il ne connaissait pas la réponse, donc il a demandé à son ami</p></li>
 
-        <div class="phrase-example">
-            <div class="ar">خَرَجَ حَكِيمٌ <span class="harf">فَ</span>سالِمٌ</div>
-            <div class="fr">Hakim est sorti, puis Salim (juste après lui)</div>
-            <div class="parse">Contrairement à وَ, فَـ indique clairement que le deuxième événement suit le premier
-                de très près.</div>
-        </div>
+        <li class="paire"><p class="paire-ar">خَرَجَ حَكِيمٌ <span class="mot harf" data-role="1">فَ</span>سالِمٌ</p><p class="paire-fr">Hakim est sorti, puis Salim (juste après lui)</p><p class="paire-analyse">Contrairement à وَ, فَـ indique clairement que le deuxième événement suit le premier
+                de très près.</p></li>
+</ol>
 
         <div class="note">
             <strong>💡 Pour aller plus loin :</strong> Quand فَـ relie une phrase à une <strong>conséquence
@@ -273,12 +257,10 @@
         <div class="rule-box">
             ثُمَّ exprime elle aussi une succession, mais avec une <strong>vraie pause</strong> dans le temps entre
             les deux actions — contrairement à فَـ, qui suggère l'immédiateté.
-        </div>
+        </div><ol class="paires sans-num">
 
-        <div class="phrase-example">
-            <div class="ar">أَكَلَ <span class="harf">ثُمَّ</span> اسْتَراحَ</div>
-            <div class="fr">Il a mangé, puis s'est reposé (un moment après)</div>
-        </div>
+        <li class="paire"><p class="paire-ar">أَكَلَ <span class="mot harf" data-role="1">ثُمَّ</span> اسْتَراحَ</p><p class="paire-fr">Il a mangé, puis s'est reposé (un moment après)</p></li>
+</ol>
 
         <!-- AW / AM -->
         <h3>أَوْ et أَمْ — ou</h3>
@@ -287,23 +269,19 @@
             <strong>أَوْ</strong> relie deux noms ou deux phrases pour proposer une <strong>alternative</strong>,
             aussi bien dans une phrase affirmative que dans une question ouverte, où la réponse n'est pas
             forcément l'un des éléments cités.
-        </div>
+        </div><ol class="paires sans-num">
 
-        <div class="phrase-example">
-            <div class="ar">سَأَذْهَبُ إِلى الدَوحةِ <span class="harf">أَوْ</span> الرِياضِ غَدًا</div>
-            <div class="fr">Demain, je vais à Doha ou à Riyad</div>
-        </div>
+        <li class="paire"><p class="paire-ar">سَأَذْهَبُ إِلى الدَوحةِ <span class="mot harf" data-role="1">أَوْ</span> الرِياضِ غَدًا</p><p class="paire-fr">Demain, je vais à Doha ou à Riyad</p></li>
+</ol>
 
         <div class="info-box">
             <strong>أَمْ</strong> a le même sens général, mais s'utilise dans une question <strong>introduite par
                 أَ</strong> qui propose un choix explicite entre deux éléments précis — on attend une réponse parmi
             les deux, pas une troisième option.
-        </div>
+        </div><ol class="paires sans-num">
 
-        <div class="phrase-example">
-            <div class="ar">أَمُطْرِبٌ أَنْتَ <span class="harf">أَمْ</span> شاعِرٌ ؟</div>
-            <div class="fr">Es-tu chanteur ou poète ?</div>
-        </div>
+        <li class="paire"><p class="paire-ar">أَمُطْرِبٌ أَنْتَ <span class="mot harf" data-role="1">أَمْ</span> شاعِرٌ ؟</p><p class="paire-fr">Es-tu chanteur ou poète ?</p></li>
+</ol>
 
         <!-- IMMA -->
         <h3>إِمَّا... إِمَّا / إِمَّا... أَوْ — soit... soit...</h3>
@@ -311,13 +289,11 @@
         <div class="info-box">
             C'est la dixième conjonction citée par la <span class="arabic" lang="ar" dir="rtl">الْآجُرُّومِيَّةُ</span>. Répétée deux fois — ou combinée à أَوْ pour le
             second terme — elle marque un choix <strong>exclusif</strong> entre deux possibilités.
-        </div>
+        </div><ol class="paires sans-num">
 
-        <div class="phrase-example">
-            <div class="ar"><span class="harf">إِمَّا</span> أَنْ تَنْجَحَ <span class="harf">وَإِمَّا</span> أَنْ
-                تُعِيدَ السَنةَ</div>
-            <div class="fr">Soit tu réussis, soit tu redoubles l'année</div>
-        </div>
+        <li class="paire"><p class="paire-ar"><span class="mot harf" data-role="1">إِمَّا</span> أَنْ تَنْجَحَ <span class="mot harf" data-role="1">وَإِمَّا</span> أَنْ
+                تُعِيدَ السَنةَ</p><p class="paire-fr">Soit tu réussis, soit tu redoubles l'année</p></li>
+</ol>
 
         <!-- BAL -->
         <h3>بَلْ — plutôt, voire, au contraire</h3>
@@ -326,29 +302,22 @@
             Dans une phrase <strong>affirmative</strong>, بَلْ renforce l'idée précédente : « bien plus », « même ».
             Dans une phrase <strong>négative</strong>, elle corrige au contraire ce qui vient d'être dit : « mais
             plutôt », « au contraire ».
-        </div>
+        </div><ol class="paires sans-num">
 
-        <div class="phrase-example">
-            <div class="ar">لَدَيْهِ المَلايِينُ <span class="harf">بَلِ</span> المِلْيارَاتُ</div>
-            <div class="fr">Il a des millions, voire des milliards</div>
-        </div>
+        <li class="paire"><p class="paire-ar">لَدَيْهِ المَلايِينُ <span class="mot harf" data-role="1">بَلِ</span> المِلْيارَاتُ</p><p class="paire-fr">Il a des millions, voire des milliards</p></li>
 
-        <div class="phrase-example">
-            <div class="ar">لا يُحِبُّ الكِلابَ <span class="harf">بَلِ</span> القِطَطَ</div>
-            <div class="fr">Il n'aime pas les chiens, mais plutôt les chats</div>
-        </div>
+        <li class="paire"><p class="paire-ar">لا يُحِبُّ الكِلابَ <span class="mot harf" data-role="1">بَلِ</span> القِطَطَ</p><p class="paire-fr">Il n'aime pas les chiens, mais plutôt les chats</p></li>
+</ol>
 
         <!-- LAKIN -->
         <h3>لٰكِنْ — mais</h3>
 
         <div class="rule-box">
             لٰكِنْ s'utilise généralement précédée de وَ, et introduit une opposition simple entre deux idées.
-        </div>
+        </div><ol class="paires sans-num">
 
-        <div class="phrase-example">
-            <div class="ar">لَيْسَ مَوْهُوبًا <span class="harf">وَلٰكِنْ</span> يَجْتَهِدُ</div>
-            <div class="fr">Il n'est pas talentueux, mais il travaille dur</div>
-        </div>
+        <li class="paire"><p class="paire-ar">لَيْسَ مَوْهُوبًا <span class="mot harf" data-role="1">وَلٰكِنْ</span> يَجْتَهِدُ</p><p class="paire-fr">Il n'est pas talentueux, mais il travaille dur</p></li>
+</ol>
 
         <div class="warning-box">
             <strong>⚠️ Ne pas confondre :</strong> Il existe une autre particule, لٰكِنَّ (avec une <span class="arabic" lang="ar" dir="rtl">شَدَّةٌ</span> sur le
@@ -363,12 +332,10 @@
         <div class="rule-box">
             En tant que conjonction, حَتّى relie un élément à un ensemble déjà mentionné, en soulignant qu'il en fait
             partie <strong>lui aussi</strong>, parfois de façon inattendue.
-        </div>
+        </div><ol class="paires sans-num">
 
-        <div class="phrase-example">
-            <div class="ar">تَمَتَّعَ الأَطْفالُ بِالحَفْلةِ <span class="harf">حَتّى</span> الآباءُ</div>
-            <div class="fr">Les enfants ont apprécié la fête, même les parents</div>
-        </div>
+        <li class="paire"><p class="paire-ar">تَمَتَّعَ الأَطْفالُ بِالحَفْلةِ <span class="mot harf" data-role="1">حَتّى</span> الآباءُ</p><p class="paire-fr">Les enfants ont apprécié la fête, même les parents</p></li>
+</ol>
 
         <div class="note">
             <strong>💡 Attention :</strong> حَتّى a un autre emploi, beaucoup plus fréquent : celui de
@@ -382,12 +349,10 @@
         <div class="rule-box">
             Après une phrase <strong>affirmative</strong>, لا permet d'exclure explicitement un second terme, pour
             dire « et non pas ». Le mot qui suit reste au singulier.
-        </div>
+        </div><ol class="paires sans-num">
 
-        <div class="phrase-example">
-            <div class="ar">رَفِيقٌ مُهَنْدِسٌ <span class="harf">لا</span> طَبَّاخٌ</div>
-            <div class="fr">Rafiq est ingénieur, pas cuisinier</div>
-        </div>
+        <li class="paire"><p class="paire-ar">رَفِيقٌ مُهَنْدِسٌ <span class="mot harf" data-role="1">لا</span> طَبَّاخٌ</p><p class="paire-fr">Rafiq est ingénieur, pas cuisinier</p></li>
+</ol>
 
         <!-- ════════════════════════════════════════════ -->
         <h2>📝 Résumé de la leçon</h2>
@@ -397,7 +362,7 @@
                 <li>Les <strong>dix conjonctions de coordination</strong> selon la <span class="arabic" lang="ar" dir="rtl">الْآجُرُّومِيَّةُ</span> : وَ، فَـ، ثُمَّ، أَوْ،
                     أَمْ، إِمَّا، بَلْ، لا، لٰكِنْ، حَتّى.</li>
                 <li>Ce sont des <strong>particules indéclinables</strong> : elles n'ont pas de cas propre.</li>
-                <li><strong>Règle d'or :</strong> le mot coordonné (<span class="maatouf">المَعْطُوف</span>) prend
+                <li><strong>Règle d'or :</strong> le mot coordonné (<span class="mot maatouf" data-role="3">المَعْطُوف</span>) prend
                     toujours le <strong>même cas</strong> que le mot de référence (<span
                         class="maatouf-alayh">المَعْطُوف عَلَيْه</span>) — مَرْفُوع، مَنْصُوب، مَجْرُور ou
                     مَجْزُوم.</li>

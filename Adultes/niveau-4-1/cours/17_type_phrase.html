@@ -8,54 +8,55 @@
     <link rel="stylesheet" href="../../../fonts/fonts.css">
     <link rel="stylesheet" href="../../../css/amana-base.css">
     <link rel="stylesheet" href="../../../css/theme-adulte.css">
+<link rel="stylesheet" href="../../../css/amana-tokens.css">
+<link rel="stylesheet" href="../../../css/amana-components.css">
+<script src="../../../js/outils-lecture.js" defer></script>
     <link rel="stylesheet" href="../../../css/amana-content.css">
     <style>
         /* Composants propres à ce cours (couleurs de rôle grammatical, cartes, etc.) */
-        .sujet { color: #1565c0; font-weight: bold; }
-        .info { color: #d32f2f; font-weight: bold; }
-        .verbe { color: #2e7d32; font-weight: bold; }
-        .faail { color: #1565c0; font-weight: bold; }
-        .mafoul { color: #e65100; font-weight: bold; }
+        .sujet { color: var(--role-1); font-weight: bold; }
+        .info { color: var(--role-2); font-weight: bold; }
+        .verbe { color: var(--role-2); font-weight: bold; }
+        .faail { color: var(--role-1); font-weight: bold; }
+        .mafoul { color: var(--role-3); font-weight: bold; }
         .arabic-lg { font-size: 1.7em; color: #764ba2; font-weight: bold; }
         .phrase-type-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 25px 0; }
         @media (max-width: 600px) {
             .phrase-type-grid { grid-template-columns: 1fr; }
         }
         .phrase-card { border-radius: 12px; padding: 20px; text-align: center; }
-        .phrase-card.nominale { border: 2px solid #1565c0; }
-        .phrase-card.verbale { border: 2px solid #2e7d32; }
+        .phrase-card.nominale { border: 2px solid var(--role-1); }
+        .phrase-card.verbale { border: 2px solid var(--role-2); }
         .phrase-card h3 { margin-top: 0; font-size: 1.2em; }
         .phrase-card .arabic-lg { display: block; margin: 10px 0; font-size: 2em; }
         .phrase-card p { font-size: 0.95em; color: #555; margin: 5px 0; }
         .phrase-card .badge { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 0.85em; font-weight: bold; margin-top: 8px; }
-        .nominale .badge { color: var(--ink); border: 1.5px solid #1565c0; }
-        .verbale .badge { color: var(--ink); border: 1.5px solid #2e7d32; }
+        .nominale .badge { color: var(--ink); border: 1.5px solid var(--role-1); }
+        .verbale .badge { color: var(--ink); border: 1.5px solid var(--role-2); }
         .anatomy { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 8px; padding: 18px; background: #fafafa; border-radius: 10px; border: 1px solid #ddd; margin: 15px 0; font-size: 1.1em; }
         .anatomy .block { text-align: center; padding: 10px 16px; border-radius: 8px; min-width: 90px; }
         .anatomy .block .arabic { font-size: 1.6em; }
         .anatomy .block .label { font-size: 0.75em; font-weight: bold; margin-top: 4px; }
         .anatomy .arrow { font-size: 1.5em; color: #999; }
-        .block.b-sujet { background: #bbdefb; border: 2px solid #1565c0; }
-        .block.b-info { background: #ffcdd2; border: 2px solid #d32f2f; }
-        .block.b-verbe { background: #c8e6c9; border: 2px solid #2e7d32; }
-        .block.b-faail { background: #bbdefb; border: 2px solid #1565c0; }
-        .block.b-mafoul { background: #ffe0b2; border: 2px solid #e65100; }
+        .block.b-sujet { background: color-mix(in srgb, var(--role-1) 18%, #fff); border: 2px solid var(--role-1); }
+        .block.b-info { background: color-mix(in srgb, var(--role-2) 18%, #fff); border: 2px solid var(--role-2); }
+        .block.b-verbe { background: color-mix(in srgb, var(--role-2) 18%, #fff); border: 2px solid var(--role-2); }
+        .block.b-faail { background: color-mix(in srgb, var(--role-1) 18%, #fff); border: 2px solid var(--role-1); }
+        .block.b-mafoul { background: color-mix(in srgb, var(--role-3) 18%, #fff); border: 2px solid var(--role-3); }
         .legend { display: flex; flex-wrap: wrap; gap: 10px; margin: 10px 0 20px; font-size: 0.9em; }
         .legend-item { display: flex; align-items: center; gap: 6px; }
         .legend-dot { width: 14px; height: 14px; border-radius: 50%; display: inline-block; }
-        .phrase-example .fr { color: #555; }
-        .phrase-example .parse { font-size: 0.88em; color: #777; margin-top: 5px; }
         .quiz-section { border-radius: 12px; padding: 25px; margin-top: 30px; border: 1.5px solid var(--accent); }
         .quiz-section h2 { border: none; margin-top: 0; }
         .quiz-question { background: white; border-radius: 10px; padding: 18px; margin-bottom: 16px; }
         .quiz-question p { font-weight: 600; margin: 0 0 12px; }
         .quiz-options { display: flex; flex-direction: column; gap: 8px; }
         .quiz-option { padding: 10px 15px; border: 2px solid #ddd; border-radius: 8px; background: white; font-size: 1em; text-align: left; }
-        .quiz-option.correct { background: #e8f5e9; border-color: #4caf50; color: #2e7d32; }
+        .quiz-option.correct { background: color-mix(in srgb, var(--role-2) 18%, #fff); border-color: #4caf50; color: var(--role-2); }
         .quiz-option.incorrect { background: #ffebee; border-color: #f44336; color: #c62828; }
         .quiz-feedback { margin-top: 8px; font-size: 0.9em; display: none; }
         .quiz-feedback.show { display: block; }
-        .feedback-ok { color: #2e7d32; font-weight: bold; }
+        .feedback-ok { color: var(--role-2); font-weight: bold; }
         .feedback-bad { color: #c62828; font-weight: bold; }
         .score-box { text-align: center; padding: 15px; background: white; border-radius: 10px; display: none; }
         .score-box.show { display: block; }
@@ -120,9 +121,9 @@
             !<br><br>
             Elle est composée de deux éléments :
             <ul>
-                <li><span class="sujet">المُبْتَدَأ</span> — <strong>le sujet</strong> : ce dont on parle (toujours au
+                <li><span class="mot sujet" data-role="1">المُبْتَدَأ</span> — <strong>le sujet</strong> : ce dont on parle (toujours au
                     cas sujet ضمة)</li>
-                <li><span class="info">الخَبَر</span> — <strong>l'information</strong> : ce qu'on dit du sujet (aussi au
+                <li><span class="mot info" data-role="2">الخَبَر</span> — <strong>l'information</strong> : ce qu'on dit du sujet (aussi au
                     cas sujet ضمة)</li>
             </ul>
         </div>
@@ -130,7 +131,7 @@
         <div class="rule-box">
             <strong>⚙️ Formule :</strong>
             <p style="text-align: center; font-size: 1.2em; margin: 8px 0;">
-                <span class="sujet">المُبْتَدَأ</span> (sujet) + <span class="info">الخَبَر</span> (information)
+                <span class="mot sujet" data-role="1">المُبْتَدَأ</span> (sujet) + <span class="mot info" data-role="2">الخَبَر</span> (information)
             </p>
             <p style="text-align: center; font-size: 1em; color: #666; margin: 0;">Les deux sont au cas sujet (مَرْفُوع ←
                 ضَمَّة)</p>
@@ -151,55 +152,34 @@
             </div>
         </div>
         <div class="example-box" style="text-align: center;">
-            <span class="arabic">البَيْتُ كَبِيرٌ</span> → La maison (est) grande
+            <span class="arabic">البَيْتُ كَبِيرٌ</span> → <span class="trad">La maison (est) grande</span>
         </div>
 
         <div class="legend">
-            <div class="legend-item"><span class="legend-dot" style="border: 1.5px solid #1565c0;"></span> <span
+            <div class="legend-item"><span class="legend-dot" style="border: 1.5px solid var(--role-1);"></span> <span
                     class="sujet">Sujet (مُبْتَدَأ)</span></div>
-            <div class="legend-item"><span class="legend-dot" style="border: 1.5px solid #d32f2f;"></span> <span
+            <div class="legend-item"><span class="legend-dot" style="border: 1.5px solid var(--role-2);"></span> <span
                     class="info">Information (خَبَر)</span></div>
         </div>
 
         <!-- Exemples nominale -->
-        <h3>📝 Exemples détaillés</h3>
+        <h3>📝 Exemples détaillés</h3><ol class="paires sans-num">
 
-        <div class="phrase-example">
-            <div class="ar"><span class="sujet">السَّيَّارَةُ</span> <span class="info">سَرِيعَةٌ</span></div>
-            <div class="fr">La voiture (est) rapide</div>
-            <div class="parse">Sujet : <span class="sujet">السَّيَّارَةُ</span> (la voiture, cas sujet) — Information :
-                <span class="info">سَرِيعَةٌ</span> (rapide, cas sujet)
-            </div>
-        </div>
+        <li class="paire"><p class="paire-ar"><span class="mot sujet" data-role="1">السَّيَّارَةُ</span> <span class="mot info" data-role="2">سَرِيعَةٌ</span></p><p class="paire-fr">La voiture (est) rapide</p><p class="paire-analyse">Sujet : <span class="mot sujet" data-role="1">السَّيَّارَةُ</span> (la voiture, cas sujet) — Information :
+                <span class="mot info" data-role="2">سَرِيعَةٌ</span> (rapide, cas sujet)</p></li>
 
-        <div class="phrase-example">
-            <div class="ar"><span class="sujet">الطَّالِبُ</span> <span class="info">مُجْتَهِدٌ</span></div>
-            <div class="fr">L'étudiant (est) appliqué</div>
-            <div class="parse">Sujet : <span class="sujet">الطَّالِبُ</span> — Information : <span
-                    class="info">مُجْتَهِدٌ</span></div>
-        </div>
+        <li class="paire"><p class="paire-ar"><span class="mot sujet" data-role="1">الطَّالِبُ</span> <span class="mot info" data-role="2">مُجْتَهِدٌ</span></p><p class="paire-fr">L'étudiant (est) appliqué</p><p class="paire-analyse">Sujet : <span class="mot sujet" data-role="1">الطَّالِبُ</span> — Information : <span
+                    class="info">مُجْتَهِدٌ</span></p></li>
 
-        <div class="phrase-example">
-            <div class="ar"><span class="sujet">المَدِينَةُ</span> <span class="info">جَمِيلَةٌ</span></div>
-            <div class="fr">La ville (est) belle</div>
-            <div class="parse">Sujet : <span class="sujet">المَدِينَةُ</span> — Information : <span
-                    class="info">جَمِيلَةٌ</span></div>
-        </div>
+        <li class="paire"><p class="paire-ar"><span class="mot sujet" data-role="1">المَدِينَةُ</span> <span class="mot info" data-role="2">جَمِيلَةٌ</span></p><p class="paire-fr">La ville (est) belle</p><p class="paire-analyse">Sujet : <span class="mot sujet" data-role="1">المَدِينَةُ</span> — Information : <span
+                    class="info">جَمِيلَةٌ</span></p></li>
 
-        <div class="phrase-example">
-            <div class="ar"><span class="sujet">هُوَ</span> <span class="info">طَالِبٌ</span></div>
-            <div class="fr">Il (est) étudiant</div>
-            <div class="parse">Sujet : <span class="sujet">هُوَ</span> (pronom, indéclinable) — Information : <span
-                    class="info">طَالِبٌ</span></div>
-        </div>
+        <li class="paire"><p class="paire-ar"><span class="mot sujet" data-role="1">هُوَ</span> <span class="mot info" data-role="2">طَالِبٌ</span></p><p class="paire-fr">Il (est) étudiant</p><p class="paire-analyse">Sujet : <span class="mot sujet" data-role="1">هُوَ</span> (pronom, indéclinable) — Information : <span
+                    class="info">طَالِبٌ</span></p></li>
 
-        <div class="phrase-example">
-            <div class="ar"><span class="sujet">هَذا</span> <span class="info">كِتَابٌ</span></div>
-            <div class="fr">Ceci (est) un livre</div>
-            <div class="parse">Sujet : <span class="sujet">هَذا</span> (démonstratif, indéclinable) — Information :
-                <span class="info">كِتَابٌ</span>
-            </div>
-        </div>
+        <li class="paire"><p class="paire-ar"><span class="mot sujet" data-role="1">هَذا</span> <span class="mot info" data-role="2">كِتَابٌ</span></p><p class="paire-fr">Ceci (est) un livre</p><p class="paire-analyse">Sujet : <span class="mot sujet" data-role="1">هَذا</span> (démonstratif, indéclinable) — Information :
+                <span class="mot info" data-role="2">كِتَابٌ</span></p></li>
+</ol>
 
         <!-- Types d'information (خبر) -->
         <h3>📚 L'information (الخَبَر) peut être de plusieurs formes</h3>
@@ -215,25 +195,25 @@
             <tbody>
                 <tr>
                     <td><strong>Adjectif</strong></td>
-                    <td><span class="arabic"><span class="sujet">الجَوُّ</span> <span class="info">بَارِدٌ</span></span>
+                    <td><span class="arabic"><span class="mot sujet" data-role="1">الجَوُّ</span> <span class="mot info" data-role="2">بَارِدٌ</span></span>
                     </td>
                     <td>Le temps (est) froid</td>
                 </tr>
                 <tr>
                     <td><strong>Nom</strong></td>
-                    <td><span class="arabic"><span class="sujet">مُحَمَّدٌ</span> <span
+                    <td><span class="arabic"><span class="mot sujet" data-role="1">مُحَمَّدٌ</span> <span
                                 class="info">طَبِيبٌ</span></span></td>
                     <td>Mohamed (est) médecin</td>
                 </tr>
                 <tr>
                     <td><strong>Adverbe de lieu</strong></td>
-                    <td><span class="arabic"><span class="sujet">الكِتَابُ</span> <span class="info">هُنَا</span></span>
+                    <td><span class="arabic"><span class="mot sujet" data-role="1">الكِتَابُ</span> <span class="mot info" data-role="2">هُنَا</span></span>
                     </td>
                     <td>Le livre (est) ici</td>
                 </tr>
                 <tr>
                     <td><strong>Groupe prépositionnel</strong></td>
-                    <td><span class="arabic"><span class="sujet">الوَلَدُ</span> <span class="info">فِي
+                    <td><span class="arabic"><span class="mot sujet" data-role="1">الوَلَدُ</span> <span class="mot info" data-role="2">فِي
                                 البَيْتِ</span></span></td>
                     <td>Le garçon (est) à la maison</td>
                 </tr>
@@ -262,7 +242,7 @@
         <div class="rule-box">
             <strong>⚙️ Formule :</strong>
             <p style="text-align: center; font-size: 1.2em; margin: 8px 0;">
-                <span class="verbe">فِعْل</span> (verbe) + <span class="faail">فَاعِل</span> (sujet) + <span
+                <span class="mot verbe" data-role="2">فِعْل</span> (verbe) + <span class="mot faail" data-role="1">فَاعِل</span> (sujet) + <span
                     class="mafoul">مَفْعُول</span> (complément)
             </p>
             <p style="text-align: center; color: #666; margin: 0;">Le verbe en tête — le sujet au cas sujet — le complément
@@ -284,19 +264,19 @@
             <tbody>
                 <tr>
                     <td><strong>Verbe</strong></td>
-                    <td><span class="arabic verbe">الفِعْل</span></td>
+                    <td><span class="arabic mot verbe" data-role="2">الفِعْل</span></td>
                     <td>—</td>
                     <td>Conjugué normalement</td>
                 </tr>
                 <tr>
                     <td><strong>Sujet</strong></td>
-                    <td><span class="arabic faail">الفَاعِل</span></td>
+                    <td><span class="arabic mot faail" data-role="1">الفَاعِل</span></td>
                     <td>Cas sujet (مَرْفُوع)</td>
                     <td>ضَمَّة ( ُ )</td>
                 </tr>
                 <tr>
                     <td><strong>Complément direct</strong></td>
-                    <td><span class="arabic mafoul">المَفْعُول بِهِ</span></td>
+                    <td><span class="arabic mot mafoul" data-role="3">المَفْعُول بِهِ</span></td>
                     <td>Cas direct (مَنْصُوب)</td>
                     <td>فَتْحَة ( َ )</td>
                 </tr>
@@ -323,74 +303,56 @@
             </div>
         </div>
         <div class="example-box" style="text-align: center;">
-            <span class="arabic">كَتَبَ الوَلَدُ رِسَالَةً</span> → Le garçon a écrit une lettre
+            <span class="arabic">كَتَبَ الوَلَدُ رِسَالَةً</span> → <span class="trad">Le garçon a écrit une lettre</span>
         </div>
 
         <div class="legend">
-            <div class="legend-item"><span class="legend-dot" style="border: 1.5px solid #2e7d32;"></span> <span
+            <div class="legend-item"><span class="legend-dot" style="border: 1.5px solid var(--role-2);"></span> <span
                     class="verbe">Verbe (فِعْل)</span></div>
-            <div class="legend-item"><span class="legend-dot" style="border: 1.5px solid #1565c0;"></span> <span
+            <div class="legend-item"><span class="legend-dot" style="border: 1.5px solid var(--role-1);"></span> <span
                     class="faail">Sujet verbal (فَاعِل)</span></div>
-            <div class="legend-item"><span class="legend-dot" style="border: 1.5px solid #e65100;"></span> <span
+            <div class="legend-item"><span class="legend-dot" style="border: 1.5px solid var(--role-3);"></span> <span
                     class="mafoul">Complément (مَفْعُول)</span></div>
         </div>
 
         <!-- Exemples verbale passé -->
-        <h3>📝 Exemples au passé (الماضي)</h3>
+        <h3>📝 Exemples au passé (الماضي)</h3><ol class="paires sans-num">
 
-        <div class="phrase-example">
-            <div class="ar"><span class="verbe">ذَهَبَ</span> <span class="faail">الطَّالِبُ</span> <span
-                    class="mafoul">إِلَى المَدْرَسَةِ</span></div>
-            <div class="fr">L'étudiant est allé à l'école</div>
-            <div class="parse">Verbe : <span class="verbe">ذَهَبَ</span> (il est allé) — Sujet : <span
-                    class="faail">الطَّالِبُ</span> — Complément : <span class="mafoul">إِلَى المَدْرَسَةِ</span></div>
-        </div>
+        <li class="paire"><p class="paire-ar"><span class="mot verbe" data-role="2">ذَهَبَ</span> <span class="mot faail" data-role="1">الطَّالِبُ</span> <span
+                    class="mafoul">إِلَى المَدْرَسَةِ</span></p><p class="paire-fr">L'étudiant est allé à l'école</p><p class="paire-analyse">Verbe : <span class="mot verbe" data-role="2">ذَهَبَ</span> (il est allé) — Sujet : <span
+                    class="faail">الطَّالِبُ</span> — Complément : <span class="mot mafoul" data-role="3">إِلَى المَدْرَسَةِ</span></p></li>
 
-        <div class="phrase-example">
-            <div class="ar"><span class="verbe">أَكَلَتْ</span> <span class="faail">البِنْتُ</span> <span
-                    class="mafoul">تُفَّاحَةً</span></div>
-            <div class="fr">La fille a mangé une pomme</div>
-            <div class="parse">Verbe : <span class="verbe">أَكَلَتْ</span> (elle a mangé, féminin) — Sujet : <span
-                    class="faail">البِنْتُ</span> — Complément : <span class="mafoul">تُفَّاحَةً</span></div>
-        </div>
+        <li class="paire"><p class="paire-ar"><span class="mot verbe" data-role="2">أَكَلَتْ</span> <span class="mot faail" data-role="1">البِنْتُ</span> <span
+                    class="mafoul">تُفَّاحَةً</span></p><p class="paire-fr">La fille a mangé une pomme</p><p class="paire-analyse">Verbe : <span class="mot verbe" data-role="2">أَكَلَتْ</span> (elle a mangé, féminin) — Sujet : <span
+                    class="faail">البِنْتُ</span> — Complément : <span class="mot mafoul" data-role="3">تُفَّاحَةً</span></p></li>
 
-        <div class="phrase-example">
-            <div class="ar"><span class="verbe">فَتَحَ</span> <span class="faail">الأُسْتَاذُ</span> <span
-                    class="mafoul">الكِتَابَ</span></div>
-            <div class="fr">Le professeur a ouvert le livre</div>
-            <div class="parse">Verbe : <span class="verbe">فَتَحَ</span> — Sujet : <span
-                    class="faail">الأُسْتَاذُ</span> — Complément : <span class="mafoul">الكِتَابَ</span> (défini →
-                فتحة)</div>
-        </div>
+        <li class="paire"><p class="paire-ar"><span class="mot verbe" data-role="2">فَتَحَ</span> <span class="mot faail" data-role="1">الأُسْتَاذُ</span> <span
+                    class="mafoul">الكِتَابَ</span></p><p class="paire-fr">Le professeur a ouvert le livre</p><p class="paire-analyse">Verbe : <span class="mot verbe" data-role="2">فَتَحَ</span> — Sujet : <span
+                    class="faail">الأُسْتَاذُ</span> — Complément : <span class="mot mafoul" data-role="3">الكِتَابَ</span> (défini →
+                فتحة)</p></li>
+</ol>
 
         <!-- Exemples verbale présent -->
-        <h3>📝 Exemples au présent (المُضارِع)</h3>
+        <h3>📝 Exemples au présent (المُضارِع)</h3><ol class="paires sans-num">
 
-        <div class="phrase-example">
-            <div class="ar"><span class="verbe">يَشْرَبُ</span> <span class="faail">الوَلَدُ</span> <span
-                    class="mafoul">مَاءً</span></div>
-            <div class="fr">Le garçon boit de l'eau</div>
-            <div class="parse">Verbe : <span class="verbe">يَشْرَبُ</span> (il boit) — Sujet : <span
-                    class="faail">الوَلَدُ</span> — Complément : <span class="mafoul">مَاءً</span></div>
-        </div>
+        <li class="paire"><p class="paire-ar"><span class="mot verbe" data-role="2">يَشْرَبُ</span> <span class="mot faail" data-role="1">الوَلَدُ</span> <span
+                    class="mafoul">مَاءً</span></p><p class="paire-fr">Le garçon boit de l'eau</p><p class="paire-analyse">Verbe : <span class="mot verbe" data-role="2">يَشْرَبُ</span> (il boit) — Sujet : <span
+                    class="faail">الوَلَدُ</span> — Complément : <span class="mot mafoul" data-role="3">مَاءً</span></p></li>
 
-        <div class="phrase-example">
-            <div class="ar"><span class="verbe">تَدْرُسُ</span> <span class="faail">الطَّالِبَةُ</span> <span
-                    class="mafoul">العَرَبِيَّةَ</span></div>
-            <div class="fr">L'étudiante étudie l'arabe</div>
-            <div class="parse">Verbe : <span class="verbe">تَدْرُسُ</span> (elle étudie) — Sujet : <span
-                    class="faail">الطَّالِبَةُ</span> — Complément : <span class="mafoul">العَرَبِيَّةَ</span></div>
-        </div>
+        <li class="paire"><p class="paire-ar"><span class="mot verbe" data-role="2">تَدْرُسُ</span> <span class="mot faail" data-role="1">الطَّالِبَةُ</span> <span
+                    class="mafoul">العَرَبِيَّةَ</span></p><p class="paire-fr">L'étudiante étudie l'arabe</p><p class="paire-analyse">Verbe : <span class="mot verbe" data-role="2">تَدْرُسُ</span> (elle étudie) — Sujet : <span
+                    class="faail">الطَّالِبَةُ</span> — Complément : <span class="mot mafoul" data-role="3">العَرَبِيَّةَ</span></p></li>
+</ol>
 
         <!-- Règle accord verbe -->
         <div class="warning-box">
             <strong>⚠️ Règle importante :</strong> Quand le <strong>sujet est explicitement mentionné après le
                 verbe</strong> dans une phrase verbale,
             le verbe reste toujours au <strong>singulier</strong>, même si le sujet est au pluriel !<br><br>
-            ✅ <span class="arabic"><span class="verbe">يَعْمَلُ</span> <span class="faail">الرِّجَالُ</span></span> →
-            Les hommes travaillent (verbe au singulier 3ème masc.)<br>
-            ✅ <span class="arabic"><span class="verbe">تَضْحَكُ</span> <span class="faail">النِّسَاءُ</span></span> →
-            Les femmes rient (verbe au singulier 3ème fém.)
+            ✅ <span class="arabic"><span class="mot verbe" data-role="2">يَعْمَلُ</span> <span class="mot faail" data-role="1">الرِّجَالُ</span></span> →
+            <span class="trad">Les hommes travaillent (verbe au singulier 3ème masc.)</span><br>
+            ✅ <span class="arabic"><span class="mot verbe" data-role="2">تَضْحَكُ</span> <span class="mot faail" data-role="1">النِّسَاءُ</span></span> →
+            <span class="trad">Les femmes rient (verbe au singulier 3ème fém.)</span>
         </div>
 
         <!-- ════════════════════════════════════════════ -->
@@ -450,14 +412,14 @@
             <ul style="margin-top: 10px;">
                 <li>
                     <strong>Phrase verbale (action) :</strong><br>
-                    <span class="arabic"><span class="verbe">يَكْتُبُ</span> <span class="faail">الأُسْتَاذُ</span>
-                        <span class="mafoul">الدَّرْسَ</span></span>
-                    → Le professeur écrit la leçon
+                    <span class="arabic"><span class="mot verbe" data-role="2">يَكْتُبُ</span> <span class="mot faail" data-role="1">الأُسْتَاذُ</span>
+                        <span class="mot mafoul" data-role="3">الدَّرْسَ</span></span>
+                    → <span class="trad">Le professeur écrit la leçon</span>
                 </li>
                 <li style="margin-top: 10px;">
                     <strong>Phrase nominale (description, sans verbe) :</strong><br>
-                    <span class="arabic"><span class="sujet">الأُسْتَاذُ</span> <span class="info">مَاهِرٌ</span></span>
-                    → Le professeur est habile
+                    <span class="arabic"><span class="mot sujet" data-role="1">الأُسْتَاذُ</span> <span class="mot info" data-role="2">مَاهِرٌ</span></span>
+                    → <span class="trad">Le professeur est habile</span>
                 </li>
             </ul>
         </div>
@@ -465,11 +427,11 @@
         <div class="example-box">
             <strong>Avec l'impératif (الأَمْر) — toujours une phrase verbale courte :</strong>
             <ul style="margin-top: 10px;">
-                <li><span class="arabic"><span class="verbe">اُكْتُبْ</span> <span
-                            class="mafoul">الدَّرْسَ</span></span> → Écris la leçon ! <em>(le sujet « tu » est implicite
+                <li><span class="arabic"><span class="mot verbe" data-role="2">اُكْتُبْ</span> <span
+                            class="mafoul">الدَّرْسَ</span></span> → <span class="trad">Écris la leçon !</span> <em>(le sujet « tu » est implicite
                         dans le verbe)</em></li>
-                <li><span class="arabic"><span class="verbe">اِفْهَمُوا</span> <span
-                            class="mafoul">السُّؤالَ</span></span> → Comprenez la question !</li>
+                <li><span class="arabic"><span class="mot verbe" data-role="2">اِفْهَمُوا</span> <span
+                            class="mafoul">السُّؤالَ</span></span> → <span class="trad">Comprenez la question !</span></li>
             </ul>
         </div>
 
@@ -477,8 +439,8 @@
             <strong>💡 Le sujet implicite :</strong> Dans une phrase verbale, le sujet n'a pas toujours besoin d'être
             mentionné.
             La conjugaison du verbe l'indique déjà !<br>
-            <span class="arabic"><span class="verbe">كَتَبْتُ</span> <span class="mafoul">رِسَالَةً</span></span> → J'ai
-            écrit une lettre
+            <span class="arabic"><span class="mot verbe" data-role="2">كَتَبْتُ</span> <span class="mot mafoul" data-role="3">رِسَالَةً</span></span> → <span class="trad">J'ai
+            écrit une lettre</span>
             <em>(le « je » est intégré dans <span class="arabic">كَتَبْتُ</span>)</em>
         </div>
 
@@ -520,9 +482,9 @@
         <div class="rule-box">
             Traduis ta phrase en français et trouve le <strong>verbe principal</strong> :
             <ul style="margin-top: 10px; line-height: 2;">
-                <li>Le verbe principal est <strong>« être »</strong> → <span class="sujet">phrase nominale</span> (et on
+                <li>Le verbe principal est <strong>« être »</strong> → <span class="mot sujet" data-role="1">phrase nominale</span> (et on
                     supprime le « est » en arabe !)</li>
-                <li>Le verbe principal est <strong>n'importe quel autre verbe</strong> → <span class="verbe">phrase
+                <li>Le verbe principal est <strong>n'importe quel autre verbe</strong> → <span class="mot verbe" data-role="2">phrase
                         verbale</span></li>
             </ul>
         </div>
@@ -543,36 +505,36 @@
                 <tr>
                     <td>Le ciel <strong>est</strong> bleu</td>
                     <td>être → description</td>
-                    <td><span class="sujet">📸 Nominale</span></td>
-                    <td><span class="arabic"><span class="sujet">السَّمَاءُ</span> <span
+                    <td><span class="mot sujet" data-role="1">📸 Nominale</span></td>
+                    <td><span class="arabic"><span class="mot sujet" data-role="1">السَّمَاءُ</span> <span
                                 class="info">زَرْقَاءُ</span></span></td>
                 </tr>
                 <tr>
                     <td>Ahmed <strong>est</strong> médecin</td>
                     <td>être → identité</td>
-                    <td><span class="sujet">📸 Nominale</span></td>
-                    <td><span class="arabic"><span class="sujet">أَحْمَدُ</span> <span
+                    <td><span class="mot sujet" data-role="1">📸 Nominale</span></td>
+                    <td><span class="arabic"><span class="mot sujet" data-role="1">أَحْمَدُ</span> <span
                                 class="info">طَبِيبٌ</span></span></td>
                 </tr>
                 <tr>
                     <td>Ahmed <strong>mange</strong> une pomme</td>
                     <td>manger → action</td>
-                    <td><span class="verbe">🎬 Verbale</span></td>
-                    <td><span class="arabic"><span class="verbe">يَأْكُلُ</span> <span class="faail">أَحْمَدُ</span>
-                            <span class="mafoul">تُفَّاحَةً</span></span></td>
+                    <td><span class="mot verbe" data-role="2">🎬 Verbale</span></td>
+                    <td><span class="arabic"><span class="mot verbe" data-role="2">يَأْكُلُ</span> <span class="mot faail" data-role="1">أَحْمَدُ</span>
+                            <span class="mot mafoul" data-role="3">تُفَّاحَةً</span></span></td>
                 </tr>
                 <tr>
                     <td>L'étudiant <strong>est allé</strong> à l'école</td>
                     <td>aller → mouvement</td>
-                    <td><span class="verbe">🎬 Verbale</span></td>
-                    <td><span class="arabic"><span class="verbe">ذَهَبَ</span> <span class="faail">الطَّالِبُ</span>
-                            <span class="mafoul">إِلَى المَدْرَسَةِ</span></span></td>
+                    <td><span class="mot verbe" data-role="2">🎬 Verbale</span></td>
+                    <td><span class="arabic"><span class="mot verbe" data-role="2">ذَهَبَ</span> <span class="mot faail" data-role="1">الطَّالِبُ</span>
+                            <span class="mot mafoul" data-role="3">إِلَى المَدْرَسَةِ</span></span></td>
                 </tr>
                 <tr>
                     <td>Le livre <strong>est</strong> sur la table</td>
                     <td>être → localisation</td>
-                    <td><span class="sujet">📸 Nominale</span></td>
-                    <td><span class="arabic"><span class="sujet">الكِتَابُ</span> <span class="info">عَلَى
+                    <td><span class="mot sujet" data-role="1">📸 Nominale</span></td>
+                    <td><span class="arabic"><span class="mot sujet" data-role="1">الكِتَابُ</span> <span class="mot info" data-role="2">عَلَى
                                 الطَّاوِلَةِ</span></span></td>
                 </tr>
             </tbody>
@@ -586,14 +548,14 @@
             En français on utilise « être » dans les deux cas, mais en arabe la distinction est claire :
             <ul style="margin-top: 10px; line-height: 2.2;">
                 <li>
-                    <strong>« il est à Paris »</strong> → état, localisation → <span class="sujet">📸
+                    <strong>« il est à Paris »</strong> → état, localisation → <span class="mot sujet" data-role="1">📸
                         nominale</span><br>
-                    <span class="arabic"><span class="sujet">هُوَ</span> <span class="info">فِي بَارِيسَ</span></span>
+                    <span class="arabic"><span class="mot sujet" data-role="1">هُوَ</span> <span class="mot info" data-role="2">فِي بَارِيسَ</span></span>
                 </li>
                 <li>
-                    <strong>« il est allé à Paris »</strong> → mouvement passé → <span class="verbe">🎬
+                    <strong>« il est allé à Paris »</strong> → mouvement passé → <span class="mot verbe" data-role="2">🎬
                         verbale</span><br>
-                    <span class="arabic"><span class="verbe">ذَهَبَ</span> <span class="mafoul">إِلَى
+                    <span class="arabic"><span class="mot verbe" data-role="2">ذَهَبَ</span> <span class="mot mafoul" data-role="3">إِلَى
                             بَارِيسَ</span></span>
                 </li>
             </ul>

@@ -8,33 +8,36 @@
     <link rel="stylesheet" href="../../../fonts/fonts.css">
     <link rel="stylesheet" href="../../../css/amana-base.css">
     <link rel="stylesheet" href="../../../css/theme-adulte.css">
+<link rel="stylesheet" href="../../../css/amana-tokens.css">
+<link rel="stylesheet" href="../../../css/amana-components.css">
+<script src="../../../js/outils-lecture.js" defer></script>
     <link rel="stylesheet" href="../../../css/amana-content.css">
     <style>
         /* Composants propres à ce cours (couleurs de rôle grammatical, cartes, etc.) */
-        .prefix { color: #1565c0; font-weight: bold; }
+        .prefix { color: var(--role-2); font-weight: bold; }
         .suffix { color: #d32f2f; font-weight: bold; }
-        .neg { color: #c62828; font-weight: bold; font-size: 1.1em; }
+        .neg { color: var(--role-1); font-weight: bold; font-size: 1.1em; }
         .neg-card { border-radius: 14px; padding: 22px; margin: 22px 0; }
         .neg-card.ma { border: 2px solid #e53935; background: #fff5f5; }
         .neg-card.lam { border: 2px solid #1e88e5; background: #f0f7ff; }
         .neg-card.lan { border: 2px solid #43a047; background: #f1faf1; }
         .neg-card-header { display: flex; align-items: center; gap: 18px; margin-bottom: 14px; flex-wrap: wrap; }
         .neg-particle { font-size: 2.2em; font-weight: bold; border-radius: 10px; padding: 4px 18px; font-family: var(--ar); }
-        .neg-card.ma  .neg-particle { color: #c62828; background: #ffcdd2; }
-        .neg-card.lam .neg-particle { color: #1565c0; background: #bbdefb; }
+        .neg-card.ma  .neg-particle { color: var(--role-1); background: color-mix(in srgb, var(--role-1) 18%, #fff); }
+        .neg-card.lam .neg-particle { color: var(--role-2); background: color-mix(in srgb, var(--role-2) 18%, #fff); }
         .neg-card.lan .neg-particle { color: #2e7d32; background: #c8e6c9; }
         .neg-title { font-size: 1.25em; font-weight: bold; color: #333; }
         .neg-subtitle { color: #777; font-style: italic; font-size: 0.97em; }
         .formula { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; margin: 14px 0; font-size: 1.1em; background: white; border-radius: 10px; padding: 12px; }
         .formula-part { padding: 6px 14px; border-radius: 8px; font-weight: bold; font-size: 1.05em; }
-        .fp-neg { background: #ffcdd2; color: #c62828; }
-        .fp-neg-b { background: #bbdefb; color: #1565c0; }
+        .fp-neg { background: color-mix(in srgb, var(--role-1) 18%, #fff); color: var(--role-1); }
+        .fp-neg-b { background: color-mix(in srgb, var(--role-2) 18%, #fff); color: var(--role-2); }
         .fp-neg-g { background: #c8e6c9; color: #2e7d32; }
         .fp-verb { background: #e8eaf6; color: #283593; }
         .fp-plus { color: #999; font-size: 1.2em; font-weight: normal; }
         .synth-table td:first-child { font-weight: bold; }
-        .synth-table .part-ma { color: #c62828; font-weight: bold; font-size: 1.15em; }
-        .synth-table .part-lam { color: #1565c0; font-weight: bold; font-size: 1.15em; }
+        .synth-table .part-ma { color: var(--role-1); font-weight: bold; font-size: 1.15em; }
+        .synth-table .part-lam { color: var(--role-2); font-weight: bold; font-size: 1.15em; }
         .synth-table .part-lan { color: #2e7d32; font-weight: bold; font-size: 1.15em; }
         @media screen and (max-width: 768px) {
             .formula { font-size: 0.95em; gap: 8px; }
@@ -89,14 +92,14 @@
     </table></div>
 
     <div class="note">
-        <strong>📝 À retenir :</strong> Pour nier le passé on utilise <span style="color: #c62828; font-weight: bold;">ما</span>,
-        pour nier le présent on utilise <span style="color: #1565c0; font-weight: bold;">لا</span>,
+        <strong>📝 À retenir :</strong> Pour nier le passé on utilise <span style="color: var(--role-1); font-weight: bold;">ما</span>,
+        pour nier le présent on utilise <span style="color: var(--role-2); font-weight: bold;">لا</span>,
         et la négation du futur, avec <span class="arabic">لَنْ</span>, est étudiée avec le subjonctif. Dans les deux cas, la particule se place simplement <strong>avant le verbe</strong>.
         La conjugaison du verbe lui-même ne change pas — ou presque pas (voir détails ci-dessous).
     </div>
 
     <!-- ═══════════════════════════════════════════════ -->
-    <h2>① Nier le passé — <span style="color: #c62828;">ما</span> + ماضي</h2>
+    <h2>① Nier le passé — <span style="color: var(--role-1);">ما</span> + ماضي</h2>
 
     <div class="neg-card ma">
         <div class="neg-card-header">
@@ -116,36 +119,36 @@
         <div class="example-box">
             <strong>Exemples avec كَتَبَ (écrire) :</strong>
             <ul>
-                <li><span class="arabic">كَتَبَ الوَلَدُ</span> → Le garçon a écrit
-                    &nbsp;⟶&nbsp; <span class="arabic"><span class="neg">ما</span> كَتَبَ الوَلَدُ</span> → Le garçon n'a pas écrit</li>
-                <li><span class="arabic">كَتَبْتُ رِسَالَةً</span> → J'ai écrit une lettre
-                    &nbsp;⟶&nbsp; <span class="arabic"><span class="neg">ما</span> كَتَبْتُ رِسَالَةً</span> → Je n'ai pas écrit de lettre</li>
-                <li><span class="arabic">كَتَبْنَا الدَّرْسَ</span> → Nous avons écrit la leçon
-                    &nbsp;⟶&nbsp; <span class="arabic"><span class="neg">ما</span> كَتَبْنَا الدَّرْسَ</span> → Nous n'avons pas écrit la leçon</li>
+                <li><span class="arabic">كَتَبَ الوَلَدُ</span> → <span class="trad">Le garçon a écrit</span>
+                    &nbsp;⟶&nbsp; <span class="arabic"><span class="neg">ما</span> كَتَبَ الوَلَدُ</span> → <span class="trad">Le garçon n'a pas écrit</span></li>
+                <li><span class="arabic">كَتَبْتُ رِسَالَةً</span> → <span class="trad">J'ai écrit une lettre</span>
+                    &nbsp;⟶&nbsp; <span class="arabic"><span class="neg">ما</span> كَتَبْتُ رِسَالَةً</span> → <span class="trad">Je n'ai pas écrit de lettre</span></li>
+                <li><span class="arabic">كَتَبْنَا الدَّرْسَ</span> → <span class="trad">Nous avons écrit la leçon</span>
+                    &nbsp;⟶&nbsp; <span class="arabic"><span class="neg">ما</span> كَتَبْنَا الدَّرْسَ</span> → <span class="trad">Nous n'avons pas écrit la leçon</span></li>
             </ul>
         </div>
 
         <div class="example-box">
             <strong>Exemples avec فَهِمَ (comprendre) :</strong>
             <ul>
-                <li><span class="arabic">فَهِمَ الطَّالِبُ</span> → L'étudiant a compris
-                    &nbsp;⟶&nbsp; <span class="arabic"><span class="neg">ما</span> فَهِمَ الطَّالِبُ</span> → L'étudiant n'a pas compris</li>
-                <li><span class="arabic">فَهِمْتِ السُّؤالَ</span> → Tu as compris la question (f.)
-                    &nbsp;⟶&nbsp; <span class="arabic"><span class="neg">ما</span> فَهِمْتِ السُّؤالَ</span> → Tu n'as pas compris la question</li>
-                <li><span class="arabic">فَهِمُوا الكِتَابَ</span> → Ils ont compris le livre
-                    &nbsp;⟶&nbsp; <span class="arabic"><span class="neg">ما</span> فَهِمُوا الكِتَابَ</span> → Ils n'ont pas compris le livre</li>
+                <li><span class="arabic">فَهِمَ الطَّالِبُ</span> → <span class="trad">L'étudiant a compris</span>
+                    &nbsp;⟶&nbsp; <span class="arabic"><span class="neg">ما</span> فَهِمَ الطَّالِبُ</span> → <span class="trad">L'étudiant n'a pas compris</span></li>
+                <li><span class="arabic">فَهِمْتِ السُّؤالَ</span> → <span class="trad">Tu as compris la question (f.)</span>
+                    &nbsp;⟶&nbsp; <span class="arabic"><span class="neg">ما</span> فَهِمْتِ السُّؤالَ</span> → <span class="trad">Tu n'as pas compris la question</span></li>
+                <li><span class="arabic">فَهِمُوا الكِتَابَ</span> → <span class="trad">Ils ont compris le livre</span>
+                    &nbsp;⟶&nbsp; <span class="arabic"><span class="neg">ما</span> فَهِمُوا الكِتَابَ</span> → <span class="trad">Ils n'ont pas compris le livre</span></li>
             </ul>
         </div>
 
         <div class="info-box">
-            <strong>ℹ️ Aussi simple que ça !</strong> La particule <span style="color: #c62828; font-weight: bold;">ما</span>
+            <strong>ℹ️ Aussi simple que ça !</strong> La particule <span style="color: var(--role-1); font-weight: bold;">ما</span>
             ne modifie pas du tout la forme du verbe. Il suffit de la placer devant.
             C'est la négation la plus facile de l'arabe.
         </div>
     </div>
 
     <!-- ═══════════════════════════════════════════════ -->
-    <h2>② Nier le présent — <span style="color: #1565c0;">لا</span> + مضارع</h2>
+    <h2>② Nier le présent — <span style="color: var(--role-2);">لا</span> + مضارع</h2>
 
     <div class="neg-card lam">
         <div class="neg-card-header">
@@ -165,35 +168,35 @@
         <div class="example-box">
             <strong>Exemples avec يَكْتُبُ (écrire) :</strong>
             <ul>
-                <li><span class="arabic">يَكْتُبُ الوَلَدُ</span> → Le garçon écrit
-                    &nbsp;⟶&nbsp; <span class="arabic"><span class="neg" style="color: #1565c0;">لا</span> يَكْتُبُ الوَلَدُ</span> → Le garçon n'écrit pas</li>
-                <li><span class="arabic">أَكْتُبُ رِسَالَةً</span> → J'écris une lettre
-                    &nbsp;⟶&nbsp; <span class="arabic"><span class="neg" style="color: #1565c0;">لا</span> أَكْتُبُ رِسَالَةً</span> → Je n'écris pas de lettre</li>
-                <li><span class="arabic">تَكْتُبِينَ</span> → Tu écris (f.)
-                    &nbsp;⟶&nbsp; <span class="arabic"><span class="neg" style="color: #1565c0;">لا</span> تَكْتُبِينَ</span> → Tu n'écris pas (f.)</li>
-                <li><span class="arabic">نَكْتُبُ الدَّرْسَ</span> → Nous écrivons la leçon
-                    &nbsp;⟶&nbsp; <span class="arabic"><span class="neg" style="color: #1565c0;">لا</span> نَكْتُبُ الدَّرْسَ</span> → Nous n'écrivons pas la leçon</li>
+                <li><span class="arabic">يَكْتُبُ الوَلَدُ</span> → <span class="trad">Le garçon écrit</span>
+                    &nbsp;⟶&nbsp; <span class="arabic"><span class="neg" style="color: var(--role-2);">لا</span> يَكْتُبُ الوَلَدُ</span> → <span class="trad">Le garçon n'écrit pas</span></li>
+                <li><span class="arabic">أَكْتُبُ رِسَالَةً</span> → <span class="trad">J'écris une lettre</span>
+                    &nbsp;⟶&nbsp; <span class="arabic"><span class="neg" style="color: var(--role-2);">لا</span> أَكْتُبُ رِسَالَةً</span> → <span class="trad">Je n'écris pas de lettre</span></li>
+                <li><span class="arabic">تَكْتُبِينَ</span> → <span class="trad">Tu écris (f.)</span>
+                    &nbsp;⟶&nbsp; <span class="arabic"><span class="neg" style="color: var(--role-2);">لا</span> تَكْتُبِينَ</span> → <span class="trad">Tu n'écris pas (f.)</span></li>
+                <li><span class="arabic">نَكْتُبُ الدَّرْسَ</span> → <span class="trad">Nous écrivons la leçon</span>
+                    &nbsp;⟶&nbsp; <span class="arabic"><span class="neg" style="color: var(--role-2);">لا</span> نَكْتُبُ الدَّرْسَ</span> → <span class="trad">Nous n'écrivons pas la leçon</span></li>
             </ul>
         </div>
 
         <div class="example-box">
             <strong>Exemples avec يَفْهَمُ (comprendre) :</strong>
             <ul>
-                <li><span class="arabic">يَفْهَمُ الطَّالِبُ</span> → L'étudiant comprend
-                    &nbsp;⟶&nbsp; <span class="arabic"><span class="neg" style="color: #1565c0;">لا</span> يَفْهَمُ الطَّالِبُ</span> → L'étudiant ne comprend pas</li>
-                <li><span class="arabic">تَفْهَمُونَ العَرَبِيَّةَ</span> → Vous comprenez l'arabe
-                    &nbsp;⟶&nbsp; <span class="arabic"><span class="neg" style="color: #1565c0;">لا</span> تَفْهَمُونَ العَرَبِيَّةَ</span> → Vous ne comprenez pas l'arabe</li>
+                <li><span class="arabic">يَفْهَمُ الطَّالِبُ</span> → <span class="trad">L'étudiant comprend</span>
+                    &nbsp;⟶&nbsp; <span class="arabic"><span class="neg" style="color: var(--role-2);">لا</span> يَفْهَمُ الطَّالِبُ</span> → <span class="trad">L'étudiant ne comprend pas</span></li>
+                <li><span class="arabic">تَفْهَمُونَ العَرَبِيَّةَ</span> → <span class="trad">Vous comprenez l'arabe</span>
+                    &nbsp;⟶&nbsp; <span class="arabic"><span class="neg" style="color: var(--role-2);">لا</span> تَفْهَمُونَ العَرَبِيَّةَ</span> → <span class="trad">Vous ne comprenez pas l'arabe</span></li>
             </ul>
         </div>
 
         <div class="note">
             <strong>📝 لا de négation vs لا de prohibition :</strong><br>
-            Vous avez vu dans le cours sur l'impératif que <span style="color: #c62828; font-weight: bold;">لا</span>
+            Vous avez vu dans le cours sur l'impératif que <span style="color: var(--role-1); font-weight: bold;">لا</span>
             + présent pouvait aussi exprimer un <strong>ordre négatif</strong> (« Ne fais pas… »).
             La différence est le <strong>contexte</strong> :
             <ul>
-                <li><span class="arabic"><span style="color: #c62828;">لا</span> يَكْتُبُ</span> → Il n'écrit pas <em>(constat)</em></li>
-                <li><span class="arabic"><span style="color: #c62828;">لا</span> تَكْتُبْ</span> → N'écris pas ! <em>(ordre, avec sukûn final)</em></li>
+                <li><span class="arabic"><span style="color: var(--role-1);">لا</span> يَكْتُبُ</span> → <span class="trad">Il n'écrit pas</span> <em>(constat)</em></li>
+                <li><span class="arabic"><span style="color: var(--role-1);">لا</span> تَكْتُبْ</span> → <span class="trad">N'écris pas !</span> <em>(ordre, avec sukûn final)</em></li>
             </ul>
             Notez la petite différence à l'écrit : <span class="arabic">يَكْتُبُ</span> (<span class="arabic" lang="ar" dir="rtl">ضَمَّةٌ</span> finale)
             pour le constat, <span class="arabic">تَكْتُبْ</span> (sukûn final) pour l'ordre.
@@ -219,8 +222,8 @@
             <tr>
                 <th>Personne</th>
                 <th>Genre</th>
-                <th><span style="color: #ffcdd2;">ما</span> + passé<br><small>« n'a pas écrit »</small></th>
-                <th><span style="color: #bbdefb;">لا</span> + présent<br><small>« n'écrit pas »</small></th>
+                <th><span style="color: color-mix(in srgb, var(--role-1) 18%, #fff);">ما</span> + passé<br><small>« n'a pas écrit »</small></th>
+                <th><span style="color: color-mix(in srgb, var(--role-2) 18%, #fff);">لا</span> + présent<br><small>« n'écrit pas »</small></th>
             </tr>
         </thead>
         <tbody>
@@ -228,41 +231,41 @@
                 <td rowspan="2"><strong>3ᵉ</strong></td>
                 <td>M.</td>
                 <td><span class="arabic"><span class="neg">ما</span> كَتَبَ</span></td>
-                <td><span class="arabic"><span class="neg" style="color: #1565c0;">لا</span> يَكْتُبُ</span></td>
+                <td><span class="arabic"><span class="neg" style="color: var(--role-2);">لا</span> يَكْتُبُ</span></td>
             </tr>
             <tr>
                 <td>F.</td>
                 <td><span class="arabic"><span class="neg">ما</span> كَتَبَتْ</span></td>
-                <td><span class="arabic"><span class="neg" style="color: #1565c0;">لا</span> تَكْتُبُ</span></td>
+                <td><span class="arabic"><span class="neg" style="color: var(--role-2);">لا</span> تَكْتُبُ</span></td>
             </tr>
             <tr>
                 <td rowspan="2"><strong>2ᵉ</strong></td>
                 <td>M.</td>
                 <td><span class="arabic"><span class="neg">ما</span> كَتَبْتَ</span></td>
-                <td><span class="arabic"><span class="neg" style="color: #1565c0;">لا</span> تَكْتُبُ</span></td>
+                <td><span class="arabic"><span class="neg" style="color: var(--role-2);">لا</span> تَكْتُبُ</span></td>
             </tr>
             <tr>
                 <td>F.</td>
                 <td><span class="arabic"><span class="neg">ما</span> كَتَبْتِ</span></td>
-                <td><span class="arabic"><span class="neg" style="color: #1565c0;">لا</span> تَكْتُبِينَ</span></td>
+                <td><span class="arabic"><span class="neg" style="color: var(--role-2);">لا</span> تَكْتُبِينَ</span></td>
             </tr>
             <tr>
                 <td><strong>1ʳᵉ</strong></td>
                 <td>M/F</td>
                 <td><span class="arabic"><span class="neg">ما</span> كَتَبْتُ</span></td>
-                <td><span class="arabic"><span class="neg" style="color: #1565c0;">لا</span> أَكْتُبُ</span></td>
+                <td><span class="arabic"><span class="neg" style="color: var(--role-2);">لا</span> أَكْتُبُ</span></td>
             </tr>
             <tr>
                 <td><strong>1ʳᵉ pl.</strong></td>
                 <td>M/F</td>
                 <td><span class="arabic"><span class="neg">ما</span> كَتَبْنَا</span></td>
-                <td><span class="arabic"><span class="neg" style="color: #1565c0;">لا</span> نَكْتُبُ</span></td>
+                <td><span class="arabic"><span class="neg" style="color: var(--role-2);">لا</span> نَكْتُبُ</span></td>
             </tr>
             <tr>
                 <td><strong>3ᵉ pl.</strong></td>
                 <td>M.</td>
                 <td><span class="arabic"><span class="neg">ما</span> كَتَبُوا</span></td>
-                <td><span class="arabic"><span class="neg" style="color: #1565c0;">لا</span> يَكْتُبُونَ</span></td>
+                <td><span class="arabic"><span class="neg" style="color: var(--role-2);">لا</span> يَكْتُبُونَ</span></td>
             </tr>
         </tbody>
     </table></div>
@@ -293,11 +296,11 @@
 
     <div class="rule-box">
         <ul>
-            <li>Il existe <strong>deux particules de négation</strong> étudiées ici : <span style="color: #c62828; font-weight: bold;">ما</span> (passé) et <span style="color: #1565c0; font-weight: bold;">لا</span> (présent) ; <span class="arabic">لَنْ</span> (futur) est étudiée avec le subjonctif</li>
+            <li>Il existe <strong>deux particules de négation</strong> étudiées ici : <span style="color: var(--role-1); font-weight: bold;">ما</span> (passé) et <span style="color: var(--role-2); font-weight: bold;">لا</span> (présent) ; <span class="arabic">لَنْ</span> (futur) est étudiée avec le subjonctif</li>
             <li>Elles se placent toutes <strong>directement avant le verbe</strong></li>
-            <li><span style="color: #c62828; font-weight: bold;">ما</span> + passé : <strong>aucun changement</strong> dans la conjugaison</li>
-            <li><span style="color: #1565c0; font-weight: bold;">لا</span> + présent : <strong>aucun changement</strong> dans la conjugaison</li>
-            <li><span style="color: #1565c0; font-weight: bold;">لا</span> sert aussi à la <strong>prohibition</strong> (ordre négatif, voir le cours sur l'impératif) — le contexte et la voyelle finale distinguent les deux usages</li>
+            <li><span style="color: var(--role-1); font-weight: bold;">ما</span> + passé : <strong>aucun changement</strong> dans la conjugaison</li>
+            <li><span style="color: var(--role-2); font-weight: bold;">لا</span> + présent : <strong>aucun changement</strong> dans la conjugaison</li>
+            <li><span style="color: var(--role-2); font-weight: bold;">لا</span> sert aussi à la <strong>prohibition</strong> (ordre négatif, voir le cours sur l'impératif) — le contexte et la voyelle finale distinguent les deux usages</li>
         </ul>
     </div>
 

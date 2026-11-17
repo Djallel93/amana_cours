@@ -8,38 +8,37 @@
     <link rel="stylesheet" href="../../../fonts/fonts.css">
     <link rel="stylesheet" href="../../../css/amana-base.css">
     <link rel="stylesheet" href="../../../css/theme-adulte.css">
+<link rel="stylesheet" href="../../../css/amana-tokens.css">
+<link rel="stylesheet" href="../../../css/amana-components.css">
+<script src="../../../js/outils-lecture.js" defer></script>
     <link rel="stylesheet" href="../../../css/amana-content.css">
     <style>
         /* Composants propres à ce cours (couleurs de rôle grammatical, cartes, etc.) */
         .arabic-lg { font-size: 1.9em; color: #764ba2; font-weight: bold; }
-        .part { color: #c62828; font-weight: bold; }
-        .munaada { color: #1565c0; font-weight: bold; }
-        .voc-example { background: #fafafa; border: 1px solid #e0e0e0; border-radius: 10px; padding: 14px 20px; margin: 12px 0; }
-        .voc-example .ar { font-size: 1.5em; font-weight: bold; text-align: right; direction: rtl; margin-bottom: 6px; }
-        .voc-example .fr { color: #555; font-size: .95em; }
-        .voc-example .note-line { font-size: .85em; color: #888; margin-top: 4px; font-style: italic; }
+        .part { color: var(--role-1); font-weight: bold; }
+        .munaada { color: var(--role-2); font-weight: bold; }
         .part-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin: 20px 0; }
         @media (max-width:600px) {
             .part-grid { grid-template-columns: 1fr; }
         }
         .part-card { border-radius: 12px; padding: 18px; text-align: center; }
-        .part-card.ya { border: 2px solid #c62828; }
-        .part-card.ayy { border: 2px solid #2e7d32; }
-        .part-card.ayyt { border: 2px solid #1565c0; }
+        .part-card.ya { border: 2px solid var(--role-1); }
+        .part-card.ayy { border: 2px solid var(--role-3); }
+        .part-card.ayyt { border: 2px solid var(--role-2); }
         .part-card h3 { margin-top: 0; font-size: 1.05em; }
         .part-card .arabic-lg { display: block; margin: 8px 0; font-size: 2.2em; }
         .part-card p { font-size: .88em; color: #555; margin: 4px 0; }
         .part-card .badge { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: .82em; font-weight: bold; margin-top: 8px; }
-        .ya   .badge { color: var(--ink); border: 1.5px solid #c62828; }
-        .ayy  .badge { color: var(--ink); border: 1.5px solid #2e7d32; }
-        .ayyt .badge { color: var(--ink); border: 1.5px solid #1565c0; }
+        .ya   .badge { color: var(--ink); border: 1.5px solid var(--role-1); }
+        .ayy  .badge { color: var(--ink); border: 1.5px solid var(--role-3); }
+        .ayyt .badge { color: var(--ink); border: 1.5px solid var(--role-2); }
         .cas-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 18px 0; }
         @media (max-width:600px) {
             .cas-grid { grid-template-columns: 1fr; }
         }
         .cas-card { border-radius: 10px; padding: 16px; border: 2px solid; }
-        .cas-card.marfou { background: #e8f5e9; border-color: #2e7d32; }
-        .cas-card.mansou { background: #fff3e0; border-color: #e65100; }
+        .cas-card.marfou { background: color-mix(in srgb, var(--role-3) 18%, #fff); border-color: var(--role-3); }
+        .cas-card.mansou { background: color-mix(in srgb, var(--role-4) 18%, #fff); border-color: var(--role-4); }
         .cas-card h4 { margin: 0 0 8px; font-size: 1em; }
         .cas-card ul { margin: 0; padding-left: 18px; font-size: .92em; line-height: 1.8; }
     </style>
@@ -97,9 +96,9 @@
     <div class="rule-box">
         <strong>⚙️ Règle de base :</strong>
         <ul style="margin-top: 8px; line-height: 2.2;">
-            <li>Le nom appelé <strong>n'a pas l'article الـ</strong> → on utilise <span class="part">يَا</span></li>
-            <li>Le nom appelé <strong>a l'article الـ</strong> + masculin → on utilise <span class="part">أَيُّها</span></li>
-            <li>Le nom appelé <strong>a l'article الـ</strong> + féminin → on utilise <span class="part">أَيَّتُها</span></li>
+            <li>Le nom appelé <strong>n'a pas l'article الـ</strong> → on utilise <span class="mot part" data-role="1">يَا</span></li>
+            <li>Le nom appelé <strong>a l'article الـ</strong> + masculin → on utilise <span class="mot part" data-role="1">أَيُّها</span></li>
+            <li>Le nom appelé <strong>a l'article الـ</strong> + féminin → on utilise <span class="mot part" data-role="1">أَيَّتُها</span></li>
         </ul>
     </div>
 
@@ -113,41 +112,24 @@
     </div>
 
     <h3>👤 1. L'appel direct — النِداء العادي</h3>
-    <p>La fonction principale : attirer l'attention de quelqu'un.</p>
+    <p>La fonction principale : attirer l'attention de quelqu'un.</p><ol class="paires sans-num">
 
-    <div class="voc-example">
-        <div class="ar"><span class="part">يَا</span> <span class="munaada">مُحَمَّدُ</span> !</div>
-        <div class="fr">Ô Mohamed ! / Hé Mohamed !</div>
-        <div class="note-line">Prénom propre → يا + cas sujet sans <span class="arabic" lang="ar" dir="rtl">تَنْوِينٌ</span> (ضمة)</div>
-    </div>
+    <li class="paire"><p class="paire-ar"><span class="mot part" data-role="1">يَا</span> <span class="mot munaada" data-role="2">مُحَمَّدُ</span> !</p><p class="paire-fr">Ô Mohamed ! / Hé Mohamed !</p><p class="paire-analyse">Prénom propre → يا + cas sujet sans <span class="arabic" lang="ar" dir="rtl">تَنْوِينٌ</span> (ضمة)</p></li>
 
-    <div class="voc-example">
-        <div class="ar"><span class="part">يَا</span> <span class="munaada">أُسْتَاذُ</span>، أَعْرِفُ الجَوَابَ !</div>
-        <div class="fr">Professeur ! Je connais la réponse !</div>
-        <div class="note-line">Nom commun singulier bien déterminé → cas sujet sans <span class="arabic" lang="ar" dir="rtl">تَنْوِينٌ</span></div>
-    </div>
+    <li class="paire"><p class="paire-ar"><span class="mot part" data-role="1">يَا</span> <span class="mot munaada" data-role="2">أُسْتَاذُ</span>، أَعْرِفُ الجَوَابَ !</p><p class="paire-fr">Professeur ! Je connais la réponse !</p><p class="paire-analyse">Nom commun singulier bien déterminé → cas sujet sans <span class="arabic" lang="ar" dir="rtl">تَنْوِينٌ</span></p></li>
 
-    <div class="voc-example">
-        <div class="ar"><span class="part">يَا</span> <span class="munaada">أَمِينَةُ</span>، أَيْنَ أَنْتِ ؟</div>
-        <div class="fr">Amina, où es-tu ?</div>
-        <div class="note-line">Prénom féminin → cas sujet sans <span class="arabic" lang="ar" dir="rtl">تَنْوِينٌ</span></div>
-    </div>
+    <li class="paire"><p class="paire-ar"><span class="mot part" data-role="1">يَا</span> <span class="mot munaada" data-role="2">أَمِينَةُ</span>، أَيْنَ أَنْتِ ؟</p><p class="paire-fr">Amina, où es-tu ?</p><p class="paire-analyse">Prénom féminin → cas sujet sans <span class="arabic" lang="ar" dir="rtl">تَنْوِينٌ</span></p></li>
+</ol>
 
-    <h3>🆘 2. L'appel de détresse — الاِسْتِغاثة</h3>
+    <h3>🆘 2. L'appel de détresse — الاِسْتِغاثة</h3><ol class="paires sans-num">
 
-    <div class="voc-example">
-        <div class="ar"><span class="part">يَا</span> <span class="munaada">قَوْمِي</span> !</div>
-        <div class="fr">Ô mon peuple ! (aidez-moi !)</div>
-        <div class="note-line">Appel collectif de détresse — suffixe pronominal ي</div>
-    </div>
+    <li class="paire"><p class="paire-ar"><span class="mot part" data-role="1">يَا</span> <span class="mot munaada" data-role="2">قَوْمِي</span> !</p><p class="paire-fr">Ô mon peuple ! (aidez-moi !)</p><p class="paire-analyse">Appel collectif de détresse — suffixe pronominal ي</p></li>
+</ol>
 
-    <h3>😢 3. La lamentation — النَدْبة</h3>
+    <h3>😢 3. La lamentation — النَدْبة</h3><ol class="paires sans-num">
 
-    <div class="voc-example">
-        <div class="ar"><span class="part">يَا</span> حَسْرَةً عَلَى العِبَادِ !</div>
-        <div class="fr">Quel regret pour les serviteurs ! (Coran, <span class="arabic" lang="ar" dir="rtl">يس</span> : 30)</div>
-        <div class="note-line">Emploi littéraire et coranique — exprime la douleur ou le regret</div>
-    </div>
+    <li class="paire"><p class="paire-ar"><span class="mot part" data-role="1">يَا</span> حَسْرَةً عَلَى العِبَادِ !</p><p class="paire-fr">Quel regret pour les serviteurs ! (Coran, <span class="arabic" lang="ar" dir="rtl">يس</span> : 30)</p><p class="paire-analyse">Emploi littéraire et coranique — exprime la douleur ou le regret</p></li>
+</ol>
 
     <!-- ════════════ CAS GRAMMATICAUX ════════════ -->
     <div class="section-divider"><span>⚖️ Partie 2</span></div>
@@ -162,39 +144,28 @@
         <div class="cas-card marfou">
             <h4>✅ Cas sujet (مَرْفُوع) sans <span class="arabic" lang="ar" dir="rtl">تَنْوِينٌ</span></h4>
             <ul>
-                <li>Nom propre simple<br><span class="arabic" style="font-size: 1.1em;">يَا <span class="munaada">عَلِيُّ</span></span></li>
-                <li>Nom commun singulier bien identifié<br><span class="arabic" style="font-size: 1.1em;">يَا <span class="munaada">أُسْتَاذُ</span></span></li>
+                <li>Nom propre simple<br><span class="arabic" style="font-size: 1.1em;">يَا <span class="mot munaada" data-role="2">عَلِيُّ</span></span></li>
+                <li>Nom commun singulier bien identifié<br><span class="arabic" style="font-size: 1.1em;">يَا <span class="mot munaada" data-role="2">أُسْتَاذُ</span></span></li>
             </ul>
         </div>
         <div class="cas-card mansou">
             <h4>✅ Cas direct (مَنْصُوب)</h4>
             <ul>
-                <li>Entité vague / indéfinie<br><span class="arabic" style="font-size: 1.1em;">يَا <span class="munaada">زَعِيمًا</span> كُنْ عادِلاً</span></li>
-                <li>Nom suivi d'une annexion (إضافة)<br><span class="arabic" style="font-size: 1.1em;">يَا <span class="munaada">رَئِيسَ</span> الوُزَرَاءِ</span></li>
-                <li>Prénom composé (عَبْد + الـ)<br><span class="arabic" style="font-size: 1.1em;">يَا <span class="munaada">عَبْدَ</span> الكَرِيمِ</span></li>
+                <li>Entité vague / indéfinie<br><span class="arabic" style="font-size: 1.1em;">يَا <span class="mot munaada" data-role="2">زَعِيمًا</span> كُنْ عادِلاً</span></li>
+                <li>Nom suivi d'une annexion (إضافة)<br><span class="arabic" style="font-size: 1.1em;">يَا <span class="mot munaada" data-role="2">رَئِيسَ</span> الوُزَرَاءِ</span></li>
+                <li>Prénom composé (عَبْد + الـ)<br><span class="arabic" style="font-size: 1.1em;">يَا <span class="mot munaada" data-role="2">عَبْدَ</span> الكَرِيمِ</span></li>
             </ul>
         </div>
     </div>
 
-    <h3>📝 Exemples avec annexion (إضافة) — cas direct</h3>
+    <h3>📝 Exemples avec annexion (إضافة) — cas direct</h3><ol class="paires sans-num">
 
-    <div class="voc-example">
-        <div class="ar"><span class="part">يَا</span> <span class="munaada">رَئِيسَ الوُزَرَاءِ</span> !</div>
-        <div class="fr">Ô Premier ministre !</div>
-        <div class="note-line">Annexion → cas direct (فتحة sur رَئِيسَ)</div>
-    </div>
+    <li class="paire"><p class="paire-ar"><span class="mot part" data-role="1">يَا</span> <span class="mot munaada" data-role="2">رَئِيسَ الوُزَرَاءِ</span> !</p><p class="paire-fr">Ô Premier ministre !</p><p class="paire-analyse">Annexion → cas direct (فتحة sur رَئِيسَ)</p></li>
 
-    <div class="voc-example">
-        <div class="ar"><span class="part">يَا</span> <span class="munaada">عَبْدَ الكَرِيمِ</span> !</div>
-        <div class="fr">Ô Abdelkarim !</div>
-        <div class="note-line">Prénom composé عبد + الكريم → cas direct</div>
-    </div>
+    <li class="paire"><p class="paire-ar"><span class="mot part" data-role="1">يَا</span> <span class="mot munaada" data-role="2">عَبْدَ الكَرِيمِ</span> !</p><p class="paire-fr">Ô Abdelkarim !</p><p class="paire-analyse">Prénom composé عبد + الكريم → cas direct</p></li>
 
-    <div class="voc-example">
-        <div class="ar"><span class="part">يَا</span> <span class="munaada">طَالِبًا</span> كُنْ مُجْتَهِدًا !</div>
-        <div class="fr">Ô étudiant (en général), sois appliqué !</div>
-        <div class="note-line">Destinataire vague (n'importe quel étudiant) → cas direct + <span class="arabic" lang="ar" dir="rtl">تَنْوِينٌ</span></div>
-    </div>
+    <li class="paire"><p class="paire-ar"><span class="mot part" data-role="1">يَا</span> <span class="mot munaada" data-role="2">طَالِبًا</span> كُنْ مُجْتَهِدًا !</p><p class="paire-fr">Ô étudiant (en général), sois appliqué !</p><p class="paire-analyse">Destinataire vague (n'importe quel étudiant) → cas direct + <span class="arabic" lang="ar" dir="rtl">تَنْوِينٌ</span></p></li>
+</ol>
 
     <div class="note">
         <strong>📌 يَا + suffixe pronom ي :</strong> Quand le nom appelé est suivi du pronom personnel suffixe ي
@@ -212,25 +183,14 @@
         Le nom qui les suit est toujours au <strong>cas sujet (مَرْفُوع)</strong>.
     </div>
 
-    <h3>📝 Exemples de discours formels</h3>
+    <h3>📝 Exemples de discours formels</h3><ol class="paires sans-num">
 
-    <div class="voc-example">
-        <div class="ar"><span class="part">أَيُّها</span> <span class="munaada">المُوَاطِنُونَ</span> !</div>
-        <div class="fr">Chers citoyens ! / Ô citoyens !</div>
-        <div class="note-line">Masculin pluriel → أَيُّها + المواطنون (cas sujet)</div>
-    </div>
+    <li class="paire"><p class="paire-ar"><span class="mot part" data-role="1">أَيُّها</span> <span class="mot munaada" data-role="2">المُوَاطِنُونَ</span> !</p><p class="paire-fr">Chers citoyens ! / Ô citoyens !</p><p class="paire-analyse">Masculin pluriel → أَيُّها + المواطنون (cas sujet)</p></li>
 
-    <div class="voc-example">
-        <div class="ar"><span class="part">أَيَّتُها</span> <span class="munaada">السَّيِّدَاتُ</span> !</div>
-        <div class="fr">Mesdames !</div>
-        <div class="note-line">Féminin pluriel → أَيَّتُها + السيدات (cas sujet)</div>
-    </div>
+    <li class="paire"><p class="paire-ar"><span class="mot part" data-role="1">أَيَّتُها</span> <span class="mot munaada" data-role="2">السَّيِّدَاتُ</span> !</p><p class="paire-fr">Mesdames !</p><p class="paire-analyse">Féminin pluriel → أَيَّتُها + السيدات (cas sujet)</p></li>
 
-    <div class="voc-example">
-        <div class="ar"><span class="part">أَيُّها</span> <span class="munaada">المُدِيرُ</span>، لَدَيَّ سُؤَالٌ !</div>
-        <div class="fr">Monsieur le directeur, j'ai une question !</div>
-        <div class="note-line">Masculin singulier avec الـ → أَيُّها</div>
-    </div>
+    <li class="paire"><p class="paire-ar"><span class="mot part" data-role="1">أَيُّها</span> <span class="mot munaada" data-role="2">المُدِيرُ</span>، لَدَيَّ سُؤَالٌ !</p><p class="paire-fr">Monsieur le directeur, j'ai une question !</p><p class="paire-analyse">Masculin singulier avec الـ → أَيُّها</p></li>
+</ol>
 
     <h3>📖 يَا + أَيُّها — la formule coranique</h3>
 
@@ -238,7 +198,7 @@
         <strong>La combinaison يَا أَيُّها</strong> ajoute encore plus de solennité. C'est la formule
         utilisée dans le Coran pour s'adresser aux croyants :<br><br>
         <div style="text-align: center; margin: 10px 0;">
-            <span class="arabic"><span class="part">يَا أَيُّها</span> <span class="munaada">الَّذِينَ آمَنُوا</span></span><br>
+            <span class="arabic"><span class="mot part" data-role="1">يَا أَيُّها</span> <span class="mot munaada" data-role="2">الَّذِينَ آمَنُوا</span></span><br>
             <span style="color: #555;">Ô vous qui avez cru ! (formule coranique récurrente)</span>
         </div>
     </div>
@@ -271,19 +231,19 @@
             <tr>
                 <td>Destinataire indéclinable (démonstratif, pronom)</td>
                 <td>Le nom qui suit est au <strong>cas sujet</strong></td>
-                <td><span class="arabic">يَا هَذَا <span class="munaada">الحَارِسُ</span></span></td>
+                <td><span class="arabic">يَا هَذَا <span class="mot munaada" data-role="2">الحَارِسُ</span></span></td>
                 <td>Ô ce gardien !</td>
             </tr>
             <tr>
                 <td>Adjectif non premier terme d'annexion</td>
                 <td>Cas direct <strong>ou</strong> cas sujet</td>
-                <td><span class="arabic">يَا سُفْيَانُ <span class="munaada">الشَّرِيفُ</span></span></td>
+                <td><span class="arabic">يَا سُفْيَانُ <span class="mot munaada" data-role="2">الشَّرِيفُ</span></span></td>
                 <td>Ô honorable Sofiane !</td>
             </tr>
             <tr>
                 <td>Deux noms reliés par وَ</td>
                 <td>Le deuxième suit le premier</td>
-                <td><span class="arabic">يَا <span class="munaada">سَمِيرُ وَمُحْسِنُ</span></span></td>
+                <td><span class="arabic">يَا <span class="mot munaada" data-role="2">سَمِيرُ وَمُحْسِنُ</span></span></td>
                 <td>Ô Samir et Mohsin !</td>
             </tr>
         </tbody>
@@ -300,43 +260,43 @@
         <tbody>
             <tr>
                 <td>Prénom / nom propre simple</td>
-                <td><span class="part arabic">يَا</span></td>
+                <td><span class="mot arabic part" data-role="1">يَا</span></td>
                 <td>Cas sujet (ضمة)</td>
                 <td><span class="arabic">يَا أَحْمَدُ</span></td>
             </tr>
             <tr>
                 <td>Nom commun bien identifié</td>
-                <td><span class="part arabic">يَا</span></td>
+                <td><span class="mot arabic part" data-role="1">يَا</span></td>
                 <td>Cas sujet (ضمة)</td>
                 <td><span class="arabic">يَا أُسْتَاذُ</span></td>
             </tr>
             <tr>
                 <td>Entité vague / indéfinie</td>
-                <td><span class="part arabic">يَا</span></td>
+                <td><span class="mot arabic part" data-role="1">يَا</span></td>
                 <td>Cas direct + <span class="arabic" lang="ar" dir="rtl">تَنْوِينٌ</span></td>
                 <td><span class="arabic">يَا طَالِبًا</span></td>
             </tr>
             <tr>
                 <td>Nom en annexion (إضافة)</td>
-                <td><span class="part arabic">يَا</span></td>
+                <td><span class="mot arabic part" data-role="1">يَا</span></td>
                 <td>Cas direct (فتحة)</td>
                 <td><span class="arabic">يَا رَئِيسَ الوُزَرَاءِ</span></td>
             </tr>
             <tr>
                 <td>Nom défini (الـ) masculin</td>
-                <td><span class="part arabic">أَيُّها</span></td>
+                <td><span class="mot arabic part" data-role="1">أَيُّها</span></td>
                 <td>Cas sujet (ضمة)</td>
                 <td><span class="arabic">أَيُّها المُدِيرُ</span></td>
             </tr>
             <tr>
                 <td>Nom défini (الـ) féminin</td>
-                <td><span class="part arabic">أَيَّتُها</span></td>
+                <td><span class="mot arabic part" data-role="1">أَيَّتُها</span></td>
                 <td>Cas sujet (ضمة)</td>
                 <td><span class="arabic">أَيَّتُها الطَّالِبَةُ</span></td>
             </tr>
             <tr>
                 <td>S'adresser à Dieu</td>
-                <td><span class="part arabic">اللّهُمَّ</span></td>
+                <td><span class="mot arabic part" data-role="1">اللّهُمَّ</span></td>
                 <td>—</td>
                 <td><span class="arabic">اللّهُمَّ ارْحَمْنَا</span></td>
             </tr>
